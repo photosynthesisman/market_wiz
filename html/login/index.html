@@ -1,11 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>test</h1>
-</body>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARKET WIZ</title>
+
+    <!-- 퍼블용 include: 개발팀에서 재include 하길 바랍니다. -->
+    <script class="__include" src="../include/head.js"></script>
+  </head>
+  <body class="maket">
+    <!-- header -->
+    <header data-include="../layout/header.html"></header>
+
+    <!-- container -->
+    <div class="container">
+      <!-- lnb -->
+      <div class="lnb-inner">
+        <div class="logo">로고</div>
+        <button class="close-lnb">닫기</button>
+
+        <ul class="folding-list ui-folding">
+          <li>
+            <div class="folding-head">
+              <a href="#" class="folding-btn"
+                ><div>나의메뉴<span>(00)</span></div></a
+              >
+            </div>
+            <div class="folding-panel">
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="folding-head">
+              <a href="#" class="folding-btn"><div>상품수집관리</div></a>
+            </div>
+            <div class="folding-panel">
+              <ul>
+                <li data-name="collect-site-product">사이트 상품수집</li>
+                <li data-name="collect-my-product">내 스토어 상품수집</li>
+                <li data-name="waiting-product">저장대기상품</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="folding-head">
+              <a href="#" class="folding-btn"><div>상품관리</div></a>
+            </div>
+            <div class="folding-panel">
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="folding-head">
+              <a href="#" class="folding-btn"><div>정책생성/적용관리</div></a>
+            </div>
+            <div class="folding-panel">
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="folding-head">
+              <a href="#" class="folding-btn"><div>주문/클레임관리</div></a>
+            </div>
+            <div class="folding-panel">
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="folding-head">
+              <a href="#" class="folding-btn"><div>문의관리</div></a>
+            </div>
+            <div class="folding-panel">
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="folding-head">
+              <a href="#" class="folding-btn"><div>통계관리</div></a>
+            </div>
+            <div class="folding-panel">
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="folding-head">
+              <a href="#" class="folding-btn"><div>환경설정</div></a>
+            </div>
+            <div class="folding-panel">
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- contents -->
+      <div class="contents">
+        <div class="tab-line-menu ui-tab">
+          <div class="tab-inner">
+            <i class="tab-line" aria-hidden="true"></i>
+            <ul class="tab-list">
+              <li class="tab"><a href="#dashboard">대시보드</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-panels">
+          <!-- .tab-panels 영역 없어도 됨(전환될때 인터렉션용) -->
+          <div id="dashboard" class="tab-panel">텝메뉴1텝메뉴1</div>
+          <div id="collect-site-product" class="tab-panel">
+            텝메뉴2텝메뉴2<br />텝메뉴2텝메뉴2<br />텝메뉴2텝메뉴2<br />텝메뉴2텝메뉴2
+          </div>
+          <div id="collect-my-product" class="tab-panel">텝메뉴3텝메뉴3</div>
+          <div id="waiting-product" class="tab-panel">텝메뉴4텝메뉴4</div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer data-include="../layout/footer.html"></footer>
+    <script>
+      $(".folding-panel li").each(function () {
+        $(this).click(function () {
+          const tab_name = $(this).text();
+          const data_name = $(this).data("name");
+          $(".tab-list").append(
+            '<li class="tab"><a href="#' +
+              data_name +
+              '">' +
+              tab_name +
+              "</a>" +
+              "<span class=" +
+              "close-tab" +
+              ">닫기</span></li>"
+          );
+        });
+      });
+
+      $(".tab-list").on("click", "a", function () {
+        $(".tab-panels .tab-panel").removeClass("active");
+      });
+
+      $(".tab-list").on("click", ".close-tab", function () {
+        $(this).parents("li").remove();
+      });
+    </script>
+  </body>
 </html>

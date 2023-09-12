@@ -38,7 +38,7 @@ html {
   text-size-adjust: none;
 }
 body {
-  font: normal 1.6rem/1.44 'Roboto', 'Noto Sans KR', 'Apple SD Gothic Neo', 'AppleSDGothicNeo', sans-serif;
+  font: normal 1.6rem/1.44 "Roboto", "Noto Sans KR", "Apple SD Gothic Neo", "AppleSDGothicNeo", sans-serif;
   color: var(--base-txt-color);
   letter-spacing: -0.02em;
   word-break: keep-all;
@@ -83,11 +83,11 @@ html.pc {
 // font-family
 .ff-nt,
 .ff-noto {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
 }
 .ff-rbt,
 .ff-roboto {
-  font-family: 'Roboto Origin';
+  font-family: "Roboto Origin";
 }
 
 /* bg-color */
@@ -336,7 +336,7 @@ html.pc {
     > *:not(.unit):not(i) {
       width: 100%;
     }
-    @include class-begins('w-', '>') {
+    @include class-begins("w-", ">") {
       flex-grow: 0;
       flex-shrink: 0;
     }
@@ -795,14 +795,19 @@ $bdTypes: (solid, dashed, dotted);
   position: relative;
   overflow: hidden;
   &:after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     left: -50%;
     top: 0;
     width: 200%;
     height: 100%;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 40% 60%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.5) 40% 60%,
+      rgba(255, 255, 255, 0) 100%
+    );
     background-size: 10rem 100%;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -897,4 +902,43 @@ html.is-app {
   // a {
   //   @include is-native;
   // }
+}
+.index-inner {
+  padding: 4rem;
+  .table td {
+    text-align: center;
+  }
+}
+.maket .tab-line-menu {
+  .tab-list,
+  .tab.active > a {
+    padding: 0;
+  }
+  .tab-list {
+    background-color: #eee;
+    &::before {
+      content: none;
+    }
+  }
+  .tab-line {
+    width: 0 !important;
+  }
+  .tab {
+    width: 200px;
+    &.active {
+      background-color: #fff;
+    }
+  }
+}
+.maket .tab-list .close-tab {
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  width: 3rem;
+  height: 3rem;
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 -960 960 960' width='24'%3E%3Cpath d='m257.5-239-18-18.5 222-222.5-222-222.5 18-18.5L480-498.5 702.5-721l18 18.5-222 222.5 222 222.5-18 18.5L480-461.5 257.5-239Z'/%3E%3C/svg%3E");
+  background-position: center center;
+  cursor: pointer;
+  font-size: 0;
 }
