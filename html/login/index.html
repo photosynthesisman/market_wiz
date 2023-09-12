@@ -154,8 +154,7 @@
               data_name +
               '">' +
               tab_name +
-              "</a>" +
-              "<span class=" +
+              "</a><span class=" +
               "close-tab" +
               ">닫기</span></li>"
           );
@@ -167,6 +166,11 @@
       });
 
       $(".tab-list").on("click", ".close-tab", function () {
+        const activeTab = $(".tab.active").find("a").attr("href");
+        const activePanel = "#" + $(".tab-panels .tab-panel.active").attr("id");
+        if (activeTab != activePanel) {
+          $(".tab-panels .tab-panel").removeClass("active");
+        }
         $(this).parents("li").remove();
       });
     </script>
