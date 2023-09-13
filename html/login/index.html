@@ -8,118 +8,14 @@
     <!-- 퍼블용 include: 개발팀에서 재include 하길 바랍니다. -->
     <script class="__include" src="../include/head.js"></script>
   </head>
-  <body class="maket">
+  <body class="market">
     <!-- header -->
     <header data-include="../layout/header.html"></header>
 
     <!-- container -->
     <div class="container">
       <!-- lnb -->
-      <div class="lnb-inner">
-        <div class="logo">로고</div>
-        <button class="close-lnb">닫기</button>
-
-        <ul class="folding-list ui-folding">
-          <li>
-            <div class="folding-head">
-              <a href="#" class="folding-btn"
-                ><div>나의메뉴<span>(00)</span></div></a
-              >
-            </div>
-            <div class="folding-panel">
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="folding-head">
-              <a href="#" class="folding-btn"><div>상품수집관리</div></a>
-            </div>
-            <div class="folding-panel">
-              <ul>
-                <li data-name="collect-site-product">사이트 상품수집</li>
-                <li data-name="collect-my-product">내 스토어 상품수집</li>
-                <li data-name="waiting-product">저장대기상품</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="folding-head">
-              <a href="#" class="folding-btn"><div>상품관리</div></a>
-            </div>
-            <div class="folding-panel">
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="folding-head">
-              <a href="#" class="folding-btn"><div>정책생성/적용관리</div></a>
-            </div>
-            <div class="folding-panel">
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="folding-head">
-              <a href="#" class="folding-btn"><div>주문/클레임관리</div></a>
-            </div>
-            <div class="folding-panel">
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="folding-head">
-              <a href="#" class="folding-btn"><div>문의관리</div></a>
-            </div>
-            <div class="folding-panel">
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="folding-head">
-              <a href="#" class="folding-btn"><div>통계관리</div></a>
-            </div>
-            <div class="folding-panel">
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="folding-head">
-              <a href="#" class="folding-btn"><div>환경설정</div></a>
-            </div>
-            <div class="folding-panel">
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <div class="lnb" data-include="../layout/lnb.html"></div>
 
       <!-- contents -->
       <div class="contents">
@@ -145,21 +41,21 @@
     <!-- footer -->
     <footer data-include="../layout/footer.html"></footer>
     <script>
-      $(".folding-panel li").each(function () {
-        $(this).click(function () {
-          const tab_name = $(this).text();
-          const data_name = $(this).data("name");
-          $(".tab-list").append(
-            '<li class="tab"><a href="#' +
-              data_name +
-              '">' +
-              tab_name +
-              "</a><span class=" +
-              "close-tab" +
-              ">닫기</span></li>"
-          );
-        });
-      });
+      // $(".folding-panel li").each(function () {
+      //   $(this).click(function () {
+      //     const tab_name = $(this).text();
+      //     const data_name = $(this).data("name");
+      //     $(".tab-list").append(
+      //       '<li class="tab"><a href="#' +
+      //         data_name +
+      //         '">' +
+      //         tab_name +
+      //         "</a><span class=" +
+      //         "close-tab" +
+      //         ">닫기</span></li>"
+      //     );
+      //   });
+      // });
 
       $(".tab-list").on("click", "a", function () {
         $(".tab-panels .tab-panel").removeClass("active");
@@ -172,6 +68,20 @@
           $(".tab-panels .tab-panel").removeClass("active");
         }
         $(this).parents("li").remove();
+      });
+
+      $(".market").on("click", ".folding-panel li", function () {
+        const tab_name = $(this).text();
+        const data_name = $(this).data("name");
+        $(".tab-list").append(
+          '<li class="tab"><a href="#' + data_name + '">' + tab_name + '</a><span class="close-tab">닫기</span></li>'
+        );
+      });
+
+      $(".market").on("click", ".folding-btn", function () {
+        $(this).parent().next(".folding-panel").stop().slideToggle(300);
+        $(this).parents("li").toggleClass("open").siblings().removeClass("open");
+        $(this).parents("li").siblings().find(".folding-panel").slideUp(300); // 1개씩 펼치기
       });
     </script>
   </body>
