@@ -19,43 +19,35 @@
 
       <!-- contents -->
       <div class="contents">
-        <div class="tab-line-menu ui-tab">
-          <div class="tab-inner">
-            <i class="tab-line" aria-hidden="true"></i>
-            <ul class="tab-list">
-              <li class="tab"><a href="#dashboard">대시보드</a></li>
-            </ul>
-          </div>
+        <div class="tab-container">
+          <ul>
+            <li class="tab active"><a href="#" data-tab="tab1">Tab 1</a></li>
+          </ul>
         </div>
-        <div class="tab-panels">
-          <!-- .tab-panels 영역 없어도 됨(전환될때 인터렉션용) -->
-          <div id="dashboard" class="tab-panel">텝메뉴1텝메뉴1</div>
-          <div id="collect-site-product" class="tab-panel">
-            텝메뉴2텝메뉴2<br />텝메뉴2텝메뉴2<br />텝메뉴2텝메뉴2<br />텝메뉴2텝메뉴2
-          </div>
-          <div id="collect-my-product" class="tab-panel">텝메뉴3텝메뉴3</div>
-          <div id="waiting-product" class="tab-panel">텝메뉴4텝메뉴4</div>
-        </div>
+
+        <div class="tab-content active" id="tab1">This is Tab 1 content.</div>
+        <div class="tab-content" id="collect-site-product">This is Tab 2 content.</div>
+        <div class="tab-content" id="collect-my-product">This is Tab 3 content.</div>
+        <div class="tab-content" id="waiting-product">This is Tab 4 content.</div>
       </div>
     </div>
     <!-- footer -->
     <footer data-include="../layout/footer.html"></footer>
-    <script>
-      // $(".folding-panel li").each(function () {
-      //   $(this).click(function () {
-      //     const tab_name = $(this).text();
-      //     const data_name = $(this).data("name");
-      //     $(".tab-list").append(
-      //       '<li class="tab"><a href="#' +
-      //         data_name +
-      //         '">' +
-      //         tab_name +
-      //         "</a><span class=" +
-      //         "close-tab" +
-      //         ">닫기</span></li>"
-      //     );
-      //   });
-      // });
+    <!-- <script>
+      const tabs = document.querySelectorAll(".tab");
+      const tabContents = document.querySelectorAll(".tab-content");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          tabs.forEach((t) => t.classList.remove("active"));
+          tabContents.forEach((content) => content.classList.remove("active"));
+
+          tab.classList.add("active");
+          const tabId = tab.getAttribute("data-tab");
+          const tabContent = document.getElementById(tabId);
+          tabContent.classList.add("active");
+        });
+      });
 
       $(".tab-list").on("click", "a", function () {
         $(".tab-panels .tab-panel").removeClass("active");
@@ -81,8 +73,8 @@
       $(".market").on("click", ".folding-btn", function () {
         $(this).parent().next(".folding-panel").stop().slideToggle(300);
         $(this).parents("li").toggleClass("open").siblings().removeClass("open");
-        $(this).parents("li").siblings().find(".folding-panel").slideUp(300); // 1개씩 펼치기
+        $(this).parents("li").siblings().find(".folding-panel").slideUp(300);
       });
-    </script>
+    </script> -->
   </body>
 </html>

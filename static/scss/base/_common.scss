@@ -942,3 +942,40 @@ html.is-app {
   cursor: pointer;
   font-size: 0;
 }
+
+.tab-container ul {
+  display: flex;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab:hover {
+  background-color: #f0f0f0;
+}
+
+.tab.active {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.tab-content.active {
+  display: block;
+}
+.folding-list li .folding-panel {
+  display: none;
+}
+.folding-list li.open .folding-panel {
+  display: block;
+}
