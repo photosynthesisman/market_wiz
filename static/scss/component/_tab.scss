@@ -35,6 +35,9 @@
 .tab-content {
   display: none;
   padding: 20px;
+  iframe body {
+    margin: 0;
+  }
 }
 
 .tab-content.active {

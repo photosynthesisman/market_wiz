@@ -26,6 +26,7 @@
   height: 100vh;
   padding: 2.4rem;
   background-color: #fff;
+  transition: all 0.4s;
   .logo {
     width: 14.6rem;
     height: 4.2rem;
@@ -37,13 +38,35 @@
     position: absolute;
     top: 0;
     right: 0;
-
     width: 3.2rem;
     height: 3.2rem;
+    transform: rotate(-180deg);
     font-size: 0;
     background: blue
       url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='20' viewBox='0 -960 960 960' width='20'%3E%3Cpath d='m549.692-480-189-189L384-692.308 596.308-480 384-267.692 360.692-291l189-189' fill='%23FFFFFF'/%3E%3C/svg%3E%0A")
       center center / 100% no-repeat;
+  }
+}
+.lnb .lnb-inner.fold {
+  width: 14rem;
+  padding: 4.8rem 1.2rem;
+  .logo {
+    display: none;
+  }
+  .folding-btn {
+    font-size: 1.4rem;
+    text-align: center;
+    &:after {
+      content: none;
+    }
+  }
+  .close-lnb {
+    transform: rotate(0deg);
+  }
+  .folding-panel li {
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
   }
 }
 .lnb .folding-panel li {
