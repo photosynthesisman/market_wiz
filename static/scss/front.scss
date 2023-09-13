@@ -6,10 +6,9 @@
 
 @import "base/variables", "base/mixin", "base/function", "base/reset", "base/common";
 
-@import "layout/page", "layout/header", "layout/body", "layout/floating", "layout/lnb";
+@import "layout/header", "layout/lnb";
 
-@import "component/button", "component/chart", "component/datepicker", "component/folding", "component/checkRadio",
-  "component/input", "component/formItems", "component/select", "component/icon", "component/img", "component/loading",
-  "component/pagination", "component/swiper", "component/tab", "component/table", "component/text";
+@import "component/datepicker", "component/checkRadio", "component/input", "component/formItems", "component/select",
+  "component/tab", "component/table", "component/text";
 
 @import "popup/popup";

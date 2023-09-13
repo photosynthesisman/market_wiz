@@ -33,48 +33,5 @@
     </div>
     <!-- footer -->
     <footer data-include="../layout/footer.html"></footer>
-    <!-- <script>
-      const tabs = document.querySelectorAll(".tab");
-      const tabContents = document.querySelectorAll(".tab-content");
-
-      tabs.forEach((tab) => {
-        tab.addEventListener("click", () => {
-          tabs.forEach((t) => t.classList.remove("active"));
-          tabContents.forEach((content) => content.classList.remove("active"));
-
-          tab.classList.add("active");
-          const tabId = tab.getAttribute("data-tab");
-          const tabContent = document.getElementById(tabId);
-          tabContent.classList.add("active");
-        });
-      });
-
-      $(".tab-list").on("click", "a", function () {
-        $(".tab-panels .tab-panel").removeClass("active");
-      });
-
-      $(".tab-list").on("click", ".close-tab", function () {
-        const activeTab = $(".tab.active").find("a").attr("href");
-        const activePanel = "#" + $(".tab-panels .tab-panel.active").attr("id");
-        if (activeTab != activePanel) {
-          $(".tab-panels .tab-panel").removeClass("active");
-        }
-        $(this).parents("li").remove();
-      });
-
-      $(".market").on("click", ".folding-panel li", function () {
-        const tab_name = $(this).text();
-        const data_name = $(this).data("name");
-        $(".tab-list").append(
-          '<li class="tab"><a href="#' + data_name + '">' + tab_name + '</a><span class="close-tab">닫기</span></li>'
-        );
-      });
-
-      $(".market").on("click", ".folding-btn", function () {
-        $(this).parent().next(".folding-panel").stop().slideToggle(300);
-        $(this).parents("li").toggleClass("open").siblings().removeClass("open");
-        $(this).parents("li").siblings().find(".folding-panel").slideUp(300);
-      });
-    </script> -->
   </body>
 </html>

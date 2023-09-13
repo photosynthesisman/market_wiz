@@ -1,6 +1,6 @@
 /* @mixin */
-@use 'sass:selector';
-@use 'sass:math';
+@use "sass:selector";
+@use "sass:math";
 
 // selector
 @mixin unify-parent($child) {
@@ -42,13 +42,13 @@
 
 @mixin class-begins($class, $mark: false) {
   @if ($mark) {
-    #{$mark}[class^='#{$class}'],
-    #{$mark}[class*=' #{$class}'] {
+    #{$mark}[class^="#{$class}"],
+    #{$mark}[class*=" #{$class}"] {
       @content;
     }
   } @else {
-    [class^='#{$class}'],
-    [class*=' #{$class}'] {
+    [class^="#{$class}"],
+    [class*=" #{$class}"] {
       @content;
     }
   }
@@ -74,7 +74,7 @@
 }
 
 @mixin clear-fix {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
@@ -107,7 +107,7 @@
 }
 
 @mixin ff-pps($weight: 600) {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: $weight;
 }
 
@@ -124,7 +124,7 @@
 @mixin scroll-padding($padding: null) {
   &:before,
   &:after {
-    content: '';
+    content: "";
     display: block;
     flex-shrink: 0;
     @if $padding {
@@ -210,7 +210,7 @@
   @include text-blind;
 }
 @mixin ico-after-apend($width: 2.4rem, $height: 2.4rem) {
-  content: '';
+  content: "";
   display: block;
   width: $width;
   height: $height;
@@ -242,7 +242,7 @@
   border-radius: 0;
   background: none;
   &:before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     left: 0;
