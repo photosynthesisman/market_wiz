@@ -50,3 +50,12 @@ $(".market").on("click", ".close-lnb", function () {
     $(this).parents(".lnb-inner").addClass("fold");
   }
 });
+
+//pooup 오픈
+$(".market").on("click", "#showPopup", function () {
+  $("#popup, #overlay").fadeIn();
+});
+
+$(".market").on("click", "#closePopup", function () {
+  $("#popup, #overlay").fadeOut();
+});
