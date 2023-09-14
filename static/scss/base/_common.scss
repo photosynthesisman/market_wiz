@@ -1,13 +1,14 @@
-$primary-color-rgb: toRGBCode($primary-color);
 :root {
+  $primary-color: #273043;
   --vh: 1vh;
   --primary-color: #{$primary-color};
   accent-color: var(--primary-color);
   --spl-highlight-color: var(--primary-color);
-  --primary-color-rgb: #{$primary-color-rgb};
+
   --item-margin-x: 0.8rem;
   --item-margin-y: 0.8rem;
 
+  --white-color: #fff;
   --base-txt-color: #606060;
   --strong-txt-color: #212121;
   --strong-txt-color2: #424242;
@@ -46,6 +47,7 @@ body {
   // html.is-app & {
   //   overscroll-behavior-y: contain; // 당겨서 새로고침 막기
   // }
+  background-color: var(--primary-color);
 }
 
 html.mobile {

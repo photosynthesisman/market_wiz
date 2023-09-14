@@ -1,3 +1,8 @@
+.lnb {
+  background-color: var(--primary-color);
+
+  padding: 0 3.2rem;
+}
 .lnb .folding-btn {
   position: relative;
   display: block;
@@ -23,9 +28,11 @@
 .lnb .lnb-inner {
   position: relative;
   width: 30rem;
-  height: 100vh;
+  min-height: calc(100vh - 13rem);
+  margin: 0 auto;
   padding: 2.4rem;
   background-color: #fff;
+  border-radius: 2.4rem;
   transition: all 0.4s;
   .logo {
     width: 14.6rem;

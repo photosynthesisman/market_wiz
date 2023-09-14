@@ -4,9 +4,9 @@
 @import url("./lib/animated.4.1.1.css");
 @import url("./lib/swiper-bundle.9.3.2.min.css");
 
-@import "base/variables", "base/mixin", "base/function", "base/reset", "base/common";
+@import "base/mixin", "base/function", "base/reset", "base/common";
 
-@import "layout/header", "layout/lnb";
+@import "layout/header", "layout/lnb", "layout/contents";
 
 @import "component/datepicker", "component/checkRadio", "component/input", "component/formItems", "component/select",
   "component/tab", "component/table", "component/text", "component/popup";

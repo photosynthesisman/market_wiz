@@ -3,7 +3,8 @@ import { includeHTML } from "./layout.js";
 includeHTML();
 
 // 탭메뉴 및 패널 활성화
-$(".market").on("click", ".tab a", function () {
+$(".market").on("click", ".tab a", function (e) {
+  e.preventDefault();
   $(this).parent().siblings().removeClass("active");
   $(".tab-content").removeClass("active");
   $(this).parent().addClass("active");
@@ -19,6 +20,13 @@ $(".market").on("click", ".close-tab", function () {
   $(this).parents("li").remove();
 });
 
+// 탭 메뉴 호버 시 컨텐츠 border-raduis
+$(".market").on("mouseover", ".tab:first-child", function () {
+  $(".tab-content").css({ "border-top-left-radius": "0" });
+});
+$(".market").on("mouseout", ".tab:first-child", function () {
+  $(".tab-content").css({ "border-top-left-radius": "2.4rem" });
+});
 // lnb 메뉴 클릭시 탭 생성
 $(".market").on("click", ".folding-panel li", function () {
   const tab_name = $(this).text();
@@ -32,8 +40,9 @@ $(".market").on("click", ".folding-panel li", function () {
   );
 });
 
-// 탭 메뉴 닫기
-$(".market").on("click", ".folding-btn", function () {
+// lnb 하위 뎁스 열기
+$(".market").on("click", ".folding-btn", function (e) {
+  e.preventDefault();
   $(this).parent().next(".folding-panel").stop().slideToggle(300);
   $(this).parents("li").toggleClass("open").siblings().removeClass("open");
   $(this).parents("li").siblings().find(".folding-panel").slideUp(300);

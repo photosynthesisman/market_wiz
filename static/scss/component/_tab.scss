@@ -11,7 +11,7 @@
 
 .tab-container ul {
   display: flex;
-  background-color: #eee;
+  background-color: var(--primary-color);
 }
 
 .tab {
@@ -20,24 +20,30 @@
   height: 5rem;
   padding: 1rem 2rem;
   cursor: pointer;
-  background-color: #eee;
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
-.tab:hover {
-  background-color: #fff;
-}
-
+.tab:hover,
 .tab.active {
   background-color: #fff;
-  border-radius: 0.5rem 0.5rem 0 0;
+  color: #222;
+  border-radius: 1.2rem 1.2rem 0 0;
 }
 
 .tab-content {
   display: none;
+  min-height: calc(100vh - 18rem);
+
   padding: 20px;
+  background-color: #fff;
+  border-radius: 2.4rem;
   iframe body {
     margin: 0;
   }
+}
+#dashboard {
+  border-top-left-radius: 0 !important;
 }
 
 .tab-content.active {
