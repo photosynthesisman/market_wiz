@@ -907,7 +907,25 @@ html.is-app {
 }
 .index-inner {
   padding: 4rem;
+  h3 {
+    color: var(--white-color);
+  }
   .table td {
     text-align: center;
+    color: var(--white-color);
   }
+}
+.select {
+  border: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+input {
+  outline: none;
+}
+.h-line {
+  margin: 3.2rem 0;
 }

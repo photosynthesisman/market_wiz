@@ -1,9 +1,8 @@
 .lnb {
   background-color: var(--primary-color);
-
   padding: 0 3.2rem;
 }
-.lnb .folding-btn {
+.folding-btn {
   position: relative;
   display: block;
   padding: 1.6rem 0;
@@ -22,10 +21,13 @@
       center center / 100% no-repeat;
   }
 }
-.lnb .open .folding-btn:after {
+.open .folding-btn {
+  color: rgb(41, 41, 177);
+}
+.open .folding-btn:after {
   transform: translateY(-50%) rotate(-90deg);
 }
-.lnb .lnb-inner {
+.lnb-inner {
   position: relative;
   width: 30rem;
   min-height: calc(100vh - 13rem);
@@ -55,7 +57,7 @@
     border-radius: 1.4rem 0 0 1.4rem;
   }
 }
-.lnb .lnb-inner.fold {
+.lnb-inner.fold {
   width: 14rem;
   padding: 4.8rem 1.2rem;
   .logo {
@@ -69,7 +71,7 @@
     }
   }
   .close-lnb {
-    transform: rotate(0deg);
+    // transform: rotate(0deg);
   }
   .folding-panel li {
     padding: 1rem;
@@ -77,7 +79,7 @@
     text-align: center;
   }
 }
-.lnb .folding-panel li {
+.folding-panel li {
   padding: 1.2rem 1.6rem;
   cursor: pointer;
   color: #888;

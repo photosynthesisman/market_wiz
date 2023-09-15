@@ -1,0 +1,19 @@
+.button {
+  height: 4rem;
+  padding: 0.6rem 1.8rem;
+  border-radius: 0.8rem;
+  &.no-pd {
+    padding: 0;
+  }
+  &.line {
+    border: 1px solid #222;
+  }
+  &.bg-blue {
+    background-color: blue;
+    color: var(--white-color);
+  }
+  &.bg- &.small {
+    height: 3.2rem;
+    padding: 0.2rem 1rem;
+  }
+}

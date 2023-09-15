@@ -49,7 +49,8 @@ $(".market").on("click", ".folding-btn", function (e) {
 });
 
 // 페이지 로드
-$("#collect-site-product").load("tab2content.html");
+$("#dashboard").load("dashboard.html");
+$("#collect-site-product").load("collect-site-product.html");
 
 // lnb 접기/펼치기
 $(".market").on("click", ".close-lnb", function () {
