@@ -7,13 +7,29 @@
   }
   &.line {
     border: 1px solid #222;
+    &.l-blue {
+      border: 1px solid blue;
+      color: blue;
+    }
+  }
+  &.rounded {
+    border-radius: 2.4rem;
+  }
+  &.bg-grey {
+    background-color: #eee;
   }
   &.bg-blue {
     background-color: blue;
     color: var(--white-color);
   }
-  &.bg- &.small {
+  &.bg-black {
+    color: var(--white-color);
+  }
+  &.small {
     height: 3.2rem;
     padding: 0.2rem 1rem;
+  }
+  + .button {
+    margin-left: -0.4rem;
   }
 }

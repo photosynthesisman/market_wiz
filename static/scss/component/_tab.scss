@@ -11,7 +11,7 @@
 
 .tab-container ul {
   display: flex;
-  background-color: var(--primary-color);
+  background-color: var(--bg-color);
 }
 
 .tab {
@@ -20,7 +20,7 @@
   height: 5rem;
   padding: 1rem 2rem;
   cursor: pointer;
-  background-color: var(--primary-color);
+  background-color: var(--bg-color);
   color: #fff;
 }
 

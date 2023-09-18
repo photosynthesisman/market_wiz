@@ -1,0 +1,61 @@
+.guide-tit {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+h1,
+.h1 {
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+}
+h2,
+.h2 {
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+h3,
+.h3 {
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.a-link {
+  color: #1349b8;
+  text-decoration: underline;
+}
+.sub-txt {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+.sub-txt2,
+.a-link {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.small-txt {
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+}
+.small-txt2 {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+.font-guide table {
+  border: none;
+  th,
+  td {
+    background: none;
+    border: none;
+  }
+  .left {
+    text-align: left;
+    padding-left: 0;
+  }
+  td {
+    padding-top: 4rem;
+    border-bottom: 1px solid #0000001f;
+    text-align: center;
+  }
+  tr:first-child td {
+    padding-top: 0;
+  }
+}

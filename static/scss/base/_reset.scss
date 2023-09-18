@@ -95,7 +95,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--strong-txt-color);
+  color: var(--base-txt-color);
 }
 article,
 aside,
@@ -137,11 +137,11 @@ a {
   color: inherit;
   cursor: pointer;
 }
-a[href*='tel'] {
+a[href*="tel"] {
   cursor: default;
 }
 button,
-input[type='button'] {
+input[type="button"] {
   border: none;
   background: none;
   cursor: pointer;
@@ -180,7 +180,7 @@ iframe {
   vertical-align: middle;
 }
 img:not([src]),
-img[src=''] {
+img[src=""] {
   opacity: 0;
 }
 select,
@@ -238,10 +238,10 @@ input::-webkit-search-results-decoration {
   display: none;
 }
 
-input[type='date']::-webkit-clear-button {
+input[type="date"]::-webkit-clear-button {
   display: none;
 }
-input[type='time']::-webkit-clear-button {
+input[type="time"]::-webkit-clear-button {
   display: none;
 }
 

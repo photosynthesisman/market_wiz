@@ -1,6 +1,6 @@
 <div class="contents">
   <div class="tit-wrap">
-    <h3>사이트 상품수집</h3>
+    <h2>사이트 상품수집</h2>
     <div class="path"></div>
   </div>
   <div class="serch-wrap">
@@ -8,13 +8,19 @@
       <dt>사이트<i class="require"></i></dt>
       <dd>
         <div class="select-box">
-          <select name="" id="" class="select">
+          <select name="사이트 선택하기" class="select">
             <option value="">선택하세요</option>
-            <option value="1">주문번호</option>
-            <option value="2">상품코드</option>
-            <option value="3">주문자/수령자명</option>
-            <option value="4">운송장번호</option>
-            <option value="5">상품명</option>
+            <option value="1">쿠팡</option>
+            <option value="2">네이버</option>
+            <option value="3">지마켓</option>
+            <option value="4">11번가</option>
+            <option value="5">롯데온</option>
+            <option value="6">타오바오</option>
+            <option value="7">알리익스프레스</option>
+            <option value="8">1688</option>
+            <option value="9">아마존(미국)</option>
+            <option value="10">아마존(일본)</option>
+            <option value="11">아마존(독일)</option>
           </select>
         </div>
       </dd>
@@ -37,13 +43,9 @@
       <dd>
         <div class="search-box">
           <div class="select-box">
-            <select name="" id="" class="select">
-              <option value="">선택하세요</option>
-              <option value="1">주문번호</option>
-              <option value="2">상품코드</option>
-              <option value="3">주문자/수령자명</option>
-              <option value="4">운송장번호</option>
-              <option value="5">상품명</option>
+            <select name="수집방식 선택" class="select">
+              <option value="1">URL</option>
+              <option value="2">키워드</option>
             </select>
           </div>
           <div class="input">
@@ -87,7 +89,7 @@
             </dl>
           </li>
           <li>
-            <button>수집설정변경</button>
+            <button class="button bg-grey rounded small ml-10">수집설정변경</button>
           </li>
         </ul>
       </dd>
@@ -119,10 +121,224 @@
       <div class="list-top">
         <div class="left">
           <button class="button small line">선택상품 삭제</button>
-          <button class="button">선택상품 저장</button>
-          <button class="button">옵션별 상품저장</button>
+          <button class="button small bg-black">선택상품 저장</button>
+          <button class="button small bg-black">옵션별 상품저장</button>
         </div>
-        <button class="button">전체상품저장</button>
+        <button class="button small line l-blue">전체상품저장</button>
+      </div>
+      <div class="product-list">
+        <div class="list-summary">
+          <div class="left">
+            <span class="checkbox">
+              <input type="checkbox" id="chk_all" />
+              <label for="chk_all" class="lbl">총 1,124건</label>
+            </span>
+            <span>성공 <em>980</em>건 / 실패 <em class="fc-red">20</em>건</span>
+            <button class="button bg-grey rounded small ml-10">수집결과보기</button>
+          </div>
+          <div class="right">
+            <div class="select-box">
+              <select name="n개씩 보기 선택" class="select">
+                <option value="1">50개씩 보기</option>
+                <option value="2">100개씩 보기</option>
+                <option value="3">150개씩 보기</option>
+                <option value="4">200개씩 보기</option>
+              </select>
+            </div>
+            <div class="select-box">
+              <select name="보기 형식" class="select">
+                <option value="1">이미지보기</option>
+                <option value="2">리스트보기</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <hr class="h-line bold" />
+        <div class="item-wrap">
+          <div class="item">
+            <span class="checkbox no-label">
+              <input type="checkbox" id="chk4" />
+              <label for="chk4" class="lbl"></label>
+            </span>
+            <div class="item-detail">
+              <div class="img"></div>
+              <div class="txt-wrap">
+                <span>상품코드 <em>201948388857</em></span>
+                <h4>벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</h4>
+                <p class="item-price">KRW 35,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <span class="checkbox no-label">
+              <input type="checkbox" id="chk5" />
+              <label for="chk5" class="lbl"></label>
+            </span>
+            <div class="item-detail">
+              <div class="img"></div>
+              <div class="txt-wrap">
+                <span>상품코드 <em>201948388857</em></span>
+                <h4>벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</h4>
+                <p class="item-price">KRW 35,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <span class="checkbox no-label">
+              <input type="checkbox" id="chk6" />
+              <label for="chk6" class="lbl"></label>
+            </span>
+            <div class="item-detail">
+              <div class="img"></div>
+              <div class="txt-wrap">
+                <span>상품코드 <em>201948388857</em></span>
+                <h4>벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</h4>
+                <p class="item-price">KRW 35,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <span class="checkbox no-label">
+              <input type="checkbox" id="chk7" />
+              <label for="chk7" class="lbl"></label>
+            </span>
+            <div class="item-detail">
+              <div class="img"></div>
+              <div class="txt-wrap">
+                <span>상품코드 <em>201948388857</em></span>
+                <h4>벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</h4>
+                <p class="item-price">KRW 35,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <span class="checkbox no-label">
+              <input type="checkbox" id="chk8" />
+              <label for="chk8" class="lbl"></label>
+            </span>
+            <div class="item-detail">
+              <div class="img"></div>
+              <div class="txt-wrap">
+                <span>상품코드 <em>201948388857</em></span>
+                <h4>벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</h4>
+                <p class="item-price">KRW 35,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <span class="checkbox no-label">
+              <input type="checkbox" id="chk9" />
+              <label for="chk9" class="lbl"></label>
+            </span>
+            <div class="item-detail">
+              <div class="img"></div>
+              <div class="txt-wrap">
+                <span>상품코드 <em>201948388857</em></span>
+                <h4>벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</h4>
+                <p class="item-price">KRW 35,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <span class="checkbox no-label">
+              <input type="checkbox" id="chk10" />
+              <label for="chk10" class="lbl"></label>
+            </span>
+            <div class="item-detail">
+              <div class="img"></div>
+              <div class="txt-wrap">
+                <span>상품코드 <em>201948388857</em></span>
+                <h4>벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</h4>
+                <p class="item-price">KRW 35,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <span class="checkbox no-label">
+              <input type="checkbox" id="chk11" />
+              <label for="chk11" class="lbl"></label>
+            </span>
+            <div class="item-detail">
+              <div class="img"></div>
+              <div class="txt-wrap">
+                <span>상품코드 <em>201948388857</em></span>
+                <h4>벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</h4>
+                <p class="item-price">KRW 35,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <span class="checkbox no-label">
+              <input type="checkbox" id="chk12" />
+              <label for="chk12" class="lbl"></label>
+            </span>
+            <div class="item-detail">
+              <div class="img"></div>
+              <div class="txt-wrap">
+                <span>상품코드 <em>201948388857</em></span>
+                <h4>벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</h4>
+                <p class="item-price">KRW 35,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <span class="checkbox no-label">
+              <input type="checkbox" id="chk13" />
+              <label for="chk13" class="lbl"></label>
+            </span>
+            <div class="item-detail">
+              <div class="img"></div>
+              <div class="txt-wrap">
+                <span>상품코드 <em>201948388857</em></span>
+                <h4>벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</h4>
+                <p class="item-price">KRW 35,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <span class="checkbox no-label">
+              <input type="checkbox" id="chk14" />
+              <label for="chk14" class="lbl"></label>
+            </span>
+            <div class="item-detail">
+              <div class="img"></div>
+              <div class="txt-wrap">
+                <span>상품코드 <em>201948388857</em></span>
+                <h4>벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</h4>
+                <p class="item-price">KRW 35,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <span class="checkbox no-label">
+              <input type="checkbox" id="chk15" />
+              <label for="chk15" class="lbl"></label>
+            </span>
+            <div class="item-detail">
+              <div class="img"></div>
+              <div class="txt-wrap">
+                <span>상품코드 <em>201948388857</em></span>
+                <h4>벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</h4>
+                <p class="item-price">KRW 35,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <span class="checkbox no-label">
+              <input type="checkbox" id="chk16" />
+              <label for="chk16" class="lbl"></label>
+            </span>
+            <div class="item-detail">
+              <div class="img"></div>
+              <div class="txt-wrap">
+                <span>상품코드 <em>201948388857</em></span>
+                <h4>벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</h4>
+                <p class="item-price">KRW 35,000원</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul id="pagination" class="pagination"></ul>
       </div>
     </div>
   </div>
