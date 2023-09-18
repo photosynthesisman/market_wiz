@@ -1,0 +1,132 @@
+.guide-tit {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+h1,
+.h1 {
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+}
+h2,
+.h2 {
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+h3,
+.h3 {
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.a-link {
+  color: #1349b8;
+  text-decoration: underline;
+}
+.sub-txt {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+.sub-txt2,
+.a-link {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.small-txt {
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+}
+.small-txt2 {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+.font-guide table {
+  border: none;
+  th,
+  td {
+    background: none;
+    border: none;
+  }
+  .left {
+    text-align: left;
+    padding-left: 0;
+  }
+  td {
+    padding-top: 4rem;
+    border-bottom: 1px solid #0000001f;
+    text-align: center;
+  }
+  tr:first-child td {
+    padding-top: 0;
+  }
+}
+.color-guide-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 3rem 0 10rem;
+  .img-box {
+    width: 6rem;
+    height: 6rem;
+  }
+  .flex {
+    align-items: center;
+    gap: 1.2rem;
+  }
+}
+.bg-primary {
+  background-color: var(--primary-color);
+}
+.bg-primary2 {
+  background-color: var(--primary-color2);
+}
+.base-txt {
+  background-color: var(--base-txt-color);
+}
+.em-txt {
+  background-color: var(--strong-txt-color);
+}
+.sub-txt-bg {
+  background-color: var(--sub-txt-color);
+}
+.line-01 {
+  background-color: var(--line-color01);
+}
+.line-02 {
+  background-color: var(--line-color02);
+}
+.line-blue {
+  background-color: var(--line-color03);
+}
+.bg-base {
+  background-color: var(--bg-color);
+}
+.bg-blue-01 {
+  background-color: var(--bg-color-blue01);
+}
+.bg-blue-02 {
+  background-color: var(--bg-color-blue02);
+}
+.bg-gray {
+  background-color: var(--bg-color-gray);
+}
+.alert-color {
+  background-color: var(--alert-txt-color);
+}
+.validation-check {
+  font-size: 1.2rem;
+  color: var(--alert-txt-color);
+}
+.form-guide-wrap {
+  margin-top: 3rem;
+  dl {
+    display: flex;
+    align-items: start;
+
+    margin-bottom: 1.2rem;
+  }
+  dt {
+    width: 10rem;
+    margin-right: 3rem;
+  }
+  dd {
+  }
+}

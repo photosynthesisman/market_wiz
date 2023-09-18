@@ -13,13 +13,14 @@
   --white-color: #fff;
   --base-txt-color: #202020;
   --strong-txt-color: #42444e;
-  --strong-txt-color2: #666666;
+  --sub-txt-color: #666666;
 
-  // --alert-txt-color: #dc512f;
-  --alert-txt-color: #e43333;
+  --alert-txt-color: #ff1c37;
   --placeholder-txt-color: #b9c1c9;
 
-  --line-color: #ebebeb;
+  --line-color01: #cccccc;
+  --line-color02: #eeeeee;
+  --line-color03: #e5e9f2;
 
   --disabled-color: #b0b0b0;
   --disabled-bg-color: #dedede;
@@ -352,14 +353,14 @@ html.pc {
 .w-auto {
   width: auto !important;
 }
-// @for $i from 0 through 300 {
-//   .w-#{$i} {
-//     width: $i * 0.1rem !important;
-//   }
-//   .w-#{$i}f {
-//     flex: 0 0 $i * 0.1rem !important;
-//   }
-// }
+@for $i from 0 through 300 {
+  .w-#{$i} {
+    width: $i * 0.1rem !important;
+  }
+  .w-#{$i}f {
+    flex: 0 0 $i * 0.1rem !important;
+  }
+}
 // @for $i from 0 through 100 {
 //   @if $i !=33 and $i !=66 {
 //     .w-#{$i}p {

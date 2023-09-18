@@ -73,10 +73,28 @@
 
 .select,
 input {
-  height: 4rem;
-  padding: 0.4rem 1.2rem;
-  border-radius: 0.8rem;
-  border: 1px solid #999;
+  height: 3.2rem;
+  padding: 0rem 1.2rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--line-color01);
+  font-size: 1.4rem;
+  &::placeholder {
+    color: #999999;
+  }
+  &:hover {
+    border: 1px solid var(--primary-color2);
+  }
+  &:focus {
+    border: 1px solid var(--strong-txt-color);
+  }
+  &:disabled {
+    color: #999999;
+    background-color: #f6f6f6;
+    border: 1px solid var(--line-color02);
+  }
+  &:required {
+    border: 1px solid var(--alert-txt-color);
+  }
 }
 .select {
   width: 16rem;
@@ -221,5 +239,53 @@ input {
         font-weight: 500;
       }
     }
+  }
+}
+input[type="date"] {
+  width: 16rem;
+  background: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.625 2.5V4.375M14.375 2.5V4.375M2.5 15.625V6.25C2.5 5.75272 2.69754 5.27581 3.04917 4.92417C3.40081 4.57254 3.87772 4.375 4.375 4.375H15.625C16.1223 4.375 16.5992 4.57254 16.9508 4.92417C17.3025 5.27581 17.5 5.75272 17.5 6.25V15.625M2.5 15.625C2.5 16.1223 2.69754 16.5992 3.04917 16.9508C3.40081 17.3025 3.87772 17.5 4.375 17.5H15.625C16.1223 17.5 16.5992 17.3025 16.9508 16.9508C17.3025 16.5992 17.5 16.1223 17.5 15.625M2.5 15.625V9.375C2.5 8.87772 2.69754 8.40081 3.04917 8.04917C3.40081 7.69754 3.87772 7.5 4.375 7.5H15.625C16.1223 7.5 16.5992 7.69754 16.9508 8.04917C17.3025 8.40081 17.5 8.87772 17.5 9.375V15.625' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.65234 10.2865V15.0001H7.66927V11.2175H7.64323L6.5625 11.8946V11.0287L7.72786 10.2865H8.65234Z' fill='black'/%3E%3Cpath d='M9.61276 15.0001L9.60625 14.2904L11.299 12.7345C11.7384 12.3145 11.976 12.0541 11.976 11.6798C11.976 11.2598 11.6603 10.9994 11.2273 11.0027C10.7846 10.9994 10.4949 11.2794 10.4982 11.7319H9.56719C9.56393 10.8106 10.2475 10.2214 11.2404 10.2214C12.2495 10.2214 12.9201 10.7976 12.9201 11.6147C12.9201 12.1518 12.6596 12.5912 11.6896 13.4701L10.9734 14.1667V14.1928H12.9852V15.0001H9.61276Z' fill='black'/%3E%3C/svg%3E%0A")
+    right 0.8rem center / 2rem 2rem no-repeat;
+
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+  &:disabled {
+    background-color: #f6f6f6;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.625 2.5V4.375M14.375 2.5V4.375M2.5 15.625V6.25C2.5 5.75272 2.69754 5.27581 3.04917 4.92417C3.40081 4.57254 3.87772 4.375 4.375 4.375H15.625C16.1223 4.375 16.5992 4.57254 16.9508 4.92417C17.3025 5.27581 17.5 5.75272 17.5 6.25V15.625M2.5 15.625C2.5 16.1223 2.69754 16.5992 3.04917 16.9508C3.40081 17.3025 3.87772 17.5 4.375 17.5H15.625C16.1223 17.5 16.5992 17.3025 16.9508 16.9508C17.3025 16.5992 17.5 16.1223 17.5 15.625M2.5 15.625V9.375C2.5 8.87772 2.69754 8.40081 3.04917 8.04917C3.40081 7.69754 3.87772 7.5 4.375 7.5H15.625C16.1223 7.5 16.5992 7.69754 16.9508 8.04917C17.3025 8.40081 17.5 8.87772 17.5 9.375V15.625' stroke='%23999999' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.65234 10.2865V15.0001H7.66927V11.2175H7.64323L6.5625 11.8946V11.0287L7.72786 10.2865H8.65234Z' fill='%23999999'/%3E%3Cpath d='M9.61276 15.0001L9.60625 14.2904L11.299 12.7345C11.7384 12.3145 11.976 12.0541 11.976 11.6798C11.976 11.2598 11.6603 10.9994 11.2273 11.0027C10.7846 10.9994 10.4949 11.2794 10.4982 11.7319H9.56719C9.56393 10.8106 10.2475 10.2214 11.2404 10.2214C12.2495 10.2214 12.9201 10.7976 12.9201 11.6147C12.9201 12.1518 12.6596 12.5912 11.6896 13.4701L10.9734 14.1667V14.1928H12.9852V15.0001H9.61276Z' fill='%23999999'/%3E%3C/svg%3E%0A");
+    border: 1px solid var(--line-color02);
+  }
+}
+.text-area {
+  border: 1px solid var(--line-color01);
+  border-radius: 0.6rem;
+  background: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  overflow: hidden;
+  textarea {
+    display: block;
+    width: 100%;
+    min-height: 5.2rem;
+    padding: 0.6rem 1.2rem;
+    padding-right: 0.6rem;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    overflow-y: scroll;
+    resize: none;
+    &::-webkit-scrollbar {
+      width: 1.6rem;
+    }
+    &::-webkit-scrollbar-thumb {
+      border: 0.6rem solid rgba(0, 0, 0, 0);
+      background-clip: padding-box;
+      border-radius: 20rem;
+      background-color: var(--bg-color-blue02);
+    }
+  }
+  .counter {
+    padding-right: 0.6rem;
+    font-size: 1.1rem;
+    text-align: right;
   }
 }

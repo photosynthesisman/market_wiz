@@ -50,6 +50,8 @@ $(".market").on("click", ".folding-btn", function (e) {
 
 // 페이지 로드
 $("#font-guide").load("font-guide.html");
+$("#color-guide").load("color-guide.html");
+$("#form-guide").load("form-guide.html");
 $("#dashboard").load("dashboard.html");
 $("#collect-site-product").load("collect-site-product.html");
 
@@ -125,6 +127,25 @@ $(document).ready(function () {
     $("#pagination li:first-child").addClass("active");
     $("#pagination li").click(function () {
       $(this).addClass("active").siblings().removeClass("active");
+    });
+  });
+});
+//validation
+$(document).ready(function () {
+  $("#form-guide").load("form-guide.html", function () {
+    const requiredInput = $("input[required]");
+    if (requiredInput) {
+      requiredInput.parent().append("<p class=" + "validation-check" + ">입력정보를 확인해주세요</p>");
+    }
+    //count number of count
+    const messageEle = $("#txt-area");
+    const counterEle = $(".counter");
+
+    messageEle.on("input", function (e) {
+      const target = e.target;
+      const maxLength = target.getAttribute("maxlength");
+      const currentLength = target.value.length;
+      counterEle.html(`<strong>${currentLength}</strong> / ${maxLength}`);
     });
   });
 });
