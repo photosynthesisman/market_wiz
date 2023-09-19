@@ -1,68 +1,359 @@
-<h2 class="guide-tit">Input</h2>
-<div class="form-guide-wrap">
-  <dl>
-    <dt>Default</dt>
-    <dd>
-      <input type="text" value="입력정보" />
-    </dd>
-  </dl>
-  <dl>
-    <dt>Placeholder</dt>
-    <dd>
-      <input type="text" placeholder="입력정보" />
-    </dd>
-  </dl>
-  <dl>
-    <dt>Hover</dt>
-    <dd>
-      <input type="text" value="입력정보" />
-    </dd>
-  </dl>
-  <dl>
-    <dt>Focused</dt>
-    <dd>
-      <input type="text" value="입력정보" />
-    </dd>
-  </dl>
-  <dl>
-    <dt>Disabled</dt>
-    <dd>
-      <input type="text" value="입력정보" disabled />
-    </dd>
-  </dl>
-  <dl>
-    <dt>Validation</dt>
-    <dd>
-      <input type="text" value="입력정보" required />
-    </dd>
-  </dl>
-  <dl>
-    <dt>Date Picker</dt>
-    <dd>
-      <input type="date" value="2023-05-29" />
-    </dd>
-  </dl>
-  <dl>
-    <dt></dt>
-    <dd>
-      <input type="date" value="2023-05-29" disabled />
-    </dd>
-  </dl>
-  <dl>
-    <dt>Text Area</dt>
-    <dd>
-      <div class="text-area w-220">
-        <textarea rows="1" placeholder="문의사항을 입력해주세요"></textarea>
-      </div>
-    </dd>
-  </dl>
-  <dl>
-    <dt></dt>
-    <dd>
-      <div class="text-area w-220">
-        <textarea rows="3" id="txt-area" maxlength="200" placeholder="문의사항을 입력해주세요"></textarea>
-        <p class="counter"><strong>0</strong> / 200</p>
-      </div>
-    </dd>
-  </dl>
+<div class="flex">
+  <div class="mr-90">
+    <h2 class="guide-tit">Input</h2>
+    <div class="form-guide-wrap">
+      <dl>
+        <dt>Default</dt>
+        <dd>
+          <input type="text" value="입력정보" />
+        </dd>
+      </dl>
+      <dl>
+        <dt>Placeholder</dt>
+        <dd>
+          <input type="text" placeholder="입력정보" />
+        </dd>
+      </dl>
+      <dl>
+        <dt>Hover</dt>
+        <dd>
+          <input type="text" value="입력정보" />
+        </dd>
+      </dl>
+      <dl>
+        <dt>Focused</dt>
+        <dd>
+          <input type="text" value="입력정보" />
+        </dd>
+      </dl>
+      <dl>
+        <dt>Disabled</dt>
+        <dd>
+          <input type="text" value="입력정보" disabled />
+        </dd>
+      </dl>
+      <dl>
+        <dt>Validation</dt>
+        <dd>
+          <input type="text" value="입력정보" required />
+        </dd>
+      </dl>
+      <dl>
+        <dt>Date Picker</dt>
+        <dd>
+          <input type="date" value="2023-05-29" />
+        </dd>
+      </dl>
+      <dl>
+        <dt></dt>
+        <dd>
+          <input type="date" value="2023-05-29" disabled />
+        </dd>
+      </dl>
+      <dl>
+        <dt>Text Area</dt>
+        <dd>
+          <div class="text-area w-220">
+            <textarea rows="1" placeholder="문의사항을 입력해주세요"></textarea>
+          </div>
+        </dd>
+      </dl>
+      <dl>
+        <dt></dt>
+        <dd>
+          <div class="text-area w-220">
+            <textarea rows="3" id="txt-area" maxlength="200" placeholder="문의사항을 입력해주세요"></textarea>
+            <p class="counter"><strong>0</strong> / 200</p>
+          </div>
+        </dd>
+      </dl>
+    </div>
+  </div>
+  <div>
+    <h2 class="guide-tit">Select</h2>
+    <div class="form-guide-wrap">
+      <dl>
+        <dt>Default</dt>
+        <dd>
+          <div class="select-box">
+            <select>
+              <option value="0">선택항목</option>
+              <option value="1">Hover</option>
+              <option value="2">Selected</option>
+              <option value="3">Default</option>
+              <option value="4">Disabled</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+      <dl>
+        <dt>Placeholder</dt>
+        <dd>
+          <div class="select-box placeholder">
+            <select>
+              <option value="0">선택항목</option>
+              <option value="1">Hover</option>
+              <option value="2">Selected</option>
+              <option value="3">Default</option>
+              <option value="4">Disabled</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+      <dl>
+        <dt>Hover</dt>
+        <dd>
+          <div class="select-box">
+            <select>
+              <option value="0">선택항목</option>
+              <option value="1">Hover</option>
+              <option value="2">Selected</option>
+              <option value="3">Default</option>
+              <option value="4">Disabled</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+      <dl>
+        <dt>Disabled</dt>
+        <dd>
+          <div class="select-box disabled">
+            <select>
+              <option value="0">선택항목</option>
+              <option value="1">Hover</option>
+              <option value="2">Selected</option>
+              <option value="3">Default</option>
+              <option value="4">Disabled</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+      <dl>
+        <dt>Validation</dt>
+        <dd>
+          <div class="select-box required">
+            <select>
+              <option value="0">선택항목</option>
+              <option value="1">Hover</option>
+              <option value="2">Selected</option>
+              <option value="3">Default</option>
+              <option value="4">Disabled</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+      <dl>
+        <dt>Open</dt>
+        <dd>
+          <div class="select-box">
+            <select>
+              <option value="0">선택항목</option>
+              <option value="1">Hover</option>
+              <option value="2" class="disabled">Selected</option>
+              <option value="3" class="disabled">Default</option>
+              <option value="4" class="">Disabled</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+  </div>
+</div>
+<div class="flex mt-100">
+  <div class="mr-90">
+    <h2 class="guide-tit">Check box</h2>
+    <div class="form-guide-wrap">
+      <dl>
+        <dt>Mid</dt>
+        <dd>
+          <span class="checkbox">
+            <input type="checkbox" id="chkTest1" />
+            <label for="chkTest1" class="lbl">사용</label>
+          </span>
+          <span class="checkbox">
+            <input type="checkbox" id="chkTest2" />
+            <label for="chkTest2" class="lbl">사용안함</label>
+          </span>
+        </dd>
+      </dl>
+      <dl>
+        <dt></dt>
+        <dd>
+          <span class="checkbox">
+            <input type="checkbox" id="chkTest3" disabled checked />
+            <label for="chkTest3" class="lbl">사용</label>
+          </span>
+          <span class="checkbox">
+            <input type="checkbox" id="chkTest4" disabled />
+            <label for="chkTest4" class="lbl">사용안함</label>
+          </span>
+        </dd>
+      </dl>
+      <dl class="mt-40">
+        <dt>Small</dt>
+        <dd>
+          <span class="checkbox sm-check">
+            <input type="checkbox" id="chkTest5" />
+            <label for="chkTest5" class="lbl">사용</label>
+          </span>
+          <span class="checkbox sm-check">
+            <input type="checkbox" id="chkTest6" />
+            <label for="chkTest6" class="lbl">사용안함</label>
+          </span>
+        </dd>
+      </dl>
+      <dl>
+        <dt></dt>
+        <dd>
+          <span class="checkbox sm-check">
+            <input type="checkbox" id="chkTest7" disabled checked />
+            <label for="chkTest7" class="lbl">사용</label>
+          </span>
+          <span class="checkbox sm-check">
+            <input type="checkbox" id="chkTest8" disabled />
+            <label for="chkTest8" class="lbl">사용안함</label>
+          </span>
+        </dd>
+      </dl>
+    </div>
+  </div>
+  <div>
+    <h2 class="guide-tit">Radio</h2>
+    <div class="form-guide-wrap">
+      <dl>
+        <dt>Mid</dt>
+        <dd>
+          <div class="flex">
+            <div class="radio-box">
+              <input type="radio" id="radioTest1" name="large" />
+              <label for="radioTest1">사용</label>
+            </div>
+            <div class="radio-box">
+              <input type="radio" id="radioTest2" name="large" />
+              <label for="radioTest2">사용안함</label>
+            </div>
+          </div>
+        </dd>
+      </dl>
+      <dl>
+        <dt></dt>
+        <dd>
+          <div class="flex">
+            <div class="radio-box">
+              <input type="radio" id="radioTest3" name="large-disabled" disabled checked />
+              <label for="radioTest3">사용</label>
+            </div>
+            <div class="radio-box">
+              <input type="radio" id="radioTest4" name="large-disabled" disabled />
+              <label for="radioTest4">사용안함</label>
+            </div>
+          </div>
+        </dd>
+      </dl>
+      <dl class="mt-40">
+        <dt>Small</dt>
+        <dd>
+          <div class="flex">
+            <div class="radio-box small">
+              <input type="radio" id="radioTest5" name="small" />
+              <label for="radioTest5">사용</label>
+            </div>
+            <div class="radio-box small">
+              <input type="radio" id="radioTest6" name="small" />
+              <label for="radioTest6">사용안함</label>
+            </div>
+          </div>
+        </dd>
+      </dl>
+      <dl>
+        <dt></dt>
+        <dd>
+          <div class="flex">
+            <div class="radio-box small">
+              <input type="radio" id="radioTest7" name="small-disabled" disabled checked />
+              <label for="radioTest7">사용</label>
+            </div>
+            <div class="radio-box small">
+              <input type="radio" id="radioTest8" name="small-disabled" disabled />
+              <label for="radioTest8">사용안함</label>
+            </div>
+          </div>
+        </dd>
+      </dl>
+    </div>
+  </div>
+</div>
+<div class="mt-100">
+  <h2 class="guide-tit">Pagination</h2>
+  <div class="form-guide-wrap">
+    <dl>
+      <dt>Default</dt>
+      <dd>
+        <div class="page_wrap">
+          <ul class="page_nation">
+            <li><a class="arrow pprev" href="#"></a></li>
+            <li><a class="arrow prev" href="#"></a></li>
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a class="arrow next" href="#"></a></li>
+            <li><a class="arrow nnext" href="#"></a></li>
+          </ul>
+        </div>
+      </dd>
+    </dl>
+    <dl class="mt-16">
+      <dt>Hover</dt>
+      <dd>
+        <div class="page_wrap">
+          <ul class="page_nation">
+            <li><a class="arrow pprev" href="#"></a></li>
+            <li><a class="arrow prev" href="#"></a></li>
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a class="arrow next" href="#"></a></li>
+            <li><a class="arrow nnext" href="#"></a></li>
+          </ul>
+        </div>
+      </dd>
+    </dl>
+    <dl class="mt-16">
+      <dt>Disable</dt>
+      <dd>
+        <div class="page_wrap">
+          <ul class="page_nation disabled">
+            <li><a class="arrow pprev" href="#"></a></li>
+            <li><a class="arrow prev" href="#"></a></li>
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a class="arrow next" href="#"></a></li>
+            <li><a class="arrow nnext" href="#"></a></li>
+          </ul>
+        </div>
+      </dd>
+    </dl>
+  </div>
 </div>
