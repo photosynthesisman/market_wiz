@@ -307,7 +307,7 @@ textarea:disabled {
 :root {
   --vh: 1vh;
   --primary-color: #fae100;
-  --primary-color2: #1349b8;
+  --primary-color2: #055db5;
   --bg-color: #273043;
   --bg-color-blue01: #cccccc;
   --bg-color-blue02: #eeeeee;
@@ -8475,43 +8475,146 @@ jq-Datepicker
 
 .button {
   height: 4rem;
-  padding: 0.6rem 1.8rem;
-  border-radius: 0.8rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.6rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.button:disabled {
+  opacity: 0.4;
+}
+.button:hover {
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1215686275);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1215686275);
 }
 .button.no-pd {
   padding: 0;
 }
+.button.blue-line {
+  border: 1px solid var(--primary-color2);
+  color: var(--primary-color2);
+}
+.button.blue-line.download {
+  padding-left: 3.2rem;
+  background: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 16.6666H15M10 3.33325V13.3333M10 13.3333L12.9167 10.4166M10 13.3333L7.08333 10.4166' stroke='%23055DB5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") left 1.2rem center/2rem 2rem no-repeat;
+}
+.button.blue-line.download:disabled {
+  background: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 16.6666H15M10 3.33325V13.3333M10 13.3333L12.9167 10.4166M10 13.3333L7.08333 10.4166' stroke='%23055DB5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") left 1.2rem center/2rem 2rem no-repeat;
+}
 .button.line {
-  border: 1px solid #222;
+  position: relative;
+  z-index: 0;
+  border: none;
+  outline: none;
+  color: var(--strong-txt-color);
 }
-.button.line.l-blue {
-  border: 1px solid blue;
-  color: blue;
+.button.line.download {
+  border: 1px solid var(--line-color02);
 }
-.button.rounded {
-  border-radius: 2.4rem;
+.button.line.download::before, .button.line.download::after {
+  content: none;
 }
-.button.bg-grey {
-  background-color: #eee;
+.button.line::before, .button.line::after {
+  content: "";
+  position: absolute;
 }
-.button.bg-blue {
-  background-color: blue;
+.button.line::before {
+  z-index: -1;
+  border-radius: 0.5rem;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  background-color: var(--white-color);
+}
+.button.line::after {
+  z-index: -2;
+  border-radius: 0.6rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(76.39%, #aeb6d0), to(#939ab3));
+  background: linear-gradient(180deg, #aeb6d0 76.39%, #939ab3 100%);
+}
+.button.line:hover, .button.line.mouseover {
+  border: 1px solid var(--strong-txt-color);
+}
+.button.line:hover::before, .button.line:hover::after, .button.line.mouseover::before, .button.line.mouseover::after {
+  content: none;
+}
+.button.line:disabled {
+  opacity: 1;
+  background-color: #f6f6f6;
+  border: 1px solid var(--line-color02);
+  color: #999;
+}
+.button.line:disabled::before, .button.line:disabled::after {
+  content: none;
+}
+.button.download {
+  background: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 16.6666H15M10 3.33325V13.3333M10 13.3333L12.9167 10.4166M10 13.3333L7.08333 10.4166' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") left 1.2rem center/2rem 2rem no-repeat;
+}
+.button.download:disabled {
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 16.6666H15M10 3.33325V13.3333M10 13.3333L12.9167 10.4166M10 13.3333L7.08333 10.4166' stroke='%23CCCCCC' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.button.download.small {
+  padding-left: 3.2rem;
+}
+.button.bg-primary {
+  background-color: var(--primary-color2);
   color: var(--white-color);
 }
-.button.bg-black {
+.button.bg-primary:hover, .button.bg-primary.mouseover {
+  background-color: #064f98;
+}
+.button.bg-dark {
+  background-color: var(--strong-txt-color);
   color: var(--white-color);
+}
+.button.bg-dark:hover, .button.bg-dark.mouseover {
+  background-color: var(--base-txt-color);
 }
 .button.small {
   height: 3.2rem;
-  padding: 0.2rem 1rem;
+  padding: 0.6rem 1.6rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 .button + .button {
   margin-left: -0.4rem;
 }
-
-.contents button {
-  margin-right: 1rem;
+.button.round {
+  border-radius: 1.6rem;
 }
+.button.round.on {
+  background-color: var(--strong-txt-color);
+  color: var(--white-color);
+}
+.button.round.off {
+  background-color: #f6f6f6;
+  border: 1px solid var(--line-color01);
+  color: #999;
+}
+.button.round:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.button.mini {
+  height: 2.4rem;
+  padding: 0.3rem 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+}
+.button.mini.line.download {
+  padding-left: 2.2rem;
+  background: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 16.6666H15M10 3.33325V13.3333M10 13.3333L12.9167 10.4166M10 13.3333L7.08333 10.4166' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") left 0.6rem center/1.6rem 1.6rem no-repeat;
+}
+.button.mini.line.download:disabled {
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 16.6666H15M10 3.33325V13.3333M10 13.3333L12.9167 10.4166M10 13.3333L7.08333 10.4166' stroke='%23CCCCCC' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+
 .contents .select-box + .input,
 .contents .select-box + .select-box {
   margin-left: 1rem;
@@ -9314,6 +9417,20 @@ h3,
   line-height: 1.8rem;
 }
 
+.font-guide.no-line th[scope=row] {
+  padding-left: 0;
+}
+.font-guide.no-line th,
+.font-guide.no-line td {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #888;
+}
+.font-guide.no-line td {
+  padding: 0 0 1.2rem 0;
+  text-align: center;
+  border-bottom-width: 0;
+}
 .font-guide table {
   border: none;
 }

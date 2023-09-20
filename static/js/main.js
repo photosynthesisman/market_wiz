@@ -52,6 +52,8 @@ $(".market").on("click", ".folding-btn", function (e) {
 $("#font-guide").load("font-guide.html");
 $("#color-guide").load("color-guide.html");
 $("#form-guide").load("form-guide.html");
+$("#button-guide").load("button-guide.html");
+$("#popup-guide").load("popup-guide.html");
 $("#dashboard").load("dashboard.html");
 $("#collect-site-product").load("collect-site-product.html");
 
@@ -65,12 +67,14 @@ $(".market").on("click", ".close-lnb", function () {
 });
 
 //pooup 오픈
-$(".market").on("click", "#showPopup", function () {
-  $("#popup, #overlay").fadeIn();
+$(".market").on("click", ".open-pop", function () {
+  const popId = $(this).attr("data-name");
+  $("#" + popId).fadeIn();
+  $("#overlay").fadeIn();
 });
 
 $(".market").on("click", "#closePopup", function () {
-  $("#popup, #overlay").fadeOut();
+  $(".popup, #overlay").fadeOut();
 });
 
 //전체 선택

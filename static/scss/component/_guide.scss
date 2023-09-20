@@ -39,26 +39,45 @@ h3,
   font-size: 1.2rem;
   line-height: 1.8rem;
 }
-.font-guide table {
-  border: none;
-  th,
-  td {
-    background: none;
+.font-guide {
+  &.no-line {
+    th[scope="row"] {
+      padding-left: 0;
+    }
+    th,
+    td {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #888;
+    }
+    td {
+      padding: 0 0 1.2rem 0;
+      text-align: center;
+      border-bottom-width: 0;
+    }
+  }
+  table {
     border: none;
-  }
-  .left {
-    text-align: left;
-    padding-left: 0;
-  }
-  td {
-    padding-top: 4rem;
-    border-bottom: 1px solid #0000001f;
-    text-align: center;
-  }
-  tr:first-child td {
-    padding-top: 0;
+    th,
+    td {
+      background: none;
+      border: none;
+    }
+    .left {
+      text-align: left;
+      padding-left: 0;
+    }
+    td {
+      padding-top: 4rem;
+      border-bottom: 1px solid #0000001f;
+      text-align: center;
+    }
+    tr:first-child td {
+      padding-top: 0;
+    }
   }
 }
+
 .color-guide-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
