@@ -6,6 +6,9 @@
   font-weight: 600;
   &:disabled {
     opacity: 0.4;
+    &:hover {
+      box-shadow: none;
+    }
   }
   &:hover {
     box-shadow: 0px 4px 4px 0px #0000001f;
@@ -98,6 +101,9 @@
     &.mouseover {
       background-color: #064f98;
     }
+    &:disabled:hover {
+      background-color: var(--primary-color2);
+    }
   }
   &.bg-dark {
     background-color: var(--strong-txt-color);
@@ -105,6 +111,9 @@
     &:hover,
     &.mouseover {
       background-color: var(--base-txt-color);
+    }
+    &:disabled:hover {
+      background-color: var(--strong-txt-color);
     }
   }
   &.small {

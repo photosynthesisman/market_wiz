@@ -1,8 +1,175 @@
-<div>This is some <strong>bold</strong> text.</div>
-<button class="open-pop" data-name="showPopup">Show Popup</button>
-<div class="overlay" id="overlay"></div>
-<div class="popup" id="showPopup">
-  <h2>Popup Content</h2>
-  <p>This is a popup window.</p>
-  <button id="closePopup">Close</button>
+<h2 class="guide-tit">Alert</h2>
+<div class="form-guide-wrap">
+  <button class="open-pop button line mr-10" data-name="showAlert">버튼 1개</button>
+  <button class="open-pop button line mr-10" data-name="showAlert2">버튼 2개</button>
+  <button class="open-pop button line mr-10" data-name="showAlert3">버튼 Hover</button>
+  <button class="open-pop button line" data-name="showAlert4">3줄 이상 텍스트</button>
+</div>
+<div class="pop-box mt-20">
+  <div class="mr-20">
+    <div class="popup open">
+      <div class="txt-wrap">
+        <p>삭제하시겠습니까?</p>
+      </div>
+      <div class="bt-wrap">
+        <button class="">확인</button>
+      </div>
+    </div>
+    <p>버튼 1개</p>
+  </div>
+  <div class="mr-20">
+    <div class="popup open" id="">
+      <div class="txt-wrap">
+        <p>선택한 정보가 없습니다</p>
+      </div>
+      <div class="bt-wrap">
+        <button class="cancel">아니오</button>
+        <button class="">확인</button>
+      </div>
+    </div>
+    <p>버튼 2개</p>
+  </div>
+  <div class="mr-20">
+    <div class="popup open" id="">
+      <div class="txt-wrap">
+        <p>삭제하시겠습니까?</p>
+      </div>
+      <div class="bt-wrap">
+        <button class="hover">확인</button>
+      </div>
+    </div>
+    <p>버튼 Hover</p>
+  </div>
+  <div>
+    <div class="popup open" id="">
+      <div class="txt-wrap">
+        <p>
+          확인 버튼을 누르면<br />
+          내역이 삭제됩니다.<br />삭제내역은 복구할수 없습니다.
+        </p>
+      </div>
+      <div class="bt-wrap">
+        <button class="">확인</button>
+      </div>
+    </div>
+    <p>텍스트 3줄 이상 small 팝업 사용</p>
+  </div>
+</div>
+
+<div class="popup" id="showAlert">
+  <div class="txt-wrap">
+    <p>삭제하시겠습니까?</p>
+  </div>
+  <div class="bt-wrap">
+    <button class="closePopup">확인</button>
+  </div>
+</div>
+
+<div class="popup" id="showAlert2">
+  <div class="txt-wrap">
+    <p>선택한 정보가 없습니다</p>
+  </div>
+  <div class="bt-wrap">
+    <button class="closePopup cancel">아니오</button>
+    <button class="closePopup">확인</button>
+  </div>
+</div>
+
+<div class="popup" id="showAlert3">
+  <div class="txt-wrap">
+    <p>삭제하시겠습니까?</p>
+  </div>
+  <div class="bt-wrap">
+    <button class="closePopup hover">확인</button>
+  </div>
+</div>
+
+<div class="popup" id="showAlert4">
+  <div class="txt-wrap">
+    <p>
+      확인 버튼을 누르면<br />
+      내역이 삭제됩니다.<br />삭제내역은 복구할수 없습니다.
+    </p>
+  </div>
+  <div class="bt-wrap">
+    <button class="closePopup">확인</button>
+  </div>
+</div>
+<h2 class="guide-tit mt-100">POPUP</h2>
+<div class="form-guide-wrap">
+  <button class="open-pop button line mr-10" data-name="showPopup1">S - W:480</button>
+  <button class="open-pop button line mr-10" data-name="showPopup2">M - W:640</button>
+  <button class="open-pop button line mr-10" data-name="showPopup3">B - W:1024</button>
+</div>
+
+<div class="popup has-tit w480 open mt-20" id="">
+  <div class="pop-head">
+    <h2>배송 조회</h2>
+    <button class="close"></button>
+  </div>
+  <div class="pop-contents"></div>
+  <div class="pop-bottm">
+    <button class="button line">확인</button>
+    <button class="button bg-primary">메세지발송</button>
+  </div>
+</div>
+
+<div class="popup has-tit w640 open mt-20" id="">
+  <div class="pop-head">
+    <h2>배송 조회</h2>
+    <button class="close"></button>
+  </div>
+  <div class="pop-contents"></div>
+  <div class="pop-bottm">
+    <button class="button line">확인</button>
+    <button class="button bg-primary">메세지발송</button>
+  </div>
+</div>
+
+<div class="popup has-tit w1024 open mt-20" id="">
+  <div class="pop-head">
+    <h2>배송 조회</h2>
+    <button class="close"></button>
+  </div>
+  <div class="pop-contents"></div>
+  <div class="pop-bottm">
+    <button class="button line">확인</button>
+    <button class="button bg-primary">메세지발송</button>
+  </div>
+</div>
+
+<div class="popup has-tit w480" id="showPopup1">
+  <div class="pop-head">
+    <h2>배송 조회</h2>
+    <button class="close"></button>
+  </div>
+  <div class="pop-contents"></div>
+  <div class="pop-bottm">
+    <button class="button line">확인</button>
+    <button class="button bg-primary">메세지발송</button>
+  </div>
+</div>
+
+<div class="popup has-tit w640" id="showPopup2">
+  <div class="pop-head">
+    <h2>배송 조회</h2>
+    <button class="close"></button>
+  </div>
+  <div class="pop-contents"></div>
+  <div class="pop-bottm">
+    <button class="button line">확인</button>
+    <button class="button bg-primary">메세지발송</button>
+  </div>
+</div>
+
+<div class="popup has-tit w1024" id="showPopup3">
+  <div class="pop-head">
+    <h2>배송 조회</h2>
+    <button class="close"></button>
+  </div>
+  <div class="pop-contents"></div>
+  <div class="pop-bottm">
+    <button class="button line">확인</button>
+    <button class="button bg-primary">메세지발송</button>
+  </div>
 </div>

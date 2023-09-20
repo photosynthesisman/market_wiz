@@ -66,15 +66,20 @@ $(".market").on("click", ".close-lnb", function () {
   }
 });
 
-//pooup 오픈
+//pooup 오픈/클로즈
 $(".market").on("click", ".open-pop", function () {
   const popId = $(this).attr("data-name");
   $("#" + popId).fadeIn();
-  $("#overlay").fadeIn();
 });
-
-$(".market").on("click", "#closePopup", function () {
-  $(".popup, #overlay").fadeOut();
+$(".market").on("click", ".close", function () {
+  $(this).parents(".popup").fadeOut();
+});
+$(".market").on("click", ".closePopup", function () {
+  if ($(this).parents(".popup").hasClass("open")) {
+    return false;
+  } else {
+    $(this).parents(".popup").fadeOut();
+  }
 });
 
 //전체 선택
@@ -240,6 +245,8 @@ $(document).ready(function () {
     }
     $(".select-selected").click(function () {
       const disOptions = $(this).parent().find(".disabled");
+      const selectOptions = $(this).parent().find(".same-as-selected");
+      const hoverOptions = $(this).parent().find(".hover");
       disOptions.each(function () {
         const disText = $(this).text();
         const nextOption = $(this)
@@ -253,6 +260,38 @@ $(document).ready(function () {
           nextOption.removeClass("disabled");
         }
       });
+      selectOptions.each(function () {
+        const selText = $(this).text();
+        const nextOptions = $(this)
+          .parent()
+          .next()
+          .next()
+          .find($("div:contains(" + selText + ")"));
+        console.log(selText, nextOptions);
+        if ($(this).hasClass("same-as-selected")) {
+          nextOptions.addClass("same-as-selected");
+        } else {
+          nextOptions.removeClass("same-as-selected");
+        }
+      });
+      hoverOptions.each(function () {
+        const hoverText = $(this).text();
+        const _nextOption = $(this)
+          .parent()
+          .next()
+          .next()
+          .find($("div:contains(" + hoverText + ")"));
+        console.log(hoverText, _nextOption);
+        if ($(this).hasClass("hover")) {
+          _nextOption.addClass("hover");
+        } else {
+          _nextOption.removeClass("hover");
+        }
+      });
     });
+
+    // open select
+    const openSelect = $(".select-box.open").find(".select-selected");
+    openSelect.trigger("click");
   });
 });

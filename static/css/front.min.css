@@ -8483,6 +8483,10 @@ jq-Datepicker
 .button:disabled {
   opacity: 0.4;
 }
+.button:disabled:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 .button:hover {
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1215686275);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1215686275);
@@ -8568,12 +8572,18 @@ jq-Datepicker
 .button.bg-primary:hover, .button.bg-primary.mouseover {
   background-color: #064f98;
 }
+.button.bg-primary:disabled:hover {
+  background-color: var(--primary-color2);
+}
 .button.bg-dark {
   background-color: var(--strong-txt-color);
   color: var(--white-color);
 }
 .button.bg-dark:hover, .button.bg-dark.mouseover {
   background-color: var(--base-txt-color);
+}
+.button.bg-dark:disabled:hover {
+  background-color: var(--strong-txt-color);
 }
 .button.small {
   height: 3.2rem;
@@ -9054,6 +9064,10 @@ input[type=date]:disabled {
   background-color: #e9eff9;
   border-radius: 0.3rem;
 }
+.select-box .select-items .hover {
+  background-color: #e9eff9;
+  border-radius: 0.3rem;
+}
 .select-box .select-hide {
   display: none;
 }
@@ -9350,22 +9364,113 @@ input[type=date]:disabled {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 28rem;
+  height: 18rem;
   background-color: #fff;
-  padding: 20px;
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1.6rem;
+  border: 1px solid var(--line-color01);
+  -webkit-box-shadow: 12px 12px 20px -10px rgba(0, 0, 0, 0.04), 8px 8px 40px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 12px 12px 20px -10px rgba(0, 0, 0, 0.04), 8px 8px 40px 0px rgba(0, 0, 0, 0.16);
   z-index: 9999;
+  overflow: hidden;
+}
+.popup.has-tit {
+  padding: 3.2rem;
+  height: auto;
+}
+.popup.has-tit .pop-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.popup.has-tit .pop-contents {
+  margin-top: 2rem;
+  height: 20rem;
+  background-color: #ff1c37;
+  opacity: 0.1;
+}
+.popup.has-tit .pop-bottm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.popup.has-tit .close {
+  width: 3.2rem;
+  height: 3.2rem;
+  background: url("data:image/svg+xml,%0A%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.01074 22.9906L16.0014 15.9999L22.9921 22.9906M22.9921 9.00928L16.0001 15.9999L9.01074 9.00928' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") center center/3.2rem 3.2rem no-repeat;
+}
+.popup.w480 {
+  width: 48rem;
+}
+.popup.w640 {
+  width: 64rem;
+}
+.popup.w1024 {
+  width: 102.4rem;
+}
+.popup.open {
+  display: block;
+  position: static;
+  -webkit-transform: none;
+          transform: none;
+}
+.popup .txt-wrap {
+  height: 13rem;
+  position: relative;
+}
+.popup .txt-wrap p {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: 600;
+  text-align: center;
+}
+.popup .bt-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  border-top: 1px solid var(--line-color02);
+}
+.popup .bt-wrap button {
+  width: 100%;
+  height: 4.7rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary-color2);
+}
+.popup .bt-wrap button.cancel {
+  color: var(--sub-txt-color);
+  border-right: 1px solid var(--line-color02);
+}
+.popup .bt-wrap button.hover, .popup .bt-wrap button:hover {
+  background-color: #f6f6f6;
 }
 
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 9998;
+.pop-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pop-box .popup + p {
+  margin-top: 2.4rem;
+  color: #888888;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
 }
 
 .guide-tit {
