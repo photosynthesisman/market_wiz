@@ -31,7 +31,13 @@ $(".market").on("mouseout", ".tab:first-child", function () {
 $(".market").on("click", ".folding-panel li", function () {
   const tab_name = $(this).text();
   const data_name = $(this).data("name");
-  $(".tab-container ul").append('<li class="tab"><a href="#" data-tab="' + data_name + '">' + tab_name + '</a><span class="close-tab">닫기</span></li>');
+  $(".tab-container ul").append(
+    '<li class="tab"><a href="#" data-tab="' +
+      data_name +
+      '">' +
+      tab_name +
+      '</a><span class="close-tab">닫기</span></li>'
+  );
 });
 
 // lnb 하위 뎁스 열기
@@ -290,19 +296,23 @@ $(document).ready(function () {
       const openSelect = $(".select-box.open").find(".select-selected");
       openSelect.trigger("click");
     }
+
     //for custom select dropdown menu
-    $(".select-box").each(function () {
-      $(document).on("click", ".select-box .init", function () {
-        $(this).parents(".select-box").toggleClass("active");
-        $(this).closest("ul").children("li:not(.init)").toggle();
-      });
-      $(document).on("click", ".select-box ul li:not(.init)", function () {
-        $(this).parent().children("li:not(.init)").removeClass("selected");
-        $(this).addClass("selected");
-        $(this).parents(".select-box").find("ul").children(".init").html($(this).html());
-        $(this).parent().children("li:not(.init)").toggle();
-        $(this).parents(".select-box").removeClass("active");
-      });
+    // $(".select-box").each(function () {
+    $(document).on("click", ".select-box .init", function () {
+      if ($(this).parents(".select-box").hasClass("disabled")) {
+        return false;
+      }
+      $(this).parents(".select-box").toggleClass("active");
+      $(this).closest("ul").children("li:not(.init)").toggle();
     });
+    $(document).on("click", ".select-box ul li:not(.init)", function () {
+      $(this).parent().children("li:not(.init)").removeClass("selected");
+      $(this).addClass("selected");
+      $(this).parents(".select-box").find("ul").children(".init").html($(this).html());
+      $(this).parent().children("li:not(.init)").toggle();
+      $(this).parents(".select-box").removeClass("active");
+    });
+    // });
   });
 });

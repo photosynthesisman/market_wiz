@@ -78,10 +78,12 @@ input {
   &::placeholder {
     color: #999999;
   }
-  &:hover {
+  &:hover,
+  &.hover {
     border: 1px solid var(--primary-color2);
   }
-  &:focus {
+  &:focus,
+  &.focused {
     border: 1px solid var(--strong-txt-color);
   }
   &:disabled {
@@ -563,6 +565,13 @@ input[type="date"] {
   }
   &.validation {
     border: 1px solid var(--alert-txt-color);
+    li:not(.init) {
+      border-left-color: var(--alert-txt-color);
+      border-right-color: var(--alert-txt-color);
+    }
+    li:last-child {
+      border-bottom-color: var(--alert-txt-color);
+    }
   }
   ul {
     position: absolute;
