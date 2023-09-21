@@ -48,7 +48,6 @@ body {
   // html.is-app & {
   //   overscroll-behavior-y: contain; // 당겨서 새로고침 막기
   // }
-  background-color: var(--bg-color);
 }
 
 html.mobile {
@@ -62,7 +61,6 @@ html.mobile {
     outline: none;
   }
 }
-
 html.pc {
   ::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.05);
@@ -353,7 +351,7 @@ html.pc {
 .w-auto {
   width: auto !important;
 }
-@for $i from 0 through 300 {
+@for $i from 0 through 600 {
   .w-#{$i} {
     width: $i * 0.1rem !important;
   }
@@ -728,68 +726,6 @@ html.pc {
   pointer-events: auto;
 }
 
-// skeleton
-.skeleton-wrap {
-  pointer-events: none;
-  position: relative;
-  overflow: hidden;
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: -50%;
-    top: 0;
-    width: 200%;
-    height: 100%;
-    background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.5) 40% 60%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    background-size: 10rem 100%;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    transform: skewX(-12deg);
-    animation: skeleton-ef 2s linear infinite;
-  }
-}
-.skeleton-txt {
-  pointer-events: none;
-  cursor: pointer;
-  color: transparent !important;
-  word-break: break-all !important;
-  background: linear-gradient(to bottom, transparent 0% 25%, #f1f1f1 25% 75%, transparent 75% 100%);
-  * {
-    opacity: 0 !important;
-  }
-}
-.skeleton-bg {
-  pointer-events: none;
-  cursor: pointer;
-  color: transparent !important;
-  border-color: transparent !important;
-  background-color: transparent !important;
-  word-break: break-all !important;
-  background: #f1f1f1 !important;
-  * {
-    opacity: 0 !important;
-  }
-  @for $i from 2 through 5 {
-    &:nth-child(#{$i}) {
-      animation-delay: ($i - 1) * 300ms;
-    }
-  }
-}
-@keyframes skeleton-ef {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 0;
-  }
-}
-
 .hr-line {
   display: block;
   margin: 0;
@@ -834,16 +770,7 @@ html.is-app {
   //   @include is-native;
   // }
 }
-.index-inner {
-  padding: 4rem;
-  h3 {
-    color: var(--white-color);
-  }
-  .table td {
-    text-align: center;
-    color: var(--white-color);
-  }
-}
+
 .select {
   border: none;
   -o-appearance: none;
@@ -856,10 +783,11 @@ input {
   outline: none;
 }
 .h-line {
-  margin: 3.2rem 0;
+  margin: 4rem 0;
+  border-color: var(--line-color02);
   &.bold {
-    margin: 2.4rem 0;
-    border-width: 0.2rem;
+    margin: 2rem 0 3.2rem;
+    border-color: var(--line-color01);
   }
 }
 .pagination {

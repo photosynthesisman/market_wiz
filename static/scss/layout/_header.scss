@@ -1,5 +1,6 @@
 .header-space {
   position: sticky;
+  z-index: 9999;
   display: flex;
   justify-content: space-between;
   top: 0;
@@ -7,10 +8,21 @@
   flex-shrink: 0;
   background-color: var(--primary-color2);
   color: var(--white-color);
-  .select {
-    width: 18rem;
-    height: 4.8rem;
-    padding: 1.2rem;
+  .select-box {
+    border: none;
+    &.active {
+      border: none;
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 14L12.2121 9.21213C12.095 9.09498 11.905 9.09497 11.7879 9.21213L7 14' stroke='white' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    }
+    li {
+      border: none;
+      &.init {
+        cursor: pointer;
+        & + li::before {
+          content: none;
+        }
+      }
+    }
   }
 }
 .head-left,
@@ -30,7 +42,7 @@
     display: block;
     width: 12rem;
     height: 2.3rem;
-    margin-right: 3.2rem;
+    margin-right: 2.2rem;
     font-size: 0;
     background: url(../images/common/marketwiz-logo.png) no-repeat;
   }
@@ -39,16 +51,20 @@
   }
   .select-box {
     width: 13.2rem;
-    .select-selected {
-      padding: 0;
-      background: var(--primary-color2)
-        url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10L11.7879 14.7879C11.905 14.905 12.095 14.905 12.2121 14.7879L17 10' stroke='%23FFFFFF' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A")
-        center right 0.4rem / 2.4rem 2.4rem no-repeat;
-      border: none;
-      font-weight: 700;
-      &:hover {
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10L11.7879 14.7879C11.905 14.905 12.095 14.905 12.2121 14.7879L17 10' stroke='%23FFFFFF' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    background-position: right -0.5rem center;
+    border: none;
+    li {
+      padding: 0 0 0 1rem;
+      &:not(.init) {
+        background-color: var(--primary-color2);
         border: none;
+        color: var(--white-color);
       }
+    }
+    li:not(.init):hover::after,
+    li.hover::after {
+      background-color: transparent;
     }
   }
 }
@@ -79,10 +95,26 @@
   .select-box {
     width: 11.6rem;
     margin-right: 2rem;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10L11.7879 14.7879C11.905 14.905 12.095 14.905 12.2121 14.7879L17 10' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    background-position: right -0.5rem center;
     border: none;
+    &.active {
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 14L12.2121 9.21213C12.095 9.09498 11.905 9.09497 11.7879 9.21213L7 14' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    }
     li {
+      padding: 0 0 0 1rem;
       color: var(--base-txt-color);
       font-weight: 600;
+
+      &:not(.init) {
+        background-color: var(--primary-color);
+        border: none;
+        color: var(--base-txt-color);
+      }
+      &:not(.init):hover::after,
+      &.hover::after {
+        background-color: transparent;
+      }
     }
   }
   .input {

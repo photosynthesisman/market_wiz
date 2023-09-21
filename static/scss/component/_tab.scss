@@ -1,36 +1,40 @@
 .tab-container .close-tab {
   display: block;
   margin-left: 1rem;
-  width: 3rem;
-  height: 3rem;
-  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 -960 960 960' width='24'%3E%3Cpath d='m257.5-239-18-18.5 222-222.5-222-222.5 18-18.5L480-498.5 702.5-721l18 18.5-222 222.5 222 222.5-18 18.5L480-461.5 257.5-239Z' fill='%23FFFFFF'/%3E%3C/svg%3E");
-  background-position: center center;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.50537 11.4953L8.0007 8L11.496 11.4953M11.496 4.50467L8.00004 8L4.50537 4.50467' stroke='%23666666' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+    center center / 100% no-repeat;
+
   cursor: pointer;
   font-size: 0;
 }
-
+.tab-container {
+  padding-left: 5.2rem;
+}
 .tab-container ul {
   display: flex;
-  background-color: var(--bg-color);
+  background-color: #e9eff9;
 }
-
 .tab {
   display: flex;
   align-items: center;
-  height: 5rem;
-  padding: 1rem 2rem;
+  height: 4.8rem;
+  padding: 1.5rem 2.4rem 1.3rem 2.4rem;
   cursor: pointer;
   background-color: var(--bg-color);
-  color: #fff;
+  background-color: #e9eff9;
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
-
 .tab:hover,
 .tab.active {
-  background-color: #fff;
-  color: #222;
+  background-color: var(--white-color);
+  color: var(--primary-color2);
+  font-weight: 700;
   border-radius: 1.2rem 1.2rem 0 0;
   .close-tab {
-    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 -960 960 960' width='24'%3E%3Cpath d='m257.5-239-18-18.5 222-222.5-222-222.5 18-18.5L480-498.5 702.5-721l18 18.5-222 222.5 222 222.5-18 18.5L480-461.5 257.5-239Z' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.50534 11.4953L8.00067 8L11.496 11.4953M11.496 4.50467L8.00001 8L4.50534 4.50467' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   }
   a {
     line-height: 5rem;
@@ -39,12 +43,14 @@
 
 .tab-content {
   display: none;
-  min-height: calc(100vh - 18rem);
-  padding: 3.2rem;
-  background-color: #fff;
-  border-radius: 2.4rem;
+  height: 100%;
+  padding: 4rem 4.8rem;
+  background-color: var(--white-color);
   iframe body {
     margin: 0;
+  }
+  .contents {
+    padding-right: 5.6rem;
   }
 }
 #dashboard {

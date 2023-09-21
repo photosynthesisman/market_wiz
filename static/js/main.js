@@ -21,12 +21,12 @@ $(".market").on("click", ".close-tab", function () {
 });
 
 // 탭 메뉴 호버 시 컨텐츠 border-raduis
-$(".market").on("mouseover", ".tab:first-child", function () {
-  $(".tab-content").css({ "border-top-left-radius": "0" });
-});
-$(".market").on("mouseout", ".tab:first-child", function () {
-  $(".tab-content").css({ "border-top-left-radius": "2.4rem" });
-});
+// $(".market").on("mouseover", ".tab:first-child", function () {
+//   $(".tab-content").css({ "border-top-left-radius": "0" });
+// });
+// $(".market").on("mouseout", ".tab:first-child", function () {
+//   $(".tab-content").css({ "border-top-left-radius": "2.4rem" });
+// });
 // lnb 메뉴 클릭시 탭 생성
 $(".market").on("click", ".folding-panel li", function () {
   const tab_name = $(this).text();
