@@ -29,7 +29,13 @@ $(".market").on("click", ".close-tab", function () {
 // });
 // lnb 메뉴 클릭시 탭 생성
 $(".market").on("click", ".folding-panel li", function () {
-  const tab_name = $(this).text();
+  var clickedText = $(this)
+    .contents()
+    .filter(function () {
+      return this.nodeType == 3;
+    })
+    .text();
+  const tab_name = clickedText;
   const data_name = $(this).data("name");
   $(".tab-container ul").append(
     '<li class="tab"><a href="#" data-tab="' +
@@ -315,4 +321,13 @@ $(document).ready(function () {
     });
     // });
   });
+});
+$(".market").on("click", ".has-depth", function () {
+  if ($(this).hasClass("active")) {
+    $(this).removeClass("active");
+    $(this).find("ul").fadeOut();
+  } else {
+    $(this).addClass("active");
+    $(this).find("ul").fadeIn();
+  }
 });

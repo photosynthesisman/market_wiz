@@ -44,13 +44,10 @@
 .tab-content {
   display: none;
   height: 100%;
-  padding: 4rem 4.8rem;
+  padding: 4rem 4.8rem 6.4rem;
   background-color: var(--white-color);
   iframe body {
     margin: 0;
-  }
-  .contents {
-    padding-right: 5.6rem;
   }
 }
 #dashboard {
