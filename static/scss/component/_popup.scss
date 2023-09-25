@@ -8,15 +8,17 @@
       align-content: center;
     }
     .pop-contents {
-      margin-top: 2rem;
-      height: 20rem;
-      background-color: var(--alert-txt-color);
-      opacity: 0.1;
+      margin-top: 2.4rem;
+
+      &.guide {
+        background-color: var(--alert-txt-color);
+        opacity: 0.1;
+      }
     }
     .pop-bottm {
       display: flex;
       justify-content: end;
-      margin-top: 2rem;
+      margin-top: 2.4rem;
       gap: 1rem;
     }
     .close {

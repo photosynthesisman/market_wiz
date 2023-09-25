@@ -61,7 +61,10 @@ $("#form-guide").load("form-guide.html");
 $("#button-guide").load("button-guide.html");
 $("#popup-guide").load("popup-guide.html");
 $("#dashboard").load("dashboard.html");
+$("#collect-my-product").load("collect-my-product.html");
 $("#collect-site-product").load("collect-site-product.html");
+$("#waiting-product").load("waiting-product.html");
+$("#manage-claim").load("manage-claim.html");
 
 // lnb 접기/펼치기
 $(".market").on("click", ".close-lnb", function () {
@@ -89,7 +92,7 @@ $(".market").on("click", ".closePopup", function () {
 });
 
 //전체 선택
-$(".market").on("click", "#chk_all", function () {
+$(".market").on("click", "[id^=chk_all]", function () {
   const checkItem = $(".item-wrap").find("input[type=checkbox]");
   if (!$(this).prop("checked")) {
     checkItem.prop("checked", false);
@@ -98,7 +101,7 @@ $(".market").on("click", "#chk_all", function () {
   }
 });
 $(".market").on("click", ".item input[type=checkbox]", function () {
-  const chkAll = $("#chk_all");
+  const chkAll = $("[id^=chk_all]");
   const siblingCheck = $(this).parents(".item").siblings().find("input[type=checkbox]");
   if (siblingCheck.length === siblingCheck.filter(":checked").length && $(this).prop("checked")) {
     chkAll.prop("checked", true);
@@ -330,4 +333,11 @@ $(".market").on("click", ".has-depth", function () {
     $(this).addClass("active");
     $(this).find("ul").fadeIn();
   }
+});
+//tooltip 관련
+$(".market").on("mouseover", ".tooltip", function () {
+  $(this).next().stop().show();
+});
+$(".market").on("mouseout", ".tooltip", function () {
+  $(this).next().stop().hide();
 });

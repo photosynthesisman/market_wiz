@@ -1,10 +1,6 @@
 <div class="tit-wrap">
   <h2 class="h1">
-    사이트 상품수집
-    <i class="tooltip">툴팁</i>
-    <div class="tooltip-txt">
-      <p>수집 후 저장하지 않은 상품 목록입니다.</p>
-    </div>
+    내스토어상품수집
     <i class="favorite">즐겨찾기</i>
     <!-- 즐겨찾기 등록된 경우-->
     <!-- <i class="favorite checked">즐겨찾기</i> -->
@@ -12,124 +8,59 @@
   <div class="path">
     <a href="#none" class="home">홈 바로가기</a>
     <a href="#none" class="1depth">상품수집관리</a>
-    <a href="#none" class="2depth">사이트 상품 수집</a>
+    <a href="#none" class="2depth">내스토어상품수집</a>
   </div>
 </div>
 <div class="contents">
   <div class="search-wrap">
     <dl>
-      <dt>사이트<i class="require"></i></dt>
-      <dd>
-        <div class="select-box">
-          <ul>
-            <li class="init">사용기준정보</li>
-            <li data-value="1">쿠팡</li>
-            <li data-value="2">네이버</li>
-            <li data-value="3">지마켓</li>
-            <li data-value="4">11번가</li>
-            <li data-value="5">롯데온</li>
-            <li data-value="6">타오바오</li>
-            <li data-value="7">알리익스프레스</li>
-            <li data-value="8">1688</li>
-            <li data-value="9">아마존(미국)</li>
-            <li data-value="10">아마존(일본)</li>
-            <li data-value="11">아마존(독일)</li>
-          </ul>
-        </div>
-      </dd>
-      <dt class="ml-64">대량/개별</dt>
-      <dd>
-        <div class="flex">
-          <div class="radio-box">
-            <input type="radio" id="collect1" name="collect" />
-            <label for="collect1">대량수집</label>
-          </div>
-          <div class="radio-box">
-            <input type="radio" id="collect2" name="collect" />
-            <label for="collect2">개별수집</label>
-          </div>
-        </div>
-      </dd>
-    </dl>
-    <dl class="">
-      <dt>수집방식<i class="require"></i></dt>
+      <dt>내스토어</dt>
       <dd>
         <div class="search-box">
           <div class="select-box">
             <ul>
-              <li class="init">키워드</li>
-              <li data-value="1">URL</li>
-              <li data-value="2">키워드</li>
+              <li class="init">사용기준정보</li>
+              <li data-value="1">쿠팡</li>
+              <li data-value="2">네이버</li>
+              <li data-value="3">지마켓</li>
+              <li data-value="4">11번가</li>
+              <li data-value="5">롯데온</li>
+              <li data-value="6">타오바오</li>
+              <li data-value="7">알리익스프레스</li>
+              <li data-value="8">1688</li>
+              <li data-value="9">아마존(미국)</li>
+              <li data-value="10">아마존(일본)</li>
+              <li data-value="11">아마존(독일)</li>
             </ul>
           </div>
-          <div class="input w-600">
-            <input type="text" placeholder="검색하실 상품명을 입력해주세요" title="내용입력" />
-          </div>
-        </div>
-      </dd>
-    </dl>
-    <dl class="align-start">
-      <dt>수집방식<i class="require"></i></dt>
-      <dd>
-        <div class="search-box">
-          <div class="select-box disabled">
+          <div class="select-box">
             <ul>
-              <li class="init">URL</li>
-              <li data-value="1">URL</li>
-              <li data-value="2">키워드</li>
+              <li class="init">사용기준정보</li>
+              <li data-value="1">쿠팡</li>
+              <li data-value="2">네이버</li>
+              <li data-value="3">지마켓</li>
+              <li data-value="4">11번가</li>
+              <li data-value="5">롯데온</li>
+              <li data-value="6">타오바오</li>
+              <li data-value="7">알리익스프레스</li>
+              <li data-value="8">1688</li>
+              <li data-value="9">아마존(미국)</li>
+              <li data-value="10">아마존(일본)</li>
+              <li data-value="11">아마존(독일)</li>
             </ul>
-          </div>
-          <div class="text-area w-600">
-            <textarea
-              rows="1"
-              placeholder="데이터를 수집하실 상품의 상세페이지 URL를 http://를 포함하여 입력해주세요.&#10;줄바꿈(엔터) 하여 여러개의 URL 입력하시면 입력하신 URL을 한번에 수집합니다"
-            ></textarea>
           </div>
         </div>
       </dd>
-    </dl>
-    <dl>
-      <dt>수집설정현황</dt>
+
+      <dt class="ml-64">수집URL</dt>
       <dd>
-        <ul class="cr-situation">
-          <li>
-            <dl>
-              <dt>저장상품수</dt>
-              <dd>1,000개</dd>
-            </dl>
-          </li>
-          <li>
-            <dl>
-              <dt>옵션</dt>
-              <dd>포함</dd>
-            </dl>
-          </li>
-          <li>
-            <dl>
-              <dt>품절상품</dt>
-              <dd>미포함</dd>
-            </dl>
-          </li>
-          <li>
-            <dl>
-              <dt>금지어</dt>
-              <dd>설정</dd>
-            </dl>
-          </li>
-          <li>
-            <dl>
-              <dt>리뷰</dt>
-              <dd>20개 이상</dd>
-            </dl>
-          </li>
-          <li>
-            <a href="#none" class="change-set rounded" title="수집 설정변경">수집설정변경</a>
-          </li>
-        </ul>
+        <div class="input w-600">
+          <input type="text" placeholder="데이터를 수집할 URL을 입력해주세요." title="내용입력" />
+        </div>
       </dd>
     </dl>
     <div class="button-wrap mt-20">
-      <button class="button line mr-8">저장대기상품<i class="new">NEW</i></button>
+      <button class="button line mr-8">저장대기상품</button>
       <button class="button bg-primary">상품수집</button>
     </div>
   </div>
@@ -174,13 +105,6 @@
           <div class="right">
             <div class="select-box">
               <ul>
-                <li class="init">최근주문</li>
-                <li data-value="1">이미지보기</li>
-                <li data-value="2">리스트보기</li>
-              </ul>
-            </div>
-            <div class="select-box">
-              <ul>
                 <li class="init">50개씩 보기</li>
                 <li data-value="1">50개씩 보기</li>
                 <li data-value="2">100개씩 보기</li>
@@ -200,8 +124,8 @@
           <div class="item">
             <div class="img">
               <span class="checkbox no-label sm-check">
-                <input type="checkbox" id="chk1" />
-                <label for="chk1" class="lbl"></label>
+                <input type="checkbox" id="chk1-1" />
+                <label for="chk1-1" class="lbl"></label>
               </span>
             </div>
             <div class="txt-wrap">
@@ -215,8 +139,8 @@
           <div class="item">
             <div class="img">
               <span class="checkbox no-label sm-check">
-                <input type="checkbox" id="chk2" />
-                <label for="chk2" class="lbl"></label>
+                <input type="checkbox" id="chk1-2" />
+                <label for="chk1-2" class="lbl"></label>
               </span>
             </div>
             <div class="txt-wrap">
@@ -230,8 +154,8 @@
           <div class="item">
             <div class="img">
               <span class="checkbox no-label sm-check">
-                <input type="checkbox" id="chk3" />
-                <label for="chk3" class="lbl"></label>
+                <input type="checkbox" id="chk1-3" />
+                <label for="chk1-3" class="lbl"></label>
               </span>
             </div>
             <div class="txt-wrap">
@@ -245,8 +169,8 @@
           <div class="item">
             <div class="img">
               <span class="checkbox no-label sm-check">
-                <input type="checkbox" id="chk4" />
-                <label for="chk4" class="lbl"></label>
+                <input type="checkbox" id="chk1-4" />
+                <label for="chk1-4" class="lbl"></label>
               </span>
             </div>
             <div class="txt-wrap">
@@ -260,8 +184,8 @@
           <div class="item">
             <div class="img">
               <span class="checkbox no-label sm-check">
-                <input type="checkbox" id="chk5" />
-                <label for="chk5" class="lbl"></label>
+                <input type="checkbox" id="chk1-5" />
+                <label for="chk1-5" class="lbl"></label>
               </span>
             </div>
             <div class="txt-wrap">
@@ -275,8 +199,8 @@
           <div class="item">
             <div class="img">
               <span class="checkbox no-label sm-check">
-                <input type="checkbox" id="chk6" />
-                <label for="chk6" class="lbl"></label>
+                <input type="checkbox" id="chk1-6" />
+                <label for="chk1-6" class="lbl"></label>
               </span>
             </div>
             <div class="txt-wrap">
@@ -290,8 +214,8 @@
           <div class="item">
             <div class="img">
               <span class="checkbox no-label sm-check">
-                <input type="checkbox" id="chk7" />
-                <label for="chk7" class="lbl"></label>
+                <input type="checkbox" id="chk1-7" />
+                <label for="chk1-7" class="lbl"></label>
               </span>
             </div>
             <div class="txt-wrap">
@@ -305,8 +229,8 @@
           <div class="item">
             <div class="img">
               <span class="checkbox no-label sm-check">
-                <input type="checkbox" id="chk8" />
-                <label for="chk8" class="lbl"></label>
+                <input type="checkbox" id="chk1-8" />
+                <label for="chk1-8" class="lbl"></label>
               </span>
             </div>
             <div class="txt-wrap">
@@ -320,8 +244,8 @@
           <div class="item">
             <div class="img">
               <span class="checkbox no-label sm-check">
-                <input type="checkbox" id="chk9" />
-                <label for="chk9" class="lbl"></label>
+                <input type="checkbox" id="chk1-9" />
+                <label for="chk1-9" class="lbl"></label>
               </span>
             </div>
             <div class="txt-wrap">
@@ -335,8 +259,8 @@
           <div class="item">
             <div class="img">
               <span class="checkbox no-label sm-check">
-                <input type="checkbox" id="chk10" />
-                <label for="chk10" class="lbl"></label>
+                <input type="checkbox" id="chk1-10" />
+                <label for="chk1-10" class="lbl"></label>
               </span>
             </div>
             <div class="txt-wrap">

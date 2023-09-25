@@ -1,9 +1,11 @@
 <div class="tit-wrap">
   <h2 class="h1">
-    사이트 상품수집
+    저장대기상품
     <i class="tooltip">툴팁</i>
     <div class="tooltip-txt">
-      <p>수집 후 저장하지 않은 상품 목록입니다.</p>
+      <!-- 두 줄 이상일 경우 p태그에 클래스 dot 추가 -->
+      <p class="dot">수집 후 저장하지 않은 상품 목록입니다.</p>
+      <p class="dot">저장대기상품은 수집일부터 90일간 보관되어 노출됩니다.</p>
     </div>
     <i class="favorite">즐겨찾기</i>
     <!-- 즐겨찾기 등록된 경우-->
@@ -12,17 +14,17 @@
   <div class="path">
     <a href="#none" class="home">홈 바로가기</a>
     <a href="#none" class="1depth">상품수집관리</a>
-    <a href="#none" class="2depth">사이트 상품 수집</a>
+    <a href="#none" class="2depth">저장대기상품</a>
   </div>
 </div>
 <div class="contents">
   <div class="search-wrap">
     <dl>
-      <dt>사이트<i class="require"></i></dt>
+      <dt>사이트</dt>
       <dd>
         <div class="select-box">
           <ul>
-            <li class="init">사용기준정보</li>
+            <li class="init placeholder">선택하세요</li>
             <li data-value="1">쿠팡</li>
             <li data-value="2">네이버</li>
             <li data-value="3">지마켓</li>
@@ -37,120 +39,43 @@
           </ul>
         </div>
       </dd>
-      <dt class="ml-64">대량/개별</dt>
+      <dt class="ml-64">검색어</dt>
       <dd>
-        <div class="flex">
-          <div class="radio-box">
-            <input type="radio" id="collect1" name="collect" />
-            <label for="collect1">대량수집</label>
-          </div>
-          <div class="radio-box">
-            <input type="radio" id="collect2" name="collect" />
-            <label for="collect2">개별수집</label>
-          </div>
+        <div class="input w-600">
+          <input type="text" placeholder="상품명을 입력하세요." title="내용입력" />
         </div>
       </dd>
     </dl>
     <dl class="">
-      <dt>수집방식<i class="require"></i></dt>
+      <dt>기간</dt>
       <dd>
         <div class="search-box">
-          <div class="select-box">
-            <ul>
-              <li class="init">키워드</li>
-              <li data-value="1">URL</li>
-              <li data-value="2">키워드</li>
-            </ul>
-          </div>
-          <div class="input w-600">
-            <input type="text" placeholder="검색하실 상품명을 입력해주세요" title="내용입력" />
-          </div>
-        </div>
-      </dd>
-    </dl>
-    <dl class="align-start">
-      <dt>수집방식<i class="require"></i></dt>
-      <dd>
-        <div class="search-box">
-          <div class="select-box disabled">
-            <ul>
-              <li class="init">URL</li>
-              <li data-value="1">URL</li>
-              <li data-value="2">키워드</li>
-            </ul>
-          </div>
-          <div class="text-area w-600">
-            <textarea
-              rows="1"
-              placeholder="데이터를 수집하실 상품의 상세페이지 URL를 http://를 포함하여 입력해주세요.&#10;줄바꿈(엔터) 하여 여러개의 URL 입력하시면 입력하신 URL을 한번에 수집합니다"
-            ></textarea>
+          <input type="date" value="2023-05-29" />
+          <span class="mg-5-x">~</span>
+          <input type="date" value="2023-05-29" />
+          <div class="radio-box ty2 ml-16">
+            <input type="radio" id="radioty2-1" name="radiobox-ty2" checked />
+            <label for="radioty2-1">오늘</label>
+            <input type="radio" id="radioty2-2" name="radiobox-ty2" />
+            <label for="radioty2-2">1주</label>
+            <input type="radio" id="radioty2-3" name="radiobox-ty2" />
+            <label for="radioty2-3">2주</label>
+            <input type="radio" id="radioty2-4" name="radiobox-ty2" />
+            <label for="radioty2-4">1개월</label>
+            <input type="radio" id="radioty2-5" name="radiobox-ty2" />
+            <label for="radioty2-5">2개월</label>
+            <input type="radio" id="radioty2-6" name="radiobox-ty2" />
+            <label for="radioty2-6">6개월</label>
           </div>
         </div>
-      </dd>
-    </dl>
-    <dl>
-      <dt>수집설정현황</dt>
-      <dd>
-        <ul class="cr-situation">
-          <li>
-            <dl>
-              <dt>저장상품수</dt>
-              <dd>1,000개</dd>
-            </dl>
-          </li>
-          <li>
-            <dl>
-              <dt>옵션</dt>
-              <dd>포함</dd>
-            </dl>
-          </li>
-          <li>
-            <dl>
-              <dt>품절상품</dt>
-              <dd>미포함</dd>
-            </dl>
-          </li>
-          <li>
-            <dl>
-              <dt>금지어</dt>
-              <dd>설정</dd>
-            </dl>
-          </li>
-          <li>
-            <dl>
-              <dt>리뷰</dt>
-              <dd>20개 이상</dd>
-            </dl>
-          </li>
-          <li>
-            <a href="#none" class="change-set rounded" title="수집 설정변경">수집설정변경</a>
-          </li>
-        </ul>
       </dd>
     </dl>
     <div class="button-wrap mt-20">
-      <button class="button line mr-8">저장대기상품<i class="new">NEW</i></button>
-      <button class="button bg-primary">상품수집</button>
+      <button class="button bg-primary">검색</button>
     </div>
   </div>
   <hr class="h-line" />
   <div class="result-wrap">
-    <div class="summary-box">
-      <ul>
-        <li>
-          <span class="complete">수집완료</span>
-          <p>알리익스프레스</p>
-        </li>
-        <li>
-          <span class="collecting">수집중</span>
-          <p>알리익스프레스</p>
-        </li>
-        <li>
-          <span class="waiting">대기중</span>
-          <p>알리익스프레스</p>
-        </li>
-      </ul>
-    </div>
     <div class="result-box">
       <div class="list-top">
         <div class="left">
@@ -159,7 +84,10 @@
           <button class="button small bg-dark">옵션별 상품저장</button>
           <i class="tooltip"></i>
         </div>
-        <button class="button small line">선택상품삭제</button>
+        <div class="button-wrap">
+          <button class="button small line">선택상품삭제</button>
+          <button class="button small line">전체상품삭제</button>
+        </div>
       </div>
       <div class="product-list">
         <div class="list-summary">

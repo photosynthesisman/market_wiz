@@ -14,6 +14,7 @@
   --base-txt-color: #202020;
   --strong-txt-color: #42444e;
   --sub-txt-color: #666666;
+  --sub-txt-color2: #999999;
 
   --alert-txt-color: #ff1c37;
   --placeholder-txt-color: #b9c1c9;
@@ -84,6 +85,9 @@ html.pc {
 /*color*/
 .fc-primary {
   color: var(--primary-color) !important;
+}
+.fc-primary2 {
+  color: var(--primary-color2) !important;
 }
 .fc-red {
   color: var(--alert-txt-color) !important;
@@ -351,6 +355,9 @@ html.pc {
 .w-auto {
   width: auto !important;
 }
+.w-100p {
+  width: 100% !important;
+}
 @for $i from 0 through 600 {
   .w-#{$i} {
     width: $i * 0.1rem !important;
@@ -395,11 +402,11 @@ html.pc {
 .h-auto {
   height: auto !important;
 }
-// @for $i from 0 through 100 {
-//   .h-#{$i} {
-//     height: $i * 0.1rem !important;
-//   }
-// }
+@for $i from 0 through 100 {
+  .h-#{$i} {
+    height: $i * 0.1rem !important;
+  }
+}
 // @for $i from 1 through 40 {
 //   .h-#{$i*5 + 100} {
 //     height: $i * 0.5rem + 10rem !important;
@@ -429,29 +436,29 @@ html.pc {
 }
 
 // margin
-// .mg-auto {
-//   margin: auto !important;
-// }
-// .mg-auto-x {
-//   margin-left: auto !important;
-//   margin-right: auto !important;
-// }
-// .mg-auto-y {
-//   margin-top: auto !important;
-//   margin-bottom: auto !important;
-// }
-// .ml-auto {
-//   margin-left: auto !important;
-// }
-// .mr-auto {
-//   margin-right: auto !important;
-// }
-// .mt-auto {
-//   margin-top: auto !important;
-// }
-// .mb-auto {
-//   margin-bottom: auto !important;
-// }
+.mg-auto {
+  margin: auto !important;
+}
+.mg-auto-x {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.mg-auto-y {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+.ml-auto {
+  margin-left: auto !important;
+}
+.mr-auto {
+  margin-right: auto !important;
+}
+.mt-auto {
+  margin-top: auto !important;
+}
+.mb-auto {
+  margin-bottom: auto !important;
+}
 @for $i from 0 through 100 {
   .mg-#{$i} {
     margin: $i * 0.1rem !important;
@@ -568,6 +575,9 @@ html.pc {
 //     padding-right: $i * 0.5rem + 10rem !important;
 //   }
 // }
+.no-pd {
+  padding: 0 !important;
+}
 
 // 글자 말줄임
 .ellipsis {
@@ -783,7 +793,7 @@ input {
   outline: none;
 }
 .h-line {
-  margin: 4rem 0;
+  margin: 4rem -4.8rem;
   border-color: var(--line-color02);
   &.bold {
     margin: 1.6rem 0 3.2rem;
