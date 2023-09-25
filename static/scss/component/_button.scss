@@ -74,7 +74,7 @@
     }
     &:disabled {
       opacity: 1;
-      background-color: #f6f6f6;
+      background-color: var(--disabled-bg-color);
       border: 1px solid var(--line-color02);
       color: var(--sub-txt-color2);
       &::before,
@@ -131,7 +131,7 @@
       color: var(--white-color);
     }
     &.off {
-      background-color: #f6f6f6;
+      background-color: var(--disabled-bg-color);
       border: 1px solid var(--line-color01);
       color: var(--sub-txt-color2);
     }

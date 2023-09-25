@@ -313,7 +313,7 @@
                   <button class="button small line w-100p t-center">저장</button>
                 </td>
                 <th>기존 송장번호<i class="require"></i></th>
-                <td colspan="3">
+                <td colspan="3" class="two-lines">
                   <div class="search-box">
                     <div class="select-box w-120">
                       <ul>
@@ -437,7 +437,7 @@
                   <button class="button small line w-100p t-center">저장</button>
                 </td>
                 <th>기존 송장번호<i class="require"></i></th>
-                <td colspan="3">
+                <td colspan="3" class="two-lines">
                   <div class="search-box">
                     <div class="select-box w-120">
                       <ul>
@@ -629,6 +629,7 @@
   <button class="open-pop button line mr-10" data-name="S_07_0010">주문수집결과 화면(S_07_0010)</button>
   <button class="open-pop button line mr-10" data-name="S_07_0007">주문로그 화면(S_07_0007)</button>
   <button class="open-pop button line mr-10" data-name="S_07_0008">SMS 메시지 전송(S_07_0008)</button>
+  <button class="open-pop button line mr-10" data-name="S_07_0009">발송 정보 일괄 입력(S_07_0009)</button>
   <button class="open-pop button line mr-10" data-name="S_07_0012">메시지 템플릿 등록 및 수정(S_07_0012)</button>
   <button class="open-pop button line mr-10" data-name="S_07_0003">가격/재고이력(S_07_0003)</button>
   <button class="open-pop button line mr-10" data-name="S_07_0011">통관 고유번호 검증(S_07_0011)</button>
@@ -878,6 +879,73 @@
                 ※ 90 Byte가 넘어가면 자동으로 LMS 메시지로 전환 됩니다.<br />
                 ※ LMS 메시지는 최대 200 Byte까지 발송할 수 있습니다.
               </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="pop-bottm">
+    <button class="button line">취소</button>
+    <button class="button bg-primary">메시지 발송</button>
+  </div>
+</div>
+<div class="popup has-tit w640" id="S_07_0009">
+  <div class="pop-head">
+    <h2>발송 정보 일괄 입력</h2>
+    <button class="close"></button>
+  </div>
+  <div class="pop-contents">
+    <div class="list-summary">
+      <span class="result">선택주문 <em>0,000건 </em>/ 결제금액 <em>0,000</em>원</span>
+    </div>
+    <div class="table mt-16">
+      <table>
+        <colgroup>
+          <col style="width: 12.8rem" />
+          <col style="width: auto" />
+        </colgroup>
+
+        <tbody>
+          <tr>
+            <th>기존 송장번호<i class="require"></i></th>
+            <td colspan="3" class="two-lines">
+              <div class="search-box">
+                <div class="select-box w-120">
+                  <ul>
+                    <li class="init placeholder">업체 선택</li>
+                    <li data-value="1">URL</li>
+                    <li data-value="2">키워드</li>
+                  </ul>
+                </div>
+                <div class="input w-300 ml-4">
+                  <input type="text" placeholder="송장번호 입력" title="송장번호 입력" />
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>보조 송장번호</th>
+            <td colspan="3" class="two-lines">
+              <div class="flex align-center">
+                <span class="checkbox sm-check">
+                  <input type="checkbox" id="assistant-num3" />
+                  <label for="assistant-num3" class="lbl">사용</label>
+                </span>
+                <div class="search-box">
+                  <div class="select-box disabled w-120">
+                    <ul>
+                      <li class="init">업체 선택</li>
+                      <li data-value="1">URL</li>
+                      <li data-value="2">키워드</li>
+                    </ul>
+                  </div>
+                  <div class="input w-172 ml-4">
+                    <input type="text" placeholder="송장번호 입력" title="송장번호 입력" disabled />
+                  </div>
+                  <button class="button small bg-dark ml-8" disabled="">저장</button>
+                </div>
+              </div>
             </td>
           </tr>
         </tbody>
