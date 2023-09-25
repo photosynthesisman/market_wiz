@@ -365,7 +365,9 @@
   dl {
     display: flex;
     + dl {
-      // padding-top: ;
+      margin-top: 1.6rem;
+      padding-top: 1.6rem;
+      border-top: 1px solid var(--line-color02);
     }
     dt {
       width: 11.2rem;
