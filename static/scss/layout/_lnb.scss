@@ -131,6 +131,7 @@
   .logo-name {
     text-align: center;
     font-weight: 700;
+    transition: font-size 0.1s;
   }
   .close-lnb {
     position: absolute;
@@ -144,17 +145,17 @@
       center center / 100% no-repeat;
   }
 }
-.lnb-inner {
-  .folded {
-    display: none;
-  }
+.folded {
+  display: none;
 }
 .lnb-inner.fold {
   width: 8rem;
   padding: 3.2rem 1.6rem;
+  transition: 0.5s;
   .logo {
     width: 4rem;
     height: 4rem;
+    margin-bottom: 0;
   }
   .logo-name {
     display: none;
@@ -165,6 +166,7 @@
   .folded {
     display: block;
     > li:first-child {
+      margin-top: 2.8rem;
       padding: 2.4rem 0;
       .folding-panel {
         li {

@@ -11955,6 +11955,8 @@ input {
 .lnb-inner .logo-name {
   text-align: center;
   font-weight: 700;
+  -webkit-transition: font-size 0.1s;
+  transition: font-size 0.1s;
 }
 .lnb-inner .close-lnb {
   position: absolute;
@@ -11966,17 +11968,20 @@ input {
   background: #e9eff9 url("data:image/svg+xml,%0A%3Csvg width='52' height='20' viewBox='0 0 52 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26 15L21 10L26 5' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M31 15L26 10L31 5' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") center center/100% no-repeat;
 }
 
-.lnb-inner .folded {
+.folded {
   display: none;
 }
 
 .lnb-inner.fold {
   width: 8rem;
   padding: 3.2rem 1.6rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .lnb-inner.fold .logo {
   width: 4rem;
   height: 4rem;
+  margin-bottom: 0;
 }
 .lnb-inner.fold .logo-name {
   display: none;
@@ -11988,6 +11993,7 @@ input {
   display: block;
 }
 .lnb-inner.fold .folded > li:first-child {
+  margin-top: 2.8rem;
   padding: 2.4rem 0;
 }
 .lnb-inner.fold .folded > li:first-child .folding-panel li {
