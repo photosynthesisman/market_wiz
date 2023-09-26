@@ -55,17 +55,19 @@ $(".market").on("click", ".folding-btn", function (e) {
 });
 
 // 페이지 로드
-$("#font-guide").load("font-guide.html");
-$("#color-guide").load("color-guide.html");
-$("#form-guide").load("form-guide.html");
-$("#button-guide").load("button-guide.html");
-$("#popup-guide").load("popup-guide.html");
-$("#dashboard").load("dashboard.html");
-$("#_S_04_0008").load("_S_04_0008.html");
-$("#_S_04_0001").load("_S_04_0001.html");
-$("#_S_04_0005").load("_S_04_0005.html");
-$("#_S_07_0001").load("_S_07_0001.html");
-$("#_S_08_0001").load("_S_08_0001.html");
+$(document).ready(function () {
+  $("#font-guide").load("font-guide.html");
+  $("#color-guide").load("color-guide.html");
+  $("#form-guide").load("form-guide.html");
+  $("#button-guide").load("button-guide.html");
+  $("#popup-guide").load("popup-guide.html");
+  $("#dashboard").load("dashboard.html");
+  $("#_S_04_0008").load("_S_04_0008.html");
+  $("#_S_04_0001").load("_S_04_0001.html");
+  $("#_S_04_0005").load("_S_04_0005.html");
+  $("#_S_07_0001").load("_S_07_0001.html");
+  $("#_S_08_0001").load("_S_08_0001.html");
+});
 
 // lnb 접기/펼치기
 $(".market").on("click", ".close-lnb", function () {
