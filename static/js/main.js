@@ -20,13 +20,6 @@ $(".market").on("click", ".close-tab", function () {
   $(this).parents("li").remove();
 });
 
-// 탭 메뉴 호버 시 컨텐츠 border-raduis
-// $(".market").on("mouseover", ".tab:first-child", function () {
-//   $(".tab-content").css({ "border-top-left-radius": "0" });
-// });
-// $(".market").on("mouseout", ".tab:first-child", function () {
-//   $(".tab-content").css({ "border-top-left-radius": "2.4rem" });
-// });
 // lnb 메뉴 클릭시 탭 생성
 $(".market").on("click", ".lnb-menu", function () {
   var clickedText = $(this)
@@ -113,44 +106,6 @@ $(".market").on("click", ".item input[type=checkbox]", function () {
   }
 });
 
-// pagination
-// $(document).ready(function () {
-//   $("#dashboard").load("dashboard.html", function () {
-//     const itemsPerPage = 10;
-//     const content = $(".item-wrap");
-//     const pagination = document.getElementById("pagination");
-
-//     function showPage(pageNumber) {
-//       const startIndex = (pageNumber - 1) * itemsPerPage;
-//       const endIndex = startIndex + itemsPerPage;
-//       const items = [...content.children()];
-//       items.forEach((item, index) => {
-//         if (index >= startIndex && index < endIndex) {
-//           item.style.display = "flex";
-//         } else {
-//           item.style.display = "none";
-//         }
-//       });
-//     }
-
-//     function createPaginationLinks() {
-//       const totalItems = content.children().length;
-//       const totalPages = Math.ceil(totalItems / itemsPerPage);
-//       for (let i = 1; i <= totalPages; i++) {
-//         const li = document.createElement("li");
-//         li.textContent = i;
-//         li.addEventListener("click", () => showPage(i));
-//         pagination.appendChild(li);
-//       }
-//     }
-//     createPaginationLinks();
-//     showPage(1);
-//     $("#pagination li:first-child").addClass("active");
-//     $("#pagination li").click(function () {
-//       $(this).addClass("active").siblings().removeClass("active");
-//     });
-//   });
-// });
 //validation
 $(document).ready(function () {
   $("#form-guide").load("form-guide.html", function () {
@@ -177,137 +132,6 @@ $(document).ready(function () {
     $(".placeholder").click(function () {
       $(this).removeClass("placeholder");
     });
-
-    //for custom select dropdown menu
-    // customSelect();
-    function customSelect() {
-      let x, i, j, l, ll, selElmnt, a, b, c;
-      x = document.getElementsByClassName("select-box");
-      l = x.length;
-      for (i = 0; i < l; i++) {
-        selElmnt = x[i].getElementsByTagName("select")[0];
-        ll = selElmnt.length;
-        a = document.createElement("DIV");
-        a.setAttribute("class", "select-selected");
-        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-        x[i].appendChild(a);
-        let disabledOption = selElmnt.querySelector(".disabled");
-        b = document.createElement("DIV");
-        b.setAttribute("class", "select-items select-hide");
-        for (j = 1; j < ll; j++) {
-          c = document.createElement("DIV");
-          c.innerHTML = selElmnt.options[j].innerHTML;
-          c.addEventListener("click", function (e) {
-            if ($(this).hasClass("disabled")) {
-              return false;
-            }
-            let y, i, k, s, h, sl, yl;
-            s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-            sl = s.length;
-            h = this.parentNode.previousSibling;
-            for (i = 0; i < sl; i++) {
-              if (s.options[i].innerHTML == this.innerHTML) {
-                s.selectedIndex = i;
-                h.innerHTML = this.innerHTML;
-                y = this.parentNode.getElementsByClassName("same-as-selected");
-                yl = y.length;
-                for (k = 0; k < yl; k++) {
-                  y[k].removeAttribute("class");
-                }
-                this.setAttribute("class", "same-as-selected");
-                break;
-              }
-            }
-            h.click();
-          });
-          b.appendChild(c);
-        }
-        x[i].appendChild(b);
-        a.addEventListener("click", function (e) {
-          if ($(this).parents().hasClass("disabled")) {
-            return false;
-          }
-          e.stopPropagation();
-          closeAllSelect(this);
-          this.nextSibling.classList.toggle("select-hide");
-          this.classList.toggle("select-arrow-active");
-        });
-      }
-      function closeAllSelect(elmnt) {
-        let x,
-          y,
-          i,
-          xl,
-          yl,
-          arrNo = [];
-        x = document.getElementsByClassName("select-items");
-        y = document.getElementsByClassName("select-selected");
-        xl = x.length;
-        yl = y.length;
-        for (i = 0; i < yl; i++) {
-          if (elmnt == y[i]) {
-            arrNo.push(i);
-          } else {
-            y[i].classList.remove("select-arrow-active");
-          }
-        }
-        for (i = 0; i < xl; i++) {
-          if (arrNo.indexOf(i)) {
-            x[i].classList.add("select-hide");
-          }
-        }
-      }
-      $(".select-selected").click(function () {
-        const disOptions = $(this).parent().find(".disabled");
-        const selectOptions = $(this).parent().find(".same-as-selected");
-        const hoverOptions = $(this).parent().find(".hover");
-        disOptions.each(function () {
-          const disText = $(this).text();
-          const nextOption = $(this)
-            .parent()
-            .next()
-            .next()
-            .find($("div:contains(" + disText + ")"));
-          if ($(this).hasClass("disabled")) {
-            nextOption.addClass("disabled");
-          } else {
-            nextOption.removeClass("disabled");
-          }
-        });
-        selectOptions.each(function () {
-          const selText = $(this).text();
-          const nextOptions = $(this)
-            .parent()
-            .next()
-            .next()
-            .find($("div:contains(" + selText + ")"));
-          console.log(selText, nextOptions);
-          if ($(this).hasClass("same-as-selected")) {
-            nextOptions.addClass("same-as-selected");
-          } else {
-            nextOptions.removeClass("same-as-selected");
-          }
-        });
-        hoverOptions.each(function () {
-          const hoverText = $(this).text();
-          const _nextOption = $(this)
-            .parent()
-            .next()
-            .next()
-            .find($("div:contains(" + hoverText + ")"));
-          console.log(hoverText, _nextOption);
-          if ($(this).hasClass("hover")) {
-            _nextOption.addClass("hover");
-          } else {
-            _nextOption.removeClass("hover");
-          }
-        });
-      });
-
-      // open select
-      const openSelect = $(".select-box.open").find(".select-selected");
-      openSelect.trigger("click");
-    }
 
     //for custom select dropdown menu
     // $(".select-box").each(function () {
