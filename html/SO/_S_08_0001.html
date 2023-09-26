@@ -1,0 +1,791 @@
+<div class="tit-wrap">
+  <h2 class="h1">
+    1:1 문의 관리
+    <i class="tooltip">툴팁</i>
+    <div class="tooltip-txt">
+      <p>툴팁의 내용을 적어주세요</p>
+    </div>
+    <i class="favorite">즐겨찾기</i>
+
+    <!-- 즐겨찾기 등록된 경우-->
+    <!-- <i class="favorite checked">즐겨찾기</i> -->
+  </h2>
+  <div class="path">
+    <a href="#none" class="home">홈 바로가기</a>
+    <a href="#none" class="1depth">문의 관리</a>
+    <a href="#none" class="2depth">1:1 문의 관리</a>
+  </div>
+</div>
+<div class="contents">
+  <div class="search-wrap">
+    <dl>
+      <dt>문의 접수 일자</dt>
+      <dd>
+        <div class="search-box">
+          <input type="date" value="2023-05-29" />
+          <span class="mg-5-x">~</span>
+          <input type="date" value="2023-05-29" />
+          <div class="radio-box ty2 ml-16">
+            <input type="radio" id="radioty4-1" name="radiobox-ty4" checked />
+            <label for="radioty4-1">오늘</label>
+            <input type="radio" id="radioty4-2" name="radiobox-ty4" />
+            <label for="radioty4-2">1주</label>
+            <input type="radio" id="radioty4-3" name="radiobox-ty4" />
+            <label for="radioty4-3">2주</label>
+            <input type="radio" id="radioty4-4" name="radiobox-ty4" />
+            <label for="radioty4-4">1개월</label>
+            <input type="radio" id="radioty4-5" name="radiobox-ty4" />
+            <label for="radioty4-5">2개월</label>
+            <input type="radio" id="radioty4-6" name="radiobox-ty4" />
+            <label for="radioty4-6">6개월</label>
+          </div>
+        </div>
+      </dd>
+    </dl>
+    <dl>
+      <dt>쇼핑몰구분</dt>
+      <dd>
+        <div class="select-box">
+          <ul>
+            <li class="init">전체</li>
+            <li data-value="1">쿠팡</li>
+            <li data-value="2">네이버</li>
+            <li data-value="3">지마켓</li>
+            <li data-value="4">11번가</li>
+            <li data-value="5">롯데온</li>
+            <li data-value="6">타오바오</li>
+            <li data-value="7">알리익스프레스</li>
+            <li data-value="8">1688</li>
+            <li data-value="9">아마존(미국)</li>
+            <li data-value="10">아마존(일본)</li>
+            <li data-value="11">아마존(독일)</li>
+          </ul>
+        </div>
+      </dd>
+      <dt class="ml-64">쇼핑몰 ID</dt>
+      <dd>
+        <div class="select-box">
+          <ul>
+            <li class="init">전체</li>
+            <li data-value="1">쿠팡</li>
+            <li data-value="2">네이버</li>
+            <li data-value="3">지마켓</li>
+            <li data-value="4">11번가</li>
+            <li data-value="5">롯데온</li>
+            <li data-value="6">타오바오</li>
+            <li data-value="7">알리익스프레스</li>
+            <li data-value="8">1688</li>
+            <li data-value="9">아마존(미국)</li>
+            <li data-value="10">아마존(일본)</li>
+            <li data-value="11">아마존(독일)</li>
+          </ul>
+        </div>
+      </dd>
+    </dl>
+
+    <button class="button bg-primary mt-20">문의 내역 수집하기</button>
+  </div>
+  <hr class="h-line" />
+  <div class="search-wrap ty2">
+    <dl>
+      <dt>처리 상태</dt>
+      <dd>
+        <div class="flex">
+          <div class="radio-box small">
+            <input type="radio" id="claim12" name="invoice" checked />
+            <label for="claim12">답변 대기</label>
+          </div>
+          <div class="radio-box small">
+            <input type="radio" id="claim13" name="invoice" />
+            <label for="claim13">답변 완료</label>
+          </div>
+        </div>
+      </dd>
+    </dl>
+    <dl>
+      <dt>검색어 선택</dt>
+      <dd>
+        <div class="search-box">
+          <div class="select-box">
+            <ul>
+              <li class="init">전체</li>
+              <li data-value="1">주문자명</li>
+              <li data-value="2">전화번호</li>
+              <li data-value="3">상품명</li>
+              <li data-value="4">상품번호</li>
+              <li data-value="5">송장번호</li>
+            </ul>
+          </div>
+          <div class="input w-600">
+            <input type="text" placeholder="검색어 입력" title="검색어 입력" />
+          </div>
+        </div>
+      </dd>
+
+      <button class="button small bg-primary ml-auto">수집 정보 내 조회하기</button>
+    </dl>
+  </div>
+  <div class="result-wrap">
+    <div class="result-box">
+      <div class="list-top">
+        <div class="left">
+          <button class="button small bg-dark open-pop" data-name="S_08_0007">답변 일괄 등록</button>
+        </div>
+        <div class="right">
+          <button class="button small line">선택 삭제</button>
+          <button class="button small blue-line open-pop" data-name="S_08_0002">답변 템플릿 관리</button>
+        </div>
+      </div>
+      <div class="product-list">
+        <div class="list-summary">
+          <div class="left">
+            <div class="checkbox sm-check">
+              <input type="checkbox" id="chk_all-5" />
+              <label for="chk_all-5" class="lbl"></label>
+            </div>
+            <span class="result">총 문의 <em>1,222건 </em>/ 답변대기 <em>00</em>건 / 답변완료 <em>00</em>건</span>
+          </div>
+          <div class="right">
+            <div class="select-box">
+              <ul>
+                <li class="init">최근 문의</li>
+                <li data-value="1">최근 문의</li>
+                <li data-value="2">과거 문의</li>
+                <li data-value="3">최근 수집</li>
+                <li data-value="4">과거 수집</li>
+              </ul>
+            </div>
+            <div class="select-box ml-4">
+              <ul>
+                <li class="init">50개씩 보기</li>
+                <li data-value="1">50개씩 보기</li>
+                <li data-value="2">100개씩 보기</li>
+                <li data-value="3">150개씩 보기</li>
+                <li data-value="4">200개씩 보기</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="table mt-16">
+          <table>
+            <colgroup>
+              <col style="width: 12.8rem" />
+              <col style="width: 20.8rem" />
+              <col style="width: 12.8rem" />
+              <col style="width: 20.8rem" />
+              <col style="width: 12.8rem" />
+              <col style="width: 20.8rem" />
+              <col style="width: 12.8rem" />
+              <col style="width: 20.8rem" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th colspan="8" class="h-56">
+                  <div class="flex space-between">
+                    <div class="left">
+                      <div class="checkbox sm-check">
+                        <input type="checkbox" id="table-hd-check3" />
+                        <label for="table-hd-check3" class="lbl"></label>
+                      </div>
+                    </div>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th rowspan="3" class="va-top">상품 이미지</th>
+                <td rowspan="3"><div class="img"></div></td>
+                <th>문의접수 일시</th>
+                <td>YYYY.MM.DD hh:mm:ss</td>
+                <th>판매 쇼핑몰</th>
+                <td>위메프</td>
+                <th>쇼핑몰 ID / 별칭</th>
+                <td>honggd / 홍길동</td>
+              </tr>
+              <tr>
+                <th>질문자</th>
+                <td>김민정</td>
+                <th>주문 번호</th>
+                <td><a href="#none" class="a-link2" title="해당 주문 번호로 이동">0000000000</a></td>
+                <th>주문 일시</th>
+                <td>YYYY.MM.DD hh:mm:ss</td>
+              </tr>
+              <tr>
+                <th>상품 번호</th>
+                <td>00000000</td>
+                <th>상품 이름</th>
+                <td colspan="3">
+                  <a href="#none" class="a-link2" title="해당 주문 번호로 이동"
+                    >벽 장착 레이지 자동 치약 디스펜서 홀더, 월마운트 칫솔 욕실 액세서리</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th colspan="8" class="two-lines">
+                  <div class="flex space-between align-center">
+                    <p>문의 내용</p>
+                    <div>
+                      <button class="button small bg-dark open-pop" data-name="S_08_0003">답변 입력</button>
+                      <button class="detail-view ty2 ml-2">상세 보기</button>
+                    </div>
+                  </div>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- 영역 확장 버튼 클릭 시 -->
+        <div class="table mt-32">
+          <table>
+            <colgroup>
+              <col style="width: 12.8rem" />
+              <col style="width: 20.8rem" />
+              <col style="width: 12.8rem" />
+              <col style="width: 20.8rem" />
+              <col style="width: 12.8rem" />
+              <col style="width: 20.8rem" />
+              <col style="width: 12.8rem" />
+              <col style="width: 20.8rem" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th colspan="8" class="h-56">
+                  <div class="flex space-between">
+                    <div class="left">
+                      <div class="checkbox sm-check">
+                        <input type="checkbox" id="table-hd-check4" />
+                        <label for="table-hd-check4" class="lbl"></label>
+                      </div>
+                    </div>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th rowspan="3" class="va-top">상품 이미지</th>
+                <td rowspan="3"><div class="img"></div></td>
+                <th>문의접수 일시</th>
+                <td>YYYY.MM.DD hh:mm:ss</td>
+                <th>판매 쇼핑몰</th>
+                <td>위메프</td>
+                <th>쇼핑몰 ID / 별칭</th>
+                <td>honggd / 홍길동</td>
+              </tr>
+              <tr>
+                <th>질문자</th>
+                <td>김민정</td>
+                <th>주문 번호</th>
+                <td><a href="#none" class="a-link2" title="해당 주문 번호로 이동">0000000000</a></td>
+                <th>주문 일시</th>
+                <td>YYYY.MM.DD hh:mm:ss</td>
+              </tr>
+              <tr>
+                <th>상품 번호</th>
+                <td>00000000</td>
+                <th>상품 이름</th>
+                <td colspan="3">
+                  <a href="#none" class="a-link2" title="해당 주문 번호로 이동"
+                    >벽 장착 레이지 자동 치약 디스펜서 홀더, 월마운트 칫솔 욕실 액세서리</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th colspan="8">
+                  <div class="flex space-between align-center">
+                    <p>문의 내용</p>
+                    <div>
+                      <button class="detail-view ty2 open ml-2">상세 보기</button>
+                    </div>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th>문의 제목</th>
+                <td colspan="7">
+                  문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의
+                  제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문
+                </td>
+              </tr>
+              <tr>
+                <th class="va-top" rowspan="2">문의 내용</th>
+                <td colspan="7" rowspan="2">
+                  문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의
+                  제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목
+                  영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목
+                  영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목
+                  영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목
+                  영역문의 제목 영역문의 제목 영역문의 제목 영역
+                </td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <th class="va-top" rowspan="2">첨부 이미지</th>
+                <td colspan="7" rowspan="2">
+                  <div class="flex">
+                    <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                      <span></span>
+                    </a>
+                    <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                      <span></span>
+                    </a>
+                    <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                      <span></span>
+                    </a>
+                    <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                      <span></span>
+                    </a>
+                    <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                      <span></span>
+                    </a>
+                    <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                      <span></span>
+                    </a>
+                    <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                      <span></span>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <th colspan="8" class="two-lines">
+                  <div class="flex space-between align-center">
+                    <div class="flex align-center">
+                      <span class="mr-5">답변 내용</span>
+                      <span class="badge large a-complete">답변완료</span>
+                    </div>
+                    <div>
+                      <button class="button small bg-dark open-pop" data-name="S_08_0003">답변 입력</button>
+                      <button class="detail-view ty2 ml-2">상세 보기</button>
+                    </div>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th>등록 / 수정 일시</th>
+                <td colspan="7">YYYY.MM.DD hh:mm:ss</td>
+              </tr>
+              <tr>
+                <th class="va-top" rowspan="2">답변내용</th>
+                <td colspan="7" rowspan="2">
+                  문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의
+                  제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목
+                  영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목
+                  영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목
+                  영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목 영역문의 제목
+                  영역문의 제목 영역문의 제목 영역문의 제목 영역
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- 문의 정보 [수집 전] 상태 -->
+        <div class="item-wrap ty2">
+          <div class="no-result"></div>
+          <p class="no-result-tt">문의 정보를 찾을 수 없습니다. 문의 정보를 수집하세요.</p>
+        </div>
+        <!-- 문의 정보 [수집 중] 상태 -->
+        <div class="item-wrap ty2">
+          <div class="progress-wrap">
+            <span class="progress"></span>
+          </div>
+          <p class="mb-2">
+            <span>A </span>쇼핑몰의 <span>asdf123455</span> 계정에서 문의 정보 <span>0,000</span>건 수집 완료
+          </p>
+          <p class="mb-2">
+            <span>B </span>쇼핑몰의 <span>asdf123455</span> 계정에서 문의 정보 <span>0,000</span>건 수집 완료
+          </p>
+          <p class="fc-red"><span>C </span>쇼핑몰의 <span>asdf123455</span> 계정에서 문의 정보 수집 오류/실패</p>
+        </div>
+      </div>
+
+      <div class="list-top mt-40">
+        <div class="left">
+          <button class="button small bg-dark open-pop" data-name="S_08_0007">답변 일괄 등록</button>
+          <button class="button small line">선택 삭제</button>
+        </div>
+      </div>
+      <div class="page_wrap">
+        <ul class="page_nation">
+          <li><a class="arrow pprev" href="#none"></a></li>
+          <li><a class="arrow prev" href="#none"></a></li>
+          <li><a href="#none" class="active">1</a></li>
+          <li><a href="#none">2</a></li>
+          <li><a href="#none">3</a></li>
+          <li><a href="#none">4</a></li>
+          <li><a href="#none">5</a></li>
+          <li><a href="#none">6</a></li>
+          <li><a href="#none">7</a></li>
+          <li><a href="#none">8</a></li>
+          <li><a href="#none">9</a></li>
+          <li><a href="#none">10</a></li>
+          <li><a class="arrow next" href="#none"></a></li>
+          <li><a class="arrow nnext" href="#none"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mt-40">
+  <button class="open-pop button line mr-10" data-name="S_08_0002">답변 템플릿 등록 및 수정(S_08_0002)</button>
+  <button class="open-pop button line mr-10" data-name="S_08_0003">문의 답변하기(S_08_0003)</button>
+  <button class="open-pop button line mr-10" data-name="S_08_0007">답변내용 일괄 입력 (S_08_0007)</button>
+  <button class="open-pop button line mr-10" data-name="S_08_0010">
+    10개 쇼핑몰의 xxx계정에 대한 수집 결과(S_08_0010)
+  </button>
+</div>
+<div class="popup has-tit w640" id="S_08_0002">
+  <div class="pop-head">
+    <h2>답변 템플릿 등록 및 수정</h2>
+    <button class="close"></button>
+  </div>
+  <div class="pop-contents">
+    <div class="table">
+      <table>
+        <colgroup>
+          <col style="width: 9.6rem" />
+          <col style="width: auto" />
+        </colgroup>
+
+        <tbody>
+          <tr>
+            <th>입력 방식</th>
+            <td class="two-lines">
+              <div class="flex align-center">
+                <div class="radio-box small">
+                  <input type="radio" id="answer-radio-1" name="answer1" checked />
+                  <label for="answer-radio-1">새 템플릿 등록</label>
+                </div>
+                <div class="radio-box small">
+                  <input type="radio" id="answer-radio-2" name="answer1" />
+                  <label for="answer-radio-2">기존 템플릿 수정</label>
+                </div>
+                <div class="select-box disabled ml-16">
+                  <ul>
+                    <li class="init">수정할 템플릿 선택</li>
+                    <li data-value="value1">Hover</li>
+                    <li data-value="value2">Selected</li>
+                    <li data-value="value3">Default</li>
+                    <li data-value="value4">Disabled</li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>템플릿 제목</th>
+            <td>
+              <input type="text" placeholder="템플릿 제목 입력" />
+            </td>
+          </tr>
+          <tr>
+            <th class="va-top">메시지 내용</th>
+            <td>
+              <div class="text-area">
+                <textarea rows="3" id="txt-area4" maxlength="200" placeholder="답변 입력"></textarea>
+                <p class="counter"><strong>0</strong> / 200</p>
+              </div>
+              <p class="td-notice mt-6">
+                답변은 마켓 별로 최대 글자수가 다르기 때문에 500자를 초과할 경우 일부 내용이 노출되지 않을 수 있습니다.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="pop-bottm">
+    <button class="button line">취소</button>
+    <button class="button bg-primary">메시지 발송</button>
+  </div>
+</div>
+<div class="popup has-tit w1024" id="S_08_0003">
+  <div class="pop-head">
+    <h2>문의 답변하기</h2>
+    <button class="close"></button>
+  </div>
+  <div class="pop-contents">
+    <div class="table">
+      <table>
+        <colgroup>
+          <col style="width: 11.2rem" />
+          <col style="width: 36.8rem" />
+          <col style="width: 11.2rem" />
+          <col style="width: 36.8rem" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>문의접수 일시</th>
+            <td>YYYY.MM.DD hh:mm:ss</td>
+            <th>상품번호</th>
+            <td>0000000000</td>
+          </tr>
+          <tr>
+            <th>상품 이름</th>
+            <td colspan="3">
+              <a href="#none" class="a-link2" title="해당 상품으로 이동"
+                >상품명상품명상품명상품명상품명상품명상품명상품명</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>주문 번호</th>
+            <td><a href="#none" class="a-link2" title="해당 링크로 이동">0000000000</a></td>
+            <th>주문 일시</th>
+            <td>YYYY.MM.DD hh:mm:ss</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="mt-16">
+        <colgroup>
+          <col style="width: 11.2rem" />
+          <col style="width: auto" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>문의 제목</th>
+            <td>제목</td>
+          </tr>
+          <tr>
+            <th class="va-top">문의 내용</th>
+            <td rowspan="2">
+              문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용
+            </td>
+          </tr>
+          <tr></tr>
+          <tr>
+            <th class="va-top">첨부 이미지</th>
+            <td rowspan="3">
+              <div class="flex">
+                <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                  <span></span>
+                </a>
+                <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                  <span></span>
+                </a>
+                <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                  <span></span>
+                </a>
+                <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                  <span></span>
+                </a>
+                <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                  <span></span>
+                </a>
+                <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                  <span></span>
+                </a>
+                <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                  <span></span>
+                </a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="tb-title mt-24">
+        <p>답변 입력</p>
+        <button class="button mini line ty2">템플릿 관리</button>
+      </div>
+      <div class="table">
+        <table>
+          <colgroup>
+            <col style="width: 9.6rem" />
+            <col style="width: auto" />
+          </colgroup>
+
+          <tbody>
+            <tr>
+              <th>입력 방식</th>
+              <td class="two-lines">
+                <div class="flex align-center">
+                  <div class="radio-box small">
+                    <input type="radio" id="answer-radio-3" name="answer2" checked />
+                    <label for="answer-radio-3">직접 입력</label>
+                  </div>
+                  <div class="radio-box small">
+                    <input type="radio" id="answer-radio-4" name="answer2" />
+                    <label for="answer-radio-4">템플릿 불러오기</label>
+                  </div>
+                  <div class="select-box disabled ml-16">
+                    <ul>
+                      <li class="init">답변 템플릿 선택</li>
+                      <li data-value="value1">Hover</li>
+                      <li data-value="value2">Selected</li>
+                      <li data-value="value3">Default</li>
+                      <li data-value="value4">Disabled</li>
+                    </ul>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th class="va-top">메시지 내용</th>
+              <td>
+                <div class="text-area">
+                  <textarea rows="3" id="5" maxlength="200" placeholder="메시지 입력"></textarea>
+                  <p class="counter"><strong>0</strong> / 200</p>
+                </div>
+                <p class="td-notice mt-6">답변 내용이 등록되면 해당 마켓으로 전송 됩니다.</p>
+                <p class="td-notice">
+                  답변은 마켓 별로 최대 글자수가 다르기 때문에 500자를 초과할 경우 일부 내용이 노출되지 않을 수
+                  있습니다.
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="pop-bottm">
+    <button class="button line">취소</button>
+    <button class="button bg-primary">답변 저장</button>
+  </div>
+</div>
+<div class="popup has-tit w640" id="S_08_0007">
+  <div class="pop-head">
+    <h2>답변 템플릿 등록 및 수정</h2>
+    <button class="close"></button>
+  </div>
+  <div class="pop-contents">
+    <div class="table">
+      <table>
+        <colgroup>
+          <col style="width: 9.6rem" />
+          <col style="width: auto" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>문의 정보</th>
+            <td>선택문의(건) 0,000</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="mt-16">
+        <colgroup>
+          <col style="width: 9.6rem" />
+          <col style="width: auto" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>입력 방식</th>
+            <td class="two-lines">
+              <div class="flex align-center">
+                <div class="radio-box small">
+                  <input type="radio" id="answer-radio-5" name="answer3" checked />
+                  <label for="answer-radio-5">직접 입력</label>
+                </div>
+                <div class="radio-box small">
+                  <input type="radio" id="answer-radio-6" name="answer3" />
+                  <label for="answer-radio-6">템플릿 불러오기</label>
+                </div>
+                <div class="select-box disabled ml-16">
+                  <ul>
+                    <li class="init">답변 템플릿 선택</li>
+                    <li data-value="value1">Hover</li>
+                    <li data-value="value2">Selected</li>
+                    <li data-value="value3">Default</li>
+                    <li data-value="value4">Disabled</li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="va-top">답변 내용</th>
+            <td>
+              <div class="text-area">
+                <textarea
+                  rows="3"
+                  id="txt-area5"
+                  maxlength="200"
+                  placeholder="답변 입력
+                "
+                ></textarea>
+                <p class="counter"><strong>0</strong> / 200</p>
+              </div>
+              <p class="td-notice mt-6">답변 내용이 등록되면 해당 마켓으로 전송 됩니다.</p>
+              <p class="td-notice">
+                답변은 마켓 별로 최대 글자수가 다르기 때문에 500자를 초과할 경우 일부 내용이 노출되지 않을 수 있습니다.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="pop-bottm">
+    <button class="button line">취소</button>
+    <button class="button bg-primary">메시지 발송</button>
+  </div>
+</div>
+<div class="popup has-tit w1024" id="S_08_0010">
+  <div class="pop-head">
+    <h2><span>10</span>개 쇼핑몰의 <span>xxx</span>계정에 대한 수집 결과</h2>
+    <button class="close"></button>
+  </div>
+  <div class="pop-contents">
+    <div class="list-summary">
+      <span class="result"
+        >총 <em class="mr-8">1,222건</em>성공 <em class="fc-primary2">980</em>건 / 실패
+        <em class="fc-red">20</em>건</span
+      >
+    </div>
+    <div class="table mt-16">
+      <table>
+        <colgroup>
+          <col style="width: 19.2rem" />
+          <col style="width: 19.2rem" />
+          <col style="width: 19.2rem" />
+          <col style="width: 19.2rem" />
+          <col style="width: 19.2rem" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>수집일시</th>
+            <th>쇼핑몰</th>
+            <th>쇼핑몰 ID</th>
+            <th>수집 결과</th>
+            <th>처리 상태</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="fc-primary2">
+            <td>YYYY.MM.DD hh:mm:ss</td>
+            <td>위메프</td>
+            <td>text</td>
+            <td>성공</td>
+            <td>답변대기</td>
+          </tr>
+          <tr class="fc-primary2">
+            <td>YYYY.MM.DD hh:mm:ss</td>
+            <td>위메프</td>
+            <td>text</td>
+            <td>성공</td>
+            <td>답변대기</td>
+          </tr>
+          <tr class="fc-red">
+            <td>YYYY.MM.DD hh:mm:ss</td>
+            <td>위메프</td>
+            <td>text</td>
+            <td>실패</td>
+            <td>답변대기</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="td-notice mt-16">
+      지속적으로 수집 오류/실패가 발생하는 경우 [ 환경 설정 &#62; 마켓정보 관리] 메뉴에서 등록된 쇼핑몰/쇼핑몰ID 를
+      확인해 주세요.
+    </p>
+  </div>
+  <div class="pop-bottm">
+    <button class="button bg-primary">확인</button>
+  </div>
+</div>

@@ -28,7 +28,7 @@ $(".market").on("click", ".close-tab", function () {
 //   $(".tab-content").css({ "border-top-left-radius": "2.4rem" });
 // });
 // lnb 메뉴 클릭시 탭 생성
-$(".market").on("click", ".folding-panel li", function () {
+$(".market").on("click", ".lnb-menu", function () {
   var clickedText = $(this)
     .contents()
     .filter(function () {
@@ -61,10 +61,11 @@ $("#form-guide").load("form-guide.html");
 $("#button-guide").load("button-guide.html");
 $("#popup-guide").load("popup-guide.html");
 $("#dashboard").load("dashboard.html");
-$("#collect-my-product").load("collect-my-product.html");
-$("#collect-site-product").load("collect-site-product.html");
-$("#waiting-product").load("waiting-product.html");
-$("#manage-claim").load("manage-claim.html");
+$("#_S_04_0008").load("_S_04_0008.html");
+$("#_S_04_0001").load("_S_04_0001.html");
+$("#_S_04_0005").load("_S_04_0005.html");
+$("#_S_07_0001").load("_S_07_0001.html");
+$("#_S_08_0001").load("_S_08_0001.html");
 
 // lnb 접기/펼치기
 $(".market").on("click", ".close-lnb", function () {

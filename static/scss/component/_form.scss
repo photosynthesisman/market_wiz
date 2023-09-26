@@ -192,24 +192,6 @@ input {
       padding-bottom: 2rem;
       border-bottom: none;
     }
-    > span {
-      padding: 0.2rem 0.5rem;
-      font-size: 1.2rem;
-      line-height: 1.8rem;
-      border-radius: 2px;
-      &.complete {
-        color: #423895;
-        background-color: #eeebff;
-      }
-      &.waiting {
-        color: #109b6e;
-        background-color: #d2f0ec;
-      }
-      &.collecting {
-        color: #f68827;
-        background-color: #f8ebde;
-      }
-    }
     p {
       margin-top: 0.4rem;
       font-weight: 600;
