@@ -62,11 +62,11 @@ $(document).ready(function () {
   $("#button-guide").load("button-guide.html");
   $("#popup-guide").load("popup-guide.html");
   $("#dashboard").load("dashboard.html");
-  $("#_S_04_0008").load("_S_04_0008.html");
-  $("#_S_04_0001").load("_S_04_0001.html");
-  $("#_S_04_0005").load("_S_04_0005.html");
-  $("#_S_07_0001").load("_S_07_0001.html");
-  $("#_S_08_0001").load("_S_08_0001.html");
+  $("#-S_04_0008").load("-S_04_0008.html");
+  $("#-S_04_0001").load("-S_04_0001.html");
+  $("#-S_04_0005").load("-S_04_0005.html");
+  $("#-S_07_0001").load("-S_07_0001.html");
+  $("#-S_08_0001").load("-S_08_0001.html");
 });
 
 // lnb 접기/펼치기
