@@ -199,7 +199,7 @@
       <div class="list-top">
         <div class="left">
           <button class="button small bg-dark">발주 확인</button>
-          <button class="button small bg-dark">배송정보 입력/발송</button>
+          <button class="button small bg-dark open-pop" data-name="S_07_0009">배송정보 입력/발송</button>
           <button class="button small bg-dark">송장번호 마켓 전송</button>
           <button class="button small line">선택 삭제</button>
         </div>
@@ -220,11 +220,13 @@
           <div class="right">
             <div class="select-box">
               <ul>
-                <li class="init">최근주문</li>
-                <li data-value="1">50개씩 보기</li>
-                <li data-value="2">100개씩 보기</li>
-                <li data-value="3">150개씩 보기</li>
-                <li data-value="4">200개씩 보기</li>
+                <li class="init">최근 주문</li>
+                <li data-value="1">최근 주문</li>
+                <li data-value="2">과거 주문</li>
+                <li data-value="3">최근 수집</li>
+                <li data-value="4">과거 수집</li>
+                <li data-value="5">높은 주문금액</li>
+                <li data-value="6">낮은 주문금액</li>
               </ul>
             </div>
             <div class="select-box ml-4">
@@ -807,11 +809,11 @@
             <td class="two-lines">
               <div class="flex align-center">
                 <div class="radio-box small">
-                  <input type="radio" id="claim-radio-1" name="small" checked />
+                  <input type="radio" id="claim-radio-1" name="claim-radio-1" checked />
                   <label for="claim-radio-1">직접 입력</label>
                 </div>
                 <div class="radio-box small">
-                  <input type="radio" id="claim-radio-2" name="small" />
+                  <input type="radio" id="claim-radio-2" name="claim-radio-1" />
                   <label for="claim-radio-2">템플릿 불러오기</label>
                 </div>
                 <div class="select-box disabled ml-16">

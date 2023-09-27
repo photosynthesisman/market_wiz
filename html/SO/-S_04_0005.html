@@ -1,11 +1,13 @@
 <div class="tit-wrap">
   <h2 class="h1">
     저장대기상품
-    <i class="tooltip">툴팁</i>
-    <div class="tooltip-txt">
-      <!-- 두 줄 이상일 경우 p태그에 클래스 dot 추가 -->
-      <p class="dot">수집 후 저장하지 않은 상품 목록입니다.</p>
-      <p class="dot">저장대기상품은 수집일부터 90일간 보관되어 노출됩니다.</p>
+    <div class="tooltip-wrap">
+      <i class="tooltip"></i>
+      <div class="tooltip-txt">
+        <!-- 두 줄 이상일 경우 p태그에 클래스 dot 추가 -->
+        <p class="dot">수집 후 저장하지 않은 상품 목록입니다.</p>
+        <p class="dot">저장대기상품은 수집일부터 90일간 보관되어 노출됩니다.</p>
+      </div>
     </div>
     <i class="favorite">즐겨찾기</i>
     <!-- 즐겨찾기 등록된 경우-->
@@ -82,7 +84,12 @@
           <button class="button small bg-dark">선택상품저장</button>
           <button class="button small bg-dark">전체상품저장</button>
           <button class="button small bg-dark">옵션별 상품저장</button>
-          <i class="tooltip"></i>
+          <div class="tooltip-wrap ml-m8">
+            <i class="tooltip"></i>
+            <div class="tooltip-txt">
+              <p>옵션을 각 단일상품으로 저장합니다.</p>
+            </div>
+          </div>
         </div>
         <div class="button-wrap">
           <button class="button small line">선택상품삭제</button>

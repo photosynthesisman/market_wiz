@@ -168,3 +168,7 @@ $(".market").on("mouseover", ".tooltip", function () {
 $(".market").on("mouseout", ".tooltip", function () {
   $(this).next().stop().hide();
 });
+//favorite 관련
+$(".market").on("click", ".favorite", function () {
+  $(this).hasClass("checked") ? $(this).removeClass("checked") : $(this).addClass("checked");
+});

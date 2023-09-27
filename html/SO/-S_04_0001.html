@@ -1,9 +1,11 @@
 <div class="tit-wrap">
   <h2 class="h1">
     사이트 상품수집
-    <i class="tooltip">툴팁</i>
-    <div class="tooltip-txt">
-      <p>수집 후 저장하지 않은 상품 목록입니다.</p>
+    <div class="tooltip-wrap">
+      <i class="tooltip">툴팁</i>
+      <div class="tooltip-txt">
+        <p>수집 후 저장하지 않은 상품 목록입니다.</p>
+      </div>
     </div>
     <i class="favorite">즐겨찾기</i>
     <!-- 즐겨찾기 등록된 경우-->
@@ -22,7 +24,7 @@
       <dd>
         <div class="select-box">
           <ul>
-            <li class="init">사용기준정보</li>
+            <li class="init">선택하세요</li>
             <li data-value="1">쿠팡</li>
             <li data-value="2">네이버</li>
             <li data-value="3">지마켓</li>
@@ -41,7 +43,7 @@
       <dd>
         <div class="flex">
           <div class="radio-box">
-            <input type="radio" id="collect1" name="collect" />
+            <input type="radio" id="collect1" name="collect" checked />
             <label for="collect1">대량수집</label>
           </div>
           <div class="radio-box">
@@ -57,7 +59,7 @@
         <div class="search-box">
           <div class="select-box">
             <ul>
-              <li class="init">키워드</li>
+              <li class="init">URL</li>
               <li data-value="1">URL</li>
               <li data-value="2">키워드</li>
             </ul>
@@ -68,6 +70,7 @@
         </div>
       </dd>
     </dl>
+    <!-- 수집방식이 개별수집일 경우 케이스 -->
     <dl class="align-start">
       <dt>수집방식<i class="require"></i></dt>
       <dd>
@@ -157,7 +160,12 @@
           <button class="button small bg-dark">선택상품저장</button>
           <button class="button small bg-dark">전체상품저장</button>
           <button class="button small bg-dark">옵션별 상품저장</button>
-          <i class="tooltip"></i>
+          <div class="tooltip-wrap ml-m8">
+            <i class="tooltip"></i>
+            <div class="tooltip-txt">
+              <p>옵션을 각 단일상품으로 저장합니다.</p>
+            </div>
+          </div>
         </div>
         <button class="button small line">선택상품삭제</button>
       </div>
