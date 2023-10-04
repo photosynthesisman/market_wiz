@@ -1002,5 +1002,14 @@
       </div>
     </div>
     <a href="#none" class="consulting">상담하기</a>
+    <script>
+      // TEST
+      const $pageType = getUrlParams().type;
+      if ($pageType) {
+        if ($pageType === "color-guide") $("#color-guide").addClass("active").siblings().removeClass("active");
+        else if ($pageType === "reset") $(".head-title h1").text("비밀번호 재설정");
+        else if ($pageType === "change") $(".head-title h1").text("비밀번호 변경");
+      }
+    </script>
   </body>
 </html>
