@@ -12150,10 +12150,9 @@ input {
 }
 
 .contents {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .tit-wrap {
@@ -14038,7 +14037,17 @@ input[type=date]:disabled {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   background-color: #e9eff9;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.tab-container ul::-webkit-scrollbar {
+  display: none;
 }
 
 .tab {
@@ -14055,6 +14064,7 @@ input[type=date]:disabled {
   background-color: #e9eff9;
   font-size: 1.4rem;
   line-height: 2rem;
+  text-wrap: nowrap;
 }
 
 .tab:hover,

@@ -108,48 +108,34 @@ $(".market").on("click", ".item input[type=checkbox]", function () {
 
 //validation
 $(document).ready(function () {
-  $("#form-guide").load("form-guide.html", function () {
-    const requiredInput = $("input[required]");
-    if (requiredInput) {
-      requiredInput.parent().append("<p class=" + "validation-check" + ">입력정보를 확인해주세요</p>");
+  //count number of count
+  $(document).on("input", ".txt-area", function (e) {
+    const counterEle = $(this).next();
+    const target = e.target;
+    const maxLength = target.getAttribute("maxlength");
+    const currentLength = target.value.length;
+    counterEle.html(`<strong>${currentLength}</strong> / ${maxLength}`);
+  });
+
+  // select placeholder
+  $(".placeholder").click(function () {
+    $(this).removeClass("placeholder");
+  });
+
+  //for custom select dropdown menu
+  $(document).on("click", ".select-box .init", function () {
+    if ($(this).parents(".select-box").hasClass("disabled")) {
+      return false;
     }
-    const requiredSelect = $(".select-box.required");
-    if (requiredSelect) {
-      requiredSelect.parent().append("<p class=" + "validation-check" + ">다시 선택해주세요</p>");
-    }
-    //count number of count
-    const messageEle = $("#txt-area");
-    const counterEle = $(".counter");
-
-    messageEle.on("input", function (e) {
-      const target = e.target;
-      const maxLength = target.getAttribute("maxlength");
-      const currentLength = target.value.length;
-      counterEle.html(`<strong>${currentLength}</strong> / ${maxLength}`);
-    });
-
-    // select placeholder
-    $(".placeholder").click(function () {
-      $(this).removeClass("placeholder");
-    });
-
-    //for custom select dropdown menu
-    // $(".select-box").each(function () {
-    $(document).on("click", ".select-box .init", function () {
-      if ($(this).parents(".select-box").hasClass("disabled")) {
-        return false;
-      }
-      $(this).parents(".select-box").toggleClass("active");
-      $(this).closest("ul").children("li:not(.init)").toggle();
-    });
-    $(document).on("click", ".select-box ul li:not(.init)", function () {
-      $(this).parent().children("li:not(.init)").removeClass("selected");
-      $(this).addClass("selected");
-      $(this).parents(".select-box").find("ul").children(".init").html($(this).html());
-      $(this).parent().children("li:not(.init)").toggle();
-      $(this).parents(".select-box").removeClass("active");
-    });
-    // });
+    $(this).parents(".select-box").toggleClass("active");
+    $(this).closest("ul").children("li:not(.init)").toggle();
+  });
+  $(document).on("click", ".select-box ul li:not(.init)", function () {
+    $(this).parent().children("li:not(.init)").removeClass("selected");
+    $(this).addClass("selected");
+    $(this).parents(".select-box").find("ul").children(".init").html($(this).html());
+    $(this).parent().children("li:not(.init)").toggle();
+    $(this).parents(".select-box").removeClass("active");
   });
 });
 $(".market").on("click", ".has-depth", function () {
@@ -172,3 +158,8 @@ $(".market").on("mouseout", ".tooltip", function () {
 $(".market").on("click", ".favorite", function () {
   $(this).hasClass("checked") ? $(this).removeClass("checked") : $(this).addClass("checked");
 });
+const tabContainer = $(".tab-container").outerWidth();
+const tabUl = $(".tab-container ul").outerWidth();
+const tabWidth = $(".tab").outerWidth();
+
+console.log(tabContainer, tabUl, tabWidth);
