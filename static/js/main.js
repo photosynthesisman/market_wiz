@@ -15,7 +15,7 @@ $(document).ready(function () {
 
   // lnb 2depth open
   $(".market").on("click", ".folding-btn", function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     $(this).parent().next(".folding-panel").stop().slideToggle(300);
     $(this).parents("li").toggleClass("open").siblings().removeClass("open");
     $(this).parents("li").siblings().find(".folding-panel").slideUp(300);
