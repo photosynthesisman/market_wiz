@@ -47,21 +47,6 @@ $(".market").on("click", ".folding-btn", function (e) {
   $(this).parents("li").siblings().find(".folding-panel").slideUp(300);
 });
 
-// 페이지 로드
-// $(document).ready(function () {
-//   $("#font-guide").load("../layout/font-guide.html");
-//   $("#color-guide").load("../layout/color-guide.html");
-//   $("#form-guide").load("../layout/form-guide.html");
-//   $("#button-guide").load("../layout/button-guide.html");
-//   $("#popup-guide").load("../layout/popup-guide.html");
-//   $("#dashboard").load("../layout/dashboard.html");
-//   $("#-S_04_0008").load("../layout/-S_04_0008.html");
-//   $("#-S_04_0001").load("../layout/-S_04_0001.html");
-//   $("#-S_04_0005").load("../layout/-S_04_0005.html");
-//   $("#-S_07_0001").load("../layout/-S_07_0001.html");
-//   $("#-S_08_0001").load("../layout/-S_08_0001.html");
-// });
-
 // lnb 접기/펼치기
 $(".market").on("click", ".close-lnb", function () {
   if ($(this).parents(".lnb-inner").hasClass("fold")) {
