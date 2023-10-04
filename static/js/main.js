@@ -50,7 +50,7 @@ $(".market").on("click", ".folding-btn", function (e) {
 // 페이지 로드
 $(document).ready(function () {
   $("#font-guide").load("font-guide.html");
-  $("#color-guide").load("color-guide.html");
+  $("#color-guide").load("../layout/color-guide.html");
   $("#form-guide").load("form-guide.html");
   $("#button-guide").load("button-guide.html");
   $("#popup-guide").load("popup-guide.html");
