@@ -31,15 +31,6 @@ $(document).ready(function () {
     }
   });
 
-  // lnb 접기/펼치기
-  $(".market").on("click", ".close-lnb", function () {
-    if ($(this).parents(".lnb-inner").hasClass("fold")) {
-      $(this).parents(".lnb-inner").removeClass("fold");
-    } else {
-      $(this).parents(".lnb-inner").addClass("fold");
-    }
-  });
-
   //pooup 오픈/클로즈
   $(".market").on("click", ".open-pop", function () {
     const popId = $(this).attr("data-name");
