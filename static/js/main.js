@@ -158,8 +158,3 @@ $(".market").on("mouseout", ".tooltip", function () {
 $(".market").on("click", ".favorite", function () {
   $(this).hasClass("checked") ? $(this).removeClass("checked") : $(this).addClass("checked");
 });
-const tabContainer = $(".tab-container").outerWidth();
-const tabUl = $(".tab-container ul").outerWidth();
-const tabWidth = $(".tab").outerWidth();
-
-console.log(tabContainer, tabUl, tabWidth);
