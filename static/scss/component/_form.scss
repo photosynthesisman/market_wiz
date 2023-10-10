@@ -17,6 +17,7 @@
   }
   > dl {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 1.6rem;
     &:last-of-type {
@@ -71,6 +72,9 @@
         font-weight: 600;
       }
     }
+  }
+  .flex {
+    flex-wrap: wrap;
   }
 }
 input {

@@ -15,11 +15,3 @@
   const $include = document.querySelector(".__include");
   if ($include) $include.remove();
 })();
-
-const getUrlParams = function () {
-  const params = {};
-  window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (str, key, value) {
-    params[key] = value;
-  });
-  return params;
-};

@@ -13292,6 +13292,8 @@ jq-Datepicker
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -13358,6 +13360,10 @@ jq-Datepicker
 .search-wrap > dl .cr-situation dd {
   font-size: 1.4rem;
   font-weight: 600;
+}
+.search-wrap .flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 input {
