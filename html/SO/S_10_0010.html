@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARKET WIZ</title>
+
+    <!-- 퍼블용 include: 개발팀에서 재include 하길 바랍니다. -->
+    <script class="__include" src="../include/head.js"></script>
+  </head>
+  <body class="market">
+    <!-- header -->
+    <header data-include="../layout/header.html"></header>
+
+    <!-- container -->
+    <div class="container">
+      <!-- lnb -->
+      <div class="lnb" data-include="../layout/lnb.html"></div>
+
+      <!-- contents -->
+      <div class="contents">
+        <div class="tab-container">
+          <ul>
+            <li class="tab active"><a href="#">API 연동키 설정</a><span class="close-tab">닫기</span></li>
+          </ul>
+        </div>
+
+        <div class="tab-content active">
+          <div class="tit-wrap">
+            <h2 class="h1">
+              API 연동키 설정
+              <i class="favorite">즐겨찾기</i>
+              <!-- 즐겨찾기 등록된 경우-->
+              <!-- <i class="favorite checked">즐겨찾기</i> -->
+            </h2>
+            <div class="path">
+              <a href="#none" class="home">홈 바로가기</a>
+              <a href="#none" class="1depth">환경설정</a>
+              <a href="#none" class="1depth">서비스/사업자정보 관리</a>
+              <a href="#none" class="2depth">API 연동키 설정</a>
+            </div>
+          </div>
+          <div class="contents">
+            <!-- 조회(읽기) 모드 -->
+            <div class="table mt-30">
+              <table>
+                <colgroup>
+                  <col style="width: 16rem" />
+                  <col style="width: 16rem" />
+                  <col style="width: auto" />
+                  <col style="width: 12rem" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th colspan="4" class="bd-line-2 two-lines">
+                      <div class="flex space-between align-center">
+                        <div class="left">
+                          <span class="sub-txt">API 연동키 설정</span>
+                          <span class="small-txt ml-6">[서비스별 API 연동키를 등록하세요.]</span>
+                        </div>
+                        <div class="right">
+                          <button class="button small bg-dark">정보 변경</button>
+                        </div>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th rowspan="2" class="va-top">구글 번역(TEXT)</th>
+                    <th>Client ID</th>
+                    <td>Jangsoon-goodShop-PRD-16f5a01d1-53c5cc31</td>
+                    <td rowspan="2" class="two-lines va-top"><button class="button small line">발급 메뉴얼</button></td>
+                  </tr>
+                  <tr>
+                    <th>Client Secret</th>
+                    <td class="bd-right">PRD-6f5a01d1b18a-55fc-43c2-9255-ad7f</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2" class="va-top">네이버 무료 번역(TEXT)</th>
+                    <th>Client ID</th>
+                    <td>-</td>
+                    <td rowspan="2" class="two-lines va-top"><button class="button small line">발급 메뉴얼</button></td>
+                  </tr>
+                  <tr>
+                    <th>Client Secret</th>
+                    <td class="bd-right">-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //조회(읽기) 모드 -->
+            <!-- 수정/저장 모드 -->
+            <div class="table mt-30">
+              <table>
+                <colgroup>
+                  <col style="width: 16rem" />
+                  <col style="width: 16rem" />
+                  <col style="width: auto" />
+                  <col style="width: 20.6rem" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th colspan="4" class="bd-line-2 two-lines">
+                      <div class="flex space-between align-center">
+                        <div class="left">
+                          <span class="sub-txt">API 연동키 설정</span>
+                          <span class="small-txt ml-6">[서비스별 API 연동키를 등록하세요.]</span>
+                        </div>
+                        <div class="right">
+                          <button class="button small bg-dark">정보 변경</button>
+                        </div>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th rowspan="2" class="va-top">구글 번역(TEXT)</th>
+                    <th>Client ID</th>
+                    <td class="two-lines"><input type="text" value="Jangsoon-goodShop-PRD-16f5a01d1-53c5cc31" /></td>
+                    <td rowspan="2" class="two-lines va-top">
+                      <div class="flex space-between">
+                        <button class="button small blue-line">Key 발급</button>
+                        <button class="button small line">발급 메뉴얼</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Client Secret</th>
+                    <td class="bd-right two-lines">
+                      <input type="text" value="PRD-6f5a01d1b18a-55fc-43c2-9255-ad7f" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2" class="va-top">네이버 무료 번역(TEXT)</th>
+                    <th>Client ID</th>
+                    <td class="two-lines"><input type="text" placeholder="Client ID 입력" /></td>
+                    <td rowspan="2" class="two-lines va-top">
+                      <div class="flex space-between">
+                        <button class="button small blue-line">Key 발급</button
+                        ><button class="button small line">발급 메뉴얼</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Client Secret</th>
+                    <td class="bd-right two-lines"><input type="text" placeholder="Secret Key 입력" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //수정/저장 모드 -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#none" class="consulting">상담하기</a>
+  </body>
+</html>

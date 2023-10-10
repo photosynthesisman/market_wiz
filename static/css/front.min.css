@@ -341,6 +341,7 @@ html {
 }
 
 body {
+  min-width: 1680px;
   font: normal 1.6rem/2.4rem "Pretendard", sans-serif;
   color: var(--base-txt-color);
   letter-spacing: -0.02em;
@@ -11937,7 +11938,8 @@ input {
 .lnb-inner {
   position: relative;
   width: 24rem;
-  height: calc(100% - 3.6rem);
+  height: 100%;
+  min-height: calc(100vh - 8rem);
   margin: 0 auto;
   padding: 3.2rem;
   background-color: var(--white-color);
@@ -12541,7 +12543,7 @@ input {
   width: 13.2rem;
   height: 13.2rem;
   margin-right: 0.8rem;
-  background-color: rgba(255, 0, 0, 0.1);
+  background: url(../images/common/dummy-image2.png) center/100% no-repeat;
 }
 .record-wrap ul {
   width: 100%;
@@ -13198,6 +13200,7 @@ jq-Datepicker
   content: none;
 }
 .button.download {
+  line-height: 1 !important;
   background: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 16.6666H15M10 3.33325V13.3333M10 13.3333L12.9167 10.4166M10 13.3333L7.08333 10.4166' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") left 1.2rem center/2rem 2rem no-repeat;
 }
 .button.download:disabled {
@@ -14118,6 +14121,7 @@ input[type=date]:disabled {
 .table table {
   word-break: break-all;
   font-size: 1.4rem;
+  line-height: 2rem;
   border-top: 0.1rem solid var(--line-color01);
   border-bottom: 0.1rem solid var(--line-color01);
 }
@@ -14140,12 +14144,17 @@ input[type=date]:disabled {
 }
 .table table th.bd-right,
 .table table td.bd-right {
+  border-width: 1px !important;
   border-right: 0.1rem solid var(--line-color03);
 }
 .table table th.two-lines,
 .table table td.two-lines {
   padding: 0.6rem 1.2rem;
   line-height: 1.6rem;
+}
+.table table th.two-lines .button,
+.table table td.two-lines .button {
+  margin-right: 0;
 }
 .table table th .img,
 .table table td .img {
@@ -14158,6 +14167,11 @@ input[type=date]:disabled {
   font-weight: normal;
   font-size: 1.4rem;
 }
+.table table th .sub-txt {
+  font-weight: 700;
+  text-align: left;
+  color: var(--strong-txt-color);
+}
 .table table th:last-child,
 .table table td:last-child {
   border-right-width: 0;
@@ -14166,9 +14180,6 @@ input[type=date]:disabled {
   padding-top: 0.9rem;
   padding-bottom: 0.9rem;
   text-align: center;
-}
-.table table thead th.h-56 {
-  border-bottom: 1px solid var(--line-color01);
 }
 .table table thead tr:first-child th {
   border-top: 0;
@@ -14198,6 +14209,31 @@ input[type=date]:disabled {
 }
 .table table tfoot tr:first-child td {
   border-top: 0.1rem solid #eee;
+}
+.table table .flex .radio-box + .radio-box {
+  margin-left: 2.4rem;
+  margin-top: 0;
+}
+.table table .radio-box + .radio-box {
+  margin-left: 0;
+  margin-top: 1.2rem;
+}
+.table table .bd-line {
+  border-bottom: 1px solid var(--line-color01);
+}
+.table table .bd-line-2 {
+  border-bottom: 1px solid var(--line-color03);
+}
+.table table .bd-top {
+  border-top: 1px solid var(--line-color01);
+}
+.table table .bd-right {
+  border-right: 1px solid var(--line-color03);
+}
+.table table .logo {
+  width: 5.6rem;
+  height: 5.6rem;
+  background: url(../images/common/mongmong_middle.png) center/100% no-repeat;
 }
 .table .no-label.sm-check .lbl {
   padding-left: 0;
@@ -14371,6 +14407,11 @@ h3,
 .a-link2 {
   color: #2e74f2;
   text-decoration: underline;
+}
+
+.main-txt {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 
 .sub-txt {

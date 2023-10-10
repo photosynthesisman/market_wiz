@@ -4,6 +4,7 @@
   table {
     word-break: break-all;
     font-size: 1.4rem;
+    line-height: 2rem;
     border-top: 0.1rem solid var(--line-color01);
     border-bottom: 0.1rem solid var(--line-color01);
     tr:first-child {
@@ -24,11 +25,15 @@
         border-left: 0.1rem solid var(--line-color03);
       }
       &.bd-right {
+        border-width: 1px !important;
         border-right: 0.1rem solid var(--line-color03);
       }
       &.two-lines {
         padding: 0.6rem 1.2rem;
         line-height: 1.6rem;
+        .button {
+          margin-right: 0;
+        }
       }
       .img {
         width: 11.6rem;
@@ -40,6 +45,11 @@
       background: var(--disabled-bg-color);
       font-weight: normal;
       font-size: 1.4rem;
+      .sub-txt {
+        font-weight: 700;
+        text-align: left;
+        color: var(--strong-txt-color);
+      }
     }
     th:last-child,
     td:last-child {
@@ -50,9 +60,6 @@
         padding-top: 0.9rem;
         padding-bottom: 0.9rem;
         text-align: center;
-        &.h-56 {
-          border-bottom: 1px solid var(--line-color01);
-        }
       }
     }
     thead tr:first-child th {
@@ -85,6 +92,33 @@
       tr:first-child td {
         border-top: 0.1rem solid #eee;
       }
+    }
+    .flex {
+      .radio-box + .radio-box {
+        margin-left: 2.4rem;
+        margin-top: 0;
+      }
+    }
+    .radio-box + .radio-box {
+      margin-left: 0;
+      margin-top: 1.2rem;
+    }
+    .bd-line {
+      border-bottom: 1px solid var(--line-color01);
+    }
+    .bd-line-2 {
+      border-bottom: 1px solid var(--line-color03);
+    }
+    .bd-top {
+      border-top: 1px solid var(--line-color01);
+    }
+    .bd-right {
+      border-right: 1px solid var(--line-color03);
+    }
+    .logo {
+      width: 5.6rem;
+      height: 5.6rem;
+      background: url(../images/common/mongmong_middle.png) center/100% no-repeat;
     }
   }
   .no-label.sm-check {

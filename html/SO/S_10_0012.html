@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARKET WIZ</title>
+
+    <!-- 퍼블용 include: 개발팀에서 재include 하길 바랍니다. -->
+    <script class="__include" src="../include/head.js"></script>
+  </head>
+  <body class="market">
+    <!-- header -->
+    <header data-include="../layout/header.html"></header>
+
+    <!-- container -->
+    <div class="container">
+      <!-- lnb -->
+      <div class="lnb" data-include="../layout/lnb.html"></div>
+
+      <!-- contents -->
+      <div class="contents">
+        <div class="tab-container">
+          <ul>
+            <li class="tab active"><a href="#">메뉴권한 관리</a><span class="close-tab">닫기</span></li>
+          </ul>
+        </div>
+
+        <div class="tab-content active">
+          <div class="tit-wrap">
+            <h2 class="h1">
+              메뉴권한 관리
+              <i class="favorite">즐겨찾기</i>
+              <!-- 즐겨찾기 등록된 경우-->
+              <!-- <i class="favorite checked">즐겨찾기</i> -->
+            </h2>
+            <div class="path">
+              <a href="#none" class="home">홈 바로가기</a>
+              <a href="#none" class="1depth">환경설정</a>
+              <a href="#none" class="2depth">메뉴권한 관리</a>
+            </div>
+          </div>
+          <div class="contents">
+            <!-- 조회(읽기) 모드 -->
+            <div class="table mt-30">
+              <table>
+                <colgroup>
+                  <col style="width: 12.8rem" />
+                  <col style="width: 34rem" />
+                  <col style="width: 12.8rem" />
+                  <col style="width: auto" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th colspan="4" class="bd-line-2 two-lines">
+                      <div class="flex space-between align-center">
+                        <div class="left">
+                          <span class="sub-txt">메뉴별 권한 설정</span>
+                          <span class="small-txt ml-6">
+                            [마켓위즈 시스템의 관리 계정을 추가하고 메뉴별 권한을 관리할 수 있습니다.]
+                          </span>
+                        </div>
+                        <div class="right">
+                          <button class="button small bg-dark open-pop" data-name="S_10_0013">부관리자 등록</button>
+                        </div>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>메인 관리자</th>
+                    <td colspan="3">abcdef1234@marketwids.com / 김마켓</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="4" class="va-top">부관리자 계정</th>
+                    <td rowspan="2" class="va-top">
+                      abcdef1234@marketwids.com / 김마켓
+                      <div class="flex mt-5">
+                        <button class="button small blue-line">권한 변경</button>
+                        <button class="button small line ml-0">관리 계정 제거</button>
+                      </div>
+                    </td>
+                    <th class="va-top">접근 가능</th>
+                    <td>
+                      메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명
+                      / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴
+                      명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="va-top">접근 불가</th>
+                    <td>메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2" class="va-top">
+                      abcdef1234@marketwids.com / 김마켓
+                      <div class="flex mt-5">
+                        <button class="button small blue-line">권한 변경</button>
+                        <button class="button small line ml-0">관리 계정 제거</button>
+                      </div>
+                    </td>
+                    <th class="va-top">접근 가능</th>
+                    <td>
+                      메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명
+                      / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴
+                      명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="va-top">접근 불가</th>
+                    <td>메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="td-notice mt-16">메뉴권한 관리는 메인 관리 계정만 이용할 수 있습니다.</p>
+            </div>
+            <!-- //조회(읽기) 모드 -->
+            <!-- 수정/저장 모드 -->
+            <div class="table mt-30">
+              <table>
+                <colgroup>
+                  <col style="width: 12.8rem" />
+                  <col style="width: 34rem" />
+                  <col style="width: 12.8rem" />
+                  <col style="width: auto" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th colspan="4" class="bd-line-2 two-lines">
+                      <div class="flex space-between align-center">
+                        <div class="left">
+                          <span class="sub-txt">메뉴별 권한 설정</span>
+                          <span class="small-txt ml-6">
+                            [마켓위즈 시스템의 관리 계정을 추가하고 메뉴별 권한을 관리할 수 있습니다.]
+                          </span>
+                        </div>
+                        <div class="right">
+                          <button class="button small bg-dark open-pop" data-name="S_10_0013">부관리자 등록</button>
+                        </div>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>메인 관리자</th>
+                    <td colspan="3">abcdef1234@marketwids.com / 김마켓</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="3" class="va-top">부관리자 계정</th>
+                    <td class="va-top">
+                      abcdef1234@marketwids.com / 김마켓
+                      <div class="flex mt-5">
+                        <button class="button small blue-line">설정 저장</button>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <div>
+                        <span class="checkbox sm-check">
+                          <input type="checkbox" id="menu-name1" />
+                          <label for="menu-name1" class="lbl">메뉴 명</label>
+                        </span>
+                        <span class="checkbox sm-check">
+                          <input type="checkbox" id="menu-name2" />
+                          <label for="menu-name2" class="lbl">메뉴 명</label>
+                        </span>
+                        <span class="checkbox sm-check">
+                          <input type="checkbox" id="menu-name3" />
+                          <label for="menu-name3" class="lbl">메뉴 명</label>
+                        </span>
+                        <span class="checkbox sm-check">
+                          <input type="checkbox" id="menu-name4" />
+                          <label for="menu-name4" class="lbl">메뉴 명</label>
+                        </span>
+                        <span class="checkbox sm-check">
+                          <input type="checkbox" id="menu-name5" />
+                          <label for="menu-name5" class="lbl">메뉴 명</label>
+                        </span>
+                        <span class="checkbox sm-check">
+                          <input type="checkbox" id="menu-name6" />
+                          <label for="menu-name6" class="lbl">메뉴 명</label>
+                        </span>
+                        <span class="checkbox sm-check">
+                          <input type="checkbox" id="menu-name7" />
+                          <label for="menu-name7" class="lbl">메뉴 명</label>
+                        </span>
+                        <span class="checkbox sm-check">
+                          <input type="checkbox" id="menu-name8" />
+                          <label for="menu-name8" class="lbl">메뉴 명</label>
+                        </span>
+                        <span class="checkbox sm-check">
+                          <input type="checkbox" id="menu-name9" />
+                          <label for="menu-name9" class="lbl">메뉴 명</label>
+                        </span>
+                        <span class="checkbox sm-check">
+                          <input type="checkbox" id="menu-name10" />
+                          <label for="menu-name10" class="lbl">메뉴 명</label>
+                        </span>
+                      </div>
+                      <div class="mt-12">
+                        <span class="checkbox sm-check">
+                          <input type="checkbox" id="menu-name11" />
+                          <label for="menu-name11" class="lbl">메뉴 명</label>
+                        </span>
+                        <span class="checkbox sm-check">
+                          <input type="checkbox" id="menu-name12" />
+                          <label for="menu-name12" class="lbl">메뉴 명</label>
+                        </span>
+                        <span class="checkbox sm-check">
+                          <input type="checkbox" id="menu-name13" />
+                          <label for="menu-name13" class="lbl">메뉴 명</label>
+                        </span>
+                        <span class="checkbox sm-check">
+                          <input type="checkbox" id="menu-name14" />
+                          <label for="menu-name14" class="lbl">메뉴 명</label>
+                        </span>
+                        <span class="checkbox sm-check">
+                          <input type="checkbox" id="menu-name15" />
+                          <label for="menu-name15" class="lbl">메뉴 명</label>
+                        </span>
+                        <span class="checkbox sm-check">
+                          <input type="checkbox" id="menu-name16" />
+                          <label for="menu-name16" class="lbl">메뉴 명</label>
+                        </span>
+                        <span class="checkbox sm-check">
+                          <input type="checkbox" id="menu-name17" />
+                          <label for="menu-name17" class="lbl">메뉴 명</label>
+                        </span>
+                        <span class="checkbox sm-check">
+                          <input type="checkbox" id="menu-name18" />
+                          <label for="menu-name18" class="lbl">메뉴 명</label>
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" class="va-top">
+                      abcdef1234@marketwids.com / 김마켓
+                      <div class="flex mt-5">
+                        <button class="button small blue-line">권한 변경</button>
+                        <button class="button small line ml-0">관리 계정 제거</button>
+                      </div>
+                    </td>
+                    <th class="va-top">접근 가능</th>
+                    <td>
+                      메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명
+                      / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴
+                      명 / 메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="va-top">접근 불가</th>
+                    <td>메뉴 명 / 메뉴 명 / 메뉴 명 / 메뉴 명</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="td-notice mt-16">메뉴권한 관리는 메인 관리 계정만 이용할 수 있습니다.</p>
+            </div>
+            <!-- //수정/저장 모드 -->
+          </div>
+
+          <div class="mt-40">
+            <button class="open-pop button line mr-10" data-name="S_10_0013">부관리자 등록(S_10_0013)</button>
+          </div>
+
+          <div class="popup has-tit w1024" id="S_10_0013">
+            <div class="pop-head">
+              <h2>부관리자 등록</h2>
+              <button class="close"></button>
+            </div>
+            <div class="pop-contents">
+              <p class="main-txt">아래 URL로 접속하여 마켓위즈에 로그인 또는 회원가입 하시면 부관리자로 등록됩니다.</p>
+              <div class="table mt-12">
+                <table>
+                  <colgroup>
+                    <col style="width: 13.6rem" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>부관리자 등록 URL</th>
+                      <td class="two-lines">
+                        <div class="flex space-between align-center">
+                          <p>https://texttexttexttext.text/texttext.texttext/texttexttext/texttext</p>
+                          <button class="button small blue-line">URL 복사하기</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>유효시간</th>
+                      <td class="two-lines">
+                        <div class="flex space-between align-center">
+                          <p>YYYY.MM.DD hh:mm:ss 까지 등록 가능</p>
+                          <button class="button small line ml-0">URL 다시생성</button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="td-notice mt-16">
+                  부관리자 등록 URL은 발급 후 4시간이 초과되면 사용할 수 없으며, 1개의 URL로 1개의 계정만 부관리자
+                  등록이 가능합니다.
+                </p>
+                <p class="td-notice">
+                  신규 등록된 부관리자는 모든 권한이 제한되어 있기 때문에 메인 관리자가 [환경설정 &gt; 메뉴권한 관리]
+                  메뉴에서 이용권한을 설정하시기 바랍니다.
+                </p>
+              </div>
+            </div>
+            <div class="pop-bottm">
+              <button class="button bg-primary">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#none" class="consulting">상담하기</a>
+  </body>
+</html>

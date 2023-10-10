@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARKET WIZ</title>
+
+    <!-- 퍼블용 include: 개발팀에서 재include 하길 바랍니다. -->
+    <script class="__include" src="../include/head.js"></script>
+  </head>
+  <body class="market">
+    <!-- header -->
+    <header data-include="../layout/header.html"></header>
+
+    <!-- container -->
+    <div class="container">
+      <!-- lnb -->
+      <div class="lnb" data-include="../layout/lnb.html"></div>
+
+      <!-- contents -->
+      <div class="contents">
+        <div class="tab-container">
+          <ul>
+            <li class="tab active"><a href="#">서비스 추가/변경</a><span class="close-tab">닫기</span></li>
+          </ul>
+        </div>
+
+        <div class="tab-content active">
+          <div class="tit-wrap">
+            <h2 class="h1">
+              서비스 추가/변경
+              <i class="favorite">즐겨찾기</i>
+              <!-- 즐겨찾기 등록된 경우-->
+              <!-- <i class="favorite checked">즐겨찾기</i> -->
+            </h2>
+            <div class="path">
+              <a href="#none" class="home">홈 바로가기</a>
+              <a href="#none" class="1depth">환경설정</a>
+              <a href="#none" class="1depth">서비스/사업자정보 관리</a>
+              <a href="#none" class="2depth">서비스 추가/변경</a>
+            </div>
+          </div>
+          <div class="contents">
+            <div class="table mt-30">
+              <table>
+                <colgroup>
+                  <col style="width: 12.8rem" />
+                  <col style="width: 14.4rem" />
+                  <col style="width: 20.8rem" />
+                  <col style="width: auto" />
+                  <col style="width: 12.8rem" />
+                  <col style="width: 20.8rem" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th colspan="6" class="bd-line-2">
+                      <p class="sub-txt">마켓위즈 서비스 이용현황</p>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th colspan="4" class="bd-line-2">
+                      <p class="sub-txt">패키지 상품명 TEXT TEXT TEXT TEXT TEXT</p>
+                    </th>
+                    <th class="fw-bold bd-line-2 t-left">월 요금</th>
+                    <td class="fw-bold bd-line-2">00,000원</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th rowspan="2" class="va-top">
+                      데이터 수집 관리
+                      <button class="button mini line mt-4">추가/변경</button>
+                    </th>
+                    <th class="va-top">수집 사이트</th>
+                    <td>
+                      <p>이용 00 개</p>
+                      <p>잔여 00 개</p>
+                    </td>
+                    <td colspan="3">
+                      Taobao.com, Aliexpress.com, auction.co.kr, SmileDelivery, Gmarket.co.kr, LOTTEON.com, 11st.co.kr,
+                      Auction.co.kr, Bananab2b.co.k,/ brand.naver.com, CHICOR.com, Coupang.com, domeme.domeggook.com,
+                      ,G9.co.kr, MUSINSA.com
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>상품 수집 개수</th>
+                    <td colspan="5">00,000 개</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="3" class="va-top">
+                      판매 쇼핑몰 연동
+                      <button class="button mini line mt-4">추가/변경</button>
+                    </th>
+                    <th class="va-top">자사몰 연동</th>
+                    <td>
+                      <p>이용 00 개</p>
+                      <p>잔여 00 개</p>
+                    </td>
+                    <td colspan="3" class="va-top">Abcdefg1234.com, Abcdefg1234.com</td>
+                  </tr>
+                  <tr>
+                    <th class="va-top">임대형/폐쇄형 쇼핑몰</th>
+                    <td>
+                      <p>이용 00 개</p>
+                      <p>잔여 00 개</p>
+                    </td>
+                    <td colspan="3" class="va-top">
+                      Taobao.com, Aliexpress.com, auction.co.kr, SmileDelivery, Gmarket.co.kr, LOTTEON.com, 11st.co.kr,
+                      Auction.co.kr, Bananab2b.co.k,/ brand.naver.com, CHICOR.com, Coupang.com, domeme.domeggook.com,
+                      ,G9.co.kr, MUSINSA.com
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="va-top">계정 연동 수량</th>
+                    <td colspan="4">
+                      <p>이용 00 개</p>
+                      <p>잔여 00 개</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2" class="va-top">
+                      메시지 발송
+                      <button class="button mini line mt-4 open-pop" data-name="S_10_0033">추가/변경</button>
+                    </th>
+                    <th class="va-top">SMS 발송</th>
+                    <td colspan="4">
+                      <p>이용 00,000,000 건</p>
+                      <p>잔여 00,000,000 건</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="va-top">카카오 채널 Talk</th>
+                    <td colspan="4">
+                      <p>이용 00,000,000 건</p>
+                      <p>잔여 00,000,000 건</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2" class="va-top">
+                      이미지 번역
+                      <button class="button mini line mt-4 open-pop" data-name="S_10_0034">추가/변경</button>
+                    </th>
+                    <th class="va-top">오후스튜디오</th>
+                    <td colspan="4">
+                      <p>이용 00,000,000 건</p>
+                      <p>잔여 00,000,000 건</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="tb-title mt-48">
+              <p>마켓위즈 솔루션 더보기</p>
+            </div>
+            <div class="flex space-between">
+              <div class="table w-416">
+                <table>
+                  <colgroup>
+                    <col style="width: 12.8rem" />
+                    <col style="width: 12.8rem" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th colspan="3" class="bd-line-2 fw-bold t-left">패키지 상품명 TEXT TEXT TEXT TEXT TEXT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan="2" class="va-top">데이터 수집 관리</th>
+                      <th>수집 사이트</th>
+                      <td>00 개</td>
+                    </tr>
+                    <tr>
+                      <th>상품 수집 개수</th>
+                      <td>00,000 개</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="3" class="va-top">판매 쇼핑몰 연동</th>
+                      <th>자사몰 연동</th>
+                      <td>00 개</td>
+                    </tr>
+                    <tr>
+                      <th class="two-lines">임대형/폐쇄형<br />쇼핑몰</th>
+                      <td>00 개</td>
+                    </tr>
+                    <tr>
+                      <th>계정 연동 수량</th>
+                      <td>000 개</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="2" class="va-top">메시지 발송</th>
+                      <th>SMS 발송</th>
+                      <td>0,000,000 건</td>
+                    </tr>
+                    <tr>
+                      <th>카카오 채널 Talk</th>
+                      <td>0,000,000 건</td>
+                    </tr>
+                    <tr>
+                      <th>이미지 번역</th>
+                      <th>오후스튜디오</th>
+                      <td>0,000,000 건</td>
+                    </tr>
+                    <tr>
+                      <th colspan="2" class="fw-bold bd-top">월 요금</th>
+                      <th class="fw-bold bd-top">00,000 원</th>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="t-center">
+                  <button class="button small bg-dark mt-16">솔루션 변경</button>
+                </div>
+              </div>
+              <div class="table w-416">
+                <table>
+                  <colgroup>
+                    <col style="width: 12.8rem" />
+                    <col style="width: 12.8rem" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th colspan="3" class="bd-line-2 fw-bold t-left">패키지 상품명 TEXT TEXT TEXT TEXT TEXT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan="2" class="va-top">데이터 수집 관리</th>
+                      <th>수집 사이트</th>
+                      <td>00 개</td>
+                    </tr>
+                    <tr>
+                      <th>상품 수집 개수</th>
+                      <td>00,000 개</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="3" class="va-top">판매 쇼핑몰 연동</th>
+                      <th>자사몰 연동</th>
+                      <td>00 개</td>
+                    </tr>
+                    <tr>
+                      <th class="two-lines">임대형/폐쇄형<br />쇼핑몰</th>
+                      <td>00 개</td>
+                    </tr>
+                    <tr>
+                      <th>계정 연동 수량</th>
+                      <td>000 개</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="2" class="va-top">메시지 발송</th>
+                      <th>SMS 발송</th>
+                      <td>0,000,000 건</td>
+                    </tr>
+                    <tr>
+                      <th>카카오 채널 Talk</th>
+                      <td>0,000,000 건</td>
+                    </tr>
+                    <tr>
+                      <th>이미지 번역</th>
+                      <th>오후스튜디오</th>
+                      <td>0,000,000 건</td>
+                    </tr>
+                    <tr>
+                      <th colspan="2" class="fw-bold bd-top">월 요금</th>
+                      <th class="fw-bold bd-top">00,000 원</th>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="t-center">
+                  <button class="button small bg-dark mt-16">솔루션 변경</button>
+                </div>
+              </div>
+              <div class="table w-416">
+                <table>
+                  <colgroup>
+                    <col style="width: 12.8rem" />
+                    <col style="width: 12.8rem" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th colspan="3" class="bd-line-2 fw-bold t-left">패키지 상품명 TEXT TEXT TEXT TEXT TEXT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan="2" class="va-top">데이터 수집 관리</th>
+                      <th>수집 사이트</th>
+                      <td>00 개</td>
+                    </tr>
+                    <tr>
+                      <th>상품 수집 개수</th>
+                      <td>00,000 개</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="3" class="va-top">판매 쇼핑몰 연동</th>
+                      <th>자사몰 연동</th>
+                      <td>00 개</td>
+                    </tr>
+                    <tr>
+                      <th class="two-lines">임대형/폐쇄형<br />쇼핑몰</th>
+                      <td>00 개</td>
+                    </tr>
+                    <tr>
+                      <th>계정 연동 수량</th>
+                      <td>000 개</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="2" class="va-top">메시지 발송</th>
+                      <th>SMS 발송</th>
+                      <td>0,000,000 건</td>
+                    </tr>
+                    <tr>
+                      <th>카카오 채널 Talk</th>
+                      <td>0,000,000 건</td>
+                    </tr>
+                    <tr>
+                      <th>이미지 번역</th>
+                      <th>오후스튜디오</th>
+                      <td>0,000,000 건</td>
+                    </tr>
+                    <tr>
+                      <th colspan="2" class="fw-bold bd-top">월 요금</th>
+                      <th class="fw-bold bd-top">00,000 원</th>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="t-center">
+                  <button class="button small bg-dark mt-16">솔루션 변경</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-40">
+            <button class="open-pop button line mr-10" data-name="S_10_0033">메시지 발송 추가/변경(S_10_0033)</button>
+            <button class="open-pop button line mr-10" data-name="S_10_0034">이미지 번역 추가/변경(S_10_0034)</button>
+          </div>
+          <!-- 메시지 발송 추가/변경 팝업 -->
+          <div class="popup has-tit w1024" id="S_10_0033">
+            <div class="pop-head">
+              <h2>메시지 발송 추가/변경</h2>
+              <button class="close"></button>
+            </div>
+            <div class="pop-contents">
+              <div class="table">
+                <table>
+                  <colgroup>
+                    <col style="width: 11.4rem" />
+                    <col style="width: 11.2rem" />
+                    <col style="width: 17rem" />
+                    <col style="width: 11.2rem" />
+                    <col style="width: 17rem" />
+                    <col style="width: 11.2rem" />
+                    <col style="width: 17rem" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="bd-right">SMS/LMS</th>
+                      <th>총 제공 건 수</th>
+                      <td>00,000,000 건</td>
+                      <th>이용 건 수</th>
+                      <td>00,000,000 건</td>
+                      <th>잔여 건 수</th>
+                      <td>00,000,000 건</td>
+                    </tr>
+                    <tr>
+                      <th class="va-top">서비스 추가</th>
+                      <td colspan="4">
+                        <div class="radio-box small">
+                          <input type="radio" id="service1" name="service" />
+                          <label for="service1">000,000,000 건</label>
+                        </div>
+                        <div class="radio-box small">
+                          <input type="radio" id="service2" name="service" />
+                          <label for="service2">000,000,000 건</label>
+                        </div>
+                        <div class="radio-box small">
+                          <input type="radio" id="service3" name="service" />
+                          <label for="service3">000,000,000 건</label>
+                        </div>
+                        <div class="radio-box small">
+                          <input type="radio" id="service4" name="service" />
+                          <label for="service4">000,000,000 건</label>
+                        </div>
+                      </td>
+                      <th class="va-top">추가 요금</th>
+                      <td class="va-top">000,000 건</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table mt-16">
+                <table>
+                  <colgroup>
+                    <col style="width: 11.4rem" />
+                    <col style="width: 11.2rem" />
+                    <col style="width: 17rem" />
+                    <col style="width: 11.2rem" />
+                    <col style="width: 17rem" />
+                    <col style="width: 11.2rem" />
+                    <col style="width: 17rem" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="bd-right">카카오 채널Talk</th>
+                      <th>총 제공 건 수</th>
+                      <td>00,000,000 건</td>
+                      <th>이용 건 수</th>
+                      <td>00,000,000 건</td>
+                      <th>잔여 건 수</th>
+                      <td>00,000,000 건</td>
+                    </tr>
+                    <tr>
+                      <th class="va-top">서비스 추가</th>
+                      <td colspan="4">
+                        <div class="radio-box small">
+                          <input type="radio" id="service5" name="service2" />
+                          <label for="service5">000,000,000 건</label>
+                        </div>
+                        <div class="radio-box small">
+                          <input type="radio" id="service6" name="service2" />
+                          <label for="service6">000,000,000 건</label>
+                        </div>
+                        <div class="radio-box small">
+                          <input type="radio" id="service7" name="service2" />
+                          <label for="service7">000,000,000 건</label>
+                        </div>
+                        <div class="radio-box small">
+                          <input type="radio" id="service8" name="service2" />
+                          <label for="service8">000,000,000 건</label>
+                        </div>
+                      </td>
+                      <th class="va-top">추가 요금</th>
+                      <td class="va-top">000,000 건</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table mt-16">
+                <table>
+                  <colgroup>
+                    <col style="width: auto" />
+                    <col style="width: 17rem" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="fw-bold bd-right">결제 예정 금액</th>
+                      <td class="fw-bold">000,000 원</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="pop-bottm">
+              <button class="button bg-primary">서비스 추가/신청</button>
+            </div>
+          </div>
+          <!-- //메시지 발송 추가/변경 팝업 -->
+
+          <!-- 이미지 번역 추가/변경 팝업 -->
+          <div class="popup has-tit w1024" id="S_10_0034">
+            <div class="pop-head">
+              <h2>이미지 번역 추가/변경</h2>
+              <button class="close"></button>
+            </div>
+            <div class="pop-contents">
+              <div class="table">
+                <table>
+                  <colgroup>
+                    <col style="width: 11.4rem" />
+                    <col style="width: 11.2rem" />
+                    <col style="width: 17rem" />
+                    <col style="width: 11.2rem" />
+                    <col style="width: 17rem" />
+                    <col style="width: 11.2rem" />
+                    <col style="width: 17rem" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="bd-right">오후스튜디오</th>
+                      <th>총 제공 건 수</th>
+                      <td>00,000,000 건</td>
+                      <th>이용 건 수</th>
+                      <td>00,000,000 건</td>
+                      <th>잔여 건 수</th>
+                      <td>00,000,000 건</td>
+                    </tr>
+                    <tr>
+                      <th class="va-top">서비스 추가</th>
+                      <td colspan="4">
+                        <div class="radio-box small">
+                          <input type="radio" id="image1" name="image" />
+                          <label for="image1">000,000,000 건</label>
+                        </div>
+                        <div class="radio-box small">
+                          <input type="radio" id="image2" name="image" />
+                          <label for="image2">000,000,000 건</label>
+                        </div>
+                        <div class="radio-box small">
+                          <input type="radio" id="image3" name="image" />
+                          <label for="image3">000,000,000 건</label>
+                        </div>
+                        <div class="radio-box small">
+                          <input type="radio" id="image4" name="image" />
+                          <label for="image4">000,000,000 건</label>
+                        </div>
+                      </td>
+                      <th class="va-top">추가 요금</th>
+                      <td class="va-top">000,000 건</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table mt-16">
+                <table>
+                  <colgroup>
+                    <col style="width: auto" />
+                    <col style="width: 17rem" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="fw-bold bd-right">결제 예정 금액</th>
+                      <td class="fw-bold">000,000 원</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="pop-bottm">
+              <button class="button bg-primary">서비스 추가/신청</button>
+            </div>
+          </div>
+          <!-- //이미지 번역 추가/변경 팝업 -->
+        </div>
+      </div>
+    </div>
+    <a href="#none" class="consulting">상담하기</a>
+  </body>
+</html>

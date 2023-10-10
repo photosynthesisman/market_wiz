@@ -84,6 +84,7 @@
     }
   }
   &.download {
+    line-height: 1 !important;
     background: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 16.6666H15M10 3.33325V13.3333M10 13.3333L12.9167 10.4166M10 13.3333L7.08333 10.4166' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
       left 1.2rem center / 2rem 2rem no-repeat;
     &:disabled {
