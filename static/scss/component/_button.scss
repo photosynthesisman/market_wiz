@@ -29,6 +29,7 @@
     }
   }
   &.line {
+    border: 1px solid transparent;
     &.download {
       border: 1px solid var(--line-color02);
       &::before,
@@ -66,10 +67,8 @@
     }
     &:hover,
     &.mouseover {
-      border: 1px solid var(--strong-txt-color);
-      &::before,
       &::after {
-        content: none;
+        background: var(--strong-txt-color);
       }
     }
     &:disabled {
