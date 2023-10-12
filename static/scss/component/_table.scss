@@ -50,6 +50,12 @@
         text-align: left;
         color: var(--strong-txt-color);
       }
+      &.required::after {
+        content: "*";
+        display: inline-block;
+        margin-left: 0.4rem;
+        color: var(--alert-txt-color);
+      }
     }
     th:last-child,
     td:last-child {
@@ -114,6 +120,9 @@
     }
     .bd-right {
       border-right: 1px solid var(--line-color03);
+    }
+    .bd-r-none {
+      border-right-width: 0;
     }
     .logo {
       width: 5.6rem;

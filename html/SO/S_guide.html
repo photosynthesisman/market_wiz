@@ -21,18 +21,18 @@
       <div class="contents">
         <div class="tab-container">
           <ul>
-            <li class="tab active">
-              <a href="#" data-tab="font-guide">폰트 가이드</a><span class="close-tab">닫기</span>
-            </li>
+            <li class="tab"><a href="#" data-tab="font-guide">폰트 가이드</a><span class="close-tab">닫기</span></li>
             <li class="tab"><a href="#" data-tab="color-guide">색상 가이드</a><span class="close-tab">닫기</span></li>
             <li class="tab"><a href="#" data-tab="form-guide">폼 가이드</a><span class="close-tab">닫기</span></li>
             <li class="tab"><a href="#" data-tab="button-guide">버튼 가이드</a><span class="close-tab">닫기</span></li>
-            <li class="tab"><a href="#" data-tab="popup-guide">팝업 가이드</a><span class="close-tab">닫기</span></li>
+            <li class="tab active">
+              <a href="#" data-tab="lnb-guide">lnb 가이드</a><span class="close-tab">닫기</span>
+            </li>
           </ul>
         </div>
 
         <!-- 폰트 가이드 -->
-        <div class="tab-content active" id="font-guide">
+        <div class="tab-content" id="font-guide">
           <div>
             <h2 class="guide-tit mb-50">Font Face</h2>
             <h3 class="mb-20">국/영문 공통</h3>
@@ -999,17 +999,534 @@
             </div>
           </div>
         </div>
+        <!-- lnb 가이드 -->
+        <div class="tab-content active" id="lnb-guide">
+          <h2 class="guide-tit">Lnb</h2>
+          <div class="flex justify-start">
+            <!-- lnb 메뉴 펼친 화면 -->
+            <div class="lnb-inner mr-60">
+              <div class="logo">로고</div>
+              <p class="logo-name">(주)몽몽마켓</p>
+              <button class="close-lnb">닫기</button>
+
+              <ul class="folding-list">
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="my-menu"></i>나의메뉴<span>(0)</span></a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li>기본정책관리</li>
+                      <li>템플릿관리</li>
+                      <li>정책성관리</li>
+                      <!-- 나의 메뉴 미 등록 시 출력 -->
+                      <li class="menu-empty">
+                        <p>나의 메뉴가 없습니다</p>
+                        <a href="#none">나의 메뉴 등록하는 법</a>
+                      </li>
+                      <!-- // 나의 메뉴 미 등록 시 출력 -->
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="manage-collect"></i>상품수집관리</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li class="has-depth">
+                        <a href="#none" class="lnb-menu">사이트 상품수집</a>
+                        <i class="depth-open"></i>
+                        <ul>
+                          <li>기본정책관리</li>
+                          <li>템플릿관리</li>
+                        </ul>
+                      </li>
+                      <li><a href="#none" class="lnb-menu">내 스토어 상품수집</a></li>
+                      <li><a href="#none" class="lnb-menu">저장대기상품</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="manage-product"></i>상품관리</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li><a href="#none" class="lnb-menu">기본상품관리</a></li>
+                      <li class="has-depth">
+                        <a href="#none" class="lnb-menu">마켓상품관리</a>
+                        <i class="depth-open"></i>
+                        <ul>
+                          <li><a href="#none" class="lnb-menu">상품업데이트/마켓전송</a></li>
+                          <li><a href="#none" class="lnb-menu">마켓상품삭제/품절</a></li>
+                          <li><a href="#none" class="lnb-menu">상품정보번역/복원</a></li>
+                          <li><a href="#none" class="lnb-menu">상품이미지번역/복원</a></li>
+                          <li><a href="#none" class="lnb-menu">옵션자동넘버링</a></li>
+                          <li><a href="#none" class="lnb-menu">단일상품저장</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="policy"></i>정책생성&#183;적용관리</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn lnb-menu"><i class="manage-claim"></i>주문&#183;클레임관리</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="manage-answer"></i>문의관리</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li><a href="#none" class="lnb-menu">1:1 문의 관리</a></li>
+                      <li>쪽지함 관리</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="manage-st"></i>통계관리</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="setting"></i>환경설정</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li class="has-depth">
+                        <a href="#none" class="lnb-menu">서비스/<br />사업자정보 관리</a>
+                        <i class="depth-open"></i>
+                        <ul>
+                          <li>
+                            <a href="#none" class="lnb-menu">사업자 정보</a>
+                          </li>
+                          <li><a href="#none" class="lnb-menu">서비스 추가/변경</a></li>
+                          <li><a href="#none" class="lnb-menu">API 연동키 설정</a></li>
+                          <li>서비스 이용문의</li>
+                        </ul>
+                      </li>
+                      <li><a href="#none" class="lnb-menu">메뉴권한 관리</a></li>
+                      <li><a href="#none" class="lnb-menu">배송대행지 관리</a></li>
+                      <li>3</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- // lnb 메뉴 펼친 화면 -->
+            <!-- lnb 메뉴 축소 화면 -->
+            <div class="lnb-inner fold mr-60">
+              <div class="logo">로고</div>
+              <p class="logo-name">(주)몽몽마켓</p>
+              <button class="close-lnb">닫기</button>
+
+              <ul class="folding-list folded">
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="my-menu"></i>나의메뉴</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li>기본정책관리</li>
+                      <li>템플릿관리</li>
+                      <li>정책성관리</li>
+                      <!-- 나의 메뉴 미 등록 시 출력 -->
+                      <li class="menu-empty">
+                        <p>나의 메뉴가 없습니다</p>
+                        <a href="#none">나의 메뉴 등록하는 법</a>
+                      </li>
+                      <!-- // 나의 메뉴 미 등록 시 출력 -->
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="manage-collect"></i>상품수집</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li class="has-depth">
+                        <a href="#none" class="lnb-menu">사이트 상품수집</a>
+                        <i class="depth-open"></i>
+                        <ul>
+                          <li>기본정책관리</li>
+                          <li>템플릿관리</li>
+                        </ul>
+                      </li>
+                      <li><a href="#none" class="lnb-menu">내 스토어 상품수집</a></li>
+                      <li><a href="#none" class="lnb-menu">저장대기상품</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="manage-product"></i>상품관리</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li><a href="#none" class="lnb-menu">기본상품관리</a></li>
+                      <li class="has-depth">
+                        <a href="#none" class="lnb-menu">마켓상품관리</a>
+                        <i class="depth-open"></i>
+                        <ul>
+                          <li><a href="#none" class="lnb-menu">상품업데이트/마켓전송</a></li>
+                          <li><a href="#none" class="lnb-menu">마켓상품삭제/품절</a></li>
+                          <li><a href="#none" class="lnb-menu">상품정보번역/복원</a></li>
+                          <li><a href="#none" class="lnb-menu">상품이미지번역/복원</a></li>
+                          <li><a href="#none" class="lnb-menu">옵션자동넘버링</a></li>
+                          <li><a href="#none" class="lnb-menu">단일상품저장</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="policy"></i>정책&middot;적용</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn lnb-menu"><i class="manage-claim"></i>주문&middot;관리</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="manage-answer"></i>문의</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li><a href="#none" class="lnb-menu">1:1 문의 관리</a></li>
+                      <li>쪽지함 관리</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="manage-st"></i>통계</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="setting"></i>환경설정</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- //lnb 메뉴 축소 화면 -->
+            <!-- lnb ty2 메뉴 펼친 화면 -->
+            <div class="lnb-inner ty-2 mr-60">
+              <div class="logo">로고</div>
+              <p class="logo-name">(주)몽몽마켓</p>
+              <button class="close-lnb">닫기</button>
+
+              <ul class="folding-list">
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="my-menu"></i>나의메뉴<span>(0)</span></a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li>기본정책관리</li>
+                      <li>템플릿관리</li>
+                      <li>정책성관리</li>
+                      <!-- 나의 메뉴 미 등록 시 출력 -->
+                      <li class="menu-empty">
+                        <p>나의 메뉴가 없습니다</p>
+                        <a href="#none">나의 메뉴 등록하는 법</a>
+                      </li>
+                      <!-- // 나의 메뉴 미 등록 시 출력 -->
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="manage-category"></i>카테고리매칭관리</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li class="has-depth">
+                        <a href="#none" class="lnb-menu">사이트 상품수집</a>
+                        <i class="depth-open"></i>
+                        <ul>
+                          <li>기본정책관리</li>
+                          <li>템플릿관리</li>
+                        </ul>
+                      </li>
+                      <li><a href="#none" class="lnb-menu">내 스토어 상품수집</a></li>
+                      <li><a href="#none" class="lnb-menu">저장대기상품</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="manage-solution"></i>솔루션등록관리</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li><a href="#none" class="lnb-menu">기본상품관리</a></li>
+                      <li class="has-depth">
+                        <a href="#none" class="lnb-menu">마켓상품관리</a>
+                        <i class="depth-open"></i>
+                        <ul>
+                          <li><a href="#none" class="lnb-menu">상품업데이트/마켓전송</a></li>
+                          <li><a href="#none" class="lnb-menu">마켓상품삭제/품절</a></li>
+                          <li><a href="#none" class="lnb-menu">상품정보번역/복원</a></li>
+                          <li><a href="#none" class="lnb-menu">상품이미지번역/복원</a></li>
+                          <li><a href="#none" class="lnb-menu">옵션자동넘버링</a></li>
+                          <li><a href="#none" class="lnb-menu">단일상품저장</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="my-menu"></i>사용자관리</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn lnb-menu"><i class="manage-site"></i>소싱사이트등록관리</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="manage-board"></i>게시물/문의관리</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li><a href="#none" class="lnb-menu">1:1 문의 관리</a></li>
+                      <li>쪽지함 관리</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="manage-terms"></i>금지어/약관관리</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="manage-st"></i>통계관리</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li class="has-depth">
+                        <a href="#none" class="lnb-menu">서비스/<br />사업자정보 관리</a>
+                        <i class="depth-open"></i>
+                        <ul>
+                          <li>
+                            <a href="#none" class="lnb-menu">사업자 정보</a>
+                          </li>
+                          <li><a href="#none" class="lnb-menu">서비스 추가/변경</a></li>
+                          <li><a href="#none" class="lnb-menu">API 연동키 설정</a></li>
+                          <li>서비스 이용문의</li>
+                        </ul>
+                      </li>
+                      <li><a href="#none" class="lnb-menu">메뉴권한 관리</a></li>
+                      <li><a href="#none" class="lnb-menu">배송대행지 관리</a></li>
+                      <li>3</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- //lnb ty2 메뉴 펼친 화면 -->
+            <!-- lnb ty2 메뉴 축소 화면 -->
+            <div class="lnb-inner fold">
+              <div class="logo">로고</div>
+              <p class="logo-name">(주)몽몽마켓</p>
+              <button class="close-lnb">닫기</button>
+
+              <ul class="folding-list folded">
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="my-menu"></i>나의메뉴<span>(0)</span></a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li>기본정책관리</li>
+                      <li>템플릿관리</li>
+                      <li>정책성관리</li>
+                      <!-- 나의 메뉴 미 등록 시 출력 -->
+                      <li class="menu-empty">
+                        <p>나의 메뉴가 없습니다</p>
+                        <a href="#none">나의 메뉴 등록하는 법</a>
+                      </li>
+                      <!-- // 나의 메뉴 미 등록 시 출력 -->
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="manage-category"></i>매칭관리</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li class="has-depth">
+                        <a href="#none" class="lnb-menu">사이트 상품수집</a>
+                        <i class="depth-open"></i>
+                        <ul>
+                          <li>기본정책관리</li>
+                          <li>템플릿관리</li>
+                        </ul>
+                      </li>
+                      <li><a href="#none" class="lnb-menu">내 스토어 상품수집</a></li>
+                      <li><a href="#none" class="lnb-menu">저장대기상품</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="manage-solution"></i>솔루션등록</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li><a href="#none" class="lnb-menu">기본상품관리</a></li>
+                      <li class="has-depth">
+                        <a href="#none" class="lnb-menu">마켓상품관리</a>
+                        <i class="depth-open"></i>
+                        <ul>
+                          <li><a href="#none" class="lnb-menu">상품업데이트/마켓전송</a></li>
+                          <li><a href="#none" class="lnb-menu">마켓상품삭제/품절</a></li>
+                          <li><a href="#none" class="lnb-menu">상품정보번역/복원</a></li>
+                          <li><a href="#none" class="lnb-menu">상품이미지번역/복원</a></li>
+                          <li><a href="#none" class="lnb-menu">옵션자동넘버링</a></li>
+                          <li><a href="#none" class="lnb-menu">단일상품저장</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="my-menu"></i>사용자관리</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn lnb-menu"><i class="manage-site"></i>소싱사이트</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="manage-board"></i>게시물/문의관리</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li><a href="#none" class="lnb-menu">1:1 문의 관리</a></li>
+                      <li>쪽지함 관리</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="manage-terms"></i>금지어/약관관리</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="folding-head">
+                    <a href="#none" class="folding-btn"><i class="manage-st"></i>통계관리</a>
+                  </div>
+                  <div class="folding-panel">
+                    <ul>
+                      <li class="has-depth">
+                        <a href="#none" class="lnb-menu">서비스/<br />사업자정보 관리</a>
+                        <i class="depth-open"></i>
+                        <ul>
+                          <li>
+                            <a href="#none" class="lnb-menu">사업자 정보</a>
+                          </li>
+                          <li><a href="#none" class="lnb-menu">서비스 추가/변경</a></li>
+                          <li><a href="#none" class="lnb-menu">API 연동키 설정</a></li>
+                          <li>서비스 이용문의</li>
+                        </ul>
+                      </li>
+                      <li><a href="#none" class="lnb-menu">메뉴권한 관리</a></li>
+                      <li><a href="#none" class="lnb-menu">배송대행지 관리</a></li>
+                      <li>3</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- //lnb ty2 메뉴 축소 화면 -->
+          </div>
+        </div>
       </div>
     </div>
     <a href="#none" class="consulting">상담하기</a>
-    <script>
-      // TEST
-      const $pageType = getUrlParams().type;
-      if ($pageType) {
-        if ($pageType === "color-guide") $("#color-guide").addClass("active").siblings().removeClass("active");
-        else if ($pageType === "reset") $(".head-title h1").text("비밀번호 재설정");
-        else if ($pageType === "change") $(".head-title h1").text("비밀번호 변경");
-      }
-    </script>
   </body>
 </html>

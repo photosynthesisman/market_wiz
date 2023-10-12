@@ -97,6 +97,9 @@ html.pc {
   // color: #eb5757 !important;
   color: #e45055 !important;
 }
+.fc-grey {
+  color: var(--sub-txt-color) !important;
+}
 .fc-down {
   color: #447eee !important;
 }
@@ -526,31 +529,31 @@ html.pc {
 }
 
 // padding
-// @for $i from 0 through 100 {
-//   .pd-#{$i} {
-//     padding: $i * 0.1rem !important;
-//   }
-//   .pd-#{$i}-x {
-//     padding-left: $i * 0.1rem !important;
-//     padding-right: $i * 0.1rem !important;
-//   }
-//   .pd-#{$i}-y {
-//     padding-top: $i * 0.1rem !important;
-//     padding-bottom: $i * 0.1rem !important;
-//   }
-//   .pt-#{$i} {
-//     padding-top: $i * 0.1rem !important;
-//   }
-//   .pb-#{$i} {
-//     padding-bottom: $i * 0.1rem !important;
-//   }
-//   .pl-#{$i} {
-//     padding-left: $i * 0.1rem !important;
-//   }
-//   .pr-#{$i} {
-//     padding-right: $i * 0.1rem !important;
-//   }
-// }
+@for $i from 0 through 100 {
+  .pd-#{$i} {
+    padding: $i * 0.1rem !important;
+  }
+  .pd-#{$i}-x {
+    padding-left: $i * 0.1rem !important;
+    padding-right: $i * 0.1rem !important;
+  }
+  .pd-#{$i}-y {
+    padding-top: $i * 0.1rem !important;
+    padding-bottom: $i * 0.1rem !important;
+  }
+  .pt-#{$i} {
+    padding-top: $i * 0.1rem !important;
+  }
+  .pb-#{$i} {
+    padding-bottom: $i * 0.1rem !important;
+  }
+  .pl-#{$i} {
+    padding-left: $i * 0.1rem !important;
+  }
+  .pr-#{$i} {
+    padding-right: $i * 0.1rem !important;
+  }
+}
 // @for $i from 1 through 20 {
 //   .pd-#{$i*5 + 100} {
 //     padding: $i * 0.5rem + 10rem !important;
