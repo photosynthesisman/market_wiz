@@ -285,8 +285,11 @@ input {
         width: 10.4rem;
         height: 10.4rem;
         margin-right: 1.6rem;
-        padding: 0.4rem;
-        background: url(../images/common/dummy-image.png);
+      }
+      .checkbox {
+        position: absolute;
+        top: 2px;
+        left: 0.4rem;
       }
       .txt-wrap {
         span {

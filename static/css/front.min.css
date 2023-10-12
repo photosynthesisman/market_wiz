@@ -14632,6 +14632,10 @@ input {
   border-radius: 1rem;
 }
 
+img {
+  width: 100%;
+}
+
 .header-space {
   position: sticky;
   z-index: 9999;
@@ -14936,7 +14940,6 @@ input {
   width: 8rem;
   height: 8rem;
   margin: 0 auto 0.9rem;
-  background: url(../images/common/mongmong.png) center/100% no-repeat;
   font-size: 0;
 }
 .lnb-inner .logo-name {
@@ -15531,7 +15534,6 @@ input {
   width: 13.2rem;
   height: 13.2rem;
   margin-right: 0.8rem;
-  background: url(../images/common/dummy-image2.png) center/100% no-repeat;
 }
 .record-wrap ul {
   width: 100%;
@@ -15609,7 +15611,6 @@ input {
   margin: 0 1rem 0 0;
   width: 9.6rem;
   height: 9.6rem;
-  background: url(../images/common/dummy-image.png);
 }
 .img_thumbnail span {
   position: absolute;
@@ -16608,8 +16609,11 @@ input:required {
   width: 10.4rem;
   height: 10.4rem;
   margin-right: 1.6rem;
-  padding: 0.4rem;
-  background: url(../images/common/dummy-image.png);
+}
+.product-list .item-wrap .item .checkbox {
+  position: absolute;
+  top: 2px;
+  left: 0.4rem;
 }
 .product-list .item-wrap .item .txt-wrap span {
   font-size: 1.4rem;
@@ -17156,7 +17160,6 @@ input[type=date]:disabled {
 .table table td .img {
   width: 11.6rem;
   height: 11.6rem;
-  background-image: url(../images/common/dummy-image2.png);
 }
 .table table th {
   background: var(--disabled-bg-color);
@@ -17238,7 +17241,6 @@ input[type=date]:disabled {
 .table table .logo {
   width: 5.6rem;
   height: 5.6rem;
-  background: url(../images/common/mongmong_middle.png) center/100% no-repeat;
 }
 .table .no-label.sm-check .lbl {
   padding-left: 0;
