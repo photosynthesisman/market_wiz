@@ -17327,6 +17327,10 @@ input[type=date]:disabled {
   position: static;
   -webkit-transform: none;
           transform: none;
+  height: 100%;
+}
+.popup.open.ty2 {
+  height: auto;
 }
 .popup .txt-wrap {
   height: 13rem;

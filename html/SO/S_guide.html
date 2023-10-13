@@ -40,6 +40,9 @@
             <li class="tab">
               <a href="#none" data-tab="table-guide">테이블 가이드</a><span class="close-tab">닫기</span>
             </li>
+            <li class="tab">
+              <a href="#none" data-tab="popup-guide">팝업 가이드</a><span class="close-tab">닫기</span>
+            </li>
           </ul>
         </div>
 
@@ -934,7 +937,7 @@
           </div>
           <div class="pop-box mt-20">
             <div class="mr-20">
-              <div class="popup open">
+              <div class="popup open ty2">
                 <div class="txt-wrap">
                   <p>삭제하시겠습니까?</p>
                 </div>
@@ -945,7 +948,7 @@
               <p>버튼 1개</p>
             </div>
             <div class="mr-20">
-              <div class="popup open" id="">
+              <div class="popup open ty2" id="">
                 <div class="txt-wrap">
                   <p>선택한 정보가 없습니다</p>
                 </div>
@@ -957,7 +960,7 @@
               <p>버튼 2개</p>
             </div>
             <div class="mr-20">
-              <div class="popup open" id="">
+              <div class="popup open ty2" id="">
                 <div class="txt-wrap">
                   <p>삭제하시겠습니까?</p>
                 </div>
@@ -968,7 +971,7 @@
               <p>버튼 Hover</p>
             </div>
             <div>
-              <div class="popup open" id="">
+              <div class="popup open ty2" id="">
                 <div class="txt-wrap">
                   <p>
                     확인 버튼을 누르면<br />
@@ -1098,6 +1101,600 @@
             <div class="pop-bottm">
               <button class="button line">확인</button>
               <button class="button bg-primary">메세지발송</button>
+            </div>
+          </div>
+          <h2 class="guide-tit mt-100">예시</h2>
+          <div class="flex mt-20">
+            <div class="popup has-tit w480 open" id="S_07_0003">
+              <div class="pop-head">
+                <h2>가격/재고 이력</h2>
+                <button class="close"></button>
+              </div>
+              <div class="pop-contents">
+                <div class="record-wrap">
+                  <div class="img">
+                    <img src="../../static/images/common/dummy-image2.png" alt="" />
+                  </div>
+                  <ul>
+                    <li>YYYY.MM.DD hh:mm:ss</li>
+                    <li><a href="#none" class="a-link2">상품명 TEXT TEXT TEXT TEXT TEXT </a></li>
+                    <li><a href="#none" class="a-link2">http://TEXTTEXT.co.kr</a></li>
+                  </ul>
+                </div>
+                <div class="table">
+                  <table>
+                    <colgroup>
+                      <col style="width: 9.6rem" />
+                      <col style="width: auto" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>현재가(원)</th>
+                        <td>000,000,00</td>
+                      </tr>
+                      <tr class="fc-primary2">
+                        <th>최저가(원)</th>
+                        <td>000,000,00(YYYY.MM.DD hh:mm)</td>
+                      </tr>
+                      <tr class="fc-red">
+                        <th>최고가(원)</th>
+                        <td>000,000,00(YYYY.MM.DD hh:mm)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="mt-16">
+                    <colgroup>
+                      <col style="width: 9.6rem" />
+                      <col style="width: auto" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>일시</th>
+                        <td>YYYY.MM.DD hh:mm:ss</td>
+                      </tr>
+                      <tr>
+                        <th>가격(원)</th>
+                        <td>000,000,00</td>
+                      </tr>
+                      <tr>
+                        <th>재고여부</th>
+                        <td>○(있음)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="mt-16">
+                    <colgroup>
+                      <col style="width: 9.6rem" />
+                      <col style="width: auto" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th class="va-top">선택사항</th>
+                        <td>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</td>
+                      </tr>
+                      <tr>
+                        <th>가격(원)</th>
+                        <td>000,000,00</td>
+                      </tr>
+                      <tr class="fc-red">
+                        <th>재고여부</th>
+                        <td>X(없음)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="pop-bottm">
+                <button class="button bg-primary">확인</button>
+              </div>
+            </div>
+            <div class="popup has-tit w480 open" id="S_07_0004">
+              <div class="pop-head">
+                <h2>배송 조회</h2>
+                <button class="close"></button>
+              </div>
+              <div class="pop-contents">
+                <div class="table">
+                  <table>
+                    <colgroup>
+                      <col style="width: 9.6rem" />
+                      <col style="width: auto" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>배송 일시</th>
+                        <td>YYYY.MM.DD hh:mm:ss</td>
+                      </tr>
+                      <tr>
+                        <th>현재 위치</th>
+                        <td>CJ대한통운 / 인천국제공항(화물터미널)</td>
+                      </tr>
+                      <tr>
+                        <th>배송 상태</th>
+                        <td>발송</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="mt-16">
+                    <colgroup>
+                      <col style="width: 9.6rem" />
+                      <col style="width: auto" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>배송 일시</th>
+                        <td>YYYY.MM.DD hh:mm:ss</td>
+                      </tr>
+                      <tr>
+                        <th>현재 위치</th>
+                        <td>CJ대한통운 / 인천국제공항(화물터미널)</td>
+                      </tr>
+                      <tr>
+                        <th>배송 상태</th>
+                        <td>발송</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="mt-16">
+                    <colgroup>
+                      <col style="width: 9.6rem" />
+                      <col style="width: auto" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>배송 일시</th>
+                        <td>YYYY.MM.DD hh:mm:ss</td>
+                      </tr>
+                      <tr>
+                        <th>현재 위치</th>
+                        <td>CJ대한통운 / 인천국제공항(화물터미널)</td>
+                      </tr>
+                      <tr>
+                        <th>배송 상태</th>
+                        <td>발송</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="pop-bottm">
+                <button class="button bg-primary">확인</button>
+              </div>
+            </div>
+            <div class="popup has-tit w640 open" id="S_07_0007">
+              <div class="pop-head">
+                <h2>주문 로그 [ 주문번호 : <span>XXXXXXXXXXXXX</span> ]</h2>
+                <button class="close"></button>
+              </div>
+              <div class="pop-contents">
+                <div class="table">
+                  <table>
+                    <colgroup>
+                      <col style="width: 9.6rem" />
+                      <col style="width: 19.2rem" />
+                      <col style="width: 9.6rem" />
+                      <col style="width: 19.2rem" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>판매 쇼핑몰</th>
+                        <td>위메프</td>
+                        <th class="two-lines">쇼핑몰 ID /<br />별칭</th>
+                        <td>IDID / 홍길동</td>
+                      </tr>
+                      <tr>
+                        <th>주문번호</th>
+                        <td>0000000000</td>
+                        <th>주문일시</th>
+                        <td>YYYY.MM.DD hh:mm:ss</td>
+                      </tr>
+                      <tr>
+                        <th>주문수집일시</th>
+                        <td>YYYY.MM.DD hh:mm:ss</td>
+                        <th>수집결과</th>
+                        <td>성공</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="pop-bottm">
+                <button class="button bg-primary">확인</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex mt-20">
+            <div class="popup has-tit w640 open" id="S_07_0011">
+              <div class="pop-head">
+                <h2>통관 고유번호 검증</h2>
+                <button class="close"></button>
+              </div>
+              <div class="pop-contents">
+                <div class="table">
+                  <table>
+                    <colgroup>
+                      <col style="width: 12.8rem" />
+                      <col style="width: auto" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>받는 번호</th>
+                        <td class="two-lines"><input type="text" value="XXXXXXXXXXXXX" /></td>
+                      </tr>
+                      <tr>
+                        <th>주문자 이름</th>
+                        <td class="two-lines"><input type="text" value="김마켓" /></td>
+                      </tr>
+                      <tr>
+                        <th>주문자 휴대폰 번호</th>
+                        <td class="two-lines"><input type="text" value="01012345678" /></td>
+                      </tr>
+                      <tr>
+                        <th>검증 결과</th>
+                        <td>정상</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="pop-bottm mt-12">
+                <button class="button small blue-line mr-auto">통관부호 재확인 요청</button>
+                <button class="button small line">취소</button>
+                <button class="button small bg-primary">다시 검증하기</button>
+              </div>
+              <div class="service-notice mt-24">
+                <dl>
+                  <dt>검증실패</dt>
+                  <dd>
+                    <ul>
+                      <li>
+                        <p class="dot">통관부호 사용자 불일치</p>
+                        <p>입력하신 납세의무자 정보가 개인통관고유부호의 사용자와 일치하지 않습니다.</p>
+                      </li>
+                      <li>
+                        <p class="dot">통관고유부호 13자리 수 오류</p>
+                        <p>입력하신 통관고유부호가 13자리가 아닙니다.</p>
+                      </li>
+                      <li>
+                        <p class="dot">통관고유부호 문자(P) 형식 입력 오류</p>
+                        <p>입력하신 통관고유부호가 “P”로 시작하지 않습니다.</p>
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>장애</dt>
+                  <dd>
+                    <ul>
+                      <li>
+                        <p class="dot">시스템 장애</p>
+                        <p>관세청 서버에서 장애가 발생하였습니다. 다시 시도해 주세요.</p>
+                      </li>
+                      <li>
+                        <p class="dot">통신 장애</p>
+                        <p>관세청 서버와의 통신 중 장애가 발생하였습니다. 다시 시도해 주세요.</p>
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+              <div class="pop-bottm">
+                <button class="button line">취소</button>
+                <button class="button bg-primary">메시지 발송</button>
+              </div>
+            </div>
+            <div class="popup has-tit w640 open" id="S_07_0008">
+              <div class="pop-head">
+                <h2>SMS 메시지 전송</h2>
+                <button class="close"></button>
+              </div>
+              <div class="pop-contents">
+                <div class="table">
+                  <table>
+                    <colgroup>
+                      <col style="width: 9.6rem" />
+                      <col style="width: 19.2rem" />
+                      <col style="width: 9.6rem" />
+                      <col style="width: 19.2rem" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>받는 번호</th>
+                        <td class="two-lines">
+                          <input type="text" value="010 &#8722; XXXX &#8722; XXXX" disabled="" />
+                        </td>
+                        <th>보내는 번호</th>
+                        <td>010 &#8722; XXXX &#8722; XXXX</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="table mt-16">
+                  <table>
+                    <colgroup>
+                      <col style="width: 9.6rem" />
+                      <col style="width: auto" />
+                    </colgroup>
+
+                    <tbody>
+                      <tr>
+                        <th colspan="2" class="two-lines">
+                          <div class="flex space-between align-center">
+                            <p>메시지 입력</p>
+                            <div>
+                              <button class="button small bg-dark open-pop" data-name="S_07_0012">템플릿 관리</button>
+                              <button class="detail-view ty2 ml-2">상세 보기</button>
+                            </div>
+                          </div>
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>입력 방식</th>
+                        <td class="two-lines">
+                          <div class="flex align-center">
+                            <div class="radio-box small">
+                              <input type="radio" id="claim-radio-1" name="claim-radio-1" checked />
+                              <label for="claim-radio-1">직접 입력</label>
+                            </div>
+                            <div class="radio-box small">
+                              <input type="radio" id="claim-radio-2" name="claim-radio-1" />
+                              <label for="claim-radio-2">템플릿 불러오기</label>
+                            </div>
+                            <div class="select-box disabled ml-16">
+                              <ul>
+                                <li class="init">메시지 템플릿 선택</li>
+                                <li data-value="value1">Hover</li>
+                                <li data-value="value2">Selected</li>
+                                <li data-value="value3">Default</li>
+                                <li data-value="value4">Disabled</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="va-top">메시지 내용</th>
+                        <td>
+                          <div class="text-area">
+                            <textarea
+                              rows="3"
+                              class="txt-area"
+                              maxlength="200"
+                              placeholder="문의사항을 입력해주세요"
+                            ></textarea>
+                            <p class="counter"><strong>0</strong> / 200</p>
+                          </div>
+                          <p class="td-notice mt-6">90 Byte가 넘어가면 자동으로 LMS 메시지로 전환 됩니다.</p>
+                          <p class="td-notice">LMS 메시지는 최대 200 Byte까지 발송할 수 있습니다.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="pop-bottm">
+                <button class="button line">취소</button>
+                <button class="button bg-primary">메시지 발송</button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-20">
+            <div class="popup has-tit w1024 open" id="S_07_0010">
+              <div class="pop-head">
+                <h2><span>10</span>개 쇼핑몰의 <span>xxx</span>계정에 대한 수집 결과</h2>
+                <button class="close"></button>
+              </div>
+              <div class="pop-contents">
+                <div class="list-summary">
+                  <span class="result"
+                    >총 <em class="mr-8">1,222건 </em> 성공 <em class="fc-primary2">980</em>건 / 실패
+                    <em class="fc-red">20</em>건</span
+                  >
+                </div>
+                <div class="table mt-16">
+                  <table>
+                    <colgroup>
+                      <col style="width: 17.6rem" />
+                      <col style="width: 17.6rem" />
+                      <col style="width: 17.6rem" />
+                      <col style="width: 8.8rem" />
+                      <col style="width: 17.6rem" />
+                      <col style="width: auto" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>수집일시</th>
+                        <th>쇼핑몰</th>
+                        <th>쇼핑몰 ID</th>
+                        <th>수집 결과</th>
+                        <th>총 주문(건)</th>
+                        <th>총 금액(원)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="fc-primary2">
+                        <td>YYYY.MM.DD hh:mm:ss</td>
+                        <td>위메프</td>
+                        <td>text</td>
+                        <td>성공</td>
+                        <td class="t-right">0,000</td>
+                        <td class="t-right">0,000,000</td>
+                      </tr>
+                      <tr class="fc-primary2">
+                        <td>YYYY.MM.DD hh:mm:ss</td>
+                        <td>위메프</td>
+                        <td>text</td>
+                        <td>성공</td>
+                        <td class="t-right">0,000</td>
+                        <td class="t-right">0,000,000</td>
+                      </tr>
+                      <tr class="fc-red">
+                        <td>YYYY.MM.DD hh:mm:ss</td>
+                        <td>위메프</td>
+                        <td>text</td>
+                        <td>성공</td>
+                        <td class="t-right">0,000</td>
+                        <td class="t-right">0,000,000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="td-notice mt-16">
+                  지속적으로 수집 오류/실패가 발생하는 경우 [ 환경 설정 &#62; 마켓정보 관리] 메뉴에서 등록된
+                  쇼핑몰/쇼핑몰ID 를 확인해 주세요.
+                </p>
+              </div>
+              <div class="pop-bottm">
+                <button class="button bg-primary">확인</button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-20">
+            <div class="popup has-tit w1024 open" id="S_08_0003">
+              <div class="pop-head">
+                <h2>문의 답변하기</h2>
+                <button class="close"></button>
+              </div>
+              <div class="pop-contents">
+                <div class="table">
+                  <table>
+                    <colgroup>
+                      <col style="width: 11.2rem" />
+                      <col style="width: 36.8rem" />
+                      <col style="width: 11.2rem" />
+                      <col style="width: 36.8rem" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>문의접수 일시</th>
+                        <td>YYYY.MM.DD hh:mm:ss</td>
+                        <th>상품번호</th>
+                        <td>0000000000</td>
+                      </tr>
+                      <tr>
+                        <th>상품 이름</th>
+                        <td colspan="3">
+                          <a href="#none" class="a-link2" title="해당 상품으로 이동"
+                            >상품명상품명상품명상품명상품명상품명상품명상품명</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>주문 번호</th>
+                        <td><a href="#none" class="a-link2" title="해당 링크로 이동">0000000000</a></td>
+                        <th>주문 일시</th>
+                        <td>YYYY.MM.DD hh:mm:ss</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="mt-16">
+                    <colgroup>
+                      <col style="width: 11.2rem" />
+                      <col style="width: auto" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>문의 제목</th>
+                        <td>제목</td>
+                      </tr>
+                      <tr>
+                        <th class="va-top">문의 내용</th>
+                        <td>
+                          문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용문의내용
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="va-top">첨부 이미지</th>
+                        <td>
+                          <div class="flex">
+                            <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                              <span></span>
+                            </a>
+                            <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                              <span></span>
+                            </a>
+                            <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                              <span></span>
+                            </a>
+                            <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                              <span></span>
+                            </a>
+                            <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                              <span></span>
+                            </a>
+                            <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                              <span></span>
+                            </a>
+                            <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                              <span></span>
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="tb-title mt-24">
+                    <p>답변 입력</p>
+                    <button class="button mini line ty2">템플릿 관리</button>
+                  </div>
+                  <div class="table">
+                    <table>
+                      <colgroup>
+                        <col style="width: 9.6rem" />
+                        <col style="width: auto" />
+                      </colgroup>
+
+                      <tbody>
+                        <tr>
+                          <th>입력 방식</th>
+                          <td class="two-lines">
+                            <div class="flex align-center">
+                              <div class="radio-box small">
+                                <input type="radio" id="answer-radio-3" name="answer2" checked />
+                                <label for="answer-radio-3">직접 입력</label>
+                              </div>
+                              <div class="radio-box small">
+                                <input type="radio" id="answer-radio-4" name="answer2" />
+                                <label for="answer-radio-4">템플릿 불러오기</label>
+                              </div>
+                              <div class="select-box disabled ml-16">
+                                <ul>
+                                  <li class="init">답변 템플릿 선택</li>
+                                  <li data-value="value1">Hover</li>
+                                  <li data-value="value2">Selected</li>
+                                  <li data-value="value3">Default</li>
+                                  <li data-value="value4">Disabled</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="va-top">메시지 내용</th>
+                          <td>
+                            <div class="text-area">
+                              <textarea rows="3" class="txt-area" maxlength="200" placeholder="메시지 입력"></textarea>
+                              <p class="counter"><strong>0</strong> / 200</p>
+                            </div>
+                            <p class="td-notice mt-6">답변 내용이 등록되면 해당 마켓으로 전송 됩니다.</p>
+                            <p class="td-notice">
+                              답변은 마켓 별로 최대 글자수가 다르기 때문에 500자를 초과할 경우 일부 내용이 노출되지 않을
+                              수 있습니다.
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pop-bottm">
+                <button class="button line">취소</button>
+                <button class="button bg-primary">답변 저장</button>
+              </div>
             </div>
           </div>
         </div>
@@ -5043,7 +5640,7 @@
                 </tr>
                 <tr>
                   <th>옵션 가격</th>
-                  <td class="bd-r-none">
+                  <td class="bd-r-none two-lines">
                     <div class="select-box w-320">
                       <ul>
                         <li class="init">옵션별 본래 가격으로 전송</li>
