@@ -35,10 +35,8 @@ $(document).ready(function () {
   $(".market").on("click", ".has-depth", function () {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
-      $(this).find("ul").fadeOut();
     } else {
       $(this).addClass("active");
-      $(this).find("ul").fadeIn();
     }
   });
 
