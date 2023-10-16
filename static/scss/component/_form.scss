@@ -596,8 +596,8 @@ input[type="date"] {
   margin-top: 4rem;
 }
 .page_nation {
-  &.hover {
-    li a {
+  .hover {
+    a {
       color: var(--primary-color2);
     }
     .arrow {
