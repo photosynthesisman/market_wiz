@@ -35,10 +35,10 @@
                   <p>툴팁의 내용을 적어주세요</p>
                 </div>
               </div>
-              <i class="favorite">즐겨찾기</i>
+              <button class="favorite">즐겨찾기</button>
 
               <!-- 즐겨찾기 등록된 경우-->
-              <!-- <i class="favorite checked">즐겨찾기</i> -->
+              <!-- <button class="favorite checked">즐겨찾기</button> -->
             </h2>
             <div class="path">
               <a href="#none" class="home">홈 바로가기</a>
@@ -52,22 +52,34 @@
                 <dt>문의 접수 일자</dt>
                 <dd>
                   <div class="search-box">
-                    <input type="date" value="2023-05-29" />
+                    <input type="date" value="2023-05-29" class="input" />
                     <span class="mg-5-x">~</span>
-                    <input type="date" value="2023-05-29" />
-                    <div class="radio-box ty2 ml-16">
-                      <input type="radio" id="radioty4-1" name="radiobox-ty4" checked />
-                      <label for="radioty4-1">오늘</label>
-                      <input type="radio" id="radioty4-2" name="radiobox-ty4" />
-                      <label for="radioty4-2">1주</label>
-                      <input type="radio" id="radioty4-3" name="radiobox-ty4" />
-                      <label for="radioty4-3">2주</label>
-                      <input type="radio" id="radioty4-4" name="radiobox-ty4" />
-                      <label for="radioty4-4">1개월</label>
-                      <input type="radio" id="radioty4-5" name="radiobox-ty4" />
-                      <label for="radioty4-5">2개월</label>
-                      <input type="radio" id="radioty4-6" name="radiobox-ty4" />
-                      <label for="radioty4-6">6개월</label>
+                    <input type="date" value="2023-05-29" class="input" />
+                    <div class="flex">
+                      <div class="radio-box ty2 ml-16">
+                        <input type="radio" class="radio" id="radioty4-1" name="radiobox-ty4" checked />
+                        <label for="radioty4-1">오늘</label>
+                      </div>
+                      <div class="radio-box ty2">
+                        <input type="radio" class="radio" id="radioty4-2" name="radiobox-ty4" />
+                        <label for="radioty4-2">1주</label>
+                      </div>
+                      <div class="radio-box ty2">
+                        <input type="radio" class="radio" id="radioty4-3" name="radiobox-ty4" />
+                        <label for="radioty4-3">2주</label>
+                      </div>
+                      <div class="radio-box ty2">
+                        <input type="radio" class="radio" id="radioty4-4" name="radiobox-ty4" />
+                        <label for="radioty4-4">1개월</label>
+                      </div>
+                      <div class="radio-box ty2">
+                        <input type="radio" class="radio" id="radioty4-5" name="radiobox-ty4" />
+                        <label for="radioty4-5">2개월</label>
+                      </div>
+                      <div class="radio-box ty2">
+                        <input type="radio" class="radio" id="radioty4-6" name="radiobox-ty4" />
+                        <label for="radioty4-6">6개월</label>
+                      </div>
                     </div>
                   </div>
                 </dd>
@@ -76,38 +88,38 @@
                 <dt>쇼핑몰구분</dt>
                 <dd>
                   <div class="select-box">
+                    <button class="init">전체</button>
                     <ul>
-                      <li class="init">전체</li>
-                      <li data-value="1">쿠팡</li>
-                      <li data-value="2">네이버</li>
-                      <li data-value="3">지마켓</li>
-                      <li data-value="4">11번가</li>
-                      <li data-value="5">롯데온</li>
-                      <li data-value="6">타오바오</li>
-                      <li data-value="7">알리익스프레스</li>
-                      <li data-value="8">1688</li>
-                      <li data-value="9">아마존(미국)</li>
-                      <li data-value="10">아마존(일본)</li>
-                      <li data-value="11">아마존(독일)</li>
+                      <li data-value="1"><button>쿠팡</button></li>
+                      <li data-value="2"><button>네이버</button></li>
+                      <li data-value="3"><button>지마켓</button></li>
+                      <li data-value="4"><button>11번가</button></li>
+                      <li data-value="5"><button>롯데온</button></li>
+                      <li data-value="6"><button>타오바오</button></li>
+                      <li data-value="7"><button>알리익스프레스</button></li>
+                      <li data-value="8"><button>1688</button></li>
+                      <li data-value="9"><button>아마존(미국)</button></li>
+                      <li data-value="10"><button>아마존(일본)</button></li>
+                      <li data-value="11"><button>아마존(독일)</button></li>
                     </ul>
                   </div>
                 </dd>
                 <dt class="ml-64">쇼핑몰 ID</dt>
                 <dd>
                   <div class="select-box">
+                    <button class="init">전체</button>
                     <ul>
-                      <li class="init">전체</li>
-                      <li data-value="1">쿠팡</li>
-                      <li data-value="2">네이버</li>
-                      <li data-value="3">지마켓</li>
-                      <li data-value="4">11번가</li>
-                      <li data-value="5">롯데온</li>
-                      <li data-value="6">타오바오</li>
-                      <li data-value="7">알리익스프레스</li>
-                      <li data-value="8">1688</li>
-                      <li data-value="9">아마존(미국)</li>
-                      <li data-value="10">아마존(일본)</li>
-                      <li data-value="11">아마존(독일)</li>
+                      <li data-value="1"><button>쿠팡</button></li>
+                      <li data-value="2"><button>네이버</button></li>
+                      <li data-value="3"><button>지마켓</button></li>
+                      <li data-value="4"><button>11번가</button></li>
+                      <li data-value="5"><button>롯데온</button></li>
+                      <li data-value="6"><button>타오바오</button></li>
+                      <li data-value="7"><button>알리익스프레스</button></li>
+                      <li data-value="8"><button>1688</button></li>
+                      <li data-value="9"><button>아마존(미국)</button></li>
+                      <li data-value="10"><button>아마존(일본)</button></li>
+                      <li data-value="11"><button>아마존(독일)</button></li>
                     </ul>
                   </div>
                 </dd>
@@ -122,11 +134,11 @@
                 <dd>
                   <div class="flex">
                     <div class="radio-box small">
-                      <input type="radio" id="claim18" name="invoice3" checked />
+                      <input type="radio" class="radio" id="claim18" name="invoice3" checked />
                       <label for="claim18">답변 대기</label>
                     </div>
                     <div class="radio-box small">
-                      <input type="radio" id="claim19" name="invoice3" />
+                      <input type="radio" class="radio" id="claim19" name="invoice3" />
                       <label for="claim19">답변 완료</label>
                     </div>
                   </div>
@@ -137,18 +149,18 @@
                 <dd>
                   <div class="search-box">
                     <div class="select-box">
+                      <button class="init">전체</button>
                       <ul>
-                        <li class="init">전체</li>
-                        <li data-value="1">전체</li>
-                        <li data-value="2">주문자명</li>
-                        <li data-value="3">전화번호</li>
-                        <li data-value="4">상품명</li>
-                        <li data-value="5">상품번호</li>
-                        <li data-value="6">송장번호</li>
+                        <li data-value="1"><button>전체</button></li>
+                        <li data-value="2"><button>주문자명</button></li>
+                        <li data-value="3"><button>전화번호</button></li>
+                        <li data-value="4"><button>상품명</button></li>
+                        <li data-value="5"><button>상품번호</button></li>
+                        <li data-value="6"><button>송장번호</button></li>
                       </ul>
                     </div>
-                    <div class="input w-600">
-                      <input type="text" placeholder="검색어 입력" title="검색어 입력" />
+                    <div class="input-box w-600">
+                      <input type="text" class="input" placeholder="검색어 입력" title="검색어 입력" />
                     </div>
                   </div>
                 </dd>
@@ -170,8 +182,8 @@
                 <div class="product-list">
                   <div class="list-summary">
                     <div class="left">
-                      <div class="checkbox sm-check">
-                        <input type="checkbox" id="chk_all-5" />
+                      <div class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="chk_all-5" />
                         <label for="chk_all-5" class="lbl"></label>
                       </div>
                       <span class="result"
@@ -180,21 +192,21 @@
                     </div>
                     <div class="right">
                       <div class="select-box">
+                        <button class="init">최근 문의</button>
                         <ul>
-                          <li class="init">최근 문의</li>
-                          <li data-value="1">최근 문의</li>
-                          <li data-value="2">과거 문의</li>
-                          <li data-value="3">최근 수집</li>
-                          <li data-value="4">과거 수집</li>
+                          <li data-value="1"><button>최근 문의</button></li>
+                          <li data-value="2"><button>과거 문의</button></li>
+                          <li data-value="3"><button>최근 수집</button></li>
+                          <li data-value="4"><button>과거 수집</button></li>
                         </ul>
                       </div>
                       <div class="select-box ml-4">
+                        <button class="init">50개씩 보기</button>
                         <ul>
-                          <li class="init">50개씩 보기</li>
-                          <li data-value="1">50개씩 보기</li>
-                          <li data-value="2">100개씩 보기</li>
-                          <li data-value="3">150개씩 보기</li>
-                          <li data-value="4">200개씩 보기</li>
+                          <li data-value="1"><button>50개씩 보기</button></li>
+                          <li data-value="2"><button>100개씩 보기</button></li>
+                          <li data-value="3"><button>150개씩 보기</button></li>
+                          <li data-value="4"><button>200개씩 보기</button></li>
                         </ul>
                       </div>
                     </div>
@@ -217,8 +229,8 @@
                           <th colspan="8" class="h-56 bd-line">
                             <div class="flex space-between">
                               <div class="left">
-                                <div class="checkbox sm-check">
-                                  <input type="checkbox" id="table-hd-check3" />
+                                <div class="check-wrap sm-check">
+                                  <input type="checkbox" class="checkbox" id="table-hd-check3" />
                                   <label for="table-hd-check3" class="lbl"></label>
                                 </div>
                               </div>
@@ -230,7 +242,7 @@
                         <tr>
                           <th rowspan="3" class="va-top">상품 이미지</th>
                           <td rowspan="3">
-                            <div class="img">
+                            <div class="img-box w-116">
                               <img src="../../static/images/common/dummy-image2.png" alt="" />
                             </div>
                           </td>
@@ -260,7 +272,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <th colspan="8" class="two-lines">
+                          <th colspan="8" class="small-pd">
                             <div class="flex space-between align-center">
                               <p>문의 내용</p>
                               <div>
@@ -291,8 +303,8 @@
                           <th colspan="8" class="h-56 bd-line">
                             <div class="flex space-between">
                               <div class="left">
-                                <div class="checkbox sm-check">
-                                  <input type="checkbox" id="table-hd-check4" />
+                                <div class="check-wrap sm-check">
+                                  <input type="checkbox" class="checkbox" id="table-hd-check4" />
                                   <label for="table-hd-check4" class="lbl"></label>
                                 </div>
                               </div>
@@ -304,10 +316,8 @@
                         <tr>
                           <th rowspan="3" class="va-top">상품 이미지</th>
                           <td rowspan="3">
-                            <div class="img">
-                              <div class="img">
-                                <img src="../../static/images/common/dummy-image2.png" alt="" />
-                              </div>
+                            <div class="img-box w-116">
+                              <img src="../../static/images/common/dummy-image2.png" alt="" />
                             </div>
                           </td>
                           <th>문의접수 일시</th>
@@ -368,39 +378,39 @@
                           <th class="va-top">첨부 이미지</th>
                           <td colspan="7">
                             <div class="flex">
-                              <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                              <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                                 <img src="../../static/images/common/dummy-image.png" alt="" />
-                                <span></span>
+                                <span>자세히 보기</span>
                               </a>
-                              <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                              <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                                 <img src="../../static/images/common/dummy-image.png" alt="" />
-                                <span></span>
+                                <span>자세히 보기</span>
                               </a>
-                              <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                              <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                                 <img src="../../static/images/common/dummy-image.png" alt="" />
-                                <span></span>
+                                <span>자세히 보기</span>
                               </a>
-                              <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                              <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                                 <img src="../../static/images/common/dummy-image.png" alt="" />
-                                <span></span>
+                                <span>자세히 보기</span>
                               </a>
-                              <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                              <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                                 <img src="../../static/images/common/dummy-image.png" alt="" />
-                                <span></span>
+                                <span>자세히 보기</span>
                               </a>
-                              <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                              <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                                 <img src="../../static/images/common/dummy-image.png" alt="" />
-                                <span></span>
+                                <span>자세히 보기</span>
                               </a>
-                              <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                              <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                                 <img src="../../static/images/common/dummy-image.png" alt="" />
-                                <span></span>
+                                <span>자세히 보기</span>
                               </a>
                             </div>
                           </td>
                         </tr>
                         <tr>
-                          <th colspan="8" class="two-lines">
+                          <th colspan="8" class="small-pd">
                             <div class="flex space-between align-center">
                               <div class="flex align-center">
                                 <span class="mr-5">답변 내용</span>
@@ -434,12 +444,12 @@
                   </div>
                 </div>
                 <!-- 문의 정보 [수집 전] 상태 -->
-                <div class="item-wrap ty2">
+                <div class="progress-box">
                   <div class="no-result"></div>
                   <p class="no-result-tt">문의 정보를 찾을 수 없습니다. 문의 정보를 수집하세요.</p>
                 </div>
                 <!-- 문의 정보 [수집 중] 상태 -->
-                <div class="item-wrap ty2">
+                <div class="progress-box">
                   <div class="progress-wrap">
                     <span class="progress"></span>
                   </div>
@@ -507,23 +517,23 @@
                   <tbody>
                     <tr>
                       <th>입력 방식</th>
-                      <td class="two-lines">
+                      <td class="small-pd">
                         <div class="flex align-center">
                           <div class="radio-box small">
-                            <input type="radio" id="answer-radio-1" name="answer1" checked />
+                            <input type="radio" class="radio" id="answer-radio-1" name="answer1" checked />
                             <label for="answer-radio-1">새 템플릿 등록</label>
                           </div>
                           <div class="radio-box small">
-                            <input type="radio" id="answer-radio-2" name="answer1" />
+                            <input type="radio" class="radio" id="answer-radio-2" name="answer1" />
                             <label for="answer-radio-2">기존 템플릿 수정</label>
                           </div>
                           <div class="select-box disabled ml-16">
+                            <button class="init">수정할 템플릿 선택</button>
                             <ul>
-                              <li class="init">수정할 템플릿 선택</li>
-                              <li data-value="value1">Hover</li>
-                              <li data-value="value2">Selected</li>
-                              <li data-value="value3">Default</li>
-                              <li data-value="value4">Disabled</li>
+                              <li data-value="value1"><button>Hover</button></li>
+                              <li data-value="value2"><button>Selected</button></li>
+                              <li data-value="value3"><button>Default</button></li>
+                              <li data-value="value4"><button>Disabled</button></li>
                             </ul>
                           </div>
                         </div>
@@ -532,7 +542,7 @@
                     <tr>
                       <th>템플릿 제목</th>
                       <td>
-                        <input type="text" placeholder="템플릿 제목 입력" />
+                        <input type="text" class="input" placeholder="템플릿 제목 입력" />
                       </td>
                     </tr>
                     <tr>
@@ -614,33 +624,33 @@
                       <th class="va-top">첨부 이미지</th>
                       <td>
                         <div class="flex">
-                          <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                          <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                             <img src="../../static/images/common/dummy-image.png" alt="" />
-                            <span></span>
+                            <span>자세히 보기</span>
                           </a>
-                          <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                          <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                             <img src="../../static/images/common/dummy-image.png" alt="" />
-                            <span></span>
+                            <span>자세히 보기</span>
                           </a>
-                          <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                          <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                             <img src="../../static/images/common/dummy-image.png" alt="" />
-                            <span></span>
+                            <span>자세히 보기</span>
                           </a>
-                          <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                          <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                             <img src="../../static/images/common/dummy-image.png" alt="" />
-                            <span></span>
+                            <span>자세히 보기</span>
                           </a>
-                          <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                          <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                             <img src="../../static/images/common/dummy-image.png" alt="" />
-                            <span></span>
+                            <span>자세히 보기</span>
                           </a>
-                          <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                          <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                             <img src="../../static/images/common/dummy-image.png" alt="" />
-                            <span></span>
+                            <span>자세히 보기</span>
                           </a>
-                          <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                          <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                             <img src="../../static/images/common/dummy-image.png" alt="" />
-                            <span></span>
+                            <span>자세히 보기</span>
                           </a>
                         </div>
                       </td>
@@ -662,23 +672,23 @@
                     <tbody>
                       <tr>
                         <th>입력 방식</th>
-                        <td class="two-lines">
+                        <td class="small-pd">
                           <div class="flex align-center">
                             <div class="radio-box small">
-                              <input type="radio" id="answer-radio-3" name="answer2" checked />
+                              <input type="radio" class="radio" id="answer-radio-3" name="answer2" checked />
                               <label for="answer-radio-3">직접 입력</label>
                             </div>
                             <div class="radio-box small">
-                              <input type="radio" id="answer-radio-4" name="answer2" />
+                              <input type="radio" class="radio" id="answer-radio-4" name="answer2" />
                               <label for="answer-radio-4">템플릿 불러오기</label>
                             </div>
                             <div class="select-box disabled ml-16">
+                              <button class="init">답변 템플릿 선택</button>
                               <ul>
-                                <li class="init">답변 템플릿 선택</li>
-                                <li data-value="value1">Hover</li>
-                                <li data-value="value2">Selected</li>
-                                <li data-value="value3">Default</li>
-                                <li data-value="value4">Disabled</li>
+                                <li data-value="value1"><button>Hover</button></li>
+                                <li data-value="value2"><button>Selected</button></li>
+                                <li data-value="value3"><button>Default</button></li>
+                                <li data-value="value4"><button>Disabled</button></li>
                               </ul>
                             </div>
                           </div>
@@ -736,23 +746,23 @@
                   <tbody>
                     <tr>
                       <th>입력 방식</th>
-                      <td class="two-lines">
+                      <td class="small-pd">
                         <div class="flex align-center">
                           <div class="radio-box small">
-                            <input type="radio" id="answer-radio-5" name="answer3" checked />
+                            <input type="radio" class="radio" id="answer-radio-5" name="answer3" checked />
                             <label for="answer-radio-5">직접 입력</label>
                           </div>
                           <div class="radio-box small">
-                            <input type="radio" id="answer-radio-6" name="answer3" />
+                            <input type="radio" class="radio" id="answer-radio-6" name="answer3" />
                             <label for="answer-radio-6">템플릿 불러오기</label>
                           </div>
                           <div class="select-box disabled ml-16">
+                            <button class="init">답변 템플릿 선택</button>
                             <ul>
-                              <li class="init">답변 템플릿 선택</li>
-                              <li data-value="value1">Hover</li>
-                              <li data-value="value2">Selected</li>
-                              <li data-value="value3">Default</li>
-                              <li data-value="value4">Disabled</li>
+                              <li data-value="value1"><button>Hover</button></li>
+                              <li data-value="value2"><button>Selected</button></li>
+                              <li data-value="value3"><button>Default</button></li>
+                              <li data-value="value4"><button>Disabled</button></li>
                             </ul>
                           </div>
                         </div>

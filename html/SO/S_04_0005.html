@@ -37,9 +37,9 @@
                   <p class="dot">저장대기상품은 수집일부터 90일간 보관되어 노출됩니다.</p>
                 </div>
               </div>
-              <i class="favorite">즐겨찾기</i>
+              <button class="favorite">즐겨찾기</button>
               <!-- 즐겨찾기 등록된 경우-->
-              <!-- <i class="favorite checked">즐겨찾기</i> -->
+              <!-- <button class="favorite checked">즐겨찾기</button> -->
             </h2>
             <div class="path">
               <a href="#none" class="home">홈 바로가기</a>
@@ -53,26 +53,26 @@
                 <dt>사이트</dt>
                 <dd>
                   <div class="select-box">
+                    <button class="init placeholder">선택하세요</button>
                     <ul>
-                      <li class="init placeholder">선택하세요</li>
-                      <li data-value="1">쿠팡</li>
-                      <li data-value="2">네이버</li>
-                      <li data-value="3">지마켓</li>
-                      <li data-value="4">11번가</li>
-                      <li data-value="5">롯데온</li>
-                      <li data-value="6">타오바오</li>
-                      <li data-value="7">알리익스프레스</li>
-                      <li data-value="8">1688</li>
-                      <li data-value="9">아마존(미국)</li>
-                      <li data-value="10">아마존(일본)</li>
-                      <li data-value="11">아마존(독일)</li>
+                      <li data-value="1"><button>쿠팡</button></li>
+                      <li data-value="2"><button>네이버</button></li>
+                      <li data-value="3"><button>지마켓</button></li>
+                      <li data-value="4"><button>11번가</button></li>
+                      <li data-value="5"><button>롯데온</button></li>
+                      <li data-value="6"><button>타오바오</button></li>
+                      <li data-value="7"><button>알리익스프레스</button></li>
+                      <li data-value="8"><button>1688</button></li>
+                      <li data-value="9"><button>아마존(미국)</button></li>
+                      <li data-value="10"><button>아마존(일본)</button></li>
+                      <li data-value="11"><button>아마존(독일)</button></li>
                     </ul>
                   </div>
                 </dd>
                 <dt class="ml-64">검색어</dt>
                 <dd>
-                  <div class="input w-600">
-                    <input type="text" placeholder="상품명을 입력하세요." title="내용입력" />
+                  <div class="input-box w-600">
+                    <input type="text" class="input" placeholder="상품명을 입력하세요." title="내용입력" />
                   </div>
                 </dd>
               </dl>
@@ -80,22 +80,34 @@
                 <dt>기간</dt>
                 <dd>
                   <div class="search-box">
-                    <input type="date" value="2023-05-29" />
+                    <input type="date" value="2023-05-29" class="input" />
                     <span class="mg-5-x">~</span>
-                    <input type="date" value="2023-05-29" />
-                    <div class="radio-box ty2 ml-16">
-                      <input type="radio" id="radioty2-1" name="radiobox-ty2" checked />
-                      <label for="radioty2-1">오늘</label>
-                      <input type="radio" id="radioty2-2" name="radiobox-ty2" />
-                      <label for="radioty2-2">1주</label>
-                      <input type="radio" id="radioty2-3" name="radiobox-ty2" />
-                      <label for="radioty2-3">2주</label>
-                      <input type="radio" id="radioty2-4" name="radiobox-ty2" />
-                      <label for="radioty2-4">1개월</label>
-                      <input type="radio" id="radioty2-5" name="radiobox-ty2" />
-                      <label for="radioty2-5">2개월</label>
-                      <input type="radio" id="radioty2-6" name="radiobox-ty2" />
-                      <label for="radioty2-6">6개월</label>
+                    <input type="date" value="2023-05-29" class="input" />
+                    <div class="flex">
+                      <div class="radio-box ty2 ml-16">
+                        <input type="radio" class="radio" id="radioty2-1" name="radiobox-ty2" checked />
+                        <label for="radioty2-1">오늘</label>
+                      </div>
+                      <div class="radio-box ty2">
+                        <input type="radio" class="radio" id="radioty2-2" name="radiobox-ty2" />
+                        <label for="radioty2-2">1주</label>
+                      </div>
+                      <div class="radio-box ty2">
+                        <input type="radio" class="radio" id="radioty2-3" name="radiobox-ty2" />
+                        <label for="radioty2-3">2주</label>
+                      </div>
+                      <div class="radio-box ty2">
+                        <input type="radio" class="radio" id="radioty2-4" name="radiobox-ty2" />
+                        <label for="radioty2-4">1개월</label>
+                      </div>
+                      <div class="radio-box ty2">
+                        <input type="radio" class="radio" id="radioty2-5" name="radiobox-ty2" />
+                        <label for="radioty2-5">2개월</label>
+                      </div>
+                      <div class="radio-box ty2">
+                        <input type="radio" class="radio" id="radioty2-6" name="radiobox-ty2" />
+                        <label for="radioty2-6">6개월</label>
+                      </div>
                     </div>
                   </div>
                 </dd>
@@ -127,8 +139,8 @@
                 <div class="product-list">
                   <div class="list-summary">
                     <div class="left">
-                      <div class="checkbox sm-check">
-                        <input type="checkbox" id="chk_all-4" />
+                      <div class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="chk_all-4" />
                         <label for="chk_all-4" class="lbl"></label>
                       </div>
                       <span class="result"
@@ -138,19 +150,19 @@
                     </div>
                     <div class="right">
                       <div class="select-box">
+                        <button class="init">최근주문</button>
                         <ul>
-                          <li class="init">최근주문</li>
-                          <li data-value="1">이미지보기</li>
-                          <li data-value="2">리스트보기</li>
+                          <li data-value="1"><button>이미지보기</button></li>
+                          <li data-value="2"><button>리스트보기</button></li>
                         </ul>
                       </div>
                       <div class="select-box">
+                        <button class="init">50개씩 보기</button>
                         <ul>
-                          <li class="init">50개씩 보기</li>
-                          <li data-value="1">50개씩 보기</li>
-                          <li data-value="2">100개씩 보기</li>
-                          <li data-value="3">150개씩 보기</li>
-                          <li data-value="4">200개씩 보기</li>
+                          <li data-value="1"><button>50개씩 보기</button></li>
+                          <li data-value="2"><button>100개씩 보기</button></li>
+                          <li data-value="3"><button>150개씩 보기</button></li>
+                          <li data-value="4"><button>200개씩 보기</button></li>
                         </ul>
                       </div>
                       <div class="classify-wrap">
@@ -163,11 +175,11 @@
 
                   <div class="item-wrap">
                     <div class="item">
-                      <div class="img">
+                      <div class="img-box w-104">
                         <img src="../../static/images/common/dummy-image.png" alt="" />
                       </div>
-                      <span class="checkbox no-label sm-check">
-                        <input type="checkbox" id="chk1" />
+                      <span class="check-wrap no-label sm-check">
+                        <input type="checkbox" class="checkbox" id="chk1" />
                         <label for="chk1" class="lbl"></label>
                       </span>
 
@@ -180,11 +192,11 @@
                       </div>
                     </div>
                     <div class="item">
-                      <div class="img">
+                      <div class="img-box w-104">
                         <img src="../../static/images/common/dummy-image.png" alt="" />
                       </div>
-                      <span class="checkbox no-label sm-check">
-                        <input type="checkbox" id="chk2" />
+                      <span class="check-wrap no-label sm-check">
+                        <input type="checkbox" class="checkbox" id="chk2" />
                         <label for="chk2" class="lbl"></label>
                       </span>
 
@@ -197,11 +209,11 @@
                       </div>
                     </div>
                     <div class="item">
-                      <div class="img">
+                      <div class="img-box w-104">
                         <img src="../../static/images/common/dummy-image.png" alt="" />
                       </div>
-                      <span class="checkbox no-label sm-check">
-                        <input type="checkbox" id="chk3" />
+                      <span class="check-wrap no-label sm-check">
+                        <input type="checkbox" class="checkbox" id="chk3" />
                         <label for="chk3" class="lbl"></label>
                       </span>
 
@@ -214,11 +226,11 @@
                       </div>
                     </div>
                     <div class="item">
-                      <div class="img">
+                      <div class="img-box w-104">
                         <img src="../../static/images/common/dummy-image.png" alt="" />
                       </div>
-                      <span class="checkbox no-label sm-check">
-                        <input type="checkbox" id="chk4" />
+                      <span class="check-wrap no-label sm-check">
+                        <input type="checkbox" class="checkbox" id="chk4" />
                         <label for="chk4" class="lbl"></label>
                       </span>
 
@@ -231,11 +243,11 @@
                       </div>
                     </div>
                     <div class="item">
-                      <div class="img">
+                      <div class="img-box w-104">
                         <img src="../../static/images/common/dummy-image.png" alt="" />
                       </div>
-                      <span class="checkbox no-label sm-check">
-                        <input type="checkbox" id="chk5" />
+                      <span class="check-wrap no-label sm-check">
+                        <input type="checkbox" class="checkbox" id="chk5" />
                         <label for="chk5" class="lbl"></label>
                       </span>
 
@@ -248,11 +260,11 @@
                       </div>
                     </div>
                     <div class="item">
-                      <div class="img">
+                      <div class="img-box w-104">
                         <img src="../../static/images/common/dummy-image.png" alt="" />
                       </div>
-                      <span class="checkbox no-label sm-check">
-                        <input type="checkbox" id="chk6" />
+                      <span class="check-wrap no-label sm-check">
+                        <input type="checkbox" class="checkbox" id="chk6" />
                         <label for="chk6" class="lbl"></label>
                       </span>
 
@@ -265,11 +277,11 @@
                       </div>
                     </div>
                     <div class="item">
-                      <div class="img">
+                      <div class="img-box w-104">
                         <img src="../../static/images/common/dummy-image.png" alt="" />
                       </div>
-                      <span class="checkbox no-label sm-check">
-                        <input type="checkbox" id="chk7" />
+                      <span class="check-wrap no-label sm-check">
+                        <input type="checkbox" class="checkbox" id="chk7" />
                         <label for="chk7" class="lbl"></label>
                       </span>
 
@@ -282,11 +294,11 @@
                       </div>
                     </div>
                     <div class="item">
-                      <div class="img">
+                      <div class="img-box w-104">
                         <img src="../../static/images/common/dummy-image.png" alt="" />
                       </div>
-                      <span class="checkbox no-label sm-check">
-                        <input type="checkbox" id="chk8" />
+                      <span class="check-wrap no-label sm-check">
+                        <input type="checkbox" class="checkbox" id="chk8" />
                         <label for="chk8" class="lbl"></label>
                       </span>
 
@@ -299,11 +311,11 @@
                       </div>
                     </div>
                     <div class="item">
-                      <div class="img">
+                      <div class="img-box w-104">
                         <img src="../../static/images/common/dummy-image.png" alt="" />
                       </div>
-                      <span class="checkbox no-label sm-check">
-                        <input type="checkbox" id="chk9" />
+                      <span class="check-wrap no-label sm-check">
+                        <input type="checkbox" class="checkbox" id="chk9" />
                         <label for="chk9" class="lbl"></label>
                       </span>
 
@@ -316,11 +328,11 @@
                       </div>
                     </div>
                     <div class="item">
-                      <div class="img">
+                      <div class="img-box w-104">
                         <img src="../../static/images/common/dummy-image.png" alt="" />
                       </div>
-                      <span class="checkbox no-label sm-check">
-                        <input type="checkbox" id="chk10" />
+                      <span class="check-wrap no-label sm-check">
+                        <input type="checkbox" class="checkbox" id="chk10" />
                         <label for="chk10" class="lbl"></label>
                       </span>
 
@@ -344,8 +356,8 @@
                       <thead>
                         <tr>
                           <th>
-                            <div class="checkbox no-label sm-check sm-check">
-                              <input type="checkbox" id="chk11" />
+                            <div class="check-wrap no-label sm-check sm-check">
+                              <input type="checkbox" class="checkbox" id="chk11" />
                               <label for="chk11" class="lbl"></label>
                             </div>
                           </th>
@@ -357,8 +369,8 @@
                       <tbody>
                         <tr>
                           <td class="t-center">
-                            <div class="checkbox no-label sm-check sm-check">
-                              <input type="checkbox" id="chk12" />
+                            <div class="check-wrap no-label sm-check sm-check">
+                              <input type="checkbox" class="checkbox" id="chk12" />
                               <label for="chk12" class="lbl"></label>
                             </div>
                           </td>
@@ -372,8 +384,8 @@
                         </tr>
                         <tr>
                           <td class="t-center">
-                            <div class="checkbox no-label sm-check sm-check">
-                              <input type="checkbox" id="chk13" />
+                            <div class="check-wrap no-label sm-check sm-check">
+                              <input type="checkbox" class="checkbox" id="chk13" />
                               <label for="chk13" class="lbl"></label>
                             </div>
                           </td>
@@ -387,8 +399,8 @@
                         </tr>
                         <tr>
                           <td class="t-center">
-                            <div class="checkbox no-label sm-check sm-check">
-                              <input type="checkbox" id="chk14" />
+                            <div class="check-wrap no-label sm-check sm-check">
+                              <input type="checkbox" class="checkbox" id="chk14" />
                               <label for="chk14" class="lbl"></label>
                             </div>
                           </td>
@@ -402,8 +414,8 @@
                         </tr>
                         <tr>
                           <td class="t-center">
-                            <div class="checkbox no-label sm-check sm-check">
-                              <input type="checkbox" id="chk15" />
+                            <div class="check-wrap no-label sm-check sm-check">
+                              <input type="checkbox" class="checkbox" id="chk15" />
                               <label for="chk15" class="lbl"></label>
                             </div>
                           </td>
@@ -417,8 +429,8 @@
                         </tr>
                         <tr>
                           <td class="t-center">
-                            <div class="checkbox no-label sm-check sm-check">
-                              <input type="checkbox" id="chk16" />
+                            <div class="check-wrap no-label sm-check sm-check">
+                              <input type="checkbox" class="checkbox" id="chk16" />
                               <label for="chk16" class="lbl"></label>
                             </div>
                           </td>
@@ -432,8 +444,8 @@
                         </tr>
                         <tr>
                           <td class="t-center">
-                            <div class="checkbox no-label sm-check sm-check">
-                              <input type="checkbox" id="chk17" />
+                            <div class="check-wrap no-label sm-check sm-check">
+                              <input type="checkbox" class="checkbox" id="chk17" />
                               <label for="chk17" class="lbl"></label>
                             </div>
                           </td>
@@ -447,8 +459,8 @@
                         </tr>
                         <tr>
                           <td class="t-center">
-                            <div class="checkbox no-label sm-check sm-check">
-                              <input type="checkbox" id="chk18" />
+                            <div class="check-wrap no-label sm-check sm-check">
+                              <input type="checkbox" class="checkbox" id="chk18" />
                               <label for="chk18" class="lbl"></label>
                             </div>
                           </td>
@@ -462,8 +474,8 @@
                         </tr>
                         <tr>
                           <td class="t-center">
-                            <div class="checkbox no-label sm-check sm-check">
-                              <input type="checkbox" id="chk19" />
+                            <div class="check-wrap no-label sm-check sm-check">
+                              <input type="checkbox" class="checkbox" id="chk19" />
                               <label for="chk19" class="lbl"></label>
                             </div>
                           </td>
@@ -477,8 +489,8 @@
                         </tr>
                         <tr>
                           <td class="t-center">
-                            <div class="checkbox no-label sm-check sm-check">
-                              <input type="checkbox" id="chk20" />
+                            <div class="check-wrap no-label sm-check sm-check">
+                              <input type="checkbox" class="checkbox" id="chk20" />
                               <label for="chk20" class="lbl"></label>
                             </div>
                           </td>
@@ -492,8 +504,8 @@
                         </tr>
                         <tr>
                           <td class="t-center">
-                            <div class="checkbox no-label sm-check sm-check">
-                              <input type="checkbox" id="chk21" />
+                            <div class="check-wrap no-label sm-check sm-check">
+                              <input type="checkbox" class="checkbox" id="chk21" />
                               <label for="chk21" class="lbl"></label>
                             </div>
                           </td>
@@ -509,10 +521,10 @@
                     </table>
                   </div>
                 </div>
-                <div class="item-wrap ty2">
+                <div class="progress-box">
                   <p>쇼핑몰의 <span>asdf123455</span> 계정에서 주문 정보 수집 중...</p>
                 </div>
-                <div class="item-wrap ty2">
+                <div class="progress-box">
                   <div class="progress-wrap">
                     <span class="progress"></span>
                   </div>

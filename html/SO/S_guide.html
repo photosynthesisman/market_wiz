@@ -27,7 +27,9 @@
             <li class="tab">
               <a href="#none" data-tab="color-guide">색상 가이드</a><span class="close-tab">닫기</span>
             </li>
-            <li class="tab"><a href="#none" data-tab="form-guide">폼 가이드</a><span class="close-tab">닫기</span></li>
+            <li class="tab active">
+              <a href="#none" data-tab="form-guide">폼 가이드</a><span class="close-tab">닫기</span>
+            </li>
             <li class="tab">
               <a href="#none" data-tab="button-guide">버튼 가이드</a><span class="close-tab">닫기</span>
             </li>
@@ -35,7 +37,7 @@
             <li class="tab">
               <a href="#none" data-tab="icon-guide">아이콘 가이드</a><span class="close-tab">닫기</span>
             </li>
-            <li class="tab active">
+            <li class="tab">
               <a href="#none" data-tab="table-guide">테이블 가이드</a><span class="close-tab">닫기</span>
             </li>
             <li class="tab">
@@ -242,7 +244,7 @@
           </div>
         </div>
         <!-- 폼 가이드 -->
-        <div class="tab-content" id="form-guide">
+        <div class="tab-content active" id="form-guide">
           <div class="flex">
             <div class="mr-90">
               <h2 class="guide-tit">Input</h2>
@@ -250,50 +252,50 @@
                 <dl>
                   <dt>Default</dt>
                   <dd>
-                    <input type="text" value="입력정보" />
+                    <input type="text" value="입력정보" class="input" />
                   </dd>
                 </dl>
                 <dl>
                   <dt>Placeholder</dt>
                   <dd>
-                    <input type="text" placeholder="입력정보" />
+                    <input type="text" placeholder="입력정보" class="input" />
                   </dd>
                 </dl>
                 <dl>
                   <dt>Hover</dt>
                   <dd>
-                    <input type="text" value="입력정보" class="hover" />
+                    <input type="text" value="입력정보" class="hover input" />
                   </dd>
                 </dl>
                 <dl>
                   <dt>Focused</dt>
                   <dd>
-                    <input type="text" value="입력정보" class="focused" />
+                    <input type="text" value="입력정보" class="focused input" />
                   </dd>
                 </dl>
                 <dl>
                   <dt>Disabled</dt>
                   <dd>
-                    <input type="text" value="입력정보" disabled />
+                    <input type="text" value="입력정보" disabled class="input" />
                   </dd>
                 </dl>
                 <dl>
                   <dt>Validation</dt>
                   <dd>
-                    <input type="text" value="입력정보" required />
+                    <input type="text" value="입력정보" required class="input" />
                     <p class="validation-check">입력정보를 확인해주세요</p>
                   </dd>
                 </dl>
                 <dl>
                   <dt>Date Picker</dt>
                   <dd>
-                    <input type="date" value="2023-05-29" />
+                    <input type="date" value="2023-05-29" class="input" />
                   </dd>
                 </dl>
                 <dl>
                   <dt></dt>
                   <dd>
-                    <input type="date" value="2023-05-29" disabled />
+                    <input type="date" value="2023-05-29" disabled class="input" />
                   </dd>
                 </dl>
                 <dl>
@@ -327,12 +329,12 @@
                   <dt>Default</dt>
                   <dd>
                     <div class="select-box">
+                      <button class="init">선택항목</button>
                       <ul>
-                        <li class="init">선택항목</li>
-                        <li data-value="value1">Hover</li>
-                        <li data-value="value2">Selected</li>
-                        <li data-value="value3">Default</li>
-                        <li data-value="value4">Disabled</li>
+                        <li data-value="value1"><button>Hover</button></li>
+                        <li data-value="value2"><button>Selected</button></li>
+                        <li data-value="value3"><button>Default</button></li>
+                        <li data-value="value4"><button>Disabled</button></li>
                       </ul>
                     </div>
                   </dd>
@@ -341,12 +343,12 @@
                   <dt>Placeholder</dt>
                   <dd>
                     <div class="select-box">
+                      <button class="init placeholder">선택항목</button>
                       <ul>
-                        <li class="init placeholder">선택항목</li>
-                        <li data-value="value1">Hover</li>
-                        <li data-value="value2">Selected</li>
-                        <li data-value="value3">Default</li>
-                        <li data-value="value4">Disabled</li>
+                        <li data-value="value1"><button>Hover</button></li>
+                        <li data-value="value2"><button>Selected</button></li>
+                        <li data-value="value3"><button>Default</button></li>
+                        <li data-value="value4"><button>Disabled</button></li>
                       </ul>
                     </div>
                   </dd>
@@ -355,12 +357,12 @@
                   <dt>Hover</dt>
                   <dd>
                     <div class="select-box hover">
+                      <button class="init placeholder">선택항목</button>
                       <ul>
-                        <li class="init">선택항목</li>
-                        <li data-value="value1">Hover</li>
-                        <li data-value="value2">Selected</li>
-                        <li data-value="value3">Default</li>
-                        <li data-value="value4">Disabled</li>
+                        <li data-value="value1"><button>Hover</button></li>
+                        <li data-value="value2"><button>Selected</button></li>
+                        <li data-value="value3"><button>Default</button></li>
+                        <li data-value="value4"><button>Disabled</button></li>
                       </ul>
                     </div>
                   </dd>
@@ -369,12 +371,12 @@
                   <dt>Disabled</dt>
                   <dd>
                     <div class="select-box disabled">
+                      <button class="init">선택항목</button>
                       <ul>
-                        <li class="init">선택항목</li>
-                        <li data-value="value1">Hover</li>
-                        <li data-value="value2">Selected</li>
-                        <li data-value="value3">Default</li>
-                        <li data-value="value4">Disabled</li>
+                        <li data-value="value1"><button>Hover</button></li>
+                        <li data-value="value2"><button>Selected</button></li>
+                        <li data-value="value3"><button>Default</button></li>
+                        <li data-value="value4"><button>Disabled</button></li>
                       </ul>
                     </div>
                   </dd>
@@ -383,12 +385,12 @@
                   <dt>Validation</dt>
                   <dd>
                     <div class="select-box validation">
+                      <button class="init">선택항목</button>
                       <ul>
-                        <li class="init">선택항목</li>
-                        <li data-value="value1">Hover</li>
-                        <li data-value="value2">Selected</li>
-                        <li data-value="value3">Default</li>
-                        <li data-value="value4">Disabled</li>
+                        <li data-value="value1"><button>Hover</button></li>
+                        <li data-value="value2"><button>Selected</button></li>
+                        <li data-value="value3"><button>Default</button></li>
+                        <li data-value="value4"><button>Disabled</button></li>
                       </ul>
                     </div>
                     <p class="validation-check">다시 선택해주세요</p>
@@ -398,12 +400,12 @@
                   <dt>Open</dt>
                   <dd>
                     <div class="select-box open">
+                      <button class="init">선택항목</button>
                       <ul>
-                        <li class="init">선택항목</li>
-                        <li data-value="value1" class="hover">Hover</li>
-                        <li data-value="value2" class="selected">Selected</li>
-                        <li data-value="value3">Default</li>
-                        <li data-value="value4" class="disabled">Disabled</li>
+                        <li data-value="value1" class="hover"><button>Hover</button></li>
+                        <li data-value="value2" class="selected"><button>Selected</button></li>
+                        <li data-value="value3"><button>Default</button></li>
+                        <li data-value="value4" class="disabled"><button>Disabled</button></li>
                       </ul>
                     </div>
                   </dd>
@@ -418,12 +420,12 @@
                 <dl>
                   <dt>Mid</dt>
                   <dd>
-                    <span class="checkbox">
-                      <input type="checkbox" id="chkTest1" checked />
+                    <span class="check-wrap">
+                      <input type="checkbox" class="checkbox" id="chkTest1" checked />
                       <label for="chkTest1" class="lbl">사용</label>
                     </span>
-                    <span class="checkbox">
-                      <input type="checkbox" id="chkTest2" />
+                    <span class="check-wrap">
+                      <input type="checkbox" class="checkbox" id="chkTest2" />
                       <label for="chkTest2" class="lbl">사용안함</label>
                     </span>
                   </dd>
@@ -431,12 +433,12 @@
                 <dl>
                   <dt></dt>
                   <dd>
-                    <span class="checkbox">
-                      <input type="checkbox" id="chkTest3" disabled checked />
+                    <span class="check-wrap">
+                      <input type="checkbox" class="checkbox" id="chkTest3" disabled checked />
                       <label for="chkTest3" class="lbl">사용</label>
                     </span>
-                    <span class="checkbox">
-                      <input type="checkbox" id="chkTest4" disabled />
+                    <span class="check-wrap">
+                      <input type="checkbox" class="checkbox" id="chkTest4" disabled />
                       <label for="chkTest4" class="lbl">사용안함</label>
                     </span>
                   </dd>
@@ -444,12 +446,12 @@
                 <dl class="mt-40">
                   <dt>Small</dt>
                   <dd>
-                    <span class="checkbox sm-check">
-                      <input type="checkbox" id="chkTest5" />
+                    <span class="check-wrap sm-check">
+                      <input type="checkbox" class="checkbox" id="chkTest5" />
                       <label for="chkTest5" class="lbl">사용</label>
                     </span>
-                    <span class="checkbox sm-check">
-                      <input type="checkbox" id="chkTest6" />
+                    <span class="check-wrap sm-check">
+                      <input type="checkbox" class="checkbox" id="chkTest6" />
                       <label for="chkTest6" class="lbl">사용안함</label>
                     </span>
                   </dd>
@@ -457,12 +459,12 @@
                 <dl>
                   <dt></dt>
                   <dd>
-                    <span class="checkbox sm-check">
-                      <input type="checkbox" id="chkTest7" disabled checked />
+                    <span class="check-wrap sm-check">
+                      <input type="checkbox" class="checkbox" id="chkTest7" disabled checked />
                       <label for="chkTest7" class="lbl">사용</label>
                     </span>
-                    <span class="checkbox sm-check">
-                      <input type="checkbox" id="chkTest8" disabled />
+                    <span class="check-wrap sm-check">
+                      <input type="checkbox" class="checkbox" id="chkTest8" disabled />
                       <label for="chkTest8" class="lbl">사용안함</label>
                     </span>
                   </dd>
@@ -477,11 +479,11 @@
                   <dd>
                     <div class="flex">
                       <div class="radio-box">
-                        <input type="radio" id="radioTest1" name="large" checked />
+                        <input type="radio" class="radio" id="radioTest1" name="large" checked />
                         <label for="radioTest1">사용</label>
                       </div>
                       <div class="radio-box">
-                        <input type="radio" id="radioTest2" name="large" />
+                        <input type="radio" class="radio" id="radioTest2" name="large" />
                         <label for="radioTest2">사용안함</label>
                       </div>
                     </div>
@@ -492,11 +494,11 @@
                   <dd>
                     <div class="flex">
                       <div class="radio-box">
-                        <input type="radio" id="radioTest3" name="large-disabled" disabled checked />
+                        <input type="radio" class="radio" id="radioTest3" name="large-disabled" disabled checked />
                         <label for="radioTest3">사용</label>
                       </div>
                       <div class="radio-box">
-                        <input type="radio" id="radioTest4" name="large-disabled" disabled />
+                        <input type="radio" class="radio" id="radioTest4" name="large-disabled" disabled />
                         <label for="radioTest4">사용안함</label>
                       </div>
                     </div>
@@ -508,11 +510,11 @@
                   <dd>
                     <div class="flex">
                       <div class="radio-box small">
-                        <input type="radio" id="radioTest5" name="small" />
+                        <input type="radio" class="radio" id="radioTest5" name="small" />
                         <label for="radioTest5">사용</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="radioTest6" name="small" />
+                        <input type="radio" class="radio" id="radioTest6" name="small" />
                         <label for="radioTest6">사용안함</label>
                       </div>
                     </div>
@@ -523,11 +525,11 @@
                   <dd>
                     <div class="flex">
                       <div class="radio-box small">
-                        <input type="radio" id="radioTest7" name="small-disabled" disabled checked />
+                        <input type="radio" class="radio" id="radioTest7" name="small-disabled" disabled checked />
                         <label for="radioTest7">사용</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="radioTest8" name="small-disabled" disabled />
+                        <input type="radio" class="radio" id="radioTest8" name="small-disabled" disabled />
                         <label for="radioTest8">사용안함</label>
                       </div>
                     </div>
@@ -536,19 +538,29 @@
                 <dl class="mt-40">
                   <dt>type2</dt>
                   <dd>
-                    <div>
+                    <div class="flex">
                       <div class="radio-box ty2">
-                        <input type="radio" id="today" name="radiobox-ty2" checked />
+                        <input type="radio" class="radio" id="today" name="radiobox-ty2" checked />
                         <label for="today">오늘</label>
-                        <input type="radio" id="week1" name="radiobox-ty2" />
+                      </div>
+                      <div class="radio-box ty2">
+                        <input type="radio" class="radio" id="week1" name="radiobox-ty2" />
                         <label for="week1">1주</label>
-                        <input type="radio" id="week2" name="radiobox-ty2" />
+                      </div>
+                      <div class="radio-box ty2">
+                        <input type="radio" class="radio" id="week2" name="radiobox-ty2" />
                         <label for="week2">2주</label>
-                        <input type="radio" id="month1" name="radiobox-ty2" />
+                      </div>
+                      <div class="radio-box ty2">
+                        <input type="radio" class="radio" id="month1" name="radiobox-ty2" />
                         <label for="month1">1개월</label>
-                        <input type="radio" id="month2" name="radiobox-ty2" />
+                      </div>
+                      <div class="radio-box ty2">
+                        <input type="radio" class="radio" id="month2" name="radiobox-ty2" />
                         <label for="month2">2개월</label>
-                        <input type="radio" id="month6" name="radiobox-ty2" />
+                      </div>
+                      <div class="radio-box ty2">
+                        <input type="radio" class="radio" id="month6" name="radiobox-ty2" />
                         <label for="month6">6개월</label>
                       </div>
                     </div>
@@ -1112,7 +1124,7 @@
               </div>
               <div class="pop-contents">
                 <div class="record-wrap">
-                  <div class="img">
+                  <div class="img-box w-132">
                     <img src="../../static/images/common/dummy-image2.png" alt="" />
                   </div>
                   <ul>
@@ -1262,47 +1274,6 @@
                 <button class="button bg-primary">확인</button>
               </div>
             </div>
-            <div class="popup has-tit w640 open" id="S_07_0007">
-              <div class="pop-head">
-                <h2>주문 로그 [ 주문번호 : <span>XXXXXXXXXXXXX</span> ]</h2>
-                <button class="close"></button>
-              </div>
-              <div class="pop-contents">
-                <div class="table">
-                  <table>
-                    <colgroup>
-                      <col style="width: 9.6rem" />
-                      <col style="width: 19.2rem" />
-                      <col style="width: 9.6rem" />
-                      <col style="width: 19.2rem" />
-                    </colgroup>
-                    <tbody>
-                      <tr>
-                        <th>판매 쇼핑몰</th>
-                        <td>위메프</td>
-                        <th class="two-lines">쇼핑몰 ID /<br />별칭</th>
-                        <td>IDID / 홍길동</td>
-                      </tr>
-                      <tr>
-                        <th>주문번호</th>
-                        <td>0000000000</td>
-                        <th>주문일시</th>
-                        <td>YYYY.MM.DD hh:mm:ss</td>
-                      </tr>
-                      <tr>
-                        <th>주문수집일시</th>
-                        <td>YYYY.MM.DD hh:mm:ss</td>
-                        <th>수집결과</th>
-                        <td>성공</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <div class="pop-bottm">
-                <button class="button bg-primary">확인</button>
-              </div>
-            </div>
           </div>
           <div class="flex mt-20">
             <div class="popup has-tit w640 open" id="S_07_0011">
@@ -1320,15 +1291,15 @@
                     <tbody>
                       <tr>
                         <th>받는 번호</th>
-                        <td class="two-lines"><input type="text" value="XXXXXXXXXXXXX" /></td>
+                        <td class="small-pd"><input type="text" value="XXXXXXXXXXXXX" class="input" /></td>
                       </tr>
                       <tr>
                         <th>주문자 이름</th>
-                        <td class="two-lines"><input type="text" value="김마켓" /></td>
+                        <td class="small-pd"><input type="text" value="김마켓" class="input" /></td>
                       </tr>
                       <tr>
                         <th>주문자 휴대폰 번호</th>
-                        <td class="two-lines"><input type="text" value="01012345678" /></td>
+                        <td class="small-pd"><input type="text" value="01012345678" class="input" /></td>
                       </tr>
                       <tr>
                         <th>검증 결과</th>
@@ -1401,8 +1372,8 @@
                     <tbody>
                       <tr>
                         <th>받는 번호</th>
-                        <td class="two-lines">
-                          <input type="text" value="010 &#8722; XXXX &#8722; XXXX" disabled="" />
+                        <td class="small-pd">
+                          <input type="text" value="010 &#8722; XXXX &#8722; XXXX" disabled="" class="input" />
                         </td>
                         <th>보내는 번호</th>
                         <td>010 &#8722; XXXX &#8722; XXXX</td>
@@ -1419,7 +1390,7 @@
 
                     <tbody>
                       <tr>
-                        <th colspan="2" class="two-lines">
+                        <th colspan="2" class="small-pd">
                           <div class="flex space-between align-center">
                             <p>메시지 입력</p>
                             <div>
@@ -1431,23 +1402,23 @@
                       </tr>
                       <tr>
                         <th>입력 방식</th>
-                        <td class="two-lines">
+                        <td class="small-pd">
                           <div class="flex align-center">
                             <div class="radio-box small">
-                              <input type="radio" id="claim-radio-1" name="claim-radio-1" checked />
+                              <input type="radio" class="radio" id="claim-radio-1" name="claim-radio-1" checked />
                               <label for="claim-radio-1">직접 입력</label>
                             </div>
                             <div class="radio-box small">
-                              <input type="radio" id="claim-radio-2" name="claim-radio-1" />
+                              <input type="radio" class="radio" id="claim-radio-2" name="claim-radio-1" />
                               <label for="claim-radio-2">템플릿 불러오기</label>
                             </div>
                             <div class="select-box disabled ml-16">
+                              <button class="init">메시지 템플릿 선택</button>
                               <ul>
-                                <li class="init">메시지 템플릿 선택</li>
-                                <li data-value="value1">Hover</li>
-                                <li data-value="value2">Selected</li>
-                                <li data-value="value3">Default</li>
-                                <li data-value="value4">Disabled</li>
+                                <li data-value="value1"><button>Hover</button></li>
+                                <li data-value="value2"><button>Selected</button></li>
+                                <li data-value="value3"><button>Default</button></li>
+                                <li data-value="value4"><button>Disabled</button></li>
                               </ul>
                             </div>
                           </div>
@@ -1608,33 +1579,33 @@
                         <th class="va-top">첨부 이미지</th>
                         <td>
                           <div class="flex">
-                            <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                            <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                               <img src="../../static/images/common/dummy-image.png" alt="" />
-                              <span></span>
+                              <span>자세히 보기</span>
                             </a>
-                            <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                            <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                               <img src="../../static/images/common/dummy-image.png" alt="" />
-                              <span></span>
+                              <span>자세히 보기</span>
                             </a>
-                            <a href="#none" title="해당 상품으로 이동" class="img_thumbnail"
-                              ><img src="../../static/images/common/dummy-image.png" alt="" />
-                              <span></span>
+                            <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
+                              <img src="../../static/images/common/dummy-image.png" alt="" />
+                              <span>자세히 보기</span>
                             </a>
-                            <a href="#none" title="해당 상품으로 이동" class="img_thumbnail"
-                              ><img src="../../static/images/common/dummy-image.png" alt="" />
-                              <span></span>
+                            <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
+                              <img src="../../static/images/common/dummy-image.png" alt="" />
+                              <span>자세히 보기</span>
                             </a>
-                            <a href="#none" title="해당 상품으로 이동" class="img_thumbnail"
-                              ><img src="../../static/images/common/dummy-image.png" alt="" />
-                              <span></span>
+                            <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
+                              <img src="../../static/images/common/dummy-image.png" alt="" />
+                              <span>자세히 보기</span>
                             </a>
-                            <a href="#none" title="해당 상품으로 이동" class="img_thumbnail"
-                              ><img src="../../static/images/common/dummy-image.png" alt="" />
-                              <span></span>
+                            <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
+                              <img src="../../static/images/common/dummy-image.png" alt="" />
+                              <span>자세히 보기</span>
                             </a>
-                            <a href="#none" title="해당 상품으로 이동" class="img_thumbnail"
-                              ><img src="../../static/images/common/dummy-image.png" alt="" />
-                              <span></span>
+                            <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
+                              <img src="../../static/images/common/dummy-image.png" alt="" />
+                              <span>자세히 보기</span>
                             </a>
                           </div>
                         </td>
@@ -1656,23 +1627,23 @@
                       <tbody>
                         <tr>
                           <th>입력 방식</th>
-                          <td class="two-lines">
+                          <td class="small-pd">
                             <div class="flex align-center">
                               <div class="radio-box small">
-                                <input type="radio" id="answer-radio-3" name="answer2" checked />
+                                <input type="radio" class="radio" id="answer-radio-3" name="answer2" checked />
                                 <label for="answer-radio-3">직접 입력</label>
                               </div>
                               <div class="radio-box small">
-                                <input type="radio" id="answer-radio-4" name="answer2" />
+                                <input type="radio" class="radio" id="answer-radio-4" name="answer2" />
                                 <label for="answer-radio-4">템플릿 불러오기</label>
                               </div>
                               <div class="select-box disabled ml-16">
+                                <button class="init">답변 템플릿 선택</button>
                                 <ul>
-                                  <li class="init">답변 템플릿 선택</li>
-                                  <li data-value="value1">Hover</li>
-                                  <li data-value="value2">Selected</li>
-                                  <li data-value="value3">Default</li>
-                                  <li data-value="value4">Disabled</li>
+                                  <li data-value="value1"><button>Hover</button></li>
+                                  <li data-value="value2"><button>Selected</button></li>
+                                  <li data-value="value3"><button>Default</button></li>
+                                  <li data-value="value4"><button>Disabled</button></li>
                                 </ul>
                               </div>
                             </div>
@@ -3094,7 +3065,7 @@
           </div>
         </div>
         <!-- 테이블 가이드 -->
-        <div class="tab-content active" id="table-guide">
+        <div class="tab-content" id="table-guide">
           <h2 class="guide-tit">Table type1</h2>
           <div class="table mt-16">
             <table>
@@ -3107,8 +3078,8 @@
               <thead>
                 <tr>
                   <th>
-                    <div class="checkbox no-label sm-check sm-check">
-                      <input type="checkbox" id="chk11" />
+                    <div class="check-wrap no-label sm-check sm-check">
+                      <input type="checkbox" class="checkbox" id="chk11" />
                       <label for="chk11" class="lbl"></label>
                     </div>
                   </th>
@@ -3120,8 +3091,8 @@
               <tbody>
                 <tr>
                   <td class="t-center">
-                    <div class="checkbox no-label sm-check sm-check">
-                      <input type="checkbox" id="chk12" />
+                    <div class="check-wrap no-label sm-check sm-check">
+                      <input type="checkbox" class="checkbox" id="chk12" />
                       <label for="chk12" class="lbl"></label>
                     </div>
                   </td>
@@ -3135,8 +3106,8 @@
                 </tr>
                 <tr>
                   <td class="t-center">
-                    <div class="checkbox no-label sm-check sm-check">
-                      <input type="checkbox" id="chk13" />
+                    <div class="check-wrap no-label sm-check sm-check">
+                      <input type="checkbox" class="checkbox" id="chk13" />
                       <label for="chk13" class="lbl"></label>
                     </div>
                   </td>
@@ -3150,8 +3121,8 @@
                 </tr>
                 <tr>
                   <td class="t-center">
-                    <div class="checkbox no-label sm-check sm-check">
-                      <input type="checkbox" id="chk14" />
+                    <div class="check-wrap no-label sm-check sm-check">
+                      <input type="checkbox" class="checkbox" id="chk14" />
                       <label for="chk14" class="lbl"></label>
                     </div>
                   </td>
@@ -3165,8 +3136,8 @@
                 </tr>
                 <tr>
                   <td class="t-center">
-                    <div class="checkbox no-label sm-check sm-check">
-                      <input type="checkbox" id="chk15" />
+                    <div class="check-wrap no-label sm-check sm-check">
+                      <input type="checkbox" class="checkbox" id="chk15" />
                       <label for="chk15" class="lbl"></label>
                     </div>
                   </td>
@@ -3180,8 +3151,8 @@
                 </tr>
                 <tr>
                   <td class="t-center">
-                    <div class="checkbox no-label sm-check sm-check">
-                      <input type="checkbox" id="chk16" />
+                    <div class="check-wrap no-label sm-check sm-check">
+                      <input type="checkbox" class="checkbox" id="chk16" />
                       <label for="chk16" class="lbl"></label>
                     </div>
                   </td>
@@ -3195,8 +3166,8 @@
                 </tr>
                 <tr>
                   <td class="t-center">
-                    <div class="checkbox no-label sm-check sm-check">
-                      <input type="checkbox" id="chk17" />
+                    <div class="check-wrap no-label sm-check sm-check">
+                      <input type="checkbox" class="checkbox" id="chk17" />
                       <label for="chk17" class="lbl"></label>
                     </div>
                   </td>
@@ -3210,8 +3181,8 @@
                 </tr>
                 <tr>
                   <td class="t-center">
-                    <div class="checkbox no-label sm-check sm-check">
-                      <input type="checkbox" id="chk18" />
+                    <div class="check-wrap no-label sm-check sm-check">
+                      <input type="checkbox" class="checkbox" id="chk18" />
                       <label for="chk18" class="lbl"></label>
                     </div>
                   </td>
@@ -3225,8 +3196,8 @@
                 </tr>
                 <tr>
                   <td class="t-center">
-                    <div class="checkbox no-label sm-check sm-check">
-                      <input type="checkbox" id="chk19" />
+                    <div class="check-wrap no-label sm-check sm-check">
+                      <input type="checkbox" class="checkbox" id="chk19" />
                       <label for="chk19" class="lbl"></label>
                     </div>
                   </td>
@@ -3240,8 +3211,8 @@
                 </tr>
                 <tr>
                   <td class="t-center">
-                    <div class="checkbox no-label sm-check sm-check">
-                      <input type="checkbox" id="chk20" />
+                    <div class="check-wrap no-label sm-check sm-check">
+                      <input type="checkbox" class="checkbox" id="chk20" />
                       <label for="chk20" class="lbl"></label>
                     </div>
                   </td>
@@ -3255,8 +3226,8 @@
                 </tr>
                 <tr>
                   <td class="t-center">
-                    <div class="checkbox no-label sm-check sm-check">
-                      <input type="checkbox" id="chk21" />
+                    <div class="check-wrap no-label sm-check sm-check">
+                      <input type="checkbox" class="checkbox" id="chk21" />
                       <label for="chk21" class="lbl"></label>
                     </div>
                   </td>
@@ -3275,11 +3246,11 @@
           <div class="product-list">
             <div class="item-wrap">
               <div class="item">
-                <div class="img">
+                <div class="img-box w-104">
                   <img src="../../static/images/common/dummy-image.png" alt="" />
                 </div>
-                <span class="checkbox no-label sm-check">
-                  <input type="checkbox" id="chk1" />
+                <span class="check-wrap no-label sm-check">
+                  <input type="checkbox" class="checkbox" id="chk1" />
                   <label for="chk1" class="lbl"></label>
                 </span>
 
@@ -3292,11 +3263,11 @@
                 </div>
               </div>
               <div class="item">
-                <div class="img">
+                <div class="img-box w-104">
                   <img src="../../static/images/common/dummy-image.png" alt="" />
                 </div>
-                <span class="checkbox no-label sm-check">
-                  <input type="checkbox" id="chk2" />
+                <span class="check-wrap no-label sm-check">
+                  <input type="checkbox" class="checkbox" id="chk2" />
                   <label for="chk2" class="lbl"></label>
                 </span>
 
@@ -3309,11 +3280,11 @@
                 </div>
               </div>
               <div class="item">
-                <div class="img">
+                <div class="img-box w-104">
                   <img src="../../static/images/common/dummy-image.png" alt="" />
                 </div>
-                <span class="checkbox no-label sm-check">
-                  <input type="checkbox" id="chk3" />
+                <span class="check-wrap no-label sm-check">
+                  <input type="checkbox" class="checkbox" id="chk3" />
                   <label for="chk3" class="lbl"></label>
                 </span>
 
@@ -3326,11 +3297,11 @@
                 </div>
               </div>
               <div class="item">
-                <div class="img">
+                <div class="img-box w-104">
                   <img src="../../static/images/common/dummy-image.png" alt="" />
                 </div>
-                <span class="checkbox no-label sm-check">
-                  <input type="checkbox" id="chk4" />
+                <span class="check-wrap no-label sm-check">
+                  <input type="checkbox" class="checkbox" id="chk4" />
                   <label for="chk4" class="lbl"></label>
                 </span>
 
@@ -3343,11 +3314,11 @@
                 </div>
               </div>
               <div class="item">
-                <div class="img">
+                <div class="img-box w-104">
                   <img src="../../static/images/common/dummy-image.png" alt="" />
                 </div>
-                <span class="checkbox no-label sm-check">
-                  <input type="checkbox" id="chk5" />
+                <span class="check-wrap no-label sm-check">
+                  <input type="checkbox" class="checkbox" id="chk5" />
                   <label for="chk5" class="lbl"></label>
                 </span>
 
@@ -3360,11 +3331,11 @@
                 </div>
               </div>
               <div class="item">
-                <div class="img">
+                <div class="img-box w-104">
                   <img src="../../static/images/common/dummy-image.png" alt="" />
                 </div>
-                <span class="checkbox no-label sm-check">
-                  <input type="checkbox" id="chk6" />
+                <span class="check-wrap no-label sm-check">
+                  <input type="checkbox" class="checkbox" id="chk6" />
                   <label for="chk6" class="lbl"></label>
                 </span>
 
@@ -3377,11 +3348,11 @@
                 </div>
               </div>
               <div class="item">
-                <div class="img">
+                <div class="img-box w-104">
                   <img src="../../static/images/common/dummy-image.png" alt="" />
                 </div>
-                <span class="checkbox no-label sm-check">
-                  <input type="checkbox" id="chk7" />
+                <span class="check-wrap no-label sm-check">
+                  <input type="checkbox" class="checkbox" id="chk7" />
                   <label for="chk7" class="lbl"></label>
                 </span>
 
@@ -3394,11 +3365,11 @@
                 </div>
               </div>
               <div class="item">
-                <div class="img">
+                <div class="img-box w-104">
                   <img src="../../static/images/common/dummy-image.png" alt="" />
                 </div>
-                <span class="checkbox no-label sm-check">
-                  <input type="checkbox" id="chk8" />
+                <span class="check-wrap no-label sm-check">
+                  <input type="checkbox" class="checkbox" id="chk8" />
                   <label for="chk8" class="lbl"></label>
                 </span>
 
@@ -3411,11 +3382,11 @@
                 </div>
               </div>
               <div class="item">
-                <div class="img">
+                <div class="img-box w-104">
                   <img src="../../static/images/common/dummy-image.png" alt="" />
                 </div>
-                <span class="checkbox no-label sm-check">
-                  <input type="checkbox" id="chk9" />
+                <span class="check-wrap no-label sm-check">
+                  <input type="checkbox" class="checkbox" id="chk9" />
                   <label for="chk9" class="lbl"></label>
                 </span>
 
@@ -3428,11 +3399,11 @@
                 </div>
               </div>
               <div class="item">
-                <div class="img">
+                <div class="img-box w-104">
                   <img src="../../static/images/common/dummy-image.png" alt="" />
                 </div>
-                <span class="checkbox no-label sm-check">
-                  <input type="checkbox" id="chk10" />
+                <span class="check-wrap no-label sm-check">
+                  <input type="checkbox" class="checkbox" id="chk10" />
                   <label for="chk10" class="lbl"></label>
                 </span>
 
@@ -3465,8 +3436,8 @@
                     <th colspan="8" class="h-56 bd-line">
                       <div class="flex space-between">
                         <div class="left">
-                          <div class="checkbox sm-check">
-                            <input type="checkbox" id="table-hd-check" />
+                          <div class="check-wrap sm-check">
+                            <input type="checkbox" class="checkbox" id="table-hd-check" />
                             <label for="table-hd-check" class="lbl"></label>
                           </div>
                           <div class="button-wrap ml-0">
@@ -3491,8 +3462,8 @@
                   <tr>
                     <th rowspan="2">매입 금액(원)</th>
                     <td rowspan="2">
-                      <div class="input w-100p mb-4">
-                        <input type="text" placeholder="매입 금액 입력" title="매입 금액 입력" />
+                      <div class="input-box w-100p mb-4">
+                        <input type="text" placeholder="매입 금액 입력" title="매입 금액 입력" class="input" />
                       </div>
                       <button class="button small line w-100p t-center">저장</button>
                     </td>
@@ -3514,29 +3485,29 @@
                   <tr>
                     <th rowspan="3" class="va-top">상품 이미지</th>
                     <td rowspan="3">
-                      <div class="img">
+                      <div class="img-box w-116">
                         <img src="../../static/images/common/dummy-image2.png" alt="" />
                       </div>
                     </td>
                     <th rowspan="2" class="va-top">구매대행 주문번호</th>
                     <td rowspan="2">
-                      <div class="input w-100p mb-4">
-                        <input type="text" placeholder="주문 번호 입력" title="주문 번호 입력" />
+                      <div class="input-box w-100p mb-4">
+                        <input type="text" placeholder="주문 번호 입력" title="주문 번호 입력" class="input" />
                       </div>
                       <button class="button small line w-100p t-center">저장</button>
                     </td>
                     <th>기존 송장번호<i class="require"></i></th>
-                    <td colspan="3" class="two-lines">
+                    <td colspan="3" class="small-pd">
                       <div class="search-box">
                         <div class="select-box w-120">
+                          <button class="init placeholder">업체 선택</button>
                           <ul>
-                            <li class="init placeholder">업체 선택</li>
-                            <li data-value="1">URL</li>
-                            <li data-value="2">키워드</li>
+                            <li data-value="1"><button>URL</button></li>
+                            <li data-value="2"><button>키워드</button></li>
                           </ul>
                         </div>
-                        <div class="input w-284 ml-4">
-                          <input type="text" placeholder="송장번호 입력" title="송장번호 입력" />
+                        <div class="input-box w-284 ml-4">
+                          <input type="text" placeholder="송장번호 입력" title="송장번호 입력" class="input" />
                         </div>
                         <button class="button small line ml-8 mr-0">자동송장발송</button>
                       </div>
@@ -3544,22 +3515,22 @@
                   </tr>
                   <tr>
                     <th>보조 송장번호</th>
-                    <td colspan="3" class="two-lines">
+                    <td colspan="3" class="small-pd">
                       <div class="flex align-center">
-                        <span class="checkbox sm-check">
-                          <input type="checkbox" id="assistant-num" />
+                        <span class="check-wrap sm-check">
+                          <input type="checkbox" class="checkbox" id="assistant-num" />
                           <label for="assistant-num" class="lbl">사용</label>
                         </span>
                         <div class="search-box">
                           <div class="select-box w-120">
+                            <button class="init placeholder">업체 선택</button>
                             <ul>
-                              <li class="init placeholder">업체 선택</li>
-                              <li data-value="1">URL</li>
-                              <li data-value="2">키워드</li>
+                              <li data-value="1"><button>URL</button></li>
+                              <li data-value="2"><button>키워드</button></li>
                             </ul>
                           </div>
-                          <div class="input w-268 ml-4">
-                            <input type="text" placeholder="송장번호 입력" title="송장번호 입력" />
+                          <div class="input-box w-268 ml-4">
+                            <input type="text" placeholder="송장번호 입력" title="송장번호 입력" class="input" />
                           </div>
                           <button class="button small bg-dark ml-8" disabled="">저장</button>
                         </div>
@@ -3596,8 +3567,8 @@
                     <th colspan="8" class="h-56 bd-line">
                       <div class="flex space-between">
                         <div class="left">
-                          <div class="checkbox sm-check">
-                            <input type="checkbox" id="table-hd-check2" />
+                          <div class="check-wrap sm-check">
+                            <input type="checkbox" class="checkbox" id="table-hd-check2" />
                             <label for="table-hd-check2" class="lbl"></label>
                           </div>
                           <div class="button-wrap ml-0">
@@ -3622,8 +3593,8 @@
                   <tr>
                     <th rowspan="2">매입 금액(원)</th>
                     <td rowspan="2">
-                      <div class="input w-100p mb-4">
-                        <input type="text" placeholder="매입 금액 입력" title="매입 금액 입력" />
+                      <div class="input-box w-100p mb-4">
+                        <input type="text" placeholder="매입 금액 입력" title="매입 금액 입력" class="input" />
                       </div>
                       <button class="button small line w-100p t-center">저장</button>
                     </td>
@@ -3645,29 +3616,29 @@
                   <tr>
                     <th rowspan="3" class="va-top">상품 이미지</th>
                     <td rowspan="3">
-                      <div class="img">
+                      <div class="img-box w-116">
                         <img src="../../static/images/common/dummy-image2.png" alt="" />
                       </div>
                     </td>
                     <th rowspan="2" class="va-top">구매대행 주문번호</th>
                     <td rowspan="2">
-                      <div class="input w-100p mb-4">
-                        <input type="text" placeholder="주문 번호 입력" title="주문 번호 입력" />
+                      <div class="input-box w-100p mb-4">
+                        <input type="text" placeholder="주문 번호 입력" title="주문 번호 입력" class="input" />
                       </div>
                       <button class="button small line w-100p t-center">저장</button>
                     </td>
                     <th>기존 송장번호<i class="require"></i></th>
-                    <td colspan="3" class="two-lines">
+                    <td colspan="3" class="small-pd">
                       <div class="search-box">
                         <div class="select-box w-120">
+                          <button class="init placeholder">업체 선택</button>
                           <ul>
-                            <li class="init placeholder">업체 선택</li>
-                            <li data-value="1">URL</li>
-                            <li data-value="2">키워드</li>
+                            <li data-value="1"><button>URL</button></li>
+                            <li data-value="2"><button>키워드</button></li>
                           </ul>
                         </div>
-                        <div class="input w-284 ml-4">
-                          <input type="text" placeholder="송장번호 입력" title="송장번호 입력" />
+                        <div class="input-box w-284 ml-4">
+                          <input type="text" placeholder="송장번호 입력" title="송장번호 입력" class="input" />
                         </div>
                         <button class="button small line ml-8 mr-0">자동송장발송</button>
                       </div>
@@ -3675,22 +3646,22 @@
                   </tr>
                   <tr>
                     <th>보조 송장번호</th>
-                    <td colspan="3" class="two-lines">
+                    <td colspan="3" class="small-pd">
                       <div class="flex align-center">
-                        <span class="checkbox sm-check">
-                          <input type="checkbox" id="assistant-num2" />
+                        <span class="check-wrap sm-check">
+                          <input type="checkbox" class="checkbox" id="assistant-num2" />
                           <label for="assistant-num2" class="lbl">사용</label>
                         </span>
                         <div class="search-box">
                           <div class="select-box w-120">
+                            <button class="init placeholder">업체 선택</button>
                             <ul>
-                              <li class="init placeholder">업체 선택</li>
-                              <li data-value="1">URL</li>
-                              <li data-value="2">키워드</li>
+                              <li data-value="1"><button>URL</button></li>
+                              <li data-value="2"><button>키워드</button></li>
                             </ul>
                           </div>
-                          <div class="input w-268 ml-4">
-                            <input type="text" placeholder="송장번호 입력" title="송장번호 입력" />
+                          <div class="input-box w-268 ml-4">
+                            <input type="text" placeholder="송장번호 입력" title="송장번호 입력" class="input" />
                           </div>
                           <button class="button small bg-dark ml-8" disabled="">저장</button>
                         </div>
@@ -3732,7 +3703,7 @@
                     <td>선결제</td>
                     <th>개인통관고유번호</th>
                     <td>000000000000000</td>
-                    <th class="two-lines">
+                    <th class="small-pd">
                       통관고유부호<br />
                       일치여부
                     </th>
@@ -3753,7 +3724,7 @@
                   <tr>
                     <th>공급 금액(원)</th>
                     <td class="t-right">100,000</td>
-                    <th class="two-lines">송장 총주문 금액<br />(원)</th>
+                    <th class="small-pd">송장 총주문 금액<br />(원)</th>
                     <td class="t-right">100,000</td>
                     <th>결제 일시</th>
                     <td>YYYY.MM.DD hh:mm:ss</td>
@@ -3767,7 +3738,7 @@
                     <td class="t-right">100,000</td>
                     <th>실 결제 금액(원)</th>
                     <td class="t-right">100,000</td>
-                    <th class="two-lines">송장 실결제 금액<br />(원)</th>
+                    <th class="small-pd">송장 실결제 금액<br />(원)</th>
                     <td class="t-right">100,000</td>
                   </tr>
                   <tr>
@@ -3820,8 +3791,8 @@
                     <th colspan="8" class="h-56 bd-line">
                       <div class="flex space-between">
                         <div class="left">
-                          <div class="checkbox sm-check">
-                            <input type="checkbox" id="table-hd-check3" />
+                          <div class="check-wrap sm-check">
+                            <input type="checkbox" class="checkbox" id="table-hd-check3" />
                             <label for="table-hd-check3" class="lbl"></label>
                           </div>
                         </div>
@@ -3833,7 +3804,7 @@
                   <tr>
                     <th rowspan="3" class="va-top">상품 이미지</th>
                     <td rowspan="3">
-                      <div class="img">
+                      <div class="img-box w-116">
                         <img src="../../static/images/common/dummy-image2.png" alt="" />
                       </div>
                     </td>
@@ -3863,7 +3834,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <th colspan="8" class="two-lines">
+                    <th colspan="8" class="small-pd">
                       <div class="flex space-between align-center">
                         <p>문의 내용</p>
                         <div>
@@ -3895,8 +3866,8 @@
                     <th colspan="8" class="h-56 bd-line">
                       <div class="flex space-between">
                         <div class="left">
-                          <div class="checkbox sm-check">
-                            <input type="checkbox" id="table-hd-check4" />
+                          <div class="check-wrap sm-check">
+                            <input type="checkbox" class="checkbox" id="table-hd-check4" />
                             <label for="table-hd-check4" class="lbl"></label>
                           </div>
                         </div>
@@ -3908,7 +3879,7 @@
                   <tr>
                     <th rowspan="3" class="va-top">상품 이미지</th>
                     <td rowspan="3">
-                      <div class="img">
+                      <div class="img-box w-116">
                         <img src="../../static/images/common/dummy-image2.png" alt="" />
                       </div>
                     </td>
@@ -3969,39 +3940,39 @@
                     <th class="va-top">첨부 이미지</th>
                     <td colspan="7">
                       <div class="flex">
-                        <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                        <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                           <img src="../../static/images/common/dummy-image.png" alt="" />
-                          <span></span>
+                          <span>자세히 보기</span>
                         </a>
-                        <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                        <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                           <img src="../../static/images/common/dummy-image.png" alt="" />
-                          <span></span>
+                          <span>자세히 보기</span>
                         </a>
-                        <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                        <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                           <img src="../../static/images/common/dummy-image.png" alt="" />
-                          <span></span>
+                          <span>자세히 보기</span>
                         </a>
-                        <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                        <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                           <img src="../../static/images/common/dummy-image.png" alt="" />
-                          <span></span>
+                          <span>자세히 보기</span>
                         </a>
-                        <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                        <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                           <img src="../../static/images/common/dummy-image.png" alt="" />
-                          <span></span>
+                          <span>자세히 보기</span>
                         </a>
-                        <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                        <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                           <img src="../../static/images/common/dummy-image.png" alt="" />
-                          <span></span>
+                          <span>자세히 보기</span>
                         </a>
-                        <a href="#none" title="해당 상품으로 이동" class="img_thumbnail">
+                        <a href="#none" title="해당 상품으로 이동" class="img-box w-96">
                           <img src="../../static/images/common/dummy-image.png" alt="" />
-                          <span></span>
+                          <span>자세히 보기</span>
                         </a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <th colspan="8" class="two-lines">
+                    <th colspan="8" class="small-pd">
                       <div class="flex space-between align-center">
                         <div class="flex align-center">
                           <span class="mr-5">답변 내용</span>
@@ -4087,7 +4058,7 @@
               </colgroup>
               <thead>
                 <tr>
-                  <th colspan="7" class="bd-line-2 two-lines">
+                  <th colspan="7" class="bd-line-2 small-pd">
                     <div class="flex space-between align-center">
                       <div class="left">
                         <p class="sub-txt">기업 정보</p>
@@ -4154,7 +4125,7 @@
                 <tr>
                   <th>대표자 연락처</th>
                   <td colspan="3">010-9876-5432</td>
-                  <th class="two-lines">
+                  <th class="small-pd">
                     정보보안 담당자<br />
                     연락처
                   </th>
@@ -4176,7 +4147,7 @@
               </colgroup>
               <thead>
                 <tr>
-                  <th colspan="7" class="bd-line-2 two-lines">
+                  <th colspan="7" class="bd-line-2 small-pd">
                     <div class="flex space-between align-center">
                       <div class="left">
                         <p class="sub-txt">기업 정보</p>
@@ -4192,7 +4163,7 @@
                 <tr>
                   <th rowspan="2" class="va-top">운영쇼핑몰 정보</th>
                   <th class="va-top">쇼핑몰 Logo</th>
-                  <td colspan="5" class="two-lines">
+                  <td colspan="5" class="small-pd">
                     <div class="flex">
                       <div class="logo">
                         <img src="../../static/images/common/mongmong_middle.png" alt="" />
@@ -4203,8 +4174,8 @@
                 </tr>
                 <tr>
                   <th>쇼핑몰 이름</th>
-                  <td colspan="7" class="two-lines">
-                    <input type="text" value="OOOOOOOO 마트" />
+                  <td colspan="7" class="small-pd">
+                    <input type="text" value="OOOOOOOO 마트" class="input" />
                   </td>
                 </tr>
                 <tr>
@@ -4229,41 +4200,41 @@
                 <tr>
                   <th rowspan="2" class="va-top">소재지</th>
                   <th>우편번호</th>
-                  <td colspan="2" class="two-lines">
+                  <td colspan="2" class="small-pd">
                     <div class="flex">
-                      <input type="text" value="98765" disabled="" />
+                      <input type="text" value="98765" disabled="" class="input" />
                       <button class="button small line open-pop" data-name="S_10_0031">주소 검색</button>
                     </div>
                   </td>
                   <th>대표 전화번호</th>
-                  <td class="two-lines"><input type="text" value="070-1234-5678" /></td>
+                  <td class="small-pd"><input type="text" value="070-1234-5678" class="input" /></td>
                 </tr>
                 <tr>
                   <th>지역</th>
-                  <td colspan="2" class="two-lines">
-                    <input type="text" value="서울특별시 영등포구" disabled="" />
+                  <td colspan="2" class="small-pd">
+                    <input type="text" value="서울특별시 영등포구" disabled="" class="input" />
                   </td>
                   <th>상세 주소</th>
-                  <td class="two-lines">
-                    <input type="text" value="여의대로 OO, 전국경제연합회 OOO 빌딩 OO층" />
+                  <td class="small-pd">
+                    <input type="text" value="여의대로 OO, 전국경제연합회 OOO 빌딩 OO층" class="input" />
                   </td>
                 </tr>
                 <tr>
                   <th>대표자 이름</th>
                   <td colspan="3">최위즈</td>
                   <th>정보보안 담당자</th>
-                  <td colspan="3" class="two-lines"><input type="text" value="최위즈" /></td>
+                  <td colspan="3" class="small-pd"><input type="text" value="최위즈" class="input" /></td>
                 </tr>
                 <tr>
                   <th>대표자 연락처</th>
-                  <td colspan="3" class="two-lines">
-                    <input type="text" value="010-9876-5432" />
+                  <td colspan="3" class="small-pd">
+                    <input type="text" value="010-9876-5432" class="input" />
                   </td>
-                  <th class="two-lines">
+                  <th class="small-pd">
                     정보보안 담당자<br />
                     연락처
                   </th>
-                  <td colspan="3" class="two-lines"><input type="text" value="010-9876-5432" /></td>
+                  <td colspan="3" class="small-pd"><input type="text" value="010-9876-5432" class="input" /></td>
                 </tr>
               </tbody>
             </table>
@@ -4407,7 +4378,7 @@
                     <td>00 개</td>
                   </tr>
                   <tr>
-                    <th class="two-lines">임대형/폐쇄형<br />쇼핑몰</th>
+                    <th class="small-pd">임대형/폐쇄형<br />쇼핑몰</th>
                     <td>00 개</td>
                   </tr>
                   <tr>
@@ -4466,7 +4437,7 @@
                     <td>00 개</td>
                   </tr>
                   <tr>
-                    <th class="two-lines">임대형/폐쇄형<br />쇼핑몰</th>
+                    <th class="small-pd">임대형/폐쇄형<br />쇼핑몰</th>
                     <td>00 개</td>
                   </tr>
                   <tr>
@@ -4525,7 +4496,7 @@
                     <td>00 개</td>
                   </tr>
                   <tr>
-                    <th class="two-lines">임대형/폐쇄형<br />쇼핑몰</th>
+                    <th class="small-pd">임대형/폐쇄형<br />쇼핑몰</th>
                     <td>00 개</td>
                   </tr>
                   <tr>
@@ -4568,7 +4539,7 @@
               </colgroup>
               <thead>
                 <tr>
-                  <th colspan="4" class="bd-line-2 two-lines">
+                  <th colspan="4" class="bd-line-2 small-pd">
                     <div class="flex space-between align-center">
                       <div class="left">
                         <span class="sub-txt">API 연동키 설정</span>
@@ -4586,7 +4557,7 @@
                   <th rowspan="2" class="va-top">구글 번역(TEXT)</th>
                   <th>Client ID</th>
                   <td>Jangsoon-goodShop-PRD-16f5a01d1-53c5cc31</td>
-                  <td rowspan="2" class="two-lines va-top"><button class="button small line">발급 메뉴얼</button></td>
+                  <td rowspan="2" class="small-pd va-top"><button class="button small line">발급 메뉴얼</button></td>
                 </tr>
                 <tr>
                   <th>Client Secret</th>
@@ -4596,7 +4567,7 @@
                   <th rowspan="2" class="va-top">네이버 무료 번역(TEXT)</th>
                   <th>Client ID</th>
                   <td>-</td>
-                  <td rowspan="2" class="two-lines va-top"><button class="button small line">발급 메뉴얼</button></td>
+                  <td rowspan="2" class="small-pd va-top"><button class="button small line">발급 메뉴얼</button></td>
                 </tr>
                 <tr>
                   <th>Client Secret</th>
@@ -4615,7 +4586,7 @@
               </colgroup>
               <thead>
                 <tr>
-                  <th colspan="4" class="bd-line-2 two-lines">
+                  <th colspan="4" class="bd-line-2 small-pd">
                     <div class="flex space-between align-center">
                       <div class="left">
                         <span class="sub-txt">API 연동키 설정</span>
@@ -4632,8 +4603,10 @@
                 <tr>
                   <th rowspan="2" class="va-top">구글 번역(TEXT)</th>
                   <th>Client ID</th>
-                  <td class="two-lines"><input type="text" value="Jangsoon-goodShop-PRD-16f5a01d1-53c5cc31" /></td>
-                  <td rowspan="2" class="two-lines va-top">
+                  <td class="small-pd">
+                    <input type="text" value="Jangsoon-goodShop-PRD-16f5a01d1-53c5cc31" class="input" />
+                  </td>
+                  <td rowspan="2" class="small-pd va-top">
                     <div class="flex space-between">
                       <button class="button small blue-line">Key 발급</button>
                       <button class="button small line">발급 메뉴얼</button>
@@ -4642,15 +4615,15 @@
                 </tr>
                 <tr>
                   <th>Client Secret</th>
-                  <td class="bd-right two-lines">
-                    <input type="text" value="PRD-6f5a01d1b18a-55fc-43c2-9255-ad7f" />
+                  <td class="bd-right small-pd">
+                    <input type="text" value="PRD-6f5a01d1b18a-55fc-43c2-9255-ad7f" class="input" />
                   </td>
                 </tr>
                 <tr>
                   <th rowspan="2" class="va-top">네이버 무료 번역(TEXT)</th>
                   <th>Client ID</th>
-                  <td class="two-lines"><input type="text" placeholder="Client ID 입력" /></td>
-                  <td rowspan="2" class="two-lines va-top">
+                  <td class="small-pd"><input type="text" placeholder="Client ID 입력" class="input" /></td>
+                  <td rowspan="2" class="small-pd va-top">
                     <div class="flex space-between">
                       <button class="button small blue-line">Key 발급</button
                       ><button class="button small line">발급 메뉴얼</button>
@@ -4659,7 +4632,7 @@
                 </tr>
                 <tr>
                   <th>Client Secret</th>
-                  <td class="bd-right two-lines"><input type="text" placeholder="Secret Key 입력" /></td>
+                  <td class="bd-right small-pd"><input type="text" placeholder="Secret Key 입력" class="input" /></td>
                 </tr>
               </tbody>
             </table>
@@ -4675,7 +4648,7 @@
               </colgroup>
               <thead>
                 <tr>
-                  <th colspan="4" class="bd-line-2 two-lines">
+                  <th colspan="4" class="bd-line-2 small-pd">
                     <div class="flex space-between align-center">
                       <div class="left">
                         <span class="sub-txt">메뉴별 권한 설정</span>
@@ -4748,7 +4721,7 @@
               </colgroup>
               <thead>
                 <tr>
-                  <th colspan="4" class="bd-line-2 two-lines">
+                  <th colspan="4" class="bd-line-2 small-pd">
                     <div class="flex space-between align-center">
                       <div class="left">
                         <span class="sub-txt">메뉴별 권한 설정</span>
@@ -4778,74 +4751,74 @@
                   </td>
                   <td colspan="2">
                     <div>
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="menu-name2" />
+                      <span class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="menu-name2" />
                         <label for="menu-name2" class="lbl">메뉴 명</label>
                       </span>
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="menu-name3" />
+                      <span class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="menu-name3" />
                         <label for="menu-name3" class="lbl">메뉴 명</label>
                       </span>
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="menu-name4" />
+                      <span class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="menu-name4" />
                         <label for="menu-name4" class="lbl">메뉴 명</label>
                       </span>
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="menu-name5" />
+                      <span class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="menu-name5" />
                         <label for="menu-name5" class="lbl">메뉴 명</label>
                       </span>
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="menu-name6" />
+                      <span class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="menu-name6" />
                         <label for="menu-name6" class="lbl">메뉴 명</label>
                       </span>
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="menu-name7" />
+                      <span class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="menu-name7" />
                         <label for="menu-name7" class="lbl">메뉴 명</label>
                       </span>
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="menu-name8" />
+                      <span class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="menu-name8" />
                         <label for="menu-name8" class="lbl">메뉴 명</label>
                       </span>
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="menu-name9" />
+                      <span class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="menu-name9" />
                         <label for="menu-name9" class="lbl">메뉴 명</label>
                       </span>
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="menu-name10" />
+                      <span class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="menu-name10" />
                         <label for="menu-name10" class="lbl">메뉴 명</label>
                       </span>
                     </div>
                     <div class="mt-12">
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="menu-name11" />
+                      <span class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="menu-name11" />
                         <label for="menu-name11" class="lbl">메뉴 명</label>
                       </span>
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="menu-name12" />
+                      <span class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="menu-name12" />
                         <label for="menu-name12" class="lbl">메뉴 명</label>
                       </span>
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="menu-name13" />
+                      <span class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="menu-name13" />
                         <label for="menu-name13" class="lbl">메뉴 명</label>
                       </span>
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="menu-name14" />
+                      <span class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="menu-name14" />
                         <label for="menu-name14" class="lbl">메뉴 명</label>
                       </span>
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="menu-name15" />
+                      <span class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="menu-name15" />
                         <label for="menu-name15" class="lbl">메뉴 명</label>
                       </span>
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="menu-name16" />
+                      <span class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="menu-name16" />
                         <label for="menu-name16" class="lbl">메뉴 명</label>
                       </span>
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="menu-name17" />
+                      <span class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="menu-name17" />
                         <label for="menu-name17" class="lbl">메뉴 명</label>
                       </span>
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="menu-name18" />
+                      <span class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="menu-name18" />
                         <label for="menu-name18" class="lbl">메뉴 명</label>
                       </span>
                     </div>
@@ -4888,7 +4861,7 @@
               </colgroup>
               <thead>
                 <tr>
-                  <th colspan="6" class="bd-line-2 two-lines">
+                  <th colspan="6" class="bd-line-2 small-pd">
                     <div class="flex space-between align-center">
                       <div class="left">
                         <span class="sub-txt">배송대행지 관리</span>
@@ -4907,7 +4880,7 @@
               <tbody>
                 <tr>
                   <th>등록된 배송대행지</th>
-                  <td colspan="5" class="two-lines">
+                  <td colspan="5" class="small-pd">
                     <div class="flex">
                       <button class="button small round off">AAA 배송대행지</button>
                       <button class="button small round on ml-4">BBB 배송대행지</button>
@@ -4963,7 +4936,7 @@
               </colgroup>
               <thead>
                 <tr>
-                  <th colspan="6" class="bd-line-2 two-lines">
+                  <th colspan="6" class="bd-line-2 small-pd">
                     <div class="flex space-between align-center">
                       <div class="left">
                         <span class="sub-txt">배송대행지 관리</span>
@@ -4982,7 +4955,7 @@
               <tbody>
                 <tr>
                   <th>등록된 배송대행지</th>
-                  <td colspan="5" class="two-lines">
+                  <td colspan="5" class="small-pd">
                     <div class="flex">
                       <button class="button small round off">AAA 배송대행지</button>
                       <button class="button small round on ml-4">BBB 배송대행지</button>
@@ -4995,18 +4968,19 @@
                 </tr>
                 <tr>
                   <th>배송신청서 URL</th>
-                  <td colspan="5" class="two-lines">
+                  <td colspan="5" class="small-pd">
                     <input
                       type="text"
+                      class="input"
                       value="http://www.ohmyzip.com/list/allOrderSearch?search_type=receiver_nm&amp;keyword="
                     />
                   </td>
                 </tr>
                 <tr>
                   <th>연동 계정</th>
-                  <td colspan="5" class="two-lines">
-                    <input type="text" class="w-160" value="42dsfg3sss" />
-                    <input type="text" class="w-160" placeholder="비밀번호 입력" />
+                  <td colspan="5" class="small-pd">
+                    <input type="text" class="w-160 input" value="42dsfg3sss" />
+                    <input type="text" class="w-160 input" placeholder="비밀번호 입력" />
                   </td>
                 </tr>
                 <tr>
@@ -5014,19 +4988,19 @@
                   <td colspan="5">
                     <div class="flex">
                       <div class="radio-box small">
-                        <input type="radio" id="delivery1" name="delivery" checked="" />
+                        <input type="radio" class="radio" id="delivery1" name="delivery" checked="" />
                         <label for="delivery1">독일</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="delivery2" name="delivery" />
+                        <input type="radio" class="radio" id="delivery2" name="delivery" />
                         <label for="delivery2">AAAA</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="delivery3" name="delivery" />
+                        <input type="radio" class="radio" id="delivery3" name="delivery" />
                         <label for="delivery3">BBBB</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="delivery4" name="delivery" />
+                        <input type="radio" class="radio" id="delivery4" name="delivery" />
                         <label for="delivery4">CCCC</label>
                       </div>
                     </div>
@@ -5037,19 +5011,19 @@
                   <td colspan="5">
                     <div class="flex">
                       <div class="radio-box small">
-                        <input type="radio" id="delivery5" name="delivery2" checked="" />
+                        <input type="radio" class="radio" id="delivery5" name="delivery2" checked="" />
                         <label for="delivery5">해운(평택)</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="delivery6" name="delivery2" />
+                        <input type="radio" class="radio" id="delivery6" name="delivery2" />
                         <label for="delivery6">AAAA</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="delivery7" name="delivery2" />
+                        <input type="radio" class="radio" id="delivery7" name="delivery2" />
                         <label for="delivery7">BBBB</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="delivery8" name="delivery2" />
+                        <input type="radio" class="radio" id="delivery8" name="delivery2" />
                         <label for="delivery8">CCCC</label>
                       </div>
                     </div>
@@ -5060,19 +5034,19 @@
                   <td colspan="5">
                     <div class="flex">
                       <div class="radio-box small">
-                        <input type="radio" id="delivery9" name="delivery3" checked="" />
+                        <input type="radio" class="radio" id="delivery9" name="delivery3" checked="" />
                         <label for="delivery9">도쿄</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="delivery10" name="delivery3" />
+                        <input type="radio" class="radio" id="delivery10" name="delivery3" />
                         <label for="delivery10">AAAA</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="delivery11" name="delivery3" />
+                        <input type="radio" class="radio" id="delivery11" name="delivery3" />
                         <label for="delivery11">BBBB</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="delivery12" name="delivery3" />
+                        <input type="radio" class="radio" id="delivery12" name="delivery3" />
                         <label for="delivery12">CCCC</label>
                       </div>
                     </div>
@@ -5083,19 +5057,19 @@
                   <td colspan="5">
                     <div class="flex">
                       <div class="radio-box small">
-                        <input type="radio" id="delivery13" name="delivery4" checked="" />
+                        <input type="radio" class="radio" id="delivery13" name="delivery4" checked="" />
                         <label for="delivery13">일반배송</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="delivery14" name="delivery4" />
+                        <input type="radio" class="radio" id="delivery14" name="delivery4" />
                         <label for="delivery14">특급배송</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="delivery15" name="delivery4" />
+                        <input type="radio" class="radio" id="delivery15" name="delivery4" />
                         <label for="delivery15">AAAA</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="delivery16" name="delivery4" />
+                        <input type="radio" class="radio" id="delivery16" name="delivery4" />
                         <label for="delivery16">BBBB</label>
                       </div>
                     </div>
@@ -5106,19 +5080,19 @@
                   <td colspan="5">
                     <div class="flex">
                       <div class="radio-box small">
-                        <input type="radio" id="delivery17" name="delivery5" checked="" />
+                        <input type="radio" class="radio" id="delivery17" name="delivery5" checked="" />
                         <label for="delivery17">뉴저지</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="delivery18" name="delivery5" />
+                        <input type="radio" class="radio" id="delivery18" name="delivery5" />
                         <label for="delivery18">AAAA</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="delivery19" name="delivery5" />
+                        <input type="radio" class="radio" id="delivery19" name="delivery5" />
                         <label for="delivery19">BBBB</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="delivery20" name="delivery5" />
+                        <input type="radio" class="radio" id="delivery20" name="delivery5" />
                         <label for="delivery20">CCCC</label>
                       </div>
                     </div>
@@ -5143,7 +5117,7 @@
               </colgroup>
               <thead>
                 <tr>
-                  <th colspan="9" class="bd-line-2 two-lines">
+                  <th colspan="9" class="bd-line-2 small-pd">
                     <div class="flex space-between align-center">
                       <div class="left">
                         <span class="sub-txt">환율 설정</span>
@@ -5220,7 +5194,7 @@
               </colgroup>
               <thead>
                 <tr>
-                  <th colspan="9" class="bd-line-2 two-lines">
+                  <th colspan="9" class="bd-line-2 small-pd">
                     <div class="flex space-between align-center">
                       <div class="left">
                         <span class="sub-txt">환율 설정</span>
@@ -5236,159 +5210,159 @@
               <tbody>
                 <tr>
                   <th>1 USD (달러)</th>
-                  <td class="bd-r-none two-lines">
+                  <td class="bd-r-none small-pd">
                     <div class="flex align-center">
                       <span>￦</span>
-                      <input type="text" class="ml-5 w-100" value="1,280.00" />
+                      <input type="text" class="ml-5 w-100 input" value="1,280.00" />
                     </div>
                   </td>
                   <td class="pl-0"></td>
                   <th>1 EUR (유로)</th>
-                  <td class="bd-r-none two-lines">
+                  <td class="bd-r-none small-pd">
                     <div class="flex align-center">
                       <span>￦</span>
-                      <input type="text" class="ml-5 w-100" value="1,400.00" />
+                      <input type="text" class="ml-5 w-100 input" value="1,400.00" />
                     </div>
                   </td>
                   <td class="pl-0">
-                    <span class="checkbox sm-check">
-                      <input type="checkbox" id="nouse1" />
+                    <span class="check-wrap sm-check">
+                      <input type="checkbox" class="checkbox" id="nouse1" />
                       <label for="nouse1" class="lbl">사용안함</label>
                     </span>
                   </td>
                   <th>1 CNY (위안)</th>
-                  <td class="bd-r-none two-lines">
+                  <td class="bd-r-none small-pd">
                     <div class="flex align-center">
                       <span>￦</span>
-                      <input type="text" class="ml-5 w-100" value="1,800.00" />
+                      <input type="text" class="ml-5 w-100 input" value="1,800.00" />
                     </div>
                   </td>
                   <td class="pl-0">
-                    <span class="checkbox sm-check">
-                      <input type="checkbox" id="nouse2" />
+                    <span class="check-wrap sm-check">
+                      <input type="checkbox" class="checkbox" id="nouse2" />
                       <label for="nouse2" class="lbl">사용안함</label>
                     </span>
                   </td>
                 </tr>
                 <tr>
                   <th>1 JPY (엔)</th>
-                  <td class="bd-r-none two-lines">
+                  <td class="bd-r-none small-pd">
                     <div class="flex align-center">
                       <span>￦</span>
-                      <input type="text" class="ml-5 w-100" value="900.00" />
+                      <input type="text" class="ml-5 w-100 input" value="900.00" />
                     </div>
                   </td>
                   <td class="pl-0">
-                    <span class="checkbox sm-check">
-                      <input type="checkbox" id="nouse3" />
+                    <span class="check-wrap sm-check">
+                      <input type="checkbox" class="checkbox" id="nouse3" />
                       <label for="nouse3" class="lbl">사용안함</label>
                     </span>
                   </td>
                   <th>1 GEP (파운드)</th>
-                  <td class="bd-r-none two-lines">
+                  <td class="bd-r-none small-pd">
                     <div class="flex align-center">
                       <span>￦</span>
-                      <input type="text" class="ml-5 w-100" value="1,600.00" />
+                      <input type="text" class="ml-5 w-100 input" value="1,600.00" />
                     </div>
                   </td>
                   <td class="pl-0">
-                    <span class="checkbox sm-check">
-                      <input type="checkbox" id="nouse4" />
+                    <span class="check-wrap sm-check">
+                      <input type="checkbox" class="checkbox" id="nouse4" />
                       <label for="nouse4" class="lbl">사용안함</label>
                     </span>
                   </td>
                   <th>1 AUD (호주 달러)</th>
-                  <td class="bd-r-none two-lines">
+                  <td class="bd-r-none small-pd">
                     <div class="flex align-center">
                       <span>￦</span>
-                      <input type="text" class="ml-5 w-100" value="0.00" disabled="" />
+                      <input type="text" class="ml-5 w-100 input" value="0.00" disabled="" />
                     </div>
                   </td>
                   <td class="pl-0">
-                    <span class="checkbox sm-check">
-                      <input type="checkbox" id="nouse5" checked="" />
+                    <span class="check-wrap sm-check">
+                      <input type="checkbox" class="checkbox" id="nouse5" checked="" />
                       <label for="nouse5" class="lbl">사용안함</label>
                     </span>
                   </td>
                 </tr>
                 <tr>
                   <th>1 SGD (싱가폴 달러)</th>
-                  <td class="bd-r-none two-lines">
+                  <td class="bd-r-none small-pd">
                     <div class="flex align-center">
                       <span>￦</span>
-                      <input type="text" class="ml-5 w-100" value="0.00" disabled="" />
+                      <input type="text" class="ml-5 w-100 input" value="0.00" disabled="" />
                     </div>
                   </td>
                   <td class="pl-0">
-                    <span class="checkbox sm-check">
-                      <input type="checkbox" id="nouse6" checked="" />
+                    <span class="check-wrap sm-check">
+                      <input type="checkbox" class="checkbox" id="nouse6" checked="" />
                       <label for="nouse6" class="lbl">사용안함</label>
                     </span>
                   </td>
                   <th>1 CAD (캐나다 달러)</th>
-                  <td class="bd-r-none two-lines">
+                  <td class="bd-r-none small-pd">
                     <div class="flex align-center">
                       <span>￦</span>
-                      <input type="text" class="ml-5 w-100" value="0.00" disabled="" />
+                      <input type="text" class="ml-5 w-100 input" value="0.00" disabled="" />
                     </div>
                   </td>
                   <td class="pl-0">
-                    <span class="checkbox sm-check">
-                      <input type="checkbox" id="nouse7" checked="" />
+                    <span class="check-wrap sm-check">
+                      <input type="checkbox" class="checkbox" id="nouse7" checked="" />
                       <label for="nouse7" class="lbl">사용안함</label>
                     </span>
                   </td>
                   <th>1 KD (홍콩 달러)</th>
-                  <td class="bd-r-none two-lines">
+                  <td class="bd-r-none small-pd">
                     <div class="flex align-center">
                       <span>￦</span>
-                      <input type="text" class="ml-5 w-100" value="0.00" disabled="" />
+                      <input type="text" class="ml-5 w-100 input" value="0.00" disabled="" />
                     </div>
                   </td>
                   <td class="pl-0">
-                    <span class="checkbox sm-check">
-                      <input type="checkbox" id="nouse8" checked="" />
+                    <span class="check-wrap sm-check">
+                      <input type="checkbox" class="checkbox" id="nouse8" checked="" />
                       <label for="nouse8" class="lbl">사용안함</label>
                     </span>
                   </td>
                 </tr>
                 <tr>
                   <th>1 TRY (리라)</th>
-                  <td class="bd-r-none two-lines">
+                  <td class="bd-r-none small-pd">
                     <div class="flex align-center">
                       <span>￦</span>
-                      <input type="text" class="ml-5 w-100" value="0.00" disabled="" />
+                      <input type="text" class="ml-5 w-100 input" value="0.00" disabled="" />
                     </div>
                   </td>
                   <td class="pl-0">
-                    <span class="checkbox sm-check">
-                      <input type="checkbox" id="nouse9" checked="" />
+                    <span class="check-wrap sm-check">
+                      <input type="checkbox" class="checkbox" id="nouse9" checked="" />
                       <label for="nouse9" class="lbl">사용안함</label>
                     </span>
                   </td>
                   <th>1 NZD (뉴질랜드 달러)</th>
-                  <td class="bd-r-none two-lines">
+                  <td class="bd-r-none small-pd">
                     <div class="flex align-center">
                       <span>￦</span>
-                      <input type="text" class="ml-5 w-100" value="0.00" disabled="" />
+                      <input type="text" class="ml-5 w-100 input" value="0.00" disabled="" />
                     </div>
                   </td>
                   <td class="pl-0">
-                    <span class="checkbox sm-check">
-                      <input type="checkbox" id="nouse10" checked="" />
+                    <span class="check-wrap sm-check">
+                      <input type="checkbox" class="checkbox" id="nouse10" checked="" />
                       <label for="nouse10" class="lbl">사용안함</label>
                     </span>
                   </td>
                   <th>1 PLN (즈워티)</th>
-                  <td class="bd-r-none two-lines">
+                  <td class="bd-r-none small-pd">
                     <div class="flex align-center">
                       <span>￦</span>
-                      <input type="text" class="ml-5 w-100" value="0.00" disabled="" />
+                      <input type="text" class="ml-5 w-100 input" value="0.00" disabled="" />
                     </div>
                   </td>
                   <td class="pl-0">
-                    <span class="checkbox sm-check">
-                      <input type="checkbox" id="nouse11" checked="" />
+                    <span class="check-wrap sm-check">
+                      <input type="checkbox" class="checkbox" id="nouse11" checked="" />
                       <label for="nouse11" class="lbl">사용안함</label>
                     </span>
                   </td>
@@ -5411,7 +5385,7 @@
               </colgroup>
               <thead>
                 <tr>
-                  <th colspan="6" class="bd-line-2 two-lines">
+                  <th colspan="6" class="bd-line-2 small-pd">
                     <div class="flex space-between align-center">
                       <div class="left">
                         <span class="sub-txt">마켓정보 관리</span>
@@ -5428,7 +5402,7 @@
               <tbody>
                 <tr>
                   <th>쇼핑몰 선택</th>
-                  <td colspan="5" class="two-lines">
+                  <td colspan="5" class="small-pd">
                     <div class="flex">
                       <button class="button small round off">AAA 쇼핑몰</button>
                       <button class="button small round on ml-4">BBB 쇼핑몰</button>
@@ -5441,7 +5415,7 @@
                 </tr>
                 <tr>
                   <th>연결된 ID</th>
-                  <td colspan="5" class="two-lines">
+                  <td colspan="5" class="small-pd">
                     <div class="flex">
                       <button class="button small round on">Abcdef1234</button>
                       <button class="button small round off ml-4">Abcdef1234</button>
@@ -5465,7 +5439,7 @@
               </colgroup>
               <thead>
                 <tr>
-                  <th colspan="3" class="bd-line-2 two-lines">
+                  <th colspan="3" class="bd-line-2 small-pd">
                     <div class="flex space-between align-center">
                       <div class="left">
                         <span class="sub-txt">쇼핑몰 정보 설정</span>
@@ -5488,7 +5462,7 @@
                 <tr>
                   <th>마켓대표 가격</th>
                   <td class="bd-r-none">가장 낮은 옵션 가격을 대표 가격으로 전송</td>
-                  <td class="two-lines">
+                  <td class="small-pd">
                     <p class="td-notice">옵션이 있는 상품의 경우 선택한 옵션가격이 마켓의 대표가격으로 전송됩니다.</p>
                     <p class="td-notice">
                       별도 설정을 하지 않으면 수집된 대표가격 또는 상품관리에서 설정한 대표가격이 전송됩니다.
@@ -5498,7 +5472,7 @@
                 <tr>
                   <th>옵션 가격</th>
                   <td class="bd-r-none">쇼핑몰 대표 가격으로 통일하여 전송</td>
-                  <td class="two-lines">
+                  <td class="small-pd">
                     <p class="td-notice">옵션가격을 대표가격으로 통일하여 전송이 필요한 경우 설정합니다.</p>
                     <p class="td-notice">별도 설정을 하지 않으면 옵션 본래 가격으로 마켓으로 전송됩니다.</p>
                   </td>
@@ -5508,7 +5482,7 @@
                   <td class="bd-r-none">
                     상품 가격의 [<em class="fc-primary2 fw-bold"> 50 </em>]% 만큼 추가하여 정가로 설정 합니다.
                   </td>
-                  <td class="two-lines">
+                  <td class="small-pd">
                     <p class="td-notice">
                       정가 설정은 [100,000원 → 50,000원] 과 같이 상품의 가격을 할인이 되어 보이게 하는 기능입니다.
                     </p>
@@ -5521,7 +5495,7 @@
                 <tr>
                   <th class="va-top">전송 옵션 수(개)</th>
                   <td class="bd-r-none va-top">3</td>
-                  <td class="two-lines">
+                  <td class="small-pd">
                     <p class="td-notice">쇼핑몰에 전송되는 옵션의 개수를 설정하세요.</p>
                     <p class="td-notice">옵션은 명칭을 기준으로 오름차순으로 정렬 됩니다.</p>
                     <p class="td-notice">
@@ -5533,7 +5507,7 @@
                 <tr>
                   <th>상품등록 제한 설정</th>
                   <td class="bd-r-none">동일 상품명 마켓등록 제한</td>
-                  <td class="two-lines">
+                  <td class="small-pd">
                     <p class="td-notice">옵션가격을 대표가격으로 통일하여 전송이 필요한 경우 설정합니다.</p>
                   </td>
                 </tr>
@@ -5586,7 +5560,7 @@
               </colgroup>
               <thead>
                 <tr>
-                  <th colspan="3" class="bd-line-2 two-lines">
+                  <th colspan="3" class="bd-line-2 small-pd">
                     <div class="flex space-between align-center">
                       <div class="left">
                         <span class="sub-txt">쇼핑몰 정보 설정</span>
@@ -5607,11 +5581,11 @@
                   <td colspan="2">
                     <div class="flex">
                       <div class="radio-box small">
-                        <input type="radio" id="update1" name="update" checked="" />
+                        <input type="radio" class="radio" id="update1" name="update" checked="" />
                         <label for="update1">가격/재고 정보만 업데이트</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="update2" name="update" />
+                        <input type="radio" class="radio" id="update2" name="update" />
                         <label for="update2">전체 정보 업데이트</label>
                       </div>
                     </div>
@@ -5619,17 +5593,17 @@
                 </tr>
                 <tr>
                   <th>마켓대표 가격</th>
-                  <td class="bd-r-none two-lines">
+                  <td class="bd-r-none small-pd">
                     <div class="select-box w-320">
+                      <button class="init">상품 대표가격으로 전송</button>
                       <ul>
-                        <li class="init">상품 대표가격으로 전송</li>
-                        <li data-value="value1">상품 대표가격으로 전송</li>
-                        <li data-value="value2">가장 낮은 옵션 가격으로 전송</li>
-                        <li data-value="value3">가장 높은 옵션 가격으로 전송</li>
+                        <li data-value="value1"><button>상품 대표가격으로 전송</button></li>
+                        <li data-value="value2"><button>가장 낮은 옵션 가격으로 전송</button></li>
+                        <li data-value="value3"><button>가장 높은 옵션 가격으로 전송</button></li>
                       </ul>
                     </div>
                   </td>
-                  <td class="two-lines">
+                  <td class="small-pd">
                     <p class="td-notice">옵션이 있는 상품의 경우 선택한 옵션가격이 마켓의 대표가격으로 전송됩니다.</p>
                     <p class="td-notice">
                       별도 설정을 하지 않으면 수집된 대표가격 또는 상품관리에서 설정한 대표가격이 전송됩니다.
@@ -5638,28 +5612,28 @@
                 </tr>
                 <tr>
                   <th>옵션 가격</th>
-                  <td class="bd-r-none two-lines">
+                  <td class="bd-r-none small-pd">
                     <div class="select-box w-320">
+                      <button class="init">옵션별 본래 가격으로 전송</button>
                       <ul>
-                        <li class="init">옵션별 본래 가격으로 전송</li>
-                        <li data-value="value1">옵션별 본래 가격으로 전송</li>
-                        <li data-value="value2">마켓대표가격으로 통일하여 전송</li>
+                        <li data-value="value1"><button>옵션별 본래 가격으로 전송</button></li>
+                        <li data-value="value2"><button>마켓대표가격으로 통일하여 전송</button></li>
                       </ul>
                     </div>
                   </td>
-                  <td class="two-lines">
+                  <td class="small-pd">
                     <p class="td-notice">옵션가격을 대표가격으로 통일하여 전송이 필요한 경우 설정합니다.</p>
                     <p class="td-notice">별도 설정을 하지 않으면 옵션 본래 가격으로 마켓으로 전송됩니다.</p>
                   </td>
                 </tr>
                 <tr>
                   <th class="va-top">정가 설정</th>
-                  <td class="bd-r-none va-top two-lines">
+                  <td class="bd-r-none va-top small-pd">
                     상품 가격의
-                    <span class="ml-8 mr-4"><input type="text" class="w-112" placeholder="할인율 입력" /></span>% 만큼
-                    추가하여 정가로 설정 합니다.
+                    <span class="ml-8 mr-4"><input type="text" class="w-112 input" placeholder="할인율 입력" /></span>%
+                    만큼 추가하여 정가로 설정 합니다.
                   </td>
-                  <td class="two-lines">
+                  <td class="small-pd">
                     <p class="td-notice">
                       정가 설정은 [100,000원 → 50,000원] 과 같이 상품의 가격을 할인이 되어 보이게 하는 기능입니다.
                     </p>
@@ -5675,10 +5649,10 @@
                 </tr>
                 <tr>
                   <th class="va-top">전송 옵션 수(개)</th>
-                  <td class="bd-r-none va-top two-lines">
-                    <input type="text" class="w-320" placeholder="개수 입력" />
+                  <td class="bd-r-none va-top small-pd">
+                    <input type="text" class="w-320 input" placeholder="개수 입력" />
                   </td>
-                  <td class="two-lines">
+                  <td class="small-pd">
                     <p class="td-notice">쇼핑몰에 전송되는 옵션의 개수를 설정하세요.</p>
                     <p class="td-notice">옵션은 명칭을 기준으로 오름차순으로 정렬 됩니다.</p>
                     <p class="td-notice">
@@ -5692,50 +5666,43 @@
                   <td class="bd-r-none">
                     <div class="flex">
                       <div class="radio-box small">
-                        <input type="radio" id="limited1" name="limited" checked="" />
+                        <input type="radio" class="radio" id="limited1" name="limited" checked="" />
                         <label for="limited1">동일 상품명 마켓등록 제한</label>
                       </div>
                       <div class="radio-box small">
-                        <input type="radio" id="limited2" name="limited" />
+                        <input type="radio" class="radio" id="limited2" name="limited" />
                         <label for="limited2">제한 없음</label>
                       </div>
                     </div>
                   </td>
-                  <td class="two-lines">
+                  <td class="small-pd">
                     <p class="td-notice">옵션가격을 대표가격으로 통일하여 전송이 필요한 경우 설정합니다.</p>
                   </td>
                 </tr>
                 <tr>
                   <th class="va-top">단일 상품 등록 설정</th>
                   <td colspan="2">
-                    <div class="flex">
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="option1" checked="" />
-                        <label for="option1" class="lbl"></label>
-                      </span>
-                      <div class="ml-0">
-                        <p>옵션 조합이 1개인 상품을 옵션 등록 없이 단일 상품으로 등록 합니다.</p>
-                        <p class="fc-grey mt-4">
-                          [예시] “색상 : 블랙 / 사이즈 : XL” 상품 → 옵션 조합은 “블랙 + XL 1개“ 이므로 단일 상품으로
-                          등록
-                        </p>
-                      </div>
+                    <div class="check-wrap sm-check">
+                      <input type="checkbox" class="checkbox" id="option1" checked />
+                      <label for="option1" class="lbl"
+                        >옵션 조합이 1개인 상품을 옵션 등록 없이 단일 상품으로 등록 합니다.</label
+                      >
                     </div>
-                    <div class="flex mt-12">
-                      <span class="checkbox sm-check">
-                        <input type="checkbox" id="option2" />
-                        <label for="option2" class="lbl"></label>
-                      </span>
-                      <div class="ml-0">
-                        <p>
-                          단일 상품 등록 시 옵션 내용을 상품명 뒤에 포함합니다. (단, 옵션 내용이 포함되어 쇼핑몰에서의
-                          상품명 길이를 초과하는 경우 옵션 내용은 전송되지 않을 수 있습니다.)
-                        </p>
-                        <p class="fc-grey mt-4">
-                          [예시] 상품명 : 나이키 조건 운동화 / 옵션 : 블랙 → 상품명 : 나이키 조던 운동화 블랙
-                        </p>
-                      </div>
+                    <p class="fc-grey mt-4 ml-28">
+                      [예시] “색상 : 블랙 / 사이즈 : XL” 상품 → 옵션 조합은 “블랙 + XL 1개“ 이므로 단일 상품으로 등록
+                    </p>
+
+                    <div class="check-wrap sm-check mt-12">
+                      <input type="checkbox" class="checkbox" id="option2" />
+                      <label for="option2" class="lbl"
+                        >단일 상품 등록 시 옵션 내용을 상품명 뒤에 포함합니다. (단, 옵션 내용이 포함되어 쇼핑몰에서의
+                        상품명 길이를 초과하는 경우 옵션 내용은 전송되지 않을 수 있습니다.)</label
+                      >
                     </div>
+
+                    <p class="fc-grey mt-4 ml-28">
+                      [예시] 상품명 : 나이키 조건 운동화 / 옵션 : 블랙 → 상품명 : 나이키 조던 운동화 블랙
+                    </p>
                     <p class="td-notice mt-12 lh-18">
                       옥션 또는 G마켓은 일부 카테고리에 대해 상품 등록 시 옵션 등록을 제한하고 있습니다.
                     </p>
@@ -5751,49 +5718,49 @@
                 <tr>
                   <th class="va-top">
                     택배 업체
-                    <div class="checkbox sm-check mt-6">
-                      <input type="checkbox" id="selectAll" />
+                    <div class="check-wrap sm-check mt-6">
+                      <input type="checkbox" class="checkbox" id="selectAll" />
                       <label for="selectAll" class="lbl">전체 선택</label>
                     </div>
                   </th>
                   <td colspan="2">
                     <div class="flex">
-                      <div class="checkbox sm-check w-96">
-                        <input type="checkbox" id="menu-name1" />
+                      <div class="check-wrap sm-check w-96">
+                        <input type="checkbox" class="checkbox" id="menu-name1" />
                         <label for="menu-name1" class="lbl">AAA 택배사</label>
                       </div>
-                      <div class="checkbox sm-check w-96">
-                        <input type="checkbox" id="menu-name1-2" checked="" />
+                      <div class="check-wrap sm-check w-96">
+                        <input type="checkbox" class="checkbox" id="menu-name1-2" checked="" />
                         <label for="menu-name1-2" class="lbl">BBB 택배사</label>
                       </div>
-                      <div class="checkbox sm-check w-96">
-                        <input type="checkbox" id="menu-name1-3" checked="" />
+                      <div class="check-wrap sm-check w-96">
+                        <input type="checkbox" class="checkbox" id="menu-name1-3" checked="" />
                         <label for="menu-name1-3" class="lbl">CCC 택배사</label>
                       </div>
-                      <div class="checkbox sm-check w-96">
-                        <input type="checkbox" id="menu-name1-4" />
+                      <div class="check-wrap sm-check w-96">
+                        <input type="checkbox" class="checkbox" id="menu-name1-4" />
                         <label for="menu-name1-4" class="lbl">DDD 택배사</label>
                       </div>
-                      <div class="checkbox sm-check w-96">
-                        <input type="checkbox" id="menu-name1-5" />
+                      <div class="check-wrap sm-check w-96">
+                        <input type="checkbox" class="checkbox" id="menu-name1-5" />
                         <label for="menu-name1-5" class="lbl">EEE 택배사</label>
                       </div>
                     </div>
                     <div class="flex mt-12">
-                      <div class="checkbox sm-check w-96">
-                        <input type="checkbox" id="menu-name1-6" checked="" />
+                      <div class="check-wrap sm-check w-96">
+                        <input type="checkbox" class="checkbox" id="menu-name1-6" checked="" />
                         <label for="menu-name1-6" class="lbl">FFF 택배사</label>
                       </div>
-                      <div class="checkbox sm-check w-96">
-                        <input type="checkbox" id="menu-name1-7" checked="" />
+                      <div class="check-wrap sm-check w-96">
+                        <input type="checkbox" class="checkbox" id="menu-name1-7" checked="" />
                         <label for="menu-name1-7" class="lbl">GGG 택배사</label>
                       </div>
-                      <div class="checkbox sm-check w-96">
-                        <input type="checkbox" id="menu-name1-8" />
+                      <div class="check-wrap sm-check w-96">
+                        <input type="checkbox" class="checkbox" id="menu-name1-8" />
                         <label for="menu-name1-8" class="lbl">HHH 택배사</label>
                       </div>
-                      <div class="checkbox sm-check w-96">
-                        <input type="checkbox" id="menu-name1-9" checked="" />
+                      <div class="check-wrap sm-check w-96">
+                        <input type="checkbox" class="checkbox" id="menu-name1-9" checked="" />
                         <label for="menu-name1-9" class="lbl">GGG 택배사</label>
                       </div>
                     </div>
@@ -5807,16 +5774,16 @@
             </table>
           </div>
           <h2 class="guide-tit mt-40">Table loading</h2>
-          <div class="item-wrap ty2 mt-20">
+          <div class="progress-box mt-20">
             <p>쇼핑몰의 <span>asdf123455</span> 계정에서 주문 정보 수집 중...</p>
           </div>
-          <div class="item-wrap ty2 mt-20">
+          <div class="progress-box mt-20">
             <div class="progress-wrap">
               <span class="progress"></span>
             </div>
             <p>상품을 수집중 입니다.</p>
           </div>
-          <div class="item-wrap ty2 mt-20">
+          <div class="progress-box mt-20">
             <div class="progress-wrap">
               <span class="progress"></span>
             </div>
@@ -5828,7 +5795,7 @@
             </p>
             <p class="fc-red"><span>C </span>쇼핑몰의 <span>asdf123455</span> 계정에서 주문 정보 수집 오류/실패</p>
           </div>
-          <div class="item-wrap ty2 mt-20">
+          <div class="progress-box mt-20">
             <div class="no-result"></div>
             <p class="no-result-tt">문의 정보를 찾을 수 없습니다. 문의 정보를 수집하세요.</p>
           </div>

@@ -7,12 +7,6 @@
     line-height: 2rem;
     border-top: 0.1rem solid var(--line-color01);
     border-bottom: 0.1rem solid var(--line-color01);
-    tr:first-child {
-      th,
-      td {
-        border-top: 0;
-      }
-    }
     th,
     td {
       height: 4.4rem;
@@ -28,7 +22,7 @@
         border-width: 1px !important;
         border-right: 0.1rem solid var(--line-color03);
       }
-      &.two-lines {
+      &.small-pd {
         padding: 0.6rem 1.2rem;
         line-height: 1.6rem;
         .button {
@@ -122,10 +116,6 @@
     }
     .bd-r-none {
       border-right-width: 0;
-    }
-    .logo {
-      width: 5.6rem;
-      height: 5.6rem;
     }
   }
   .no-label.sm-check {

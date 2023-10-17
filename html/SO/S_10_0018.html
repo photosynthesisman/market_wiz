@@ -29,9 +29,9 @@
           <div class="tit-wrap">
             <h2 class="h1">
               마켓 정보/계정 관리
-              <i class="favorite">즐겨찾기</i>
+              <button class="favorite">즐겨찾기</button>
               <!-- 즐겨찾기 등록된 경우-->
-              <!-- <i class="favorite checked">즐겨찾기</i> -->
+              <!-- <button class="favorite checked">즐겨찾기</button> -->
             </h2>
             <div class="path">
               <a href="#none" class="home">홈 바로가기</a>
@@ -52,7 +52,7 @@
                 </colgroup>
                 <thead>
                   <tr>
-                    <th colspan="6" class="bd-line-2 two-lines">
+                    <th colspan="6" class="bd-line-2 small-pd">
                       <div class="flex space-between align-center">
                         <div class="left">
                           <span class="sub-txt">마켓정보 관리</span>
@@ -71,7 +71,7 @@
                 <tbody>
                   <tr>
                     <th>쇼핑몰 선택</th>
-                    <td colspan="5" class="two-lines">
+                    <td colspan="5" class="small-pd">
                       <div class="flex">
                         <button class="button small round off">AAA 쇼핑몰</button>
                         <button class="button small round on ml-4">BBB 쇼핑몰</button>
@@ -84,7 +84,7 @@
                   </tr>
                   <tr>
                     <th>연결된 ID</th>
-                    <td colspan="5" class="two-lines">
+                    <td colspan="5" class="small-pd">
                       <div class="flex">
                         <button class="button small round on">Abcdef1234</button>
                         <button class="button small round off ml-4">Abcdef1234</button>
@@ -108,7 +108,7 @@
                 </colgroup>
                 <thead>
                   <tr>
-                    <th colspan="3" class="bd-line-2 two-lines">
+                    <th colspan="3" class="bd-line-2 small-pd">
                       <div class="flex space-between align-center">
                         <div class="left">
                           <span class="sub-txt">쇼핑몰 정보 설정</span>
@@ -131,7 +131,7 @@
                   <tr>
                     <th>마켓대표 가격</th>
                     <td class="bd-r-none">가장 낮은 옵션 가격을 대표 가격으로 전송</td>
-                    <td class="two-lines">
+                    <td class="small-pd">
                       <p class="td-notice">옵션이 있는 상품의 경우 선택한 옵션가격이 마켓의 대표가격으로 전송됩니다.</p>
                       <p class="td-notice">
                         별도 설정을 하지 않으면 수집된 대표가격 또는 상품관리에서 설정한 대표가격이 전송됩니다.
@@ -141,7 +141,7 @@
                   <tr>
                     <th>옵션 가격</th>
                     <td class="bd-r-none">쇼핑몰 대표 가격으로 통일하여 전송</td>
-                    <td class="two-lines">
+                    <td class="small-pd">
                       <p class="td-notice">옵션가격을 대표가격으로 통일하여 전송이 필요한 경우 설정합니다.</p>
                       <p class="td-notice">별도 설정을 하지 않으면 옵션 본래 가격으로 마켓으로 전송됩니다.</p>
                     </td>
@@ -151,7 +151,7 @@
                     <td class="bd-r-none">
                       상품 가격의 [<em class="fc-primary2 fw-bold"> 50 </em>]% 만큼 추가하여 정가로 설정 합니다.
                     </td>
-                    <td class="two-lines">
+                    <td class="small-pd">
                       <p class="td-notice">
                         정가 설정은 [100,000원 → 50,000원] 과 같이 상품의 가격을 할인이 되어 보이게 하는 기능입니다.
                       </p>
@@ -164,7 +164,7 @@
                   <tr>
                     <th class="va-top">전송 옵션 수(개)</th>
                     <td class="bd-r-none va-top">3</td>
-                    <td class="two-lines">
+                    <td class="small-pd">
                       <p class="td-notice">쇼핑몰에 전송되는 옵션의 개수를 설정하세요.</p>
                       <p class="td-notice">옵션은 명칭을 기준으로 오름차순으로 정렬 됩니다.</p>
                       <p class="td-notice">
@@ -176,7 +176,7 @@
                   <tr>
                     <th>상품등록 제한 설정</th>
                     <td class="bd-r-none">동일 상품명 마켓등록 제한</td>
-                    <td class="two-lines">
+                    <td class="small-pd">
                       <p class="td-notice">옵션가격을 대표가격으로 통일하여 전송이 필요한 경우 설정합니다.</p>
                     </td>
                   </tr>
@@ -231,7 +231,7 @@
                 </colgroup>
                 <thead>
                   <tr>
-                    <th colspan="3" class="bd-line-2 two-lines">
+                    <th colspan="3" class="bd-line-2 small-pd">
                       <div class="flex space-between align-center">
                         <div class="left">
                           <span class="sub-txt">쇼핑몰 정보 설정</span>
@@ -252,11 +252,11 @@
                     <td colspan="2">
                       <div class="flex">
                         <div class="radio-box small">
-                          <input type="radio" id="update1" name="update" checked />
+                          <input type="radio" class="radio" id="update1" name="update" checked />
                           <label for="update1">가격/재고 정보만 업데이트</label>
                         </div>
                         <div class="radio-box small">
-                          <input type="radio" id="update2" name="update" />
+                          <input type="radio" class="radio" id="update2" name="update" />
                           <label for="update2">전체 정보 업데이트</label>
                         </div>
                       </div>
@@ -264,17 +264,17 @@
                   </tr>
                   <tr>
                     <th>마켓대표 가격</th>
-                    <td class="bd-r-none two-lines">
+                    <td class="bd-r-none small-pd">
                       <div class="select-box w-320">
+                        <button class="init">상품 대표가격으로 전송</button>
                         <ul>
-                          <li class="init">상품 대표가격으로 전송</li>
-                          <li data-value="value1">상품 대표가격으로 전송</li>
-                          <li data-value="value2">가장 낮은 옵션 가격으로 전송</li>
-                          <li data-value="value3">가장 높은 옵션 가격으로 전송</li>
+                          <li data-value="value1"><button>상품 대표가격으로 전송</button></li>
+                          <li data-value="value2"><button>가장 낮은 옵션 가격으로 전송</button></li>
+                          <li data-value="value3"><button>가장 높은 옵션 가격으로 전송</button></li>
                         </ul>
                       </div>
                     </td>
-                    <td class="two-lines">
+                    <td class="small-pd">
                       <p class="td-notice">옵션이 있는 상품의 경우 선택한 옵션가격이 마켓의 대표가격으로 전송됩니다.</p>
                       <p class="td-notice">
                         별도 설정을 하지 않으면 수집된 대표가격 또는 상품관리에서 설정한 대표가격이 전송됩니다.
@@ -285,26 +285,26 @@
                     <th>옵션 가격</th>
                     <td class="bd-r-none">
                       <div class="select-box w-320">
+                        <button class="init">옵션별 본래 가격으로 전송</button>
                         <ul>
-                          <li class="init">옵션별 본래 가격으로 전송</li>
-                          <li data-value="value1">옵션별 본래 가격으로 전송</li>
-                          <li data-value="value2">마켓대표가격으로 통일하여 전송</li>
+                          <li data-value="value1"><button>옵션별 본래 가격으로 전송</button></li>
+                          <li data-value="value2"><button>마켓대표가격으로 통일하여 전송</button></li>
                         </ul>
                       </div>
                     </td>
-                    <td class="two-lines">
+                    <td class="small-pd">
                       <p class="td-notice">옵션가격을 대표가격으로 통일하여 전송이 필요한 경우 설정합니다.</p>
                       <p class="td-notice">별도 설정을 하지 않으면 옵션 본래 가격으로 마켓으로 전송됩니다.</p>
                     </td>
                   </tr>
                   <tr>
                     <th class="va-top">정가 설정</th>
-                    <td class="bd-r-none va-top two-lines">
+                    <td class="bd-r-none va-top small-pd">
                       상품 가격의
-                      <span class="ml-8 mr-4"><input type="text" class="w-112" placeholder="할인율 입력" /></span>% 만큼
-                      추가하여 정가로 설정 합니다.
+                      <span class="ml-8 mr-4"><input type="text" class="input w-112" placeholder="할인율 입력" /></span
+                      >% 만큼 추가하여 정가로 설정 합니다.
                     </td>
-                    <td class="two-lines">
+                    <td class="small-pd">
                       <p class="td-notice">
                         정가 설정은 [100,000원 → 50,000원] 과 같이 상품의 가격을 할인이 되어 보이게 하는 기능입니다.
                       </p>
@@ -320,10 +320,10 @@
                   </tr>
                   <tr>
                     <th class="va-top">전송 옵션 수(개)</th>
-                    <td class="bd-r-none va-top two-lines">
-                      <input type="text" class="w-320" placeholder="개수 입력" />
+                    <td class="bd-r-none va-top small-pd">
+                      <input type="text" class="input w-320" placeholder="개수 입력" />
                     </td>
-                    <td class="two-lines">
+                    <td class="small-pd">
                       <p class="td-notice">쇼핑몰에 전송되는 옵션의 개수를 설정하세요.</p>
                       <p class="td-notice">옵션은 명칭을 기준으로 오름차순으로 정렬 됩니다.</p>
                       <p class="td-notice">
@@ -337,50 +337,43 @@
                     <td class="bd-r-none">
                       <div class="flex">
                         <div class="radio-box small">
-                          <input type="radio" id="limited1" name="limited" checked />
+                          <input type="radio" class="radio" id="limited1" name="limited" checked />
                           <label for="limited1">동일 상품명 마켓등록 제한</label>
                         </div>
                         <div class="radio-box small">
-                          <input type="radio" id="limited2" name="limited" />
+                          <input type="radio" class="radio" id="limited2" name="limited" />
                           <label for="limited2">제한 없음</label>
                         </div>
                       </div>
                     </td>
-                    <td class="two-lines">
+                    <td class="small-pd">
                       <p class="td-notice">옵션가격을 대표가격으로 통일하여 전송이 필요한 경우 설정합니다.</p>
                     </td>
                   </tr>
                   <tr>
                     <th class="va-top">단일 상품 등록 설정</th>
                     <td colspan="2">
-                      <div class="flex">
-                        <span class="checkbox sm-check">
-                          <input type="checkbox" id="option1" checked />
-                          <label for="option1" class="lbl"></label>
-                        </span>
-                        <div class="ml-0">
-                          <p>옵션 조합이 1개인 상품을 옵션 등록 없이 단일 상품으로 등록 합니다.</p>
-                          <p class="fc-grey mt-4">
-                            [예시] “색상 : 블랙 / 사이즈 : XL” 상품 → 옵션 조합은 “블랙 + XL 1개“ 이므로 단일 상품으로
-                            등록
-                          </p>
-                        </div>
+                      <div class="check-wrap sm-check">
+                        <input type="checkbox" class="checkbox" id="option1" checked />
+                        <label for="option1" class="lbl"
+                          >옵션 조합이 1개인 상품을 옵션 등록 없이 단일 상품으로 등록 합니다.</label
+                        >
                       </div>
-                      <div class="flex mt-12">
-                        <span class="checkbox sm-check">
-                          <input type="checkbox" id="option2" />
-                          <label for="option2" class="lbl"></label>
-                        </span>
-                        <div class="ml-0">
-                          <p>
-                            단일 상품 등록 시 옵션 내용을 상품명 뒤에 포함합니다. (단, 옵션 내용이 포함되어 쇼핑몰에서의
-                            상품명 길이를 초과하는 경우 옵션 내용은 전송되지 않을 수 있습니다.)
-                          </p>
-                          <p class="fc-grey mt-4">
-                            [예시] 상품명 : 나이키 조건 운동화 / 옵션 : 블랙 → 상품명 : 나이키 조던 운동화 블랙
-                          </p>
-                        </div>
+                      <p class="fc-grey mt-4 ml-28">
+                        [예시] “색상 : 블랙 / 사이즈 : XL” 상품 → 옵션 조합은 “블랙 + XL 1개“ 이므로 단일 상품으로 등록
+                      </p>
+
+                      <div class="check-wrap sm-check mt-12">
+                        <input type="checkbox" class="checkbox" id="option2" />
+                        <label for="option2" class="lbl"
+                          >단일 상품 등록 시 옵션 내용을 상품명 뒤에 포함합니다. (단, 옵션 내용이 포함되어 쇼핑몰에서의
+                          상품명 길이를 초과하는 경우 옵션 내용은 전송되지 않을 수 있습니다.)</label
+                        >
                       </div>
+
+                      <p class="fc-grey mt-4 ml-28">
+                        [예시] 상품명 : 나이키 조건 운동화 / 옵션 : 블랙 → 상품명 : 나이키 조던 운동화 블랙
+                      </p>
                       <p class="td-notice mt-12 lh-18">
                         옥션 또는 G마켓은 일부 카테고리에 대해 상품 등록 시 옵션 등록을 제한하고 있습니다.
                       </p>
@@ -396,49 +389,49 @@
                   <tr>
                     <th class="va-top">
                       택배 업체
-                      <div class="checkbox sm-check mt-6">
-                        <input type="checkbox" id="selectAll" />
+                      <div class="check-wrap sm-check mt-6">
+                        <input type="checkbox" class="checkbox" id="selectAll" />
                         <label for="selectAll" class="lbl">전체 선택</label>
                       </div>
                     </th>
                     <td colspan="2">
                       <div class="flex">
-                        <div class="checkbox sm-check w-96">
-                          <input type="checkbox" id="menu-name1" />
+                        <div class="check-wrap sm-check w-96">
+                          <input type="checkbox" class="checkbox" id="menu-name1" />
                           <label for="menu-name1" class="lbl">AAA 택배사</label>
                         </div>
-                        <div class="checkbox sm-check w-96">
-                          <input type="checkbox" id="menu-name2" checked />
+                        <div class="check-wrap sm-check w-96">
+                          <input type="checkbox" class="checkbox" id="menu-name2" checked />
                           <label for="menu-name2" class="lbl">BBB 택배사</label>
                         </div>
-                        <div class="checkbox sm-check w-96">
-                          <input type="checkbox" id="menu-name3" checked />
+                        <div class="check-wrap sm-check w-96">
+                          <input type="checkbox" class="checkbox" id="menu-name3" checked />
                           <label for="menu-name3" class="lbl">CCC 택배사</label>
                         </div>
-                        <div class="checkbox sm-check w-96">
-                          <input type="checkbox" id="menu-name4" />
+                        <div class="check-wrap sm-check w-96">
+                          <input type="checkbox" class="checkbox" id="menu-name4" />
                           <label for="menu-name4" class="lbl">DDD 택배사</label>
                         </div>
-                        <div class="checkbox sm-check w-96">
-                          <input type="checkbox" id="menu-name5" />
+                        <div class="check-wrap sm-check w-96">
+                          <input type="checkbox" class="checkbox" id="menu-name5" />
                           <label for="menu-name5" class="lbl">EEE 택배사</label>
                         </div>
                       </div>
                       <div class="flex mt-12">
-                        <div class="checkbox sm-check w-96">
-                          <input type="checkbox" id="menu-name6" checked />
+                        <div class="check-wrap sm-check w-96">
+                          <input type="checkbox" class="checkbox" id="menu-name6" checked />
                           <label for="menu-name6" class="lbl">FFF 택배사</label>
                         </div>
-                        <div class="checkbox sm-check w-96">
-                          <input type="checkbox" id="menu-name7" checked />
+                        <div class="check-wrap sm-check w-96">
+                          <input type="checkbox" class="checkbox" id="menu-name7" checked />
                           <label for="menu-name7" class="lbl">GGG 택배사</label>
                         </div>
-                        <div class="checkbox sm-check w-96">
-                          <input type="checkbox" id="menu-name8" />
+                        <div class="check-wrap sm-check w-96">
+                          <input type="checkbox" class="checkbox" id="menu-name8" />
                           <label for="menu-name8" class="lbl">HHH 택배사</label>
                         </div>
-                        <div class="checkbox sm-check w-96">
-                          <input type="checkbox" id="menu-name9" checked />
+                        <div class="check-wrap sm-check w-96">
+                          <input type="checkbox" class="checkbox" id="menu-name9" checked />
                           <label for="menu-name9" class="lbl">GGG 택배사</label>
                         </div>
                       </div>
@@ -476,23 +469,23 @@
                     <tbody>
                       <tr>
                         <th class="va-top">쇼핑몰 선택</th>
-                        <td class="two-lines">
+                        <td class="small-pd">
                           <div class="flex align-center">
                             <div class="radio-box small">
-                              <input type="radio" id="choiceMall1" name="choiceMall" checked />
+                              <input type="radio" class="radio" id="choiceMall1" name="choiceMall" checked />
                               <label for="choiceMall1">기본 쇼핑몰</label>
                             </div>
                             <div class="select-box w-320 ml-16">
+                              <button class="init placeholder">아이디를 등록할 쇼핑몰 선택</button>
                               <ul>
-                                <li class="init placeholder">아이디를 등록할 쇼핑몰 선택</li>
-                                <li data-value="value1">쇼핑몰1</li>
-                                <li data-value="value2">쇼핑몰2</li>
-                                <li data-value="value3">쇼핑몰3</li>
+                                <li data-value="value1"><button>쇼핑몰1</button></li>
+                                <li data-value="value2"><button>쇼핑몰2</button></li>
+                                <li data-value="value3"><button>쇼핑몰3</button></li>
                               </ul>
                             </div>
                           </div>
                           <div class="radio-box small mt-12">
-                            <input type="radio" id="choiceMall2" name="choiceMall" />
+                            <input type="radio" class="radio" id="choiceMall2" name="choiceMall" />
                             <label for="choiceMall2">쇼핑몰 추가 (잔여 OOO 개 / 이용 중 OOO 개)</label>
                           </div>
                         </td>
@@ -511,14 +504,14 @@
                     <tbody>
                       <tr>
                         <th rowspan="2" class="va-top">쇼핑몰 계정</th>
-                        <td class="two-lines">
+                        <td class="small-pd">
                           <div class="flex">
-                            <input type="text" class="w-176" placeholder="Seller Office ID 입력" />
-                            <input type="text" class="w-176 ml-4" placeholder="비밀번호 입력" />
+                            <input type="text" class="w-176 input" placeholder="Seller Office ID 입력" />
+                            <input type="text" class="w-176 ml-4 input" placeholder="비밀번호 입력" />
                           </div>
                         </td>
-                        <th class="two-lines">업체/공급계약 번호</th>
-                        <td class="two-lines">
+                        <th class="small-pd">업체/공급계약 번호</th>
+                        <td class="small-pd">
                           <div class="flex">
                             <input type="text" class="w-140" placeholder="업체번호 입력" />
                             <input type="text" class="w-140 ml-4" placeholder="공급계약번호 입력" />
@@ -526,17 +519,19 @@
                         </td>
                       </tr>
                       <tr>
-                        <td colspan="3" class="two-lines">
-                          <button class="button small blue-line" disabled>로그인 테스트</button>
-                          <span class="fc-primary2 ml-8">[정상적으로 로그인에 성공했습니다.]</span>
+                        <td colspan="3" class="small-pd">
+                          <div class="flex align-center">
+                            <button class="button small blue-line" disabled>로그인 테스트</button>
+                            <span class="fc-primary2 ml-8">[정상적으로 로그인에 성공했습니다.]</span>
+                          </div>
                         </td>
                       </tr>
                       <tr>
                         <th rowspan="2" class="va-top">ESM 계정</th>
-                        <td colspan="3" class="two-lines">
+                        <td colspan="3" class="small-pd">
                           <div class="flex align-center">
-                            <input type="text" class="w-176" placeholder="ESM ID 입력" />
-                            <input type="text" class="w-176 ml-4" placeholder="비밀번호 입력" />
+                            <input type="text" class="w-176 input" placeholder="ESM ID 입력" />
+                            <input type="text" class="w-176 ml-4 input" placeholder="비밀번호 입력" />
                             <button class="button small blue-line" disabled>ESM 로그인 테스트</button>
                             <span class="fc-red ml-12">[로그인에 실패했습니다. 계정 정보를 확인하세요.]</span>
                           </div>
@@ -559,45 +554,45 @@
                           <button class="button mini line ty2">개발 메뉴얼</button>
                         </th>
                         <th>상품 업로드 API URL</th>
-                        <td class="two-lines">
-                          <input type="text" value="https://abcdabcd.com/abcd/abcd/abcd" class="w-420" />
+                        <td class="small-pd">
+                          <input type="text" value="https://abcdabcd.com/abcd/abcd/abcd" class="w-420 input" />
                           <button class="button small blue-line ml-5">API URL 검증</button>
                           <span class="ml-8">[검증 결과 : <em class="fc-primary2 fw-bold">정상</em>]</span>
                         </td>
                       </tr>
                       <tr>
                         <th>상품 업데이트 API URL</th>
-                        <td class="two-lines">
-                          <input type="text" value="https://abcdabcd.com/abcd/abcd/abcd" class="w-420" />
+                        <td class="small-pd">
+                          <input type="text" value="https://abcdabcd.com/abcd/abcd/abcd" class="w-420 input" />
                           <button class="button small blue-line ml-5">API URL 검증</button>
                           <span class="ml-8">[검증 결과 : <em class="fc-red fw-bold">오류</em>]</span>
                         </td>
                       </tr>
                       <tr>
                         <th>주문 관리 API URL</th>
-                        <td class="two-lines">
-                          <input type="text" placeholder="https://" class="w-420" />
+                        <td class="small-pd">
+                          <input type="text" placeholder="https://" class="w-420 input" />
                           <button class="button small blue-line ml-5" disabled>API URL 검증</button>
                         </td>
                       </tr>
                       <tr>
                         <th>송장정보 전송 API URL</th>
-                        <td class="two-lines">
-                          <input type="text" placeholder="https://" class="w-420" />
+                        <td class="small-pd">
+                          <input type="text" placeholder="https://" class="w-420 input" />
                           <button class="button small blue-line ml-5" disabled>API URL 검증</button>
                         </td>
                       </tr>
                       <tr>
                         <th>문의 목록 API URL</th>
-                        <td class="two-lines">
-                          <input type="text" placeholder="https://" class="w-420" />
+                        <td class="small-pd">
+                          <input type="text" placeholder="https://" class="w-420 input" />
                           <button class="button small blue-line ml-5" disabled>API URL 검증</button>
                         </td>
                       </tr>
                       <tr>
                         <th>문의 답변 API URL</th>
-                        <td class="two-lines">
-                          <input type="text" placeholder="https://" class="w-420" />
+                        <td class="small-pd">
+                          <input type="text" placeholder="https://" class="w-420 input" />
                           <button class="button small blue-line ml-5" disabled>API URL 검증</button>
                         </td>
                       </tr>
@@ -614,9 +609,9 @@
                     <tbody>
                       <tr>
                         <th>최대 상품등록 수(개)</th>
-                        <td class="two-lines">
+                        <td class="small-pd">
                           <div class="flex">
-                            <input type="text" class="w-157" placeholder="상품 수 입력" />
+                            <input type="text" class="w-157 input" placeholder="상품 수 입력" />
                             <div>
                               <p class="td-notice">
                                 쇼핑몰에 등록된 상품 수가 최대 상품등록 수를 초과하는 경우 쇼핑몰에 신규 등록이 제한될
@@ -629,10 +624,10 @@
                       </tr>
                       <tr>
                         <th class="va-top">발송정책 설정</th>
-                        <td class="two-lines">
+                        <td class="small-pd">
                           <div class="flex">
                             <button class="button small blue-line">발송정책 정보 가져오기</button>
-                            <input type="text" placeholder="발송 정책 선택" disabled />
+                            <input type="text" class="input" placeholder="발송 정책 선택" disabled />
                           </div>
                           <p class="td-notice mt-12">
                             쇼핑몰 계정 또는 ESM 로그인 테스트를 먼저 완료해야 출하지 정보를 불러올 수 있습니다.
@@ -641,10 +636,10 @@
                       </tr>
                       <tr>
                         <th class="va-top">출하지 설정</th>
-                        <td class="two-lines">
+                        <td class="small-pd">
                           <div class="flex">
                             <button class="button small blue-line">출하지 정보 가져오기</button>
-                            <input type="text" placeholder="출하지 선택" disabled />
+                            <input type="text" class="input" placeholder="출하지 선택" disabled />
                           </div>
                           <p class="td-notice mt-12">
                             쇼핑몰 계정 또는 ESM 로그인 테스트를 먼저 완료해야 출하지 정보를 불러올 수 있습니다.
@@ -656,10 +651,10 @@
                       </tr>
                       <tr>
                         <th class="va-top">반품/교환지 설정</th>
-                        <td class="two-lines">
+                        <td class="small-pd">
                           <div class="flex">
                             <button class="button small blue-line">반품/교환지 정보 가져오기</button>
-                            <input type="text" placeholder="반품/교환지 선택" disabled />
+                            <input type="text" class="input" placeholder="반품/교환지 선택" disabled />
                           </div>
                           <p class="td-notice mt-12">
                             쇼핑몰 계정 또는 ESM 로그인 테스트를 먼저 완료해야 출하지 정보를 불러올 수 있습니다.
@@ -693,23 +688,23 @@
                     <tbody>
                       <tr>
                         <th class="va-top">쇼핑몰 선택</th>
-                        <td class="two-lines">
+                        <td class="small-pd">
                           <div class="flex align-center">
                             <div class="radio-box small">
-                              <input type="radio" id="choiceMall3" name="choiceMall-2" />
+                              <input type="radio" class="radio" id="choiceMall3" name="choiceMall-2" />
                               <label for="choiceMall3">기본 쇼핑몰</label>
                             </div>
                             <div class="select-box w-320 ml-16">
+                              <button class="init placeholder">아이디를 등록할 쇼핑몰 선택</button>
                               <ul>
-                                <li class="init placeholder">아이디를 등록할 쇼핑몰 선택</li>
-                                <li data-value="value1">쇼핑몰1</li>
-                                <li data-value="value2">쇼핑몰2</li>
-                                <li data-value="value3">쇼핑몰3</li>
+                                <li data-value="value1"><button>쇼핑몰1</button></li>
+                                <li data-value="value2"><button>쇼핑몰2</button></li>
+                                <li data-value="value3"><button>쇼핑몰3</button></li>
                               </ul>
                             </div>
                           </div>
                           <div class="radio-box small mt-12">
-                            <input type="radio" id="choiceMall4" name="choiceMall-2" />
+                            <input type="radio" class="radio" id="choiceMall4" name="choiceMall-2" />
                             <label for="choiceMall4">쇼핑몰 추가 (잔여 OOO 개 / 이용 중 OOO 개)</label>
                           </div>
                         </td>
@@ -728,32 +723,34 @@
                     <tbody>
                       <tr>
                         <th rowspan="2" class="va-top">쇼핑몰 계정</th>
-                        <td class="two-lines">
+                        <td class="small-pd">
                           <div class="flex">
-                            <input type="text" class="w-176" placeholder="Seller Office ID 입력" />
-                            <input type="text" class="w-176 ml-4" placeholder="비밀번호 입력" />
+                            <input type="text" class="w-176 input" placeholder="Seller Office ID 입력" />
+                            <input type="text" class="w-176 ml-4 input" placeholder="비밀번호 입력" />
                           </div>
                         </td>
-                        <th class="two-lines">업체/공급계약 번호</th>
-                        <td class="two-lines">
+                        <th class="small-pd">업체/공급계약 번호</th>
+                        <td class="small-pd">
                           <div class="flex">
-                            <input type="text" class="w-140" placeholder="업체번호 입력" />
-                            <input type="text" class="w-140 ml-4" placeholder="공급계약번호 입력" />
+                            <input type="text" class="w-140 input" placeholder="업체번호 입력" />
+                            <input type="text" class="w-140 ml-4 input" placeholder="공급계약번호 입력" />
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td colspan="3" class="two-lines">
-                          <button class="button small blue-line" disabled>로그인 테스트</button>
-                          <span class="fc-primary2 ml-8">[정상적으로 로그인에 성공했습니다.]</span>
+                        <td colspan="3" class="small-pd">
+                          <div class="flex align-center">
+                            <button class="button small blue-line" disabled>로그인 테스트</button>
+                            <span class="fc-primary2 ml-8">[정상적으로 로그인에 성공했습니다.]</span>
+                          </div>
                         </td>
                       </tr>
                       <tr>
                         <th rowspan="2" class="va-top">ESM 계정</th>
-                        <td colspan="3" class="two-lines">
+                        <td colspan="3" class="small-pd">
                           <div class="flex align-center">
-                            <input type="text" class="w-176" placeholder="ESM ID 입력" />
-                            <input type="text" class="w-176 ml-4" placeholder="비밀번호 입력" />
+                            <input type="text" class="w-176 input" placeholder="ESM ID 입력" />
+                            <input type="text" class="w-176 ml-4 input" placeholder="비밀번호 입력" />
                             <button class="button small blue-line" disabled>ESM 로그인 테스트</button>
                             <span class="fc-red ml-12">[로그인에 실패했습니다. 계정 정보를 확인하세요.]</span>
                           </div>
@@ -776,45 +773,45 @@
                           <button class="button mini line ty2">개발 메뉴얼</button>
                         </th>
                         <th>상품 업로드 API URL</th>
-                        <td class="two-lines">
-                          <input type="text" value="https://abcdabcd.com/abcd/abcd/abcd" class="w-420" />
+                        <td class="small-pd">
+                          <input type="text" value="https://abcdabcd.com/abcd/abcd/abcd" class="w-420 input" />
                           <button class="button small blue-line ml-5">API URL 검증</button>
                           <span class="ml-8">[검증 결과 : <em class="fc-primary2 fw-bold">정상</em>]</span>
                         </td>
                       </tr>
                       <tr>
                         <th>상품 업데이트 API URL</th>
-                        <td class="two-lines">
-                          <input type="text" value="https://abcdabcd.com/abcd/abcd/abcd" class="w-420" />
+                        <td class="small-pd">
+                          <input type="text" value="https://abcdabcd.com/abcd/abcd/abcd" class="w-420 input" />
                           <button class="button small blue-line ml-5">API URL 검증</button>
                           <span class="ml-8">[검증 결과 : <em class="fc-red fw-bold">오류</em>]</span>
                         </td>
                       </tr>
                       <tr>
                         <th>주문 관리 API URL</th>
-                        <td class="two-lines">
-                          <input type="text" placeholder="https://" class="w-420" />
+                        <td class="small-pd">
+                          <input type="text" placeholder="https://" class="w-420 input" />
                           <button class="button small blue-line ml-5" disabled>API URL 검증</button>
                         </td>
                       </tr>
                       <tr>
                         <th>송장정보 전송 API URL</th>
-                        <td class="two-lines">
-                          <input type="text" placeholder="https://" class="w-420" />
+                        <td class="small-pd">
+                          <input type="text" placeholder="https://" class="w-420 input" />
                           <button class="button small blue-line ml-5" disabled>API URL 검증</button>
                         </td>
                       </tr>
                       <tr>
                         <th>문의 목록 API URL</th>
-                        <td class="two-lines">
-                          <input type="text" placeholder="https://" class="w-420" />
+                        <td class="small-pd">
+                          <input type="text" placeholder="https://" class="w-420 input" />
                           <button class="button small blue-line ml-5" disabled>API URL 검증</button>
                         </td>
                       </tr>
                       <tr>
                         <th>문의 답변 API URL</th>
-                        <td class="two-lines">
-                          <input type="text" placeholder="https://" class="w-420" />
+                        <td class="small-pd">
+                          <input type="text" placeholder="https://" class="w-420 input" />
                           <button class="button small blue-line ml-5" disabled>API URL 검증</button>
                         </td>
                       </tr>
@@ -831,9 +828,9 @@
                     <tbody>
                       <tr>
                         <th>최대 상품등록 수(개)</th>
-                        <td class="two-lines">
+                        <td class="small-pd">
                           <div class="flex">
-                            <input type="text" class="w-157" placeholder="상품 수 입력" />
+                            <input type="text" class="w-157 input" placeholder="상품 수 입력" />
                             <div>
                               <p class="td-notice">
                                 쇼핑몰에 등록된 상품 수가 최대 상품등록 수를 초과하는 경우 쇼핑몰에 신규 등록이 제한될
@@ -846,10 +843,10 @@
                       </tr>
                       <tr>
                         <th class="va-top">발송정책 설정</th>
-                        <td class="two-lines">
+                        <td class="small-pd">
                           <div class="flex">
                             <button class="button small blue-line">발송정책 정보 가져오기</button>
-                            <input type="text" placeholder="발송 정책 선택" disabled />
+                            <input type="text" class="input" placeholder="발송 정책 선택" disabled />
                           </div>
                           <p class="td-notice mt-12">
                             쇼핑몰 계정 또는 ESM 로그인 테스트를 먼저 완료해야 출하지 정보를 불러올 수 있습니다.
@@ -858,10 +855,10 @@
                       </tr>
                       <tr>
                         <th class="va-top">출하지 설정</th>
-                        <td class="two-lines">
+                        <td class="small-pd">
                           <div class="flex">
                             <button class="button small blue-line">출하지 정보 가져오기</button>
-                            <input type="text" placeholder="출하지 선택" disabled />
+                            <input type="text" class="input" placeholder="출하지 선택" disabled />
                           </div>
                           <p class="td-notice mt-12">
                             쇼핑몰 계정 또는 ESM 로그인 테스트를 먼저 완료해야 출하지 정보를 불러올 수 있습니다.
@@ -873,10 +870,10 @@
                       </tr>
                       <tr>
                         <th class="va-top">반품/교환지 설정</th>
-                        <td class="two-lines">
+                        <td class="small-pd">
                           <div class="flex">
                             <button class="button small blue-line">반품/교환지 정보 가져오기</button>
-                            <input type="text" placeholder="반품/교환지 선택" disabled />
+                            <input type="text" class="input" placeholder="반품/교환지 선택" disabled />
                           </div>
                           <p class="td-notice mt-12">
                             쇼핑몰 계정 또는 ESM 로그인 테스트를 먼저 완료해야 출하지 정보를 불러올 수 있습니다.

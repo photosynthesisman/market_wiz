@@ -95,23 +95,16 @@ $(document).ready(function () {
       return false;
     }
     $(this).parents(".select-box").toggleClass("active");
-    $(this).closest("ul").children("li:not(.init)").toggle();
+    $(this).next("ul").children("li").toggle();
   });
-  $(document).on("click", ".select-box ul li:not(.init)", function () {
-    $(this).parent().children("li:not(.init)").removeClass("selected");
+  $(document).on("click", ".select-box ul li", function () {
+    $(this).parent().children("li").removeClass("selected");
     $(this).addClass("selected");
-    $(this).parents(".select-box").find("ul").children(".init").html($(this).html());
-    $(this).parent().children("li:not(.init)").toggle();
+    $(this).parents(".select-box").children(".init").html($(this).find("button").html());
+    $(this).parent().children("li").toggle();
     $(this).parents(".select-box").removeClass("active");
   });
 
-  //tooltip 관련
-  $(".market").on("mouseover", ".tooltip", function () {
-    $(this).next().stop().show();
-  });
-  $(".market").on("mouseout", ".tooltip", function () {
-    $(this).next().stop().hide();
-  });
   //favorite 관련
   $(".market").on("click", ".favorite", function () {
     $(this).hasClass("checked") ? $(this).removeClass("checked") : $(this).addClass("checked");
