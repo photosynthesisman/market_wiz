@@ -61,7 +61,9 @@
         text-align: center;
       }
     }
-    thead tr:first-child th {
+    thead tr:first-child th,
+    tbody tr:first-child th,
+    tbody tr:first-child td {
       border-top: 0;
     }
     thead + tbody th ~ td {
