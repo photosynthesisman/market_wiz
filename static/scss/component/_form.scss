@@ -116,6 +116,21 @@ input {
   & + .check-box {
     margin-left: 2rem;
   }
+  &.no-label {
+    .lbl {
+      padding-left: 2.4rem;
+    }
+  }
+  &.no-label.sm-check {
+    .lbl {
+      padding-left: 2rem;
+    }
+  }
+  &.txt-wrap {
+    .lbl {
+      display: inline-block;
+    }
+  }
   .checkbox {
     position: absolute;
     left: 0;
@@ -141,8 +156,7 @@ input {
   .checkbox:disabled + label {
     color: var(--sub-txt-color2);
   }
-  .checkbox + label:before,
-  .checkbox:checked + label:after {
+  .checkbox + label:before {
     content: "";
     position: absolute;
     left: 0;
@@ -155,9 +169,6 @@ input {
     background-repeat: no-repeat;
   }
   .checkbox:checked + label:before {
-    content: none;
-  }
-  .checkbox:checked + label:after {
     background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='24' rx='8' fill='%2342444E'/%3E%3Cpath d='M6.16666 12.8333L9.49999 16.1666L17.8333 7.83325' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   }
   .checkbox + label:before {
@@ -166,7 +177,7 @@ input {
   .checkbox:disabled + label::before {
     background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='23' height='23' rx='7.5' fill='%23F7F7F7'/%3E%3Cpath d='M6.16666 12.8333L9.49999 16.1666L17.8333 7.83325' stroke='%23CCCCCC' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='0.5' y='0.5' width='23' height='23' rx='7.5' stroke='%23EEEEEE'/%3E%3C/svg%3E%0A");
   }
-  .checkbox:disabled:checked + label:after {
+  .checkbox:disabled:checked + label:before {
     background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.4'%3E%3Crect width='24' height='24' rx='8' fill='%2342444E'/%3E%3Cpath d='M6.16666 12.8333L9.49999 16.1666L17.8333 7.83325' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E%0A");
   }
   &.sm-check {
@@ -177,10 +188,10 @@ input {
     .checkbox + label {
       padding-left: 2.8rem;
       font-size: 1.4rem;
+      // height: 2rem;
       line-height: 2rem;
     }
-    .checkbox + label:before,
-    .checkbox:checked + label:after {
+    .checkbox + label:before {
       width: 2rem;
       height: 2rem;
     }
@@ -389,6 +400,21 @@ input[type="date"] {
   }
   &.focused {
     border: 1px solid var(--strong-txt-color);
+  }
+  &.hover,
+  &:hover {
+    border: 1px solid var(--primary-color2);
+  }
+  &.validation {
+    border: 1px solid var(--alert-txt-color);
+  }
+  &.disabled {
+    background-color: var(--disabled-bg-color);
+    border: 1px solid var(--line-color02);
+    textarea {
+      color: var(--sub-txt-color2);
+      background-color: var(--disabled-bg-color);
+    }
   }
   .counter {
     padding-right: 0.6rem;
@@ -747,6 +773,7 @@ input[type="date"] {
     line-height: 3rem;
     padding: 0 0.8rem;
     border-radius: 3px;
+    vertical-align: baseline;
     &.init {
       position: relative;
       z-index: 2;

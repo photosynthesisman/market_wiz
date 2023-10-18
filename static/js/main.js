@@ -43,16 +43,16 @@ $(document).ready(function () {
   //pooup 오픈/클로즈
   $(".market").on("click", ".open-pop", function () {
     const popId = $(this).attr("data-name");
-    $("#" + popId).fadeIn();
+    $("#" + popId).show();
   });
   $(".market").on("click", ".close", function () {
-    $(this).parents(".popup").fadeOut();
+    $(this).parents(".popup").hide();
   });
   $(".market").on("click", ".closePopup", function () {
     if ($(this).parents(".popup").hasClass("open")) {
       return false;
     } else {
-      $(this).parents(".popup").fadeOut();
+      $(this).parents(".popup").hide();
     }
   });
 
