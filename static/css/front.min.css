@@ -16404,6 +16404,12 @@ input {
   display: flex;
 }
 
+.t-center .check-box .checkbox {
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .check-box {
   position: relative;
 }
@@ -16416,15 +16422,13 @@ input {
 .check-box.no-label.sm-check .lbl {
   padding-left: 2rem;
 }
-.check-box.txt-wrap .lbl {
+.check-box .lbl {
   display: inline-block;
 }
 .check-box .checkbox {
   position: absolute;
   left: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 0;
   width: 2.4rem;
   height: 2.4rem;
   margin: 0;
@@ -16433,10 +16437,12 @@ input {
   opacity: 0;
 }
 .check-box .checkbox + label {
-  position: relative;
   padding-left: 3.2rem;
   font-size: 1.5rem;
-  line-height: 2.4rem;
+  line-height: 2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  vertical-align: middle;
   cursor: pointer;
 }
 .check-box .checkbox:checked + label {
@@ -16449,9 +16455,7 @@ input {
   content: "";
   position: absolute;
   left: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 0;
   width: 2.4rem;
   height: 2.4rem;
   background-position: center;
