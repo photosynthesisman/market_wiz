@@ -301,10 +301,6 @@ textarea:disabled {
   opacity: 1;
 }
 
-focus check *:focus {
-  outline: 10px solid pink !important;
-}
-
 :root {
   --vh: 1vh;
   --primary-color: #ffd707;
@@ -16668,12 +16664,12 @@ input[type=date]:disabled {
 }
 
 .text-area {
-  border: 1px solid var(--line-color01);
-  border-radius: 0.6rem;
   background: rgba(0, 0, 0, 0);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
+  border: 1px solid var(--line-color01);
+  border-radius: 0.6rem;
 }
 .text-area textarea {
   display: block;
@@ -16683,11 +16679,15 @@ input[type=date]:disabled {
   padding-right: 0.6rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: none;
   outline: none;
+  border: 1px solid transparent;
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
   font-size: 1.4rem;
   overflow-y: scroll;
   resize: none;
+  outline-color: #fe6b8b;
 }
 .text-area textarea::-webkit-scrollbar {
   width: 1.6rem;
@@ -16712,6 +16712,9 @@ input[type=date]:disabled {
 }
 .text-area textarea::placeholder {
   line-height: 2rem;
+}
+.text-area.focused {
+  border: 1px solid var(--strong-txt-color);
 }
 .text-area .counter {
   padding-right: 0.6rem;
@@ -16935,6 +16938,9 @@ input[type=date]:disabled {
   border: 1px solid var(--strong-txt-color);
   background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 14L12.2121 9.21213C12.095 9.09498 11.905 9.09497 11.7879 9.21213L7 14' stroke='%23999999' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
 }
+.select-box.active ul {
+  display: block;
+}
 .select-box button {
   width: 100%;
   vertical-align: baseline;
@@ -16950,7 +16956,7 @@ input[type=date]:disabled {
 .select-box.open {
   border: 1px solid var(--strong-txt-color);
 }
-.select-box.open ul li {
+.select-box.open ul {
   display: block;
 }
 .select-box.hover, .select-box:hover {
@@ -16971,10 +16977,12 @@ input[type=date]:disabled {
   border-bottom-color: var(--alert-txt-color);
 }
 .select-box ul {
+  display: none;
   position: absolute;
   left: -1px;
   right: -1px;
   line-height: 3.2rem;
+  border: 1px solid var(--strong-txt-color);
 }
 .select-box li {
   cursor: pointer;
@@ -16985,34 +16993,7 @@ input[type=date]:disabled {
   display: none;
   width: 100%;
   background-color: var(--white-color);
-  border-right: 1px solid var(--strong-txt-color);
-  border-left: 1px solid var(--strong-txt-color);
   color: var(--base-txt-color);
-}
-.select-box li:first-child::before {
-  content: "";
-  position: absolute;
-  z-index: -5;
-  left: -1px;
-  right: -1px;
-  top: -1rem;
-  height: 1rem;
-  background-color: var(--white-color);
-  border-right: 1px solid var(--strong-txt-color);
-  border-left: 1px solid var(--strong-txt-color);
-}
-.select-box li::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 4px;
-  right: 4px;
-  top: 0;
-  bottom: 0;
-  border-radius: 3px;
-}
-.select-box li:hover::after, .select-box li.hover::after {
-  background: #e9eff9;
 }
 .select-box li.selected button {
   font-weight: 600;
@@ -17020,13 +17001,8 @@ input[type=date]:disabled {
 .select-box li.disabled {
   color: var(--sub-txt-color2);
 }
-.select-box li:last-child {
-  height: 3.4rem;
-  border-radius: 0 0 0.6rem 0.6rem;
-  border-bottom: 1px solid var(--strong-txt-color);
-}
-.select-box li:last-child::after {
-  bottom: 3px;
+.select-box li button:hover {
+  background: #e9eff9;
 }
 
 .button-wrap {
