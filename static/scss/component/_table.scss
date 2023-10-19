@@ -66,6 +66,9 @@
     tbody tr:first-child td {
       border-top: 0;
     }
+    thead tr:first-child th {
+      border-bottom: 1px solid var(--line-color03);
+    }
     thead + tbody th ~ td {
       text-align: left;
     }

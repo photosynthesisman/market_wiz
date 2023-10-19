@@ -16666,7 +16666,7 @@ input {
   font-weight: 700;
 }
 .list-summary .result {
-  margin-right: 1.2rem;
+  margin: 0 1.2rem;
   font-size: 1.4rem;
   line-height: 2rem;
 }
@@ -17244,6 +17244,9 @@ input[type=date]:disabled {
 .table table tbody tr:first-child th,
 .table table tbody tr:first-child td {
   border-top: 0;
+}
+.table table thead tr:first-child th {
+  border-bottom: 1px solid var(--line-color03);
 }
 .table table thead + tbody th ~ td {
   text-align: left;
