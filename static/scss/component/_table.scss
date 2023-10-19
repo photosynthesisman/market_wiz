@@ -29,6 +29,11 @@
           margin-right: 0;
         }
       }
+      &.dark-bg {
+        font-weight: 700;
+        background-color: var(--bg-color-blue02);
+        border-top: 0.1rem solid var(--line-color01);
+      }
       .img {
         width: 11.6rem;
         height: 11.6rem;

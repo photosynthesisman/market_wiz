@@ -15,13 +15,20 @@ includeHTML();
 
 $(document).ready(function () {
   // 탭메뉴 및 패널 활성화
-  $(".market").on("click", ".tab a", function (e) {
+  $(".tab-container").on("click", ".tab a", function (e) {
     e.preventDefault();
     $(this).parent().siblings().removeClass("active");
     $(".tab-content").removeClass("active");
     $(this).parent().addClass("active");
     let tabId = $(this).data("tab");
     $("#" + tabId).addClass("active");
+  });
+
+  $(".tab-line-menu").on("click", ".tab > a", function (e) {
+    e.preventDefault();
+    const $idx = $(this).parent().index();
+    $(this).parent().addClass("active").siblings().removeClass("active");
+    $(".tab-panel").eq($idx).addClass("active").siblings().removeClass("active");
   });
 
   // lnb 2depth open
@@ -85,19 +92,24 @@ $(document).ready(function () {
   });
 
   //for custom select dropdown menu
-  $(document).on("click", ".select-box .init", function () {
-    if ($(this).parents(".select-box").hasClass("disabled")) {
+  $(document).on("click", ".select-box .init", function (e) {
+    e.preventDefault();
+    const $this = $(this);
+    const $wrap = $this.closest(".select-box");
+    if ($wrap.hasClass("disabled")) {
       return false;
     }
-    $(this).parents(".select-box").toggleClass("active");
-    $(this).next("ul").children("li").toggle();
+    $wrap.toggleClass("active");
   });
-  $(document).on("click", ".select-box ul li", function () {
-    $(this).parent().children("li").removeClass("selected");
-    $(this).addClass("selected");
-    $(this).parents(".select-box").children(".init").html($(this).find("button").html());
-    $(this).parent().children("li").toggle();
-    $(this).parents(".select-box").removeClass("active");
+  $(document).on("click", ".select-box ul li button", function (e) {
+    e.preventDefault();
+    const $this = $(this);
+    $this.closest("li").addClass("selected").siblings("li").removeClass("selected");
+    const $wrap = $this.closest(".select-box");
+    const $btn = $wrap.find(".init");
+    $btn.html($this.html());
+    $btn.attr("data-value", $this.data("value"));
+    $wrap.removeClass("active");
   });
 
   //favorite 관련

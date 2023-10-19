@@ -6,6 +6,9 @@
   border-radius: 0.6rem;
   font-size: 1.5rem;
   font-weight: 600;
+  i {
+    margin-right: 0;
+  }
   &:disabled {
     opacity: 0.4;
     &:hover {

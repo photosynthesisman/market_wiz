@@ -24,9 +24,7 @@
             <li class="tab">
               <a href="#none" data-tab="font-guide">폰트/색상 가이드</a><span class="close-tab">닫기</span>
             </li>
-            <li class="tab active">
-              <a href="#none" data-tab="form-guide">폼 가이드</a><span class="close-tab">닫기</span>
-            </li>
+            <li class="tab"><a href="#none" data-tab="form-guide">폼 가이드</a><span class="close-tab">닫기</span></li>
             <li class="tab">
               <a href="#none" data-tab="button-guide">버튼 가이드</a><span class="close-tab">닫기</span>
             </li>
@@ -34,7 +32,7 @@
             <li class="tab">
               <a href="#none" data-tab="icon-guide">아이콘 가이드</a><span class="close-tab">닫기</span>
             </li>
-            <li class="tab">
+            <li class="tab active">
               <a href="#none" data-tab="table-guide">테이블 가이드</a><span class="close-tab">닫기</span>
             </li>
             <li class="tab">
@@ -239,7 +237,7 @@
         </div>
 
         <!-- 폼 가이드 -->
-        <div class="tab-content active" id="form-guide">
+        <div class="tab-content" id="form-guide">
           <div class="flex">
             <div class="mr-90">
               <h2 class="guide-tit">Input</h2>
@@ -297,96 +295,189 @@
             </div>
             <div>
               <h2 class="guide-tit">Select</h2>
-              <div class="form-guide-wrap">
-                <dl>
-                  <dt>Default</dt>
-                  <dd>
-                    <div class="select-box">
-                      <button class="init">선택항목</button>
-                      <ul>
-                        <li><button data-value="value1">Hover</button></li>
-                        <li><button data-value="value2">Selected</button></li>
-                        <li><button data-value="value3">Default</button></li>
-                        <li><button data-value="value4">Disabled</button></li>
-                      </ul>
-                    </div>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt>Placeholder</dt>
-                  <dd>
-                    <div class="select-box">
-                      <button class="init placeholder">선택항목</button>
-                      <ul>
-                        <li><button data-value="value1">Hover</button></li>
-                        <li>
-                          <button data-value="value2">
-                            SelectedSelectedSelectedSelectedSelectedSelectedSelectedSelectedSelected
-                          </button>
-                        </li>
-                        <li><button data-value="value3">Default</button></li>
-                        <li><button data-value="value4">Disabled</button></li>
-                      </ul>
-                    </div>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt>Hover</dt>
-                  <dd>
-                    <div class="select-box hover">
-                      <button class="init placeholder">선택항목</button>
-                      <ul>
-                        <li><button data-value="value1">Hover</button></li>
-                        <li><button data-value="value2">Selected</button></li>
-                        <li><button data-value="value3">Default</button></li>
-                        <li><button data-value="value4">Disabled</button></li>
-                      </ul>
-                    </div>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt>Disabled</dt>
-                  <dd>
-                    <div class="select-box disabled">
-                      <button class="init" disabled>선택항목</button>
-                      <ul>
-                        <li><button data-value="value1">Hover</button></li>
-                        <li><button data-value="value2">Selected</button></li>
-                        <li><button data-value="value3">Default</button></li>
-                        <li><button data-value="value4">Disabled</button></li>
-                      </ul>
-                    </div>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt>Validation</dt>
-                  <dd>
-                    <div class="select-box validation">
-                      <button class="init">선택항목</button>
-                      <ul>
-                        <li><button data-value="value1">Hover</button></li>
-                        <li><button data-value="value2">Selected</button></li>
-                        <li><button data-value="value3">Default</button></li>
-                        <li><button data-value="value4">Disabled</button></li>
-                      </ul>
-                    </div>
-                    <p class="validation-check">다시 선택해주세요</p>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt>Open</dt>
-                  <dd>
-                    <div class="select-box open">
-                      <button class="init">선택항목</button>
-                      <ul>
-                        <li><button data-value="value1" class="hover">Hover</button></li>
-                        <li><button data-value="value2" class="selected">Selected</button></li>
-                        <li><button data-value="value3">Default</button></li>
-                        <li><button data-value="value4" class="disabled">Disabled</button></li>
-                      </ul>
-                    </div>
-                  </dd>
-                </dl>
+              <div class="flex">
+                <div class="form-guide-wrap mr-90">
+                  <dl>
+                    <dt>Default</dt>
+                    <dd>
+                      <div class="select-box">
+                        <button class="init">선택항목</button>
+                        <ul>
+                          <li><button data-value="value1">Hover</button></li>
+                          <li><button data-value="value2">Selected</button></li>
+                          <li><button data-value="value3">Default</button></li>
+                          <li><button data-value="value4">Disabled</button></li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>Placeholder</dt>
+                    <dd>
+                      <div class="select-box">
+                        <button class="init placeholder">선택항목</button>
+                        <ul>
+                          <li><button data-value="value1">Hover</button></li>
+                          <li>
+                            <button data-value="value2">
+                              SelectedSelectedSelectedSelectedSelectedSelectedSelectedSelectedSelected
+                            </button>
+                          </li>
+                          <li><button data-value="value3">Default</button></li>
+                          <li><button data-value="value4">Disabled</button></li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>Hover</dt>
+                    <dd>
+                      <div class="select-box hover">
+                        <button class="init placeholder">선택항목</button>
+                        <ul>
+                          <li><button data-value="value1">Hover</button></li>
+                          <li><button data-value="value2">Selected</button></li>
+                          <li><button data-value="value3">Default</button></li>
+                          <li><button data-value="value4">Disabled</button></li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>Disabled</dt>
+                    <dd>
+                      <div class="select-box disabled">
+                        <button class="init" disabled>선택항목</button>
+                        <ul>
+                          <li><button data-value="value1">Hover</button></li>
+                          <li><button data-value="value2">Selected</button></li>
+                          <li><button data-value="value3">Default</button></li>
+                          <li><button data-value="value4">Disabled</button></li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>Validation</dt>
+                    <dd>
+                      <div class="select-box validation">
+                        <button class="init">선택항목</button>
+                        <ul>
+                          <li><button data-value="value1">Hover</button></li>
+                          <li><button data-value="value2">Selected</button></li>
+                          <li><button data-value="value3">Default</button></li>
+                          <li><button data-value="value4">Disabled</button></li>
+                        </ul>
+                      </div>
+                      <p class="validation-check">다시 선택해주세요</p>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>Open</dt>
+                    <dd>
+                      <div class="select-box active">
+                        <button class="init">선택항목</button>
+                        <ul>
+                          <li><button data-value="value1" class="hover">Hover</button></li>
+                          <li><button data-value="value2" class="selected">Selected</button></li>
+                          <li><button data-value="value3">Default</button></li>
+                          <li><button data-value="value4" class="disabled" disabled>Disabled</button></li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="form-guide-wrap">
+                  <dl>
+                    <dt>in-bottom</dt>
+                    <dd>
+                      <div class="select-box in-bottom">
+                        <button class="init">선택항목</button>
+                        <ul>
+                          <li><button data-value="value1">Hover</button></li>
+                          <li><button data-value="value2">Selected</button></li>
+                          <li><button data-value="value3">Default</button></li>
+                          <li><button data-value="value4">Disabled</button></li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>Placeholder</dt>
+                    <dd>
+                      <div class="select-box in-bottom">
+                        <button class="init placeholder">선택항목</button>
+                        <ul>
+                          <li><button data-value="value1">Hover</button></li>
+                          <li>
+                            <button data-value="value2">
+                              SelectedSelectedSelectedSelectedSelectedSelectedSelectedSelectedSelected
+                            </button>
+                          </li>
+                          <li><button data-value="value3">Default</button></li>
+                          <li><button data-value="value4">Disabled</button></li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>Hover</dt>
+                    <dd>
+                      <div class="select-box hover in-bottom">
+                        <button class="init placeholder">선택항목</button>
+                        <ul>
+                          <li><button data-value="value1">Hover</button></li>
+                          <li><button data-value="value2">Selected</button></li>
+                          <li><button data-value="value3">Default</button></li>
+                          <li><button data-value="value4">Disabled</button></li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>Disabled</dt>
+                    <dd>
+                      <div class="select-box disabled">
+                        <button class="init" disabled>선택항목</button>
+                        <ul>
+                          <li><button data-value="value1">Hover</button></li>
+                          <li><button data-value="value2">Selected</button></li>
+                          <li><button data-value="value3">Default</button></li>
+                          <li><button data-value="value4">Disabled</button></li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>Validation</dt>
+                    <dd>
+                      <div class="select-box validation in-bottom">
+                        <button class="init">선택항목</button>
+                        <ul>
+                          <li><button data-value="value1">Hover</button></li>
+                          <li><button data-value="value2">Selected</button></li>
+                          <li><button data-value="value3">Default</button></li>
+                          <li><button data-value="value4">Disabled</button></li>
+                        </ul>
+                      </div>
+                      <p class="validation-check">다시 선택해주세요</p>
+                    </dd>
+                  </dl>
+                  <dl style="margin-top: 144px">
+                    <dt>Open</dt>
+                    <dd>
+                      <div class="select-box active in-bottom">
+                        <button class="init">선택항목</button>
+                        <ul>
+                          <li><button data-value="value1" class="hover">Hover</button></li>
+                          <li><button data-value="value2" class="selected">Selected</button></li>
+                          <li><button data-value="value3">Default</button></li>
+                          <li><button data-value="value4" class="disabled" disabled>Disabled</button></li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                </div>
               </div>
             </div>
           </div>
@@ -1149,6 +1240,31 @@
                   </tbody>
                 </table>
               </div>
+            </div>
+          </div>
+          <div class="mt-50">
+            <h2 class="guide-tit">tab</h2>
+            <div class="form-guide-wrap">
+              <div class="tab-line-menu">
+                <div class="tab-inner">
+                  <ul class="tab-list">
+                    <li class="tab active"><a href="#tab1">상세템플릿설정</a></li>
+                    <li class="tab"><a href="#tab2">상품/옵션명설정</a></li>
+                    <li class="tab"><a href="#tab3">번역설정</a></li>
+                    <li class="tab"><a href="#tab4">워터마크설정</a></li>
+                    <li class="tab"><a href="#tab5">상품고시정보설정</a></li>
+                    <li class="tab"><a href="#tab6">검색필터설정</a></li>
+                    <li class="tab"><a href="#tab7">카테고리매핑설정</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="tab1" class="tab-panel active"><h2>탭내용입니다. 111</h2></div>
+              <div id="tab2" class="tab-panel"><h2>탭내용입니다. 222</h2></div>
+              <div id="tab3" class="tab-panel"><h2>탭내용입니다. 333</h2></div>
+              <div id="tab4" class="tab-panel"><h2>탭내용입니다. 444</h2></div>
+              <div id="tab5" class="tab-panel"><h2>탭내용입니다. 555</h2></div>
+              <div id="tab6" class="tab-panel"><h2>탭내용입니다. 666</h2></div>
+              <div id="tab7" class="tab-panel"><h2>탭내용입니다. 777</h2></div>
             </div>
           </div>
         </div>
@@ -3279,7 +3395,7 @@
           </div>
         </div>
         <!-- 테이블 가이드 -->
-        <div class="tab-content" id="table-guide">
+        <div class="tab-content active" id="table-guide">
           <h2 class="guide-tit">Table type1</h2>
           <div class="table mt-16">
             <table>
@@ -5981,6 +6097,101 @@
                     <p class="td-notice mt-12">
                       자주 이용하는 택배업체를 선택하세요. [주문/클레임 관리] 메뉴에서 발송 정보 입력 시 선택된
                       택배업체만 선택항목으로 제공됩니다.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h2 class="guide-tit mt-40">Table type14</h2>
+          <div class="table mt-32">
+            <table>
+              <colgroup>
+                <col style="width: 15.2rem" />
+                <col style="width: auto" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>템플릿명<i class="require"></i></th>
+                  <td class="small-pd">
+                    <div class="flex">
+                      <input type="text" class="input w-600" />
+                      <div class="flex ml-auto">
+                        <button class="button small line mr-8">취소</button>
+                        <button class="button small bg-dark">저장</button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th colspan="2" class="dark-bg">워터마크 설정</th>
+                </tr>
+                <!-- URL 등록 선택시 -->
+                <tr>
+                  <th class="va-top">이미지 등록</th>
+                  <td class="small-pd">
+                    <div class="flex align-center">
+                      <div class="radio-box small w-90">
+                        <input type="radio" class="radio" id="url" name="upload" checked="" />
+                        <label for="url">URL 등록</label>
+                      </div>
+                      <input type="text" class="input w-500" value="http://" />
+                    </div>
+                    <div class="flex align-center">
+                      <div class="radio-box small w-90">
+                        <input type="radio" class="radio" id="self" name="upload" />
+                        <label for="self">직접등록</label>
+                      </div>
+                      <input type="text" class="input w-500" disabled="" />
+                      <button class="button small line">찾아보기</button>
+                    </div>
+                    <p class="td-notice mt-12 lh-18">
+                      워터마크 이미지 파일은 .png .gif 파일만 등록가능하며, 배경이 투명한 이미지어야 합니다.
+                    </p>
+                    <p class="td-notice lh-18">이미지 사이즈는 600 X 600 이상, 정사각형 이미지로만 등록 가능합니다.</p>
+                  </td>
+                </tr>
+                <!-- //URL 등록 선택시 -->
+                <!-- 직접 등록 선택 시 -->
+                <tr>
+                  <th class="va-top">이미지 등록</th>
+                  <td class="small-pd">
+                    <div class="flex align-center">
+                      <div class="radio-box small w-90">
+                        <input type="radio" class="radio" id="url2" name="upload2" />
+                        <label for="url2">URL 등록</label>
+                      </div>
+                      <input type="text" class="input w-500" value="http://" disabled />
+                    </div>
+                    <div class="flex align-center">
+                      <div class="radio-box small w-90">
+                        <input type="radio" class="radio" id="self2" name="upload2" checked />
+                        <label for="self2">직접등록</label>
+                      </div>
+                      <input type="text" class="input w-500" />
+                      <button class="button small line">찾아보기</button>
+                      <p class="file-name">image00.jpg <span>(000 KB)</span><i class="circle-close"></i></p>
+                    </div>
+
+                    <p class="td-notice mt-12 lh-18">
+                      워터마크 이미지 파일은 .png .gif 파일만 등록가능하며, 배경이 투명한 이미지어야 합니다.
+                    </p>
+                    <p class="td-notice lh-18">이미지 용량은 최대 50MB까지 가능합니다.</p>
+                    <p class="td-notice lh-18">이미지 사이즈는 600 X 600 이상, 정사각형 이미지로만 등록 가능합니다.</p>
+                  </td>
+                </tr>
+                <!-- //직접 등록 선택 시 -->
+                <tr>
+                  <th class="va-top">워터마크 이미지 테스트</th>
+                  <td class="small-pd">
+                    <input type="text" class="input w-200" placeholder="상품코드를 입력하세요." />
+                    <button class="button small line">이미지 미리보기</button>
+
+                    <p class="td-notice mt-12 lh-18">
+                      상품코드 입력 후 테스트 버튼을 클릭하시면 워터마크가 적용된 이미지를 보실 수 있습니다.
+                    </p>
+                    <p class="td-notice lh-18">
+                      테스트 후, 워터마크 이미지만 보여진다면, 워터마크 이미지 배경이 투명하지 않아서 입니다.
                     </p>
                   </td>
                 </tr>

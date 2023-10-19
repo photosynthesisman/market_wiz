@@ -481,3 +481,10 @@
       center center / 1.4rem 1.4rem no-repeat;
   }
 }
+.file-name {
+  margin-left: 2.4rem;
+  color: var(--strong-txt-color);
+  i {
+    margin-left: 0.4rem;
+  }
+}

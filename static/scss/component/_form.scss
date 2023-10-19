@@ -644,30 +644,38 @@ input[type="date"] {
       }
     }
   }
-  &.open {
+  &.in-bottom {
     ul {
-      display: block;
-      z-index: 9;
+      top: auto;
+      bottom: 100%;
+      margin-top: 0;
+      margin-bottom: -6px;
+      padding-top: 4px;
+      padding-bottom: 6px;
+      border-bottom-width: 0;
+      border-radius: 0.6rem 0.6rem 0 0;
+      border-top-width: 1px;
+      &.hover,
       &:hover {
-        border: 1px solid var(--primary-color2);
-        border-top-width: 0;
-      }
-      li {
-        display: list-item;
+        border-bottom-width: 0;
+        border-top-width: 1px;
       }
     }
   }
+
   button {
     width: 100%;
     // height: 3rem;
-    line-height: 3rem;
-    padding: 0 0.8rem;
+    line-height: 1.8rem;
+    padding: 0.6rem 0.8rem;
     border-radius: 3px;
     vertical-align: top;
     &.init {
       position: relative;
       z-index: 2;
-      padding: 0 2.4rem 0 1.2rem;
+      padding: 0.6rem;
+      padding-left: 1.2rem;
+      padding-right: 2.4rem;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -677,9 +685,7 @@ input[type="date"] {
       color: var(--sub-txt-color2);
     }
   }
-  &.open {
-    border: 1px solid var(--strong-txt-color);
-  }
+
   &.hover,
   &:hover {
     border: 1px solid var(--primary-color2);
@@ -711,7 +717,7 @@ input[type="date"] {
     top: 100%;
     margin-top: -6px;
     padding-top: 6px;
-    padding-bottom: 4px;
+    padding-bottom: 2px;
     line-height: 3.2rem;
     background-color: var(--white-color);
     border: 1px solid var(--strong-txt-color);
@@ -720,12 +726,10 @@ input[type="date"] {
     border-top-width: 0;
   }
   li {
-    cursor: pointer;
     // height: 3.2rem;
     padding: 0 0.4rem;
     position: relative;
     z-index: 10;
-    display: none;
     width: 100%;
     color: var(--base-txt-color);
     button {
