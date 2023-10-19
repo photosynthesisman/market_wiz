@@ -17506,6 +17506,7 @@ h3,
   font-size: 1.4rem;
   font-weight: 500;
   color: #888;
+  border-width: 0px !important;
 }
 .font-guide.no-line td {
   padding: 0 0 1.2rem 0;
