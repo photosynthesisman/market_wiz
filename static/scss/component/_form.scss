@@ -113,7 +113,7 @@ input {
 }
 .t-center .check-box .checkbox {
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
 .check-box {
   position: relative;
@@ -185,6 +185,7 @@ input {
     background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.4'%3E%3Crect width='24' height='24' rx='8' fill='%2342444E'/%3E%3Cpath d='M6.16666 12.8333L9.49999 16.1666L17.8333 7.83325' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E%0A");
   }
   &.sm-check {
+    line-height: 2rem;
     input {
       width: 2rem;
       height: 2rem;
@@ -307,7 +308,7 @@ input {
       margin-bottom: 3.2rem;
       .check-box {
         position: absolute;
-        top: 2px;
+        top: 4px;
         left: 0.4rem;
       }
       .txt-wrap {
