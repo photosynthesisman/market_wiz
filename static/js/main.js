@@ -26,18 +26,13 @@ $(document).ready(function () {
 
   // lnb 2depth open
   $(".market").on("click", ".folding-btn", function (e) {
-    // e.preventDefault();
-    $(this).parent().next(".folding-panel").stop().slideToggle(300);
+    e.preventDefault();
     $(this).parents("li").toggleClass("open").siblings().removeClass("open");
-    $(this).parents("li").siblings().find(".folding-panel").slideUp(300);
   });
   // lnb 3depth open
-  $(".market").on("click", ".has-depth", function () {
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-    } else {
-      $(this).addClass("active");
-    }
+  $(".market").on("click", ".has-depth", function (e) {
+    e.preventDefault();
+    $(this).toggleClass("active").siblings().removeClass("active");
   });
 
   //pooup 오픈/클로즈

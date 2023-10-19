@@ -16976,9 +16976,17 @@ input[type=date]:disabled {
 .select-box.active ul {
   display: block;
 }
+.select-box.active ul:hover {
+  border: 1px solid var(--primary-color2);
+  border-top-width: 0;
+}
 .select-box.open ul {
   display: block;
   z-index: 9;
+}
+.select-box.open ul:hover {
+  border: 1px solid var(--primary-color2);
+  border-top-width: 0;
 }
 .select-box.open ul li {
   display: list-item;
@@ -16988,7 +16996,7 @@ input[type=date]:disabled {
   line-height: 3rem;
   padding: 0 0.8rem;
   border-radius: 3px;
-  vertical-align: baseline;
+  vertical-align: top;
 }
 .select-box button.init {
   position: relative;
@@ -17011,6 +17019,10 @@ input[type=date]:disabled {
 .select-box.disabled {
   color: var(--sub-txt-color2);
   background-color: var(--disabled-bg-color);
+  overflow: hidden;
+}
+.select-box.disabled:hover {
+  border: 0.1rem solid var(--line-color02);
 }
 .select-box.validation {
   border: 1px solid var(--alert-txt-color);
