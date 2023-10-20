@@ -24,7 +24,9 @@
             <li class="tab">
               <a href="#none" data-tab="font-guide">폰트/색상 가이드</a><span class="close-tab">닫기</span>
             </li>
-            <li class="tab"><a href="#none" data-tab="form-guide">폼 가이드</a><span class="close-tab">닫기</span></li>
+            <li class="tab active">
+              <a href="#none" data-tab="form-guide">폼 가이드</a><span class="close-tab">닫기</span>
+            </li>
             <li class="tab">
               <a href="#none" data-tab="button-guide">버튼 가이드</a><span class="close-tab">닫기</span>
             </li>
@@ -32,7 +34,7 @@
             <li class="tab">
               <a href="#none" data-tab="icon-guide">아이콘 가이드</a><span class="close-tab">닫기</span>
             </li>
-            <li class="tab active">
+            <li class="tab">
               <a href="#none" data-tab="table-guide">테이블 가이드</a><span class="close-tab">닫기</span>
             </li>
             <li class="tab">
@@ -237,7 +239,8 @@
         </div>
 
         <!-- 폼 가이드 -->
-        <div class="tab-content" id="form-guide">
+        <div class="tab-content active" id="form-guide">
+          <!-- 
           <div class="flex">
             <div class="mr-90">
               <h2 class="guide-tit">Input</h2>
@@ -538,6 +541,7 @@
               </dl>
             </div>
           </div>
+           -->
 
           <div class="flex mt-100">
             <div class="mr-90">
@@ -623,14 +627,17 @@
                   </dd>
                 </dl>
                 <dl class="mt-40">
-                  <!-- span 빼고 타이틀 달아주자-->
                   <dt>Switch</dt>
                   <dd>
                     <div class="check-box switch">
-                      <input type="checkbox" class="checkbox" />
-                      <label for="switch" class="switch_label">
-                        <span class="onf_btn"></span>
-                      </label>
+                      <input type="checkbox" class="checkbox" id="switch1" title="전송 ON/OFF" />
+                      <label for="switch1" class="switch-label"> </label>
+                    </div>
+                  </dd>
+                  <dd class="ml-20">
+                    <div class="check-box switch">
+                      <input type="checkbox" class="checkbox" id="switch2" title="전송 ON/OFF" disabled />
+                      <label for="switch2" class="switch-label"> </label>
                     </div>
                   </dd>
                 </dl>
@@ -3275,7 +3282,7 @@
           </div>
         </div>
         <!-- 테이블 가이드 -->
-        <div class="tab-content active" id="table-guide">
+        <div class="tab-content" id="table-guide">
           <h2 class="guide-tit">Table type1</h2>
           <div class="table mt-16">
             <table>
