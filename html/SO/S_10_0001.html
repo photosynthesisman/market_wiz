@@ -112,7 +112,7 @@
                     <th rowspan="2" class="va-top">운영쇼핑몰 정보</th>
                     <th class="va-top">쇼핑몰 Logo</th>
                     <td colspan="5">
-                      <div class="img-box w-56">
+                      <div class="img-box w-56 obf-contain">
                         <img src="../../static/images/common/mongmong_middle.png" alt="" />
                       </div>
                     </td>
@@ -204,10 +204,13 @@
                     <th class="va-top">쇼핑몰 Logo</th>
                     <td colspan="5" class="small-pd">
                       <div class="flex">
-                        <div class="img-box w-56">
+                        <div class="img-box w-56 obf-contain">
                           <img src="../../static/images/common/mongmong_middle.png" alt="" />
                         </div>
-                        <button class="button small line ml-12">이미지 찾기</button>
+                        <span class="button small line file ml-12">
+                          <input type="file" id="file-1" />
+                          <label for="file-1">이미지 찾기</label>
+                        </span>
                       </div>
                     </td>
                   </tr>

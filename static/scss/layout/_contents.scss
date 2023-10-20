@@ -256,7 +256,7 @@
     }
   }
 }
-.new {
+.ico-new {
   display: inline-block;
   width: 1.6rem;
   height: 1.6rem;
@@ -433,20 +433,20 @@
   border-radius: 2px;
   font-weight: 600;
 
-  &.a-complete {
+  &.blue {
     color: var(--primary-color2);
     background-color: #e3edff;
   }
 
-  &.complete {
+  &.purple {
     color: #423895;
     background-color: #eeebff;
   }
-  &.waiting {
+  &.green {
     color: #109b6e;
     background-color: #d2f0ec;
   }
-  &.collecting {
+  &.orange {
     color: #f68827;
     background-color: #f8ebde;
   }
@@ -454,9 +454,11 @@
 .img-box {
   position: relative;
   display: block;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+  &.obf-contain {
+    img {
+      object-fit: contain;
+    }
+  }
   &::before {
     content: "";
     display: block;
@@ -467,6 +469,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     object-fit: cover;
   }
   span {
