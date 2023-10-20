@@ -16098,6 +16098,7 @@ jq-Datepicker
 }
 
 .button {
+  display: inline-block;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   height: 4rem;
