@@ -16654,32 +16654,32 @@ jq-Datepicker
   background: var(--disabled-bg-color);
   border: 1px solid var(--line-color02);
   border-radius: 0.6rem;
+  overflow: hidden;
 }
 .progress-box .progress-wrap .progress {
   position: absolute;
-  width: 8rem;
-  height: 1.2rem;
+  width: 120%;
+  height: 100%;
   background: var(--primary-color2);
   border-radius: 0.6rem;
-  left: 0;
   top: 0;
-  -webkit-animation: wheel 2.5s infinite;
-          animation: wheel 2.5s infinite;
+  -webkit-animation: wheel 2s infinite;
+          animation: wheel 2s infinite;
 }
 @-webkit-keyframes wheel {
   0% {
-    width: 8rem;
+    left: -121%;
   }
   100% {
-    width: 100%;
+    left: 101%;
   }
 }
 @keyframes wheel {
   0% {
-    width: 8rem;
+    left: -121%;
   }
   100% {
-    width: 100%;
+    left: 101%;
   }
 }
 

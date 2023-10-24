@@ -408,6 +408,42 @@
                       </div>
                     </dd>
                   </dl>
+                  <dl style="margin-top: 80px">
+                    <dt>without value</dt>
+                    <dd>
+                      <div class="select-box">
+                        <button class="init">선택항목</button>
+                        <ul>
+                          <li><button data-value="value1">Hover</button></li>
+                          <li><button data-value="value2">Selected</button></li>
+                          <li><button data-value="value3">Default</button></li>
+                          <li><button data-value="value4">Disabled</button></li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>with value</dt>
+                    <dd>
+                      <div class="select-box w-320">
+                        <button class="init" data-value="value1">상품 대표가격으로 전송</button>
+                        <ul>
+                          <li><button data-value="value1">상품 대표가격으로 전송</button></li>
+                          <li><button data-value="value2">가장 낮은 옵션 가격으로 전송</button></li>
+                          <li><button data-value="value3">가장 높은 옵션 가격으로 전송</button></li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dd>
+                      <p class="fz-14">
+                        셀렉트 박스에 default 값이 있을 경우 button class="init"에 data-value 값이 존재<br />
+                        button 셀렉트 박스에 default 값이 없고, button class="init"이 placeholder의 역할이라면<br />
+                        data-value 값이 존재하지 않음
+                      </p>
+                    </dd>
+                  </dl>
                 </div>
               </div>
             </div>
@@ -5820,7 +5856,7 @@
                   <th>마켓대표 가격</th>
                   <td class="bd-r-none small-pd">
                     <div class="select-box w-320">
-                      <button class="init">상품 대표가격으로 전송</button>
+                      <button class="init" data-value="value1">상품 대표가격으로 전송</button>
                       <ul>
                         <li><button data-value="value1">상품 대표가격으로 전송</button></li>
                         <li><button data-value="value2">가장 낮은 옵션 가격으로 전송</button></li>
@@ -5839,7 +5875,7 @@
                   <th>옵션 가격</th>
                   <td class="bd-r-none small-pd">
                     <div class="select-box w-320">
-                      <button class="init">옵션별 본래 가격으로 전송</button>
+                      <button class="init" data-value="value1">옵션별 본래 가격으로 전송</button>
                       <ul>
                         <li><button data-value="value1">옵션별 본래 가격으로 전송</button></li>
                         <li><button data-value="value2">마켓대표가격으로 통일하여 전송</button></li>
