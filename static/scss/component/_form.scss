@@ -193,6 +193,17 @@
     .lbl {
       padding-left: 2.4rem;
     }
+    .checkbox.center {
+      left: 50%;
+      transform: translateX(-50%);
+      & + label::before {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      & + label {
+        padding: 0;
+      }
+    }
   }
   &.no-label.sm-check {
     .lbl {
