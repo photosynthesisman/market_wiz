@@ -2,7 +2,7 @@
   display: inline-block;
   flex-shrink: 0;
   height: 4rem;
-  margin-right: 0.4rem;
+  // margin-right: 0.4rem;
   padding: 0.8rem 1.6rem;
   border-radius: 0.6rem;
   font-size: 1.5rem;
@@ -86,6 +86,7 @@
       }
     }
   }
+
   &.download {
     line-height: 1 !important;
     background: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 16.6666H15M10 3.33325V13.3333M10 13.3333L12.9167 10.4166M10 13.3333L7.08333 10.4166' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
@@ -124,6 +125,12 @@
     padding: 0.6rem 1.6rem;
     font-size: 1.4rem;
     line-height: 1;
+  }
+  &.float-tl {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.6rem 1.2rem 0.6rem 0.8rem;
   }
   + .button {
     margin-left: -0.4rem;

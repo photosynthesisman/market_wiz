@@ -57,6 +57,14 @@ $(document).ready(function () {
       $(this).parents(".popup").hide();
     }
   });
+  //panle 오픈/클로즈
+  $(".market").on("click", ".open-panel", function () {
+    const panelId = $(this).attr("data-name");
+    $("#" + panelId).show();
+  });
+  $(".market").on("click", ".close", function () {
+    $(this).parents(".panel").hide();
+  });
 
   //전체 선택
   $(".market").on("click", "[id^=chk_all]", function () {

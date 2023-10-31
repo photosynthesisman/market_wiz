@@ -9,6 +9,7 @@ i {
     height: 2rem;
   }
 }
+$large-size: 40;
 $normal-size: 24;
 $small-size: 20;
 $orange-color: #ff602b;
@@ -161,8 +162,20 @@ $primary-color-only: str-slice("#{$primary-color}", 2);
 .ico-download-ty2 {
   background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 20H18M12 4V16M12 16L15.5 12.5M12 16L8.5 12.5' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
+@mixin ico-check($size, $color) {
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='#{$size}' height='#{$size}' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 13L9 17L19 7' stroke='%23#{$color}' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
 .ico-check {
-  background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 13L9 17L19 7' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  @include ico-check($normal-size, $normal-color-only);
+  &.small {
+    @include ico-check($small-size, $normal-color-only);
+    &.ty2 {
+      @include ico-check($small-size, $white-color-only);
+    }
+  }
+  &.ty2 {
+    @include ico-check($normal-size, $white-color-only);
+  }
 }
 .ico-slider {
   background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 9L12 6L9 9M15 15L12 18L9 15' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
@@ -204,6 +217,9 @@ $primary-color-only: str-slice("#{$primary-color}", 2);
   @include ico-backward($normal-size);
   &.small {
     @include ico-backward($small-size);
+  }
+  &.large {
+    @include ico-backward($large-size);
   }
 }
 @mixin ico-forward($size) {
