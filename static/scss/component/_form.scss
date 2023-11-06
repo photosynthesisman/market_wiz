@@ -78,13 +78,23 @@
   }
 }
 
-.select,
+.select-box,
 .input {
   height: 3.2rem;
   padding: 0rem 1.2rem;
   border-radius: 0.6rem;
   border: 1px solid var(--line-color01);
   font-size: 1.4rem;
+  &.large {
+    height: 4.8rem;
+    button {
+      line-height: 4.8rem;
+      padding: 0 0.8rem;
+      &.init {
+        padding: 0;
+      }
+    }
+  }
   &::placeholder {
     color: var(--sub-txt-color2);
   }
@@ -706,13 +716,10 @@ input[type="date"] {
 .select-box {
   width: 16rem;
   position: relative;
-  height: 3.2rem;
   border: 0.1rem solid var(--line-color02);
   border-radius: 0.6rem;
   background: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10L11.7879 14.7879C11.905 14.905 12.095 14.905 12.2121 14.7879L17 10' stroke='%23999999' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A")
     center right 0.4rem / 2.4rem 2.4rem no-repeat;
-  font-size: 1.4rem;
-  line-height: 3.2rem;
   &.active {
     border: 1px solid var(--strong-txt-color);
     background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 14L12.2121 9.21213C12.095 9.09498 11.905 9.09497 11.7879 9.21213L7 14' stroke='%23999999' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
@@ -754,7 +761,7 @@ input[type="date"] {
       position: relative;
       z-index: 2;
       padding: 0.6rem;
-      padding-left: 1.2rem;
+      padding-left: 0;
       padding-right: 2.4rem;
       overflow: hidden;
       white-space: nowrap;
