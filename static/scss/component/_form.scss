@@ -838,5 +838,8 @@ input[type="date"] {
   font-size: 0;
   .button {
     margin-right: 0.8rem;
+    &.mini {
+      margin-right: 0.4rem;
+    }
   }
 }
