@@ -24,7 +24,9 @@
             <li class="tab">
               <a href="#none" data-tab="font-guide">폰트/색상 가이드</a><span class="close-tab">닫기</span>
             </li>
-            <li class="tab"><a href="#none" data-tab="form-guide">폼 가이드</a><span class="close-tab">닫기</span></li>
+            <li class="tab active">
+              <a href="#none" data-tab="form-guide">폼 가이드</a><span class="close-tab">닫기</span>
+            </li>
             <li class="tab">
               <a href="#none" data-tab="button-guide">버튼 가이드</a><span class="close-tab">닫기</span>
             </li>
@@ -35,7 +37,7 @@
             <li class="tab">
               <a href="#none" data-tab="table-guide">테이블 가이드</a><span class="close-tab">닫기</span>
             </li>
-            <li class="tab active">
+            <li class="tab">
               <a href="#none" data-tab="popup-guide">팝업 가이드</a><span class="close-tab">닫기</span>
             </li>
           </ul>
@@ -241,7 +243,7 @@
         </div>
 
         <!-- 폼 가이드 -->
-        <div class="tab-content" id="form-guide">
+        <div class="tab-content active" id="form-guide">
           <div class="flex">
             <div class="mr-90">
               <h2 class="guide-tit">Input</h2>
@@ -446,139 +448,277 @@
               </div>
             </div>
           </div>
-
-          <h2 class="guide-tit mt-100">Text Area</h2>
-          <div class="flex">
-            <div class="form-guide-wrap mr-90">
-              <dl>
-                <dt>Default</dt>
-                <dd>
-                  <div class="text-area w-220">
-                    <textarea rows="1">문의사항을 입력해주세요</textarea>
-                  </div>
-                </dd>
-              </dl>
-              <dl>
-                <dt></dt>
-                <dd>
-                  <div class="text-area w-220">
-                    <textarea rows="3" class="txt-area" maxlength="200">문의사항을 입력해주세요</textarea>
-                    <p class="counter"><strong>0</strong> / 200</p>
-                  </div>
-                </dd>
-              </dl>
-              <dl>
-                <dt>placeholder</dt>
-                <dd>
-                  <div class="text-area w-220">
-                    <textarea rows="1" placeholder="문의사항을 입력해주세요"></textarea>
-                  </div>
-                </dd>
-              </dl>
-              <dl>
-                <dt></dt>
-                <dd>
-                  <div class="text-area w-220">
-                    <textarea
-                      rows="3"
-                      class="txt-area"
-                      maxlength="200"
-                      placeholder="문의사항을 입력해주세요"
-                    ></textarea>
-                    <p class="counter"><strong>0</strong> / 200</p>
-                  </div>
-                </dd>
-              </dl>
-              <dl>
-                <dt>Hover</dt>
-                <dd>
-                  <div class="text-area w-220 hover">
-                    <textarea rows="1" placeholder="문의사항을 입력해주세요"></textarea>
-                  </div>
-                </dd>
-              </dl>
-              <dl>
-                <dt></dt>
-                <dd>
-                  <div class="text-area w-220 hover">
-                    <textarea
-                      rows="3"
-                      class="txt-area"
-                      maxlength="200"
-                      placeholder="문의사항을 입력해주세요"
-                    ></textarea>
-                    <p class="counter"><strong>0</strong> / 200</p>
-                  </div>
-                </dd>
-              </dl>
+          <div class="mt-100 flex">
+            <div class="mr-90">
+              <h2 class="guide-tit">large select</h2>
+              <div class="form-guide-wrap">
+                <dl>
+                  <dt>Default</dt>
+                  <dd>
+                    <input type="text" value="입력정보" class="input large" />
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>Placeholder</dt>
+                  <dd>
+                    <input type="text" placeholder="입력정보" class="input large" />
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>Hover</dt>
+                  <dd>
+                    <input type="text" value="입력정보" class="hover input large" />
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>Focused</dt>
+                  <dd>
+                    <input type="text" value="입력정보" class="focused input large" />
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>Disabled</dt>
+                  <dd>
+                    <input type="text" value="입력정보" disabled class="input large" />
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>Validation</dt>
+                  <dd>
+                    <input type="text" value="입력정보" required class="input large" />
+                    <p class="validation-check">입력정보를 확인해주세요</p>
+                  </dd>
+                </dl>
+              </div>
             </div>
-            <div class="form-guide-wrap">
-              <dl>
-                <dt>Focused</dt>
-                <dd>
-                  <div class="text-area w-220 focused">
-                    <textarea rows="1" placeholder="문의사항을 입력해주세요"></textarea>
-                  </div>
-                </dd>
-              </dl>
-              <dl>
-                <dt></dt>
-                <dd>
-                  <div class="text-area w-220 focused">
-                    <textarea
-                      rows="3"
-                      class="txt-area"
-                      maxlength="200"
-                      placeholder="문의사항을 입력해주세요"
-                    ></textarea>
-                    <p class="counter"><strong>0</strong> / 200</p>
-                  </div>
-                </dd>
-              </dl>
-              <dl>
-                <dt>Disabled</dt>
-                <dd>
-                  <div class="text-area w-220 disabled">
-                    <textarea rows="1" placeholder="문의사항을 입력해주세요"></textarea>
-                  </div>
-                </dd>
-              </dl>
-              <dl>
-                <dt></dt>
-                <dd>
-                  <div class="text-area w-220 disabled">
-                    <textarea
-                      rows="3"
-                      class="txt-area"
-                      maxlength="200"
-                      placeholder="문의사항을 입력해주세요"
-                    ></textarea>
-                    <p class="counter"><strong>0</strong> / 200</p>
-                  </div>
-                </dd>
-              </dl>
-              <dl>
-                <dt>Validation</dt>
-                <dd>
-                  <div class="text-area w-220 validation">
-                    <textarea rows="1">문의사항을 입력해주세요</textarea>
-                  </div>
-                  <p class="validation-check">입력정보를 확인해주세요</p>
-                </dd>
-              </dl>
-              <dl>
-                <dt></dt>
-                <dd>
-                  <div class="text-area w-220 validation">
-                    <textarea rows="3" class="txt-area" maxlength="200">문의사항을 입력해주세요</textarea>
-                    <p class="counter"><strong>0</strong> / 200</p>
-                  </div>
-                  <p class="validation-check">입력정보를 확인해주세요</p>
-                </dd>
-              </dl>
+            <div>
+              <h2 class="guide-tit">large input</h2>
+              <div class="form-guide-wrap">
+                <dl>
+                  <dt>Default</dt>
+                  <dd>
+                    <div class="select-box large">
+                      <button class="init">선택항목</button>
+                      <ul>
+                        <li><button data-value="value1">Hover</button></li>
+                        <li><button data-value="value2">Selected</button></li>
+                        <li><button data-value="value3">Default</button></li>
+                        <li><button data-value="value4">Disabled</button></li>
+                      </ul>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>Placeholder</dt>
+                  <dd>
+                    <div class="select-box large">
+                      <button class="init placeholder">선택항목</button>
+                      <ul>
+                        <li><button data-value="value1">Hover</button></li>
+                        <li>
+                          <button data-value="value2">
+                            SelectedSelectedSelectedSelectedSelectedSelectedSelectedSelectedSelected
+                          </button>
+                        </li>
+                        <li><button data-value="value3">Default</button></li>
+                        <li><button data-value="value4">Disabled</button></li>
+                      </ul>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>Hover</dt>
+                  <dd>
+                    <div class="select-box hover large">
+                      <button class="init placeholder">선택항목</button>
+                      <ul>
+                        <li><button data-value="value1">Hover</button></li>
+                        <li><button data-value="value2">Selected</button></li>
+                        <li><button data-value="value3">Default</button></li>
+                        <li><button data-value="value4">Disabled</button></li>
+                      </ul>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>Disabled</dt>
+                  <dd>
+                    <div class="select-box disabled large">
+                      <button class="init" disabled>선택항목</button>
+                      <ul>
+                        <li><button data-value="value1">Hover</button></li>
+                        <li><button data-value="value2">Selected</button></li>
+                        <li><button data-value="value3">Default</button></li>
+                        <li><button data-value="value4">Disabled</button></li>
+                      </ul>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>Validation</dt>
+                  <dd>
+                    <div class="select-box validation large">
+                      <button class="init">선택항목</button>
+                      <ul>
+                        <li><button data-value="value1">Hover</button></li>
+                        <li><button data-value="value2">Selected</button></li>
+                        <li><button data-value="value3">Default</button></li>
+                        <li><button data-value="value4">Disabled</button></li>
+                      </ul>
+                    </div>
+                    <p class="validation-check">다시 선택해주세요</p>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>Open</dt>
+                  <dd>
+                    <div class="select-box active large">
+                      <button class="init">선택항목</button>
+                      <ul>
+                        <li><button data-value="value1" class="hover">Hover</button></li>
+                        <li><button data-value="value2" class="selected">Selected</button></li>
+                        <li><button data-value="value3">Default</button></li>
+                        <li><button data-value="value4" class="disabled" disabled>Disabled</button></li>
+                      </ul>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
             </div>
           </div>
-
+          <div class="pt-100">
+            <h2 class="guide-tit mt-100">Text Area</h2>
+            <div class="flex">
+              <div class="form-guide-wrap mr-90">
+                <dl>
+                  <dt>Default</dt>
+                  <dd>
+                    <div class="text-area w-220">
+                      <textarea rows="1">문의사항을 입력해주세요</textarea>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt></dt>
+                  <dd>
+                    <div class="text-area w-220">
+                      <textarea rows="3" class="txt-area" maxlength="200">문의사항을 입력해주세요</textarea>
+                      <p class="counter"><strong>0</strong> / 200</p>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>placeholder</dt>
+                  <dd>
+                    <div class="text-area w-220">
+                      <textarea rows="1" placeholder="문의사항을 입력해주세요"></textarea>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt></dt>
+                  <dd>
+                    <div class="text-area w-220">
+                      <textarea
+                        rows="3"
+                        class="txt-area"
+                        maxlength="200"
+                        placeholder="문의사항을 입력해주세요"
+                      ></textarea>
+                      <p class="counter"><strong>0</strong> / 200</p>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>Hover</dt>
+                  <dd>
+                    <div class="text-area w-220 hover">
+                      <textarea rows="1" placeholder="문의사항을 입력해주세요"></textarea>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt></dt>
+                  <dd>
+                    <div class="text-area w-220 hover">
+                      <textarea
+                        rows="3"
+                        class="txt-area"
+                        maxlength="200"
+                        placeholder="문의사항을 입력해주세요"
+                      ></textarea>
+                      <p class="counter"><strong>0</strong> / 200</p>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-guide-wrap">
+                <dl>
+                  <dt>Focused</dt>
+                  <dd>
+                    <div class="text-area w-220 focused">
+                      <textarea rows="1" placeholder="문의사항을 입력해주세요"></textarea>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt></dt>
+                  <dd>
+                    <div class="text-area w-220 focused">
+                      <textarea
+                        rows="3"
+                        class="txt-area"
+                        maxlength="200"
+                        placeholder="문의사항을 입력해주세요"
+                      ></textarea>
+                      <p class="counter"><strong>0</strong> / 200</p>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>Disabled</dt>
+                  <dd>
+                    <div class="text-area w-220 disabled">
+                      <textarea rows="1" placeholder="문의사항을 입력해주세요"></textarea>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt></dt>
+                  <dd>
+                    <div class="text-area w-220 disabled">
+                      <textarea
+                        rows="3"
+                        class="txt-area"
+                        maxlength="200"
+                        placeholder="문의사항을 입력해주세요"
+                      ></textarea>
+                      <p class="counter"><strong>0</strong> / 200</p>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>Validation</dt>
+                  <dd>
+                    <div class="text-area w-220 validation">
+                      <textarea rows="1">문의사항을 입력해주세요</textarea>
+                    </div>
+                    <p class="validation-check">입력정보를 확인해주세요</p>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt></dt>
+                  <dd>
+                    <div class="text-area w-220 validation">
+                      <textarea rows="3" class="txt-area" maxlength="200">문의사항을 입력해주세요</textarea>
+                      <p class="counter"><strong>0</strong> / 200</p>
+                    </div>
+                    <p class="validation-check">입력정보를 확인해주세요</p>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
           <div class="flex mt-100">
             <div class="mr-90">
               <h2 class="guide-tit">Check box</h2>
@@ -1179,7 +1319,7 @@
           </div>
         </div>
         <!-- 팝업 가이드 -->
-        <div class="tab-content active" id="popup-guide">
+        <div class="tab-content" id="popup-guide">
           <h2 class="guide-tit">Alert</h2>
           <div class="form-guide-wrap">
             <button class="open-pop button line mr-10" data-name="showAlert">버튼 1개</button>
@@ -5270,7 +5410,7 @@
                     abcdef1234@marketwids.com / 김마켓
                     <div class="flex mt-5">
                       <button class="button small blue-line">권한 변경</button>
-                      <button class="button small line ml-0">관리 계정 제거</button>
+                      <button class="button small line">관리 계정 제거</button>
                     </div>
                   </td>
                   <th class="va-top">접근 가능</th>
@@ -5289,7 +5429,7 @@
                     abcdef1234@marketwids.com / 김마켓
                     <div class="flex mt-5">
                       <button class="button small blue-line">권한 변경</button>
-                      <button class="button small line ml-0">관리 계정 제거</button>
+                      <button class="button small line">관리 계정 제거</button>
                     </div>
                   </td>
                   <th class="va-top">접근 가능</th>
@@ -5426,7 +5566,7 @@
                     abcdef1234@marketwids.com / 김마켓
                     <div class="flex mt-5">
                       <button class="button small blue-line">권한 변경</button>
-                      <button class="button small line ml-0">관리 계정 제거</button>
+                      <button class="button small line">관리 계정 제거</button>
                     </div>
                   </td>
                   <th class="va-top">접근 가능</th>
