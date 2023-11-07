@@ -17364,6 +17364,9 @@ input[type=date]:disabled {
   text-overflow: ellipsis;
   word-break: break-all;
 }
+.select-box button.init:disabled {
+  background: transparent;
+}
 .select-box button.placeholder {
   color: var(--sub-txt-color2);
 }
