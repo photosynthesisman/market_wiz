@@ -691,3 +691,127 @@
     background-image: url("data:image/svg+xml,%0A%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 10L25 20L15 30' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   }
 }
+.folding-table {
+  border-top: 1px solid var(--line-color01);
+  border-bottom: 1px solid var(--line-color01);
+  .head-tit {
+    padding: 0.6rem 1.2rem;
+    height: 4.4rem;
+    background-color: var(--disabled-bg-color);
+    border-bottom: 1px solid var(--line-color03);
+    span {
+      margin-right: 0.8rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      vertical-align: middle;
+    }
+  }
+  ul li {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      top: 0;
+      bottom: 0;
+      background-color: var(--line-color03);
+    }
+    &.open {
+      .depth-2 {
+        display: block;
+        .open {
+          .depth-3 {
+            display: block;
+            .open {
+              .depth-4 {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .ft-list {
+    display: flex;
+    position: relative;
+    align-items: center;
+    &.open {
+      .ico-plus {
+        display: none;
+      }
+      .ico-minus {
+        display: block;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background-color: var(--line-color03);
+    }
+    i {
+      margin: 0 1.2rem;
+      &.ico-plus {
+        display: block;
+      }
+      &.ico-minus {
+        display: none;
+      }
+    }
+    .ft-head {
+      padding: 1.2rem;
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+    @at-root .depth-1 {
+      li:before {
+        left: 4.8rem;
+      }
+      > li:last-child {
+        .ft-list::after {
+          content: none;
+        }
+      }
+    }
+    @at-root .depth-2 {
+      display: none;
+      li:before {
+        left: 9.6rem;
+      }
+      .ft-list {
+        margin-left: 4.8rem;
+        &:after {
+          left: -4.8rem;
+        }
+      }
+    }
+    @at-root .depth-3 {
+      display: none;
+      li:before {
+        left: 14.4rem;
+      }
+      .ft-list {
+        margin-left: 9.6rem;
+        &:after {
+          left: -9.6rem;
+        }
+      }
+    }
+    @at-root .depth-4 {
+      display: none;
+      li:before {
+        left: 19.2rem;
+      }
+      .ft-list {
+        margin-left: 14.4rem;
+        &:after {
+          left: -14.4rem;
+        }
+      }
+    }
+  }
+}

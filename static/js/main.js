@@ -125,3 +125,12 @@ $(document).ready(function () {
     $(this).hasClass("checked") ? $(this).removeClass("checked") : $(this).addClass("checked");
   });
 });
+
+// folding-table 관련
+$(document).on("click", ".ft-list", function (e) {
+  e.preventDefault();
+  const $this = $(this);
+  const $depth = $this.closest($("[class*=depth]").find("li"));
+  $this.toggleClass("open");
+  $depth.toggleClass("open");
+});
