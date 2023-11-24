@@ -109,6 +109,10 @@
       background-color: var(--primary-color2);
     }
   }
+  &.bo-primary {
+    background-color: #ff602b;
+    color: var(--white-color);
+  }
   &.bg-dark {
     background-color: var(--strong-txt-color);
     color: var(--white-color);

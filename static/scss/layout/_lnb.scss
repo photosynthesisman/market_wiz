@@ -90,6 +90,25 @@
       url("data:image/svg+xml,%0A%3Csvg width='52' height='20' viewBox='0 0 52 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26 15L21 10L26 5' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M31 15L26 10L31 5' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
       center center / 100% no-repeat;
   }
+  &.ty-2 {
+    &.fold {
+      .folded > li:first-child {
+        margin-top: 0;
+        padding-top: 0;
+        border-top-width: 0;
+      }
+      .folded {
+        li.open:first-child {
+          padding-top: 0;
+        }
+      }
+    }
+    .folding-list > li:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top-width: 0;
+    }
+  }
 }
 .folded {
   display: none;

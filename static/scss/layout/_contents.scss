@@ -706,25 +706,73 @@
       vertical-align: middle;
     }
   }
-  ul li {
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 1px;
-      top: 0;
-      bottom: 0;
-      background-color: var(--line-color03);
+  .depth-1 {
+    li:before {
+      left: 4.8rem;
     }
-    &.open {
-      .depth-2 {
-        display: block;
-        .open {
-          .depth-3 {
-            display: block;
-            .open {
-              .depth-4 {
-                display: block;
+    > li:last-child {
+      .ft-list::after {
+        content: none;
+      }
+    }
+  }
+  .depth-2 {
+    display: none;
+    li:before {
+      left: 9.6rem;
+    }
+    .ft-list {
+      margin-left: 4.8rem;
+      &:after {
+        left: -4.8rem;
+      }
+    }
+  }
+  .depth-3 {
+    display: none;
+    li:before {
+      left: 14.4rem;
+    }
+    .ft-list {
+      margin-left: 9.6rem;
+      &:after {
+        left: -9.6rem;
+      }
+    }
+  }
+  .depth-4 {
+    display: none;
+    li:before {
+      left: 19.2rem;
+    }
+    .ft-list {
+      margin-left: 14.4rem;
+      &:after {
+        left: -14.4rem;
+      }
+    }
+  }
+  ul {
+    li {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        top: 0;
+        bottom: 0;
+        background-color: var(--line-color03);
+      }
+      &.open {
+        .depth-2 {
+          display: block;
+          .open {
+            .depth-3 {
+              display: block;
+              .open {
+                .depth-4 {
+                  display: block;
+                }
               }
             }
           }
@@ -732,6 +780,7 @@
       }
     }
   }
+
   .ft-list {
     display: flex;
     position: relative;
@@ -766,52 +815,6 @@
       padding: 1.2rem;
       font-size: 1.4rem;
       line-height: 2rem;
-    }
-    @at-root .depth-1 {
-      li:before {
-        left: 4.8rem;
-      }
-      > li:last-child {
-        .ft-list::after {
-          content: none;
-        }
-      }
-    }
-    @at-root .depth-2 {
-      display: none;
-      li:before {
-        left: 9.6rem;
-      }
-      .ft-list {
-        margin-left: 4.8rem;
-        &:after {
-          left: -4.8rem;
-        }
-      }
-    }
-    @at-root .depth-3 {
-      display: none;
-      li:before {
-        left: 14.4rem;
-      }
-      .ft-list {
-        margin-left: 9.6rem;
-        &:after {
-          left: -9.6rem;
-        }
-      }
-    }
-    @at-root .depth-4 {
-      display: none;
-      li:before {
-        left: 19.2rem;
-      }
-      .ft-list {
-        margin-left: 14.4rem;
-        &:after {
-          left: -14.4rem;
-        }
-      }
     }
   }
 }

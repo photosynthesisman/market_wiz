@@ -15,6 +15,12 @@
     border: 1px solid var(--line-color02);
     border-radius: 0.6rem;
   }
+  &.ty3 {
+    margin: 3.2rem 0 2.4rem;
+    padding: 1.6rem;
+    border: 1px solid var(--line-color02);
+    border-radius: 0.6rem;
+  }
   > dl {
     display: flex;
     flex-wrap: wrap;
@@ -121,7 +127,7 @@
 }
 .t-center .check-box .checkbox {
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 .check-box {
   &.switch {
@@ -226,7 +232,9 @@
   .checkbox {
     position: absolute;
     left: 0;
-    top: 0;
+    // top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     width: 2.4rem;
     height: 2.4rem;
     margin: 0;
@@ -255,7 +263,8 @@
     position: absolute;
     left: 0;
     top: 0;
-
+    top: 50%;
+    transform: translateY(-50%);
     width: 2.4rem;
     height: 2.4rem;
     background-position: center;
@@ -276,6 +285,9 @@
   }
   &.sm-check {
     line-height: 2rem;
+    & + .sm-check {
+      margin-left: 1.6rem;
+    }
     input {
       width: 2rem;
       height: 2rem;
