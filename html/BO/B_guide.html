@@ -652,7 +652,8 @@
           </div>
           <h2 class="guide-tit mt-100">PANEL</h2>
           <div class="form-guide-wrap">
-            <button class="open-panel button line mr-10" data-name="showPanel1">유형1</button>
+            <button class="open-panel button line mr-10" data-name="showPanel1">패널1</button>
+            <button class="open-panel button line mr-10" data-name="showPanel2">패널2</button>
           </div>
           <div class="panel has-tit" id="showPanel1">
             <div class="panel-contents">
@@ -840,6 +841,94 @@
               <div class="panel-bottm">
                 <button class="button line">취소</button>
                 <button class="button bo-primary">적용</button>
+              </div>
+            </div>
+          </div>
+          <div class="panel has-tit" id="showPanel2">
+            <div class="panel-contents">
+              <div class="panel-head">
+                <h2>약관등록</h2>
+                <div class="right">
+                  <button class="close"></button>
+                </div>
+              </div>
+              <div class="table">
+                <table>
+                  <colgroup>
+                    <col style="width: 13.6rem" />
+                    <col style="width: 34.4rem" />
+                    <col style="width: 13.6rem" />
+                    <col style="width: 34.4rem" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">등록일자</th>
+                      <td></td>
+                      <th scope="row">등록자</th>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">게시일시</th>
+                      <td colspan="3" class="small-pd">
+                        <div class="flex align-center">
+                          <div>
+                            <input type="date" value="2023-05-29" class="input w-160 mr-8" />
+                            <input type="text" class="input w-42" placeholder="00" title="시간 입력" />
+                            <span>:</span>
+                            <input type="text" class="input w-42" placeholder="00" title="분 입력" />
+                          </div>
+                          <p class="td-notice ml-24 fc-red">게시일시가 되면 이전 게시물이 이전 버전이 됩니다</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table mt-16">
+                <table>
+                  <colgroup>
+                    <col style="width: 13.6rem" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">유형</th>
+                      <td class="small-pd">
+                        <div class="flex align-center">
+                          <div class="radio-box small">
+                            <input type="radio" class="radio" id="type-1" name="type" checked="" />
+                            <label for="type-1">이용약관</label>
+                          </div>
+                          <div class="radio-box small">
+                            <input type="radio" class="radio" id="type-2" name="type" />
+                            <label for="type-2">개인정보처리방침</label>
+                          </div>
+                          <button class="button mini round off ml-auto">최신 버전 불러오기</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">제목</th>
+                      <td class="small-pd">
+                        <div class="input-box">
+                          <input type="text" class="input w-100p" placeholder="제목 입력" title="제목 입력" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="va-top">내용</th>
+                      <td class="small-pd">
+                        <!-- editor -->
+                        <div style="background-color: #eee; height: 68.6rem"></div>
+                        <!-- //editor -->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="panel-bottm">
+                <button class="button line">취소</button>
+                <button class="button bo-primary">저장</button>
               </div>
             </div>
           </div>

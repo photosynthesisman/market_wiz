@@ -14960,10 +14960,16 @@ html.is-app {
 .lnb-inner.ty-2.fold .folded li.open:first-child {
   padding-top: 0;
 }
+.lnb-inner.ty-2.fold .folded .open .folding-btn {
+  background-color: #ff602b;
+}
 .lnb-inner.ty-2 .folding-list > li:first-child {
   margin-top: 0;
   padding-top: 0;
   border-top-width: 0;
+}
+.lnb-inner.ty-2 .folding-list > li:first-child li.menu-empty a {
+  color: #ff602b;
 }
 
 .folded {

@@ -101,12 +101,18 @@
         li.open:first-child {
           padding-top: 0;
         }
+        .open .folding-btn {
+          background-color: #ff602b;
+        }
       }
     }
     .folding-list > li:first-child {
       margin-top: 0;
       padding-top: 0;
       border-top-width: 0;
+      li.menu-empty a {
+        color: #ff602b;
+      }
     }
   }
 }
