@@ -1,6 +1,19 @@
 // table
 .table {
   position: relative;
+  &.transparent {
+    table {
+      border: none;
+      td {
+        height: auto;
+        padding: 0;
+        border: none;
+        .check-box {
+          margin-bottom: 0.4rem;
+        }
+      }
+    }
+  }
   &::-webkit-scrollbar {
     height: 4px;
   }
@@ -21,6 +34,11 @@
     .add-code {
       td {
         background-color: #ffb7211f;
+      }
+    }
+    .tr-hover {
+      td {
+        background-color: #e9eff9;
       }
     }
     th,

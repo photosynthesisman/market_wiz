@@ -692,6 +692,7 @@
   }
 }
 .folding-table {
+  position: relative;
   border-top: 1px solid var(--line-color01);
   border-bottom: 1px solid var(--line-color01);
   .head-tit {
@@ -705,6 +706,33 @@
       font-weight: 700;
       vertical-align: middle;
     }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -1px;
+    right: 100%;
+    width: 1.6rem;
+    height: 1px;
+    background-color: var(--white-color);
+  }
+  .ft-checkbox {
+    position: relative;
+    margin-left: 1.2rem;
+    padding-left: 1.2rem;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -10px;
+      bottom: -10px;
+      width: 1px;
+      background-color: var(--line-color03);
+    }
+  }
+  .ft-list.tr-hover {
+    background-color: #e9eff9;
   }
   .depth-1 {
     li:before {
@@ -752,11 +780,36 @@
       }
     }
   }
+  .depth-5 {
+    display: none;
+    li:before {
+      left: 24rem;
+    }
+    .ft-list {
+      margin-left: 19.2rem;
+      &:after {
+        left: -19.2rem;
+      }
+    }
+  }
+  .depth-6 {
+    display: none;
+    li:before {
+      left: 28.8rem;
+    }
+    .ft-list {
+      margin-left: 24rem;
+      &:after {
+        left: -24rem;
+      }
+    }
+  }
   ul {
     li {
       position: relative;
       &::before {
         content: "";
+        z-index: 1;
         position: absolute;
         width: 1px;
         top: 0;
@@ -772,6 +825,16 @@
               .open {
                 .depth-4 {
                   display: block;
+                  .open {
+                    .depth-5 {
+                      display: block;
+                      .open {
+                        .depth-6 {
+                          display: block;
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -817,4 +880,24 @@
       line-height: 2rem;
     }
   }
+}
+.bottm-border {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: var(--line-color01);
+  }
+}
+.alert-msg {
+  margin-bottom: 1.6rem;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  color: var(--alert-txt-color);
+  text-align: center;
 }

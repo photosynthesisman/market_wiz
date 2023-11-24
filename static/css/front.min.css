@@ -15899,6 +15899,7 @@ html.is-app {
 }
 
 .folding-table {
+  position: relative;
   border-top: 1px solid var(--line-color01);
   border-bottom: 1px solid var(--line-color01);
 }
@@ -15913,6 +15914,33 @@ html.is-app {
   font-size: 1.5rem;
   font-weight: 700;
   vertical-align: middle;
+}
+.folding-table::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: -1px;
+  right: 100%;
+  width: 1.6rem;
+  height: 1px;
+  background-color: var(--white-color);
+}
+.folding-table .ft-checkbox {
+  position: relative;
+  margin-left: 1.2rem;
+  padding-left: 1.2rem;
+}
+.folding-table .ft-checkbox::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  bottom: -10px;
+  width: 1px;
+  background-color: var(--line-color03);
+}
+.folding-table .ft-list.tr-hover {
+  background-color: #e9eff9;
 }
 .folding-table .depth-1 li:before {
   left: 4.8rem;
@@ -15956,11 +15984,36 @@ html.is-app {
 .folding-table .depth-4 .ft-list:after {
   left: -14.4rem;
 }
+.folding-table .depth-5 {
+  display: none;
+}
+.folding-table .depth-5 li:before {
+  left: 24rem;
+}
+.folding-table .depth-5 .ft-list {
+  margin-left: 19.2rem;
+}
+.folding-table .depth-5 .ft-list:after {
+  left: -19.2rem;
+}
+.folding-table .depth-6 {
+  display: none;
+}
+.folding-table .depth-6 li:before {
+  left: 28.8rem;
+}
+.folding-table .depth-6 .ft-list {
+  margin-left: 24rem;
+}
+.folding-table .depth-6 .ft-list:after {
+  left: -24rem;
+}
 .folding-table ul li {
   position: relative;
 }
 .folding-table ul li::before {
   content: "";
+  z-index: 1;
   position: absolute;
   width: 1px;
   top: 0;
@@ -15974,6 +16027,12 @@ html.is-app {
   display: block;
 }
 .folding-table ul li.open .depth-2 .open .depth-3 .open .depth-4 {
+  display: block;
+}
+.folding-table ul li.open .depth-2 .open .depth-3 .open .depth-4 .open .depth-5 {
+  display: block;
+}
+.folding-table ul li.open .depth-2 .open .depth-3 .open .depth-4 .open .depth-5 .open .depth-6 {
   display: block;
 }
 .folding-table .ft-list {
@@ -16013,6 +16072,28 @@ html.is-app {
   padding: 1.2rem;
   font-size: 1.4rem;
   line-height: 2rem;
+}
+
+.bottm-border {
+  position: relative;
+}
+.bottm-border::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--line-color01);
+}
+
+.alert-msg {
+  margin-bottom: 1.6rem;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  color: var(--alert-txt-color);
+  text-align: center;
 }
 
 /*****************************************************************
@@ -16678,6 +16759,23 @@ jq-Datepicker
   padding: 1.6rem;
   border: 1px solid var(--line-color02);
   border-radius: 0.6rem;
+}
+.search-wrap.scroll-y {
+  height: 26.4rem;
+  padding: 2.4rem;
+  border: 1px solid var(--line-color02);
+  border-radius: 0.6rem;
+}
+.search-wrap.scroll-y::-webkit-scrollbar {
+  width: 12px;
+}
+.search-wrap.scroll-y::-webkit-scrollbar-thumb {
+  background-color: #eee;
+  border-radius: 10px;
+  border: 4px solid #fff;
+}
+.search-wrap.scroll-y::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0);
 }
 .search-wrap > dl {
   display: -webkit-box;
@@ -17771,6 +17869,17 @@ input[type=date]:disabled {
 .table {
   position: relative;
 }
+.table.transparent table {
+  border: none;
+}
+.table.transparent table td {
+  height: auto;
+  padding: 0;
+  border: none;
+}
+.table.transparent table td .check-box {
+  margin-bottom: 0.4rem;
+}
 .table::-webkit-scrollbar {
   height: 4px;
 }
@@ -17791,6 +17900,9 @@ input[type=date]:disabled {
 }
 .table table .add-code td {
   background-color: rgba(255, 183, 33, 0.1215686275);
+}
+.table table .tr-hover td {
+  background-color: #e9eff9;
 }
 .table table th,
 .table table td {
@@ -18101,6 +18213,11 @@ input[type=date]:disabled {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 2.8rem;
+}
+.panel .panel-bottm {
+  position: absolute;
+  right: 3.2rem;
+  bottom: 3.2rem;
 }
 
 .guide-tit {
