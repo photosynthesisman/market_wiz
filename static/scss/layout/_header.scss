@@ -13,6 +13,60 @@
     padding-right: 0.8rem;
     background-color: #2d3036;
   }
+  &.fo {
+    position: fixed;
+    width: 100%;
+    min-width: 1920px;
+    align-items: center;
+    height: 11.2rem;
+    padding: 0 6.4rem;
+    background-color: var(--white-color);
+    border-bottom: 1px solid var(--line-color02);
+    .head-left {
+      h1 > a {
+        width: 16rem;
+        height: 3.2rem;
+        background: url(../images/common/marketwiz-fo-logo.png) center / 100% no-repeat;
+      }
+    }
+    .head-center {
+      ul {
+        display: flex;
+        li {
+          margin-right: 8rem;
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 3rem;
+            color: var(--base-txt-color);
+            &:hover {
+              color: var(--primary-color2);
+            }
+          }
+        }
+      }
+    }
+    .head-right {
+      color: var(--sub-txt-color);
+      gap: 3.3rem;
+      .log-in {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: calc(100% + 1.6rem);
+          transform: translateY(-50%);
+          width: 0.1rem;
+          height: 1.2rem;
+          background-color: var(--bg-color-blue01);
+        }
+      }
+    }
+  }
 }
 .head-left,
 .head-right {

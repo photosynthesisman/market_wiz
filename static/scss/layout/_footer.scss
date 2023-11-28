@@ -1,0 +1,107 @@
+.footer-space {
+  background-color: var(--white-color);
+  .footer-contents {
+    margin: 0 auto;
+    padding: 4rem 0 2.4rem;
+    width: 1280px;
+    .left {
+      h3 {
+        line-height: 2.8rem;
+      }
+      p {
+        margin-top: 0.6rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: var(--sub-txt-color);
+      }
+    }
+    .policy-info {
+      margin-bottom: 2.4rem;
+      a {
+        position: relative;
+        margin-right: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 2rem;
+        color: var(--sub-txt-color);
+        &:last-child {
+          margin-right: 0;
+          &::after {
+            content: none;
+          }
+        }
+        &.privacy {
+          color: var(--base-txt-color);
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: -1rem;
+          transform: translateY(-50%);
+          width: 1px;
+          height: 1.2rem;
+          background-color: var(--bg-color-blue01);
+        }
+      }
+    }
+    .company-info {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      color: var(--sub-txt-color);
+      div {
+        margin-bottom: 0.8rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        dl {
+          position: relative;
+          display: inline-flex;
+          margin-right: 1.5rem;
+          &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -1rem;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 1rem;
+            background-color: var(--bg-color-blue01);
+          }
+          &:last-child {
+            margin-right: 0;
+            &:after {
+              content: none;
+            }
+          }
+          dt {
+            margin-right: 0.4rem;
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    border-top: 1px solid var(--line-color02);
+    .bottom-contents {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 1280px;
+      height: 8rem;
+      margin: 0 auto;
+      h2 > a {
+        display: block;
+        width: 12rem;
+        height: 2.4rem;
+        background: url(../images/common/marketwiz-footer-logo.png) center/cover no-repeat;
+        font-size: 0;
+      }
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      color: var(--sub-txt-color);
+    }
+  }
+}

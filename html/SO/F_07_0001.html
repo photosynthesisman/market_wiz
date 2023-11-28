@@ -6,46 +6,53 @@
     <script class="__include" src="../include/head.js"></script>
   </head>
   <body class="login">
-    <h1 class="logo ty2">
-      <a href="#none" title="로그인 화면으로 이동"></a>
-    </h1>
+    <!-- header  -->
+    <header data-include="../layout/header_fo.html"></header>
+
     <div class="join-form">
       <h2>회원가입</h2>
       <div class="form-box">
-        <p class="form-tit">회원가입 선택</p>
-        <div class="flex mt-16">
-          <a href="#none" class="naver btn-log">네이버 회원가입</a>
-          <a href="#none" class="kakao btn-log">카카오 회원가입</a>
-          <a href="#none" class="google btn-log">구글 회원가입</a>
+        <p class="form-tit">소셜 채널 선택<span>로그인에서 사용하는 연결 채널입니다.</span></p>
+
+        <div class="flex mt-16 space-between">
+          <!-- 클릭시 <i class="btn-checked"></i> 삽입 -->
+          <!-- <a href="#none" class="naver btn-log">네이버</a> -->
+          <a href="#none" class="naver btn-log">네이버 <i class="btn-checked"></i></a>
+          <a href="#none" class="kakao btn-log">카카오</a>
+          <a href="#none" class="google btn-log">구글</a>
         </div>
-        <p class="form-tit mt-48">로그인 정보 입력</p>
+        <p class="form-tit has-border">
+          기본정보입력<span>솔루션 사용과 상관없이 로그인을 위해 기본정보를 입력합니다.</span>
+        </p>
         <dl class="mt-20">
           <dt>담당자명</dt>
           <dd>
-            <input type="text" placeholder="성함을 입력하세요." class="input w-100p large" />
+            <!-- checked 추가시 체크박스 및 라운드 컬러 처리 -->
+            <div class="input-box checked">
+              <input type="text" value="김위즈" class="input w-100p large" />
+              <i class="btn-checked"></i>
+            </div>
           </dd>
           <dt>휴대전화번호</dt>
           <dd>
-            <div class="flex">
-              <div class="select-box large">
-                <button class="init">선택항목</button>
-                <ul>
-                  <li><button data-value="value1">Hover</button></li>
-                  <li><button data-value="value2">Selected</button></li>
-                  <li><button data-value="value3">Default</button></li>
-                  <li><button data-value="value4">Disabled</button></li>
-                </ul>
-              </div>
-              <input type="text" placeholder="‘-’ 를 빼고 입력하세요." class="input w-100p large" />
+            <div class="input-box checked">
+              <input type="text" value="010-1234-5678" class="input w-100p large" />
+              <i class="btn-checked"></i>
             </div>
           </dd>
           <dt>담당자 이메일</dt>
           <dd>
-            <input type="text" placeholder="example@marketwiz.com" class="input w-100p large" />
+            <div class="input-box">
+              <input type="text" placeholder="example@marketwiz.com" class="input w-100p large" />
+              <i class="btn-checked"></i>
+            </div>
           </dd>
           <dt>추천인 아이디</dt>
           <dd>
-            <input type="text" placeholder="아이디를 입력하세요." class="input w-100p large" />
+            <div class="input-box">
+              <input type="text" placeholder="아이디를 입력하세요." class="input w-100p large" />
+              <i class="btn-checked"></i>
+            </div>
           </dd>
         </dl>
         <div class="checkbox-wrap">
@@ -75,5 +82,7 @@
         <button class="button bg-primary">회원가입</button>
       </div>
     </div>
+    <!-- footer -->
+    <footer data-include="../layout/footer_fo.html"></footer>
   </body>
 </html>

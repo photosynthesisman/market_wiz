@@ -54,6 +54,10 @@ body {
   // html.is-app & {
   //   overscroll-behavior-y: contain; // 당겨서 새로고침 막기
   // }
+  &.fo {
+    min-width: 1920px;
+    overflow-x: hidden;
+  }
 }
 
 html.mobile {
