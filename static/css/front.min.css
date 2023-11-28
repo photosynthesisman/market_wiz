@@ -15336,6 +15336,11 @@ html.is-app {
   margin: 0 auto;
   padding: 2.4rem;
 }
+.login .login-contents h2 {
+  margin-bottom: 4rem;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+}
 .login .login-contents .logo {
   display: block;
   width: 32rem;
@@ -15343,6 +15348,9 @@ html.is-app {
   background: url(../images/common/marketwiz-login-logo.png);
   font-size: 0;
   margin: 0 auto;
+}
+.login .login-contents .btn-log {
+  width: 34rem;
 }
 .login .login-design {
   position: relative;

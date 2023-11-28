@@ -118,6 +118,11 @@
     height: 100%;
     margin: 0 auto;
     padding: 2.4rem;
+    h2 {
+      margin-bottom: 4rem;
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+    }
     .logo {
       display: block;
       width: 32rem;
@@ -125,6 +130,9 @@
       background: url(../images/common/marketwiz-login-logo.png);
       font-size: 0;
       margin: 0 auto;
+    }
+    .btn-log {
+      width: 34rem;
     }
   }
   .login-design {
