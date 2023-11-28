@@ -348,7 +348,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 body.fo {
-  min-width: 1920px;
+  min-width: 1280px;
   overflow-x: hidden;
 }
 
@@ -14670,7 +14670,7 @@ html.is-app {
 .header-space.fo {
   position: fixed;
   width: 100%;
-  min-width: 1920px;
+  min-width: 1280px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

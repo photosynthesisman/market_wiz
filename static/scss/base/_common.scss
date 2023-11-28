@@ -55,7 +55,8 @@ body {
   //   overscroll-behavior-y: contain; // 당겨서 새로고침 막기
   // }
   &.fo {
-    min-width: 1920px;
+    // min-width: 1920px;
+    min-width: 1280px;
     overflow-x: hidden;
   }
 }
