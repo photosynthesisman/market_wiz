@@ -15321,6 +15321,7 @@ html.is-app {
 
 .login {
   width: 100%;
+  height: 100%;
   background: #edf4fe;
 }
 .login .login-contents {
@@ -15334,6 +15335,14 @@ html.is-app {
   height: 100%;
   margin: 0 auto;
   padding: 2.4rem;
+}
+.login .login-contents .logo {
+  display: block;
+  width: 32rem;
+  height: 6.1rem;
+  background: url(../images/common/marketwiz-login-logo.png);
+  font-size: 0;
+  margin: 0 auto;
 }
 .login .login-design {
   position: relative;
@@ -18322,6 +18331,41 @@ input[type=date]:disabled {
 .radio-box.ty2 input:checked + label {
   background: var(--white-color);
   border: 1px solid var(--strong-txt-color);
+}
+.radio-box.ty3 {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.radio-box.ty3 + .ty3 {
+  margin-left: 0.8rem;
+}
+.radio-box.ty3 input {
+  width: 100%;
+}
+.radio-box.ty3 input + label::before {
+  content: none;
+}
+.radio-box.ty3 label {
+  width: 100%;
+  padding: 1.4rem 0;
+  background-color: var(--white-color);
+  border: 1px solid var(--line-color01);
+  border-radius: 0.6rem;
+  line-height: 1.8rem;
+  text-align: center;
+  cursor: pointer;
+  color: var(--sub-txt-color2);
+  font-weight: 600;
+}
+.radio-box.ty3 input:checked + label {
+  background: var(--white-color);
+  border: 1px solid var(--primary-color2);
+  color: var(--primary-color2);
 }
 
 .page_wrap {

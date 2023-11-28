@@ -109,6 +109,7 @@
 }
 .login {
   width: 100%;
+  height: 100%;
   background: #edf4fe;
   .login-contents {
     display: flex;
@@ -117,6 +118,14 @@
     height: 100%;
     margin: 0 auto;
     padding: 2.4rem;
+    .logo {
+      display: block;
+      width: 32rem;
+      height: 6.1rem;
+      background: url(../images/common/marketwiz-login-logo.png);
+      font-size: 0;
+      margin: 0 auto;
+    }
   }
   .login-design {
     position: relative;
