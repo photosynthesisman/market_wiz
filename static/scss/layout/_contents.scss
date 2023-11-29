@@ -1763,9 +1763,13 @@
   display: flex;
   justify-content: space-between;
   .category {
-    width: 26.2rem;
+    flex: 1;
+    margin-right: 0.8rem;
     border-top: 1px solid var(--line-color01);
     border-bottom: 1px solid var(--line-color01);
+    &:last-child {
+      margin-right: 0;
+    }
     ul {
       height: 19.6rem;
       padding: 0.8rem;

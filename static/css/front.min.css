@@ -17996,9 +17996,15 @@ html.is-app {
           justify-content: space-between;
 }
 .category-wrap .category {
-  width: 26.2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 0.8rem;
   border-top: 1px solid var(--line-color01);
   border-bottom: 1px solid var(--line-color01);
+}
+.category-wrap .category:last-child {
+  margin-right: 0;
 }
 .category-wrap .category ul {
   height: 19.6rem;
