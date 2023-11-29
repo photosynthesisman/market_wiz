@@ -18055,6 +18055,20 @@ html.is-app {
   -webkit-box-shadow: 12px 12px 20px -10px rgba(0, 0, 0, 0.0784313725);
           box-shadow: 12px 12px 20px -10px rgba(0, 0, 0, 0.0784313725);
 }
+.calendar.year-month {
+  height: 24.8rem;
+}
+.calendar.year-month .date-grid {
+  margin-top: 2.4rem;
+  grid-row-gap: 2.4rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.calendar.year-month .date-grid button {
+  width: 5.2rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+}
 .calendar .month-indicator {
   position: relative;
   height: 3.2rem;
@@ -18111,6 +18125,7 @@ html.is-app {
   border: 0;
   width: 3.2rem;
   height: 3.2rem;
+  margin: 0 auto;
   border-radius: 0.6rem;
   background-color: var(--white-color);
   color: var(--base-txt-color);
@@ -18123,8 +18138,26 @@ html.is-app {
   background-color: var(--primary-color2);
   color: var(--white-color);
 }
-.calendar .date-grid button.checked {
+.calendar .date-grid button.actives {
+  width: 100%;
+  background-color: var(--primary-color2);
+  border-radius: 0;
+  color: var(--white-color);
+}
+.calendar .date-grid button.actives.begins {
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+}
+.calendar .date-grid button.actives.end {
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+}
+.calendar .date-grid button.disabled {
   background-color: var(--disabled-bg-color);
+  color: var(--primary-color2);
+}
+.calendar .date-grid button.checked {
+  border: 1px solid var(--primary-color2);
   color: var(--primary-color2);
 }
 .calendar .date-grid button.out-of-month {
