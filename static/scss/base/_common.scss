@@ -420,21 +420,21 @@ html.pc {
     height: $i * 0.1rem !important;
   }
 }
-// @for $i from 1 through 40 {
-//   .h-#{$i*5 + 100} {
-//     height: $i * 0.5rem + 10rem !important;
-//   }
-// }
-// @for $i from 0 through 100 {
-//   @if $i !=33 and $i !=66 {
-//     .h-#{$i}p {
-//       height: $i * 1% !important;
-//     }
-//     .h-#{$i}vh {
-//       height: -vh(#{$i}) !important;
-//     }
-//   }
-// }
+@for $i from 1 through 40 {
+  .h-#{$i*5 + 100} {
+    height: $i * 0.5rem + 10rem !important;
+  }
+}
+@for $i from 0 through 100 {
+  @if $i !=33 and $i !=66 {
+    .h-#{$i}p {
+      height: $i * 1% !important;
+    }
+    .h-#{$i}vh {
+      height: -vh(#{$i}) !important;
+    }
+  }
+}
 .h-33p {
   height: 33.3333% !important;
 }
