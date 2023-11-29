@@ -32,11 +32,14 @@
             <li class="tab">
               <a href="#none" data-tab="icon-guide">아이콘 가이드</a><span class="close-tab">닫기</span>
             </li>
-            <li class="tab active">
+            <li class="tab">
               <a href="#none" data-tab="table-guide">테이블 가이드</a><span class="close-tab">닫기</span>
             </li>
             <li class="tab">
               <a href="#none" data-tab="popup-guide">팝업 가이드</a><span class="close-tab">닫기</span>
+            </li>
+            <li class="tab active">
+              <a href="#none" data-tab="calendar">캘린더</a><span class="close-tab">닫기</span>
             </li>
           </ul>
           <div class="move-wrap">
@@ -3543,7 +3546,7 @@
           </div>
         </div>
         <!-- 테이블 가이드 -->
-        <div class="tab-content active" id="table-guide">
+        <div class="tab-content" id="table-guide">
           <h2 class="guide-tit">Table type1</h2>
           <div class="table mt-16">
             <table>
@@ -7018,6 +7021,64 @@
           <div class="progress-box mt-20">
             <div class="no-result"></div>
             <p class="no-result-tt">문의 정보를 찾을 수 없습니다. 문의 정보를 수집하세요.</p>
+          </div>
+        </div>
+        <div class="tab-content active" id="calendar">
+          <h2 class="guide-tit">Calendar</h2>
+          <div class="calendar mt-32">
+            <div class="month-indicator">
+              <div>2023년 5월<i class="open-indicator"></i></div>
+              <button class="move-month prev"></button>
+              <button class="move-month next"></button>
+            </div>
+            <div class="day-of-week">
+              <div>일</div>
+              <div>월</div>
+              <div>화</div>
+              <div>수</div>
+              <div>목</div>
+              <div>금</div>
+              <div>토</div>
+            </div>
+            <div class="date-grid">
+              <button class="out-of-month">31</button>
+              <button>1</button>
+              <!-- 선택된 날짜 -->
+              <button class="checked">2</button>
+              <button>3</button>
+              <button>4</button>
+              <button>5</button>
+              <button>6</button>
+              <button>7</button>
+              <button>8</button>
+              <button>9</button>
+              <button>10</button>
+              <button>11</button>
+              <button>12</button>
+              <button>13</button>
+              <button>14</button>
+              <button>15</button>
+              <button>16</button>
+              <button>17</button>
+              <!-- 클릭한 날짜 -->
+              <button class="active">18</button>
+              <button>19</button>
+              <button>20</button>
+              <button>21</button>
+              <button>22</button>
+              <button>23</button>
+              <button>24</button>
+              <button>25</button>
+              <button>26</button>
+              <button>27</button>
+              <button>28</button>
+              <button>29</button>
+              <button>30</button>
+              <button class="out-of-month">1</button>
+              <button class="out-of-month">2</button>
+              <button class="out-of-month">3</button>
+              <button class="out-of-month">4</button>
+            </div>
           </div>
         </div>
       </div>

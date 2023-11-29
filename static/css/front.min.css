@@ -18045,6 +18045,92 @@ html.is-app {
   line-height: 2rem;
 }
 
+.calendar {
+  width: 32rem;
+  height: 34.1rem;
+  padding: 2.4rem;
+  border-radius: 0.8rem;
+  background-color: var(--white-color);
+  border: 1px solid var(--line-color01);
+  -webkit-box-shadow: 12px 12px 20px -10px rgba(0, 0, 0, 0.0784313725);
+          box-shadow: 12px 12px 20px -10px rgba(0, 0, 0, 0.0784313725);
+}
+.calendar .month-indicator {
+  position: relative;
+  height: 3.2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  color: var(--base-txt-color);
+  text-align: center;
+}
+.calendar .month-indicator .open-indicator {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-left: 0.4rem;
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.35214 10.6174C8.96159 11.2515 8.03971 11.2515 7.64917 10.6174L4.82062 6.02438C4.41031 5.35812 4.88964 4.5 5.67211 4.5L11.3292 4.5C12.1117 4.5 12.591 5.35812 12.1807 6.02438L9.35214 10.6174Z' fill='%2342444E'/%3E%3C/svg%3E%0A");
+}
+.calendar .month-indicator .move-month {
+  position: absolute;
+  top: 0;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 1px solid var(--line-color02);
+  border-radius: 0.6rem;
+  background: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 7L9.21213 11.7879C9.09497 11.905 9.09497 12.095 9.21213 12.2121L14 17' stroke='%23202020' stroke-linecap='round'/%3E%3C/svg%3E%0A") center/2.4rem no-repeat;
+}
+.calendar .month-indicator .move-month.prev {
+  left: 0;
+}
+.calendar .month-indicator .move-month.next {
+  right: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.calendar .day-of-week,
+.calendar .date-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.calendar .day-of-week {
+  margin-top: 2.4rem;
+}
+.calendar .day-of-week > * {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: var(--sub-txt-color2);
+  font-weight: 500;
+  text-align: center;
+}
+.calendar .date-grid {
+  margin-top: 1.7rem;
+  grid-row-gap: 1rem;
+}
+.calendar .date-grid button {
+  position: relative;
+  border: 0;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 0.6rem;
+  background-color: var(--white-color);
+  color: var(--base-txt-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2rem;
+  text-align: center;
+}
+.calendar .date-grid button.active {
+  background-color: var(--primary-color2);
+  color: var(--white-color);
+}
+.calendar .date-grid button.checked {
+  background-color: var(--disabled-bg-color);
+  color: var(--primary-color2);
+}
+.calendar .date-grid button.out-of-month {
+  color: var(--sub-txt-color2);
+}
+
 .footer-space {
   background-color: var(--white-color);
 }
