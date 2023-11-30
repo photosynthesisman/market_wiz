@@ -169,12 +169,19 @@
       table-layout: fixed;
     }
   }
+  &.bg-blue {
+    th {
+      background-color: #e9eff9;
+    }
+  }
   &.cs-center {
     th,
     td {
       height: 6.4rem;
       border-right-width: 0;
       color: var(--sub-txt-color);
+      font-size: 1.4rem;
+      line-height: 2rem;
       &:first-child {
         padding-left: 3.2rem;
       }
@@ -185,6 +192,13 @@
         padding: 3.2rem;
         color: var(--strong-txt-color);
       }
+    }
+    th {
+      font-weight: 700;
+      color: var(--strong-txt-color);
+    }
+    td {
+      color: var(--sub-txt-color);
     }
   }
   .no-label.sm-check {

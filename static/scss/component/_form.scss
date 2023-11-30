@@ -26,6 +26,11 @@
     padding: 2.4rem;
     border: 1px solid var(--line-color02);
     border-radius: 0.6rem;
+    p {
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+      color: var(--sub-txt-color);
+    }
     &::-webkit-scrollbar {
       width: 12px;
     }
