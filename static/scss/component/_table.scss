@@ -169,6 +169,24 @@
       table-layout: fixed;
     }
   }
+  &.cs-center {
+    th,
+    td {
+      height: 6.4rem;
+      border-right-width: 0;
+      color: var(--sub-txt-color);
+      &:first-child {
+        padding-left: 3.2rem;
+      }
+      &:last-child {
+        padding-right: 3.2rem;
+      }
+      &.notice-detail {
+        padding: 3.2rem;
+        color: var(--strong-txt-color);
+      }
+    }
+  }
   .no-label.sm-check {
     .lbl {
       &::before,

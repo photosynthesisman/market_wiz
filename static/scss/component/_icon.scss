@@ -280,6 +280,16 @@ $primary-color-only: str-slice("#{$primary-color}", 2);
     background-image: url("data:image/svg+xml,%0A%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.82199 6.81355C5.42431 7.38756 4.57569 7.38756 4.17801 6.81355L0.891226 2.06949C0.431747 1.40629 0.906402 0.499999 1.71322 0.499999L8.28678 0.5C9.0936 0.5 9.56825 1.40629 9.10877 2.06949L5.82199 6.81355Z' fill='%2342444E'/%3E%3C/svg%3E%0A");
   }
 }
+.ico-circle-up {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='24' rx='12' fill='%23E5E9F2'/%3E%3Cpath d='M11.1891 9.1236C11.5883 8.57054 12.4117 8.57054 12.8109 9.12359L15.1861 12.4148C15.6634 13.0762 15.1908 14 14.3752 14H9.62478C8.80917 14 8.3366 13.0762 8.8139 12.4148L11.1891 9.1236Z' fill='%2342444E'/%3E%3C/svg%3E%0A");
+}
+.ico-circle-down {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='24' rx='12' fill='%23E5E9F2'/%3E%3Cpath d='M12.8109 14.8764C12.4117 15.4295 11.5883 15.4295 11.1891 14.8764L8.8139 11.5852C8.3366 10.9238 8.80917 10 9.62478 10L14.3752 10C15.1908 10 15.6634 10.9238 15.1861 11.5852L12.8109 14.8764Z' fill='%2342444E'/%3E%3C/svg%3E%0A");
+}
 .ico-question {
   background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z' fill='%23DBDBDB'/%3E%3Cpath d='M9.5 9.63214C9.5 6.12262 14.5 6.12262 14.5 9.63214C14.5 12.1389 11.8377 11.6376 11.8377 14.6458M11.8377 17L11.8455 16.989' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }

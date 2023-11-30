@@ -40,6 +40,8 @@
             <p>자사몰 전송</p>
           </div>
         </div>
+      </div>
+      <div class="contents contents-2">
         <div class="greeting">
           <div class="greeting-txt">
             <h3>
@@ -342,5 +344,23 @@
     </div>
 
     <footer data-include="../layout/footer_fo.html"></footer>
+    <script>
+      // 스크롤시 화면 올라오는 효과
+      function observer() {
+        const contents1 = document.querySelectorAll(".contents");
+
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+            }
+          });
+        });
+        contents1.forEach((el) => {
+          io.observe(el);
+        });
+      }
+      observer();
+    </script>
   </body>
 </html>

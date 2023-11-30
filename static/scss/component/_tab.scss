@@ -101,6 +101,34 @@
 .tab-line-menu {
   width: 100%;
   border-bottom: 1px solid var(--primary-color2);
+  &.ty2 {
+    border-bottom: none;
+    .tab-list {
+      .tab {
+        width: 12.8rem;
+        height: 4.8rem;
+        margin-right: 0.8rem;
+        background-color: var(--white-color);
+        border-radius: 6.4rem;
+        border: 1px solid var(--line-color01);
+        a {
+          padding: 0;
+          line-height: 4.8rem;
+          color: var(--sub-txt-color);
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        &.active {
+          background-color: var(--primary-color2);
+          border: none;
+          > a {
+            color: var(--white-color);
+          }
+        }
+      }
+    }
+  }
   .tab-list {
     display: flex;
     .tab {
