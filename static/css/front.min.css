@@ -17361,8 +17361,8 @@ html.is-app {
   padding: 16rem 0;
   text-align: center;
   opacity: 0;
-  -webkit-transition: all, 0.75s ease-in;
-  transition: all, 0.75s ease-in;
+  -webkit-transition: all, 0.95s ease-in;
+  transition: all, 0.95s ease-in;
 }
 .market.fo .contents.active {
   opacity: 1;
