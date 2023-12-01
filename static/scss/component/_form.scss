@@ -885,7 +885,7 @@ input[type="date"] {
   }
   &.disabled {
     color: var(--sub-txt-color2);
-    background-color: var(--disabled-bg-color);
+    background-color: var(--disabled-bg-color) !important;
     overflow: hidden;
     &:hover {
       border: 0.1rem solid var(--line-color02);
