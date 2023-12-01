@@ -32,15 +32,13 @@
             <li class="tab">
               <a href="#none" data-tab="icon-guide">아이콘 가이드</a><span class="close-tab">닫기</span>
             </li>
-            <li class="tab">
+            <li class="tab active">
               <a href="#none" data-tab="table-guide">테이블 가이드</a><span class="close-tab">닫기</span>
             </li>
             <li class="tab">
               <a href="#none" data-tab="popup-guide">팝업 가이드</a><span class="close-tab">닫기</span>
             </li>
-            <li class="tab active">
-              <a href="#none" data-tab="calendar">캘린더</a><span class="close-tab">닫기</span>
-            </li>
+            <li class="tab"><a href="#none" data-tab="calendar">캘린더</a><span class="close-tab">닫기</span></li>
           </ul>
           <div class="move-wrap">
             <button class="button"><i class="ico-backward small"></i></button>
@@ -3548,7 +3546,7 @@
           </div>
         </div>
         <!-- 테이블 가이드 -->
-        <div class="tab-content" id="table-guide">
+        <div class="tab-content active" id="table-guide">
           <h2 class="guide-tit">Table type1</h2>
           <div class="table mt-16">
             <table>
@@ -6994,6 +6992,121 @@
               </tbody>
             </table>
           </div>
+          <h2 class="guide-tit mt-40">Table type18</h2>
+          <div class="table mt-40">
+            <table>
+              <colgroup>
+                <col style="width: 15.2rem" />
+                <col style="width: auto" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">마켓선택</th>
+                  <td class="small-pd">
+                    <div class="select-box w-600">
+                      <button class="init" data-value="value1">쿠팡</button>
+                      <ul>
+                        <li><button data-value="value1">옵션별 본래 가격으로 전송</button></li>
+                        <li><button data-value="value2">마켓대표가격으로 통일하여 전송</button></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="dark-bg">공통 정책 설정</th>
+                  <td class="dark-bg small-pd">
+                    <div class="flex space-between align-center">
+                      <div class="select-box w-600">
+                        <button class="init" data-value="value1">마켓정책 불러오기</button>
+                        <ul>
+                          <li><button data-value="value1">옵션별 본래 가격으로 전송</button></li>
+                          <li><button data-value="value2">마켓대표가격으로 통일하여 전송</button></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <i class="require mr-10"></i>
+                        <span class="fw-normal">필수항목</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">정책명 <i class="require"></i></th>
+                  <td class="small-pd">
+                    <div class="input-box">
+                      <input type="text" class="input w-600" placeholder="정책명 입력" title="정책명 입력" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">전송ID<i class="require"></i></th>
+                  <td class="small-pd">
+                    <div class="flex align-center">
+                      <div class="select-box w-300">
+                        <button class="init" data-value="value1">전송대상ID를 선택하세요</button>
+                        <ul>
+                          <li><button data-value="value1">옵션별 본래 가격으로 전송</button></li>
+                          <li><button data-value="value2">마켓대표가격으로 통일하여 전송</button></li>
+                        </ul>
+                      </div>
+                      <p class="td-notice ml-24">
+                        ID가 여러개 있으신 경우 선택하신 마켓 아이디로만 상품이 생성/수정 됩니다.
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">수수료<i class="require"></i></th>
+                  <td class="small-pd">
+                    <div class="flex align-center">
+                      <div class="input-box">
+                        <input type="text" class="input w-100" title="수수료 입력" />
+                        <span>%</span>
+                      </div>
+                      <p class="td-notice ml-24">
+                        마켓에 전송하실 때 적용하실 수수료율을 입력해주세요. 설정하신 수수료만큼 인상된 금액으로 마켓에
+                        전송됩니다.
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">청소년구매불가</th>
+                  <td class="small-pd">
+                    <div class="flex">
+                      <div class="radio-box small">
+                        <input type="radio" class="radio" id="check1" name="check-adult" checked="" />
+                        <label for="check1">예</label>
+                      </div>
+                      <div class="radio-box small">
+                        <input type="radio" class="radio" id="check2" name="check-adult" checked="" />
+                        <label for="check2">아니오</label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="va-top">카테고리 매핑 사용</th>
+                  <td class="small-pd">
+                    <div class="check-box sm-check">
+                      <input type="checkbox" class="checkbox" id="using-mapping" />
+                      <label for="using-mapping" class="lbl">카테고리 매핑 사용</label>
+                    </div>
+                    <p class="td-notice mt-6">
+                      상품수집조건(검색필터) 관리 및 정책적용, 카테고리 관리 및 정책적용에서 설정된 마켓카테고리 정보를
+                      사용합니다.
+                    </p>
+                    <p class="td-notice">
+                      카테고리 매핑 사용을 체크했을 때 설정된 마켓카테고리가 없을 경우에는 마켓에 전송되지 않습니다.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="2" class="dark-bg">마켓별 정책 설정</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <h2 class="guide-tit mt-40">Table loading</h2>
           <div class="progress-box mt-20">
             <p>쇼핑몰의 <span>asdf123455</span> 계정에서 주문 정보 수집 중...</p>
@@ -7025,7 +7138,7 @@
             <p class="no-result-tt">문의 정보를 찾을 수 없습니다. 문의 정보를 수집하세요.</p>
           </div>
         </div>
-        <div class="tab-content active" id="calendar">
+        <div class="tab-content" id="calendar">
           <h2 class="guide-tit">Calendar</h2>
           <div class="calendar mt-32">
             <div class="month-indicator">

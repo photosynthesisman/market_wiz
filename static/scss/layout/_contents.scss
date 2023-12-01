@@ -80,6 +80,7 @@
 }
 .consulting {
   position: fixed;
+  z-index: 9999;
   bottom: 1.6rem;
   right: 0;
   padding: 1.2rem 2.4rem 1.2rem 5rem;
@@ -1150,6 +1151,14 @@
   font-weight: 600;
   color: var(--alert-txt-color);
   text-align: center;
+}
+.market.mo {
+  min-width: 36rem;
+  max-width: 50rem;
+  margin: 0 auto;
+  .contents-wrap {
+    padding: 0 1.6rem;
+  }
 }
 .market.fo {
   .contents-wrap {

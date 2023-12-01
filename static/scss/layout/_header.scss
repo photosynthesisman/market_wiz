@@ -8,6 +8,9 @@
   flex-shrink: 0;
   background-color: var(--primary-color2);
   color: var(--white-color);
+  &.mo {
+    padding: 0 1.6rem;
+  }
   &.bo {
     height: 8rem;
     padding-right: 0.8rem;
@@ -116,7 +119,7 @@
     width: 14.6rem;
     margin-left: 2rem;
     background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10L11.7879 14.7879C11.905 14.905 12.095 14.905 12.2121 14.7879L17 10' stroke='%23FFFFFF' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
-    background-position: 1.2rem -0.5rem center;
+    background-position: center right 1.2rem;
     border: 1px solid transparent;
     .init {
       padding-right: 0;
@@ -158,7 +161,7 @@
   padding: 2rem 4rem 2rem 2.8rem;
   background-color: var(--primary-color);
   .select-box {
-    width: 12.8rem;
+    width: 14rem;
     margin-right: 0.8rem;
     background: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10L11.7879 14.7879C11.905 14.905 12.095 14.905 12.2121 14.7879L17 10' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A")
       center right 1.2rem / 2.4rem 2.4rem no-repeat;
@@ -180,9 +183,9 @@
   .input-box {
     display: flex;
     align-items: center;
-
     .input {
       flex: 1;
+      width: 16rem;
       padding: 0;
       padding-right: 2rem;
       border: none;
