@@ -17900,12 +17900,21 @@ html.is-app {
   line-height: 5.6rem;
   color: var(--white-color);
 }
+.market.fo .contents.contents-7 .contact-us .flex .btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .market.fo .contents.contents-7 .contact-us .flex .btn-wrap .button {
   width: 22.4rem;
   height: 5.6rem;
+  padding: 0;
   font-size: 1.8rem;
   font-weight: 700;
-  line-height: 2.8rem;
+  line-height: 5.6rem;
 }
 
 .join-wrap {
