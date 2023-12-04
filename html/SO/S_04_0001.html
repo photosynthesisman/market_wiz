@@ -97,7 +97,7 @@
                       </ul>
                     </div>
                     <div class="input-box w-600">
-                      <input type="text" class="input" placeholder="검색하실 상품명을 입력해주세요" title="내용입력" />
+                      <input type="text" class="input" title="내용입력" />
                     </div>
                   </div>
                 </dd>
@@ -115,10 +115,15 @@
                       </ul>
                     </div>
                     <div class="text-area w-600">
-                      <textarea
-                        rows="1"
-                        placeholder="데이터를 수집하실 상품의 상세페이지 URL를 http://를 포함하여 입력해주세요.&#10;줄바꿈(엔터) 하여 여러개의 URL 입력하시면 입력하신 URL을 한번에 수집합니다"
-                      ></textarea>
+                      <textarea rows="1"></textarea>
+                    </div>
+                    <div class="ml-16">
+                      <p class="td-notice">
+                        데이터를 수집하실 상품의 상세페이지 URL를 http://를 포함하여 입력해주세요.
+                      </p>
+                      <p class="td-notice">
+                        줄바꿈(엔터) 하여 여러개의 URL 입력하시면 입력하신 URL을 한번에 수집합니다.
+                      </p>
                     </div>
                   </div>
                 </dd>
@@ -135,26 +140,26 @@
                     </li>
                     <li>
                       <dl>
-                        <dt>옵션</dt>
-                        <dd>포함</dd>
+                        <dt>가격제한</dt>
+                        <dd>10,000원 ~ 100,000원</dd>
                       </dl>
                     </li>
                     <li>
                       <dl>
                         <dt>품절상품</dt>
-                        <dd>미포함</dd>
+                        <dd>수집</dd>
                       </dl>
                     </li>
                     <li>
                       <dl>
                         <dt>금지어</dt>
-                        <dd>설정</dd>
+                        <dd>적용</dd>
                       </dl>
                     </li>
                     <li>
                       <dl>
-                        <dt>리뷰</dt>
-                        <dd>20개 이상</dd>
+                        <dt>옵션</dt>
+                        <dd>수집미포함</dd>
                       </dl>
                     </li>
                     <li>
@@ -162,6 +167,16 @@
                     </li>
                   </ul>
                 </dd>
+                <p class="td-notice ml-16">수집설정은 상품수집 버튼 선택 시 적용된 설정으로 수집합니다.</p>
+              </dl>
+              <dl>
+                <dt>수집설정현황</dt>
+                <dd>
+                  설정된 정보가 없습니다. 수집설정이 되어 있지 않을 경우 상품수집이 불가합니다. 환경설정에서 수집설정을
+                  해주세요.
+                </dd>
+                <button href="#none" class="button mini round on ml-16" title="수집 설정변경">환경설정 바로가기</button>
+                <p class="td-notice ml-16">수집설정은 상품수집 버튼 선택 시 적용된 설정으로 수집합니다.</p>
               </dl>
               <div class="button-wrap mt-20">
                 <button class="button line mr-8">저장대기상품<i class="ico-new">NEW</i></button>
@@ -170,6 +185,7 @@
             </div>
             <hr class="h-line" />
             <div class="result-wrap">
+              <!-- 
               <div class="summary-box">
                 <ul>
                   <li>
@@ -186,6 +202,7 @@
                   </li>
                 </ul>
               </div>
+               -->
               <div class="result-box">
                 <div class="list-top">
                   <div class="left">
@@ -211,9 +228,10 @@
                       <span class="result"
                         >총 <em>1,222건 </em>/ 성공 <em>980</em>건 / 실패 <em class="fc-red">20</em>건</span
                       >
-                      <a href="#none" class="rounded" title="수집 결과보기">수집결과보기</a>
+                      <!-- <a href="#none" class="rounded" title="수집 결과보기">수집결과보기</a> -->
                     </div>
                     <div class="right">
+                      <!-- 
                       <div class="select-box">
                         <button class="init">최근주문</button>
                         <ul>
@@ -221,6 +239,7 @@
                           <li><button data-value="2">리스트보기</button></li>
                         </ul>
                       </div>
+                       -->
                       <div class="select-box">
                         <button class="init">50개씩 보기</button>
                         <ul>
@@ -582,14 +601,24 @@
                     </table>
                   </div>
                 </div>
-                <div class="progress-box">
+                <div class="progress-box mt-20">
                   <p>쇼핑몰의 <span>asdf123455</span> 계정에서 주문 정보 수집 중...</p>
                 </div>
-                <div class="progress-box">
+                <div class="progress-box mt-20">
                   <div class="progress-wrap">
                     <span class="progress"></span>
                   </div>
                   <p>상품을 수집중 입니다.</p>
+                </div>
+                <div class="progress-box mt-20 h-220">
+                  <div class="load-screen">
+                    <div class="load-contents">
+                      <p>상품을 수집중 입니다.</p>
+                      <svg class="load-spinner" viewBox="0 0 50 50">
+                        <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="6"></circle>
+                      </svg>
+                    </div>
+                  </div>
                 </div>
                 <div class="page_wrap">
                   <ul class="page_nation">

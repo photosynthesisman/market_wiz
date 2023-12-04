@@ -6,7 +6,7 @@
   width: 100%;
   // min-height: calc(100vh - 80px);
   height: 100%;
-  overflow: hidden;
+  // overflow: hidden;
 }
 .favorite {
   margin-top: -0.1rem;
@@ -651,11 +651,10 @@
 
 .badge {
   display: inline-block;
-  width: 5.3rem;
-  padding: 0.2rem 0.5rem;
-  border-radius: 2px;
+  padding: 0.3rem 0.8rem;
+  border-radius: 3px;
   font-size: 1.2rem;
-  line-height: 2rem;
+  line-height: 1.8rem;
   text-align: center;
   font-weight: 600;
   &.blue {
@@ -674,6 +673,10 @@
   &.orange {
     color: #f68827;
     background-color: #f8ebde;
+  }
+  &.gray {
+    color: var(--strong-txt-color);
+    background-color: var(--disabled-bg-color);
   }
 }
 .img-box {

@@ -59,28 +59,35 @@
                 </colgroup>
                 <thead>
                   <tr>
-                    <th colspan="8" class="bd-line-2">
-                      <p class="sub-txt">담당자 정보</p>
+                    <th colspan="8" class="bd-line-2 small-pd">
+                      <div class="flex space-between align-center">
+                        <p class="sub-txt">담당자 정보</p>
+                        <button class="button small line">회원탈퇴</button>
+                      </div>
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th rowspan="2" class="va-top">담당자 이름</th>
-                    <td rowspan="2" class="va-top">김마켓</td>
-                    <th rowspan="2" class="va-top">
-                      휴대폰 번호
-                      <button class="button mini line mt-4 open-pop" data-name="S_10_0030">정보 변경</button>
-                    </th>
-                    <td rowspan="2" class="va-top">111-22-33333</td>
-                    <th rowspan="2" class="va-top">담당자 이메일</th>
-                    <td rowspan="2" class="va-top">abcd1234@market.com</td>
-                    <th>내가 추천한 회원</th>
-                    <td>-</td>
+                    <th>가입채널</th>
+                    <td>카카오</td>
+                    <th>담당자 이메일</th>
+                    <td>abcd1234@market.com</td>
+                    <th>가입채널</th>
+                    <td>김마켓</td>
+                    <th class="va-top" rowspan="2">휴대폰 번호</th>
+                    <td rowspan="2" class="va-top">
+                      <p>010-1234-5678</p>
+                      <button class="button small line w-100p t-center mt-12">회원탈퇴</button>
+                    </td>
                   </tr>
                   <tr>
-                    <th>나를 추천한 회원</th>
+                    <th>가입일시</th>
+                    <td>YYYY.MM.DD hh:mm:ss</td>
+                    <th>내가 추천한 회원</th>
                     <td>-</td>
+                    <th>나를 추천한 회원수</th>
+                    <td><a href="#none" class="a-link2">10명</a></td>
                   </tr>
                 </tbody>
               </table>
@@ -105,7 +112,7 @@
                           <p class="sub-txt">기업 정보</p>
                         </div>
                         <div class="right">
-                          <button class="button small bg-dark">정보 변경</button>
+                          <button class="button small bg-dark">설정 저장</button>
                         </div>
                       </div>
                     </th>
@@ -196,7 +203,7 @@
                           <p class="sub-txt">기업 정보</p>
                         </div>
                         <div class="right">
-                          <button class="button small bg-dark">정보 변경</button>
+                          <button class="button small bg-dark">설정 저장</button>
                         </div>
                       </div>
                     </th>
@@ -221,7 +228,7 @@
                   <tr>
                     <th>쇼핑몰 이름</th>
                     <td colspan="7" class="small-pd">
-                      <input type="text" class="input" value="OOOOOOOO 마트" />
+                      <input type="text" class="input w-100p" value="OOOOOOOO 마트" />
                     </td>
                   </tr>
                   <tr>
@@ -253,34 +260,36 @@
                       </div>
                     </td>
                     <th>대표 전화번호</th>
-                    <td class="small-pd"><input type="text" class="input" value="070-1234-5678" /></td>
+                    <td class="small-pd"><input type="text" class="input w-100p" value="070-1234-5678" /></td>
                   </tr>
                   <tr>
                     <th>지역</th>
                     <td colspan="2" class="small-pd">
-                      <input type="text" class="input" value="서울특별시 영등포구" disabled />
+                      <input type="text" class="input w-100p" value="서울특별시 영등포구" disabled />
                     </td>
                     <th>상세 주소</th>
                     <td class="small-pd">
-                      <input type="text" class="input" value="여의대로 OO, 전국경제연합회 OOO 빌딩 OO층" />
+                      <input type="text" class="input w-100p" value="여의대로 OO, 전국경제연합회 OOO 빌딩 OO층" />
                     </td>
                   </tr>
                   <tr>
                     <th>대표자 이름</th>
                     <td colspan="3">최위즈</td>
                     <th>정보보안 담당자</th>
-                    <td colspan="3" class="small-pd"><input type="text" class="input" value="최위즈" /></td>
+                    <td colspan="3" class="small-pd"><input type="text" class="input w-100p" value="최위즈" /></td>
                   </tr>
                   <tr>
                     <th>대표자 연락처</th>
                     <td colspan="3" class="small-pd">
-                      <input type="text" class="input" value="010-9876-5432" />
+                      <input type="text" class="input w-100p" value="010-9876-5432" />
                     </td>
                     <th class="small-pd">
                       정보보안 담당자<br />
                       연락처
                     </th>
-                    <td colspan="3" class="small-pd"><input type="text" class="input" value="010-9876-5432" /></td>
+                    <td colspan="3" class="small-pd">
+                      <input type="text" class="input w-100p" value="010-9876-5432" />
+                    </td>
                   </tr>
                 </tbody>
               </table>

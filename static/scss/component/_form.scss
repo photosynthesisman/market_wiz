@@ -10,7 +10,7 @@
 .search-wrap {
   margin-top: 3.2rem;
   &.ty2 {
-    margin: 4rem 0;
+    margin: 2rem 0;
     padding: 3.2rem;
     border: 1px solid var(--line-color02);
     border-radius: 0.6rem;
@@ -946,6 +946,9 @@ input[type="date"] {
     margin-right: 0.8rem;
     &.mini {
       margin-right: 0.4rem;
+    }
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

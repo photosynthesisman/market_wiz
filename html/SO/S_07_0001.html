@@ -46,46 +46,7 @@
           <div class="contents">
             <div class="search-wrap">
               <dl>
-                <dt>주문 상태</dt>
-                <dd>
-                  <div class="flex">
-                    <div class="radio-box small">
-                      <input type="radio" class="radio" id="claim1" name="order-condition" checked />
-                      <label for="claim1">신규주문</label>
-                    </div>
-                    <div class="radio-box small">
-                      <input type="radio" class="radio" id="claim2" name="order-condition" />
-                      <label for="claim2">발송대기</label>
-                    </div>
-                    <div class="radio-box small">
-                      <input type="radio" class="radio" id="claim3" name="order-condition" />
-                      <label for="claim3">배송 중</label>
-                    </div>
-                    <div class="radio-box small">
-                      <input type="radio" class="radio" id="claim4" name="order-condition" />
-                      <label for="claim4">배송 완료</label>
-                    </div>
-                    <div class="radio-box small">
-                      <input type="radio" class="radio" id="claim5" name="order-condition" />
-                      <label for="claim5">구매 확정</label>
-                    </div>
-                    <div class="radio-box small">
-                      <input type="radio" class="radio" id="claim6" name="order-condition" />
-                      <label for="claim6">취소 주문</label>
-                    </div>
-                    <div class="radio-box small">
-                      <input type="radio" class="radio" id="claim7" name="order-condition" />
-                      <label for="claim7">반품 주문</label>
-                    </div>
-                    <div class="radio-box small">
-                      <input type="radio" class="radio" id="claim8" name="order-condition" />
-                      <label for="claim8">교환 주문</label>
-                    </div>
-                  </div>
-                </dd>
-              </dl>
-              <dl>
-                <dt>조회 기간</dt>
+                <dt>수집 기간</dt>
                 <dd>
                   <div class="search-box">
                     <input type="date" value="2023-05-29" class="input" />
@@ -121,7 +82,7 @@
                 </dd>
               </dl>
               <dl>
-                <dt>쇼핑몰구분</dt>
+                <dt>업로드 마켓</dt>
                 <dd>
                   <div class="select-box">
                     <button class="init">전체</button>
@@ -140,7 +101,7 @@
                     </ul>
                   </div>
                 </dd>
-                <dt class="ml-64">쇼핑몰 ID</dt>
+                <dt class="ml-64">마켓 ID</dt>
                 <dd>
                   <div class="select-box">
                     <button class="init">전체</button>
@@ -157,23 +118,6 @@
                       <li><button data-value="10">아마존(일본)</button></li>
                       <li><button data-value="11">아마존(독일)</button></li>
                     </ul>
-                  </div>
-                </dd>
-                <dt class="ml-64">클레임 건 포함</dt>
-                <dd>
-                  <div class="flex">
-                    <div class="radio-box small">
-                      <input type="radio" class="radio" id="claim9" name="include_claim" checked />
-                      <label for="claim9">신규주문</label>
-                    </div>
-                    <div class="radio-box small">
-                      <input type="radio" class="radio" id="claim10" name="include_claim" />
-                      <label for="claim10">발송대기</label>
-                    </div>
-                    <div class="radio-box small">
-                      <input type="radio" class="radio" id="claim11" name="include_claim" />
-                      <label for="claim11">배송 중</label>
-                    </div>
                   </div>
                 </dd>
               </dl>
@@ -182,6 +126,49 @@
             </div>
             <hr class="h-line" />
             <div class="search-wrap ty2">
+              <dl>
+                <dt>주문 상태</dt>
+                <dd>
+                  <div class="flex">
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="claim1" name="order-condition" checked />
+                      <label for="claim1">주문 전체</label>
+                    </div>
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="claim2" name="order-condition" />
+                      <label for="claim2">신규 주문</label>
+                    </div>
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="claim3" name="order-condition" />
+                      <label for="claim3">발송 대기</label>
+                    </div>
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="claim4" name="order-condition" />
+                      <label for="claim4">배송 중</label>
+                    </div>
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="claim5" name="order-condition" />
+                      <label for="claim5">배송 완료</label>
+                    </div>
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="claim6" name="order-condition" />
+                      <label for="claim6">구매 확정</label>
+                    </div>
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="claim7" name="order-condition" />
+                      <label for="claim7">취소 주문</label>
+                    </div>
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="claim8" name="order-condition" />
+                      <label for="claim8">반품 주문</label>
+                    </div>
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="claim9" name="order-condition" />
+                      <label for="claim9">교환 주문</label>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
               <dl>
                 <dt>송장 입력 여부</dt>
                 <dd>
@@ -200,7 +187,7 @@
                     </div>
                   </div>
                 </dd>
-                <dt class="ml-64">도서산간 여부</dt>
+                <dt class="ml-64">클레임 건 포함</dt>
                 <dd>
                   <div class="flex">
                     <div class="radio-box small">
@@ -209,11 +196,11 @@
                     </div>
                     <div class="radio-box small">
                       <input type="radio" class="radio" id="claim16" name="invoice2" />
-                      <label for="claim16">입력</label>
+                      <label for="claim16">포함</label>
                     </div>
                     <div class="radio-box small">
                       <input type="radio" class="radio" id="claim17" name="invoice2" />
-                      <label for="claim17">미입력</label>
+                      <label for="claim17">미포함</label>
                     </div>
                   </div>
                 </dd>
@@ -223,33 +210,32 @@
                 <dd>
                   <div class="search-box">
                     <div class="select-box">
-                      <button class="init" data-value="2">키워드</button>
+                      <button class="init" data-value="2">전체</button>
                       <ul>
                         <li><button data-value="1">URL</button></li>
                         <li><button data-value="2">키워드</button></li>
                       </ul>
                     </div>
-                    <div class="input-box w-600">
-                      <input type="text" class="input" placeholder="검색어 입력" title="검색어 입력" />
+                    <div class="input-box">
+                      <input type="text" class="input w-600" placeholder="검색어 입력" title="검색어 입력" />
                     </div>
                   </div>
                 </dd>
-
-                <button class="button small bg-primary ml-auto" disabled>수집 정보 내 조회하기</button>
+                <dd class="ml-auto">
+                  <button class="button small line ml-auto">수집로그보기</button>
+                  <button class="button small bg-primary ml-auto">수집 정보 내 조회하기</button>
+                </dd>
               </dl>
             </div>
-            <div class="result-wrap">
+            <div class="result-wrap mt-40">
               <div class="result-box">
                 <div class="list-top">
                   <div class="left">
-                    <button class="button small bg-dark">발주 확인</button>
-                    <button class="button small bg-dark open-pop" data-name="S_07_0009">배송정보 입력/발송</button>
-                    <button class="button small bg-dark">송장번호 마켓 전송</button>
                     <button class="button small line">선택 삭제</button>
                   </div>
                   <div class="right">
-                    <button class="button small line">선택상품삭제</button>
-                    <button class="button small blue-line download">엑셀 다운로드</button>
+                    <button class="button small bg-dark">엑셀다운로드</button>
+                    <button class="button small bg-dark">송장번호 엑셀업로드</button>
                   </div>
                 </div>
                 <div class="product-list">
@@ -308,7 +294,7 @@
                                 </div>
                                 <div class="button-wrap ml-16">
                                   <button class="button mini line ty2 open-pop" data-name="S_07_0007">주문 로그</button>
-                                  <button class="button mini line ty2">배송 로그</button>
+                                  <button class="button mini line ty2">배송 조회</button>
                                   <button class="button mini line ty2 open-pop" data-name="S_07_0008">
                                     메시지 전송
                                   </button>
@@ -323,8 +309,8 @@
                               <div class="right">
                                 <span class="has-claim">클레임 발생</span>
                                 <span>2023.11.12 12:24:03</span>
-                                <button class="button mini line ty2 ml-16 mr-24">관련 CS 조회</button>
-                                <button class="detail-view">상세 보기</button>
+                                <!-- <button class="button mini line ty2 ml-16 mr-24">관련 CS 조회</button> -->
+                                <button class="detail-view ml-24">상세 보기</button>
                               </div>
                             </div>
                           </th>
@@ -340,7 +326,7 @@
                             <button class="button small line w-100p t-center">저장</button>
                           </td>
                           <th>총 주문 금액(원)</th>
-                          <td>100,000</td>
+                          <td class="t-right">100,000</td>
                           <th>주문 상태</th>
                           <td>신규 주문</td>
                           <th>주문 번호</th>
@@ -349,9 +335,9 @@
                         <tr>
                           <th>주문 일시</th>
                           <td>YYYY.MM.DD hh:mm:ss</td>
-                          <th>판매 쇼핑몰</th>
+                          <th>업로드마켓</th>
                           <td>위메프</td>
-                          <th>쇼핑몰 ID / 별칭</th>
+                          <th>마켓ID / 별칭</th>
                           <td>honggd / 홍길동</td>
                         </tr>
                         <tr>
@@ -368,7 +354,7 @@
                             </div>
                             <button class="button small line w-100p t-center">저장</button>
                           </td>
-                          <th>기존 송장번호<i class="require"></i></th>
+                          <th>국내 송장번호<i class="require"></i></th>
                           <td colspan="3" class="small-pd">
                             <div class="search-box">
                               <div class="select-box w-120">
@@ -378,15 +364,20 @@
                                   <li><button data-value="2">키워드</button></li>
                                 </ul>
                               </div>
-                              <div class="input-box w-284 ml-4">
-                                <input type="text" class="input" placeholder="송장번호 입력" title="송장번호 입력" />
+                              <div class="input-box ml-4">
+                                <input
+                                  type="text"
+                                  class="input w-284"
+                                  placeholder="송장번호 입력"
+                                  title="송장번호 입력"
+                                />
                               </div>
                               <button class="button small line ml-8 mr-0">자동송장발송</button>
                             </div>
                           </td>
                         </tr>
                         <tr>
-                          <th>보조 송장번호</th>
+                          <th>해외 송장번호</th>
                           <td colspan="3" class="small-pd">
                             <div class="flex align-center">
                               <span class="check-box sm-check">
@@ -394,15 +385,21 @@
                                 <label for="assistant-num" class="lbl">사용</label>
                               </span>
                               <div class="search-box">
-                                <div class="select-box w-120">
+                                <div class="select-box w-120 disabled">
                                   <button class="init placeholder">업체 선택</button>
                                   <ul>
                                     <li><button data-value="1">URL</button></li>
                                     <li><button data-value="2">키워드</button></li>
                                   </ul>
                                 </div>
-                                <div class="input-box w-268 ml-4">
-                                  <input type="text" class="input" placeholder="송장번호 입력" title="송장번호 입력" />
+                                <div class="input-box ml-4">
+                                  <input
+                                    type="text"
+                                    class="input w-268"
+                                    placeholder="송장번호 입력"
+                                    title="송장번호 입력"
+                                    disabled
+                                  />
                                 </div>
                                 <button class="button small bg-dark ml-8" disabled="">저장</button>
                               </div>
@@ -410,7 +407,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <th>상품 이름</th>
+                          <th>상품명</th>
                           <td colspan="5">
                             <a href="#none" class="a-link2"
                               >벽 장착 레이지 자동 치약 디스펜서 홀더, 월마운트 칫솔 욕실 액세서리</a
@@ -444,7 +441,7 @@
                                 </div>
                                 <div class="button-wrap ml-16">
                                   <button class="button mini line ty2 open-pop" data-name="S_07_0007">주문 로그</button>
-                                  <button class="button mini line ty2">배송 로그</button>
+                                  <button class="button mini line ty2">배송 조회</button>
                                   <button class="button mini line ty2 open-pop" data-name="S_07_0008">
                                     메시지 전송
                                   </button>
@@ -459,8 +456,8 @@
                               <div class="right">
                                 <span class="has-claim">클레임 발생</span>
                                 <span>2023.11.12 12:24:03</span>
-                                <button class="button mini line ty2 ml-16 mr-24">관련 CS 조회</button>
-                                <button class="detail-view open">상세 보기</button>
+                                <!-- <button class="button mini line ty2 ml-16 mr-24">관련 CS 조회</button> -->
+                                <button class="detail-view ml-24 open">상세 보기</button>
                               </div>
                             </div>
                           </th>
@@ -476,7 +473,7 @@
                             <button class="button small line w-100p t-center">저장</button>
                           </td>
                           <th>총 주문 금액(원)</th>
-                          <td>100,000</td>
+                          <td class="t-right">100,000</td>
                           <th>주문 상태</th>
                           <td>신규 주문</td>
                           <th>주문 번호</th>
@@ -485,9 +482,9 @@
                         <tr>
                           <th>주문 일시</th>
                           <td>YYYY.MM.DD hh:mm:ss</td>
-                          <th>판매 쇼핑몰</th>
+                          <th>업로드마켓</th>
                           <td>위메프</td>
-                          <th>쇼핑몰 ID / 별칭</th>
+                          <th>마켓ID / 별칭</th>
                           <td>honggd / 홍길동</td>
                         </tr>
                         <tr>
@@ -504,7 +501,7 @@
                             </div>
                             <button class="button small line w-100p t-center">저장</button>
                           </td>
-                          <th>기존 송장번호<i class="require"></i></th>
+                          <th>국내 송장번호<i class="require"></i></th>
                           <td colspan="3" class="small-pd">
                             <div class="search-box">
                               <div class="select-box w-120">
@@ -514,15 +511,20 @@
                                   <li><button data-value="2">키워드</button></li>
                                 </ul>
                               </div>
-                              <div class="input-box w-284 ml-4">
-                                <input type="text" class="input" placeholder="송장번호 입력" title="송장번호 입력" />
+                              <div class="input-box ml-4">
+                                <input
+                                  type="text"
+                                  class="input w-284"
+                                  placeholder="송장번호 입력"
+                                  title="송장번호 입력"
+                                />
                               </div>
                               <button class="button small line ml-8 mr-0">자동송장발송</button>
                             </div>
                           </td>
                         </tr>
                         <tr>
-                          <th>보조 송장번호</th>
+                          <th>해외 송장번호</th>
                           <td colspan="3" class="small-pd">
                             <div class="flex align-center">
                               <span class="check-box sm-check">
@@ -530,15 +532,21 @@
                                 <label for="assistant-num2" class="lbl">사용</label>
                               </span>
                               <div class="search-box">
-                                <div class="select-box w-120">
+                                <div class="select-box w-120 disabled">
                                   <button class="init placeholder">업체 선택</button>
                                   <ul>
                                     <li><button data-value="1">URL</button></li>
                                     <li><button data-value="2">키워드</button></li>
                                   </ul>
                                 </div>
-                                <div class="input-box w-268 ml-4">
-                                  <input type="text" class="input" placeholder="송장번호 입력" title="송장번호 입력" />
+                                <div class="input-box ml-4">
+                                  <input
+                                    type="text"
+                                    class="input w-268"
+                                    placeholder="송장번호 입력"
+                                    title="송장번호 입력"
+                                    disabled
+                                  />
                                 </div>
                                 <button class="button small bg-dark ml-8" disabled="">저장</button>
                               </div>
@@ -546,7 +554,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <th>상품 이름</th>
+                          <th>상품명</th>
                           <td colspan="5">
                             <a href="#none" class="a-link2"
                               >벽 장착 레이지 자동 치약 디스펜서 홀더, 월마운트 칫솔 욕실 액세서리</a
@@ -554,7 +562,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <th>총 주문 금액(원)</th>
+                          <th>판매 URL</th>
                           <td colspan="7">
                             <a href="#none" class="a-link2">http://TEXTTEXT.co.kr</a>
                           </td>
@@ -581,7 +589,9 @@
                           <th>배송 구분</th>
                           <td>선결제</td>
                           <th>개인통관고유번호</th>
-                          <td>000000000000000</td>
+                          <td class="small-pd t-center">
+                            <button class="button small bg-dark w-100p">통관부호 요청</button>
+                          </td>
                           <th class="small-pd">
                             통관고유부호<br />
                             일치여부
@@ -597,8 +607,10 @@
                           <td colspan="5">서울특별시 영등포구 여의대로 14 KT 여의도 빌딩 17층</td>
                         </tr>
                         <tr>
-                          <th>총 주문 금액(원)</th>
-                          <td colspan="7">100,000</td>
+                          <th>배송 메모</th>
+                          <td colspan="7">
+                            선택 사항 내용 선택 사항 내용 선택 사항 내용 선택 사항 내용 선택 사항 내용 선택 사항 내용
+                          </td>
                         </tr>
                         <tr>
                           <th>공급 금액(원)</th>
