@@ -577,6 +577,12 @@
   &.ty2::before {
     content: "*";
   }
+  &.ty3 {
+    padding-left: 0;
+    &::before {
+      content: none;
+    }
+  }
 }
 .record-wrap {
   display: flex;
@@ -867,6 +873,7 @@
   position: relative;
   border-top: 1px solid var(--line-color01);
   border-bottom: 1px solid var(--line-color01);
+  overflow-x: hidden;
   &.cs-center {
     .ft-list::after {
       content: none;
@@ -1063,6 +1070,33 @@
   }
   ul {
     li {
+      .ft-checkbox {
+        flex-shrink: 0;
+        width: 10.4rem;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid var(--line-color03);
+        &::before {
+          top: 0;
+          bottom: 0;
+        }
+        .check-box {
+          line-height: 4.4rem;
+          input {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+          .checkbox + label {
+            padding: 0;
+          }
+          .checkbox + label:before {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
       position: relative;
       &::before {
         content: "";
@@ -1105,6 +1139,7 @@
     display: flex;
     position: relative;
     align-items: center;
+    width: 100%;
     &.open {
       .ico-plus {
         display: none;
@@ -1132,6 +1167,8 @@
       }
     }
     .ft-head {
+      width: 100%;
+      min-width: 73.6rem;
       padding: 1.2rem;
       font-size: 1.4rem;
       line-height: 2rem;

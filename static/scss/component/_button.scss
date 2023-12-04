@@ -55,18 +55,18 @@
       z-index: -1;
       border-radius: 0.5rem;
       top: 1px;
-      right: 1px;
+      right: 0;
       bottom: 1px;
-      left: 1px;
+      left: 0;
       background-color: var(--white-color);
     }
     &::after {
       z-index: -2;
       border-radius: 0.6rem;
       top: 0;
-      right: 0;
+      right: -1px;
       bottom: 0;
-      left: 0;
+      left: -1px;
       background: linear-gradient(180deg, #aeb6d0 76.39%, #939ab3 100%);
     }
     &:hover,
@@ -136,10 +136,12 @@
     text-align: center;
   }
   &.small {
+    min-width: 5.8rem;
     height: 3.2rem;
     padding: 0.6rem 1.6rem;
     font-size: 1.4rem;
-    line-height: 2rem;
+    text-align: center;
+    // line-height: 2rem;
   }
   &.float-tl {
     position: absolute;

@@ -16764,6 +16764,12 @@ html.is-app {
 .td-notice.ty2::before {
   content: "*";
 }
+.td-notice.ty3 {
+  padding-left: 0;
+}
+.td-notice.ty3::before {
+  content: none;
+}
 
 .record-wrap {
   display: -webkit-box;
@@ -17099,6 +17105,7 @@ html.is-app {
   position: relative;
   border-top: 1px solid var(--line-color01);
   border-bottom: 1px solid var(--line-color01);
+  overflow-x: hidden;
 }
 .folding-table.cs-center .ft-list::after {
   content: none;
@@ -17293,6 +17300,36 @@ html.is-app {
 .folding-table ul li {
   position: relative;
 }
+.folding-table ul li .ft-checkbox {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 10.4rem;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid var(--line-color03);
+}
+.folding-table ul li .ft-checkbox::before {
+  top: 0;
+  bottom: 0;
+}
+.folding-table ul li .ft-checkbox .check-box {
+  line-height: 4.4rem;
+}
+.folding-table ul li .ft-checkbox .check-box input {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.folding-table ul li .ft-checkbox .check-box .checkbox + label {
+  padding: 0;
+}
+.folding-table ul li .ft-checkbox .check-box .checkbox + label:before {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 .folding-table ul li::before {
   content: "";
   z-index: 1;
@@ -17325,6 +17362,7 @@ html.is-app {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 .folding-table .ft-list.open .ico-plus {
   display: none;
@@ -17351,6 +17389,8 @@ html.is-app {
   display: none;
 }
 .folding-table .ft-list .ft-head {
+  width: 100%;
+  min-width: 73.6rem;
   padding: 1.2rem;
   font-size: 1.4rem;
   line-height: 2rem;
@@ -19387,18 +19427,18 @@ jq-Datepicker
   z-index: -1;
   border-radius: 0.5rem;
   top: 1px;
-  right: 1px;
+  right: 0;
   bottom: 1px;
-  left: 1px;
+  left: 0;
   background-color: var(--white-color);
 }
 .button.line::after {
   z-index: -2;
   border-radius: 0.6rem;
   top: 0;
-  right: 0;
+  right: -1px;
   bottom: 0;
-  left: 0;
+  left: -1px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(76.39%, #aeb6d0), to(#939ab3));
   background: linear-gradient(180deg, #aeb6d0 76.39%, #939ab3 100%);
 }
@@ -19460,10 +19500,11 @@ jq-Datepicker
   text-align: center;
 }
 .button.small {
+  min-width: 5.8rem;
   height: 3.2rem;
   padding: 0.6rem 1.6rem;
   font-size: 1.4rem;
-  line-height: 2rem;
+  text-align: center;
 }
 .button.float-tl {
   position: absolute;
@@ -19946,7 +19987,6 @@ jq-Datepicker
   width: 2rem;
   height: 2rem;
 }
-
 .result-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
