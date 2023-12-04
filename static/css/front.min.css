@@ -18488,13 +18488,12 @@ html.is-app {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  width: 59.6rem;
 }
 .dashboard-box.ty2 li:last-child {
   margin-top: 0.8rem;
 }
 .dashboard-box.ty2 li a {
-  width: 59.6rem;
   font-size: 1.6rem;
   line-height: 2.4rem;
   overflow: hidden;
