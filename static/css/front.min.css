@@ -18797,6 +18797,22 @@ html.is-app {
   background: #73c0de;
 }
 
+.testgif {
+  margin: 0 auto;
+  text-align: center;
+}
+.testgif img {
+  width: 83.2rem;
+}
+
+.testgif2 {
+  margin: 0 auto;
+  text-align: center;
+}
+.testgif2 img {
+  width: 83.2rem;
+}
+
 .footer-space {
   background-color: var(--white-color);
 }
