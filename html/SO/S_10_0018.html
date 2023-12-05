@@ -48,25 +48,20 @@
               <table>
                 <colgroup>
                   <col style="width: 12.8rem" />
-                  <col style="width: 32rem" />
-                  <col style="width: 12.8rem" />
-                  <col style="width: 32rem" />
-                  <col style="width: 12.8rem" />
-                  <col style="width: 32rem" />
+                  <col style="width: auto" />
                 </colgroup>
                 <thead>
                   <tr>
-                    <th colspan="6" class="bd-line-2 small-pd">
+                    <th colspan="2" class="bd-line-2 small-pd">
                       <div class="flex space-between align-center">
                         <div class="left">
                           <span class="sub-txt">마켓정보 관리</span>
-                          <span class="small-txt ml-6"> [판매 쇼핑몰 별 ID와 솔루션 연결을 관리합니다.] </span>
+                          <span class="small-txt ml-6">판매 쇼핑몰 별 ID와 솔루션 연결을 관리합니다.</span>
                         </div>
                         <div class="right">
-                          <button class="button small bg-dark open-pop" data-name="S_10_0014">
-                            쇼핑몰/아이디 등록
-                          </button>
-                          <button class="button small bg-dark ml-4">쇼핑몰/아이디 관리</button>
+                          <a href="#none" class="a-link2 mr-16">신청중인 업로드마켓 00 개</a>
+                          <button class="button small bg-dark open-pop" data-name="S_10_0014">마켓계정등록</button>
+                          <button class="button small bg-dark">마켓계정관리</button>
                         </div>
                       </div>
                     </th>
@@ -74,40 +69,54 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th>쇼핑몰 선택</th>
-                    <td colspan="5" class="small-pd">
+                    <th>업로드마켓 선택</th>
+                    <td class="small-pd">
                       <div class="flex">
-                        <button class="button small round off">AAA 쇼핑몰</button>
-                        <button class="button small round on ml-4">BBB 쇼핑몰</button>
-                        <button class="button small round off ml-4">CCC 쇼핑몰</button>
-                        <button class="button small round off ml-4">DDD 쇼핑몰</button>
-                        <button class="button small round off ml-4">EEE 쇼핑몰</button>
-                        <button class="button small round off ml-4">FFF 쇼핑몰</button>
+                        <button class="button small round on">쿠팡</button>
+                        <button class="button small round off ml-4">인터파크</button>
+                        <button class="button small round off ml-4">옥션</button>
+                        <button class="button small round off ml-4">G마켓</button>
+                        <button class="button small round off ml-4">스마트스토어</button>
+                        <button class="button small round off ml-4">11번가</button>
+                        <button class="button small round off ml-4">아모레퍼시픽</button>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <th>연결된 ID</th>
-                    <td colspan="5" class="small-pd">
+                    <th>연결된 계정</th>
+                    <td class="small-pd">
                       <div class="flex">
-                        <button class="button small round on">Abcdef1234</button>
-                        <button class="button small round off ml-4">Abcdef1234</button>
-                        <button class="button small round off ml-4">Abcdef1234</button>
-                        <button class="button small round off ml-4">Abcdef1234</button>
-                        <button class="button small round off ml-4">Abcdef1234</button>
-                        <button class="button small round off ml-4">Abcdef1234</button>
+                        <div class="flex align-center">
+                          <a href="#none" class="a-link4 mr-12">Abcdef1234@marketwidz.com</a
+                          ><button class="button small line">수정/삭제</button>
+                        </div>
+                        <div class="flex align-center ml-24">
+                          <a href="#none" class="a-link4 mr-12">Abcdef1234@marketwidz.com</a
+                          ><button class="button small line">수정/삭제</button>
+                        </div>
+                        <div class="flex align-center ml-24">
+                          <a href="#none" class="a-link4 mr-12">Abcdef1234@marketwidz.com</a
+                          ><button class="button small line">수정/삭제</button>
+                        </div>
                       </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>마켓계정 이용현황</th>
+                    <td class="small-pd">
+                      이용 <span>00</span>개 / 잔여 <span>00</span>개<button class="button mini line ty2 ml-16">
+                        마켓계정 추가
+                      </button>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <!-- 조회(읽기) 모드 -->
-            <div class="table mt-32">
+            <!-- <div class="table mt-16">
               <table>
                 <colgroup>
-                  <col style="width: 13.2rem" />
-                  <col style="width: 42.6rem" />
+                  <col style="width: 12.8rem" />
                   <col style="width: auto" />
                 </colgroup>
                 <thead>
@@ -223,14 +232,13 @@
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </div> -->
             <!-- //조회(읽기) 모드 -->
             <!-- 수정/저장 모드 -->
-            <div class="table mt-32">
+            <div class="table mt-16">
               <table>
                 <colgroup>
-                  <col style="width: 13.2rem" />
-                  <col style="width: 42.6rem" />
+                  <col style="width: 12.8rem" />
                   <col style="width: auto" />
                 </colgroup>
                 <thead>
@@ -238,13 +246,13 @@
                     <th colspan="3" class="bd-line-2 small-pd">
                       <div class="flex space-between align-center">
                         <div class="left">
-                          <span class="sub-txt">쇼핑몰 정보 설정</span>
+                          <span class="sub-txt">업로드마켓 정보설정</span>
                           <span class="small-txt ml-6"
-                            >[연결된 전송 대상 쇼핑몰/임대형 쇼핑몰의 기본 값을 설정합니다.]</span
+                            >연결된 전송 대상 쇼핑몰/임대형 쇼핑몰의 기본 값을 설정합니다.</span
                           >
                         </div>
                         <div class="right">
-                          <button class="button small bg-dark open-pop" data-name="S_10_0014">설정 저장</button>
+                          <button class="button small bg-dark open-pop" data-name="S_10_0014">설정저장</button>
                         </div>
                       </div>
                     </th>
@@ -252,8 +260,8 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th>정보 업데이트 범위</th>
-                    <td colspan="2">
+                    <th class="va-top">정보 업데이트 범위</th>
+                    <td>
                       <div class="flex">
                         <div class="radio-box small">
                           <input type="radio" class="radio" id="update1" name="update" checked />
@@ -264,75 +272,130 @@
                           <label for="update2">전체 정보 업데이트</label>
                         </div>
                       </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>마켓대표 가격</th>
-                    <td class="bd-r-none small-pd">
-                      <div class="select-box w-320">
-                        <button class="init" data-value="value1">상품 대표가격으로 전송</button>
-                        <ul>
-                          <li><button data-value="value1">상품 대표가격으로 전송</button></li>
-                          <li><button data-value="value2">가장 낮은 옵션 가격으로 전송</button></li>
-                          <li><button data-value="value3">가장 높은 옵션 가격으로 전송</button></li>
-                        </ul>
-                      </div>
-                    </td>
-                    <td class="small-pd">
-                      <p class="td-notice">옵션이 있는 상품의 경우 선택한 옵션가격이 마켓의 대표가격으로 전송됩니다.</p>
+                      <p class="td-notice mt-6">
+                        전체정보 업데이트 : 쿠팡은 신규 등록할 때만 모든 정보를 전송하며, 이후 업데이트를 하는 경우
+                        가격/재고 정보만 전송합니다.
+                      </p>
                       <p class="td-notice">
-                        별도 설정을 하지 않으면 수집된 대표가격 또는 상품관리에서 설정한 대표가격이 전송됩니다.
+                        <strong
+                          >[전체정보 업데이트] 를 선택하시면 항상, 이미지 등 전체 정보를 쿠팡으로 전송합니다.</strong
+                        >
+                      </p>
+                      <p class="td-notice">
+                        <strong
+                          >단, 전체정보 업데이트를 하시면 쿠팡 API 가 하루에 허용하는 신규등록 업데이트 콜수 5,000건 중
+                          한 건을 이용하게 되오니, 반드시 해당 내용 확인 후 전체정보 전송하기를 추천드립니다. (일반적인
+                          가격, 재고 업데이트 시에는 쿠팡의 API 콜수가 차감되지 않습니다.)</strong
+                        >
                       </p>
                     </td>
                   </tr>
                   <tr>
-                    <th>옵션 가격</th>
-                    <td class="bd-r-none">
-                      <div class="select-box w-320">
-                        <button class="init" data-value="value1">옵션별 본래 가격으로 전송</button>
-                        <ul>
-                          <li><button data-value="value1">옵션별 본래 가격으로 전송</button></li>
-                          <li><button data-value="value2">마켓대표가격으로 통일하여 전송</button></li>
-                        </ul>
-                      </div>
-                    </td>
-                    <td class="small-pd">
-                      <p class="td-notice">옵션가격을 대표가격으로 통일하여 전송이 필요한 경우 설정합니다.</p>
-                      <p class="td-notice">별도 설정을 하지 않으면 옵션 본래 가격으로 마켓으로 전송됩니다.</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="va-top">정가 설정</th>
+                    <th>정가</th>
                     <td class="bd-r-none va-top small-pd">
                       상품 가격의
                       <span class="ml-8 mr-4"><input type="text" class="input w-112" placeholder="할인율 입력" /></span
                       >% 만큼 추가하여 정가로 설정 합니다.
-                    </td>
-                    <td class="small-pd">
-                      <p class="td-notice">
-                        정가 설정은 [100,000원 → 50,000원] 과 같이 상품의 가격을 할인이 되어 보이게 하는 기능입니다.
+                      <p class="td-notice mt-6">
+                        정가 설정은 [ 100,000원 → 50,000원] 과 같이 상품의 가격을 할인이 되어 보이게 하는 기능입니다.
                       </p>
                       <p class="td-notice">
-                        정가를 계산 과정에서 마켓위즈에 표시되는 상품의 가격과 쇼핑몰의 판매 가격에 약간의 오차가 발생
-                        할 수 있습니다.
-                      </p>
-                      <p class="td-notice">
-                        할인율(%)을 적용하는 방식이기 때문에 [상품 관리 &gt; 상품가격 단위 설정] 관련 메뉴에서의 “단위
-                        절삭“ 기능은 적용되지 않습니다.
+                        정가를 계산 과정에서 마켓위즈에 표시되는 상품의 가격과 업로드마켓의 판매 가격에 약간의 오차가
+                        발생 할 수 있습니다.
                       </p>
                     </td>
                   </tr>
                   <tr>
-                    <th class="va-top">전송 옵션 수(개)</th>
-                    <td class="bd-r-none va-top small-pd">
-                      <input type="text" class="input w-320" placeholder="개수 입력" />
+                    <th class="va-top">마켓대표가격</th>
+                    <td>
+                      <div class="flex">
+                        <div class="radio-box small">
+                          <input type="radio" class="radio" id="update2-1" name="update2" checked />
+                          <label for="update2-1">상품대표가격으로 전송</label>
+                        </div>
+                        <div class="radio-box small">
+                          <input type="radio" class="radio" id="update2-2" name="update2" />
+                          <label for="update2-2">가장 낮은 옵션가격으로 전송</label>
+                        </div>
+                        <div class="radio-box small">
+                          <input type="radio" class="radio" id="update2-3" name="update3" />
+                          <label for="update2-3">가장 높은 옵션가격으로 전송</label>
+                        </div>
+                      </div>
+                      <p class="td-notice mt-6">
+                        마켓대표가격 : 옵션이 있는 상품에 대해서만 적용됩니다. 옵션이 있는 상품의 경우 선택한 옵션가격이
+                        마켓의 대표가격으로 전송됩니다. 별도 설정을 하지 않으면 수집된 대표가격 또는 상품관리에서 설정한
+                        대표가격이 마켓의 대표가격으로 전송됩니다.
+                      </p>
                     </td>
-                    <td class="small-pd">
-                      <p class="td-notice">쇼핑몰에 전송되는 옵션의 개수를 설정하세요.</p>
+                  </tr>
+
+                  <tr>
+                    <th class="va-top">전송 옵션개수</th>
+                    <td class="">
+                      <div class="flex">
+                        <div class="radio-box small">
+                          <input type="radio" class="radio" id="update3-1" name="update3" checked />
+                          <label for="update3-1">옵션별 가격으로 전송</label>
+                        </div>
+                        <div class="radio-box small">
+                          <input type="radio" class="radio" id="update3-2" name="update3" />
+                          <label for="update3-2">마켓대표가격으로 전송</label>
+                        </div>
+                      </div>
+                      <p class="td-notice mt-6">
+                        옵션가격 : 옵션가격을 대표가격으로 통일하여 전송이 필요한 경우 설정합니다. 별도 설정을 하지
+                        않으면 옵션 원 가격으로 마켓으로 전송됩니다
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="va-top">전송 옵션 개수</th>
+                    <td class="bd-r-none va-top small-pd">
+                      <input type="text" class="input w-180" placeholder="개수 입력" />
+                      <span class="ml-2">개</span>
+                      <p class="td-notice mt-6">쇼핑몰에 전송되는 옵션의 개수를 설정하세요.</p>
                       <p class="td-notice">옵션은 명칭을 기준으로 오름차순으로 정렬 됩니다.</p>
                       <p class="td-notice">
                         실제 옵션의 수가 입력된 수 보다 많은 경우, 입력된 옵션 수 까지만 전송되며, 옵션 수를 입력하지
                         않으면 모든 옵션이 전송 됩니다.
+                      </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="va-top">단일상품등록설정</th>
+                    <td colspan="2">
+                      <div class="check-box sm-check">
+                        <input type="checkbox" class="checkbox" id="option1" checked />
+                        <label for="option1" class="lbl"
+                          >옵션 조합이 1개인 상품을 옵션 등록 없이 단일 상품으로 등록 합니다.</label
+                        >
+                      </div>
+                      <p class="fc-grey mt-4 ml-28">
+                        [예] 색상 : 핑크 / 사이즈 : 55 인 상품도 옵션 조합은 핑크+55 1개 이므로 단일상품으로 등록됨.
+                      </p>
+
+                      <div class="check-box sm-check mt-12">
+                        <input type="checkbox" class="checkbox" id="option2" />
+                        <label for="option2" class="lbl"
+                          >단일 상품 등록 시 옵션 내용을 상품명 뒤에 포함합니다. (단, 옵션 내용이 포함되어 쇼핑몰에서의
+                          상품명 길이를 초과하는 경우 옵션 내용은 전송되지 않을 수 있습니다.)</label
+                        >
+                      </div>
+
+                      <p class="fc-grey mt-4 ml-28">
+                        [예] 상품명 : 아망떼 극세사 차렵이불 / 옵션명 : 베이지 → 아망떼 극세사 차렵이불 베이지 (단,
+                        옵션내용을 포함할 경우 마켓에서 허용하는 상품명 길이를 초과하면 옵션내용은 전송되지 않을 수
+                        있습니다.)
+                      </p>
+                      <p class="td-notice mt-6">일부 카테고리에 대해 상품등록시 옵션등록을 제한하고 있습니다.</p>
+                      <p class="td-notice">
+                        옵션조합이 1개인 상품을 옵션등록이 제한된 카테고리에 등록할 때, 옵션 없이 단일상품으로 등록하기
+                        위함입니다. 모든 카테고리에 적용되지 않습니다.
+                      </p>
+                      <p class="td-notice">
+                        옵션조합이 2개 이상인 상품은 옵션등록이 가능한 유사 카테고리로 변경하여 전송하시면 됩니다.
                       </p>
                     </td>
                   </tr>
@@ -350,96 +413,87 @@
                         </div>
                       </div>
                     </td>
-                    <td class="small-pd">
-                      <p class="td-notice">옵션가격을 대표가격으로 통일하여 전송이 필요한 경우 설정합니다.</p>
-                    </td>
                   </tr>
                   <tr>
-                    <th class="va-top">단일 상품 등록 설정</th>
-                    <td colspan="2">
-                      <div class="check-box sm-check">
-                        <input type="checkbox" class="checkbox" id="option1" checked />
-                        <label for="option1" class="lbl"
-                          >옵션 조합이 1개인 상품을 옵션 등록 없이 단일 상품으로 등록 합니다.</label
-                        >
-                      </div>
-                      <p class="fc-grey mt-4 ml-28">
-                        [예시] “색상 : 블랙 / 사이즈 : XL” 상품 → 옵션 조합은 “블랙 + XL 1개“ 이므로 단일 상품으로 등록
-                      </p>
-
-                      <div class="check-box sm-check mt-12">
-                        <input type="checkbox" class="checkbox" id="option2" />
-                        <label for="option2" class="lbl"
-                          >단일 상품 등록 시 옵션 내용을 상품명 뒤에 포함합니다. (단, 옵션 내용이 포함되어 쇼핑몰에서의
-                          상품명 길이를 초과하는 경우 옵션 내용은 전송되지 않을 수 있습니다.)</label
-                        >
-                      </div>
-
-                      <p class="fc-grey mt-4 ml-28">
-                        [예시] 상품명 : 나이키 조건 운동화 / 옵션 : 블랙 → 상품명 : 나이키 조던 운동화 블랙
-                      </p>
-                      <p class="td-notice mt-12 lh-18">
-                        옥션 또는 G마켓은 일부 카테고리에 대해 상품 등록 시 옵션 등록을 제한하고 있습니다.
-                      </p>
-                      <p class="td-notice lh-18">
-                        옵션등록이 제한된 카테고리에 옵션 조합이 1개인 상품을 등록할 경우, 옵션 없이 단일 상품으로
-                        등록하기 위한 설정입니다. 모든 카테고리에 적용되지는 않습니다.
-                      </p>
-                      <p class="td-notice lh-18">
-                        옵션조합이 2개 이상인 상품은 옵션 등록이 가능한 유사 카테고리로 변경하여 전송하시기 바랍니다.
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="va-top">
-                      택배 업체
-                      <div class="check-box sm-check mt-6">
-                        <input type="checkbox" class="checkbox" id="selectAll" />
-                        <label for="selectAll" class="lbl">전체 선택</label>
-                      </div>
-                    </th>
+                    <th class="va-top">택배 업체</th>
                     <td colspan="2">
                       <div class="flex">
-                        <div class="check-box sm-check w-96">
+                        <div class="check-box sm-check">
                           <input type="checkbox" class="checkbox" id="menu-name1" />
-                          <label for="menu-name1" class="lbl">AAA 택배사</label>
+                          <label for="menu-name1" class="lbl">전체선택</label>
                         </div>
-                        <div class="check-box sm-check w-96">
+                        <div class="check-box sm-check">
                           <input type="checkbox" class="checkbox" id="menu-name2" checked />
-                          <label for="menu-name2" class="lbl">BBB 택배사</label>
+                          <label for="menu-name2" class="lbl">롯데택배</label>
                         </div>
-                        <div class="check-box sm-check w-96">
+                        <div class="check-box sm-check">
                           <input type="checkbox" class="checkbox" id="menu-name3" checked />
-                          <label for="menu-name3" class="lbl">CCC 택배사</label>
+                          <label for="menu-name3" class="lbl">로젠택배</label>
                         </div>
-                        <div class="check-box sm-check w-96">
+                        <div class="check-box sm-check">
                           <input type="checkbox" class="checkbox" id="menu-name4" />
-                          <label for="menu-name4" class="lbl">DDD 택배사</label>
+                          <label for="menu-name4" class="lbl">우체국</label>
                         </div>
-                        <div class="check-box sm-check w-96">
+                        <div class="check-box sm-check">
                           <input type="checkbox" class="checkbox" id="menu-name5" />
-                          <label for="menu-name5" class="lbl">EEE 택배사</label>
+                          <label for="menu-name5" class="lbl">한진택배</label>
                         </div>
-                      </div>
-                      <div class="flex mt-12">
-                        <div class="check-box sm-check w-96">
+                        <div class="check-box sm-check">
                           <input type="checkbox" class="checkbox" id="menu-name6" checked />
-                          <label for="menu-name6" class="lbl">FFF 택배사</label>
+                          <label for="menu-name6" class="lbl">CJ대한통운</label>
                         </div>
-                        <div class="check-box sm-check w-96">
+                        <div class="check-box sm-check">
                           <input type="checkbox" class="checkbox" id="menu-name7" checked />
-                          <label for="menu-name7" class="lbl">GGG 택배사</label>
+                          <label for="menu-name7" class="lbl">경동택배</label>
                         </div>
-                        <div class="check-box sm-check w-96">
+                        <div class="check-box sm-check">
                           <input type="checkbox" class="checkbox" id="menu-name8" />
-                          <label for="menu-name8" class="lbl">HHH 택배사</label>
+                          <label for="menu-name8" class="lbl">일양택배</label>
                         </div>
-                        <div class="check-box sm-check w-96">
+                        <div class="check-box sm-check">
                           <input type="checkbox" class="checkbox" id="menu-name9" checked />
-                          <label for="menu-name9" class="lbl">GGG 택배사</label>
+                          <label for="menu-name9" class="lbl">천일특송</label>
                         </div>
                       </div>
-                      <p class="td-notice mt-12">
+                      <div class="flex mt-6">
+                        <div class="check-box sm-check">
+                          <input type="checkbox" class="checkbox" id="menu-name10" />
+                          <label for="menu-name10" class="lbl">전체선택</label>
+                        </div>
+                        <div class="check-box sm-check">
+                          <input type="checkbox" class="checkbox" id="menu-name11" checked />
+                          <label for="menu-name11" class="lbl">롯데택배</label>
+                        </div>
+                        <div class="check-box sm-check">
+                          <input type="checkbox" class="checkbox" id="menu-name12" checked />
+                          <label for="menu-name12" class="lbl">로젠택배</label>
+                        </div>
+                        <div class="check-box sm-check">
+                          <input type="checkbox" class="checkbox" id="menu-name13" />
+                          <label for="menu-name13" class="lbl">우체국</label>
+                        </div>
+                        <div class="check-box sm-check">
+                          <input type="checkbox" class="checkbox" id="menu-name14" />
+                          <label for="menu-name14" class="lbl">한진택배</label>
+                        </div>
+                        <div class="check-box sm-check">
+                          <input type="checkbox" class="checkbox" id="menu-name15" checked />
+                          <label for="menu-name15" class="lbl">CJ대한통운</label>
+                        </div>
+                        <div class="check-box sm-check">
+                          <input type="checkbox" class="checkbox" id="menu-name16" checked />
+                          <label for="menu-name16" class="lbl">경동택배</label>
+                        </div>
+                        <div class="check-box sm-check">
+                          <input type="checkbox" class="checkbox" id="menu-name17" />
+                          <label for="menu-name17" class="lbl">일양택배</label>
+                        </div>
+                        <div class="check-box sm-check">
+                          <input type="checkbox" class="checkbox" id="menu-name18" checked />
+                          <label for="menu-name18" class="lbl">천일특송</label>
+                        </div>
+                      </div>
+                      <p class="td-notice mt-6">
                         자주 이용하는 택배업체를 선택하세요. [주문/클레임 관리] 메뉴에서 발송 정보 입력 시 선택된
                         택배업체만 선택항목으로 제공됩니다.
                       </p>
