@@ -23,10 +23,10 @@
           <ul>
             <li class="tab"><a href="#none" data-tab="form-guide">폼 가이드</a><span class="close-tab">닫기</span></li>
             <li class="tab"><a href="#none" data-tab="lnb-guide">lnb 가이드</a><span class="close-tab">닫기</span></li>
-            <li class="tab">
+            <li class="tab active">
               <a href="#none" data-tab="table-guide">테이블 가이드</a><span class="close-tab">닫기</span>
             </li>
-            <li class="tab active">
+            <li class="tab">
               <a href="#none" data-tab="popup-guide">팝업 가이드</a><span class="close-tab">닫기</span>
             </li>
           </ul>
@@ -344,7 +344,7 @@
         </div>
 
         <!-- 팝업 가이드 -->
-        <div class="tab-content active" id="popup-guide">
+        <div class="tab-content" id="popup-guide">
           <h2 class="guide-tit">POPUP</h2>
           <div class="flex mt-20">
             <div class="popup has-tit w640 open" id="">
@@ -1719,7 +1719,7 @@
         </div>
 
         <!-- 테이블 가이드 -->
-        <div class="tab-content" id="table-guide">
+        <div class="tab-content active" id="table-guide">
           <h2 class="guide-tit">Table type1</h2>
           <div class="table mt-16">
             <table>
@@ -2600,7 +2600,8 @@
                 </div>
                 <div class="flex align-center">
                   <button class="button small bg-dark">저장</button>
-                  <div class="ft-checkbox">
+
+                  <div class="ft-checkbox w-92">
                     <div class="check-box sm-check">
                       <input type="checkbox" class="checkbox" id="chkTest6" disabled checked />
                       <label for="chkTest6" class="lbl">권한설정</label>
@@ -2610,100 +2611,191 @@
               </div>
               <ul class="depth-1">
                 <li class="">
-                  <a href="#none" class="ft-list">
-                    <i class="ico-plus"></i>
-
-                    <i class="ico-minus"></i>
-                    <div class="ft-head">상품수집관리</div>
-                  </a>
+                  <div class="flex space-between">
+                    <a href="#none" class="ft-list">
+                      <i class="ico-plus"></i>
+                      <i class="ico-minus"></i>
+                      <div class="ft-head">상품수집관리</div>
+                    </a>
+                    <div class="ft-checkbox">
+                      <div class="check-box sm-check">
+                        <input type="checkbox" class="checkbox" id="chkTest23" checked="" disabled="" />
+                        <label for="chkTest23" class="lbl"></label>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li class="open">
                   <!-- <a> tag 클릭 시 <a>태그와 바로 위 li 태그에 open class 추가 -->
-                  <a href="#none" class="ft-list open">
-                    <!-- 클릭 전 '+' -->
-                    <i class="ico-plus"></i>
-                    <!-- 클릭 후 '-' -->
-                    <i class="ico-minus"></i>
-                    <div class="ft-head">상품관리</div>
-                  </a>
+                  <div class="flex space-between">
+                    <a href="#none" class="ft-list open">
+                      <!-- 클릭 전 '+' -->
+                      <i class="ico-plus"></i>
+                      <!-- 클릭 후 '-' -->
+                      <i class="ico-minus"></i>
+                      <div class="ft-head">상품관리</div>
+                    </a>
+                    <div class="ft-checkbox">
+                      <div class="check-box sm-check">
+                        <input type="checkbox" class="checkbox" id="chkTest24" checked="" disabled="" />
+                        <label for="chkTest24" class="lbl"></label>
+                      </div>
+                    </div>
+                  </div>
                   <ul class="depth-2">
                     <li class="">
-                      <a href="#none" class="ft-list">
-                        <i class="ico-plus"></i>
-                        <i class="ico-minus"></i>
-                        <div class="ft-head">상품기본관리</div>
-                      </a>
+                      <div class="flex space-between">
+                        <a href="#none" class="ft-list">
+                          <i class="ico-plus"></i>
+                          <i class="ico-minus"></i>
+                          <div class="ft-head">상품기본관리</div>
+                        </a>
+                        <div class="ft-checkbox">
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="chkTest25" checked="" disabled="" />
+                            <label for="chkTest25" class="lbl"></label>
+                          </div>
+                        </div>
+                      </div>
                     </li>
                     <li class="open">
-                      <a href="#none" class="ft-list open">
-                        <i class="ico-plus"></i>
-                        <i class="ico-minus"></i>
-                        <div class="ft-head">마켓상품관리</div>
-                      </a>
+                      <div class="flex space-between">
+                        <a href="#none" class="ft-list open">
+                          <i class="ico-plus"></i>
+                          <i class="ico-minus"></i>
+                          <div class="ft-head">마켓상품관리</div>
+                        </a>
+                        <div class="ft-checkbox">
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="chkTest26" checked="" disabled="" />
+                            <label for="chkTest26" class="lbl"></label>
+                          </div>
+                        </div>
+                      </div>
                       <ul class="depth-3">
                         <li class="open">
-                          <a href="#none" class="ft-list open">
-                            <i class="ico-plus"></i>
-                            <i class="ico-minus"></i>
-                            <div class="ft-head">상품업데이트/마켓전송</div>
-                          </a>
+                          <div class="flex space-between">
+                            <a href="#none" class="ft-list open">
+                              <i class="ico-plus"></i>
+                              <i class="ico-minus"></i>
+                              <div class="ft-head">상품업데이트/마켓전송</div>
+                            </a>
+                            <div class="ft-checkbox">
+                              <div class="check-box sm-check">
+                                <input type="checkbox" class="checkbox" id="chkTest27" checked="" disabled="" />
+                                <label for="chkTest27" class="lbl"></label>
+                              </div>
+                            </div>
+                          </div>
                         </li>
                         <li class="open">
-                          <a href="#none" class="ft-list open">
-                            <i class="ico-plus"></i>
-                            <i class="ico-minus"></i>
-                            <div class="ft-head">마켓상품삭제/품절</div>
-                          </a>
+                          <div class="flex space-between">
+                            <a href="#none" class="ft-list open">
+                              <i class="ico-plus"></i>
+                              <i class="ico-minus"></i>
+                              <div class="ft-head">마켓상품삭제/품절</div>
+                            </a>
+                            <div class="ft-checkbox">
+                              <div class="check-box sm-check">
+                                <input type="checkbox" class="checkbox" id="chkTest28" checked="" disabled="" />
+                                <label for="chkTest28" class="lbl"></label>
+                              </div>
+                            </div>
+                          </div>
                         </li>
                         <li class="open">
-                          <a href="#none" class="ft-list open">
-                            <i class="ico-plus"></i>
-                            <i class="ico-minus"></i>
-                            <div class="ft-head">상품이미지 번역/복원</div>
-                          </a>
+                          <div class="flex space-between">
+                            <a href="#none" class="ft-list open">
+                              <i class="ico-plus"></i>
+                              <i class="ico-minus"></i>
+                              <div class="ft-head">상품이미지 번역/복원</div>
+                            </a>
+                            <div class="ft-checkbox">
+                              <div class="check-box sm-check">
+                                <input type="checkbox" class="checkbox" id="chkTest29" checked="" disabled="" />
+                                <label for="chkTest29" class="lbl"></label>
+                              </div>
+                            </div>
+                          </div>
                         </li>
                         <li>
-                          <a href="#none" class="ft-list open">
-                            <i class="ico-plus"></i>
-                            <i class="ico-minus"></i>
-                            <div class="ft-head">옵션자동넘버링</div>
-                          </a>
+                          <div class="flex space-between">
+                            <a href="#none" class="ft-list open">
+                              <i class="ico-plus"></i>
+                              <i class="ico-minus"></i>
+                              <div class="ft-head">옵션자동넘버링</div>
+                            </a>
+                            <div class="ft-checkbox">
+                              <div class="check-box sm-check">
+                                <input type="checkbox" class="checkbox" id="chkTest30" checked="" disabled="" />
+                                <label for="chkTest30" class="lbl"></label>
+                              </div>
+                            </div>
+                          </div>
                         </li>
                       </ul>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#none" class="ft-list">
-                    <i class="ico-plus"></i>
-
-                    <i class="ico-minus"></i>
-                    <div class="ft-head">정책성/적용관리</div>
-                  </a>
+                  <div class="flex space-between">
+                    <a href="#none" class="ft-list">
+                      <i class="ico-plus"></i>
+                      <i class="ico-minus"></i>
+                      <div class="ft-head">정책성/적용관리</div>
+                    </a>
+                    <div class="ft-checkbox">
+                      <div class="check-box sm-check">
+                        <input type="checkbox" class="checkbox" id="chkTest31" checked="" disabled="" />
+                        <label for="chkTest31" class="lbl"></label>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li>
-                  <a href="#none" class="ft-list">
-                    <i class="ico-plus"></i>
-
-                    <i class="ico-minus"></i>
-                    <div class="ft-head">주문/클레임관리</div>
-                  </a>
+                  <div class="flex space-between">
+                    <a href="#none" class="ft-list">
+                      <i class="ico-plus"></i>
+                      <i class="ico-minus"></i>
+                      <div class="ft-head">주문/클레임관리</div>
+                    </a>
+                    <div class="ft-checkbox">
+                      <div class="check-box sm-check">
+                        <input type="checkbox" class="checkbox" id="chkTest32" checked="" disabled="" />
+                        <label for="chkTest32" class="lbl"></label>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li>
-                  <a href="#none" class="ft-list">
-                    <i class="ico-plus"></i>
-
-                    <i class="ico-minus"></i>
-                    <div class="ft-head">문의관리</div>
-                  </a>
+                  <div class="flex space-between">
+                    <a href="#none" class="ft-list">
+                      <i class="ico-plus"></i>
+                      <i class="ico-minus"></i>
+                      <div class="ft-head">문의관리</div>
+                    </a>
+                    <div class="ft-checkbox">
+                      <div class="check-box sm-check">
+                        <input type="checkbox" class="checkbox" id="chkTest33" checked="" disabled="" />
+                        <label for="chkTest33" class="lbl"></label>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li>
-                  <a href="#none" class="ft-list">
-                    <i class="ico-plus"></i>
-
-                    <i class="ico-minus"></i>
-                    <div class="ft-head">환경설정</div>
-                  </a>
+                  <div class="flex space-between">
+                    <a href="#none" class="ft-list">
+                      <i class="ico-plus"></i>
+                      <i class="ico-minus"></i>
+                      <div class="ft-head">환경설정</div>
+                    </a>
+                    <div class="ft-checkbox">
+                      <div class="check-box sm-check">
+                        <input type="checkbox" class="checkbox" id="chkTest34" checked="" disabled="" />
+                        <label for="chkTest34" class="lbl"></label>
+                      </div>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
