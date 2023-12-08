@@ -2471,7 +2471,7 @@
 .contents-box {
   padding-top: 16rem;
   &:last-child {
-    padding-bottom: 16rem;
+    // padding-bottom: 16rem;
   }
   &.contents-1 {
     height: 80rem;
@@ -2491,8 +2491,6 @@
         margin-top: 0.4rem;
       }
     }
-  }
-  &.contents-3 {
   }
 }
 .intro {

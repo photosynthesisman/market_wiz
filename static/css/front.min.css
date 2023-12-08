@@ -15611,8 +15611,6 @@ html.is-app {
           justify-content: space-between;
   top: 0;
   padding-left: 3.2rem;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   background-color: var(--primary-color2);
   color: var(--white-color);
 }
@@ -15620,6 +15618,7 @@ html.is-app {
   padding: 0 1.6rem;
 }
 .header-space.bo {
+  width: 100%;
   height: 8rem;
   padding-right: 0.8rem;
   background-color: #2d3036;
@@ -18800,9 +18799,6 @@ html.is-app {
 .contents-box {
   padding-top: 16rem;
 }
-.contents-box:last-child {
-  padding-bottom: 16rem;
-}
 .contents-box.contents-1 {
   height: 80rem;
   margin-top: 11.2rem;
@@ -18822,6 +18818,7 @@ html.is-app {
 .contents-box.contents-1 p + p {
   margin-top: 0.4rem;
 }
+
 .intro {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20922,6 +20919,8 @@ input[type=date]:disabled {
 
 .tab-content {
   display: none;
+  min-width: 100%;
+  max-width: 1440px;
   height: 100%;
   padding: 4rem 4.8rem 6.4rem;
   background-color: var(--white-color);

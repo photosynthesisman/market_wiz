@@ -78,6 +78,8 @@
 
 .tab-content {
   display: none;
+  min-width: 100%;
+  max-width: 1440px;
   height: 100%;
   padding: 4rem 4.8rem 6.4rem;
   background-color: var(--white-color);
