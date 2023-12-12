@@ -16297,7 +16297,7 @@ html.is-app {
 }
 
 .fixed-wrap {
-  position: absolute;
+  position: fixed;
   z-index: 10;
   bottom: 4rem;
   right: 4rem;
@@ -16408,6 +16408,10 @@ html.is-app {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+.login .join-wrap {
+  position: relative;
+  padding-bottom: 6.4rem;
+}
 .login .join-form {
   margin: 0 auto;
   padding-top: 18.4rem;
@@ -16421,7 +16425,6 @@ html.is-app {
 }
 .login .join-form .form-box {
   margin-top: 3.2rem;
-  margin-bottom: 6.4rem;
   padding: 5.6rem;
   background-color: var(--white-color);
   border-radius: 2rem;
@@ -16486,8 +16489,9 @@ html.is-app {
   text-align: center;
 }
 .login .login-complete {
+  position: relative;
   margin-top: 11.2rem;
-  padding: 7.2rem 0 6.4rem;
+  padding: 7.2rem 0 12rem;
 }
 .login .login-complete > p {
   font-size: 3.2rem;
@@ -16496,32 +16500,28 @@ html.is-app {
   text-align: center;
 }
 .login .login-complete .button {
-  width: 28rem;
+  width: 32rem;
   height: 5.6rem;
   font-size: 1.8rem;
   text-align: center;
 }
-.login .login-complete .button + .button {
-  margin-left: 0.8rem;
-}
 .login .login-complete .solution-signup {
-  width: 1280px;
-  margin: 4rem auto 0;
-  padding: 7.2rem 10rem;
-  background-color: var(--white-color);
-  border-radius: 2rem;
-  -webkit-box-shadow: 12px 12px 20px -10px rgba(0, 0, 0, 0.0784313725);
-          box-shadow: 12px 12px 20px -10px rgba(0, 0, 0, 0.0784313725);
+  width: 93.8rem;
+  height: 50.2rem;
+  margin: 6rem auto 0;
   text-align: center;
+  background: url(../images/common/solution-sign-up.png);
 }
 .login .login-complete .solution-signup h3 {
+  padding-top: 9rem;
   font-size: 4rem;
   line-height: 4.8rem;
 }
 .login .login-complete .solution-signup h3 + p {
-  margin-top: 1.6rem;
-  font-size: 2.4rem;
-  line-height: 2.8rem;
+  margin-top: 1rem;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  font-weight: 500;
   color: var(--strong-txt-color);
 }
 .login .login-complete .solution-signup .solution-summary {
@@ -16531,7 +16531,6 @@ html.is-app {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 4rem;
 }
 .login .login-complete .solution-signup .solution-summary div {
   position: relative;
@@ -16567,8 +16566,8 @@ html.is-app {
 .login .login-complete .solution-signup .solution-summary div:last-child::after {
   content: none;
 }
-.login .login-complete .solution-signup .btn-center {
-  margin-top: 4rem;
+.login .login-complete .btn-center {
+  margin-top: 8rem;
   text-align: center;
 }
 
@@ -17809,17 +17808,17 @@ html.is-app {
 
 .join-complete {
   margin-top: 4rem;
-  padding-bottom: 5.6rem;
+  padding-bottom: 12rem;
   text-align: center;
 }
 .join-complete img {
   display: block;
-  width: 48rem;
-  height: 35rem;
+  width: 70rem;
+  height: 39.6rem;
   margin: 0 auto;
 }
 .join-complete .button {
-  margin-top: 5.6rem;
+  margin-top: 6rem;
 }
 
 .cs-center-wrap {
@@ -17936,17 +17935,28 @@ html.is-app {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 6.4rem;
 }
 .service-summary div {
   position: relative;
-  width: 24rem;
-  height: 24rem;
-  margin-right: 4rem;
-  padding: 2.4rem 3.2rem;
-  background-color: var(--disabled-bg-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20rem;
+  height: 20rem;
+  margin-right: 4.4rem;
+  padding: 3.2rem 2.4rem 2.4rem;
+  background-color: var(--white-color);
+  -webkit-box-shadow: 12px 12px 20px -10px rgba(0, 0, 0, 0.0784313725);
+          box-shadow: 12px 12px 20px -10px rgba(0, 0, 0, 0.0784313725);
   border-radius: 16px;
-  border: 1px solid var(--line-color02);
+  text-align: center;
 }
 .service-summary div:after {
   content: "";
@@ -17956,13 +17966,27 @@ html.is-app {
           transform: translateY(-50%);
   width: 1.2rem;
   height: 1.2rem;
-  right: -2.7rem;
+  right: -2.8rem;
   background-image: url("data:image/svg+xml,%0A%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.63804 12V7.36196H0V4.63804H4.63804V0H7.33742V4.63804H12V7.36196H7.33742V12H4.63804Z' fill='%2342444E'/%3E%3C/svg%3E%0A");
 }
+.service-summary div img {
+  width: 8.8rem;
+  height: 8.8rem;
+  margin: 0 auto;
+}
 .service-summary div p {
-  margin-top: 2.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 4.6rem;
   font-size: 1.8rem;
-  line-height: 2.6rem;
+  line-height: 2.3rem;
   font-weight: 600;
 }
 .service-summary div:last-child {
@@ -18867,6 +18891,13 @@ html.is-app {
   text-align: center;
 }
 
+.mo .button.mini.round {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  background-color: var(--disabled-bg-color);
+  border: 1px solid var(--line-color02);
+  color: var(--sub-txt-color);
+}
 .mo .tab-line-menu {
   border-bottom: 0;
 }
@@ -18930,13 +18961,6 @@ html.is-app {
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 2rem;
-}
-.mo .contents dd .button.mini.round {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  background-color: var(--disabled-bg-color);
-  border: 1px solid var(--line-color02);
-  color: var(--sub-txt-color);
 }
 .mo .contents dd .select-box + .input-box,
 .mo .contents dd .select-box + .select-box,
@@ -19113,12 +19137,12 @@ html.is-app {
   line-height: 1.8rem;
   color: var(--sub-txt-color);
 }
-.mo .btn-list .left a {
+.mo .btn-list div a {
   position: relative;
   margin-right: 0.6rem;
   padding-right: 0.8rem;
 }
-.mo .btn-list .left a::after {
+.mo .btn-list div a::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -19128,6 +19152,13 @@ html.is-app {
   width: 1px;
   height: 1.2rem;
   background-color: var(--bg-color-blue02);
+}
+.mo .btn-list div a:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+.mo .btn-list div a:last-child::after {
+  content: none;
 }
 .mo .check-wrap {
   display: -webkit-box;
@@ -19141,7 +19172,9 @@ html.is-app {
           align-items: center;
 }
 .mo .check-wrap.has-bd {
-  margin: 1.6rem -1.6rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1.6rem -1.6rem 0;
   padding: 1.2rem 1.6rem;
   border-top: 1px solid var(--line-color02);
   border-bottom: 1px solid var(--line-color02);
@@ -19152,7 +19185,7 @@ html.is-app {
 }
 .mo .product-list li {
   margin: 0 -1.6rem;
-  padding: 0 1.6rem 1.6rem;
+  padding: 1.6rem;
   border-bottom: 1px solid var(--line-color02);
 }
 .mo .product-detail {
@@ -19166,6 +19199,30 @@ html.is-app {
 }
 .mo .product-code + p {
   margin-bottom: 0.8rem;
+}
+.mo .search-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -2.4rem -1.6rem 2.4rem;
+  padding: 0 1.6rem;
+  height: 4.8rem;
+  background-color: var(--disabled-bg-color);
+  border-bottom: 1px solid var(--line-color02);
+  font-weight: 600;
+}
+.mo .search-tab p {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+.mo .search-tab div {
+  font-size: 1.3rem;
 }
 
 .footer-space {
@@ -20184,6 +20241,30 @@ jq-Datepicker
   height: 2rem;
   padding: 0;
   border-radius: 1.4rem;
+}
+.check-box.switch.btn-ty {
+  position: relative;
+  width: 16rem;
+  height: 3.2rem;
+}
+.check-box.switch.btn-ty::before {
+  z-index: -1;
+  border-radius: 0.5rem;
+  top: 1px;
+  right: 0;
+  bottom: 1px;
+  left: 0;
+  background-color: var(--white-color);
+}
+.check-box.switch.btn-ty::after {
+  z-index: -2;
+  border-radius: 0.6rem;
+  top: 0;
+  right: -1px;
+  bottom: 0;
+  left: -1px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(76.39%, #aeb6d0), to(#939ab3));
+  background: linear-gradient(180deg, #aeb6d0 76.39%, #939ab3 100%);
 }
 .check-box.switch .checkbox {
   width: 4.4rem;

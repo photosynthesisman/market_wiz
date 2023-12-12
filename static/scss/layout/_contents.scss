@@ -91,7 +91,7 @@
   color: var(--white-color);
 }
 .fixed-wrap {
-  position: absolute;
+  position: fixed;
   z-index: 10;
   bottom: 4rem;
   right: 4rem;
@@ -216,6 +216,10 @@
   //   font-size: 3.2rem;
   //   line-height: 3.2rem;
   // }
+  .join-wrap {
+    position: relative;
+    padding-bottom: 6.4rem;
+  }
   .join-form {
     margin: 0 auto;
     padding-top: 18.4rem;
@@ -228,7 +232,7 @@
     }
     .form-box {
       margin-top: 3.2rem;
-      margin-bottom: 6.4rem;
+
       padding: 5.6rem;
       background-color: var(--white-color);
       border-radius: 2rem;
@@ -294,8 +298,9 @@
     }
   }
   .login-complete {
+    position: relative;
     margin-top: 11.2rem;
-    padding: 7.2rem 0 6.4rem;
+    padding: 7.2rem 0 12rem;
     > p {
       font-size: 3.2rem;
       font-weight: 700;
@@ -303,36 +308,32 @@
       text-align: center;
     }
     .button {
-      width: 28rem;
+      width: 32rem;
       height: 5.6rem;
       font-size: 1.8rem;
       text-align: center;
-      + .button {
-        margin-left: 0.8rem;
-      }
     }
     .solution-signup {
-      width: 1280px;
-      margin: 4rem auto 0;
-      padding: 7.2rem 10rem;
-      background-color: var(--white-color);
-      border-radius: 2rem;
-      box-shadow: 12px 12px 20px -10px #00000014;
+      width: 93.8rem;
+      height: 50.2rem;
+      margin: 6rem auto 0;
       text-align: center;
+      background: url(../images/common/solution-sign-up.png);
       h3 {
+        padding-top: 9rem;
         font-size: 4rem;
         line-height: 4.8rem;
         & + p {
-          margin-top: 1.6rem;
-          font-size: 2.4rem;
-          line-height: 2.8rem;
+          margin-top: 1rem;
+          font-size: 2.2rem;
+          line-height: 3.2rem;
+          font-weight: 500;
           color: var(--strong-txt-color);
         }
       }
       .solution-summary {
         display: flex;
         justify-content: space-between;
-        margin-top: 4rem;
         div {
           position: relative;
           width: 24rem;
@@ -367,10 +368,10 @@
           }
         }
       }
-      .btn-center {
-        margin-top: 4rem;
-        text-align: center;
-      }
+    }
+    .btn-center {
+      margin-top: 8rem;
+      text-align: center;
     }
   }
 }
@@ -1550,16 +1551,16 @@
 }
 .join-complete {
   margin-top: 4rem;
-  padding-bottom: 5.6rem;
+  padding-bottom: 12rem;
   text-align: center;
   img {
     display: block;
-    width: 48rem;
-    height: 35rem;
+    width: 70rem;
+    height: 39.6rem;
     margin: 0 auto;
   }
   .button {
-    margin-top: 5.6rem;
+    margin-top: 6rem;
   }
 }
 .cs-center-wrap {
@@ -1652,16 +1653,19 @@
 .service-summary {
   display: flex;
   justify-content: center;
-  margin-top: 6.4rem;
   div {
     position: relative;
-    width: 24rem;
-    height: 24rem;
-    margin-right: 4rem;
-    padding: 2.4rem 3.2rem;
-    background-color: var(--disabled-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20rem;
+    height: 20rem;
+    margin-right: 4.4rem;
+    padding: 3.2rem 2.4rem 2.4rem;
+    background-color: var(--white-color);
+    box-shadow: 12px 12px 20px -10px #00000014;
     border-radius: 16px;
-    border: 1px solid var(--line-color02);
+    text-align: center;
     &:after {
       content: "";
       position: absolute;
@@ -1669,13 +1673,21 @@
       transform: translateY(-50%);
       width: 1.2rem;
       height: 1.2rem;
-      right: -2.7rem;
+      right: -2.8rem;
       background-image: url("data:image/svg+xml,%0A%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.63804 12V7.36196H0V4.63804H4.63804V0H7.33742V4.63804H12V7.36196H7.33742V12H4.63804Z' fill='%2342444E'/%3E%3C/svg%3E%0A");
     }
+    img {
+      width: 8.8rem;
+      height: 8.8rem;
+      margin: 0 auto;
+    }
     p {
-      margin-top: 2.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 4.6rem;
       font-size: 1.8rem;
-      line-height: 2.6rem;
+      line-height: 2.3rem;
       font-weight: 600;
     }
     &:last-child {
@@ -2521,6 +2533,13 @@
 }
 
 .mo {
+  .button.mini.round {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    background-color: var(--disabled-bg-color);
+    border: 1px solid var(--line-color02);
+    color: var(--sub-txt-color);
+  }
   .tab-line-menu {
     border-bottom: 0;
     .tab-inner {
@@ -2583,13 +2602,6 @@
       line-height: 2rem;
     }
     dd {
-      .button.mini.round {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-        background-color: var(--disabled-bg-color);
-        border: 1px solid var(--line-color02);
-        color: var(--sub-txt-color);
-      }
       .select-box + .input-box,
       .select-box + .select-box,
       .select-box + .text-area {
@@ -2749,7 +2761,7 @@
     font-weight: 600;
     line-height: 1.8rem;
     color: var(--sub-txt-color);
-    .left {
+    div {
       a {
         position: relative;
         margin-right: 0.6rem;
@@ -2764,6 +2776,13 @@
           height: 1.2rem;
           background-color: var(--bg-color-blue02);
         }
+        &:last-child {
+          margin-right: 0;
+          padding-right: 0;
+          &::after {
+            content: none;
+          }
+        }
       }
     }
   }
@@ -2772,7 +2791,8 @@
     justify-content: space-between;
     align-items: center;
     &.has-bd {
-      margin: 1.6rem -1.6rem;
+      flex-wrap: wrap;
+      margin: 1.6rem -1.6rem 0;
       padding: 1.2rem 1.6rem;
       border-top: 1px solid var(--line-color02);
       border-bottom: 1px solid var(--line-color02);
@@ -2785,7 +2805,7 @@
   .product-list {
     li {
       margin: 0 -1.6rem;
-      padding: 0 1.6rem 1.6rem;
+      padding: 1.6rem;
       border-bottom: 1px solid var(--line-color02);
     }
   }
@@ -2799,6 +2819,24 @@
     color: var(--sub-txt-color);
     & + p {
       margin-bottom: 0.8rem;
+    }
+  }
+  .search-tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -2.4rem -1.6rem 2.4rem;
+    padding: 0 1.6rem;
+    height: 4.8rem;
+    background-color: var(--disabled-bg-color);
+    border-bottom: 1px solid var(--line-color02);
+    font-weight: 600;
+    p {
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+    }
+    div {
+      font-size: 1.3rem;
     }
   }
 }

@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARKET WIZ</title>
+
+    <!-- 퍼블용 include: 개발팀에서 재include 하길 바랍니다. -->
+    <script class="-include" src="../include/head.js"></script>
+  </head>
+  <body class="market mo">
+    <!-- header  -->
+    <header data-include="../layout/header_mo.html"></header>
+    <!-- contents -->
+    <div class="contents-wrap">
+      <div class="contents">
+        <div class="tab-line-menu">
+          <div class="tab-inner">
+            <ul class="tab-list">
+              <li class="tab"><a href="#tab1">사이트상품수집</a></li>
+              <li class="tab active"><a href="#tab2">저장대기상품</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="tab1" class="tab-panel">
+          <dl>
+            <dt>사이트<i class="require"></i></dt>
+            <dd>
+              <div class="select-box middle w-100p">
+                <button class="init placeholder">선택하세요</button>
+                <ul>
+                  <li><button data-value="value1">Hover</button></li>
+                  <li><button data-value="value2">Selected</button></li>
+                  <li><button data-value="value3">Default</button></li>
+                  <li><button data-value="value4">Disabled</button></li>
+                </ul>
+              </div>
+            </dd>
+          </dl>
+          <!-- 대량수집 + 키워드 -->
+          <dl>
+            <dt>대량/개별</dt>
+            <dd>
+              <div class="flex">
+                <div class="radio-box small">
+                  <input type="radio" class="radio" id="radio1" name="radio-1" checked />
+                  <label for="radio1">대량수집</label>
+                </div>
+                <div class="radio-box small">
+                  <input type="radio" class="radio" id="radio2" name="radio-1" />
+                  <label for="radio2">개별수집</label>
+                </div>
+              </div>
+            </dd>
+          </dl>
+          <dl>
+            <dt>수집방식<i class="require"></i></dt>
+            <dd>
+              <div class="select-box middle w-100p">
+                <button class="init">키워드</button>
+                <ul>
+                  <li><button data-value="value1">키워드</button></li>
+                  <li><button data-value="value2">URL</button></li>
+                </ul>
+              </div>
+              <div class="input-box">
+                <input type="text" class="input middle w-100p" placeholder="검색하실 상품명을 입력해주세요." />
+              </div>
+            </dd>
+          </dl>
+          <!-- //대량수집 + 키워드 -->
+          <!-- 대량수집 + URL -->
+          <dl>
+            <dt>대량/개별</dt>
+            <dd>
+              <div class="flex">
+                <div class="radio-box small">
+                  <input type="radio" class="radio" id="radio5" name="radio-3" checked />
+                  <label for="radio5">대량수집</label>
+                </div>
+                <div class="radio-box small">
+                  <input type="radio" class="radio" id="radio6" name="radio-3" />
+                  <label for="radio6">개별수집</label>
+                </div>
+              </div>
+            </dd>
+          </dl>
+          <dl>
+            <dt>수집방식<i class="require"></i></dt>
+            <dd>
+              <div class="select-box middle w-100p">
+                <button class="init">URL</button>
+                <ul>
+                  <li><button data-value="value1">키워드</button></li>
+                  <li><button data-value="value2">URL</button></li>
+                </ul>
+              </div>
+              <div class="input-box">
+                <input type="text" class="input middle w-100p" placeholder="검색하실 상품명을 입력해주세요." />
+              </div>
+              <p class="td-notice mt-4">
+                데이터를 수집하실 검색페이지 또는 카테고리 URL를 http://를 포함하여 입력해주세요.
+              </p>
+            </dd>
+          </dl>
+          <!-- //대량수집 + URL -->
+          <!-- 개별수집 -->
+          <dl>
+            <dt>대량/개별</dt>
+            <dd>
+              <div class="flex">
+                <div class="radio-box small">
+                  <input type="radio" class="radio" id="radio3" name="radio-2" />
+                  <label for="radio3">대량수집</label>
+                </div>
+                <div class="radio-box small">
+                  <input type="radio" class="radio" id="radio4" name="radio-2" checked />
+                  <label for="radio4">개별수집</label>
+                </div>
+              </div>
+            </dd>
+          </dl>
+          <dl>
+            <dt>수집방식<i class="require"></i></dt>
+            <dd>
+              <div class="select-box middle w-100p disabled">
+                <button class="init">URL</button>
+                <ul>
+                  <li><button data-value="value1">키워드</button></li>
+                  <li><button data-value="value2">URL</button></li>
+                </ul>
+              </div>
+              <div class="text-area w-100p">
+                <textarea rows="1" class="txt-area" maxlength="200"></textarea>
+                <p class="counter"><strong>0</strong> / 200</p>
+              </div>
+              <p class="td-notice mt-4">
+                데이터를 수집하실 검색페이지 또는 카테고리 URL를 http://를 포함하여 입력해주세요.
+              </p>
+              <p class="td-notice mt-2">줄바꿈(엔터) 하여 여러개의 URL 입력하시면 입력하신 URL을 한번에 수집합니다.</p>
+            </dd>
+          </dl>
+          <!-- //개별수집 -->
+          <dl class="flex space-between align-center">
+            <dt class="mb-0">수집설정현황</dt>
+            <dd><button class="button mini round open-panel" data-name="showPanel1">수집설정변경</button></dd>
+          </dl>
+          <div class="btn-wrap">
+            <button class="button line mr-8">저장대기상품<i class="ico-new">NEW</i></button>
+            <button class="button bg-primary">상품수집</button>
+          </div>
+          <hr class="h-line" />
+          <div class="check-wrap">
+            <div class="check-box">
+              <input type="checkbox" class="checkbox" id="chkTest1" />
+              <label for="chkTest1" class="lbl">총 <strong>1,222</strong>건</label>
+            </div>
+            <div class="select-box w-60 mini">
+              <button class="init">10개</button>
+              <ul>
+                <li><button data-value="value1">10개</button></li>
+                <li><button data-value="value2">50개</button></li>
+              </ul>
+            </div>
+          </div>
+          <div class="collect-index">
+            <div class="collect-list">
+              <div class="collect-name">알리익스프레스<span class="badge green">대기중</span></div>
+              <ul>
+                <li>
+                  <p>수집요청일시</p>
+                  <span>2023-09-21 23:03:49</span>
+                </li>
+                <li>
+                  <p>수집완료일시</p>
+                  <span>2023-09-21 23:03:49</span>
+                </li>
+                <li>
+                  <p>수집조건</p>
+                  <span>대량/URL</span>
+                </li>
+                <li>
+                  <p>수집개수</p>
+                  <span>1,000 건 ( 999건 / 1건)</span>
+                </li>
+              </ul>
+            </div>
+            <div class="collect-list">
+              <div class="collect-name">쿠팡<span class="badge orange">수집중</span></div>
+              <ul>
+                <li>
+                  <p>수집요청일시</p>
+                  <span>2023-09-21 23:03:49</span>
+                </li>
+                <li>
+                  <p>수집완료일시</p>
+                  <span>2023-09-21 23:03:49</span>
+                </li>
+                <li>
+                  <p>수집조건</p>
+                  <span>대량/URL</span>
+                </li>
+                <li>
+                  <p>수집개수</p>
+                  <span>1,000 건 ( 999건 / 1건)</span>
+                </li>
+              </ul>
+            </div>
+            <div class="collect-list">
+              <div class="collect-name">11번가<span class="badge purple">수집완료</span></div>
+              <ul>
+                <li>
+                  <p>수집요청일시</p>
+                  <span>2023-09-21 23:03:49</span>
+                </li>
+                <li>
+                  <p>수집완료일시</p>
+                  <span>2023-09-21 23:03:49</span>
+                </li>
+                <li>
+                  <p>수집조건</p>
+                  <span>대량/URL</span>
+                </li>
+                <li>
+                  <p>수집개수</p>
+                  <span>1,000 건 ( 999건 / 1건)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="collect-index">
+            <div class="load-screen">
+              <div class="load-contents">
+                <p>상품을 수집중 입니다.</p>
+                <svg class="load-spinner" viewBox="0 0 50 50">
+                  <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="6"></circle>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="page_wrap">
+            <ul class="page_nation">
+              <li><a class="arrow pprev" href="#none"></a></li>
+              <li><a class="arrow prev" href="#none"></a></li>
+              <li><a href="#none" class="active">1</a></li>
+              <li><a href="#none">2</a></li>
+              <li><a href="#none">3</a></li>
+              <li><a href="#none">4</a></li>
+              <li><a href="#none">5</a></li>
+              <li><a class="arrow next" href="#none"></a></li>
+              <li><a class="arrow nnext" href="#none"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="tab2" class="tab-panel active">
+          <dl>
+            <dt>사이트<i class="require"></i></dt>
+            <dd>
+              <div class="select-box middle w-100p">
+                <button class="init placeholder">선택하세요</button>
+                <ul>
+                  <li><button data-value="value1">Hover</button></li>
+                  <li><button data-value="value2">Selected</button></li>
+                  <li><button data-value="value3">Default</button></li>
+                  <li><button data-value="value4">Disabled</button></li>
+                </ul>
+              </div>
+            </dd>
+          </dl>
+          <dl>
+            <dt>검색어</dt>
+            <dd>
+              <div class="input-box">
+                <input type="text" class="input middle w-100p" placeholder="상품명을 입력하세요." />
+              </div>
+            </dd>
+          </dl>
+          <dl>
+            <dt>기간</dt>
+            <dd>
+              <div class="flex">
+                <input type="date" value="2023-05-29" class="input middle w-100p" />
+                <input type="date" value="2023-05-29" class="input middle w-100p" />
+              </div>
+              <div class="select-box middle w-100p mt-4">
+                <button class="init">1개월</button>
+                <ul>
+                  <li><button data-value="value1">Hover</button></li>
+                  <li><button data-value="value2">Selected</button></li>
+                  <li><button data-value="value3">Default</button></li>
+                  <li><button data-value="value4">Disabled</button></li>
+                </ul>
+              </div>
+            </dd>
+          </dl>
+          <div class="t-center">
+            <button class="button bg-primary w-160">검색</button>
+          </div>
+          <hr class="h-line" />
+          <div class="btn-list">
+            <div class="left">
+              <a href="#none">선택상품저장</a>
+              <a href="#none">전체사품저장</a>
+              <a href="#none">옵션별 상품저장</a>
+            </div>
+            <div class="right">
+              <a href="#none">선택상품삭제</a>
+            </div>
+          </div>
+          <div class="check-wrap has-bd">
+            <div class="check-box">
+              <input type="checkbox" class="checkbox" id="chkTest2" />
+              <label for="chkTest2" class="lbl">총 <strong>1,222</strong>건</label>
+            </div>
+            <div class="select-box w-60 mini">
+              <button class="init">10개</button>
+              <ul>
+                <li><button data-value="value1">10개</button></li>
+                <li><button data-value="value2">50개</button></li>
+              </ul>
+            </div>
+          </div>
+          <div class="product-list">
+            <ul>
+              <li>
+                <div class="check-box">
+                  <input type="checkbox" class="checkbox" id="chkTest3" />
+                  <label for="chkTest3" class="lbl"
+                    ><span class="1depth">브랜드여성</span> &gt; <span class="2depth">가방</span> &gt;
+                    <span class="3depth">클러치백</span> &gt; <span class="4depth">4depth</span></label
+                  >
+                </div>
+                <div class="product-detail">
+                  <div class="product-code">[상품코드 : 23000230]</div>
+                  <p>
+                    캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 캉골 메신저백 크로스백 학생 남여공용 대용량
+                    데일리
+                  </p>
+                  <div class="t-right">
+                    <strong>KRW<span>35,000</span></strong>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="check-box">
+                  <input type="checkbox" class="checkbox" id="chkTest4" />
+                  <label for="chkTest4" class="lbl"
+                    ><span class="1depth">브랜드여성</span> &gt; <span class="2depth">가방</span> &gt;
+                    <span class="3depth">클러치백</span> &gt; <span class="4depth">4depth</span></label
+                  >
+                </div>
+                <div class="product-detail">
+                  <div class="product-code">[상품코드 : 23000230]</div>
+                  <p>
+                    캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 캉골 메신저백 크로스백 학생 남여공용 대용량
+                    데일리
+                  </p>
+                  <div class="t-right">
+                    <strong>KRW<span>35,000</span></strong>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="check-box">
+                  <input type="checkbox" class="checkbox" id="chkTest5" />
+                  <label for="chkTest5" class="lbl"
+                    ><span class="1depth">브랜드여성</span> &gt; <span class="2depth">가방</span> &gt;
+                    <span class="3depth">클러치백</span> &gt; <span class="4depth">4depth</span></label
+                  >
+                </div>
+                <div class="product-detail">
+                  <div class="product-code">[상품코드 : 23000230]</div>
+                  <p>
+                    캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 캉골 메신저백 크로스백 학생 남여공용 대용량
+                    데일리
+                  </p>
+                  <div class="t-right">
+                    <strong>KRW<span>35,000</span></strong>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="check-box">
+                  <input type="checkbox" class="checkbox" id="chkTest6" />
+                  <label for="chkTest6" class="lbl"
+                    ><span class="1depth">브랜드여성</span> &gt; <span class="2depth">가방</span> &gt;
+                    <span class="3depth">클러치백</span> &gt; <span class="4depth">4depth</span></label
+                  >
+                </div>
+                <div class="product-detail">
+                  <div class="product-code">[상품코드 : 23000230]</div>
+                  <p>
+                    캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 캉골 메신저백 크로스백 학생 남여공용 대용량
+                    데일리
+                  </p>
+                  <div class="t-right">
+                    <strong>KRW<span>35,000</span></strong>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="page_wrap">
+            <ul class="page_nation">
+              <li><a class="arrow pprev" href="#none"></a></li>
+              <li><a class="arrow prev" href="#none"></a></li>
+              <li><a href="#none" class="active">1</a></li>
+              <li><a href="#none">2</a></li>
+              <li><a href="#none">3</a></li>
+              <li><a href="#none">4</a></li>
+              <li><a href="#none">5</a></li>
+              <li><a class="arrow next" href="#none"></a></li>
+              <li><a class="arrow nnext" href="#none"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel has-tit" id="showPanel1" style="display: none">
+      <div class="panel-contents">
+        <div class="panel-head">
+          <h2>상품수집설정</h2>
+          <div class="right">
+            <button class="close"></button>
+          </div>
+        </div>
+        <p class="td-notice">상품수집설정은 설정된 검색필터를 선택 하거나 환경설정의 기본설정을 적용할 수 있습니다.</p>
+        <!-- 기본설정 -->
+        <div class="table mt-8">
+          <table>
+            <tbody>
+              <tr>
+                <th>구분</th>
+              </tr>
+              <tr>
+                <td>
+                  <div class="flex">
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio7" name="radio-4" checked="" />
+                      <label for="radio7">기본설정</label>
+                    </div>
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio8" name="radio-4" />
+                      <label for="radio8">검색필터</label>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table mt-16">
+          <table>
+            <tbody>
+              <tr>
+                <th class="middle-pd">
+                  <p>환경설정에서 설정된 정보가 조회되며 변경을 원할 경우 환경설정에서 가능합니다.</p>
+                </th>
+              </tr>
+              <tr>
+                <th>상품수집개수</th>
+              </tr>
+              <tr>
+                <td class="small-pd">
+                  검색결과 상위
+                  <span class="input-box">
+                    <input type="text" class="input middle w-96" value="1,000" />
+                  </span>
+                  개
+                </td>
+              </tr>
+              <tr>
+                <th>가격수집범위</th>
+              </tr>
+              <tr>
+                <td class="small-pd">
+                  원가기준
+                  <span class="input-box">
+                    <input type="text" class="input middle w-96 t-right" value="1,000" />
+                  </span>
+                  원 ~
+                  <span class="input-box">
+                    <input type="text" class="input middle w-96 t-right" value="1,000" />
+                  </span>
+                  원
+                </td>
+              </tr>
+              <tr>
+                <th>가격제한 처리</th>
+              </tr>
+              <tr>
+                <td>
+                  <div class="flex">
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio9" name="radio-5" checked="" />
+                      <label for="radio9">삭제처리</label>
+                    </div>
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio10" name="radio-5" />
+                      <label for="radio10">품절처리</label>
+                    </div>
+                  </div>
+                  <p class="td-notice mt-12">
+                    삭제처리 : 상품업데이트 또는 마켓 전송 시 가격제한 설정 범위를 벗어난 상품은 삭제
+                    처리됩니다.(삭제처리된 상품은 휴지통으로 이동됩니다)
+                  </p>
+                  <p class="td-notice">
+                    품절처리 : 상품업데이트 또는 마켓 전송 시 금지어가 있거나 가격제한 설정 범위를 벗어난 상품은 품절로
+                    처리됩니다.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <th>카테고리고정 여부</th>
+              </tr>
+              <tr>
+                <td>
+                  <div class="flex">
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio11" name="radio-6" checked="" />
+                      <label for="radio11">카테고리 고정</label>
+                    </div>
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio12" name="radio-6" />
+                      <label for="radio12">고정안함</label>
+                    </div>
+                  </div>
+                  <p class="td-notice mt-12">
+                    카테고리 고정 : 수집사이트에서 데이터 수집 시 최초 저장된 카테고리 정보가 변경되지 않습니다.
+                  </p>
+                  <p class="td-notice">
+                    품절처리 : 고정 안함 : 상품정보 업데이트 시 수집사이트의 현재 카테고리 정보로 변경됩니다.
+                  </p>
+                  <p class="td-notice">카테고리 정보가 수집되지 않는 수집사이트는 적용되지 않습니다.</p>
+                </td>
+              </tr>
+              <tr>
+                <th>검색필터고정 여부</th>
+              </tr>
+              <tr>
+                <td>
+                  <div class="flex">
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio13" name="radio-7" checked="" />
+                      <label for="radio13">검색필터 고정</label>
+                    </div>
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio14" name="radio-7" />
+                      <label for="radio14">고정안함</label>
+                    </div>
+                  </div>
+                  <p class="td-notice mt-12">
+                    검색필터 고정 : 수집사이트에서 데이터 신규 수집 시 최초 저장된 검색필터 정보가 변경되지 않습니다.
+                  </p>
+                  <p class="td-notice">
+                    고정 안함 : 수집사이트에서 데이터 신규 수집 시 저장될 상품 목록에 기존에 저장된 상품과 동일한 상품이
+                    있다면, 이미 저장된 상품의 검색필터 정보가 현재검색 필터 정보로 변경됩니다.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <th>반복 업데이트 설정</th>
+              </tr>
+              <tr>
+                <td>
+                  <div class="flex">
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio15" name="radio-8" checked="" />
+                      <label for="radio15">무제한 반복</label>
+                    </div>
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio16" name="radio-8" />
+                      <label for="radio16">반복안함</label>
+                    </div>
+                  </div>
+                  <p class="td-notice mt-12">
+                    상품 업데이트 및 쇼핑몰 전송이 완료되었을 때 반복해서 업데이트 할 수 있습니다.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <th>최대 재고 수량</th>
+              </tr>
+              <tr>
+                <td class="small-pd">
+                  옵션 재고 및 상품 재고 최대 수량을
+                  <span class="input-box">
+                    <input type="text" class="input middle w-78" value="1,000" />
+                  </span>
+                  개로<br />
+                  설정합니다.
+                  <p class="td-notice mt-12">
+                    수집대상 쇼핑몰에서 수집된 상품 및 옵션 재고 수량이 설정한 수량보다 많으면 설정한 수량으로
+                    적용됩니다
+                  </p>
+                  <p class="td-notice">
+                    재고 수량이 표기되는 사이트는 상품 정보 수집 시 실제 재고수량이 수집되며, 그렇지 않은 사이트는
+                    재고가 있는 경우는 999개, 없는 경우에는 0개로 수집됩니다.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <th>브랜드명 설정</th>
+              </tr>
+              <tr>
+                <td>
+                  <div class="flex">
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio17" name="radio-9" checked="" />
+                      <label for="radio17">수집 사이트명 사용</label>
+                    </div>
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio18" name="radio-9" />
+                      <label for="radio18">직접입력</label>
+                    </div>
+                  </div>
+                  <p class="td-notice mt-12">
+                    브랜드명이 수집되지 않는 사이트(타오바오 등) 또는 브랜드명이 없는 일부 상품에 대해서 입력하신
+                    브랜드명으로 쇼핑몰에 등록됩니다.
+                  </p>
+                  <p class="td-notice">
+                    수집 사이트명 사용 : 수집사이트 이름으로 브랜드명이 전송됩니다. (예 : Amazon.com 의 상품 → “Amazon”
+                    으로 전송)
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <th>품절상품 수집여부</th>
+              </tr>
+              <tr>
+                <td>
+                  <div class="flex">
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio19" name="radio-10" checked="" />
+                      <label for="radio19">품절상품수집</label>
+                    </div>
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio20" name="radio-10" />
+                      <label for="radio20">수집안함</label>
+                    </div>
+                  </div>
+                  <p class="td-notice mt-12">품절상품수집 : 수집된 상품의 상태가 [품절] 상품으로 등록</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- //기본설정 -->
+        <!-- 검색필터 -->
+        <div class="table mt-8">
+          <table>
+            <tbody>
+              <tr>
+                <th>구분</th>
+              </tr>
+              <tr>
+                <td>
+                  <div class="flex">
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio21" name="radio-11" />
+                      <label for="radio21">기본설정</label>
+                    </div>
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio22" name="radio-11" checked />
+                      <label for="radio22">검색필터</label>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table mt-16">
+          <table>
+            <tbody>
+              <tr>
+                <th class="middle-pd">
+                  <p>생성된 검색필터를 적용할 수 있습니다. 새로운 필터를 생성하시려면 템플릿관리에서 가능합니다.</p>
+                </th>
+              </tr>
+              <tr>
+                <th>필터선택</th>
+              </tr>
+              <tr>
+                <td class="small-pd">
+                  <div class="select-box middle w-100p">
+                    <button class="init">선택하세요</button>
+                    <ul>
+                      <li><button data-value="value1">Hover</button></li>
+                      <li><button data-value="value2">Selected</button></li>
+                      <li><button data-value="value3">Default</button></li>
+                      <li><button data-value="value4">Disabled</button></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>상품명 금지어</th>
+              </tr>
+              <tr>
+                <td class="small-pd">
+                  <div class="input-box">
+                    <input type="text" class="input middle w-100p" placeholder=" 입력하세요" disabled />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>저장상품수</th>
+              </tr>
+              <tr>
+                <td class="small-pd">
+                  검색결과 상위
+                  <span class="input-box">
+                    <input type="text" class="input middle w-78" value="1,000" disabled />
+                  </span>
+                  개 상품만 저장
+                </td>
+              </tr>
+              <tr>
+                <th>저장페이지 범위</th>
+              </tr>
+              <tr>
+                <td class="small-pd">
+                  <span class="input-box">
+                    <input type="text" class="input middle w-78" value="1" disabled />
+                  </span>
+                  페이지 ~
+                  <span class="input-box">
+                    <input type="text" class="input middle w-78" value="50" disabled />
+                  </span>
+                  페이지 까지
+                </td>
+              </tr>
+              <tr>
+                <th>단일상품 저장</th>
+              </tr>
+              <tr>
+                <td>
+                  <div class="flex">
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio23" name="radio-12" checked="" disabled />
+                      <label for="radio23">단일상품으로 저장</label>
+                    </div>
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio24" name="radio-12" disabled />
+                      <label for="radio24">단일상품으로 저장안함</label>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>옵션 저장</th>
+              </tr>
+              <tr>
+                <td>
+                  <div class="flex">
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio25" name="radio-13" checked="" disabled />
+                      <label for="radio25">옵션 저장</label>
+                    </div>
+                    <div class="radio-box small">
+                      <input type="radio" class="radio" id="radio26" name="radio-13" disabled />
+                      <label for="radio25">옵션 저장안함</label>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>번역 후 저장</th>
+              </tr>
+              <tr>
+                <td class="small-pd">
+                  <div class="input-box">
+                    <input type="text" class="input middle w-100p" placeholder="입력하세요" disabled="" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>랜덤키워드 설정</th>
+              </tr>
+              <tr>
+                <td class="small-pd">
+                  <div class="select-box middle w-100p disabled">
+                    <button class="init">랜덤키워드기본</button>
+                    <ul>
+                      <li><button data-value="value1">키워드</button></li>
+                      <li><button data-value="value2">URL</button></li>
+                    </ul>
+                  </div>
+                  <div class="flex mt-4">
+                    <div class="select-box middle w-96 disabled mr-4">
+                      <button class="init">2</button>
+                      <ul>
+                        <li><button data-value="value1">키워드</button></li>
+                        <li><button data-value="value2">URL</button></li>
+                      </ul>
+                    </div>
+                    <div class="select-box middle w-100p disabled">
+                      <button class="init">상품명앞</button>
+                      <ul>
+                        <li><button data-value="value1">키워드</button></li>
+                        <li><button data-value="value2">URL</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="input-box mt-4">
+                    <input type="text" class="input middle w-100p" placeholder="추천,BEST" disabled="" />
+                  </div>
+                  <div class="flex align-center mt-4">
+                    <span class="mr-10">+</span>
+                    <div class="input-box w-100p">
+                      <input type="text" class="input middle w-100p" placeholder="대용량 모이스처 에멀젼" disabled="" />
+                    </div>
+                  </div>
+                  <div class="flex align-center mt-4">
+                    <span class="mr-10">+</span>
+                    <div class="input-box w-100p">
+                      <input type="text" class="input middle w-100p" placeholder="상품명뒤" disabled="" />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- //검색필터 -->
+
+        <div class="panel-bottm">
+          <div class="btn-wrap">
+            <button class="button line mr-8">취소</button>
+            <button class="button bg-primary">저장</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

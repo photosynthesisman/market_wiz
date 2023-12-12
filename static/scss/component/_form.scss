@@ -163,6 +163,29 @@
 }
 .check-box {
   &.switch {
+    &.btn-ty {
+      position: relative;
+      width: 16rem;
+      height: 3.2rem;
+      &::before {
+        z-index: -1;
+        border-radius: 0.5rem;
+        top: 1px;
+        right: 0;
+        bottom: 1px;
+        left: 0;
+        background-color: var(--white-color);
+      }
+      &::after {
+        z-index: -2;
+        border-radius: 0.6rem;
+        top: 0;
+        right: -1px;
+        bottom: 0;
+        left: -1px;
+        background: linear-gradient(180deg, #aeb6d0 76.39%, #939ab3 100%);
+      }
+    }
     position: relative;
     cursor: pointer;
     display: inline-block;

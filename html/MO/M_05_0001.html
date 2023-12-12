@@ -17,15 +17,19 @@
         <div class="tab-line-menu">
           <div class="tab-inner">
             <ul class="tab-list">
-              <li class="tab"><a href="#tab1">사이트상품수집</a></li>
-              <li class="tab active"><a href="#tab2">저장대기상품</a></li>
+              <li class="tab active"><a href="#tab1">기본상품관리</a></li>
+              <li class="tab"><a href="#tab2">마켓상품관리</a></li>
             </ul>
           </div>
         </div>
 
-        <div id="tab1" class="tab-panel">
+        <div id="tab1" class="tab-panel active">
+          <div class="search-tab">
+            <p>기본검색조건</p>
+            <div>접기<button class="detail-view ml-8 open">상세 보기</button></div>
+          </div>
           <dl>
-            <dt>사이트<i class="require"></i></dt>
+            <dt>수집사이트</dt>
             <dd>
               <div class="select-box middle w-100p">
                 <button class="init placeholder">선택하세요</button>
@@ -38,27 +42,43 @@
               </div>
             </dd>
           </dl>
-          <!-- 대량수집 + 키워드 -->
           <dl>
-            <dt>대량/개별</dt>
+            <dt>마켓등록여부</dt>
             <dd>
               <div class="flex">
                 <div class="radio-box small">
                   <input type="radio" class="radio" id="radio1" name="radio-1" checked />
-                  <label for="radio1">대량수집</label>
+                  <label for="radio1">전체</label>
                 </div>
                 <div class="radio-box small">
                   <input type="radio" class="radio" id="radio2" name="radio-1" />
-                  <label for="radio2">개별수집</label>
+                  <label for="radio2">마켓등록</label>
+                </div>
+                <div class="radio-box small">
+                  <input type="radio" class="radio" id="radio3" name="radio-1" />
+                  <label for="radio3">마켓미등록</label>
                 </div>
               </div>
             </dd>
           </dl>
           <dl>
-            <dt>수집방식<i class="require"></i></dt>
+            <dt>설정정보</dt>
+            <dd>
+              <span class="check-box sm-check">
+                <input type="checkbox" class="checkbox" id="chkTest1" checked />
+                <label for="chkTest1" class="lbl">별도관리상품</label>
+              </span>
+              <span class="check-box sm-check">
+                <input type="checkbox" class="checkbox" id="chkTest2" />
+                <label for="chkTest2" class="lbl">수집제한처리</label>
+              </span>
+            </dd>
+          </dl>
+          <dl>
+            <dt>검색</dt>
             <dd>
               <div class="select-box middle w-100p">
-                <button class="init">키워드</button>
+                <button class="init placeholder">상품명</button>
                 <ul>
                   <li><button data-value="value1">키워드</button></li>
                   <li><button data-value="value2">URL</button></li>
@@ -69,176 +89,91 @@
               </div>
             </dd>
           </dl>
-          <!-- //대량수집 + 키워드 -->
-          <!-- 대량수집 + URL -->
           <dl>
-            <dt>대량/개별</dt>
+            <dt>등록기간</dt>
             <dd>
               <div class="flex">
-                <div class="radio-box small">
-                  <input type="radio" class="radio" id="radio5" name="radio-3" checked />
-                  <label for="radio5">대량수집</label>
-                </div>
-                <div class="radio-box small">
-                  <input type="radio" class="radio" id="radio6" name="radio-3" />
-                  <label for="radio6">개별수집</label>
-                </div>
+                <input type="date" value="2023-05-29" class="input middle w-100p" />
+                <input type="date" value="2023-05-29" class="input middle w-100p" />
               </div>
-            </dd>
-          </dl>
-          <dl>
-            <dt>수집방식<i class="require"></i></dt>
-            <dd>
-              <div class="select-box middle w-100p">
-                <button class="init">URL</button>
+              <div class="select-box middle w-100p mt-4">
+                <button class="init">1개월</button>
                 <ul>
-                  <li><button data-value="value1">키워드</button></li>
-                  <li><button data-value="value2">URL</button></li>
+                  <li><button data-value="value1">Hover</button></li>
+                  <li><button data-value="value2">Selected</button></li>
+                  <li><button data-value="value3">Default</button></li>
+                  <li><button data-value="value4">Disabled</button></li>
                 </ul>
               </div>
-              <div class="input-box">
-                <input type="text" class="input middle w-100p" placeholder="검색하실 상품명을 입력해주세요." />
-              </div>
-              <p class="td-notice mt-4">
-                데이터를 수집하실 검색페이지 또는 카테고리 URL를 http://를 포함하여 입력해주세요.
-              </p>
             </dd>
           </dl>
-          <!-- //대량수집 + URL -->
-          <!-- 개별수집 -->
-          <dl>
-            <dt>대량/개별</dt>
-            <dd>
-              <div class="flex">
-                <div class="radio-box small">
-                  <input type="radio" class="radio" id="radio3" name="radio-2" />
-                  <label for="radio3">대량수집</label>
-                </div>
-                <div class="radio-box small">
-                  <input type="radio" class="radio" id="radio4" name="radio-2" checked />
-                  <label for="radio4">개별수집</label>
-                </div>
-              </div>
-            </dd>
-          </dl>
-          <dl>
-            <dt>수집방식<i class="require"></i></dt>
-            <dd>
-              <div class="select-box middle w-100p disabled">
-                <button class="init">URL</button>
-                <ul>
-                  <li><button data-value="value1">키워드</button></li>
-                  <li><button data-value="value2">URL</button></li>
-                </ul>
-              </div>
-              <div class="text-area w-100p">
-                <textarea rows="1" class="txt-area" maxlength="200"></textarea>
-                <p class="counter"><strong>0</strong> / 200</p>
-              </div>
-              <p class="td-notice mt-4">
-                데이터를 수집하실 검색페이지 또는 카테고리 URL를 http://를 포함하여 입력해주세요.
-              </p>
-              <p class="td-notice mt-2">줄바꿈(엔터) 하여 여러개의 URL 입력하시면 입력하신 URL을 한번에 수집합니다.</p>
-            </dd>
-          </dl>
-          <!-- //개별수집 -->
-          <dl class="flex space-between align-center">
-            <dt class="mb-0">수집설정현황</dt>
-            <dd><button class="button mini round open-panel" data-name="showPanel1">수집설정변경</button></dd>
-          </dl>
-          <div class="btn-wrap">
-            <button class="button line mr-8">저장대기상품<i class="ico-new">NEW</i></button>
-            <button class="button bg-primary">상품수집</button>
+
+          <div class="t-center">
+            <button class="button bg-primary w-160">검색</button>
           </div>
           <hr class="h-line" />
-          <div class="check-wrap">
+
+          <div class="btn-list">
+            <div class="left"></div>
+            <div class="right">
+              <a href="#none">선택상품삭제</a>
+              <a href="#none">품절상품일괄삭제</a>
+              <a href="#none">전체삭제</a>
+            </div>
+          </div>
+          <div class="check-wrap has-bd">
             <div class="check-box">
-              <input type="checkbox" class="checkbox" id="chkTest1" />
-              <label for="chkTest1" class="lbl">총 <strong>1,222</strong>건</label>
+              <input type="checkbox" class="checkbox" id="chkTest3" />
+              <label for="chkTest3" class="lbl">총 <strong>1,222</strong>건</label>
             </div>
-            <div class="select-box w-60 mini">
-              <button class="init">10개</button>
-              <ul>
-                <li><button data-value="value1">10개</button></li>
-                <li><button data-value="value2">50개</button></li>
-                <li><button data-value="value3">100개</button></li>
-              </ul>
-            </div>
-          </div>
-          <div class="collect-index">
-            <div class="collect-list">
-              <div class="collect-name">알리익스프레스<span class="badge green">대기중</span></div>
-              <ul>
-                <li>
-                  <p>수집요청일시</p>
-                  <span>2023-09-21 23:03:49</span>
-                </li>
-                <li>
-                  <p>수집완료일시</p>
-                  <span>2023-09-21 23:03:49</span>
-                </li>
-                <li>
-                  <p>수집조건</p>
-                  <span>대량/URL</span>
-                </li>
-                <li>
-                  <p>수집개수</p>
-                  <span>1,000 건 ( 999건 / 1건)</span>
-                </li>
-              </ul>
-            </div>
-            <div class="collect-list">
-              <div class="collect-name">쿠팡<span class="badge orange">수집중</span></div>
-              <ul>
-                <li>
-                  <p>수집요청일시</p>
-                  <span>2023-09-21 23:03:49</span>
-                </li>
-                <li>
-                  <p>수집완료일시</p>
-                  <span>2023-09-21 23:03:49</span>
-                </li>
-                <li>
-                  <p>수집조건</p>
-                  <span>대량/URL</span>
-                </li>
-                <li>
-                  <p>수집개수</p>
-                  <span>1,000 건 ( 999건 / 1건)</span>
-                </li>
-              </ul>
-            </div>
-            <div class="collect-list">
-              <div class="collect-name">11번가<span class="badge purple">수집완료</span></div>
-              <ul>
-                <li>
-                  <p>수집요청일시</p>
-                  <span>2023-09-21 23:03:49</span>
-                </li>
-                <li>
-                  <p>수집완료일시</p>
-                  <span>2023-09-21 23:03:49</span>
-                </li>
-                <li>
-                  <p>수집조건</p>
-                  <span>대량/URL</span>
-                </li>
-                <li>
-                  <p>수집개수</p>
-                  <span>1,000 건 ( 999건 / 1건)</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="collect-index">
-            <div class="load-screen">
-              <div class="load-contents">
-                <p>상품을 수집중 입니다.</p>
-                <svg class="load-spinner" viewBox="0 0 50 50">
-                  <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="6"></circle>
-                </svg>
+            <button class="button mini round open-panel" data-name="showPanel1">마켓별 등록수확인</button>
+            <div class="flex w-100p justify-end mt-8">
+              <div class="select-box w-98 mini">
+                <button class="init">전체상품보기</button>
+                <ul>
+                  <li><button data-value="value1">판매이력 있는 상품보기</button></li>
+                  <li><button data-value="value2">판매이력 없는 상품보기</button></li>
+                  <li><button data-value="value3">상품명 수정 상품보기</button></li>
+                </ul>
+              </div>
+              <div class="select-box w-87 mini ml-4">
+                <button class="init">최근등록순</button>
+                <ul>
+                  <li><button data-value="value1">최근등록순</button></li>
+                  <li><button data-value="value2">과거등록순</button></li>
+                  <li><button data-value="value3">낮은가격순</button></li>
+                </ul>
+              </div>
+              <div class="select-box w-60 mini ml-4">
+                <button class="init">10개</button>
+                <ul>
+                  <li><button data-value="value1">10개</button></li>
+                  <li><button data-value="value2">50개</button></li>
+                </ul>
               </div>
             </div>
+          </div>
+          <div class="exposure-list">
+            <ul>
+              <li>
+                <div class="exposure-unit">
+                  <div class="unit-img">
+                    <img src="../../static/images/common/dummy-image2.png" alt="" />
+                  </div>
+                  <div class="unit-define">
+                    <button class="button small blue-line">개별업데이트/마켓전송</button>
+
+                    <div class="check-box switch btn-ty">
+                      <input type="checkbox" class="checkbox" id="switch1" title="전송 ON/OFF" />
+                      <label for="switch1" class="switch-label"> </label>
+                    </div>
+                    <button class="button small line">수집제한처리</button>
+                    <button class="button small line">업로드마켓삭제</button>
+                    <button class="button small line">업로드마켓품절</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
           <div class="page_wrap">
             <ul class="page_nation">
@@ -254,7 +189,7 @@
             </ul>
           </div>
         </div>
-        <div id="tab2" class="tab-panel active">
+        <div id="tab2" class="tab-panel">
           <dl>
             <dt>사이트<i class="require"></i></dt>
             <dd>
@@ -319,7 +254,6 @@
               <ul>
                 <li><button data-value="value1">10개</button></li>
                 <li><button data-value="value2">50개</button></li>
-                <li><button data-value="value3">100개</button></li>
               </ul>
             </div>
           </div>
@@ -401,6 +335,19 @@
                   </div>
                 </div>
               </li>
+            </ul>
+          </div>
+          <div class="page_wrap">
+            <ul class="page_nation">
+              <li><a class="arrow pprev" href="#none"></a></li>
+              <li><a class="arrow prev" href="#none"></a></li>
+              <li><a href="#none" class="active">1</a></li>
+              <li><a href="#none">2</a></li>
+              <li><a href="#none">3</a></li>
+              <li><a href="#none">4</a></li>
+              <li><a href="#none">5</a></li>
+              <li><a class="arrow next" href="#none"></a></li>
+              <li><a class="arrow nnext" href="#none"></a></li>
             </ul>
           </div>
         </div>
