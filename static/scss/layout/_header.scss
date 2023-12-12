@@ -8,7 +8,27 @@
   background-color: var(--primary-color2);
   color: var(--white-color);
   &.mo {
+    align-items: center;
+    min-width: 36rem;
+    height: 6.4rem;
     padding: 0 1.6rem;
+    .mo-lnb {
+      width: 3.2rem;
+      height: 3.2rem;
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.33594 7.6665C5.33594 7.11422 5.78365 6.6665 6.33594 6.6665H25.6693C26.2216 6.6665 26.6693 7.11422 26.6693 7.6665C26.6693 8.21879 26.2216 8.6665 25.6693 8.6665H6.33594C5.78365 8.6665 5.33594 8.21879 5.33594 7.6665ZM5.33594 15.6665C5.33594 15.1142 5.78365 14.6665 6.33594 14.6665H25.6693C26.2216 14.6665 26.6693 15.1142 26.6693 15.6665C26.6693 16.2188 26.2216 16.6665 25.6693 16.6665H6.33594C5.78365 16.6665 5.33594 16.2188 5.33594 15.6665ZM6.33594 22.6665C5.78365 22.6665 5.33594 23.1142 5.33594 23.6665C5.33594 24.2188 5.78365 24.6665 6.33594 24.6665H25.6693C26.2216 24.6665 26.6693 24.2188 26.6693 23.6665C26.6693 23.1142 26.2216 22.6665 25.6693 22.6665H6.33594Z' fill='white'/%3E%3C/svg%3E%0A");
+    }
+    h1 > a {
+      background: url(../images/common/marketwiz-logox3.png) center / 12rem 2.3rem no-repeat;
+    }
+    .head-right {
+      padding: 0;
+    }
+    .chat {
+      width: 3.2rem;
+      height: 3.2rem;
+      margin-right: 0;
+      background: url(../images/common/head-chat3x.png) center / 3.2rem no-repeat;
+    }
   }
   &.bo {
     width: 100%;
@@ -91,6 +111,13 @@
       }
     }
   }
+  h1 > a {
+    display: block;
+    width: 12rem;
+    height: 2.3rem;
+    font-size: 0;
+    background: url(../images/common/marketwiz-logo.png) no-repeat;
+  }
 }
 .head-left,
 .head-right {
@@ -105,13 +132,6 @@
   }
 }
 .head-left {
-  h1 > a {
-    display: block;
-    width: 12rem;
-    height: 2.3rem;
-    font-size: 0;
-    background: url(../images/common/marketwiz-logo.png) no-repeat;
-  }
   .user-name {
     font-size: 2rem;
   }
