@@ -8,205 +8,212 @@
     <!-- 퍼블용 include: 개발팀에서 재include 하길 바랍니다. -->
     <script class="-include" src="../include/head.js"></script>
   </head>
-  <body class="market fo">
-    <!-- header  -->
-    <div class="header-space fo" data-include="../layout/header_fo.html"></div>
+  <body>
+    <div class="market fo">
+      <!-- header  -->
+      <div class="header-space fo" data-include="../layout/header_fo.html"></div>
 
-    <!-- container -->
-    <div class="contents-wrap has-bg">
-      <!-- contents -->
-      <div class="join-wrap">
-        <div class="join-heading">
-          <h2>사업자 정보</h2>
-          <p>사업자번호정보 입력 후 사업자등록번호를 인증하세요.</p>
+      <!-- container -->
+      <div class="contents-wrap has-bg">
+        <!-- contents -->
+        <div class="join-wrap">
+          <div class="join-heading">
+            <h2>사업자 정보</h2>
+            <p>사업자번호정보 입력 후 사업자등록번호를 인증하세요.</p>
+          </div>
+          <div class="join-process">
+            <!-- class active 추가 시 원 배경색, 폰트 변경 -->
+            <div class="active">
+              <div class="circle">1</div>
+              <p>사업자정보</p>
+            </div>
+            <div>
+              <div class="circle">2</div>
+              <p>쇼핑몰정보</p>
+            </div>
+            <div>
+              <div class="circle">3</div>
+              <p>요금제 정보</p>
+            </div>
+            <div>
+              <div class="circle">4</div>
+              <p>셀러오피스 바로 이용</p>
+            </div>
+          </div>
+          <div class="join-form">
+            <!-- class active 추가 시 투명도 100% -->
+            <div class="join step1 active">
+              <h3>사업자정보<span>사업자번호정보 입력 후 사업자등록번호를 인증하세요.</span></h3>
+              <h4>사업자 유형<i class="require"></i></h4>
+              <div class="flex w-100p">
+                <div class="radio-box ty3">
+                  <input type="radio" class="radio" id="personal" name="radiobox-ty3" checked="" />
+                  <label for="personal">개인</label>
+                </div>
+                <div class="radio-box ty3">
+                  <input type="radio" class="radio" id="corporation" name="radiobox-ty3" />
+                  <label for="corporation">법인</label>
+                </div>
+              </div>
+              <h4>대표자 성명<i class="require"></i></h4>
+              <div class="input-box">
+                <input type="text" class="input w-100p large" placeholder="이름 입력" title="대표자 성명 입력" />
+              </div>
+              <h4>개업일자(법인설립일)<i class="require"></i></h4>
+              <div class="input-box">
+                <input
+                  type="number"
+                  class="input w-100p large"
+                  placeholder="YYYY-MM-DD"
+                  title="개업일자(법인설립일)입력"
+                />
+              </div>
+              <h4>사업자등록번호<i class="require"></i></h4>
+              <div class="input-box flex">
+                <input
+                  type="number"
+                  class="input w-100p large"
+                  placeholder="&ldquo;-&rdquo; 빼고 입력"
+                  title="사업자등록번호 입력"
+                />
+                <button class="button line large ml-8">사업자번호 조회</button>
+              </div>
+            </div>
+            <div class="join step2">
+              <h3>쇼핑몰정보<span>정확한 쇼핑몰정보 및 기업정보를 입력하세요.</span></h3>
+              <h4>쇼핑몰 로고<span class="td-notice ml-6">최적 320x320 </span></h4>
+              <div class="flex w-100p">
+                <div class="flex align-center">
+                  <button class="button line large mr-24 w-120">이미지 선택</button>
+                  <a href="#none" class="underline">Pop_up_imagenamte.gif</a>
+                  <button><i class="ico-circle-close small"></i></button>
+                </div>
+              </div>
+              <h4>쇼핑몰 이름</h4>
+              <div class="input-box">
+                <input type="text" class="input w-100p large" placeholder="명칭 입력" title="쇼핑몰 이름 입력" />
+              </div>
+              <h4>회사(상호)명</h4>
+              <div class="input-box">
+                <input type="text" class="input w-100p large" placeholder="이름 입력" title="회사(상호)명 입력" />
+              </div>
+              <h4>사업자등록번호<i class="require"></i></h4>
+              <div class="input-box flex">
+                <input type="number" class="input w-100p large" placeholder="기본주소 입력" title="기본주소 입력" />
+                <button class="button line large ml-8">주소검색</button>
+              </div>
+              <div class="input-box mt-8">
+                <input type="text" class="input w-100p large" placeholder="상세주소 입력" title="상세주소 입력" />
+              </div>
+              <h4>대표자 전화번호</h4>
+              <div class="input-box">
+                <input
+                  type="text"
+                  class="input w-100p large"
+                  placeholder="&ldquo;-&rdquo; 빼고 입력"
+                  title="대표자 전화번호"
+                />
+              </div>
+              <h4>정보보안 담당자</h4>
+              <div class="input-box">
+                <input
+                  type="text"
+                  class="input w-100p large"
+                  placeholder="이름 입력"
+                  title="정보보안 담당자 이름 입력"
+                />
+              </div>
+              <h4>정보보안 담당자 전화번호</h4>
+              <div class="input-box">
+                <input
+                  type="text"
+                  class="input w-100p large"
+                  placeholder="&ldquo;-&rdquo; 빼고 입력"
+                  title="정보보안 담당자 전화번호 이름 입력"
+                />
+              </div>
+            </div>
+            <div class="join step3">
+              <h3>요금제 선택 및 결제<span>요금제를 선택하시고 선결제를 진행합니다.</span></h3>
+              <h4>요금제 선택</h4>
+              <div class="flex w-100p">
+                <div class="radio-box ty3">
+                  <input type="radio" class="radio" id="charge1" name="choice-charge" checked="" />
+                  <label for="charge1">라이트</label>
+                </div>
+                <div class="radio-box ty3">
+                  <input type="radio" class="radio" id="charge2" name="choice-charge" />
+                  <label for="charge2">스탠다드</label>
+                </div>
+                <div class="radio-box ty3">
+                  <input type="radio" class="radio" id="charge3" name="choice-charge" />
+                  <label for="charge3">프리미엄</label>
+                </div>
+              </div>
+              <h4>개월 선택</h4>
+              <div class="flex w-100p">
+                <div class="radio-box ty3">
+                  <input type="radio" class="radio" id="month1" name="choice-month" checked="" />
+                  <label for="month1">1개월</label>
+                </div>
+                <div class="radio-box ty3">
+                  <input type="radio" class="radio" id="month3" name="choice-month" />
+                  <label for="month3">3개월</label>
+                </div>
+                <div class="radio-box ty3">
+                  <input type="radio" class="radio" id="month6" name="choice-month" />
+                  <label for="month6">6개월</label>
+                </div>
+              </div>
+              <h4>이용기간 선택</h4>
+              <div class="result-box">
+                <p class="using-date"><span>2023-11-01</span> ~ <span>2023-11-31</span></p>
+              </div>
+              <div class="result-box large">
+                <div class="cost-box">
+                  <p class="cost-type">할인 금액</p>
+                  <p><span class="fc-red">48,000</span>원</p>
+                </div>
+                <div class="cost-box">
+                  <p class="cost-type">결제 금액</p>
+                  <p><span>170,000</span>원</p>
+                </div>
+              </div>
+              <h4>부가서비스 선택</h4>
+              <div class="check-box has-line sm-check">
+                <input type="checkbox" class="checkbox" id="choice-service1" checked="" />
+                <label for="choice-service1" class="lbl">이미지번역(1,000개/9,900원)</label>
+              </div>
+              <div class="check-box has-line sm-check">
+                <input type="checkbox" class="checkbox" id="choice-service2" />
+                <label for="choice-service2" class="lbl">메시지발송(1,000개/30,000원)</label>
+              </div>
+              <div class="result-box large mt-8">
+                <div class="cost-box">
+                  <p class="cost-type">결제 금액</p>
+                  <p><span>48,000</span>원</p>
+                </div>
+                <div class="cost-box">
+                  <p class="cost-type all-of">총 결제 금액</p>
+                  <p><span>170,000</span>원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="join-complete">
+            <div><img src="../../static/images/common/joinus.png" alt="" /></div>
+            <button class="button largest bg-green w-320">셀러 오피스</button>
+          </div>
         </div>
-        <div class="join-process">
-          <!-- class active 추가 시 원 배경색, 폰트 변경 -->
-          <div class="active">
-            <div class="circle">1</div>
-            <p>사업자정보</p>
-          </div>
-          <div>
-            <div class="circle">2</div>
-            <p>쇼핑몰정보</p>
-          </div>
-          <div>
-            <div class="circle">3</div>
-            <p>요금제 정보</p>
-          </div>
-          <div>
-            <div class="circle">4</div>
-            <p>셀러오피스 바로 이용</p>
-          </div>
-        </div>
-        <div class="join-form">
-          <!-- class active 추가 시 투명도 100% -->
-          <div class="join step1 active">
-            <h3>사업자정보<span>사업자번호정보 입력 후 사업자등록번호를 인증하세요.</span></h3>
-            <h4>사업자 유형<i class="require"></i></h4>
-            <div class="flex w-100p">
-              <div class="radio-box ty3">
-                <input type="radio" class="radio" id="personal" name="radiobox-ty3" checked="" />
-                <label for="personal">개인</label>
-              </div>
-              <div class="radio-box ty3">
-                <input type="radio" class="radio" id="corporation" name="radiobox-ty3" />
-                <label for="corporation">법인</label>
-              </div>
-            </div>
-            <h4>대표자 성명<i class="require"></i></h4>
-            <div class="input-box">
-              <input type="text" class="input w-100p large" placeholder="이름 입력" title="대표자 성명 입력" />
-            </div>
-            <h4>개업일자(법인설립일)<i class="require"></i></h4>
-            <div class="input-box">
-              <input
-                type="number"
-                class="input w-100p large"
-                placeholder="YYYY-MM-DD"
-                title="개업일자(법인설립일)입력"
-              />
-            </div>
-            <h4>사업자등록번호<i class="require"></i></h4>
-            <div class="input-box flex">
-              <input
-                type="number"
-                class="input w-100p large"
-                placeholder="&ldquo;-&rdquo; 빼고 입력"
-                title="사업자등록번호 입력"
-              />
-              <button class="button line large ml-8">사업자번호 조회</button>
-            </div>
-          </div>
-          <div class="join step2">
-            <h3>쇼핑몰정보<span>정확한 쇼핑몰정보 및 기업정보를 입력하세요.</span></h3>
-            <h4>쇼핑몰 로고<span class="td-notice ml-6">최적 320x320 </span></h4>
-            <div class="flex w-100p">
-              <div class="flex align-center">
-                <button class="button line large mr-24 w-120">이미지 선택</button>
-                <a href="#none" class="underline">Pop_up_imagenamte.gif</a>
-                <button><i class="ico-circle-close small"></i></button>
-              </div>
-            </div>
-            <h4>쇼핑몰 이름</h4>
-            <div class="input-box">
-              <input type="text" class="input w-100p large" placeholder="명칭 입력" title="쇼핑몰 이름 입력" />
-            </div>
-            <h4>회사(상호)명</h4>
-            <div class="input-box">
-              <input type="text" class="input w-100p large" placeholder="이름 입력" title="회사(상호)명 입력" />
-            </div>
-            <h4>사업자등록번호<i class="require"></i></h4>
-            <div class="input-box flex">
-              <input type="number" class="input w-100p large" placeholder="기본주소 입력" title="기본주소 입력" />
-              <button class="button line large ml-8">주소검색</button>
-            </div>
-            <div class="input-box mt-8">
-              <input type="text" class="input w-100p large" placeholder="상세주소 입력" title="상세주소 입력" />
-            </div>
-            <h4>대표자 전화번호</h4>
-            <div class="input-box">
-              <input
-                type="text"
-                class="input w-100p large"
-                placeholder="&ldquo;-&rdquo; 빼고 입력"
-                title="대표자 전화번호"
-              />
-            </div>
-            <h4>정보보안 담당자</h4>
-            <div class="input-box">
-              <input type="text" class="input w-100p large" placeholder="이름 입력" title="정보보안 담당자 이름 입력" />
-            </div>
-            <h4>정보보안 담당자 전화번호</h4>
-            <div class="input-box">
-              <input
-                type="text"
-                class="input w-100p large"
-                placeholder="&ldquo;-&rdquo; 빼고 입력"
-                title="정보보안 담당자 전화번호 이름 입력"
-              />
-            </div>
-          </div>
-          <div class="join step3">
-            <h3>요금제 선택 및 결제<span>요금제를 선택하시고 선결제를 진행합니다.</span></h3>
-            <h4>요금제 선택</h4>
-            <div class="flex w-100p">
-              <div class="radio-box ty3">
-                <input type="radio" class="radio" id="charge1" name="choice-charge" checked="" />
-                <label for="charge1">라이트</label>
-              </div>
-              <div class="radio-box ty3">
-                <input type="radio" class="radio" id="charge2" name="choice-charge" />
-                <label for="charge2">스탠다드</label>
-              </div>
-              <div class="radio-box ty3">
-                <input type="radio" class="radio" id="charge3" name="choice-charge" />
-                <label for="charge3">프리미엄</label>
-              </div>
-            </div>
-            <h4>개월 선택</h4>
-            <div class="flex w-100p">
-              <div class="radio-box ty3">
-                <input type="radio" class="radio" id="month1" name="choice-month" checked="" />
-                <label for="month1">1개월</label>
-              </div>
-              <div class="radio-box ty3">
-                <input type="radio" class="radio" id="month3" name="choice-month" />
-                <label for="month3">3개월</label>
-              </div>
-              <div class="radio-box ty3">
-                <input type="radio" class="radio" id="month6" name="choice-month" />
-                <label for="month6">6개월</label>
-              </div>
-            </div>
-            <h4>이용기간 선택</h4>
-            <div class="result-box">
-              <p class="using-date"><span>2023-11-01</span> ~ <span>2023-11-31</span></p>
-            </div>
-            <div class="result-box large">
-              <div class="cost-box">
-                <p class="cost-type">할인 금액</p>
-                <p><span class="fc-red">48,000</span>원</p>
-              </div>
-              <div class="cost-box">
-                <p class="cost-type">결제 금액</p>
-                <p><span>170,000</span>원</p>
-              </div>
-            </div>
-            <h4>부가서비스 선택</h4>
-            <div class="check-box has-line sm-check">
-              <input type="checkbox" class="checkbox" id="choice-service1" checked="" />
-              <label for="choice-service1" class="lbl">이미지번역(1,000개/9,900원)</label>
-            </div>
-            <div class="check-box has-line sm-check">
-              <input type="checkbox" class="checkbox" id="choice-service2" />
-              <label for="choice-service2" class="lbl">메시지발송(1,000개/30,000원)</label>
-            </div>
-            <div class="result-box large mt-8">
-              <div class="cost-box">
-                <p class="cost-type">결제 금액</p>
-                <p><span>48,000</span>원</p>
-              </div>
-              <div class="cost-box">
-                <p class="cost-type all-of">총 결제 금액</p>
-                <p><span>170,000</span>원</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="join-complete">
-          <div><img src="../../static/images/common/joinus.png" alt="" /></div>
-          <button class="button largest bg-green w-320">셀러 오피스</button>
+
+        <!-- go top btn-wrap -->
+        <div class="fixed-wrap">
+          <a href="#none" class="fixed-btn chat"></a>
+          <a href="#none" class="fixed-btn go-top"></a>
         </div>
       </div>
 
-      <!-- go top btn-wrap -->
-      <div class="fixed-wrap">
-        <a href="#none" class="fixed-btn chat"></a>
-        <a href="#none" class="fixed-btn go-top"></a>
-      </div>
+      <footer data-include="../layout/footer_fo.html"></footer>
     </div>
-
-    <footer data-include="../layout/footer_fo.html"></footer>
   </body>
 </html>

@@ -46,7 +46,6 @@ html {
   text-size-adjust: none;
 }
 body {
-  min-width: 1680px;
   font: normal 1.6rem/2.4rem "Pretendard", sans-serif;
   color: var(--base-txt-color);
   letter-spacing: -0.02em;
@@ -55,13 +54,13 @@ body {
   // html.is-app & {
   //   overscroll-behavior-y: contain; // 당겨서 새로고침 막기
   // }
+}
+.market {
+  min-width: 1680px;
   &.fo {
-    // min-width: 1920px;
     min-width: 1280px;
-    overflow-x: hidden;
   }
 }
-
 html.mobile {
   a,
   button,

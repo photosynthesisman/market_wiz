@@ -341,16 +341,18 @@ html {
 }
 
 body {
-  min-width: 1680px;
   font: normal 1.6rem/2.4rem "Pretendard", sans-serif;
   color: var(--base-txt-color);
   letter-spacing: -0.02em;
   word-break: keep-all;
   -webkit-font-smoothing: antialiased;
 }
-body.fo {
+
+.market {
+  min-width: 1680px;
+}
+.market.fo {
   min-width: 1280px;
-  overflow-x: hidden;
 }
 
 html.mobile a,
@@ -15646,7 +15648,7 @@ html.is-app {
   background-color: #2d3036;
 }
 .header-space.fo {
-  position: fixed;
+  position: sticky;
   width: 100%;
   min-width: 1280px;
   -webkit-box-align: center;
@@ -16343,6 +16345,7 @@ html.is-app {
 
 .login {
   width: 100%;
+  min-width: 1680px;
   height: 100%;
   background: #edf4fe;
 }
@@ -16414,7 +16417,7 @@ html.is-app {
 }
 .login .join-form {
   margin: 0 auto;
-  padding-top: 18.4rem;
+  padding-top: 7.2rem;
   width: 75.2rem;
 }
 .login .join-form h2 {
@@ -16490,7 +16493,6 @@ html.is-app {
 }
 .login .login-complete {
   position: relative;
-  margin-top: 11.2rem;
   padding: 7.2rem 0 12rem;
 }
 .login .login-complete > p {
@@ -16603,6 +16605,7 @@ html.is-app {
   border: 1px solid var(--line-color02);
 }
 .btn-log.market {
+  min-width: auto;
   background: var(--primary-color2) url(../images/common/logo-only.png) left 1.1rem center/4.8rem 4.8rem no-repeat;
   color: var(--white-color);
 }
@@ -17460,6 +17463,7 @@ html.is-app {
 .market.mo {
   position: relative;
   margin: 0 auto;
+  min-width: 36rem;
 }
 .market.mo .contents-wrap {
   padding: 0 1.6rem;
@@ -17467,7 +17471,6 @@ html.is-app {
 
 .market.fo .contents-wrap {
   position: relative;
-  margin-top: 11.2rem;
 }
 .market.fo .contents-wrap.has-bg {
   background-color: #edf4fe;
@@ -18515,8 +18518,7 @@ html.is-app {
 .contents-box.contents-1 {
   position: relative;
   height: 80rem;
-  margin-top: 11.2rem;
-  padding-top: 10rem;
+  padding-top: 12rem;
   background: url(../images/common/fo-main-1.png) bottom center/1920px no-repeat;
   text-align: center;
 }
@@ -18532,12 +18534,15 @@ html.is-app {
   background: linear-gradient(180deg, rgba(248, 250, 255, 0) 0%, #ecf3ff 100%);
 }
 .contents-box.contents-1 h2 {
-  margin-bottom: 2.4rem;
-  font-size: 4.2rem;
-  line-height: 5rem;
+  margin-bottom: 0;
+  font-size: 5rem;
+  line-height: 6rem;
+}
+.contents-box.contents-1 h2 + h2 {
+  margin-top: 0.4rem;
+  margin-bottom: 1.6rem;
 }
 .contents-box.contents-1 p {
-  margin-top: 2.4rem;
   font-size: 2.2rem;
   line-height: 3.2rem;
 }
@@ -18926,7 +18931,9 @@ html.is-app {
           justify-content: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 4.8rem;
   padding: 0;
   font-size: 1.5rem;
@@ -19082,8 +19089,6 @@ html.is-app {
 }
 .mo .panel {
   position: fixed;
-  min-width: 36rem;
-  max-width: 37.6rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -19276,6 +19281,10 @@ html.is-app {
 }
 .mo .search-tab div {
   font-size: 1.3rem;
+}
+.mo .search-tab.ty2 {
+  margin: 3.2rem -1.6rem 2.4rem;
+  border-top: 1px solid var(--line-color02);
 }
 .mo .popup {
   width: 32.8rem;
@@ -19471,6 +19480,50 @@ html.is-app {
 }
 .exposure-list .unit-detail .market-index dl:last-child {
   margin-bottom: 0;
+}
+
+.contents .log-data {
+  padding-bottom: 6.4rem;
+}
+.contents .log-data li {
+  border-top: 1px solid var(--line-color01);
+  border-bottom: 1px solid var(--line-color01);
+}
+.contents .log-data li + li {
+  margin-top: 1.6rem;
+}
+.contents .log-data .log-date {
+  padding: 1.2rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 2rem;
+  text-align: center;
+  background-color: var(--disabled-bg-color);
+}
+.contents .log-data dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--line-color02);
+}
+.contents .log-data dl.last-dl {
+  display: block;
+}
+.contents .log-data dl.last-dl dd {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.contents .log-data dt {
+  min-width: 8rem;
+}
+.contents .log-data .a-link2 {
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 .footer-space {

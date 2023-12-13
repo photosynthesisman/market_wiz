@@ -8,184 +8,187 @@
     <!-- 퍼블용 include: 개발팀에서 재include 하길 바랍니다. -->
     <script class="__include" src="../include/head.js"></script>
   </head>
-  <body class="market">
-    <!-- header -->
-    <div class="header-space" data-include="../layout/header.html"></div>
+  <body>
+    <div class="market">
+      <!-- header -->
+      <div class="header-space" data-include="../layout/header.html"></div>
 
-    <!-- container -->
-    <div class="container">
-      <!-- lnb -->
-      <div class="lnb" data-include="../layout/lnb.html"></div>
+      <!-- container -->
+      <div class="container">
+        <!-- lnb -->
+        <div class="lnb" data-include="../layout/lnb.html"></div>
 
-      <!-- contents -->
-      <div class="contents">
-        <div class="tab-container">
-          <ul>
-            <li class="tab active"><a href="#">사이트 상품수집</a><span class="close-tab">닫기</span></li>
-          </ul>
-          <div class="move-wrap">
-            <button class="button"><i class="ico-backward small"></i></button>
-            <button class="button"><i class="ico-forward small"></i></button>
+        <!-- contents -->
+        <div class="contents">
+          <div class="tab-container">
+            <ul>
+              <li class="tab active"><a href="#">사이트 상품수집</a><span class="close-tab">닫기</span></li>
+            </ul>
+            <div class="move-wrap">
+              <button class="button"><i class="ico-backward small"></i></button>
+              <button class="button"><i class="ico-forward small"></i></button>
+            </div>
           </div>
-        </div>
 
-        <div class="tab-content active">
-          <div class="tit-wrap">
-            <h2 class="h1">
-              사이트 상품수집
-              <div class="tooltip-wrap">
-                <i class="tooltip">툴팁</i>
-                <div class="tooltip-txt">
-                  <p>수집 후 저장하지 않은 상품 목록입니다.</p>
+          <div class="tab-content active">
+            <div class="tit-wrap">
+              <h2 class="h1">
+                사이트 상품수집
+                <div class="tooltip-wrap">
+                  <i class="tooltip">툴팁</i>
+                  <div class="tooltip-txt">
+                    <p>수집 후 저장하지 않은 상품 목록입니다.</p>
+                  </div>
+                </div>
+                <button class="favorite">즐겨찾기</button>
+                <!-- 즐겨찾기 등록된 경우-->
+                <!-- <button class="favorite checked">즐겨찾기</button> -->
+              </h2>
+              <div class="path">
+                <a href="#none" class="home">홈 바로가기</a>
+                <a href="#none" class="1depth">상품수집관리</a>
+                <a href="#none" class="2depth">사이트 상품 수집</a>
+              </div>
+            </div>
+            <div class="contents">
+              <div class="search-wrap">
+                <dl>
+                  <dt>사이트<i class="require"></i></dt>
+                  <dd>
+                    <div class="select-box">
+                      <button class="init">선택하세요</button>
+                      <ul>
+                        <li><button data-value="1">쿠팡</button></li>
+                        <li><button data-value="2">네이버</button></li>
+                        <li><button data-value="3">지마켓</button></li>
+                        <li><button data-value="4">11번가</button></li>
+                        <li><button data-value="5">롯데온</button></li>
+                        <li><button data-value="6">타오바오</button></li>
+                        <li><button data-value="7">알리익스프레스</button></li>
+                        <li><button data-value="8">1688</button></li>
+                        <li><button data-value="9">아마존(미국)</button></li>
+                        <li><button data-value="10">아마존(일본)</button></li>
+                        <li><button data-value="11">아마존(독일)</button></li>
+                      </ul>
+                    </div>
+                  </dd>
+                  <dt class="ml-64">대량/개별</dt>
+                  <dd>
+                    <div class="flex">
+                      <div class="radio-box">
+                        <input type="radio" class="radio" id="collect1" name="collect" checked />
+                        <label for="collect1">대량수집</label>
+                      </div>
+                      <div class="radio-box">
+                        <input type="radio" class="radio" id="collect2" name="collect" />
+                        <label for="collect2">개별수집</label>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="">
+                  <dt>수집방식<i class="require"></i></dt>
+                  <dd>
+                    <div class="search-box">
+                      <div class="select-box">
+                        <button class="init" data-value="1">URL</button>
+                        <ul>
+                          <li><button data-value="1">URL</button></li>
+                          <li><button data-value="2">키워드</button></li>
+                        </ul>
+                      </div>
+                      <div class="input-box w-600">
+                        <input type="text" class="input" title="내용입력" />
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <!-- 수집방식이 개별수집일 경우 케이스 -->
+                <dl class="align-start">
+                  <dt>수집방식<i class="require"></i></dt>
+                  <dd>
+                    <div class="search-box">
+                      <div class="select-box disabled">
+                        <button class="init">URL</button>
+                        <ul>
+                          <li><button data-value="1">URL</button></li>
+                          <li><button data-value="2">키워드</button></li>
+                        </ul>
+                      </div>
+                      <div class="text-area w-600">
+                        <textarea rows="1"></textarea>
+                      </div>
+                      <div class="ml-16">
+                        <p class="td-notice">
+                          데이터를 수집하실 상품의 상세페이지 URL를 http://를 포함하여 입력해주세요.
+                        </p>
+                        <p class="td-notice">
+                          줄바꿈(엔터) 하여 여러개의 URL 입력하시면 입력하신 URL을 한번에 수집합니다.
+                        </p>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>수집설정현황</dt>
+                  <dd>
+                    <ul class="cr-situation">
+                      <li>
+                        <dl>
+                          <dt>저장상품수</dt>
+                          <dd>1,000개</dd>
+                        </dl>
+                      </li>
+                      <li>
+                        <dl>
+                          <dt>가격제한</dt>
+                          <dd>10,000원 ~ 100,000원</dd>
+                        </dl>
+                      </li>
+                      <li>
+                        <dl>
+                          <dt>품절상품</dt>
+                          <dd>수집</dd>
+                        </dl>
+                      </li>
+                      <li>
+                        <dl>
+                          <dt>금지어</dt>
+                          <dd>적용</dd>
+                        </dl>
+                      </li>
+                      <li>
+                        <dl>
+                          <dt>옵션</dt>
+                          <dd>수집미포함</dd>
+                        </dl>
+                      </li>
+                      <li>
+                        <a href="#none" class="change-set rounded" title="수집 설정변경">수집설정변경</a>
+                      </li>
+                    </ul>
+                  </dd>
+                  <p class="td-notice ml-16">수집설정은 상품수집 버튼 선택 시 적용된 설정으로 수집합니다.</p>
+                </dl>
+                <dl>
+                  <dt>수집설정현황</dt>
+                  <dd>
+                    설정된 정보가 없습니다. 수집설정이 되어 있지 않을 경우 상품수집이 불가합니다. 환경설정에서
+                    수집설정을 해주세요.
+                  </dd>
+                  <button href="#none" class="button mini round on ml-16" title="수집 설정변경">
+                    환경설정 바로가기
+                  </button>
+                  <p class="td-notice ml-16">수집설정은 상품수집 버튼 선택 시 적용된 설정으로 수집합니다.</p>
+                </dl>
+                <div class="button-wrap mt-20">
+                  <button class="button line mr-8">저장대기상품<i class="ico-new">NEW</i></button>
+                  <button class="button bg-primary">상품수집</button>
                 </div>
               </div>
-              <button class="favorite">즐겨찾기</button>
-              <!-- 즐겨찾기 등록된 경우-->
-              <!-- <button class="favorite checked">즐겨찾기</button> -->
-            </h2>
-            <div class="path">
-              <a href="#none" class="home">홈 바로가기</a>
-              <a href="#none" class="1depth">상품수집관리</a>
-              <a href="#none" class="2depth">사이트 상품 수집</a>
-            </div>
-          </div>
-          <div class="contents">
-            <div class="search-wrap">
-              <dl>
-                <dt>사이트<i class="require"></i></dt>
-                <dd>
-                  <div class="select-box">
-                    <button class="init">선택하세요</button>
-                    <ul>
-                      <li><button data-value="1">쿠팡</button></li>
-                      <li><button data-value="2">네이버</button></li>
-                      <li><button data-value="3">지마켓</button></li>
-                      <li><button data-value="4">11번가</button></li>
-                      <li><button data-value="5">롯데온</button></li>
-                      <li><button data-value="6">타오바오</button></li>
-                      <li><button data-value="7">알리익스프레스</button></li>
-                      <li><button data-value="8">1688</button></li>
-                      <li><button data-value="9">아마존(미국)</button></li>
-                      <li><button data-value="10">아마존(일본)</button></li>
-                      <li><button data-value="11">아마존(독일)</button></li>
-                    </ul>
-                  </div>
-                </dd>
-                <dt class="ml-64">대량/개별</dt>
-                <dd>
-                  <div class="flex">
-                    <div class="radio-box">
-                      <input type="radio" class="radio" id="collect1" name="collect" checked />
-                      <label for="collect1">대량수집</label>
-                    </div>
-                    <div class="radio-box">
-                      <input type="radio" class="radio" id="collect2" name="collect" />
-                      <label for="collect2">개별수집</label>
-                    </div>
-                  </div>
-                </dd>
-              </dl>
-              <dl class="">
-                <dt>수집방식<i class="require"></i></dt>
-                <dd>
-                  <div class="search-box">
-                    <div class="select-box">
-                      <button class="init" data-value="1">URL</button>
-                      <ul>
-                        <li><button data-value="1">URL</button></li>
-                        <li><button data-value="2">키워드</button></li>
-                      </ul>
-                    </div>
-                    <div class="input-box w-600">
-                      <input type="text" class="input" title="내용입력" />
-                    </div>
-                  </div>
-                </dd>
-              </dl>
-              <!-- 수집방식이 개별수집일 경우 케이스 -->
-              <dl class="align-start">
-                <dt>수집방식<i class="require"></i></dt>
-                <dd>
-                  <div class="search-box">
-                    <div class="select-box disabled">
-                      <button class="init">URL</button>
-                      <ul>
-                        <li><button data-value="1">URL</button></li>
-                        <li><button data-value="2">키워드</button></li>
-                      </ul>
-                    </div>
-                    <div class="text-area w-600">
-                      <textarea rows="1"></textarea>
-                    </div>
-                    <div class="ml-16">
-                      <p class="td-notice">
-                        데이터를 수집하실 상품의 상세페이지 URL를 http://를 포함하여 입력해주세요.
-                      </p>
-                      <p class="td-notice">
-                        줄바꿈(엔터) 하여 여러개의 URL 입력하시면 입력하신 URL을 한번에 수집합니다.
-                      </p>
-                    </div>
-                  </div>
-                </dd>
-              </dl>
-              <dl>
-                <dt>수집설정현황</dt>
-                <dd>
-                  <ul class="cr-situation">
-                    <li>
-                      <dl>
-                        <dt>저장상품수</dt>
-                        <dd>1,000개</dd>
-                      </dl>
-                    </li>
-                    <li>
-                      <dl>
-                        <dt>가격제한</dt>
-                        <dd>10,000원 ~ 100,000원</dd>
-                      </dl>
-                    </li>
-                    <li>
-                      <dl>
-                        <dt>품절상품</dt>
-                        <dd>수집</dd>
-                      </dl>
-                    </li>
-                    <li>
-                      <dl>
-                        <dt>금지어</dt>
-                        <dd>적용</dd>
-                      </dl>
-                    </li>
-                    <li>
-                      <dl>
-                        <dt>옵션</dt>
-                        <dd>수집미포함</dd>
-                      </dl>
-                    </li>
-                    <li>
-                      <a href="#none" class="change-set rounded" title="수집 설정변경">수집설정변경</a>
-                    </li>
-                  </ul>
-                </dd>
-                <p class="td-notice ml-16">수집설정은 상품수집 버튼 선택 시 적용된 설정으로 수집합니다.</p>
-              </dl>
-              <dl>
-                <dt>수집설정현황</dt>
-                <dd>
-                  설정된 정보가 없습니다. 수집설정이 되어 있지 않을 경우 상품수집이 불가합니다. 환경설정에서 수집설정을
-                  해주세요.
-                </dd>
-                <button href="#none" class="button mini round on ml-16" title="수집 설정변경">환경설정 바로가기</button>
-                <p class="td-notice ml-16">수집설정은 상품수집 버튼 선택 시 적용된 설정으로 수집합니다.</p>
-              </dl>
-              <div class="button-wrap mt-20">
-                <button class="button line mr-8">저장대기상품<i class="ico-new">NEW</i></button>
-                <button class="button bg-primary">상품수집</button>
-              </div>
-            </div>
-            <hr class="h-line" />
-            <div class="result-wrap">
-              <!-- 
+              <hr class="h-line" />
+              <div class="result-wrap">
+                <!-- 
               <div class="summary-box">
                 <ul>
                   <li>
@@ -203,35 +206,35 @@
                 </ul>
               </div>
                -->
-              <div class="result-box">
-                <div class="list-top">
-                  <div class="left">
-                    <button class="button small bg-dark">선택상품저장</button>
-                    <button class="button small bg-dark">전체상품저장</button>
-                    <button class="button small bg-dark">옵션별 상품저장</button>
-                    <div class="tooltip-wrap">
-                      <i class="tooltip"></i>
-                      <div class="tooltip-txt">
-                        <p>옵션을 각 단일상품으로 저장합니다.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="button small line">선택상품삭제</button>
-                </div>
-                <div class="product-list">
-                  <div class="list-summary">
+                <div class="result-box">
+                  <div class="list-top">
                     <div class="left">
-                      <div class="check-box sm-check no-label">
-                        <input type="checkbox" class="checkbox" id="chk_all-4" />
-                        <label for="chk_all-4" class="lbl"></label>
+                      <button class="button small bg-dark">선택상품저장</button>
+                      <button class="button small bg-dark">전체상품저장</button>
+                      <button class="button small bg-dark">옵션별 상품저장</button>
+                      <div class="tooltip-wrap">
+                        <i class="tooltip"></i>
+                        <div class="tooltip-txt">
+                          <p>옵션을 각 단일상품으로 저장합니다.</p>
+                        </div>
                       </div>
-                      <span class="result"
-                        >총 <em>1,222건 </em>/ 성공 <em>980</em>건 / 실패 <em class="fc-red">20</em>건</span
-                      >
-                      <!-- <a href="#none" class="rounded" title="수집 결과보기">수집결과보기</a> -->
                     </div>
-                    <div class="right">
-                      <!-- 
+                    <button class="button small line">선택상품삭제</button>
+                  </div>
+                  <div class="product-list">
+                    <div class="list-summary">
+                      <div class="left">
+                        <div class="check-box sm-check no-label">
+                          <input type="checkbox" class="checkbox" id="chk_all-4" />
+                          <label for="chk_all-4" class="lbl"></label>
+                        </div>
+                        <span class="result"
+                          >총 <em>1,222건 </em>/ 성공 <em>980</em>건 / 실패 <em class="fc-red">20</em>건</span
+                        >
+                        <!-- <a href="#none" class="rounded" title="수집 결과보기">수집결과보기</a> -->
+                      </div>
+                      <div class="right">
+                        <!-- 
                       <div class="select-box">
                         <button class="init">최근주문</button>
                         <ul>
@@ -240,410 +243,411 @@
                         </ul>
                       </div>
                        -->
-                      <div class="select-box">
-                        <button class="init">50개씩 보기</button>
-                        <ul>
-                          <li><button data-value="1">50개씩 보기</button></li>
-                          <li><button data-value="2">100개씩 보기</button></li>
-                          <li><button data-value="3">150개씩 보기</button></li>
-                          <li><button data-value="4">200개씩 보기</button></li>
-                        </ul>
+                        <div class="select-box">
+                          <button class="init">50개씩 보기</button>
+                          <ul>
+                            <li><button data-value="1">50개씩 보기</button></li>
+                            <li><button data-value="2">100개씩 보기</button></li>
+                            <li><button data-value="3">150개씩 보기</button></li>
+                            <li><button data-value="4">200개씩 보기</button></li>
+                          </ul>
+                        </div>
+                        <div class="classify-wrap">
+                          <!-- active 클래스 추가시 배경 아이콘 변경 -->
+                          <button class="classify image active">이미지</button>
+                          <button class="classify list">목록</button>
+                        </div>
                       </div>
-                      <div class="classify-wrap">
-                        <!-- active 클래스 추가시 배경 아이콘 변경 -->
-                        <button class="classify image active">이미지</button>
-                        <button class="classify list">목록</button>
+                    </div>
+
+                    <div class="item-wrap">
+                      <div class="item">
+                        <div class="img-box w-104">
+                          <img src="../../static/images/common/dummy-image.png" alt="" />
+                        </div>
+                        <span class="check-box no-label sm-check">
+                          <input type="checkbox" class="checkbox" id="chk1" />
+                          <label for="chk1" class="lbl"></label>
+                        </span>
+                        <div class="txt-wrap">
+                          <span>상품코드 <em>201948388857</em></span>
+                          <a href="#none" title="상품 상세 설명"
+                            >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
+                          >
+                          <p class="item-price">KRW 35,000원</p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="img-box w-104">
+                          <img src="../../static/images/common/dummy-image.png" alt="" />
+                        </div>
+                        <span class="check-box no-label sm-check">
+                          <input type="checkbox" class="checkbox" id="chk2" />
+                          <label for="chk2" class="lbl"></label>
+                        </span>
+                        <div class="txt-wrap">
+                          <span>상품코드 <em>201948388857</em></span>
+                          <a href="#none" title="상품 상세 설명"
+                            >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
+                          >
+                          <p class="item-price">KRW 35,000원</p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="img-box w-104">
+                          <img src="../../static/images/common/dummy-image.png" alt="" />
+                        </div>
+                        <span class="check-box no-label sm-check">
+                          <input type="checkbox" class="checkbox" id="chk3" />
+                          <label for="chk3" class="lbl"></label>
+                        </span>
+
+                        <div class="txt-wrap">
+                          <span>상품코드 <em>201948388857</em></span>
+                          <a href="#none" title="상품 상세 설명"
+                            >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
+                          >
+                          <p class="item-price">KRW 35,000원</p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="img-box w-104">
+                          <img src="../../static/images/common/dummy-image.png" alt="" />
+                        </div>
+                        <span class="check-box no-label sm-check">
+                          <input type="checkbox" class="checkbox" id="chk4" />
+                          <label for="chk4" class="lbl"></label>
+                        </span>
+                        <div class="txt-wrap">
+                          <span>상품코드 <em>201948388857</em></span>
+                          <a href="#none" title="상품 상세 설명"
+                            >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
+                          >
+                          <p class="item-price">KRW 35,000원</p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="img-box w-104">
+                          <img src="../../static/images/common/dummy-image.png" alt="" />
+                        </div>
+                        <span class="check-box no-label sm-check">
+                          <input type="checkbox" class="checkbox" id="chk5" />
+                          <label for="chk5" class="lbl"></label>
+                        </span>
+
+                        <div class="txt-wrap">
+                          <span>상품코드 <em>201948388857</em></span>
+                          <a href="#none" title="상품 상세 설명"
+                            >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
+                          >
+                          <p class="item-price">KRW 35,000원</p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="img-box w-104">
+                          <img src="../../static/images/common/dummy-image.png" alt="" />
+                        </div>
+                        <span class="check-box no-label sm-check">
+                          <input type="checkbox" class="checkbox" id="chk6" />
+                          <label for="chk6" class="lbl"></label>
+                        </span>
+                        <div class="txt-wrap">
+                          <span>상품코드 <em>201948388857</em></span>
+                          <a href="#none" title="상품 상세 설명"
+                            >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
+                          >
+                          <p class="item-price">KRW 35,000원</p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="img-box w-104">
+                          <img src="../../static/images/common/dummy-image.png" alt="" />
+                        </div>
+                        <span class="check-box no-label sm-check">
+                          <input type="checkbox" class="checkbox" id="chk7" />
+                          <label for="chk7" class="lbl"></label>
+                        </span>
+
+                        <div class="txt-wrap">
+                          <span>상품코드 <em>201948388857</em></span>
+                          <a href="#none" title="상품 상세 설명"
+                            >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
+                          >
+                          <p class="item-price">KRW 35,000원</p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="img-box w-104">
+                          <img src="../../static/images/common/dummy-image.png" alt="" />
+                        </div>
+                        <span class="check-box no-label sm-check">
+                          <input type="checkbox" class="checkbox" id="chk8" />
+                          <label for="chk8" class="lbl"></label>
+                        </span>
+
+                        <div class="txt-wrap">
+                          <span>상품코드 <em>201948388857</em></span>
+                          <a href="#none" title="상품 상세 설명"
+                            >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
+                          >
+                          <p class="item-price">KRW 35,000원</p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="img-box w-104">
+                          <img src="../../static/images/common/dummy-image.png" alt="" />
+                        </div>
+                        <span class="check-box no-label sm-check">
+                          <input type="checkbox" class="checkbox" id="chk9" />
+                          <label for="chk9" class="lbl"></label>
+                        </span>
+
+                        <div class="txt-wrap">
+                          <span>상품코드 <em>201948388857</em></span>
+                          <a href="#none" title="상품 상세 설명"
+                            >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
+                          >
+                          <p class="item-price">KRW 35,000원</p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="img-box w-104">
+                          <img src="../../static/images/common/dummy-image.png" alt="" />
+                        </div>
+                        <span class="check-box no-label sm-check">
+                          <input type="checkbox" class="checkbox" id="chk10" />
+                          <label for="chk10" class="lbl"></label>
+                        </span>
+
+                        <div class="txt-wrap">
+                          <span>상품코드 <em>201948388857</em></span>
+                          <a href="#none" title="상품 상세 설명"
+                            >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
+                          >
+                          <p class="item-price">KRW 35,000원</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="table mt-16">
+                      <table>
+                        <colgroup>
+                          <col style="width: 4.8rem" />
+                          <col style="width: 29.6rem" />
+                          <col style="width: auto" />
+                          <col style="width: 16rem" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th class="t-center">
+                              <div class="check-box no-label sm-check">
+                                <input type="checkbox" class="checkbox" id="chk11" />
+                                <label for="chk11" class="lbl"></label>
+                              </div>
+                            </th>
+                            <th>카테고리</th>
+                            <th>[상품코드] 상품명</th>
+                            <th>금액</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="t-center">
+                              <div class="check-box no-label sm-check">
+                                <input type="checkbox" class="checkbox" id="chk12" />
+                                <label for="chk12" class="lbl"></label>
+                              </div>
+                            </td>
+                            <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
+                            <td>
+                              <a href="#none" class="a-link2" title="해당 상품으로 이동"
+                                >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
+                              >
+                            </td>
+                            <td class="t-right">KRW 45,000</td>
+                          </tr>
+                          <tr>
+                            <td class="t-center">
+                              <div class="check-box no-label sm-check">
+                                <input type="checkbox" class="checkbox" id="chk13" />
+                                <label for="chk13" class="lbl"></label>
+                              </div>
+                            </td>
+                            <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
+                            <td>
+                              <a href="#none" class="a-link2" title="해당 상품으로 이동"
+                                >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
+                              >
+                            </td>
+                            <td class="t-right">KRW 45,000</td>
+                          </tr>
+                          <tr>
+                            <td class="t-center">
+                              <div class="check-box no-label sm-check">
+                                <input type="checkbox" class="checkbox" id="chk14" />
+                                <label for="chk14" class="lbl"></label>
+                              </div>
+                            </td>
+                            <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
+                            <td>
+                              <a href="#none" class="a-link2" title="해당 상품으로 이동"
+                                >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
+                              >
+                            </td>
+                            <td class="t-right">KRW 45,000</td>
+                          </tr>
+                          <tr>
+                            <td class="t-center">
+                              <div class="check-box no-label sm-check">
+                                <input type="checkbox" class="checkbox" id="chk15" />
+                                <label for="chk15" class="lbl"></label>
+                              </div>
+                            </td>
+                            <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
+                            <td>
+                              <a href="#none" class="a-link2" title="해당 상품으로 이동"
+                                >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
+                              >
+                            </td>
+                            <td class="t-right">KRW 45,000</td>
+                          </tr>
+                          <tr>
+                            <td class="t-center">
+                              <div class="check-box no-label sm-check">
+                                <input type="checkbox" class="checkbox" id="chk16" />
+                                <label for="chk16" class="lbl"></label>
+                              </div>
+                            </td>
+                            <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
+                            <td>
+                              <a href="#none" class="a-link2" title="해당 상품으로 이동"
+                                >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
+                              >
+                            </td>
+                            <td class="t-right">KRW 45,000</td>
+                          </tr>
+                          <tr>
+                            <td class="t-center">
+                              <div class="check-box no-label sm-check">
+                                <input type="checkbox" class="checkbox" id="chk17" />
+                                <label for="chk17" class="lbl"></label>
+                              </div>
+                            </td>
+                            <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
+                            <td>
+                              <a href="#none" class="a-link2" title="해당 상품으로 이동"
+                                >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
+                              >
+                            </td>
+                            <td class="t-right">KRW 45,000</td>
+                          </tr>
+                          <tr>
+                            <td class="t-center">
+                              <div class="check-box no-label sm-check">
+                                <input type="checkbox" class="checkbox" id="chk18" />
+                                <label for="chk18" class="lbl"></label>
+                              </div>
+                            </td>
+                            <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
+                            <td>
+                              <a href="#none" class="a-link2" title="해당 상품으로 이동"
+                                >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
+                              >
+                            </td>
+                            <td class="t-right">KRW 45,000</td>
+                          </tr>
+                          <tr>
+                            <td class="t-center">
+                              <div class="check-box no-label sm-check">
+                                <input type="checkbox" class="checkbox" id="chk19" />
+                                <label for="chk19" class="lbl"></label>
+                              </div>
+                            </td>
+                            <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
+                            <td>
+                              <a href="#none" class="a-link2" title="해당 상품으로 이동"
+                                >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
+                              >
+                            </td>
+                            <td class="t-right">KRW 45,000</td>
+                          </tr>
+                          <tr>
+                            <td class="t-center">
+                              <div class="check-box no-label sm-check">
+                                <input type="checkbox" class="checkbox" id="chk20" />
+                                <label for="chk20" class="lbl"></label>
+                              </div>
+                            </td>
+                            <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
+                            <td>
+                              <a href="#none" class="a-link2" title="해당 상품으로 이동"
+                                >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
+                              >
+                            </td>
+                            <td class="t-right">KRW 45,000</td>
+                          </tr>
+                          <tr>
+                            <td class="t-center">
+                              <div class="check-box no-label sm-check">
+                                <input type="checkbox" class="checkbox" id="chk21" />
+                                <label for="chk21" class="lbl"></label>
+                              </div>
+                            </td>
+                            <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
+                            <td>
+                              <a href="#none" class="a-link2" title="해당 상품으로 이동"
+                                >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
+                              >
+                            </td>
+                            <td class="t-right">KRW 45,000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="progress-box mt-20">
+                    <p>쇼핑몰의 <span>asdf123455</span> 계정에서 주문 정보 수집 중...</p>
+                  </div>
+                  <div class="progress-box mt-20">
+                    <div class="progress-wrap">
+                      <span class="progress"></span>
+                    </div>
+                    <p>상품을 수집중 입니다.</p>
+                  </div>
+                  <div class="progress-box mt-20 h-220">
+                    <div class="load-screen">
+                      <div class="load-contents">
+                        <p>상품을 수집중 입니다.</p>
+                        <svg class="load-spinner" viewBox="0 0 50 50">
+                          <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="6"></circle>
+                        </svg>
                       </div>
                     </div>
                   </div>
-
-                  <div class="item-wrap">
-                    <div class="item">
-                      <div class="img-box w-104">
-                        <img src="../../static/images/common/dummy-image.png" alt="" />
-                      </div>
-                      <span class="check-box no-label sm-check">
-                        <input type="checkbox" class="checkbox" id="chk1" />
-                        <label for="chk1" class="lbl"></label>
-                      </span>
-                      <div class="txt-wrap">
-                        <span>상품코드 <em>201948388857</em></span>
-                        <a href="#none" title="상품 상세 설명"
-                          >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
-                        >
-                        <p class="item-price">KRW 35,000원</p>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="img-box w-104">
-                        <img src="../../static/images/common/dummy-image.png" alt="" />
-                      </div>
-                      <span class="check-box no-label sm-check">
-                        <input type="checkbox" class="checkbox" id="chk2" />
-                        <label for="chk2" class="lbl"></label>
-                      </span>
-                      <div class="txt-wrap">
-                        <span>상품코드 <em>201948388857</em></span>
-                        <a href="#none" title="상품 상세 설명"
-                          >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
-                        >
-                        <p class="item-price">KRW 35,000원</p>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="img-box w-104">
-                        <img src="../../static/images/common/dummy-image.png" alt="" />
-                      </div>
-                      <span class="check-box no-label sm-check">
-                        <input type="checkbox" class="checkbox" id="chk3" />
-                        <label for="chk3" class="lbl"></label>
-                      </span>
-
-                      <div class="txt-wrap">
-                        <span>상품코드 <em>201948388857</em></span>
-                        <a href="#none" title="상품 상세 설명"
-                          >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
-                        >
-                        <p class="item-price">KRW 35,000원</p>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="img-box w-104">
-                        <img src="../../static/images/common/dummy-image.png" alt="" />
-                      </div>
-                      <span class="check-box no-label sm-check">
-                        <input type="checkbox" class="checkbox" id="chk4" />
-                        <label for="chk4" class="lbl"></label>
-                      </span>
-                      <div class="txt-wrap">
-                        <span>상품코드 <em>201948388857</em></span>
-                        <a href="#none" title="상품 상세 설명"
-                          >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
-                        >
-                        <p class="item-price">KRW 35,000원</p>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="img-box w-104">
-                        <img src="../../static/images/common/dummy-image.png" alt="" />
-                      </div>
-                      <span class="check-box no-label sm-check">
-                        <input type="checkbox" class="checkbox" id="chk5" />
-                        <label for="chk5" class="lbl"></label>
-                      </span>
-
-                      <div class="txt-wrap">
-                        <span>상품코드 <em>201948388857</em></span>
-                        <a href="#none" title="상품 상세 설명"
-                          >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
-                        >
-                        <p class="item-price">KRW 35,000원</p>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="img-box w-104">
-                        <img src="../../static/images/common/dummy-image.png" alt="" />
-                      </div>
-                      <span class="check-box no-label sm-check">
-                        <input type="checkbox" class="checkbox" id="chk6" />
-                        <label for="chk6" class="lbl"></label>
-                      </span>
-                      <div class="txt-wrap">
-                        <span>상품코드 <em>201948388857</em></span>
-                        <a href="#none" title="상품 상세 설명"
-                          >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
-                        >
-                        <p class="item-price">KRW 35,000원</p>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="img-box w-104">
-                        <img src="../../static/images/common/dummy-image.png" alt="" />
-                      </div>
-                      <span class="check-box no-label sm-check">
-                        <input type="checkbox" class="checkbox" id="chk7" />
-                        <label for="chk7" class="lbl"></label>
-                      </span>
-
-                      <div class="txt-wrap">
-                        <span>상품코드 <em>201948388857</em></span>
-                        <a href="#none" title="상품 상세 설명"
-                          >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
-                        >
-                        <p class="item-price">KRW 35,000원</p>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="img-box w-104">
-                        <img src="../../static/images/common/dummy-image.png" alt="" />
-                      </div>
-                      <span class="check-box no-label sm-check">
-                        <input type="checkbox" class="checkbox" id="chk8" />
-                        <label for="chk8" class="lbl"></label>
-                      </span>
-
-                      <div class="txt-wrap">
-                        <span>상품코드 <em>201948388857</em></span>
-                        <a href="#none" title="상품 상세 설명"
-                          >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
-                        >
-                        <p class="item-price">KRW 35,000원</p>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="img-box w-104">
-                        <img src="../../static/images/common/dummy-image.png" alt="" />
-                      </div>
-                      <span class="check-box no-label sm-check">
-                        <input type="checkbox" class="checkbox" id="chk9" />
-                        <label for="chk9" class="lbl"></label>
-                      </span>
-
-                      <div class="txt-wrap">
-                        <span>상품코드 <em>201948388857</em></span>
-                        <a href="#none" title="상품 상세 설명"
-                          >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
-                        >
-                        <p class="item-price">KRW 35,000원</p>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="img-box w-104">
-                        <img src="../../static/images/common/dummy-image.png" alt="" />
-                      </div>
-                      <span class="check-box no-label sm-check">
-                        <input type="checkbox" class="checkbox" id="chk10" />
-                        <label for="chk10" class="lbl"></label>
-                      </span>
-
-                      <div class="txt-wrap">
-                        <span>상품코드 <em>201948388857</em></span>
-                        <a href="#none" title="상품 상세 설명"
-                          >벽 장착 레이지 자동 치약 디스펜서 홀더, 윌마운트 칫솔 욕실 엑세서리</a
-                        >
-                        <p class="item-price">KRW 35,000원</p>
-                      </div>
-                    </div>
+                  <div class="page_wrap">
+                    <ul class="page_nation">
+                      <li><a class="arrow pprev" href="#none"></a></li>
+                      <li><a class="arrow prev" href="#none"></a></li>
+                      <li><a href="#none" class="active">1</a></li>
+                      <li><a href="#none">2</a></li>
+                      <li><a href="#none">3</a></li>
+                      <li><a href="#none">4</a></li>
+                      <li><a href="#none">5</a></li>
+                      <li><a href="#none">6</a></li>
+                      <li><a href="#none">7</a></li>
+                      <li><a href="#none">8</a></li>
+                      <li><a href="#none">9</a></li>
+                      <li><a href="#none">10</a></li>
+                      <li><a class="arrow next" href="#none"></a></li>
+                      <li><a class="arrow nnext" href="#none"></a></li>
+                    </ul>
                   </div>
-                  <div class="table mt-16">
-                    <table>
-                      <colgroup>
-                        <col style="width: 4.8rem" />
-                        <col style="width: 29.6rem" />
-                        <col style="width: auto" />
-                        <col style="width: 16rem" />
-                      </colgroup>
-                      <thead>
-                        <tr>
-                          <th class="t-center">
-                            <div class="check-box no-label sm-check">
-                              <input type="checkbox" class="checkbox" id="chk11" />
-                              <label for="chk11" class="lbl"></label>
-                            </div>
-                          </th>
-                          <th>카테고리</th>
-                          <th>[상품코드] 상품명</th>
-                          <th>금액</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="t-center">
-                            <div class="check-box no-label sm-check">
-                              <input type="checkbox" class="checkbox" id="chk12" />
-                              <label for="chk12" class="lbl"></label>
-                            </div>
-                          </td>
-                          <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
-                          <td>
-                            <a href="#none" class="a-link2" title="해당 상품으로 이동"
-                              >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
-                            >
-                          </td>
-                          <td class="t-right">KRW 45,000</td>
-                        </tr>
-                        <tr>
-                          <td class="t-center">
-                            <div class="check-box no-label sm-check">
-                              <input type="checkbox" class="checkbox" id="chk13" />
-                              <label for="chk13" class="lbl"></label>
-                            </div>
-                          </td>
-                          <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
-                          <td>
-                            <a href="#none" class="a-link2" title="해당 상품으로 이동"
-                              >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
-                            >
-                          </td>
-                          <td class="t-right">KRW 45,000</td>
-                        </tr>
-                        <tr>
-                          <td class="t-center">
-                            <div class="check-box no-label sm-check">
-                              <input type="checkbox" class="checkbox" id="chk14" />
-                              <label for="chk14" class="lbl"></label>
-                            </div>
-                          </td>
-                          <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
-                          <td>
-                            <a href="#none" class="a-link2" title="해당 상품으로 이동"
-                              >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
-                            >
-                          </td>
-                          <td class="t-right">KRW 45,000</td>
-                        </tr>
-                        <tr>
-                          <td class="t-center">
-                            <div class="check-box no-label sm-check">
-                              <input type="checkbox" class="checkbox" id="chk15" />
-                              <label for="chk15" class="lbl"></label>
-                            </div>
-                          </td>
-                          <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
-                          <td>
-                            <a href="#none" class="a-link2" title="해당 상품으로 이동"
-                              >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
-                            >
-                          </td>
-                          <td class="t-right">KRW 45,000</td>
-                        </tr>
-                        <tr>
-                          <td class="t-center">
-                            <div class="check-box no-label sm-check">
-                              <input type="checkbox" class="checkbox" id="chk16" />
-                              <label for="chk16" class="lbl"></label>
-                            </div>
-                          </td>
-                          <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
-                          <td>
-                            <a href="#none" class="a-link2" title="해당 상품으로 이동"
-                              >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
-                            >
-                          </td>
-                          <td class="t-right">KRW 45,000</td>
-                        </tr>
-                        <tr>
-                          <td class="t-center">
-                            <div class="check-box no-label sm-check">
-                              <input type="checkbox" class="checkbox" id="chk17" />
-                              <label for="chk17" class="lbl"></label>
-                            </div>
-                          </td>
-                          <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
-                          <td>
-                            <a href="#none" class="a-link2" title="해당 상품으로 이동"
-                              >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
-                            >
-                          </td>
-                          <td class="t-right">KRW 45,000</td>
-                        </tr>
-                        <tr>
-                          <td class="t-center">
-                            <div class="check-box no-label sm-check">
-                              <input type="checkbox" class="checkbox" id="chk18" />
-                              <label for="chk18" class="lbl"></label>
-                            </div>
-                          </td>
-                          <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
-                          <td>
-                            <a href="#none" class="a-link2" title="해당 상품으로 이동"
-                              >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
-                            >
-                          </td>
-                          <td class="t-right">KRW 45,000</td>
-                        </tr>
-                        <tr>
-                          <td class="t-center">
-                            <div class="check-box no-label sm-check">
-                              <input type="checkbox" class="checkbox" id="chk19" />
-                              <label for="chk19" class="lbl"></label>
-                            </div>
-                          </td>
-                          <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
-                          <td>
-                            <a href="#none" class="a-link2" title="해당 상품으로 이동"
-                              >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
-                            >
-                          </td>
-                          <td class="t-right">KRW 45,000</td>
-                        </tr>
-                        <tr>
-                          <td class="t-center">
-                            <div class="check-box no-label sm-check">
-                              <input type="checkbox" class="checkbox" id="chk20" />
-                              <label for="chk20" class="lbl"></label>
-                            </div>
-                          </td>
-                          <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
-                          <td>
-                            <a href="#none" class="a-link2" title="해당 상품으로 이동"
-                              >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
-                            >
-                          </td>
-                          <td class="t-right">KRW 45,000</td>
-                        </tr>
-                        <tr>
-                          <td class="t-center">
-                            <div class="check-box no-label sm-check">
-                              <input type="checkbox" class="checkbox" id="chk21" />
-                              <label for="chk21" class="lbl"></label>
-                            </div>
-                          </td>
-                          <td>브랜드여성 &#62; 가방 &#62; 클러치백 &#62; 4depth</td>
-                          <td>
-                            <a href="#none" class="a-link2" title="해당 상품으로 이동"
-                              >[23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
-                            >
-                          </td>
-                          <td class="t-right">KRW 45,000</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div class="progress-box mt-20">
-                  <p>쇼핑몰의 <span>asdf123455</span> 계정에서 주문 정보 수집 중...</p>
-                </div>
-                <div class="progress-box mt-20">
-                  <div class="progress-wrap">
-                    <span class="progress"></span>
-                  </div>
-                  <p>상품을 수집중 입니다.</p>
-                </div>
-                <div class="progress-box mt-20 h-220">
-                  <div class="load-screen">
-                    <div class="load-contents">
-                      <p>상품을 수집중 입니다.</p>
-                      <svg class="load-spinner" viewBox="0 0 50 50">
-                        <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="6"></circle>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div class="page_wrap">
-                  <ul class="page_nation">
-                    <li><a class="arrow pprev" href="#none"></a></li>
-                    <li><a class="arrow prev" href="#none"></a></li>
-                    <li><a href="#none" class="active">1</a></li>
-                    <li><a href="#none">2</a></li>
-                    <li><a href="#none">3</a></li>
-                    <li><a href="#none">4</a></li>
-                    <li><a href="#none">5</a></li>
-                    <li><a href="#none">6</a></li>
-                    <li><a href="#none">7</a></li>
-                    <li><a href="#none">8</a></li>
-                    <li><a href="#none">9</a></li>
-                    <li><a href="#none">10</a></li>
-                    <li><a class="arrow next" href="#none"></a></li>
-                    <li><a class="arrow nnext" href="#none"></a></li>
-                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <a href="#none" class="consulting">상담하기</a>
     </div>
-    <a href="#none" class="consulting">상담하기</a>
   </body>
 </html>

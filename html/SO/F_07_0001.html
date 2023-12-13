@@ -5,91 +5,93 @@
     <!-- 퍼블용 include: 개발팀에서 재include 하길 바랍니다. -->
     <script class="__include" src="../include/head.js"></script>
   </head>
-  <body class="login">
-    <!-- header  -->
-    <div class="header-space fo" data-include="../layout/header_fo.html"></div>
-    <div class="join-wrap">
-      <div class="join-form">
-        <h2>회원가입</h2>
-        <div class="form-box">
-          <p class="form-tit">소셜 채널 선택<span>로그인에서 사용하는 연결 채널입니다.</span></p>
+  <body>
+    <div class="login">
+      <!-- header  -->
+      <div class="header-space fo" data-include="../layout/header_fo.html"></div>
+      <div class="join-wrap">
+        <div class="join-form">
+          <h2>회원가입</h2>
+          <div class="form-box">
+            <p class="form-tit">소셜 채널 선택<span>로그인에서 사용하는 연결 채널입니다.</span></p>
 
-          <div class="flex mt-16 space-between">
-            <!-- 클릭시 <i class="btn-checked"></i> 삽입 -->
-            <!-- <a href="#none" class="naver btn-log">네이버</a> -->
-            <a href="#none" class="naver btn-log">네이버 <i class="btn-checked"></i></a>
-            <a href="#none" class="kakao btn-log">카카오</a>
-            <a href="#none" class="google btn-log">구글</a>
-          </div>
-          <p class="form-tit has-border">
-            기본정보입력<span>솔루션 사용과 상관없이 로그인을 위해 기본정보를 입력합니다.</span>
-          </p>
-          <dl class="mt-20">
-            <dt>담당자명</dt>
-            <dd>
-              <!-- checked 추가시 체크박스 및 라운드 컬러 처리 -->
-              <div class="input-box checked">
-                <input type="text" value="김위즈" class="input w-100p large" />
-                <i class="btn-checked"></i>
-              </div>
-            </dd>
-            <dt>휴대전화번호</dt>
-            <dd>
-              <div class="input-box checked">
-                <input type="text" value="010-1234-5678" class="input w-100p large" />
-                <i class="btn-checked"></i>
-              </div>
-            </dd>
-            <dt>담당자 이메일</dt>
-            <dd>
-              <div class="input-box">
-                <input type="text" placeholder="example@marketwiz.com" class="input w-100p large" />
-                <i class="btn-checked"></i>
-              </div>
-            </dd>
-            <dt>추천인 아이디</dt>
-            <dd>
-              <div class="input-box">
-                <input type="text" placeholder="아이디를 입력하세요." class="input w-100p large" />
-                <i class="btn-checked"></i>
-              </div>
-            </dd>
-          </dl>
-          <div class="checkbox-wrap">
-            <div class="check-box">
-              <input type="checkbox" class="checkbox" id="agreeAll" checked="" />
-              <label for="agreeAll" class="lbl">전체 동의</label>
+            <div class="flex mt-16 space-between">
+              <!-- 클릭시 <i class="btn-checked"></i> 삽입 -->
+              <!-- <a href="#none" class="naver btn-log">네이버</a> -->
+              <a href="#none" class="naver btn-log">네이버 <i class="btn-checked"></i></a>
+              <a href="#none" class="kakao btn-log">카카오</a>
+              <a href="#none" class="google btn-log">구글</a>
             </div>
-            <div class="check-box mt-20 ml-0">
-              <input type="checkbox" class="checkbox" id="agreeTerms" />
-              <label for="agreeTerms" class="lbl">이용약관 동의</label>
-            </div>
-            <div class="text-area w-100p mt-16">
-              <textarea rows="3" readonly>
+            <p class="form-tit has-border">
+              기본정보입력<span>솔루션 사용과 상관없이 로그인을 위해 기본정보를 입력합니다.</span>
+            </p>
+            <dl class="mt-20">
+              <dt>담당자명</dt>
+              <dd>
+                <!-- checked 추가시 체크박스 및 라운드 컬러 처리 -->
+                <div class="input-box checked">
+                  <input type="text" value="김위즈" class="input w-100p large" />
+                  <i class="btn-checked"></i>
+                </div>
+              </dd>
+              <dt>휴대전화번호</dt>
+              <dd>
+                <div class="input-box checked">
+                  <input type="text" value="010-1234-5678" class="input w-100p large" />
+                  <i class="btn-checked"></i>
+                </div>
+              </dd>
+              <dt>담당자 이메일</dt>
+              <dd>
+                <div class="input-box">
+                  <input type="text" placeholder="example@marketwiz.com" class="input w-100p large" />
+                  <i class="btn-checked"></i>
+                </div>
+              </dd>
+              <dt>추천인 아이디</dt>
+              <dd>
+                <div class="input-box">
+                  <input type="text" placeholder="아이디를 입력하세요." class="input w-100p large" />
+                  <i class="btn-checked"></i>
+                </div>
+              </dd>
+            </dl>
+            <div class="checkbox-wrap">
+              <div class="check-box">
+                <input type="checkbox" class="checkbox" id="agreeAll" checked="" />
+                <label for="agreeAll" class="lbl">전체 동의</label>
+              </div>
+              <div class="check-box mt-20 ml-0">
+                <input type="checkbox" class="checkbox" id="agreeTerms" />
+                <label for="agreeTerms" class="lbl">이용약관 동의</label>
+              </div>
+              <div class="text-area w-100p mt-16">
+                <textarea rows="3" readonly>
 때에 회사와 여러분 간의 유료서비스 이용계약이 성립합니다. 본 약관은 여러분이 통합서비스를 이용하는 데 필요한 권리, 의무 및 책임사항, 이용조건 및 절차 등 기본적인 사항을 규정하고 있으므로 조금만 시간을 내서 주의 깊게 읽어주시기 바랍니다.</textarea
-              >
-            </div>
-            <div class="check-box mt-16">
-              <input type="checkbox" class="checkbox" id="agreePersonal" />
-              <label for="agreePersonal" class="lbl">개인정보 수집 및 이용 동의</label>
-            </div>
-            <div class="text-area w-100p mt-16">
-              <textarea rows="3" readonly>
+                >
+              </div>
+              <div class="check-box mt-16">
+                <input type="checkbox" class="checkbox" id="agreePersonal" />
+                <label for="agreePersonal" class="lbl">개인정보 수집 및 이용 동의</label>
+              </div>
+              <div class="text-area w-100p mt-16">
+                <textarea rows="3" readonly>
 때에 회사와 여러분 간의 유료서비스 이용계약이 성립합니다. 본 약관은 여러분이 통합서비스를 이용하는 데 필요한 권리, 의무 및 책임사항, 이용조건 및 절차 등 기본적인 사항을 규정하고 있으므로 조금만 시간을 내서 주의 깊게 읽어주시기 바랍니다.</textarea
-              >
+                >
+              </div>
             </div>
+            <button class="button bg-primary">회원가입</button>
           </div>
-          <button class="button bg-primary">회원가입</button>
+        </div>
+
+        <!-- go top btn-wrap -->
+        <div class="fixed-wrap">
+          <a href="#none" class="fixed-btn chat"></a>
+          <a href="#none" class="fixed-btn go-top"></a>
         </div>
       </div>
-
-      <!-- go top btn-wrap -->
-      <div class="fixed-wrap">
-        <a href="#none" class="fixed-btn chat"></a>
-        <a href="#none" class="fixed-btn go-top"></a>
-      </div>
+      <!-- footer -->
+      <footer data-include="../layout/footer_fo.html"></footer>
     </div>
-    <!-- footer -->
-    <footer data-include="../layout/footer_fo.html"></footer>
   </body>
 </html>
