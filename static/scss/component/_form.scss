@@ -167,6 +167,25 @@
       position: relative;
       width: 16rem;
       height: 3.2rem;
+      .checkbox {
+        width: 16rem;
+        height: 3.2rem;
+        cursor: pointer;
+      }
+      span {
+        position: absolute;
+        left: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 2rem;
+      }
+      &::before,
+      &:after {
+        content: "";
+        position: absolute;
+      }
       &::before {
         z-index: -1;
         border-radius: 0.5rem;
@@ -184,6 +203,14 @@
         bottom: 0;
         left: -1px;
         background: linear-gradient(180deg, #aeb6d0 76.39%, #939ab3 100%);
+      }
+      .switch-label {
+        width: 4.4rem;
+        height: 2rem;
+        right: 2rem;
+        left: auto;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
     position: relative;

@@ -234,6 +234,9 @@ $primary-color-only: str-slice("#{$primary-color}", 2);
   &.small {
     @include ico-forward($small-size);
   }
+  &.mini {
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 4L10 8L6 12' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  }
 }
 .ico-backward-ty2 {
   background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 7L9.21213 11.7879C9.09497 11.905 9.09497 12.095 9.21213 12.2121L14 17' stroke='%23999999' stroke-linecap='round'/%3E%3C/svg%3E%0A");

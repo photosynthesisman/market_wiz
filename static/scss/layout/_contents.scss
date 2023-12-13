@@ -2372,23 +2372,23 @@
         background-image: url(../images/common/erp-detail4.png);
       }
       .card-side-back {
-        // transform: rotateY(180deg);
+        transform: rotateY(180deg);
         background: var(--white-color);
         border: 1px solid var(--line-color02);
       }
 
-      // .card:hover .card-side-front-1,
-      // .card:hover .card-side-front-2,
-      // .card:hover .card-side-front-3,
-      // .card:hover .card-side-front-4 {
-      //   -webkit-transform: rotateY(-180deg);
-      //   transform: rotateY(-180deg);
-      // }
+      .card:hover .card-side-front-1,
+      .card:hover .card-side-front-2,
+      .card:hover .card-side-front-3,
+      .card:hover .card-side-front-4 {
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+      }
 
-      // .card:hover .card-side-back {
-      //   -webkit-transform: rotateY(0);
-      //   transform: rotateY(0);
-      // }
+      .card:hover .card-side-back {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+      }
 
       .card-title {
         display: flex;
@@ -2837,6 +2837,67 @@
     }
     div {
       font-size: 1.3rem;
+    }
+  }
+}
+.exposure-list {
+  li {
+    margin: 0 -1.6rem;
+    padding: 1.6rem;
+    border-bottom: 1px solid var(--line-color02);
+  }
+  .exposure-unit {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    img {
+      width: 15.2rem;
+      height: 15.2rem;
+    }
+  }
+  .unit-define {
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    .check-box {
+      margin-left: 0;
+    }
+    > * {
+      margin-bottom: 0.8rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .unit-detail {
+    padding: 1.2rem 0;
+    border-top: 1px solid var(--line-color02);
+    color: var(--strong-txt-color);
+    &.name {
+      a {
+        display: block;
+        position: relative;
+        padding-right: 2.4rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        font-weight: 600;
+      }
+      i {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .ft-list.open {
+      & + .market-index {
+        display: block;
+      }
+    }
+    .market-index {
+      display: none;
     }
   }
 }

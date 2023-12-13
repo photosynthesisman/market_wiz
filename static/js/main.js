@@ -134,3 +134,8 @@ $(document).on("click", ".ft-list", function (e) {
   $this.toggleClass("open");
   $depth.toggleClass("open");
 });
+//go top
+$(document).on("click", ".go-top", function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: 0 }, 500);
+});
