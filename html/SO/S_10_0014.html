@@ -8,113 +8,92 @@
     <!-- 퍼블용 include: 개발팀에서 재include 하길 바랍니다. -->
     <script class="__include" src="../include/head.js"></script>
   </head>
-  <body class="market">
-    <!-- header -->
-    <div class="header-space" data-include="../layout/header.html"></div>
+  <body>
+    <div class="market">
+      <!-- header -->
+      <div class="header-space" data-include="../layout/header.html"></div>
 
-    <!-- container -->
-    <div class="container">
-      <!-- lnb -->
-      <div class="lnb" data-include="../layout/lnb.html"></div>
+      <!-- container -->
+      <div class="container">
+        <!-- lnb -->
+        <div class="lnb" data-include="../layout/lnb.html"></div>
 
-      <!-- contents -->
-      <div class="contents">
-        <div class="tab-container">
-          <ul>
-            <li class="tab active"><a href="#">배송대행지 관리</a><span class="close-tab">닫기</span></li>
-          </ul>
-          <div class="move-wrap">
-            <button class="button"><i class="ico-backward small"></i></button>
-            <button class="button"><i class="ico-forward small"></i></button>
-          </div>
-        </div>
-
-        <div class="tab-content active">
-          <div class="tit-wrap">
-            <h2 class="h1">
-              배송대행지 관리
-              <button class="favorite">즐겨찾기</button>
-              <!-- 즐겨찾기 등록된 경우-->
-              <!-- <button class="favorite checked">즐겨찾기</button> -->
-            </h2>
-            <div class="path">
-              <a href="#none" class="home">홈 바로가기</a>
-              <a href="#none" class="1depth">환경설정</a>
-              <a href="#none" class="2depth">배송대행지 관리</a>
+        <!-- contents -->
+        <div class="contents">
+          <div class="tab-container">
+            <ul>
+              <li class="tab active"><a href="#">배송대행지 관리</a><span class="close-tab">닫기</span></li>
+            </ul>
+            <div class="move-wrap">
+              <button class="button"><i class="ico-backward small"></i></button>
+              <button class="button"><i class="ico-forward small"></i></button>
             </div>
           </div>
-          <div class="contents">
-            <!-- 조회(읽기) 모드 -->
-            <div class="table mt-30">
-              <table>
-                <colgroup>
-                  <col style="width: 12.8rem" />
-                  <col style="width: 12.8rem" />
-                  <col style="width: auto" />
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th colspan="3" class="bd-line-2 small-pd">
-                      <div class="flex space-between align-center">
-                        <div class="left">
-                          <span class="sub-txt">배송대행지 관리</span>
-                          <span class="small-txt ml-6">
-                            이용할 배송대행지를 등록하고, 수집된 주문을 배송대행지 별로 연동/관리 하세요.
-                          </span>
+
+          <div class="tab-content active">
+            <div class="tit-wrap">
+              <h2 class="h1">
+                배송대행지 관리
+                <button class="favorite">즐겨찾기</button>
+                <!-- 즐겨찾기 등록된 경우-->
+                <!-- <button class="favorite checked">즐겨찾기</button> -->
+              </h2>
+              <div class="path">
+                <a href="#none" class="home">홈 바로가기</a>
+                <a href="#none" class="1depth">환경설정</a>
+                <a href="#none" class="2depth">배송대행지 관리</a>
+              </div>
+            </div>
+            <div class="contents">
+              <!-- 조회(읽기) 모드 -->
+              <div class="table mt-30">
+                <table>
+                  <colgroup>
+                    <col style="width: 12.8rem" />
+                    <col style="width: 12.8rem" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th colspan="3" class="bd-line-2 small-pd">
+                        <div class="flex space-between align-center">
+                          <div class="left">
+                            <span class="sub-txt">배송대행지 관리</span>
+                            <span class="small-txt ml-6">
+                              이용할 배송대행지를 등록하고, 수집된 주문을 배송대행지 별로 연동/관리 하세요.
+                            </span>
+                          </div>
+                          <div class="right">
+                            <button class="button small bg-dark open-pop" data-name="S_10_0014">주문양식설정</button>
+                            <button class="button small bg-dark ml-4">설정저장</button>
+                          </div>
                         </div>
-                        <div class="right">
-                          <button class="button small bg-dark open-pop" data-name="S_10_0014">주문양식설정</button>
-                          <button class="button small bg-dark ml-4">설정저장</button>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>등록된 배송대행지</th>
+                      <td colspan="2" class="small-pd">
+                        <div class="flex space-between">
+                          <button class="button small round on ml-4">기본 배송대행지</button>
+                          <button class="button small blue-line" disabled="">추가</button>
                         </div>
-                      </div>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th>등록된 배송대행지</th>
-                    <td colspan="2" class="small-pd">
-                      <div class="flex space-between">
-                        <button class="button small round on ml-4">기본 배송대행지</button>
-                        <button class="button small blue-line" disabled="">추가</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="va-top" rowspan="3">배송대행지 정보</th>
-                    <th>배송대행지 이름</th>
-                    <td class="small-pd">
-                      <div class="input-box">
-                        <input type="text" class="input w-320" title="배송대행지 이름 입력" />
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="va-top">신청서 엑셀양식</th>
-                    <td class="small-pd">
-                      <div class="select-box w-320">
-                        <button class="init placeholder">선택하세요.</button>
-                        <ul>
-                          <li><button data-value="value1">Hover</button></li>
-                          <li><button data-value="value2">Selected</button></li>
-                          <li><button data-value="value3">Default</button></li>
-                          <li><button data-value="value4">Disabled</button></li>
-                        </ul>
-                      </div>
-                      <p class="td-notice mt-6">
-                        신청 엑셀양식은 [주문양식설정] 버튼을 통해서 등록 후 선택 가능합니다.
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="va-top">신청서조회 URL</th>
-                    <td class="small-pd">
-                      <div class="flex align-center">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="va-top" rowspan="3">배송대행지 정보</th>
+                      <th>배송대행지 이름</th>
+                      <td class="small-pd">
                         <div class="input-box">
-                          <input type="text" class="input w-570" title="배송대행지 이름 입력" />
+                          <input type="text" class="input w-320" title="배송대행지 이름 입력" />
                         </div>
-                        <span class="mg-6-x">+</span>
-                        <div class="select-box w-160 ml-0">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="va-top">신청서 엑셀양식</th>
+                      <td class="small-pd">
+                        <div class="select-box w-320">
                           <button class="init placeholder">선택하세요.</button>
                           <ul>
                             <li><button data-value="value1">Hover</button></li>
@@ -123,104 +102,99 @@
                             <li><button data-value="value4">Disabled</button></li>
                           </ul>
                         </div>
-                      </div>
-                      <p class="td-notice ty3 mt-6">
-                        예) [http://www.coupang.com/list/allOrderSearch?search_type=receiver_nm&keyword=고객이름] 가
-                        쿠팡 배송대행지의 배송신청서를 조회할 수 있는<br />
-                        바로가기 URL 이라면 바로가기 URL에 [http://www.
-                        coupang.com/list/allOrderSearch?search_type=receiver_nm&keyword=] 를 입력해주시고,<br />
-                        수령인명을 선택해주시면 주문관리 페이지에서 사용할 수 있는 배송대행지 바로가기 URL 이
-                        완성됩니다.
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- //조회(읽기) 모드 -->
-            <!-- 수정/저장 모드 -->
-            <div class="table mt-30">
-              <table>
-                <colgroup>
-                  <col style="width: 12.8rem" />
-                  <col style="width: 12.8rem" />
-                  <col style="width: auto" />
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th colspan="3" class="bd-line-2 small-pd">
-                      <div class="flex space-between align-center">
-                        <div class="left">
-                          <span class="sub-txt">배송대행지 관리</span>
-                          <span class="small-txt ml-6">
-                            이용할 배송대행지를 등록하고, 수집된 주문을 배송대행지 별로 연동/관리 하세요.
-                          </span>
+                        <p class="td-notice mt-6">
+                          신청 엑셀양식은 [주문양식설정] 버튼을 통해서 등록 후 선택 가능합니다.
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="va-top">신청서조회 URL</th>
+                      <td class="small-pd">
+                        <div class="flex align-center">
+                          <div class="input-box">
+                            <input type="text" class="input w-570" title="배송대행지 이름 입력" />
+                          </div>
+                          <span class="mg-6-x">+</span>
+                          <div class="select-box w-160 ml-0">
+                            <button class="init placeholder">선택하세요.</button>
+                            <ul>
+                              <li><button data-value="value1">Hover</button></li>
+                              <li><button data-value="value2">Selected</button></li>
+                              <li><button data-value="value3">Default</button></li>
+                              <li><button data-value="value4">Disabled</button></li>
+                            </ul>
+                          </div>
                         </div>
-                        <div class="right">
-                          <button class="button small bg-dark open-pop" data-name="S_10_0014">주문양식설정</button>
-                          <button class="button small bg-dark ml-4">설정저장</button>
+                        <p class="td-notice ty3 mt-6">
+                          예) [http://www.coupang.com/list/allOrderSearch?search_type=receiver_nm&keyword=고객이름] 가
+                          쿠팡 배송대행지의 배송신청서를 조회할 수 있는<br />
+                          바로가기 URL 이라면 바로가기 URL에 [http://www.
+                          coupang.com/list/allOrderSearch?search_type=receiver_nm&keyword=] 를 입력해주시고,<br />
+                          수령인명을 선택해주시면 주문관리 페이지에서 사용할 수 있는 배송대행지 바로가기 URL 이
+                          완성됩니다.
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- //조회(읽기) 모드 -->
+              <!-- 수정/저장 모드 -->
+              <div class="table mt-30">
+                <table>
+                  <colgroup>
+                    <col style="width: 12.8rem" />
+                    <col style="width: 12.8rem" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th colspan="3" class="bd-line-2 small-pd">
+                        <div class="flex space-between align-center">
+                          <div class="left">
+                            <span class="sub-txt">배송대행지 관리</span>
+                            <span class="small-txt ml-6">
+                              이용할 배송대행지를 등록하고, 수집된 주문을 배송대행지 별로 연동/관리 하세요.
+                            </span>
+                          </div>
+                          <div class="right">
+                            <button class="button small bg-dark open-pop" data-name="S_10_0014">주문양식설정</button>
+                            <button class="button small bg-dark ml-4">설정저장</button>
+                          </div>
                         </div>
-                      </div>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th>등록된 배송대행지</th>
-                    <td colspan="2" class="small-pd">
-                      <div class="flex space-between">
-                        <div>
-                          <button class="button small round off">기본 배송대행지</button>
-                          <button class="button small round on ml-4">유럽 배대지</button>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>등록된 배송대행지</th>
+                      <td colspan="2" class="small-pd">
+                        <div class="flex space-between">
+                          <div>
+                            <button class="button small round off">기본 배송대행지</button>
+                            <button class="button small round on ml-4">유럽 배대지</button>
+                          </div>
+                          <div>
+                            <button class="button small line">삭제</button>
+                            <button class="button small blue-line">추가</button>
+                          </div>
                         </div>
-                        <div>
-                          <button class="button small line">삭제</button>
-                          <button class="button small blue-line">추가</button>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="va-top" rowspan="3">배송대행지 정보</th>
-                    <th>배송대행지 이름</th>
-                    <td class="small-pd">
-                      <div class="input-box">
-                        <input type="text" class="input w-320" value="유럽 배대지" title="배송대행지 이름 입력" />
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="va-top">신청서 엑셀양식</th>
-                    <td class="small-pd">
-                      <div class="select-box w-320">
-                        <button class="init">선택하세요.</button>
-                        <ul>
-                          <li><button data-value="value1">Hover</button></li>
-                          <li><button data-value="value2">Selected</button></li>
-                          <li><button data-value="value3">Default</button></li>
-                          <li><button data-value="value4">Disabled</button></li>
-                        </ul>
-                      </div>
-                      <p class="td-notice mt-6">
-                        신청 엑셀양식은 [주문양식설정] 버튼을 통해서 등록 후 선택 가능합니다.
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="va-top">신청서조회 URL</th>
-                    <td class="small-pd">
-                      <div class="flex align-center">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="va-top" rowspan="3">배송대행지 정보</th>
+                      <th>배송대행지 이름</th>
+                      <td class="small-pd">
                         <div class="input-box">
-                          <input
-                            type="text"
-                            class="input w-570"
-                            value="http:// www.coupang.com/list/allOrderSearch?search_type=receiver_nm&keyword="
-                            title="배송대행지 이름 입력"
-                          />
+                          <input type="text" class="input w-320" value="유럽 배대지" title="배송대행지 이름 입력" />
                         </div>
-                        <span class="mg-6-x">+</span>
-                        <div class="select-box w-160 ml-0">
-                          <button class="init placeholder">수령자명</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="va-top">신청서 엑셀양식</th>
+                      <td class="small-pd">
+                        <div class="select-box w-320">
+                          <button class="init">선택하세요.</button>
                           <ul>
                             <li><button data-value="value1">Hover</button></li>
                             <li><button data-value="value2">Selected</button></li>
@@ -228,21 +202,48 @@
                             <li><button data-value="value4">Disabled</button></li>
                           </ul>
                         </div>
-                      </div>
-                      <p class="td-notice ty3 mt-6">
-                        예) [http://www.coupang.com/list/allOrderSearch?search_type=receiver_nm&keyword=고객이름] 가
-                        쿠팡 배송대행지의 배송신청서를 조회할 수 있는<br />
-                        바로가기 URL 이라면 바로가기 URL에 [http://www.
-                        coupang.com/list/allOrderSearch?search_type=receiver_nm&keyword=] 를 입력해주시고,<br />
-                        수령인명을 선택해주시면 주문관리 페이지에서 사용할 수 있는 배송대행지 바로가기 URL 이
-                        완성됩니다.
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- <div class="table mt-30">
+                        <p class="td-notice mt-6">
+                          신청 엑셀양식은 [주문양식설정] 버튼을 통해서 등록 후 선택 가능합니다.
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="va-top">신청서조회 URL</th>
+                      <td class="small-pd">
+                        <div class="flex align-center">
+                          <div class="input-box">
+                            <input
+                              type="text"
+                              class="input w-570"
+                              value="http:// www.coupang.com/list/allOrderSearch?search_type=receiver_nm&keyword="
+                              title="배송대행지 이름 입력"
+                            />
+                          </div>
+                          <span class="mg-6-x">+</span>
+                          <div class="select-box w-160 ml-0">
+                            <button class="init placeholder">수령자명</button>
+                            <ul>
+                              <li><button data-value="value1">Hover</button></li>
+                              <li><button data-value="value2">Selected</button></li>
+                              <li><button data-value="value3">Default</button></li>
+                              <li><button data-value="value4">Disabled</button></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="td-notice ty3 mt-6">
+                          예) [http://www.coupang.com/list/allOrderSearch?search_type=receiver_nm&keyword=고객이름] 가
+                          쿠팡 배송대행지의 배송신청서를 조회할 수 있는<br />
+                          바로가기 URL 이라면 바로가기 URL에 [http://www.
+                          coupang.com/list/allOrderSearch?search_type=receiver_nm&keyword=] 를 입력해주시고,<br />
+                          수령인명을 선택해주시면 주문관리 페이지에서 사용할 수 있는 배송대행지 바로가기 URL 이
+                          완성됩니다.
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- <div class="table mt-30">
               <table>
                 <colgroup>
                   <col style="width: 12.8rem" />
@@ -419,74 +420,75 @@
                 </tbody>
               </table>
             </div> -->
-            <!-- //수정/저장 모드 -->
-          </div>
-
-          <div class="mt-40">
-            <button class="open-pop button line mr-10" data-name="S_10_0014">배송대행지 등록(S_10_0014)</button>
-          </div>
-
-          <div class="popup has-tit w1024" id="S_10_0014">
-            <div class="pop-head">
-              <h2>배송대행지 등록</h2>
-              <button class="close"></button>
+              <!-- //수정/저장 모드 -->
             </div>
-            <div class="pop-contents">
-              <p class="main-txt">※ 아래 배송신청서 양식(엑셀)을 다운로드하여 배송신청서를 작성 후 업로드 하세요.</p>
-              <div class="table mt-12">
-                <table>
-                  <colgroup>
-                    <col style="width: 13.6rem" />
-                    <col style="width: auto" />
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <th>배송신청서 URL</th>
-                      <td class="small-pd">
-                        <input type="text" class="input" value="http://" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <th class="va-top">배송신청서 내용</th>
-                      <td class="small-pd">
-                        <button class="button small line download">신청서 양식 다운로드</button>
-                        <p class="mt-12">- 마켓주문일자 : (오픈) 마켓 주문일자</p>
-                        <p>
-                          - 마켓주문번호 : (오픈) 마켓주문번호 (위메프 - 구매번호(주문번호), 스마트스토어 -
-                          주문번호(상품주문번호))
-                        </p>
-                        <p>- 마켓명 : (오픈) 마켓이름 (ex. 옥션, 지마켓 등)</p>
-                        <p>- 마켓아이디 : (오픈) 마켓 아이디</p>
-                        <p>- 마켓상품번호 : (오픈) 마켓 상품번호</p>
-                        <p>- 마켓상품URL : (오픈) 마켓 판매상품 URL</p>
-                        <p>- 결제금액합계(원) : (오픈) 마켓 결제금액합계</p>
-                        <p>- 결제배송비(원) : (오픈) 마켓 배송비 결제금액</p>
-                        <p>- 수령인명 : (오픈) 마켓 수령인 이름</p>
-                        <p>- 배송주소 : (오픈) 마켓 배송지주소</p>
-                        <p>- 상세주소 : (오픈) 마켓 배송지 상세주소</p>
-                        <p>- 우편번호 : (오픈) 마켓 우편번호</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th class="va-top">배송신청서 첨부</th>
-                      <td class="small-pd">
-                        <button class="button small line download">작성된 신청서 업로드</button>
-                        <span class="ml-8">[xlsx] 업로드 파일명 TEXT TEXT TEXT TEXT TEXT TEXT</span>
-                        <p class="td-notice mt-6">1개의 신청서만 업로드 할 수 있습니다.</p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+
+            <div class="mt-40">
+              <button class="open-pop button line mr-10" data-name="S_10_0014">배송대행지 등록(S_10_0014)</button>
+            </div>
+
+            <div class="popup has-tit w1024" id="S_10_0014">
+              <div class="pop-head">
+                <h2>배송대행지 등록</h2>
+                <button class="close"></button>
               </div>
-            </div>
-            <div class="pop-bottm">
-              <button class="button line">취소</button>
-              <button class="button bg-primary">배송대행지 등록</button>
+              <div class="pop-contents">
+                <p class="main-txt">※ 아래 배송신청서 양식(엑셀)을 다운로드하여 배송신청서를 작성 후 업로드 하세요.</p>
+                <div class="table mt-12">
+                  <table>
+                    <colgroup>
+                      <col style="width: 13.6rem" />
+                      <col style="width: auto" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>배송신청서 URL</th>
+                        <td class="small-pd">
+                          <input type="text" class="input" value="http://" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="va-top">배송신청서 내용</th>
+                        <td class="small-pd">
+                          <button class="button small line download">신청서 양식 다운로드</button>
+                          <p class="mt-12">- 마켓주문일자 : (오픈) 마켓 주문일자</p>
+                          <p>
+                            - 마켓주문번호 : (오픈) 마켓주문번호 (위메프 - 구매번호(주문번호), 스마트스토어 -
+                            주문번호(상품주문번호))
+                          </p>
+                          <p>- 마켓명 : (오픈) 마켓이름 (ex. 옥션, 지마켓 등)</p>
+                          <p>- 마켓아이디 : (오픈) 마켓 아이디</p>
+                          <p>- 마켓상품번호 : (오픈) 마켓 상품번호</p>
+                          <p>- 마켓상품URL : (오픈) 마켓 판매상품 URL</p>
+                          <p>- 결제금액합계(원) : (오픈) 마켓 결제금액합계</p>
+                          <p>- 결제배송비(원) : (오픈) 마켓 배송비 결제금액</p>
+                          <p>- 수령인명 : (오픈) 마켓 수령인 이름</p>
+                          <p>- 배송주소 : (오픈) 마켓 배송지주소</p>
+                          <p>- 상세주소 : (오픈) 마켓 배송지 상세주소</p>
+                          <p>- 우편번호 : (오픈) 마켓 우편번호</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="va-top">배송신청서 첨부</th>
+                        <td class="small-pd">
+                          <button class="button small line download">작성된 신청서 업로드</button>
+                          <span class="ml-8">[xlsx] 업로드 파일명 TEXT TEXT TEXT TEXT TEXT TEXT</span>
+                          <p class="td-notice mt-6">1개의 신청서만 업로드 할 수 있습니다.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="pop-bottm">
+                <button class="button line">취소</button>
+                <button class="button bg-primary">배송대행지 등록</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <a href="#none" class="consulting">상담하기</a>
     </div>
-    <a href="#none" class="consulting">상담하기</a>
   </body>
 </html>

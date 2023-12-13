@@ -8,349 +8,353 @@
     <!-- 퍼블용 include: 개발팀에서 재include 하길 바랍니다. -->
     <script class="__include" src="../include/head.js"></script>
   </head>
-  <body class="market">
-    <!-- header -->
-    <div class="header-space" data-include="../layout/header.html"></div>
+  <body>
+    <div class="market">
+      <!-- header -->
+      <div class="header-space" data-include="../layout/header.html"></div>
 
-    <!-- container -->
-    <div class="container">
-      <!-- lnb -->
-      <div class="lnb" data-include="../layout/lnb.html"></div>
+      <!-- container -->
+      <div class="container">
+        <!-- lnb -->
+        <div class="lnb" data-include="../layout/lnb.html"></div>
 
-      <!-- contents -->
-      <div class="contents">
-        <div class="tab-container">
-          <ul>
-            <li class="tab active"><a href="#">사업자 정보</a><span class="close-tab">닫기</span></li>
-          </ul>
-          <div class="move-wrap">
-            <button class="button"><i class="ico-backward small"></i></button>
-            <button class="button"><i class="ico-forward small"></i></button>
-          </div>
-        </div>
-
-        <div class="tab-content active">
-          <div class="tit-wrap">
-            <h2 class="h1">
-              사업자 정보
-              <button class="favorite">즐겨찾기</button>
-              <!-- 즐겨찾기 등록된 경우-->
-              <!-- <button class="favorite checked">즐겨찾기</button> -->
-            </h2>
-            <div class="path">
-              <a href="#none" class="home">홈 바로가기</a>
-              <a href="#none" class="1depth">환경설정</a>
-              <a href="#none" class="1depth">서비스/사업자정보 관리</a>
-              <a href="#none" class="2depth">사업자 정보</a>
+        <!-- contents -->
+        <div class="contents">
+          <div class="tab-container">
+            <ul>
+              <li class="tab active"><a href="#">사업자 정보</a><span class="close-tab">닫기</span></li>
+            </ul>
+            <div class="move-wrap">
+              <button class="button"><i class="ico-backward small"></i></button>
+              <button class="button"><i class="ico-forward small"></i></button>
             </div>
           </div>
-          <div class="contents">
-            <div class="table mt-30">
-              <table>
-                <colgroup>
-                  <col style="width: 12.8rem" />
-                  <col style="width: 20.8rem" />
-                  <col style="width: 12.8rem" />
-                  <col style="width: 20.8rem" />
-                  <col style="width: 12.8rem" />
-                  <col style="width: 20.8rem" />
-                  <col style="width: 12.8rem" />
-                  <col style="width: 20.8rem" />
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th colspan="8" class="bd-line-2 small-pd">
-                      <div class="flex space-between align-center">
-                        <p class="sub-txt">담당자 정보</p>
-                        <button class="button small line">회원탈퇴</button>
-                      </div>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th>가입채널</th>
-                    <td>카카오</td>
-                    <th>담당자 이메일</th>
-                    <td>abcd1234@market.com</td>
-                    <th>가입채널</th>
-                    <td>김마켓</td>
-                    <th class="va-top" rowspan="2">휴대폰 번호</th>
-                    <td rowspan="2" class="va-top">
-                      <p>010-1234-5678</p>
-                      <button class="button small line w-100p t-center mt-12">회원탈퇴</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>가입일시</th>
-                    <td>YYYY.MM.DD hh:mm:ss</td>
-                    <th>내가 추천한 회원</th>
-                    <td>-</td>
-                    <th>나를 추천한 회원수</th>
-                    <td><a href="#none" class="a-link2">10명</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- 조회(읽기)모드 -->
-            <div class="table mt-32">
-              <table>
-                <colgroup>
-                  <col style="width: 12.8rem" />
-                  <col style="width: 12.8rem" />
-                  <col style="width: 20.8rem" />
-                  <col style="width: 12.8rem" />
-                  <col style="width: 20.8rem" />
-                  <col style="width: 12.8rem" />
-                  <col style="width: auto" />
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th colspan="7" class="bd-line-2 small-pd">
-                      <div class="flex space-between align-center">
-                        <div class="left">
-                          <p class="sub-txt">기업 정보</p>
-                        </div>
-                        <div class="right">
-                          <button class="button small bg-dark">설정 저장</button>
-                        </div>
-                      </div>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th rowspan="2" class="va-top">운영쇼핑몰 정보</th>
-                    <th class="va-top">쇼핑몰 Logo</th>
-                    <td colspan="5">
-                      <div class="img-box w-56 obf-contain">
-                        <img src="../../static/images/common/mongmong_middle.png" alt="" />
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>쇼핑몰 이름</th>
-                    <td colspan="7">OOOOOOOO 마트</td>
-                  </tr>
-                  <tr>
-                    <th rowspan="7" class="va-top">기업 정보</th>
-                    <th>상호명</th>
-                    <td colspan="6">OOOOOOOO 마트</td>
-                  </tr>
-                  <tr>
-                    <th>사업자 구분</th>
-                    <td>개인 사업자</td>
-                    <th>사업자등록번호</th>
-                    <td>111-22-33333</td>
-                    <th>통신판매업번호</th>
-                    <td>제 2023-서울영등포-OOOO 호</td>
-                  </tr>
-                  <tr>
-                    <th>업태</th>
-                    <td colspan="3">도매 및 소매업 서비스업</td>
-                    <th>종목</th>
-                    <td colspan="3">전자상거래 소매업 해외구매대행</td>
-                  </tr>
-                  <tr>
-                    <th rowspan="2" class="va-top">소재지</th>
-                    <th>우편번호</th>
-                    <td colspan="2">98765</td>
-                    <th>대표 전화번호</th>
-                    <td>070-1234-5678</td>
-                  </tr>
-                  <tr>
-                    <th>지역</th>
-                    <td colspan="2">서울특별시 영등포구</td>
-                    <th>상세 주소</th>
-                    <td>여의대로 OO, 전국경제연합회 OOO 빌딩 OO층</td>
-                  </tr>
-                  <tr>
-                    <th>대표자 이름</th>
-                    <td colspan="3">최위즈</td>
-                    <th>정보보안 담당자</th>
-                    <td colspan="3">최위즈</td>
-                  </tr>
-                  <tr>
-                    <th>대표자 연락처</th>
-                    <td colspan="3">010-9876-5432</td>
-                    <th class="small-pd">
-                      정보보안 담당자<br />
-                      연락처
-                    </th>
-                    <td colspan="3">010-9876-5432</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- //조회(읽기)모드 -->
-            <!-- 수정/저장 모드 -->
-            <div class="table mt-32">
-              <table>
-                <colgroup>
-                  <col style="width: 12.8rem" />
-                  <col style="width: 12.8rem" />
-                  <col style="width: 20.8rem" />
-                  <col style="width: 12.8rem" />
-                  <col style="width: 20.8rem" />
-                  <col style="width: 12.8rem" />
-                  <col style="width: auto" />
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th colspan="7" class="bd-line-2 small-pd">
-                      <div class="flex space-between align-center">
-                        <div class="left">
-                          <p class="sub-txt">기업 정보</p>
-                        </div>
-                        <div class="right">
-                          <button class="button small bg-dark">설정 저장</button>
-                        </div>
-                      </div>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th rowspan="2" class="va-top">운영쇼핑몰 정보</th>
-                    <th class="va-top">쇼핑몰 Logo</th>
-                    <td colspan="5" class="small-pd">
-                      <div class="flex">
-                        <div class="img-box w-56 obf-contain">
-                          <img src="../../static/images/common/mongmong_middle.png" alt="" />
-                        </div>
-                        <span class="button small line file ml-12">
-                          <input type="file" id="file-1" />
-                          <label for="file-1">이미지 찾기</label>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>쇼핑몰 이름</th>
-                    <td colspan="7" class="small-pd">
-                      <input type="text" class="input w-100p" value="OOOOOOOO 마트" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th rowspan="7" class="va-top">기업 정보</th>
-                    <th>상호명</th>
-                    <td colspan="6">OOOOOOOO 마트</td>
-                  </tr>
-                  <tr>
-                    <th>사업자 구분</th>
-                    <td>개인 사업자</td>
-                    <th>사업자등록번호</th>
-                    <td>111-22-33333</td>
-                    <th>통신판매업번호</th>
-                    <td>제 2023-서울영등포-OOOO 호</td>
-                  </tr>
-                  <tr>
-                    <th>업태</th>
-                    <td colspan="3">도매 및 소매업 서비스업</td>
-                    <th>종목</th>
-                    <td colspan="3">전자상거래 소매업 해외구매대행</td>
-                  </tr>
-                  <tr>
-                    <th rowspan="2" class="va-top">소재지</th>
-                    <th>우편번호</th>
-                    <td colspan="2" class="small-pd">
-                      <div class="flex">
-                        <input type="text" class="input" value="98765" disabled />
-                        <button class="button small line open-pop" data-name="S_10_0031">주소 검색</button>
-                      </div>
-                    </td>
-                    <th>대표 전화번호</th>
-                    <td class="small-pd"><input type="text" class="input w-100p" value="070-1234-5678" /></td>
-                  </tr>
-                  <tr>
-                    <th>지역</th>
-                    <td colspan="2" class="small-pd">
-                      <input type="text" class="input w-100p" value="서울특별시 영등포구" disabled />
-                    </td>
-                    <th>상세 주소</th>
-                    <td class="small-pd">
-                      <input type="text" class="input w-100p" value="여의대로 OO, 전국경제연합회 OOO 빌딩 OO층" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>대표자 이름</th>
-                    <td colspan="3">최위즈</td>
-                    <th>정보보안 담당자</th>
-                    <td colspan="3" class="small-pd"><input type="text" class="input w-100p" value="최위즈" /></td>
-                  </tr>
-                  <tr>
-                    <th>대표자 연락처</th>
-                    <td colspan="3" class="small-pd">
-                      <input type="text" class="input w-100p" value="010-9876-5432" />
-                    </td>
-                    <th class="small-pd">
-                      정보보안 담당자<br />
-                      연락처
-                    </th>
-                    <td colspan="3" class="small-pd">
-                      <input type="text" class="input w-100p" value="010-9876-5432" />
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- //수정/저장 모드 -->
-          </div>
 
-          <div class="mt-40">
-            <button class="open-pop button line mr-10" data-name="S_10_0030">담당자 휴대폰번호 변경(S_10_0030)</button>
-            <button class="open-pop button line mr-10" data-name="S_10_0031">주소검색(S_10_0031)</button>
-          </div>
-          <div class="popup has-tit w480" id="S_10_0030">
-            <div class="pop-head">
-              <h2>담당자 휴대폰번호 변경</h2>
-              <button class="close"></button>
+          <div class="tab-content active">
+            <div class="tit-wrap">
+              <h2 class="h1">
+                사업자 정보
+                <button class="favorite">즐겨찾기</button>
+                <!-- 즐겨찾기 등록된 경우-->
+                <!-- <button class="favorite checked">즐겨찾기</button> -->
+              </h2>
+              <div class="path">
+                <a href="#none" class="home">홈 바로가기</a>
+                <a href="#none" class="1depth">환경설정</a>
+                <a href="#none" class="1depth">서비스/사업자정보 관리</a>
+                <a href="#none" class="2depth">사업자 정보</a>
+              </div>
             </div>
-            <div class="pop-contents">
-              <div class="table">
+            <div class="contents">
+              <div class="table mt-30">
                 <table>
                   <colgroup>
                     <col style="width: 12.8rem" />
-                    <col style="width: auto" />
+                    <col style="width: 20.8rem" />
+                    <col style="width: 12.8rem" />
+                    <col style="width: 20.8rem" />
+                    <col style="width: 12.8rem" />
+                    <col style="width: 20.8rem" />
+                    <col style="width: 12.8rem" />
+                    <col style="width: 20.8rem" />
                   </colgroup>
+                  <thead>
+                    <tr>
+                      <th colspan="8" class="bd-line-2 small-pd">
+                        <div class="flex space-between align-center">
+                          <p class="sub-txt">담당자 정보</p>
+                          <button class="button small line">회원탈퇴</button>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
                   <tbody>
                     <tr>
-                      <th>담당자 이름</th>
+                      <th>가입채널</th>
+                      <td>카카오</td>
+                      <th>담당자 이메일</th>
+                      <td>abcd1234@market.com</td>
+                      <th>가입채널</th>
                       <td>김마켓</td>
+                      <th class="va-top" rowspan="2">휴대폰 번호</th>
+                      <td rowspan="2" class="va-top">
+                        <p>010-1234-5678</p>
+                        <button class="button small line w-100p t-center mt-12">회원탈퇴</button>
+                      </td>
                     </tr>
                     <tr>
-                      <th>기존 휴대폰번호</th>
-                      <td>010-1234-5678</td>
+                      <th>가입일시</th>
+                      <td>YYYY.MM.DD hh:mm:ss</td>
+                      <th>내가 추천한 회원</th>
+                      <td>-</td>
+                      <th>나를 추천한 회원수</th>
+                      <td><a href="#none" class="a-link2">10명</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- 조회(읽기)모드 -->
+              <div class="table mt-32">
+                <table>
+                  <colgroup>
+                    <col style="width: 12.8rem" />
+                    <col style="width: 12.8rem" />
+                    <col style="width: 20.8rem" />
+                    <col style="width: 12.8rem" />
+                    <col style="width: 20.8rem" />
+                    <col style="width: 12.8rem" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th colspan="7" class="bd-line-2 small-pd">
+                        <div class="flex space-between align-center">
+                          <div class="left">
+                            <p class="sub-txt">기업 정보</p>
+                          </div>
+                          <div class="right">
+                            <button class="button small bg-dark">설정 저장</button>
+                          </div>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan="2" class="va-top">운영쇼핑몰 정보</th>
+                      <th class="va-top">쇼핑몰 Logo</th>
+                      <td colspan="5">
+                        <div class="img-box w-56 obf-contain">
+                          <img src="../../static/images/common/mongmong_middle.png" alt="" />
+                        </div>
+                      </td>
                     </tr>
                     <tr>
-                      <th>변경할 휴대폰번호</th>
+                      <th>쇼핑몰 이름</th>
+                      <td colspan="7">OOOOOOOO 마트</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="7" class="va-top">기업 정보</th>
+                      <th>상호명</th>
+                      <td colspan="6">OOOOOOOO 마트</td>
+                    </tr>
+                    <tr>
+                      <th>사업자 구분</th>
+                      <td>개인 사업자</td>
+                      <th>사업자등록번호</th>
+                      <td>111-22-33333</td>
+                      <th>통신판매업번호</th>
+                      <td>제 2023-서울영등포-OOOO 호</td>
+                    </tr>
+                    <tr>
+                      <th>업태</th>
+                      <td colspan="3">도매 및 소매업 서비스업</td>
+                      <th>종목</th>
+                      <td colspan="3">전자상거래 소매업 해외구매대행</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="2" class="va-top">소재지</th>
+                      <th>우편번호</th>
+                      <td colspan="2">98765</td>
+                      <th>대표 전화번호</th>
+                      <td>070-1234-5678</td>
+                    </tr>
+                    <tr>
+                      <th>지역</th>
+                      <td colspan="2">서울특별시 영등포구</td>
+                      <th>상세 주소</th>
+                      <td>여의대로 OO, 전국경제연합회 OOO 빌딩 OO층</td>
+                    </tr>
+                    <tr>
+                      <th>대표자 이름</th>
+                      <td colspan="3">최위즈</td>
+                      <th>정보보안 담당자</th>
+                      <td colspan="3">최위즈</td>
+                    </tr>
+                    <tr>
+                      <th>대표자 연락처</th>
+                      <td colspan="3">010-9876-5432</td>
+                      <th class="small-pd">
+                        정보보안 담당자<br />
+                        연락처
+                      </th>
+                      <td colspan="3">010-9876-5432</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- //조회(읽기)모드 -->
+              <!-- 수정/저장 모드 -->
+              <div class="table mt-32">
+                <table>
+                  <colgroup>
+                    <col style="width: 12.8rem" />
+                    <col style="width: 12.8rem" />
+                    <col style="width: 20.8rem" />
+                    <col style="width: 12.8rem" />
+                    <col style="width: 20.8rem" />
+                    <col style="width: 12.8rem" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th colspan="7" class="bd-line-2 small-pd">
+                        <div class="flex space-between align-center">
+                          <div class="left">
+                            <p class="sub-txt">기업 정보</p>
+                          </div>
+                          <div class="right">
+                            <button class="button small bg-dark">설정 저장</button>
+                          </div>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan="2" class="va-top">운영쇼핑몰 정보</th>
+                      <th class="va-top">쇼핑몰 Logo</th>
+                      <td colspan="5" class="small-pd">
+                        <div class="flex">
+                          <div class="img-box w-56 obf-contain">
+                            <img src="../../static/images/common/mongmong_middle.png" alt="" />
+                          </div>
+                          <span class="button small line file ml-12">
+                            <input type="file" id="file-1" />
+                            <label for="file-1">이미지 찾기</label>
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>쇼핑몰 이름</th>
+                      <td colspan="7" class="small-pd">
+                        <input type="text" class="input w-100p" value="OOOOOOOO 마트" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th rowspan="7" class="va-top">기업 정보</th>
+                      <th>상호명</th>
+                      <td colspan="6">OOOOOOOO 마트</td>
+                    </tr>
+                    <tr>
+                      <th>사업자 구분</th>
+                      <td>개인 사업자</td>
+                      <th>사업자등록번호</th>
+                      <td>111-22-33333</td>
+                      <th>통신판매업번호</th>
+                      <td>제 2023-서울영등포-OOOO 호</td>
+                    </tr>
+                    <tr>
+                      <th>업태</th>
+                      <td colspan="3">도매 및 소매업 서비스업</td>
+                      <th>종목</th>
+                      <td colspan="3">전자상거래 소매업 해외구매대행</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="2" class="va-top">소재지</th>
+                      <th>우편번호</th>
+                      <td colspan="2" class="small-pd">
+                        <div class="flex">
+                          <input type="text" class="input" value="98765" disabled />
+                          <button class="button small line open-pop" data-name="S_10_0031">주소 검색</button>
+                        </div>
+                      </td>
+                      <th>대표 전화번호</th>
+                      <td class="small-pd"><input type="text" class="input w-100p" value="070-1234-5678" /></td>
+                    </tr>
+                    <tr>
+                      <th>지역</th>
+                      <td colspan="2" class="small-pd">
+                        <input type="text" class="input w-100p" value="서울특별시 영등포구" disabled />
+                      </td>
+                      <th>상세 주소</th>
                       <td class="small-pd">
-                        <input type="text" class="input" placeholder="( “-” ) 빼고 입력" />
+                        <input type="text" class="input w-100p" value="여의대로 OO, 전국경제연합회 OOO 빌딩 OO층" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>대표자 이름</th>
+                      <td colspan="3">최위즈</td>
+                      <th>정보보안 담당자</th>
+                      <td colspan="3" class="small-pd"><input type="text" class="input w-100p" value="최위즈" /></td>
+                    </tr>
+                    <tr>
+                      <th>대표자 연락처</th>
+                      <td colspan="3" class="small-pd">
+                        <input type="text" class="input w-100p" value="010-9876-5432" />
+                      </td>
+                      <th class="small-pd">
+                        정보보안 담당자<br />
+                        연락처
+                      </th>
+                      <td colspan="3" class="small-pd">
+                        <input type="text" class="input w-100p" value="010-9876-5432" />
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <!-- //수정/저장 모드 -->
             </div>
-            <div class="pop-bottm">
-              <button class="button line">취소</button>
-              <button class="button bg-primary">저장</button>
+
+            <div class="mt-40">
+              <button class="open-pop button line mr-10" data-name="S_10_0030">
+                담당자 휴대폰번호 변경(S_10_0030)
+              </button>
+              <button class="open-pop button line mr-10" data-name="S_10_0031">주소검색(S_10_0031)</button>
             </div>
-          </div>
-          <div class="popup has-tit w640" id="S_10_0031">
-            <div class="pop-head">
-              <h2>주소검색</h2>
-              <button class="close"></button>
+            <div class="popup has-tit w480" id="S_10_0030">
+              <div class="pop-head">
+                <h2>담당자 휴대폰번호 변경</h2>
+                <button class="close"></button>
+              </div>
+              <div class="pop-contents">
+                <div class="table">
+                  <table>
+                    <colgroup>
+                      <col style="width: 12.8rem" />
+                      <col style="width: auto" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>담당자 이름</th>
+                        <td>김마켓</td>
+                      </tr>
+                      <tr>
+                        <th>기존 휴대폰번호</th>
+                        <td>010-1234-5678</td>
+                      </tr>
+                      <tr>
+                        <th>변경할 휴대폰번호</th>
+                        <td class="small-pd">
+                          <input type="text" class="input" placeholder="( “-” ) 빼고 입력" />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="pop-bottm">
+                <button class="button line">취소</button>
+                <button class="button bg-primary">저장</button>
+              </div>
             </div>
-            <div class="pop-contents"></div>
-            <div class="pop-bottm">
-              <button class="button line">취소</button>
-              <button class="button bg-primary">답변 저장</button>
+            <div class="popup has-tit w640" id="S_10_0031">
+              <div class="pop-head">
+                <h2>주소검색</h2>
+                <button class="close"></button>
+              </div>
+              <div class="pop-contents"></div>
+              <div class="pop-bottm">
+                <button class="button line">취소</button>
+                <button class="button bg-primary">답변 저장</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <a href="#none" class="consulting">상담하기</a>
     </div>
-    <a href="#none" class="consulting">상담하기</a>
   </body>
 </html>

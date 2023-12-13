@@ -8,306 +8,307 @@
     <!-- 퍼블용 include: 개발팀에서 재include 하길 바랍니다. -->
     <script class="__include" src="../include/head.js"></script>
   </head>
-  <body class="market">
-    <!-- header -->
-    <div class="header-space" data-include="../layout/header.html"></div>
+  <body>
+    <div class="market">
+      <!-- header -->
+      <div class="header-space" data-include="../layout/header.html"></div>
 
-    <!-- container -->
-    <div class="container">
-      <!-- lnb -->
-      <div class="lnb" data-include="../layout/lnb.html"></div>
+      <!-- container -->
+      <div class="container">
+        <!-- lnb -->
+        <div class="lnb" data-include="../layout/lnb.html"></div>
 
-      <!-- contents -->
-      <div class="contents">
-        <div class="tab-container">
-          <ul>
-            <li class="tab active"><a href="#">환율 설정</a><span class="close-tab">닫기</span></li>
-          </ul>
-          <div class="move-wrap">
-            <button class="button"><i class="ico-backward small"></i></button>
-            <button class="button"><i class="ico-forward small"></i></button>
-          </div>
-        </div>
-
-        <div class="tab-content active">
-          <div class="tit-wrap">
-            <h2 class="h1">
-              환율 정보 등록
-              <button class="favorite">즐겨찾기</button>
-              <!-- 즐겨찾기 등록된 경우-->
-              <!-- <button class="favorite checked">즐겨찾기</button> -->
-            </h2>
-            <div class="path">
-              <a href="#none" class="home">홈 바로가기</a>
-              <a href="#none" class="1depth">환경설정</a>
-              <a href="#none" class="2depth">환율 설정</a>
+        <!-- contents -->
+        <div class="contents">
+          <div class="tab-container">
+            <ul>
+              <li class="tab active"><a href="#">환율 설정</a><span class="close-tab">닫기</span></li>
+            </ul>
+            <div class="move-wrap">
+              <button class="button"><i class="ico-backward small"></i></button>
+              <button class="button"><i class="ico-forward small"></i></button>
             </div>
           </div>
-          <div class="contents">
-            <!-- 조회(읽기) 모드 -->
-            <div class="table mt-30">
-              <table>
-                <colgroup>
-                  <col style="width: 16rem" />
-                  <col style="width: auto" />
-                  <col style="width: 16rem" />
-                  <col style="width: auto" />
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th colspan="4" class="bd-line-2 small-pd">
-                      <div class="flex space-between align-center">
-                        <div class="left">
-                          <span class="sub-txt">환율 설정</span>
-                          <span class="small-txt ml-6">[상품가격 계산에 필요한 환율 정보를 설정 합니다.] </span>
-                        </div>
-                        <div class="right">
-                          <button class="button small line">환율정보보기</button>
-                          <button class="button small bg-dark">설정저장</button>
-                        </div>
-                      </div>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th>1 USD (달러)</th>
-                    <td class="small-pd">
-                      <div class="input-box">
-                        <input type="text" class="input w-192" title="환율 정보 입력" />
-                        <span class="ml-4">원</span>
-                      </div>
-                    </td>
-                    <th>1 EUR (유로)</th>
-                    <td class="small-pd">
-                      <div class="flex align-center">
-                        <div class="input-box">
-                          <input type="text" class="input w-192" title="환율 정보 입력" disabled />
-                          <span class="ml-4">원</span>
-                        </div>
-                        <div class="flex ml-16">
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio1-1" name="radio1" />
-                            <label for="radio1-1">사용</label>
+
+          <div class="tab-content active">
+            <div class="tit-wrap">
+              <h2 class="h1">
+                환율 정보 등록
+                <button class="favorite">즐겨찾기</button>
+                <!-- 즐겨찾기 등록된 경우-->
+                <!-- <button class="favorite checked">즐겨찾기</button> -->
+              </h2>
+              <div class="path">
+                <a href="#none" class="home">홈 바로가기</a>
+                <a href="#none" class="1depth">환경설정</a>
+                <a href="#none" class="2depth">환율 설정</a>
+              </div>
+            </div>
+            <div class="contents">
+              <!-- 조회(읽기) 모드 -->
+              <div class="table mt-30">
+                <table>
+                  <colgroup>
+                    <col style="width: 16rem" />
+                    <col style="width: auto" />
+                    <col style="width: 16rem" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th colspan="4" class="bd-line-2 small-pd">
+                        <div class="flex space-between align-center">
+                          <div class="left">
+                            <span class="sub-txt">환율 설정</span>
+                            <span class="small-txt ml-6">[상품가격 계산에 필요한 환율 정보를 설정 합니다.] </span>
                           </div>
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio1-2" name="radio1" checked="" />
-                            <label for="radio1-2">사용안함</label>
+                          <div class="right">
+                            <button class="button small line">환율정보보기</button>
+                            <button class="button small bg-dark">설정저장</button>
                           </div>
                         </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>1 JPY (엔)</th>
-                    <td class="small-pd">
-                      <div class="flex align-center">
-                        <div class="input-box">
-                          <input type="text" class="input w-192" title="환율 정보 입력" disabled />
-                          <span class="ml-4">원</span>
-                        </div>
-                        <div class="flex ml-16">
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio2-1" name="radio2" />
-                            <label for="radio2-1">사용</label>
-                          </div>
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio2-2" name="radio2" checked="" />
-                            <label for="radio2-2">사용안함</label>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <th>1 GEP (파운드)</th>
-                    <td class="small-pd">
-                      <div class="flex align-center">
-                        <div class="input-box">
-                          <input type="text" class="input w-192" title="환율 정보 입력" disabled />
-                          <span class="ml-4">원</span>
-                        </div>
-                        <div class="flex ml-16">
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio3-1" name="radio3" />
-                            <label for="radio3-1">사용</label>
-                          </div>
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio3-2" name="radio3" checked="" />
-                            <label for="radio3-2">사용안함</label>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>1 SGD (싱가폴 달러)</th>
-                    <td class="small-pd">
-                      <div class="flex align-center">
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>1 USD (달러)</th>
+                      <td class="small-pd">
                         <div class="input-box">
                           <input type="text" class="input w-192" title="환율 정보 입력" />
                           <span class="ml-4">원</span>
                         </div>
-                        <div class="flex ml-16">
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio4-1" name="radio4" checked="" />
-                            <label for="radio4-1">사용</label>
+                      </td>
+                      <th>1 EUR (유로)</th>
+                      <td class="small-pd">
+                        <div class="flex align-center">
+                          <div class="input-box">
+                            <input type="text" class="input w-192" title="환율 정보 입력" disabled />
+                            <span class="ml-4">원</span>
                           </div>
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio4-2" name="radio4" />
-                            <label for="radio4-2">사용안함</label>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <th>1 CAD (캐나다 달러)</th>
-                    <td class="small-pd">
-                      <div class="flex align-center">
-                        <div class="input-box">
-                          <input type="text" class="input w-192" title="환율 정보 입력" disabled />
-                          <span class="ml-4">원</span>
-                        </div>
-                        <div class="flex ml-16">
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio5-1" name="radio5" />
-                            <label for="radio5-1">사용</label>
-                          </div>
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio5-2" name="radio5" checked="" />
-                            <label for="radio5-2">사용안함</label>
+                          <div class="flex ml-16">
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio1-1" name="radio1" />
+                              <label for="radio1-1">사용</label>
+                            </div>
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio1-2" name="radio1" checked="" />
+                              <label for="radio1-2">사용안함</label>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>1 TRY (리라)</th>
-                    <td class="small-pd">
-                      <div class="flex align-center">
-                        <div class="input-box">
-                          <input type="text" class="input w-192" title="환율 정보 입력" disabled />
-                          <span class="ml-4">원</span>
-                        </div>
-                        <div class="flex ml-16">
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio6-1" name="radio6" />
-                            <label for="radio6-1">사용</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>1 JPY (엔)</th>
+                      <td class="small-pd">
+                        <div class="flex align-center">
+                          <div class="input-box">
+                            <input type="text" class="input w-192" title="환율 정보 입력" disabled />
+                            <span class="ml-4">원</span>
                           </div>
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio6-2" name="radio6" checked="" />
-                            <label for="radio6-2">사용안함</label>
+                          <div class="flex ml-16">
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio2-1" name="radio2" />
+                              <label for="radio2-1">사용</label>
+                            </div>
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio2-2" name="radio2" checked="" />
+                              <label for="radio2-2">사용안함</label>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </td>
+                      </td>
+                      <th>1 GEP (파운드)</th>
+                      <td class="small-pd">
+                        <div class="flex align-center">
+                          <div class="input-box">
+                            <input type="text" class="input w-192" title="환율 정보 입력" disabled />
+                            <span class="ml-4">원</span>
+                          </div>
+                          <div class="flex ml-16">
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio3-1" name="radio3" />
+                              <label for="radio3-1">사용</label>
+                            </div>
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio3-2" name="radio3" checked="" />
+                              <label for="radio3-2">사용안함</label>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>1 SGD (싱가폴 달러)</th>
+                      <td class="small-pd">
+                        <div class="flex align-center">
+                          <div class="input-box">
+                            <input type="text" class="input w-192" title="환율 정보 입력" />
+                            <span class="ml-4">원</span>
+                          </div>
+                          <div class="flex ml-16">
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio4-1" name="radio4" checked="" />
+                              <label for="radio4-1">사용</label>
+                            </div>
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio4-2" name="radio4" />
+                              <label for="radio4-2">사용안함</label>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <th>1 CAD (캐나다 달러)</th>
+                      <td class="small-pd">
+                        <div class="flex align-center">
+                          <div class="input-box">
+                            <input type="text" class="input w-192" title="환율 정보 입력" disabled />
+                            <span class="ml-4">원</span>
+                          </div>
+                          <div class="flex ml-16">
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio5-1" name="radio5" />
+                              <label for="radio5-1">사용</label>
+                            </div>
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio5-2" name="radio5" checked="" />
+                              <label for="radio5-2">사용안함</label>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>1 TRY (리라)</th>
+                      <td class="small-pd">
+                        <div class="flex align-center">
+                          <div class="input-box">
+                            <input type="text" class="input w-192" title="환율 정보 입력" disabled />
+                            <span class="ml-4">원</span>
+                          </div>
+                          <div class="flex ml-16">
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio6-1" name="radio6" />
+                              <label for="radio6-1">사용</label>
+                            </div>
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio6-2" name="radio6" checked="" />
+                              <label for="radio6-2">사용안함</label>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
 
-                    <th>1 NZD (뉴질랜드 달러)</th>
-                    <td class="small-pd">
-                      <div class="flex align-center">
-                        <div class="input-box">
-                          <input type="text" class="input w-192" title="환율 정보 입력" disabled />
-                          <span class="ml-4">원</span>
-                        </div>
-                        <div class="flex ml-16">
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio7-1" name="radio7" />
-                            <label for="radio7-1">사용</label>
+                      <th>1 NZD (뉴질랜드 달러)</th>
+                      <td class="small-pd">
+                        <div class="flex align-center">
+                          <div class="input-box">
+                            <input type="text" class="input w-192" title="환율 정보 입력" disabled />
+                            <span class="ml-4">원</span>
                           </div>
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio7-2" name="radio7" checked="" />
-                            <label for="radio7-2">사용안함</label>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>1 CNY (위안)</th>
-                    <td class="small-pd">
-                      <div class="flex align-center">
-                        <div class="input-box">
-                          <input type="text" class="input w-192" title="환율 정보 입력" disabled />
-                          <span class="ml-4">원</span>
-                        </div>
-                        <div class="flex ml-16">
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio8-1" name="radio8" />
-                            <label for="radio8-1">사용</label>
-                          </div>
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio8-2" name="radio8" checked="" />
-                            <label for="radio8-2">사용안함</label>
+                          <div class="flex ml-16">
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio7-1" name="radio7" />
+                              <label for="radio7-1">사용</label>
+                            </div>
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio7-2" name="radio7" checked="" />
+                              <label for="radio7-2">사용안함</label>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </td>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>1 CNY (위안)</th>
+                      <td class="small-pd">
+                        <div class="flex align-center">
+                          <div class="input-box">
+                            <input type="text" class="input w-192" title="환율 정보 입력" disabled />
+                            <span class="ml-4">원</span>
+                          </div>
+                          <div class="flex ml-16">
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio8-1" name="radio8" />
+                              <label for="radio8-1">사용</label>
+                            </div>
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio8-2" name="radio8" checked="" />
+                              <label for="radio8-2">사용안함</label>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
 
-                    <th>1 KD (홍콩 달러)</th>
-                    <td class="small-pd">
-                      <div class="flex align-center">
-                        <div class="input-box">
-                          <input type="text" class="input w-192" title="환율 정보 입력" disabled />
-                          <span class="ml-4">원</span>
-                        </div>
-                        <div class="flex ml-16">
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio9-1" name="radio9" />
-                            <label for="radio9-1">사용</label>
+                      <th>1 KD (홍콩 달러)</th>
+                      <td class="small-pd">
+                        <div class="flex align-center">
+                          <div class="input-box">
+                            <input type="text" class="input w-192" title="환율 정보 입력" disabled />
+                            <span class="ml-4">원</span>
                           </div>
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio9-2" name="radio9" checked="" />
-                            <label for="radio9-2">사용안함</label>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>1 AUD (호주 달러)</th>
-                    <td class="small-pd">
-                      <div class="flex align-center">
-                        <div class="input-box">
-                          <input type="text" class="input w-192" title="환율 정보 입력" disabled />
-                          <span class="ml-4">원</span>
-                        </div>
-                        <div class="flex ml-16">
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio10-1" name="radio10" />
-                            <label for="radio10-1">사용</label>
-                          </div>
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio10-2" name="radio10" checked="" />
-                            <label for="radio10-2">사용안함</label>
+                          <div class="flex ml-16">
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio9-1" name="radio9" />
+                              <label for="radio9-1">사용</label>
+                            </div>
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio9-2" name="radio9" checked="" />
+                              <label for="radio9-2">사용안함</label>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </td>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>1 AUD (호주 달러)</th>
+                      <td class="small-pd">
+                        <div class="flex align-center">
+                          <div class="input-box">
+                            <input type="text" class="input w-192" title="환율 정보 입력" disabled />
+                            <span class="ml-4">원</span>
+                          </div>
+                          <div class="flex ml-16">
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio10-1" name="radio10" />
+                              <label for="radio10-1">사용</label>
+                            </div>
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio10-2" name="radio10" checked="" />
+                              <label for="radio10-2">사용안함</label>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
 
-                    <th>1 PLN (즈워티)</th>
-                    <td class="small-pd">
-                      <div class="flex align-center">
-                        <div class="input-box">
-                          <input type="text" class="input w-192" title="환율 정보 입력" disabled />
-                          <span class="ml-4">원</span>
-                        </div>
-                        <div class="flex ml-16">
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio11-1" name="radio11" />
-                            <label for="radio11-1">사용</label>
+                      <th>1 PLN (즈워티)</th>
+                      <td class="small-pd">
+                        <div class="flex align-center">
+                          <div class="input-box">
+                            <input type="text" class="input w-192" title="환율 정보 입력" disabled />
+                            <span class="ml-4">원</span>
                           </div>
-                          <div class="radio-box small">
-                            <input type="radio" class="radio" id="radio11-2" name="radio11" checked="" />
-                            <label for="radio11-2">사용안함</label>
+                          <div class="flex ml-16">
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio11-1" name="radio11" />
+                              <label for="radio11-1">사용</label>
+                            </div>
+                            <div class="radio-box small">
+                              <input type="radio" class="radio" id="radio11-2" name="radio11" checked="" />
+                              <label for="radio11-2">사용안함</label>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <p class="td-notice mt-16">USD(달러) 환율은 필수 입력해 주세요.</p>
-            </div>
-            <!-- //조회(읽기) 모드 -->
-            <!-- 수정/저장 모드 -->
-            <!-- <div class="table mt-30">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="td-notice mt-16">USD(달러) 환율은 필수 입력해 주세요.</p>
+              </div>
+              <!-- //조회(읽기) 모드 -->
+              <!-- 수정/저장 모드 -->
+              <!-- <div class="table mt-30">
               <table>
                 <colgroup>
                   <col style="width: 14.8rem" />
@@ -499,11 +500,12 @@
               </table>
               <p class="td-notice mt-16">USD(달러) 환율은 필수 입력해 주세요.</p>
             </div> -->
-            <!-- //수정/저장 모드 -->
+              <!-- //수정/저장 모드 -->
+            </div>
           </div>
         </div>
       </div>
+      <a href="#none" class="consulting">상담하기</a>
     </div>
-    <a href="#none" class="consulting">상담하기</a>
   </body>
 </html>

@@ -8,112 +8,113 @@
     <!-- 퍼블용 include: 개발팀에서 재include 하길 바랍니다. -->
     <script class="__include" src="../include/head.js"></script>
   </head>
-  <body class="market">
-    <!-- header -->
-    <div class="header-space" data-include="../layout/header.html"></div>
+  <body>
+    <div class="market">
+      <!-- header -->
+      <div class="header-space" data-include="../layout/header.html"></div>
 
-    <!-- container -->
-    <div class="container">
-      <!-- lnb -->
-      <div class="lnb" data-include="../layout/lnb.html"></div>
+      <!-- container -->
+      <div class="container">
+        <!-- lnb -->
+        <div class="lnb" data-include="../layout/lnb.html"></div>
 
-      <!-- contents -->
-      <div class="contents">
-        <div class="tab-container">
-          <ul>
-            <li class="tab active"><a href="#">마켓 정보/계정 관리</a><span class="close-tab">닫기</span></li>
-          </ul>
-          <div class="move-wrap">
-            <button class="button"><i class="ico-backward small"></i></button>
-            <button class="button"><i class="ico-forward small"></i></button>
-          </div>
-        </div>
-
-        <div class="tab-content active">
-          <div class="tit-wrap">
-            <h2 class="h1">
-              마켓 정보/계정 관리
-              <button class="favorite">즐겨찾기</button>
-              <!-- 즐겨찾기 등록된 경우-->
-              <!-- <button class="favorite checked">즐겨찾기</button> -->
-            </h2>
-            <div class="path">
-              <a href="#none" class="home">홈 바로가기</a>
-              <a href="#none" class="1depth">환경설정</a>
-              <a href="#none" class="2depth">마켓 정보/계정 관리</a>
+        <!-- contents -->
+        <div class="contents">
+          <div class="tab-container">
+            <ul>
+              <li class="tab active"><a href="#">마켓 정보/계정 관리</a><span class="close-tab">닫기</span></li>
+            </ul>
+            <div class="move-wrap">
+              <button class="button"><i class="ico-backward small"></i></button>
+              <button class="button"><i class="ico-forward small"></i></button>
             </div>
           </div>
-          <div class="contents">
-            <div class="table mt-30">
-              <table>
-                <colgroup>
-                  <col style="width: 12.8rem" />
-                  <col style="width: auto" />
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th colspan="2" class="bd-line-2 small-pd">
-                      <div class="flex space-between align-center">
-                        <div class="left">
-                          <span class="sub-txt">마켓정보 관리</span>
-                          <span class="small-txt ml-6">판매 쇼핑몰 별 ID와 솔루션 연결을 관리합니다.</span>
-                        </div>
-                        <div class="right">
-                          <a href="#none" class="a-link2 mr-16">신청중인 업로드마켓 00 개</a>
-                          <button class="button small bg-dark open-pop" data-name="S_10_0014">마켓계정등록</button>
-                          <button class="button small bg-dark">마켓계정관리</button>
-                        </div>
-                      </div>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th>업로드마켓 선택</th>
-                    <td class="small-pd">
-                      <div class="flex">
-                        <button class="button small round on">쿠팡</button>
-                        <button class="button small round off ml-4">인터파크</button>
-                        <button class="button small round off ml-4">옥션</button>
-                        <button class="button small round off ml-4">G마켓</button>
-                        <button class="button small round off ml-4">스마트스토어</button>
-                        <button class="button small round off ml-4">11번가</button>
-                        <button class="button small round off ml-4">아모레퍼시픽</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>연결된 계정</th>
-                    <td class="small-pd">
-                      <div class="flex">
-                        <div class="flex align-center">
-                          <a href="#none" class="a-link4 mr-12">Abcdef1234@marketwidz.com</a
-                          ><button class="button small line">수정/삭제</button>
-                        </div>
-                        <div class="flex align-center ml-24">
-                          <a href="#none" class="a-link4 mr-12">Abcdef1234@marketwidz.com</a
-                          ><button class="button small line">수정/삭제</button>
-                        </div>
-                        <div class="flex align-center ml-24">
-                          <a href="#none" class="a-link4 mr-12">Abcdef1234@marketwidz.com</a
-                          ><button class="button small line">수정/삭제</button>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>마켓계정 이용현황</th>
-                    <td class="small-pd">
-                      이용 <span>00</span>개 / 잔여 <span>00</span>개<button class="button mini line ty2 ml-16">
-                        마켓계정 추가
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+
+          <div class="tab-content active">
+            <div class="tit-wrap">
+              <h2 class="h1">
+                마켓 정보/계정 관리
+                <button class="favorite">즐겨찾기</button>
+                <!-- 즐겨찾기 등록된 경우-->
+                <!-- <button class="favorite checked">즐겨찾기</button> -->
+              </h2>
+              <div class="path">
+                <a href="#none" class="home">홈 바로가기</a>
+                <a href="#none" class="1depth">환경설정</a>
+                <a href="#none" class="2depth">마켓 정보/계정 관리</a>
+              </div>
             </div>
-            <!-- 조회(읽기) 모드 -->
-            <!-- <div class="table mt-16">
+            <div class="contents">
+              <div class="table mt-30">
+                <table>
+                  <colgroup>
+                    <col style="width: 12.8rem" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th colspan="2" class="bd-line-2 small-pd">
+                        <div class="flex space-between align-center">
+                          <div class="left">
+                            <span class="sub-txt">마켓정보 관리</span>
+                            <span class="small-txt ml-6">판매 쇼핑몰 별 ID와 솔루션 연결을 관리합니다.</span>
+                          </div>
+                          <div class="right">
+                            <a href="#none" class="a-link2 mr-16">신청중인 업로드마켓 00 개</a>
+                            <button class="button small bg-dark open-pop" data-name="S_10_0014">마켓계정등록</button>
+                            <button class="button small bg-dark">마켓계정관리</button>
+                          </div>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>업로드마켓 선택</th>
+                      <td class="small-pd">
+                        <div class="flex">
+                          <button class="button small round on">쿠팡</button>
+                          <button class="button small round off ml-4">인터파크</button>
+                          <button class="button small round off ml-4">옥션</button>
+                          <button class="button small round off ml-4">G마켓</button>
+                          <button class="button small round off ml-4">스마트스토어</button>
+                          <button class="button small round off ml-4">11번가</button>
+                          <button class="button small round off ml-4">아모레퍼시픽</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>연결된 계정</th>
+                      <td class="small-pd">
+                        <div class="flex">
+                          <div class="flex align-center">
+                            <a href="#none" class="a-link4 mr-12">Abcdef1234@marketwidz.com</a
+                            ><button class="button small line">수정/삭제</button>
+                          </div>
+                          <div class="flex align-center ml-24">
+                            <a href="#none" class="a-link4 mr-12">Abcdef1234@marketwidz.com</a
+                            ><button class="button small line">수정/삭제</button>
+                          </div>
+                          <div class="flex align-center ml-24">
+                            <a href="#none" class="a-link4 mr-12">Abcdef1234@marketwidz.com</a
+                            ><button class="button small line">수정/삭제</button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>마켓계정 이용현황</th>
+                      <td class="small-pd">
+                        이용 <span>00</span>개 / 잔여 <span>00</span>개<button class="button mini line ty2 ml-16">
+                          마켓계정 추가
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- 조회(읽기) 모드 -->
+              <!-- <div class="table mt-16">
               <table>
                 <colgroup>
                   <col style="width: 12.8rem" />
@@ -233,727 +234,729 @@
                 </tbody>
               </table>
             </div> -->
-            <!-- //조회(읽기) 모드 -->
-            <!-- 수정/저장 모드 -->
-            <div class="table mt-16">
-              <table>
-                <colgroup>
-                  <col style="width: 12.8rem" />
-                  <col style="width: auto" />
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th colspan="3" class="bd-line-2 small-pd">
-                      <div class="flex space-between align-center">
-                        <div class="left">
-                          <span class="sub-txt">업로드마켓 정보설정</span>
-                          <span class="small-txt ml-6"
-                            >연결된 전송 대상 쇼핑몰/임대형 쇼핑몰의 기본 값을 설정합니다.</span
+              <!-- //조회(읽기) 모드 -->
+              <!-- 수정/저장 모드 -->
+              <div class="table mt-16">
+                <table>
+                  <colgroup>
+                    <col style="width: 12.8rem" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th colspan="3" class="bd-line-2 small-pd">
+                        <div class="flex space-between align-center">
+                          <div class="left">
+                            <span class="sub-txt">업로드마켓 정보설정</span>
+                            <span class="small-txt ml-6"
+                              >연결된 전송 대상 쇼핑몰/임대형 쇼핑몰의 기본 값을 설정합니다.</span
+                            >
+                          </div>
+                          <div class="right">
+                            <button class="button small bg-dark open-pop" data-name="S_10_0014">설정저장</button>
+                          </div>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="va-top">정보 업데이트 범위</th>
+                      <td>
+                        <div class="flex">
+                          <div class="radio-box small">
+                            <input type="radio" class="radio" id="update1" name="update" checked />
+                            <label for="update1">가격/재고 정보만 업데이트</label>
+                          </div>
+                          <div class="radio-box small">
+                            <input type="radio" class="radio" id="update2" name="update" />
+                            <label for="update2">전체 정보 업데이트</label>
+                          </div>
+                        </div>
+                        <p class="td-notice mt-6">
+                          전체정보 업데이트 : 쿠팡은 신규 등록할 때만 모든 정보를 전송하며, 이후 업데이트를 하는 경우
+                          가격/재고 정보만 전송합니다.
+                        </p>
+                        <p class="td-notice">
+                          <strong
+                            >[전체정보 업데이트] 를 선택하시면 항상, 이미지 등 전체 정보를 쿠팡으로 전송합니다.</strong
+                          >
+                        </p>
+                        <p class="td-notice">
+                          <strong
+                            >단, 전체정보 업데이트를 하시면 쿠팡 API 가 하루에 허용하는 신규등록 업데이트 콜수 5,000건
+                            중 한 건을 이용하게 되오니, 반드시 해당 내용 확인 후 전체정보 전송하기를 추천드립니다.
+                            (일반적인 가격, 재고 업데이트 시에는 쿠팡의 API 콜수가 차감되지 않습니다.)</strong
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>정가</th>
+                      <td class="bd-r-none va-top small-pd">
+                        상품 가격의
+                        <span class="ml-8 mr-4"
+                          ><input type="text" class="input w-112" placeholder="할인율 입력" /></span
+                        >% 만큼 추가하여 정가로 설정 합니다.
+                        <p class="td-notice mt-6">
+                          정가 설정은 [ 100,000원 → 50,000원] 과 같이 상품의 가격을 할인이 되어 보이게 하는 기능입니다.
+                        </p>
+                        <p class="td-notice">
+                          정가를 계산 과정에서 마켓위즈에 표시되는 상품의 가격과 업로드마켓의 판매 가격에 약간의 오차가
+                          발생 할 수 있습니다.
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="va-top">마켓대표가격</th>
+                      <td>
+                        <div class="flex">
+                          <div class="radio-box small">
+                            <input type="radio" class="radio" id="update2-1" name="update2" checked />
+                            <label for="update2-1">상품대표가격으로 전송</label>
+                          </div>
+                          <div class="radio-box small">
+                            <input type="radio" class="radio" id="update2-2" name="update2" />
+                            <label for="update2-2">가장 낮은 옵션가격으로 전송</label>
+                          </div>
+                          <div class="radio-box small">
+                            <input type="radio" class="radio" id="update2-3" name="update3" />
+                            <label for="update2-3">가장 높은 옵션가격으로 전송</label>
+                          </div>
+                        </div>
+                        <p class="td-notice mt-6">
+                          마켓대표가격 : 옵션이 있는 상품에 대해서만 적용됩니다. 옵션이 있는 상품의 경우 선택한
+                          옵션가격이 마켓의 대표가격으로 전송됩니다. 별도 설정을 하지 않으면 수집된 대표가격 또는
+                          상품관리에서 설정한 대표가격이 마켓의 대표가격으로 전송됩니다.
+                        </p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="va-top">전송 옵션개수</th>
+                      <td class="">
+                        <div class="flex">
+                          <div class="radio-box small">
+                            <input type="radio" class="radio" id="update3-1" name="update3" checked />
+                            <label for="update3-1">옵션별 가격으로 전송</label>
+                          </div>
+                          <div class="radio-box small">
+                            <input type="radio" class="radio" id="update3-2" name="update3" />
+                            <label for="update3-2">마켓대표가격으로 전송</label>
+                          </div>
+                        </div>
+                        <p class="td-notice mt-6">
+                          옵션가격 : 옵션가격을 대표가격으로 통일하여 전송이 필요한 경우 설정합니다. 별도 설정을 하지
+                          않으면 옵션 원 가격으로 마켓으로 전송됩니다
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="va-top">전송 옵션 개수</th>
+                      <td class="bd-r-none va-top small-pd">
+                        <input type="text" class="input w-180" placeholder="개수 입력" />
+                        <span class="ml-2">개</span>
+                        <p class="td-notice mt-6">쇼핑몰에 전송되는 옵션의 개수를 설정하세요.</p>
+                        <p class="td-notice">옵션은 명칭을 기준으로 오름차순으로 정렬 됩니다.</p>
+                        <p class="td-notice">
+                          실제 옵션의 수가 입력된 수 보다 많은 경우, 입력된 옵션 수 까지만 전송되며, 옵션 수를 입력하지
+                          않으면 모든 옵션이 전송 됩니다.
+                        </p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="va-top">단일상품등록설정</th>
+                      <td colspan="2">
+                        <div class="check-box sm-check">
+                          <input type="checkbox" class="checkbox" id="option1" checked />
+                          <label for="option1" class="lbl"
+                            >옵션 조합이 1개인 상품을 옵션 등록 없이 단일 상품으로 등록 합니다.</label
                           >
                         </div>
-                        <div class="right">
-                          <button class="button small bg-dark open-pop" data-name="S_10_0014">설정저장</button>
-                        </div>
-                      </div>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th class="va-top">정보 업데이트 범위</th>
-                    <td>
-                      <div class="flex">
-                        <div class="radio-box small">
-                          <input type="radio" class="radio" id="update1" name="update" checked />
-                          <label for="update1">가격/재고 정보만 업데이트</label>
-                        </div>
-                        <div class="radio-box small">
-                          <input type="radio" class="radio" id="update2" name="update" />
-                          <label for="update2">전체 정보 업데이트</label>
-                        </div>
-                      </div>
-                      <p class="td-notice mt-6">
-                        전체정보 업데이트 : 쿠팡은 신규 등록할 때만 모든 정보를 전송하며, 이후 업데이트를 하는 경우
-                        가격/재고 정보만 전송합니다.
-                      </p>
-                      <p class="td-notice">
-                        <strong
-                          >[전체정보 업데이트] 를 선택하시면 항상, 이미지 등 전체 정보를 쿠팡으로 전송합니다.</strong
-                        >
-                      </p>
-                      <p class="td-notice">
-                        <strong
-                          >단, 전체정보 업데이트를 하시면 쿠팡 API 가 하루에 허용하는 신규등록 업데이트 콜수 5,000건 중
-                          한 건을 이용하게 되오니, 반드시 해당 내용 확인 후 전체정보 전송하기를 추천드립니다. (일반적인
-                          가격, 재고 업데이트 시에는 쿠팡의 API 콜수가 차감되지 않습니다.)</strong
-                        >
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>정가</th>
-                    <td class="bd-r-none va-top small-pd">
-                      상품 가격의
-                      <span class="ml-8 mr-4"><input type="text" class="input w-112" placeholder="할인율 입력" /></span
-                      >% 만큼 추가하여 정가로 설정 합니다.
-                      <p class="td-notice mt-6">
-                        정가 설정은 [ 100,000원 → 50,000원] 과 같이 상품의 가격을 할인이 되어 보이게 하는 기능입니다.
-                      </p>
-                      <p class="td-notice">
-                        정가를 계산 과정에서 마켓위즈에 표시되는 상품의 가격과 업로드마켓의 판매 가격에 약간의 오차가
-                        발생 할 수 있습니다.
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="va-top">마켓대표가격</th>
-                    <td>
-                      <div class="flex">
-                        <div class="radio-box small">
-                          <input type="radio" class="radio" id="update2-1" name="update2" checked />
-                          <label for="update2-1">상품대표가격으로 전송</label>
-                        </div>
-                        <div class="radio-box small">
-                          <input type="radio" class="radio" id="update2-2" name="update2" />
-                          <label for="update2-2">가장 낮은 옵션가격으로 전송</label>
-                        </div>
-                        <div class="radio-box small">
-                          <input type="radio" class="radio" id="update2-3" name="update3" />
-                          <label for="update2-3">가장 높은 옵션가격으로 전송</label>
-                        </div>
-                      </div>
-                      <p class="td-notice mt-6">
-                        마켓대표가격 : 옵션이 있는 상품에 대해서만 적용됩니다. 옵션이 있는 상품의 경우 선택한 옵션가격이
-                        마켓의 대표가격으로 전송됩니다. 별도 설정을 하지 않으면 수집된 대표가격 또는 상품관리에서 설정한
-                        대표가격이 마켓의 대표가격으로 전송됩니다.
-                      </p>
-                    </td>
-                  </tr>
+                        <p class="fc-grey mt-4 ml-28">
+                          [예] 색상 : 핑크 / 사이즈 : 55 인 상품도 옵션 조합은 핑크+55 1개 이므로 단일상품으로 등록됨.
+                        </p>
 
-                  <tr>
-                    <th class="va-top">전송 옵션개수</th>
-                    <td class="">
-                      <div class="flex">
-                        <div class="radio-box small">
-                          <input type="radio" class="radio" id="update3-1" name="update3" checked />
-                          <label for="update3-1">옵션별 가격으로 전송</label>
+                        <div class="check-box sm-check mt-12">
+                          <input type="checkbox" class="checkbox" id="option2" />
+                          <label for="option2" class="lbl"
+                            >단일 상품 등록 시 옵션 내용을 상품명 뒤에 포함합니다. (단, 옵션 내용이 포함되어
+                            쇼핑몰에서의 상품명 길이를 초과하는 경우 옵션 내용은 전송되지 않을 수 있습니다.)</label
+                          >
                         </div>
-                        <div class="radio-box small">
-                          <input type="radio" class="radio" id="update3-2" name="update3" />
-                          <label for="update3-2">마켓대표가격으로 전송</label>
-                        </div>
-                      </div>
-                      <p class="td-notice mt-6">
-                        옵션가격 : 옵션가격을 대표가격으로 통일하여 전송이 필요한 경우 설정합니다. 별도 설정을 하지
-                        않으면 옵션 원 가격으로 마켓으로 전송됩니다
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="va-top">전송 옵션 개수</th>
-                    <td class="bd-r-none va-top small-pd">
-                      <input type="text" class="input w-180" placeholder="개수 입력" />
-                      <span class="ml-2">개</span>
-                      <p class="td-notice mt-6">쇼핑몰에 전송되는 옵션의 개수를 설정하세요.</p>
-                      <p class="td-notice">옵션은 명칭을 기준으로 오름차순으로 정렬 됩니다.</p>
-                      <p class="td-notice">
-                        실제 옵션의 수가 입력된 수 보다 많은 경우, 입력된 옵션 수 까지만 전송되며, 옵션 수를 입력하지
-                        않으면 모든 옵션이 전송 됩니다.
-                      </p>
-                    </td>
-                  </tr>
 
-                  <tr>
-                    <th class="va-top">단일상품등록설정</th>
-                    <td colspan="2">
-                      <div class="check-box sm-check">
-                        <input type="checkbox" class="checkbox" id="option1" checked />
-                        <label for="option1" class="lbl"
-                          >옵션 조합이 1개인 상품을 옵션 등록 없이 단일 상품으로 등록 합니다.</label
-                        >
-                      </div>
-                      <p class="fc-grey mt-4 ml-28">
-                        [예] 색상 : 핑크 / 사이즈 : 55 인 상품도 옵션 조합은 핑크+55 1개 이므로 단일상품으로 등록됨.
-                      </p>
-
-                      <div class="check-box sm-check mt-12">
-                        <input type="checkbox" class="checkbox" id="option2" />
-                        <label for="option2" class="lbl"
-                          >단일 상품 등록 시 옵션 내용을 상품명 뒤에 포함합니다. (단, 옵션 내용이 포함되어 쇼핑몰에서의
-                          상품명 길이를 초과하는 경우 옵션 내용은 전송되지 않을 수 있습니다.)</label
-                        >
-                      </div>
-
-                      <p class="fc-grey mt-4 ml-28">
-                        [예] 상품명 : 아망떼 극세사 차렵이불 / 옵션명 : 베이지 → 아망떼 극세사 차렵이불 베이지 (단,
-                        옵션내용을 포함할 경우 마켓에서 허용하는 상품명 길이를 초과하면 옵션내용은 전송되지 않을 수
-                        있습니다.)
-                      </p>
-                      <p class="td-notice mt-6">일부 카테고리에 대해 상품등록시 옵션등록을 제한하고 있습니다.</p>
-                      <p class="td-notice">
-                        옵션조합이 1개인 상품을 옵션등록이 제한된 카테고리에 등록할 때, 옵션 없이 단일상품으로 등록하기
-                        위함입니다. 모든 카테고리에 적용되지 않습니다.
-                      </p>
-                      <p class="td-notice">
-                        옵션조합이 2개 이상인 상품은 옵션등록이 가능한 유사 카테고리로 변경하여 전송하시면 됩니다.
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>상품등록 제한 설정</th>
-                    <td class="bd-r-none">
-                      <div class="flex">
-                        <div class="radio-box small">
-                          <input type="radio" class="radio" id="limited1" name="limited" checked />
-                          <label for="limited1">동일 상품명 마켓등록 제한</label>
+                        <p class="fc-grey mt-4 ml-28">
+                          [예] 상품명 : 아망떼 극세사 차렵이불 / 옵션명 : 베이지 → 아망떼 극세사 차렵이불 베이지 (단,
+                          옵션내용을 포함할 경우 마켓에서 허용하는 상품명 길이를 초과하면 옵션내용은 전송되지 않을 수
+                          있습니다.)
+                        </p>
+                        <p class="td-notice mt-6">일부 카테고리에 대해 상품등록시 옵션등록을 제한하고 있습니다.</p>
+                        <p class="td-notice">
+                          옵션조합이 1개인 상품을 옵션등록이 제한된 카테고리에 등록할 때, 옵션 없이 단일상품으로
+                          등록하기 위함입니다. 모든 카테고리에 적용되지 않습니다.
+                        </p>
+                        <p class="td-notice">
+                          옵션조합이 2개 이상인 상품은 옵션등록이 가능한 유사 카테고리로 변경하여 전송하시면 됩니다.
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>상품등록 제한 설정</th>
+                      <td class="bd-r-none">
+                        <div class="flex">
+                          <div class="radio-box small">
+                            <input type="radio" class="radio" id="limited1" name="limited" checked />
+                            <label for="limited1">동일 상품명 마켓등록 제한</label>
+                          </div>
+                          <div class="radio-box small">
+                            <input type="radio" class="radio" id="limited2" name="limited" />
+                            <label for="limited2">제한 없음</label>
+                          </div>
                         </div>
-                        <div class="radio-box small">
-                          <input type="radio" class="radio" id="limited2" name="limited" />
-                          <label for="limited2">제한 없음</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="va-top">택배 업체</th>
+                      <td colspan="2">
+                        <div class="flex">
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="menu-name1" />
+                            <label for="menu-name1" class="lbl">전체선택</label>
+                          </div>
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="menu-name2" checked />
+                            <label for="menu-name2" class="lbl">롯데택배</label>
+                          </div>
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="menu-name3" checked />
+                            <label for="menu-name3" class="lbl">로젠택배</label>
+                          </div>
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="menu-name4" />
+                            <label for="menu-name4" class="lbl">우체국</label>
+                          </div>
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="menu-name5" />
+                            <label for="menu-name5" class="lbl">한진택배</label>
+                          </div>
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="menu-name6" checked />
+                            <label for="menu-name6" class="lbl">CJ대한통운</label>
+                          </div>
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="menu-name7" checked />
+                            <label for="menu-name7" class="lbl">경동택배</label>
+                          </div>
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="menu-name8" />
+                            <label for="menu-name8" class="lbl">일양택배</label>
+                          </div>
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="menu-name9" checked />
+                            <label for="menu-name9" class="lbl">천일특송</label>
+                          </div>
                         </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="va-top">택배 업체</th>
-                    <td colspan="2">
-                      <div class="flex">
-                        <div class="check-box sm-check">
-                          <input type="checkbox" class="checkbox" id="menu-name1" />
-                          <label for="menu-name1" class="lbl">전체선택</label>
+                        <div class="flex mt-6">
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="menu-name10" />
+                            <label for="menu-name10" class="lbl">전체선택</label>
+                          </div>
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="menu-name11" checked />
+                            <label for="menu-name11" class="lbl">롯데택배</label>
+                          </div>
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="menu-name12" checked />
+                            <label for="menu-name12" class="lbl">로젠택배</label>
+                          </div>
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="menu-name13" />
+                            <label for="menu-name13" class="lbl">우체국</label>
+                          </div>
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="menu-name14" />
+                            <label for="menu-name14" class="lbl">한진택배</label>
+                          </div>
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="menu-name15" checked />
+                            <label for="menu-name15" class="lbl">CJ대한통운</label>
+                          </div>
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="menu-name16" checked />
+                            <label for="menu-name16" class="lbl">경동택배</label>
+                          </div>
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="menu-name17" />
+                            <label for="menu-name17" class="lbl">일양택배</label>
+                          </div>
+                          <div class="check-box sm-check">
+                            <input type="checkbox" class="checkbox" id="menu-name18" checked />
+                            <label for="menu-name18" class="lbl">천일특송</label>
+                          </div>
                         </div>
-                        <div class="check-box sm-check">
-                          <input type="checkbox" class="checkbox" id="menu-name2" checked />
-                          <label for="menu-name2" class="lbl">롯데택배</label>
-                        </div>
-                        <div class="check-box sm-check">
-                          <input type="checkbox" class="checkbox" id="menu-name3" checked />
-                          <label for="menu-name3" class="lbl">로젠택배</label>
-                        </div>
-                        <div class="check-box sm-check">
-                          <input type="checkbox" class="checkbox" id="menu-name4" />
-                          <label for="menu-name4" class="lbl">우체국</label>
-                        </div>
-                        <div class="check-box sm-check">
-                          <input type="checkbox" class="checkbox" id="menu-name5" />
-                          <label for="menu-name5" class="lbl">한진택배</label>
-                        </div>
-                        <div class="check-box sm-check">
-                          <input type="checkbox" class="checkbox" id="menu-name6" checked />
-                          <label for="menu-name6" class="lbl">CJ대한통운</label>
-                        </div>
-                        <div class="check-box sm-check">
-                          <input type="checkbox" class="checkbox" id="menu-name7" checked />
-                          <label for="menu-name7" class="lbl">경동택배</label>
-                        </div>
-                        <div class="check-box sm-check">
-                          <input type="checkbox" class="checkbox" id="menu-name8" />
-                          <label for="menu-name8" class="lbl">일양택배</label>
-                        </div>
-                        <div class="check-box sm-check">
-                          <input type="checkbox" class="checkbox" id="menu-name9" checked />
-                          <label for="menu-name9" class="lbl">천일특송</label>
-                        </div>
-                      </div>
-                      <div class="flex mt-6">
-                        <div class="check-box sm-check">
-                          <input type="checkbox" class="checkbox" id="menu-name10" />
-                          <label for="menu-name10" class="lbl">전체선택</label>
-                        </div>
-                        <div class="check-box sm-check">
-                          <input type="checkbox" class="checkbox" id="menu-name11" checked />
-                          <label for="menu-name11" class="lbl">롯데택배</label>
-                        </div>
-                        <div class="check-box sm-check">
-                          <input type="checkbox" class="checkbox" id="menu-name12" checked />
-                          <label for="menu-name12" class="lbl">로젠택배</label>
-                        </div>
-                        <div class="check-box sm-check">
-                          <input type="checkbox" class="checkbox" id="menu-name13" />
-                          <label for="menu-name13" class="lbl">우체국</label>
-                        </div>
-                        <div class="check-box sm-check">
-                          <input type="checkbox" class="checkbox" id="menu-name14" />
-                          <label for="menu-name14" class="lbl">한진택배</label>
-                        </div>
-                        <div class="check-box sm-check">
-                          <input type="checkbox" class="checkbox" id="menu-name15" checked />
-                          <label for="menu-name15" class="lbl">CJ대한통운</label>
-                        </div>
-                        <div class="check-box sm-check">
-                          <input type="checkbox" class="checkbox" id="menu-name16" checked />
-                          <label for="menu-name16" class="lbl">경동택배</label>
-                        </div>
-                        <div class="check-box sm-check">
-                          <input type="checkbox" class="checkbox" id="menu-name17" />
-                          <label for="menu-name17" class="lbl">일양택배</label>
-                        </div>
-                        <div class="check-box sm-check">
-                          <input type="checkbox" class="checkbox" id="menu-name18" checked />
-                          <label for="menu-name18" class="lbl">천일특송</label>
-                        </div>
-                      </div>
-                      <p class="td-notice mt-6">
-                        자주 이용하는 택배업체를 선택하세요. [주문/클레임 관리] 메뉴에서 발송 정보 입력 시 선택된
-                        택배업체만 선택항목으로 제공됩니다.
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- //수정/저장 모드 -->
-            <div class="mt-40">
-              <button class="open-pop button line mr-10" data-name="S_10_0029">
-                판매쇼핑몰/아이디 등록(S_10_0029)
-              </button>
-              <button class="open-pop button line mr-10" data-name="S_10_0029_2">
-                판매쇼핑몰/아이디 등록_쇼핑몰 추가(S_10_0029)
-              </button>
-            </div>
-
-            <div class="popup has-tit w1024" id="S_10_0029">
-              <div class="pop-head">
-                <h2>판매쇼핑몰/아이디 등록</h2>
-                <button class="close"></button>
+                        <p class="td-notice mt-6">
+                          자주 이용하는 택배업체를 선택하세요. [주문/클레임 관리] 메뉴에서 발송 정보 입력 시 선택된
+                          택배업체만 선택항목으로 제공됩니다.
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <div class="pop-contents">
-                <div class="table mt-12">
-                  <table>
-                    <colgroup>
-                      <col style="width: 13.6rem" />
-                      <col style="width: auto" />
-                    </colgroup>
-                    <tbody>
-                      <tr>
-                        <th class="va-top">쇼핑몰 선택</th>
-                        <td class="small-pd">
-                          <div class="flex align-center">
-                            <div class="radio-box small">
-                              <input type="radio" class="radio" id="choiceMall1" name="choiceMall" checked />
-                              <label for="choiceMall1">기본 쇼핑몰</label>
-                            </div>
-                            <div class="select-box w-320 ml-16">
-                              <button class="init placeholder">아이디를 등록할 쇼핑몰 선택</button>
-                              <ul>
-                                <li><button data-value="value1">쇼핑몰1</button></li>
-                                <li><button data-value="value2">쇼핑몰2</button></li>
-                                <li><button data-value="value3">쇼핑몰3</button></li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="radio-box small mt-12">
-                            <input type="radio" class="radio" id="choiceMall2" name="choiceMall" />
-                            <label for="choiceMall2">쇼핑몰 추가 (잔여 OOO 개 / 이용 중 OOO 개)</label>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="table mt-16">
-                  <table>
-                    <colgroup>
-                      <col style="width: 13.6rem" />
-                      <col style="width: 38rem" />
-                      <col style="width: 13.6rem" />
-                      <col style="width: auto" />
-                    </colgroup>
-                    <tbody>
-                      <tr>
-                        <th rowspan="2" class="va-top">쇼핑몰 계정</th>
-                        <td class="small-pd">
-                          <div class="flex">
-                            <input type="text" class="w-176 input" placeholder="Seller Office ID 입력" />
-                            <input type="text" class="w-176 ml-4 input" placeholder="비밀번호 입력" />
-                          </div>
-                        </td>
-                        <th class="small-pd">업체/공급계약 번호</th>
-                        <td class="small-pd">
-                          <div class="flex">
-                            <input type="text" class="w-140 input" placeholder="업체번호 입력" />
-                            <input type="text" class="w-140 ml-4 input" placeholder="공급계약번호 입력" />
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td colspan="3" class="small-pd">
-                          <div class="flex align-center">
-                            <button class="button small blue-line" disabled>로그인 테스트</button>
-                            <span class="fc-primary2 ml-8">[정상적으로 로그인에 성공했습니다.]</span>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th rowspan="2" class="va-top">ESM 계정</th>
-                        <td colspan="3" class="small-pd">
-                          <div class="flex align-center">
-                            <input type="text" class="w-176 input" placeholder="ESM ID 입력" />
-                            <input type="text" class="w-176 ml-4 input" placeholder="비밀번호 입력" />
-                            <button class="button small blue-line" disabled>ESM 로그인 테스트</button>
-                            <span class="fc-red ml-12">[로그인에 실패했습니다. 계정 정보를 확인하세요.]</span>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="table mt-16">
-                  <table>
-                    <colgroup>
-                      <col style="width: 13.6rem" />
-                      <col style="width: 15.2rem" />
-                      <col style="width: auto" />
-                    </colgroup>
-                    <tbody>
-                      <tr>
-                        <th rowspan="6" class="va-top bd-right">
-                          솔루션 연동 정보
-                          <button class="button mini line ty2">개발 메뉴얼</button>
-                        </th>
-                        <th>상품 업로드 API URL</th>
-                        <td class="small-pd">
-                          <input type="text" value="https://abcdabcd.com/abcd/abcd/abcd" class="w-420 input" />
-                          <button class="button small blue-line ml-5">API URL 검증</button>
-                          <span class="ml-8">[검증 결과 : <em class="fc-primary2 fw-bold">정상</em>]</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>상품 업데이트 API URL</th>
-                        <td class="small-pd">
-                          <input type="text" value="https://abcdabcd.com/abcd/abcd/abcd" class="w-420 input" />
-                          <button class="button small blue-line ml-5">API URL 검증</button>
-                          <span class="ml-8">[검증 결과 : <em class="fc-red fw-bold">오류</em>]</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>주문 관리 API URL</th>
-                        <td class="small-pd">
-                          <input type="text" placeholder="https://" class="w-420 input" />
-                          <button class="button small blue-line ml-5" disabled>API URL 검증</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>송장정보 전송 API URL</th>
-                        <td class="small-pd">
-                          <input type="text" placeholder="https://" class="w-420 input" />
-                          <button class="button small blue-line ml-5" disabled>API URL 검증</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>문의 목록 API URL</th>
-                        <td class="small-pd">
-                          <input type="text" placeholder="https://" class="w-420 input" />
-                          <button class="button small blue-line ml-5" disabled>API URL 검증</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>문의 답변 API URL</th>
-                        <td class="small-pd">
-                          <input type="text" placeholder="https://" class="w-420 input" />
-                          <button class="button small blue-line ml-5" disabled>API URL 검증</button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="table mt-16">
-                  <table>
-                    <colgroup>
-                      <col style="width: 13.6rem" />
+              <!-- //수정/저장 모드 -->
+              <div class="mt-40">
+                <button class="open-pop button line mr-10" data-name="S_10_0029">
+                  판매쇼핑몰/아이디 등록(S_10_0029)
+                </button>
+                <button class="open-pop button line mr-10" data-name="S_10_0029_2">
+                  판매쇼핑몰/아이디 등록_쇼핑몰 추가(S_10_0029)
+                </button>
+              </div>
 
-                      <col style="width: auto" />
-                    </colgroup>
-                    <tbody>
-                      <tr>
-                        <th>최대 상품등록 수(개)</th>
-                        <td class="small-pd">
-                          <div class="flex">
-                            <input type="text" class="w-157 input" placeholder="상품 수 입력" />
-                            <div>
-                              <p class="td-notice">
-                                쇼핑몰에 등록된 상품 수가 최대 상품등록 수를 초과하는 경우 쇼핑몰에 신규 등록이 제한될
-                                수 있습니다.
-                              </p>
-                              <p class="td-notice">쇼핑몰 상품은 개수 제한 없이 수정 가능합니다.</p>
+              <div class="popup has-tit w1024" id="S_10_0029">
+                <div class="pop-head">
+                  <h2>판매쇼핑몰/아이디 등록</h2>
+                  <button class="close"></button>
+                </div>
+                <div class="pop-contents">
+                  <div class="table mt-12">
+                    <table>
+                      <colgroup>
+                        <col style="width: 13.6rem" />
+                        <col style="width: auto" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th class="va-top">쇼핑몰 선택</th>
+                          <td class="small-pd">
+                            <div class="flex align-center">
+                              <div class="radio-box small">
+                                <input type="radio" class="radio" id="choiceMall1" name="choiceMall" checked />
+                                <label for="choiceMall1">기본 쇼핑몰</label>
+                              </div>
+                              <div class="select-box w-320 ml-16">
+                                <button class="init placeholder">아이디를 등록할 쇼핑몰 선택</button>
+                                <ul>
+                                  <li><button data-value="value1">쇼핑몰1</button></li>
+                                  <li><button data-value="value2">쇼핑몰2</button></li>
+                                  <li><button data-value="value3">쇼핑몰3</button></li>
+                                </ul>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th class="va-top">발송정책 설정</th>
-                        <td class="small-pd">
-                          <div class="flex">
-                            <button class="button small blue-line">발송정책 정보 가져오기</button>
-                            <input type="text" class="input" placeholder="발송 정책 선택" disabled />
-                          </div>
-                          <p class="td-notice mt-12">
-                            쇼핑몰 계정 또는 ESM 로그인 테스트를 먼저 완료해야 출하지 정보를 불러올 수 있습니다.
-                          </p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th class="va-top">출하지 설정</th>
-                        <td class="small-pd">
-                          <div class="flex">
-                            <button class="button small blue-line">출하지 정보 가져오기</button>
-                            <input type="text" class="input" placeholder="출하지 선택" disabled />
-                          </div>
-                          <p class="td-notice mt-12">
-                            쇼핑몰 계정 또는 ESM 로그인 테스트를 먼저 완료해야 출하지 정보를 불러올 수 있습니다.
-                          </p>
-                          <p class="td-notice">
-                            API를 지원하는 쇼핑몰은 발급 받은 API KEY를 입력해야 정상적인 이용이 가능합니다.
-                          </p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th class="va-top">반품/교환지 설정</th>
-                        <td class="small-pd">
-                          <div class="flex">
-                            <button class="button small blue-line">반품/교환지 정보 가져오기</button>
-                            <input type="text" class="input" placeholder="반품/교환지 선택" disabled />
-                          </div>
-                          <p class="td-notice mt-12">
-                            쇼핑몰 계정 또는 ESM 로그인 테스트를 먼저 완료해야 출하지 정보를 불러올 수 있습니다.
-                          </p>
-                          <p class="td-notice">
-                            API를 지원하는 쇼핑몰은 발급 받은 API KEY를 입력해야 정상적인 이용이 가능합니다.
-                          </p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                            <div class="radio-box small mt-12">
+                              <input type="radio" class="radio" id="choiceMall2" name="choiceMall" />
+                              <label for="choiceMall2">쇼핑몰 추가 (잔여 OOO 개 / 이용 중 OOO 개)</label>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table mt-16">
+                    <table>
+                      <colgroup>
+                        <col style="width: 13.6rem" />
+                        <col style="width: 38rem" />
+                        <col style="width: 13.6rem" />
+                        <col style="width: auto" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th rowspan="2" class="va-top">쇼핑몰 계정</th>
+                          <td class="small-pd">
+                            <div class="flex">
+                              <input type="text" class="w-176 input" placeholder="Seller Office ID 입력" />
+                              <input type="text" class="w-176 ml-4 input" placeholder="비밀번호 입력" />
+                            </div>
+                          </td>
+                          <th class="small-pd">업체/공급계약 번호</th>
+                          <td class="small-pd">
+                            <div class="flex">
+                              <input type="text" class="w-140 input" placeholder="업체번호 입력" />
+                              <input type="text" class="w-140 ml-4 input" placeholder="공급계약번호 입력" />
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3" class="small-pd">
+                            <div class="flex align-center">
+                              <button class="button small blue-line" disabled>로그인 테스트</button>
+                              <span class="fc-primary2 ml-8">[정상적으로 로그인에 성공했습니다.]</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th rowspan="2" class="va-top">ESM 계정</th>
+                          <td colspan="3" class="small-pd">
+                            <div class="flex align-center">
+                              <input type="text" class="w-176 input" placeholder="ESM ID 입력" />
+                              <input type="text" class="w-176 ml-4 input" placeholder="비밀번호 입력" />
+                              <button class="button small blue-line" disabled>ESM 로그인 테스트</button>
+                              <span class="fc-red ml-12">[로그인에 실패했습니다. 계정 정보를 확인하세요.]</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table mt-16">
+                    <table>
+                      <colgroup>
+                        <col style="width: 13.6rem" />
+                        <col style="width: 15.2rem" />
+                        <col style="width: auto" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th rowspan="6" class="va-top bd-right">
+                            솔루션 연동 정보
+                            <button class="button mini line ty2">개발 메뉴얼</button>
+                          </th>
+                          <th>상품 업로드 API URL</th>
+                          <td class="small-pd">
+                            <input type="text" value="https://abcdabcd.com/abcd/abcd/abcd" class="w-420 input" />
+                            <button class="button small blue-line ml-5">API URL 검증</button>
+                            <span class="ml-8">[검증 결과 : <em class="fc-primary2 fw-bold">정상</em>]</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>상품 업데이트 API URL</th>
+                          <td class="small-pd">
+                            <input type="text" value="https://abcdabcd.com/abcd/abcd/abcd" class="w-420 input" />
+                            <button class="button small blue-line ml-5">API URL 검증</button>
+                            <span class="ml-8">[검증 결과 : <em class="fc-red fw-bold">오류</em>]</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>주문 관리 API URL</th>
+                          <td class="small-pd">
+                            <input type="text" placeholder="https://" class="w-420 input" />
+                            <button class="button small blue-line ml-5" disabled>API URL 검증</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>송장정보 전송 API URL</th>
+                          <td class="small-pd">
+                            <input type="text" placeholder="https://" class="w-420 input" />
+                            <button class="button small blue-line ml-5" disabled>API URL 검증</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>문의 목록 API URL</th>
+                          <td class="small-pd">
+                            <input type="text" placeholder="https://" class="w-420 input" />
+                            <button class="button small blue-line ml-5" disabled>API URL 검증</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>문의 답변 API URL</th>
+                          <td class="small-pd">
+                            <input type="text" placeholder="https://" class="w-420 input" />
+                            <button class="button small blue-line ml-5" disabled>API URL 검증</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table mt-16">
+                    <table>
+                      <colgroup>
+                        <col style="width: 13.6rem" />
+
+                        <col style="width: auto" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th>최대 상품등록 수(개)</th>
+                          <td class="small-pd">
+                            <div class="flex">
+                              <input type="text" class="w-157 input" placeholder="상품 수 입력" />
+                              <div>
+                                <p class="td-notice">
+                                  쇼핑몰에 등록된 상품 수가 최대 상품등록 수를 초과하는 경우 쇼핑몰에 신규 등록이 제한될
+                                  수 있습니다.
+                                </p>
+                                <p class="td-notice">쇼핑몰 상품은 개수 제한 없이 수정 가능합니다.</p>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="va-top">발송정책 설정</th>
+                          <td class="small-pd">
+                            <div class="flex">
+                              <button class="button small blue-line">발송정책 정보 가져오기</button>
+                              <input type="text" class="input" placeholder="발송 정책 선택" disabled />
+                            </div>
+                            <p class="td-notice mt-12">
+                              쇼핑몰 계정 또는 ESM 로그인 테스트를 먼저 완료해야 출하지 정보를 불러올 수 있습니다.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="va-top">출하지 설정</th>
+                          <td class="small-pd">
+                            <div class="flex">
+                              <button class="button small blue-line">출하지 정보 가져오기</button>
+                              <input type="text" class="input" placeholder="출하지 선택" disabled />
+                            </div>
+                            <p class="td-notice mt-12">
+                              쇼핑몰 계정 또는 ESM 로그인 테스트를 먼저 완료해야 출하지 정보를 불러올 수 있습니다.
+                            </p>
+                            <p class="td-notice">
+                              API를 지원하는 쇼핑몰은 발급 받은 API KEY를 입력해야 정상적인 이용이 가능합니다.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="va-top">반품/교환지 설정</th>
+                          <td class="small-pd">
+                            <div class="flex">
+                              <button class="button small blue-line">반품/교환지 정보 가져오기</button>
+                              <input type="text" class="input" placeholder="반품/교환지 선택" disabled />
+                            </div>
+                            <p class="td-notice mt-12">
+                              쇼핑몰 계정 또는 ESM 로그인 테스트를 먼저 완료해야 출하지 정보를 불러올 수 있습니다.
+                            </p>
+                            <p class="td-notice">
+                              API를 지원하는 쇼핑몰은 발급 받은 API KEY를 입력해야 정상적인 이용이 가능합니다.
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="pop-bottm">
+                  <button class="button line">취소</button>
+                  <button class="button bg-primary">등록</button>
                 </div>
               </div>
-              <div class="pop-bottm">
-                <button class="button line">취소</button>
-                <button class="button bg-primary">등록</button>
-              </div>
-            </div>
-            <div class="popup has-tit w1024" id="S_10_0029_2">
-              <div class="pop-head">
-                <h2>판매쇼핑몰/아이디 등록</h2>
-                <button class="close"></button>
-              </div>
-              <div class="pop-contents">
-                <div class="table mt-12">
-                  <table>
-                    <colgroup>
-                      <col style="width: 13.6rem" />
-                      <col style="width: auto" />
-                    </colgroup>
-                    <tbody>
-                      <tr>
-                        <th class="va-top">쇼핑몰 선택</th>
-                        <td class="small-pd">
-                          <div class="flex align-center">
-                            <div class="radio-box small">
-                              <input type="radio" class="radio" id="choiceMall3" name="choiceMall-2" />
-                              <label for="choiceMall3">기본 쇼핑몰</label>
+              <div class="popup has-tit w1024" id="S_10_0029_2">
+                <div class="pop-head">
+                  <h2>판매쇼핑몰/아이디 등록</h2>
+                  <button class="close"></button>
+                </div>
+                <div class="pop-contents">
+                  <div class="table mt-12">
+                    <table>
+                      <colgroup>
+                        <col style="width: 13.6rem" />
+                        <col style="width: auto" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th class="va-top">쇼핑몰 선택</th>
+                          <td class="small-pd">
+                            <div class="flex align-center">
+                              <div class="radio-box small">
+                                <input type="radio" class="radio" id="choiceMall3" name="choiceMall-2" />
+                                <label for="choiceMall3">기본 쇼핑몰</label>
+                              </div>
+                              <div class="select-box w-320 ml-16">
+                                <button class="init placeholder">아이디를 등록할 쇼핑몰 선택</button>
+                                <ul>
+                                  <li><button data-value="value1">쇼핑몰1</button></li>
+                                  <li><button data-value="value2">쇼핑몰2</button></li>
+                                  <li><button data-value="value3">쇼핑몰3</button></li>
+                                </ul>
+                              </div>
                             </div>
-                            <div class="select-box w-320 ml-16">
-                              <button class="init placeholder">아이디를 등록할 쇼핑몰 선택</button>
-                              <ul>
-                                <li><button data-value="value1">쇼핑몰1</button></li>
-                                <li><button data-value="value2">쇼핑몰2</button></li>
-                                <li><button data-value="value3">쇼핑몰3</button></li>
-                              </ul>
+                            <div class="radio-box small mt-12">
+                              <input type="radio" class="radio" id="choiceMall4" name="choiceMall-2" />
+                              <label for="choiceMall4">쇼핑몰 추가 (잔여 OOO 개 / 이용 중 OOO 개)</label>
                             </div>
-                          </div>
-                          <div class="radio-box small mt-12">
-                            <input type="radio" class="radio" id="choiceMall4" name="choiceMall-2" />
-                            <label for="choiceMall4">쇼핑몰 추가 (잔여 OOO 개 / 이용 중 OOO 개)</label>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="table mt-16">
-                  <table>
-                    <colgroup>
-                      <col style="width: 13.6rem" />
-                      <col style="width: 38rem" />
-                      <col style="width: 13.6rem" />
-                      <col style="width: auto" />
-                    </colgroup>
-                    <tbody>
-                      <tr>
-                        <th rowspan="2" class="va-top">쇼핑몰 계정</th>
-                        <td class="small-pd">
-                          <div class="flex">
-                            <input type="text" class="w-176 input" placeholder="Seller Office ID 입력" />
-                            <input type="text" class="w-176 ml-4 input" placeholder="비밀번호 입력" />
-                          </div>
-                        </td>
-                        <th class="small-pd">업체/공급계약 번호</th>
-                        <td class="small-pd">
-                          <div class="flex">
-                            <input type="text" class="w-140 input" placeholder="업체번호 입력" />
-                            <input type="text" class="w-140 ml-4 input" placeholder="공급계약번호 입력" />
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td colspan="3" class="small-pd">
-                          <div class="flex align-center">
-                            <button class="button small blue-line" disabled>로그인 테스트</button>
-                            <span class="fc-primary2 ml-8">[정상적으로 로그인에 성공했습니다.]</span>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th rowspan="2" class="va-top">ESM 계정</th>
-                        <td colspan="3" class="small-pd">
-                          <div class="flex align-center">
-                            <input type="text" class="w-176 input" placeholder="ESM ID 입력" />
-                            <input type="text" class="w-176 ml-4 input" placeholder="비밀번호 입력" />
-                            <button class="button small blue-line" disabled>ESM 로그인 테스트</button>
-                            <span class="fc-red ml-12">[로그인에 실패했습니다. 계정 정보를 확인하세요.]</span>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="table mt-16">
-                  <table>
-                    <colgroup>
-                      <col style="width: 13.6rem" />
-                      <col style="width: 15.2rem" />
-                      <col style="width: auto" />
-                    </colgroup>
-                    <tbody>
-                      <tr>
-                        <th rowspan="6" class="va-top bd-right">
-                          솔루션 연동 정보
-                          <button class="button mini line ty2">개발 메뉴얼</button>
-                        </th>
-                        <th>상품 업로드 API URL</th>
-                        <td class="small-pd">
-                          <input type="text" value="https://abcdabcd.com/abcd/abcd/abcd" class="w-420 input" />
-                          <button class="button small blue-line ml-5">API URL 검증</button>
-                          <span class="ml-8">[검증 결과 : <em class="fc-primary2 fw-bold">정상</em>]</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>상품 업데이트 API URL</th>
-                        <td class="small-pd">
-                          <input type="text" value="https://abcdabcd.com/abcd/abcd/abcd" class="w-420 input" />
-                          <button class="button small blue-line ml-5">API URL 검증</button>
-                          <span class="ml-8">[검증 결과 : <em class="fc-red fw-bold">오류</em>]</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>주문 관리 API URL</th>
-                        <td class="small-pd">
-                          <input type="text" placeholder="https://" class="w-420 input" />
-                          <button class="button small blue-line ml-5" disabled>API URL 검증</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>송장정보 전송 API URL</th>
-                        <td class="small-pd">
-                          <input type="text" placeholder="https://" class="w-420 input" />
-                          <button class="button small blue-line ml-5" disabled>API URL 검증</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>문의 목록 API URL</th>
-                        <td class="small-pd">
-                          <input type="text" placeholder="https://" class="w-420 input" />
-                          <button class="button small blue-line ml-5" disabled>API URL 검증</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>문의 답변 API URL</th>
-                        <td class="small-pd">
-                          <input type="text" placeholder="https://" class="w-420 input" />
-                          <button class="button small blue-line ml-5" disabled>API URL 검증</button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="table mt-16">
-                  <table>
-                    <colgroup>
-                      <col style="width: 13.6rem" />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table mt-16">
+                    <table>
+                      <colgroup>
+                        <col style="width: 13.6rem" />
+                        <col style="width: 38rem" />
+                        <col style="width: 13.6rem" />
+                        <col style="width: auto" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th rowspan="2" class="va-top">쇼핑몰 계정</th>
+                          <td class="small-pd">
+                            <div class="flex">
+                              <input type="text" class="w-176 input" placeholder="Seller Office ID 입력" />
+                              <input type="text" class="w-176 ml-4 input" placeholder="비밀번호 입력" />
+                            </div>
+                          </td>
+                          <th class="small-pd">업체/공급계약 번호</th>
+                          <td class="small-pd">
+                            <div class="flex">
+                              <input type="text" class="w-140 input" placeholder="업체번호 입력" />
+                              <input type="text" class="w-140 ml-4 input" placeholder="공급계약번호 입력" />
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3" class="small-pd">
+                            <div class="flex align-center">
+                              <button class="button small blue-line" disabled>로그인 테스트</button>
+                              <span class="fc-primary2 ml-8">[정상적으로 로그인에 성공했습니다.]</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th rowspan="2" class="va-top">ESM 계정</th>
+                          <td colspan="3" class="small-pd">
+                            <div class="flex align-center">
+                              <input type="text" class="w-176 input" placeholder="ESM ID 입력" />
+                              <input type="text" class="w-176 ml-4 input" placeholder="비밀번호 입력" />
+                              <button class="button small blue-line" disabled>ESM 로그인 테스트</button>
+                              <span class="fc-red ml-12">[로그인에 실패했습니다. 계정 정보를 확인하세요.]</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table mt-16">
+                    <table>
+                      <colgroup>
+                        <col style="width: 13.6rem" />
+                        <col style="width: 15.2rem" />
+                        <col style="width: auto" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th rowspan="6" class="va-top bd-right">
+                            솔루션 연동 정보
+                            <button class="button mini line ty2">개발 메뉴얼</button>
+                          </th>
+                          <th>상품 업로드 API URL</th>
+                          <td class="small-pd">
+                            <input type="text" value="https://abcdabcd.com/abcd/abcd/abcd" class="w-420 input" />
+                            <button class="button small blue-line ml-5">API URL 검증</button>
+                            <span class="ml-8">[검증 결과 : <em class="fc-primary2 fw-bold">정상</em>]</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>상품 업데이트 API URL</th>
+                          <td class="small-pd">
+                            <input type="text" value="https://abcdabcd.com/abcd/abcd/abcd" class="w-420 input" />
+                            <button class="button small blue-line ml-5">API URL 검증</button>
+                            <span class="ml-8">[검증 결과 : <em class="fc-red fw-bold">오류</em>]</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>주문 관리 API URL</th>
+                          <td class="small-pd">
+                            <input type="text" placeholder="https://" class="w-420 input" />
+                            <button class="button small blue-line ml-5" disabled>API URL 검증</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>송장정보 전송 API URL</th>
+                          <td class="small-pd">
+                            <input type="text" placeholder="https://" class="w-420 input" />
+                            <button class="button small blue-line ml-5" disabled>API URL 검증</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>문의 목록 API URL</th>
+                          <td class="small-pd">
+                            <input type="text" placeholder="https://" class="w-420 input" />
+                            <button class="button small blue-line ml-5" disabled>API URL 검증</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>문의 답변 API URL</th>
+                          <td class="small-pd">
+                            <input type="text" placeholder="https://" class="w-420 input" />
+                            <button class="button small blue-line ml-5" disabled>API URL 검증</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table mt-16">
+                    <table>
+                      <colgroup>
+                        <col style="width: 13.6rem" />
 
-                      <col style="width: auto" />
-                    </colgroup>
-                    <tbody>
-                      <tr>
-                        <th>최대 상품등록 수(개)</th>
-                        <td class="small-pd">
-                          <div class="flex">
-                            <input type="text" class="w-157 input" placeholder="상품 수 입력" />
-                            <div>
-                              <p class="td-notice">
-                                쇼핑몰에 등록된 상품 수가 최대 상품등록 수를 초과하는 경우 쇼핑몰에 신규 등록이 제한될
-                                수 있습니다.
-                              </p>
-                              <p class="td-notice">쇼핑몰 상품은 개수 제한 없이 수정 가능합니다.</p>
+                        <col style="width: auto" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th>최대 상품등록 수(개)</th>
+                          <td class="small-pd">
+                            <div class="flex">
+                              <input type="text" class="w-157 input" placeholder="상품 수 입력" />
+                              <div>
+                                <p class="td-notice">
+                                  쇼핑몰에 등록된 상품 수가 최대 상품등록 수를 초과하는 경우 쇼핑몰에 신규 등록이 제한될
+                                  수 있습니다.
+                                </p>
+                                <p class="td-notice">쇼핑몰 상품은 개수 제한 없이 수정 가능합니다.</p>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th class="va-top">발송정책 설정</th>
-                        <td class="small-pd">
-                          <div class="flex">
-                            <button class="button small blue-line">발송정책 정보 가져오기</button>
-                            <input type="text" class="input" placeholder="발송 정책 선택" disabled />
-                          </div>
-                          <p class="td-notice mt-12">
-                            쇼핑몰 계정 또는 ESM 로그인 테스트를 먼저 완료해야 출하지 정보를 불러올 수 있습니다.
-                          </p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th class="va-top">출하지 설정</th>
-                        <td class="small-pd">
-                          <div class="flex">
-                            <button class="button small blue-line">출하지 정보 가져오기</button>
-                            <input type="text" class="input" placeholder="출하지 선택" disabled />
-                          </div>
-                          <p class="td-notice mt-12">
-                            쇼핑몰 계정 또는 ESM 로그인 테스트를 먼저 완료해야 출하지 정보를 불러올 수 있습니다.
-                          </p>
-                          <p class="td-notice">
-                            API를 지원하는 쇼핑몰은 발급 받은 API KEY를 입력해야 정상적인 이용이 가능합니다.
-                          </p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th class="va-top">반품/교환지 설정</th>
-                        <td class="small-pd">
-                          <div class="flex">
-                            <button class="button small blue-line">반품/교환지 정보 가져오기</button>
-                            <input type="text" class="input" placeholder="반품/교환지 선택" disabled />
-                          </div>
-                          <p class="td-notice mt-12">
-                            쇼핑몰 계정 또는 ESM 로그인 테스트를 먼저 완료해야 출하지 정보를 불러올 수 있습니다.
-                          </p>
-                          <p class="td-notice">
-                            API를 지원하는 쇼핑몰은 발급 받은 API KEY를 입력해야 정상적인 이용이 가능합니다.
-                          </p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="va-top">발송정책 설정</th>
+                          <td class="small-pd">
+                            <div class="flex">
+                              <button class="button small blue-line">발송정책 정보 가져오기</button>
+                              <input type="text" class="input" placeholder="발송 정책 선택" disabled />
+                            </div>
+                            <p class="td-notice mt-12">
+                              쇼핑몰 계정 또는 ESM 로그인 테스트를 먼저 완료해야 출하지 정보를 불러올 수 있습니다.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="va-top">출하지 설정</th>
+                          <td class="small-pd">
+                            <div class="flex">
+                              <button class="button small blue-line">출하지 정보 가져오기</button>
+                              <input type="text" class="input" placeholder="출하지 선택" disabled />
+                            </div>
+                            <p class="td-notice mt-12">
+                              쇼핑몰 계정 또는 ESM 로그인 테스트를 먼저 완료해야 출하지 정보를 불러올 수 있습니다.
+                            </p>
+                            <p class="td-notice">
+                              API를 지원하는 쇼핑몰은 발급 받은 API KEY를 입력해야 정상적인 이용이 가능합니다.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="va-top">반품/교환지 설정</th>
+                          <td class="small-pd">
+                            <div class="flex">
+                              <button class="button small blue-line">반품/교환지 정보 가져오기</button>
+                              <input type="text" class="input" placeholder="반품/교환지 선택" disabled />
+                            </div>
+                            <p class="td-notice mt-12">
+                              쇼핑몰 계정 또는 ESM 로그인 테스트를 먼저 완료해야 출하지 정보를 불러올 수 있습니다.
+                            </p>
+                            <p class="td-notice">
+                              API를 지원하는 쇼핑몰은 발급 받은 API KEY를 입력해야 정상적인 이용이 가능합니다.
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
-              </div>
-              <div class="pop-bottm">
-                <button class="button line">취소</button>
-                <button class="button bg-primary">등록</button>
+                <div class="pop-bottm">
+                  <button class="button line">취소</button>
+                  <button class="button bg-primary">등록</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <a href="#none" class="consulting">상담하기</a>
     </div>
-    <a href="#none" class="consulting">상담하기</a>
   </body>
 </html>
