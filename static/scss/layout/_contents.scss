@@ -574,9 +574,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 50%;
+      top: 0.9rem;
       left: 0.5rem;
-      transform: translateY(-50%);
       width: 0.2rem;
       height: 0.2rem;
       background-color: var(--sub-txt-color);
@@ -1220,8 +1219,7 @@
 }
 .market.mo {
   position: relative;
-  min-width: 36rem;
-  max-width: 37.5rem;
+
   margin: 0 auto;
   .contents-wrap {
     padding: 0 1.6rem;
@@ -2636,6 +2634,9 @@
     background-color: var(--disabled-bg-color);
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
+    &.ty2 {
+      margin-bottom: 0;
+    }
   }
   .select-box {
     background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 9L12 15L6 9' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
@@ -2757,6 +2758,7 @@
   .btn-list {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1.6rem;
     font-size: 1.2rem;
     font-weight: 600;
     line-height: 1.8rem;
@@ -2790,19 +2792,59 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &.has-bd,
+    &.has-bg {
+      margin: 0 -1.6rem;
+      padding: 1.2rem 1.6rem;
+    }
     &.has-bd {
       flex-wrap: wrap;
-      margin: 1.6rem -1.6rem 0;
-      padding: 1.2rem 1.6rem;
       border-top: 1px solid var(--line-color02);
       border-bottom: 1px solid var(--line-color02);
     }
+    &.has-bg {
+      background-color: #f8faff;
+      border: none;
+    }
+  }
+  .check-box.sm-check + .sm-check {
+    margin-left: 2.1rem;
   }
   .check-box .checkbox + label {
     font-size: 1.4rem;
     line-height: 2rem;
   }
   .product-list {
+    &.ty2 {
+      .check-box {
+        margin-bottom: 1.6rem;
+        p {
+          font-weight: 600;
+        }
+      }
+      dl {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+        padding: 1.2rem 0;
+        border-top: 1px solid var(--line-color02);
+
+        dt {
+          margin-bottom: 0;
+        }
+        dd {
+          font-size: 1.4rem;
+          line-height: 2rem;
+        }
+        &.last-dl {
+          display: block;
+          border-bottom: 1px solid var(--line-color02);
+          dt {
+            margin-bottom: 0.8rem;
+          }
+        }
+      }
+    }
     li {
       margin: 0 -1.6rem;
       padding: 1.6rem;
@@ -2839,12 +2881,52 @@
       font-size: 1.3rem;
     }
   }
+  .popup {
+    width: 32.8rem;
+    padding: 2.4rem 1.6rem;
+    h2 {
+      font-size: 1.6rem;
+    }
+    .close {
+      margin-right: 0;
+    }
+    .pop-contents {
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2rem;
+      word-break: break-all;
+      .table {
+        margin: 0 auto;
+      }
+    }
+  }
+  .has-tit {
+    .pop-bottm {
+      margin-top: 1.6rem;
+      &.center {
+        .button {
+          width: 16rem;
+          margin: 0 auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .progress-box {
+    margin: 0;
+    padding: 4rem 0;
+    border: none;
+  }
 }
 .exposure-list {
   li {
     margin: 0 -1.6rem;
     padding: 1.6rem;
+
     border-bottom: 1px solid var(--line-color02);
+    &:last-child {
+      border-bottom-width: 0;
+    }
   }
   .exposure-unit {
     display: flex;
@@ -2873,6 +2955,11 @@
     padding: 1.2rem 0;
     border-top: 1px solid var(--line-color02);
     color: var(--strong-txt-color);
+    font-size: 1.4rem;
+    &.send-market {
+      margin-bottom: 0.6rem;
+      border-bottom: 1px solid var(--line-color02);
+    }
     &.name {
       a {
         display: block;
@@ -2891,13 +2978,77 @@
         transform: translateY(-50%);
       }
     }
+    &.cost {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      gap: 3.3rem;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1px;
+        height: 1.4rem;
+        background-color: var(--line-color02);
+      }
+      dl {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+        dt {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &.send-market {
+      font-weight: 600;
+      i {
+        margin-right: 0;
+      }
+      .ft-list {
+        display: flex;
+        justify-content: space-between;
+        .open-list {
+          display: block;
+        }
+        .close-list {
+          display: none;
+        }
+      }
+    }
     .ft-list.open {
       & + .market-index {
         display: block;
       }
+      .close-list {
+        display: block;
+      }
+      .open-list {
+        display: none;
+      }
     }
     .market-index {
       display: none;
+      padding-top: 1.2rem;
+      .flex {
+        gap: 2.4rem;
+        > div {
+          flex: 1;
+        }
+      }
+      dl {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.2rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }

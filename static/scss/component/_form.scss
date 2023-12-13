@@ -344,6 +344,16 @@
       margin-left: 0;
     }
   }
+  &.va-top {
+    .checkbox {
+      top: 0.25rem;
+      transform: translateY(0);
+      & + label::before {
+        top: 0.25rem;
+        transform: translateY(0);
+      }
+    }
+  }
   .lbl {
     display: inline-block;
   }

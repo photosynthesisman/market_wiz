@@ -16778,10 +16778,8 @@ html.is-app {
 .middot-list li::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 0.9rem;
   left: 0.5rem;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   width: 0.2rem;
   height: 0.2rem;
   background-color: var(--sub-txt-color);
@@ -17461,8 +17459,6 @@ html.is-app {
 
 .market.mo {
   position: relative;
-  min-width: 36rem;
-  max-width: 37.5rem;
   margin: 0 auto;
 }
 .market.mo .contents-wrap {
@@ -19010,6 +19006,9 @@ html.is-app {
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
 }
+.mo .h-line.ty2 {
+  margin-bottom: 0;
+}
 .mo .select-box {
   background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 9L12 15L6 9' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
@@ -19145,6 +19144,7 @@ html.is-app {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 1.6rem;
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.8rem;
@@ -19184,17 +19184,57 @@ html.is-app {
       -ms-flex-align: center;
           align-items: center;
 }
+.mo .check-wrap.has-bd, .mo .check-wrap.has-bg {
+  margin: 0 -1.6rem;
+  padding: 1.2rem 1.6rem;
+}
 .mo .check-wrap.has-bd {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 1.6rem -1.6rem 0;
-  padding: 1.2rem 1.6rem;
   border-top: 1px solid var(--line-color02);
   border-bottom: 1px solid var(--line-color02);
+}
+.mo .check-wrap.has-bg {
+  background-color: #f8faff;
+  border: none;
+}
+.mo .check-box.sm-check + .sm-check {
+  margin-left: 2.1rem;
 }
 .mo .check-box .checkbox + label {
   font-size: 1.4rem;
   line-height: 2rem;
+}
+.mo .product-list.ty2 .check-box {
+  margin-bottom: 1.6rem;
+}
+.mo .product-list.ty2 .check-box p {
+  font-weight: 600;
+}
+.mo .product-list.ty2 dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--line-color02);
+}
+.mo .product-list.ty2 dl dt {
+  margin-bottom: 0;
+}
+.mo .product-list.ty2 dl dd {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.mo .product-list.ty2 dl.last-dl {
+  display: block;
+  border-bottom: 1px solid var(--line-color02);
+}
+.mo .product-list.ty2 dl.last-dl dt {
+  margin-bottom: 0.8rem;
 }
 .mo .product-list li {
   margin: 0 -1.6rem;
@@ -19237,11 +19277,46 @@ html.is-app {
 .mo .search-tab div {
   font-size: 1.3rem;
 }
+.mo .popup {
+  width: 32.8rem;
+  padding: 2.4rem 1.6rem;
+}
+.mo .popup h2 {
+  font-size: 1.6rem;
+}
+.mo .popup .close {
+  margin-right: 0;
+}
+.mo .popup .pop-contents {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  word-break: break-all;
+}
+.mo .popup .pop-contents .table {
+  margin: 0 auto;
+}
+.mo .has-tit .pop-bottm {
+  margin-top: 1.6rem;
+}
+.mo .has-tit .pop-bottm.center .button {
+  width: 16rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.mo .progress-box {
+  margin: 0;
+  padding: 4rem 0;
+  border: none;
+}
 
 .exposure-list li {
   margin: 0 -1.6rem;
   padding: 1.6rem;
   border-bottom: 1px solid var(--line-color02);
+}
+.exposure-list li:last-child {
+  border-bottom-width: 0;
 }
 .exposure-list .exposure-unit {
   display: -webkit-box;
@@ -19279,6 +19354,11 @@ html.is-app {
   padding: 1.2rem 0;
   border-top: 1px solid var(--line-color02);
   color: var(--strong-txt-color);
+  font-size: 1.4rem;
+}
+.exposure-list .unit-detail.send-market {
+  margin-bottom: 0.6rem;
+  border-bottom: 1px solid var(--line-color02);
 }
 .exposure-list .unit-detail.name a {
   display: block;
@@ -19297,11 +19377,100 @@ html.is-app {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+.exposure-list .unit-detail.cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3.3rem;
+}
+.exposure-list .unit-detail.cost:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 1px;
+  height: 1.4rem;
+  background-color: var(--line-color02);
+}
+.exposure-list .unit-detail.cost dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+.exposure-list .unit-detail.cost dl dt {
+  margin-bottom: 0;
+}
+.exposure-list .unit-detail.send-market {
+  font-weight: 600;
+}
+.exposure-list .unit-detail.send-market i {
+  margin-right: 0;
+}
+.exposure-list .unit-detail.send-market .ft-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.exposure-list .unit-detail.send-market .ft-list .open-list {
+  display: block;
+}
+.exposure-list .unit-detail.send-market .ft-list .close-list {
+  display: none;
+}
 .exposure-list .unit-detail .ft-list.open + .market-index {
   display: block;
 }
+.exposure-list .unit-detail .ft-list.open .close-list {
+  display: block;
+}
+.exposure-list .unit-detail .ft-list.open .open-list {
+  display: none;
+}
 .exposure-list .unit-detail .market-index {
   display: none;
+  padding-top: 1.2rem;
+}
+.exposure-list .unit-detail .market-index .flex {
+  gap: 2.4rem;
+}
+.exposure-list .unit-detail .market-index .flex > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.exposure-list .unit-detail .market-index dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+.exposure-list .unit-detail .market-index dl:last-child {
+  margin-bottom: 0;
 }
 
 .footer-space {
@@ -20484,6 +20653,16 @@ jq-Datepicker
 .check-box.has-line.sm-check + .has-line.sm-check {
   margin-top: 0.8rem;
   margin-left: 0;
+}
+.check-box.va-top .checkbox {
+  top: 0.25rem;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.check-box.va-top .checkbox + label::before {
+  top: 0.25rem;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 .check-box .lbl {
   display: inline-block;
