@@ -79,39 +79,105 @@
             </div>
             <div class="search-tab ty2">
               <p>주문 내역 조회(필터링)</p>
-              <div>접기<button class="detail-view ml-8 open">상세 보기</button></div>
+              <div>
+                접기<button><i class="ico-up mini mr-0"></i></button>
+              </div>
+            </div>
+            <dl>
+              <dt>주문상태</dt>
+              <dd>
+                <div class="select-box middle w-100p">
+                  <button class="init">전체</button>
+                  <ul>
+                    <li><button data-value="value1">Hover</button></li>
+                    <li><button data-value="value2">Selected</button></li>
+                    <li><button data-value="value3">Default</button></li>
+                    <li><button data-value="value4">Disabled</button></li>
+                  </ul>
+                </div>
+              </dd>
+            </dl>
+            <dl>
+              <dt>송장입력여부</dt>
+              <dd>
+                <div class="flex">
+                  <div class="radio-box small">
+                    <input type="radio" class="radio" id="radio1" name="radio-1" checked="" />
+                    <label for="radio1">전체</label>
+                  </div>
+                  <div class="radio-box small">
+                    <input type="radio" class="radio" id="radio2" name="radio-1" />
+                    <label for="radio2">입력</label>
+                  </div>
+                  <div class="radio-box small">
+                    <input type="radio" class="radio" id="radio3" name="radio-1" />
+                    <label for="radio3">미입력</label>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+            <dl>
+              <dt>클레임 건 포함</dt>
+              <dd>
+                <div class="flex">
+                  <div class="radio-box small">
+                    <input type="radio" class="radio" id="radio4" name="radio-2" checked="" />
+                    <label for="radio4">전체</label>
+                  </div>
+                  <div class="radio-box small">
+                    <input type="radio" class="radio" id="radio5" name="radio-2" />
+                    <label for="radio5">포함</label>
+                  </div>
+                  <div class="radio-box small">
+                    <input type="radio" class="radio" id="radio6" name="radio-2" />
+                    <label for="radio6">미포함</label>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+            <dl>
+              <dt>검색</dt>
+              <dd>
+                <div class="select-box middle w-100p">
+                  <button class="init placeholder">상품명</button>
+                  <ul>
+                    <li><button data-value="value1">키워드</button></li>
+                    <li><button data-value="value2">URL</button></li>
+                  </ul>
+                </div>
+                <div class="input-box">
+                  <input type="text" class="input middle w-100p" placeholder="검색하실 상품명을 입력해주세요." />
+                </div>
+              </dd>
+            </dl>
+            <div class="btn-wrap">
+              <button class="button line mr-8 open-panel" data-name="showPanel1">수집로그보기</button>
+              <button class="button bg-primary" disabled>수집 정보 내 조회하기</button>
             </div>
             <hr class="h-line" />
-
             <div class="btn-list">
-              <div class="left"></div>
+              <div class="left">
+                <a href="#none">배송완료</a>
+                <a href="#none">송장번호 마켓 전송</a>
+              </div>
               <div class="right">
-                <a href="#none">선택상품삭제</a>
-                <a href="#none">품절상품일괄삭제</a>
-                <a href="#none">전체삭제</a>
+                <a href="#none">선택 삭제</a>
               </div>
             </div>
             <div class="check-wrap has-bd">
               <div class="check-box">
                 <input type="checkbox" class="checkbox" id="chkTest3" />
-                <label for="chkTest3" class="lbl">총 <strong>1,222</strong>건</label>
+                <label for="chkTest3" class="lbl"
+                  >총 <strong>1,222</strong>건 / 결제금액 <strong>00,000,000</strong>원</label
+                >
               </div>
-              <button class="button mini round open-panel" data-name="showPopup1">마켓별 등록수확인</button>
               <div class="flex w-100p justify-end mt-8">
-                <div class="select-box w-98 mini">
-                  <button class="init">전체상품보기</button>
+                <div class="select-box w-80 mini">
+                  <button class="init">최근 주문</button>
                   <ul>
                     <li><button data-value="value1">판매이력 있는 상품보기</button></li>
                     <li><button data-value="value2">판매이력 없는 상품보기</button></li>
                     <li><button data-value="value3">상품명 수정 상품보기</button></li>
-                  </ul>
-                </div>
-                <div class="select-box w-87 mini ml-4">
-                  <button class="init">최근등록순</button>
-                  <ul>
-                    <li><button data-value="value1">최근등록순</button></li>
-                    <li><button data-value="value2">과거등록순</button></li>
-                    <li><button data-value="value3">낮은가격순</button></li>
                   </ul>
                 </div>
                 <div class="select-box w-60 mini ml-4">
@@ -123,299 +189,118 @@
                 </div>
               </div>
             </div>
-            <div class="exposure-list">
+            <div class="product-list ty2">
               <ul>
                 <li>
-                  <div class="exposure-unit">
-                    <div class="unit-img">
-                      <img src="../../static/images/common/dummy-image3.png" alt="" />
+                  <div class="flex align-center space-between">
+                    <div class="check-box va-top">
+                      <input type="checkbox" class="checkbox" id="chkTest26" />
+                      <label for="chkTest26" class="lbl">
+                        <strong>신규주문 (XXXXXXXXXXXX)</strong>
+                      </label>
                     </div>
-                    <div class="unit-define">
-                      <button class="button small blue-line">개별업데이트/마켓전송</button>
-                      <div class="check-box switch btn-ty">
-                        <span> 별도관리상품</span>
-                        <input type="checkbox" class="checkbox" id="switch1" title="상품노출 ON/OFF" checked />
-                        <label for="switch1" class="switch-label"></label>
-                      </div>
-                      <div class="check-box switch btn-ty">
-                        <span> 수집제한처리</span>
-                        <input type="checkbox" class="checkbox" id="switch2" title="상품노출 ON/OFF" checked />
-                        <label for="switch2" class="switch-label"></label>
-                      </div>
-                      <button class="button small line">업로드마켓삭제</button>
-                      <button class="button small line">업로드마켓품절</button>
-                    </div>
+                    <span class="has-claim">클레임 발생</span>
                   </div>
-                  <div class="unit-detail name">
-                    <a href="#none" class="a-link4"
-                      >상품명 노출 영역 상품명 노출 상품명 상품명 노출 영역 상품명 노출 상품명
-                      <i class="ico-forward mini"></i>
-                    </a>
+                  <div class="btn-wrap mt-8">
+                    <button class="button line small mr-4">배송 조회</button>
+                    <button class="button line small mr-4">메시지 전송</button>
+                    <button class="button line small">통관부호 검증</button>
                   </div>
-                  <div class="unit-detail cost">
-                    <dl>
-                      <dt>원가</dt>
-                      <dd>15,000원</dd>
-                    </dl>
-                    <dl>
-                      <dt>대표가격</dt>
-                      <dd>15,000원</dd>
-                    </dl>
-                  </div>
-                  <div class="unit-detail send-market">
-                    <a href="#none" class="ft-list open">
-                      <div class="ft-head">마켓전송 ON/OFF</div>
-                      <div>
-                        <!-- open -->
-                        <span class="open-list">열기 <i class="ico-down mini"></i></span>
-                        <!-- //open -->
-                        <!-- close -->
-                        <span class="close-list">접기 <i class="ico-up mini"></i></span>
-                        <!-- //close -->
-                      </div>
-                    </a>
-                    <div class="market-index">
+                  <dl>
+                    <dt>
+                      <a href="#none" class="a-link4 lh-24"
+                        ><strong>내셔널지오그래픽 러기지 네임택</strong><i class="ico-forward mini"></i
+                      ></a>
+                    </dt>
+                    <dd></dd>
+                  </dl>
+                  <dl>
+                    <dt>상품코드</dt>
+                    <dd>
                       <div class="flex">
-                        <div>
-                          <dl>
-                            <dt>쿠팡</dt>
-                            <dd>
-                              <div class="check-box switch">
-                                <input type="checkbox" class="checkbox" id="switch3" title="전송 ON/OFF" checked />
-                                <label for="switch3" class="switch-label"> </label>
-                              </div>
-                            </dd>
-                          </dl>
-                          <dl>
-                            <dt>옥션</dt>
-                            <dd>
-                              <div class="check-box switch">
-                                <input type="checkbox" class="checkbox" id="switch4" title="전송 ON/OFF" checked />
-                                <label for="switch4" class="switch-label"> </label>
-                              </div>
-                            </dd>
-                          </dl>
-                          <dl>
-                            <dt>스마트스토어</dt>
-                            <dd>
-                              <div class="check-box switch">
-                                <input type="checkbox" class="checkbox" id="switch5" title="전송 ON/OFF" checked />
-                                <label for="switch5" class="switch-label"> </label>
-                              </div>
-                            </dd>
-                          </dl>
-                          <dl>
-                            <dt>롯데ON</dt>
-                            <dd>
-                              <div class="check-box switch">
-                                <input type="checkbox" class="checkbox" id="switch6" title="전송 ON/OFF" />
-                                <label for="switch6" class="switch-label"> </label>
-                              </div>
-                            </dd>
-                          </dl>
-                          <dl>
-                            <dt>티몬</dt>
-                            <dd>
-                              <div class="check-box switch">
-                                <input type="checkbox" class="checkbox" id="switch7" title="전송 ON/OFF" checked />
-                                <label for="switch7" class="switch-label"> </label>
-                              </div>
-                            </dd>
-                          </dl>
+                        <div class="input-box">
+                          <input type="text" class="input w-144" placeholder="매입 금액 입력" />
                         </div>
-                        <div>
-                          <dl>
-                            <dt>인터파크</dt>
-                            <dd>
-                              <div class="check-box switch">
-                                <input type="checkbox" class="checkbox" id="switch8" title="전송 ON/OFF" disabled />
-                                <label for="switch8" class="switch-label"> </label>
-                              </div>
-                            </dd>
-                          </dl>
-                          <dl>
-                            <dt>G마켓</dt>
-                            <dd>
-                              <div class="check-box switch">
-                                <input type="checkbox" class="checkbox" id="switch9" title="전송 ON/OFF" checked />
-                                <label for="switch9" class="switch-label"> </label>
-                              </div>
-                            </dd>
-                          </dl>
-                          <dl>
-                            <dt>11번가</dt>
-                            <dd>
-                              <div class="check-box switch">
-                                <input type="checkbox" class="checkbox" id="switch10" title="전송 ON/OFF" disabled />
-                                <label for="switch10" class="switch-label"> </label>
-                              </div>
-                            </dd>
-                          </dl>
-                          <dl>
-                            <dt>위메프</dt>
-                            <dd>
-                              <div class="check-box switch">
-                                <input type="checkbox" class="checkbox" id="switch11" title="전송 ON/OFF" />
-                                <label for="switch11" class="switch-label"> </label>
-                              </div>
-                            </dd>
-                          </dl>
-                        </div>
+                        <button class="button line small">저장</button>
                       </div>
-                    </div>
-                  </div>
-                  <div class="btn-wrap">
-                    <button class="button small line mr-4">취소</button>
-                    <button class="button small bg-dark">저장</button>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>업로드마켓정보</dt>
+                    <dd>위메프 /identity01 / 홍길동</dd>
+                  </dl>
+                  <dl>
+                    <dt>주문일시</dt>
+                    <dd>2023-09-21 23:03:49</dd>
+                  </dl>
+                  <dl>
+                    <dt>총 주문금액(원)</dt>
+                    <dd>1,000,000</dd>
+                  </dl>
+                  <dl class="block-dl">
+                    <dt>
+                      <div class="flex space-between align-center">
+                        <p>구매대행 주문번호</p>
+                        <button class="button mini round open-panel" data-name="showPopup1">원문사이트로 이동</button>
+                      </div>
+                    </dt>
+                    <dd>
+                      <div class="flex">
+                        <div class="input-box w-100p">
+                          <input type="text" class="input w-100p" placeholder="주문 번호 입력" />
+                        </div>
+                        <button class="button line small">저장</button>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl class="block-dl">
+                    <dt>마켓전송 ON/OFF</dt>
+                    <dd>
+                      <p>[11번가] 2023-09-06</p>
+                      <p>[인터파크] 2023-09-06</p>
+                      <p>[스마트스토어] 2023-09-06</p>
+                      <p>[쿠팡] 2023-08-27</p>
+                      <p>[위메프2.0] 2023-09-06</p>
+                      <p>[티몬] 2023-09-06</p>
+                    </dd>
+                  </dl>
+                  <div class="t-center mt-6">
+                    <button class="button small line w-100p">마켓전송/업데이트</button>
                   </div>
                 </li>
                 <li>
-                  <div class="exposure-unit">
-                    <div class="unit-img">
-                      <img src="../../static/images/common/dummy-image3.png" alt="" />
-                    </div>
-                    <div class="unit-define">
-                      <button class="button small blue-line">개별업데이트/마켓전송</button>
-                      <div class="check-box switch btn-ty">
-                        <span> 별도관리상품</span>
-                        <input type="checkbox" class="checkbox" id="switch12" title="상품노출 ON/OFF" checked />
-                        <label for="switch12" class="switch-label"></label>
-                      </div>
-                      <div class="check-box switch btn-ty">
-                        <span> 수집제한처리</span>
-                        <input type="checkbox" class="checkbox" id="switch13" title="상품노출 ON/OFF" checked />
-                        <label for="switch13" class="switch-label"></label>
-                      </div>
-                      <button class="button small line">업로드마켓삭제</button>
-                      <button class="button small line">업로드마켓품절</button>
-                    </div>
+                  <div class="check-box va-top">
+                    <input type="checkbox" class="checkbox" id="chkTest27" />
+                    <label for="chkTest27" class="lbl">
+                      <p class="a-link4">상품코드S123456789001] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리</p>
+                      <p class="fc-primary2">[옵션개수:<span>100</span>]</p>
+                    </label>
                   </div>
-                  <div class="unit-detail name">
-                    <a href="#none" class="a-link4"
-                      >상품명 노출 영역 상품명 노출 상품명 상품명 노출 영역 상품명 노출 상품명
-                      <i class="ico-forward mini"></i>
-                    </a>
-                  </div>
-                  <div class="unit-detail cost">
-                    <dl>
-                      <dt>원가</dt>
-                      <dd>15,000원</dd>
-                    </dl>
-                    <dl>
-                      <dt>대표가격</dt>
-                      <dd>15,000원</dd>
-                    </dl>
-                  </div>
-                  <div class="unit-detail send-market">
-                    <a href="#none" class="ft-list">
-                      <div class="ft-head">마켓전송 ON/OFF</div>
-                      <div>
-                        <!-- open -->
-                        <span class="open-list">열기 <i class="ico-down mini"></i></span>
-                        <!-- //open -->
-                        <!-- close -->
-                        <span class="close-list">접기 <i class="ico-up mini"></i></span>
-                        <!-- //close -->
-                      </div>
-                    </a>
-                    <div class="market-index">
-                      <div class="flex">
-                        <div>
-                          <dl>
-                            <dt>쿠팡</dt>
-                            <dd>
-                              <div class="check-box switch">
-                                <input type="checkbox" class="checkbox" id="switch14" title="전송 ON/OFF" checked />
-                                <label for="switch14" class="switch-label"> </label>
-                              </div>
-                            </dd>
-                          </dl>
-                          <dl>
-                            <dt>옥션</dt>
-                            <dd>
-                              <div class="check-box switch">
-                                <input type="checkbox" class="checkbox" id="switch15" title="전송 ON/OFF" checked />
-                                <label for="switch15" class="switch-label"> </label>
-                              </div>
-                            </dd>
-                          </dl>
-                          <dl>
-                            <dt>스마트스토어</dt>
-                            <dd>
-                              <div class="check-box switch">
-                                <input type="checkbox" class="checkbox" id="switch16" title="전송 ON/OFF" checked />
-                                <label for="switch16" class="switch-label"> </label>
-                              </div>
-                            </dd>
-                          </dl>
-                          <dl>
-                            <dt>롯데ON</dt>
-                            <dd>
-                              <div class="check-box switch">
-                                <input type="checkbox" class="checkbox" id="switch17" title="전송 ON/OFF" />
-                                <label for="switch17" class="switch-label"> </label>
-                              </div>
-                            </dd>
-                          </dl>
-                          <dl>
-                            <dt>티몬</dt>
-                            <dd>
-                              <div class="check-box switch">
-                                <input type="checkbox" class="checkbox" id="switch18" title="전송 ON/OFF" checked />
-                                <label for="switch18" class="switch-label"> </label>
-                              </div>
-                            </dd>
-                          </dl>
-                        </div>
-                        <div>
-                          <dl>
-                            <dt>인터파크</dt>
-                            <dd>
-                              <div class="check-box switch">
-                                <input type="checkbox" class="checkbox" id="switch19" title="전송 ON/OFF" disabled />
-                                <label for="switch19" class="switch-label"> </label>
-                              </div>
-                            </dd>
-                          </dl>
-                          <dl>
-                            <dt>G마켓</dt>
-                            <dd>
-                              <div class="check-box switch">
-                                <input type="checkbox" class="checkbox" id="switch20" title="전송 ON/OFF" checked />
-                                <label for="switch20" class="switch-label"> </label>
-                              </div>
-                            </dd>
-                          </dl>
-                          <dl>
-                            <dt>11번가</dt>
-                            <dd>
-                              <div class="check-box switch">
-                                <input type="checkbox" class="checkbox" id="switch21" title="전송 ON/OFF" disabled />
-                                <label for="switch21" class="switch-label"> </label>
-                              </div>
-                            </dd>
-                          </dl>
-                          <dl>
-                            <dt>위메프</dt>
-                            <dd>
-                              <div class="check-box switch">
-                                <input type="checkbox" class="checkbox" id="switch22" title="전송 ON/OFF" />
-                                <label for="switch22" class="switch-label"> </label>
-                              </div>
-                            </dd>
-                          </dl>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="btn-wrap">
-                    <button class="button small line mr-4">취소</button>
-                    <button class="button small bg-dark">저장</button>
+                  <dl>
+                    <dt>수집사이트</dt>
+                    <dd>쿠팡</dd>
+                  </dl>
+                  <dl>
+                    <dt>업데이트일자</dt>
+                    <dd>2023-09-09</dd>
+                  </dl>
+                  <dl class="block-dl">
+                    <dt>마켓전송 ON/OFF</dt>
+                    <dd>
+                      <p>[11번가] 2023-09-06</p>
+                      <p>[인터파크] 2023-09-06</p>
+                      <p>[스마트스토어] 2023-09-06</p>
+                      <p>[쿠팡] 2023-08-27</p>
+                      <p>[위메프2.0] 2023-09-06</p>
+                      <p>[티몬] 2023-09-06</p>
+                    </dd>
+                  </dl>
+                  <div class="t-center mt-6">
+                    <button class="button small line w-100p">마켓전송/업데이트</button>
                   </div>
                 </li>
               </ul>
             </div>
-
             <div class="page_wrap">
               <ul class="page_nation">
                 <li><a class="arrow pprev" href="#none"></a></li>
@@ -559,7 +444,7 @@
                     >
                   </dd>
                 </dl>
-                <dl class="last-dl">
+                <dl class="block-dl">
                   <dt>결과</dt>
                   <dd>
                     수정실패 : 수정처리 불가.상품등록실패 : 기본즉시할인이 적용된 판매가와 옵션가의 합이 0보다 작거나,
@@ -583,7 +468,7 @@
                     >
                   </dd>
                 </dl>
-                <dl class="last-dl">
+                <dl class="block-dl">
                   <dt>결과</dt>
                   <dd>
                     수정실패 : 수정처리 불가.상품등록실패 : 기본즉시할인이 적용된 판매가와 옵션가의 합이 0보다 작거나,

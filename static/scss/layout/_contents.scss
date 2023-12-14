@@ -2818,8 +2818,11 @@
   }
   .product-list {
     &.ty2 {
+      .has-claim {
+        font-size: 1.3rem;
+        line-height: 2rem;
+      }
       .check-box {
-        margin-bottom: 1.6rem;
         p {
           font-weight: 600;
         }
@@ -2830,7 +2833,6 @@
         margin-bottom: 0;
         padding: 1.2rem 0;
         border-top: 1px solid var(--line-color02);
-
         dt {
           margin-bottom: 0;
         }
@@ -2838,7 +2840,7 @@
           font-size: 1.4rem;
           line-height: 2rem;
         }
-        &.last-dl {
+        &.block-dl {
           display: block;
           border-bottom: 1px solid var(--line-color02);
           dt {
@@ -2851,6 +2853,11 @@
       margin: 0 -1.6rem;
       padding: 1.6rem;
       border-bottom: 1px solid var(--line-color02);
+      > div {
+        & + dl {
+          margin-top: 1.6rem;
+        }
+      }
     }
   }
   .product-detail {
@@ -3082,7 +3089,7 @@
       margin-bottom: 0;
       padding: 1.2rem 0;
       border-top: 1px solid var(--line-color02);
-      &.last-dl {
+      &.block-dl {
         display: block;
         dd {
           font-size: 1.4rem;

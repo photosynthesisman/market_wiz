@@ -19210,8 +19210,9 @@ html.is-app {
   font-size: 1.4rem;
   line-height: 2rem;
 }
-.mo .product-list.ty2 .check-box {
-  margin-bottom: 1.6rem;
+.mo .product-list.ty2 .has-claim {
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 .mo .product-list.ty2 .check-box p {
   font-weight: 600;
@@ -19234,17 +19235,20 @@ html.is-app {
   font-size: 1.4rem;
   line-height: 2rem;
 }
-.mo .product-list.ty2 dl.last-dl {
+.mo .product-list.ty2 dl.block-dl {
   display: block;
   border-bottom: 1px solid var(--line-color02);
 }
-.mo .product-list.ty2 dl.last-dl dt {
+.mo .product-list.ty2 dl.block-dl dt {
   margin-bottom: 0.8rem;
 }
 .mo .product-list li {
   margin: 0 -1.6rem;
   padding: 1.6rem;
   border-bottom: 1px solid var(--line-color02);
+}
+.mo .product-list li > div + dl {
+  margin-top: 1.6rem;
 }
 .mo .product-detail {
   margin-top: 0.6rem;
@@ -19511,10 +19515,10 @@ html.is-app {
   padding: 1.2rem 0;
   border-top: 1px solid var(--line-color02);
 }
-.contents .log-data dl.last-dl {
+.contents .log-data dl.block-dl {
   display: block;
 }
-.contents .log-data dl.last-dl dd {
+.contents .log-data dl.block-dl dd {
   font-size: 1.4rem;
   line-height: 2rem;
 }
