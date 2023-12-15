@@ -139,3 +139,10 @@ $(document).on("click", ".go-top", function (e) {
   e.preventDefault();
   $("html, body").animate({ scrollTop: 0 }, 500);
 });
+//mobile lnb on & off
+$(document).on("click", ".mo-lnb", function () {
+  $(".lnb").addClass("active");
+});
+$(document).on("click", ".close-lnb", function () {
+  $(".lnb").removeClass("active");
+});

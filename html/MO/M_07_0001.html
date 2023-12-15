@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARKET WIZ</title>
+
+    <!-- 퍼블용 include: 개발팀에서 재include 하길 바랍니다. -->
+    <script class="-include" src="../include/head.js"></script>
+  </head>
+  <body>
+    <div class="market mo">
+      <!-- header  -->
+      <div class="header-space mo" data-include="../layout/header_mo.html"></div>
+      <!-- contents -->
+      <div class="contents-wrap">
+        <div class="contents">
+          <div class="tab-line-menu">
+            <div class="tab-inner">
+              <ul class="tab-list">
+                <li class="tab active"><a href="#tab1">문의 관리</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="tab1" class="tab-panel active">
+            <div class="search-tab">
+              <p>문의내역 수집</p>
+            </div>
+            <dl>
+              <dt>문의접수일</dt>
+              <dd>
+                <div class="flex">
+                  <input type="date" value="2023-05-29" class="input middle w-100p" />
+                  <input type="date" value="2023-05-29" class="input middle w-100p" />
+                </div>
+                <div class="select-box middle w-100p mt-4">
+                  <button class="init">1개월</button>
+                  <ul>
+                    <li><button data-value="value1">Hover</button></li>
+                    <li><button data-value="value2">Selected</button></li>
+                    <li><button data-value="value3">Default</button></li>
+                    <li><button data-value="value4">Disabled</button></li>
+                  </ul>
+                </div>
+              </dd>
+            </dl>
+            <dl>
+              <dt>업로드마켓</dt>
+              <dd>
+                <div class="select-box middle w-100p">
+                  <button class="init">전체</button>
+                  <ul>
+                    <li><button data-value="value1">Hover</button></li>
+                    <li><button data-value="value2">Selected</button></li>
+                    <li><button data-value="value3">Default</button></li>
+                    <li><button data-value="value4">Disabled</button></li>
+                  </ul>
+                </div>
+              </dd>
+            </dl>
+            <dl>
+              <dt>마켓ID</dt>
+              <dd>
+                <div class="select-box middle w-100p">
+                  <button class="init">전체</button>
+                  <ul>
+                    <li><button data-value="value1">Hover</button></li>
+                    <li><button data-value="value2">Selected</button></li>
+                    <li><button data-value="value3">Default</button></li>
+                    <li><button data-value="value4">Disabled</button></li>
+                  </ul>
+                </div>
+              </dd>
+            </dl>
+
+            <div class="t-center">
+              <button class="button bg-primary w-160">문의내역 수집하기</button>
+            </div>
+            <div class="search-tab ty2">
+              <p>주문 내역 조회(필터링)</p>
+              <div>
+                접기<button><i class="ico-up mini mr-0"></i></button>
+              </div>
+            </div>
+            <dl>
+              <dt>처리 상태</dt>
+              <dd>
+                <div class="select-box middle w-100p">
+                  <button class="init">전체</button>
+                  <ul>
+                    <li><button data-value="value1">Hover</button></li>
+                    <li><button data-value="value2">Selected</button></li>
+                    <li><button data-value="value3">Default</button></li>
+                    <li><button data-value="value4">Disabled</button></li>
+                  </ul>
+                </div>
+              </dd>
+            </dl>
+            <dl>
+              <dt>문의 유형</dt>
+              <dd>
+                <div class="flex">
+                  <div class="radio-box small">
+                    <input type="radio" class="radio" id="radio1" name="radio-1" checked="" />
+                    <label for="radio1">전체</label>
+                  </div>
+                  <div class="radio-box small">
+                    <input type="radio" class="radio" id="radio2" name="radio-1" />
+                    <label for="radio2">주문문의</label>
+                  </div>
+                  <div class="radio-box small">
+                    <input type="radio" class="radio" id="radio3" name="radio-1" />
+                    <label for="radio3">기타문의</label>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+            <dl>
+              <dt>검색어 선택</dt>
+              <dd>
+                <div class="select-box middle w-100p">
+                  <button class="init">전체</button>
+                  <ul>
+                    <li><button data-value="value1">키워드</button></li>
+                    <li><button data-value="value2">URL</button></li>
+                  </ul>
+                </div>
+                <div class="input-box mt-4">
+                  <input type="text" class="input middle w-100p" placeholder="검색어를 입력하세요." />
+                </div>
+              </dd>
+            </dl>
+            <div class="btn-wrap">
+              <button class="button line mr-8 open-panel" data-name="showPanel1">수집로그보기</button>
+              <button class="button bg-primary" disabled>수집 정보 내 조회하기</button>
+            </div>
+            <hr class="h-line" />
+            <div class="btn-list">
+              <div class="left">
+                <a href="#none">문의일괄답변</a>
+              </div>
+            </div>
+            <div class="check-wrap has-bd">
+              <div class="check-box">
+                <input type="checkbox" class="checkbox" id="chkTest25" />
+                <label for="chkTest25" class="lbl"
+                  >답변대기 <strong>1,222</strong>건 / 답변완료 <strong>13,000</strong>건</label
+                >
+              </div>
+              <div class="flex">
+                <div class="select-box w-60 mini">
+                  <button class="init">10개</button>
+                  <ul>
+                    <li><button data-value="value1">10개</button></li>
+                    <li><button data-value="value2">50개</button></li>
+                    <li><button data-value="value3">100개</button></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="product-list ty2 inquiry">
+              <ul>
+                <li>
+                  <dl class="small-pd">
+                    <dt>
+                      <a href="#none" class="a-link4 lh-24"
+                        ><strong>내셔널지오그래픽 러기지 네임택</strong><i class="ico-forward mini"></i
+                      ></a>
+                    </dt>
+                    <dd>
+                      <button class="button bg-dark small">문의답변</button>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>업로드마켓정보</dt>
+                    <dd>위메프 /identity01 / 홍길동</dd>
+                  </dl>
+                  <dl>
+                    <dt>문의수집일시</dt>
+                    <dd>2023-09-21 23:03:49</dd>
+                  </dl>
+                  <dl>
+                    <dt>문의유형</dt>
+                    <dd>주문 (12345678910)</dd>
+                  </dl>
+                  <dl>
+                    <dt>질문자</dt>
+                    <dd>홍*동</dd>
+                  </dl>
+                  <dl class="block-dl">
+                    <dt>
+                      <div class="flex space-between align-center">
+                        <p>문의내용</p>
+                      </div>
+                    </dt>
+                    <dd>
+                      <a href="#none" class="a-link2"
+                        >문의제목이 있는 경우 문의내용 최상단에 표기합니다.문의제목이 있는 경우 문의내용 최상단에
+                        표기합니다.문의제목이 있는 경우 문의내용 최상단에 표기합니다.</a
+                      >
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl class="small-pd">
+                    <dt>
+                      <a href="#none" class="a-link4 lh-24"
+                        ><strong
+                          >필라테스 요가 레포츠 운동 단체복 레깅스 스판 드라마 트레이닝 짐복필라테스 요가 레포츠 운동
+                          단체복 레깅스 스판 드라마 트레이닝 짐복</strong
+                        ><i class="ico-forward mini"></i
+                      ></a>
+                    </dt>
+                    <dd>
+                      <button class="button bg-dark small">문의답변</button>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>업로드마켓정보</dt>
+                    <dd>위메프 /identity01 / 홍길동</dd>
+                  </dl>
+                  <dl>
+                    <dt>문의수집일시</dt>
+                    <dd>2023-09-21 23:03:49</dd>
+                  </dl>
+                  <dl>
+                    <dt>문의유형</dt>
+                    <dd>주문 (12345678910)</dd>
+                  </dl>
+                  <dl>
+                    <dt>질문자</dt>
+                    <dd>홍*동</dd>
+                  </dl>
+                  <dl class="block-dl">
+                    <dt>
+                      <div class="flex space-between align-center">
+                        <p>문의내용</p>
+                      </div>
+                    </dt>
+                    <dd>
+                      <a href="#none" class="a-link2"
+                        >문의제목이 있는 경우 문의내용 최상단에 표기합니다.문의제목이 있는 경우 문의내용 최상단에
+                        표기합니다.문의제목이 있는 경우 문의내용 최상단에 표기합니다.</a
+                      >
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+            <div class="page_wrap">
+              <ul class="page_nation">
+                <li><a class="arrow pprev" href="#none"></a></li>
+                <li><a class="arrow prev" href="#none"></a></li>
+                <li><a href="#none" class="active">1</a></li>
+                <li><a href="#none">2</a></li>
+                <li><a href="#none">3</a></li>
+                <li><a href="#none">4</a></li>
+                <li><a href="#none">5</a></li>
+                <li><a class="arrow next" href="#none"></a></li>
+                <li><a class="arrow nnext" href="#none"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- lnb -->
+      <div class="lnb mo" data-include="../layout/lnb_mo.html"></div>
+    </div>
+  </body>
+</html>

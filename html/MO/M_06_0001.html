@@ -145,7 +145,7 @@
                     <li><button data-value="value2">URL</button></li>
                   </ul>
                 </div>
-                <div class="input-box">
+                <div class="input-box mt-4">
                   <input type="text" class="input middle w-100p" placeholder="검색하실 상품명을 입력해주세요." />
                 </div>
               </dd>
@@ -254,50 +254,164 @@
                     </dd>
                   </dl>
                   <dl class="block-dl">
-                    <dt>마켓전송 ON/OFF</dt>
+                    <dt>기본 송장번호<i class="require"></i></dt>
                     <dd>
-                      <p>[11번가] 2023-09-06</p>
-                      <p>[인터파크] 2023-09-06</p>
-                      <p>[스마트스토어] 2023-09-06</p>
-                      <p>[쿠팡] 2023-08-27</p>
-                      <p>[위메프2.0] 2023-09-06</p>
-                      <p>[티몬] 2023-09-06</p>
+                      <div class="flex align-center">
+                        <div class="select-box w-120 mr-4">
+                          <button class="init">URL</button>
+                          <ul>
+                            <li><button data-value="value1">키워드</button></li>
+                            <li><button data-value="value2">URL</button></li>
+                          </ul>
+                        </div>
+                        <div class="input-box w-100p">
+                          <input type="text" class="input w-100p" placeholder="송장번호 입력" />
+                        </div>
+                      </div>
+                      <div class="t-center mt-6">
+                        <button class="button small bg-dark w-100p">발주 확인</button>
+                      </div>
                     </dd>
-                  </dl>
-                  <div class="t-center mt-6">
-                    <button class="button small line w-100p">마켓전송/업데이트</button>
-                  </div>
-                </li>
-                <li>
-                  <div class="check-box va-top">
-                    <input type="checkbox" class="checkbox" id="chkTest27" />
-                    <label for="chkTest27" class="lbl">
-                      <p class="a-link4">상품코드S123456789001] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리</p>
-                      <p class="fc-primary2">[옵션개수:<span>100</span>]</p>
-                    </label>
-                  </div>
-                  <dl>
-                    <dt>수집사이트</dt>
-                    <dd>쿠팡</dd>
-                  </dl>
-                  <dl>
-                    <dt>업데이트일자</dt>
-                    <dd>2023-09-09</dd>
                   </dl>
                   <dl class="block-dl">
-                    <dt>마켓전송 ON/OFF</dt>
+                    <dt>
+                      <div class="flex space-between align-center">
+                        <p>보조 송장 번호</p>
+                        <div class="check-box sm-check">
+                          <input type="checkbox" class="checkbox" id="chkTest8" disabled="" />
+                          <label for="chkTest8" class="lbl">사용</label>
+                        </div>
+                      </div>
+                    </dt>
                     <dd>
-                      <p>[11번가] 2023-09-06</p>
-                      <p>[인터파크] 2023-09-06</p>
-                      <p>[스마트스토어] 2023-09-06</p>
-                      <p>[쿠팡] 2023-08-27</p>
-                      <p>[위메프2.0] 2023-09-06</p>
-                      <p>[티몬] 2023-09-06</p>
+                      <div class="flex align-center">
+                        <div class="select-box w-120 mr-4 disabled">
+                          <button class="init">업체선택</button>
+                          <ul>
+                            <li><button data-value="value1">업체선택</button></li>
+                            <li><button data-value="value2">URL</button></li>
+                          </ul>
+                        </div>
+                        <div class="input-box w-100p">
+                          <input type="text" class="input w-100p" placeholder="송장번호 입력" disabled />
+                        </div>
+                      </div>
+                      <div class="t-center mt-6">
+                        <button class="button small bg-dark w-100p" disabled>저장</button>
+                      </div>
                     </dd>
                   </dl>
-                  <div class="t-center mt-6">
-                    <button class="button small line w-100p">마켓전송/업데이트</button>
+                </li>
+                <li>
+                  <div class="flex align-center space-between">
+                    <div class="check-box va-top">
+                      <input type="checkbox" class="checkbox" id="chkTest27" />
+                      <label for="chkTest27" class="lbl">
+                        <strong>신규주문 (XXXXXXXXXXXX)</strong>
+                      </label>
+                    </div>
+                    <span class="has-claim">클레임 발생</span>
                   </div>
+                  <div class="btn-wrap mt-8">
+                    <button class="button line small mr-4">배송 조회</button>
+                    <button class="button line small mr-4">메시지 전송</button>
+                    <button class="button line small">통관부호 검증</button>
+                  </div>
+                  <dl>
+                    <dt>
+                      <a href="#none" class="a-link4 lh-24"
+                        ><strong>내셔널지오그래픽 러기지 네임택</strong><i class="ico-forward mini"></i
+                      ></a>
+                    </dt>
+                    <dd></dd>
+                  </dl>
+                  <dl class="small-pd">
+                    <dt>상품코드</dt>
+                    <dd>
+                      <div class="flex">
+                        <div class="input-box">
+                          <input type="text" class="input w-144" placeholder="매입 금액 입력" />
+                        </div>
+                        <button class="button line small">저장</button>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>업로드마켓정보</dt>
+                    <dd>위메프 /identity01 / 홍길동</dd>
+                  </dl>
+                  <dl>
+                    <dt>주문일시</dt>
+                    <dd>2023-09-21 23:03:49</dd>
+                  </dl>
+                  <dl>
+                    <dt>총 주문금액(원)</dt>
+                    <dd>1,000,000</dd>
+                  </dl>
+                  <dl class="block-dl">
+                    <dt>
+                      <div class="flex space-between align-center">
+                        <p>구매대행 주문번호</p>
+                        <button class="button mini round open-panel" data-name="showPopup1">원문사이트로 이동</button>
+                      </div>
+                    </dt>
+                    <dd>
+                      <div class="flex">
+                        <div class="input-box w-100p">
+                          <input type="text" class="input w-100p" placeholder="주문 번호 입력" />
+                        </div>
+                        <button class="button line small">저장</button>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl class="block-dl">
+                    <dt>기본 송장번호<i class="require"></i></dt>
+                    <dd>
+                      <div class="flex align-center">
+                        <div class="select-box w-120 mr-4">
+                          <button class="init">URL</button>
+                          <ul>
+                            <li><button data-value="value1">키워드</button></li>
+                            <li><button data-value="value2">URL</button></li>
+                          </ul>
+                        </div>
+                        <div class="input-box w-100p">
+                          <input type="text" class="input w-100p" placeholder="송장번호 입력" />
+                        </div>
+                      </div>
+                      <div class="t-center mt-6">
+                        <button class="button small bg-dark w-100p">발주 확인</button>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl class="block-dl">
+                    <dt>
+                      <div class="flex space-between align-center">
+                        <p>보조 송장 번호</p>
+                        <div class="check-box sm-check">
+                          <input type="checkbox" class="checkbox" id="chkTest9" disabled="" />
+                          <label for="chkTest9" class="lbl">사용</label>
+                        </div>
+                      </div>
+                    </dt>
+                    <dd>
+                      <div class="flex align-center">
+                        <div class="select-box w-120 mr-4 disabled">
+                          <button class="init">업체선택</button>
+                          <ul>
+                            <li><button data-value="value1">업체선택</button></li>
+                            <li><button data-value="value2">URL</button></li>
+                          </ul>
+                        </div>
+                        <div class="input-box w-100p">
+                          <input type="text" class="input w-100p" placeholder="송장번호 입력" disabled />
+                        </div>
+                      </div>
+                      <div class="t-center mt-6">
+                        <button class="button small bg-dark w-100p" disabled>저장</button>
+                      </div>
+                    </dd>
+                  </dl>
                 </li>
               </ul>
             </div>
@@ -318,168 +432,8 @@
         </div>
       </div>
 
-      <div class="popup has-tit" id="showPopup1">
-        <div class="pop-head">
-          <h2>마켓별 등록수 확인</h2>
-          <button class="close"></button>
-        </div>
-        <div class="pop-contents">
-          <p>현재 검색 조건에 대한 마켓아이디별 등록 상품 개수입니다.</p>
-          <div class="table mt-16 w-100p">
-            <table>
-              <colgroup>
-                <col style="width: 11.2rem" />
-                <col style="width: auto" />
-              </colgroup>
-              <thead>
-                <tr>
-                  <th class="t-center" scope="col">마켓명</th>
-                  <th class="t-center" scope="col">등록상품 총개수</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>인터파크</td>
-                  <td class="t-right"><span class="fc-primary2">2,450</span>개</td>
-                </tr>
-                <tr>
-                  <td>옥션</td>
-                  <td class="t-right"><span class="fc-primary2">100</span>개</td>
-                </tr>
-                <tr>
-                  <td>지마켓</td>
-                  <td class="t-right"><span class="fc-primary2">100</span>개</td>
-                </tr>
-                <tr>
-                  <td>스마트스토어</td>
-                  <td class="t-right"><span class="fc-primary2">25,482</span>개</td>
-                </tr>
-                <tr>
-                  <td>11번가</td>
-                  <td class="t-right"><span class="fc-primary2">21,168</span>개</td>
-                </tr>
-                <tr>
-                  <td>마켓명</td>
-                  <td class="t-right"><span class="fc-primary2">100</span>개</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div class="progress-box">
-          <div class="no-result"></div>
-          <p class="no-result-tt">등록된 상품이 없습니다.</p>
-        </div>
-        <div class="pop-bottm center">
-          <button class="button bg-primary">확인</button>
-        </div>
-      </div>
-      <div class="panel has-tit" id="showPanel1" style="display: none">
-        <div class="panel-contents">
-          <div class="panel-head">
-            <h2>전송로그보기</h2>
-            <div class="right">
-              <button class="close"></button>
-            </div>
-          </div>
-          <ul class="middot-list">
-            <li>업로드마켓으로의 전송로그는 최대3일간 보관됩니다.</li>
-            <li>
-              업로드상품이 대량인 경우 전송이 길어져 전송로그가 모두 보이지 않을 수 있으니 잠시 후 확인하실 것을
-              추천드립니다.
-            </li>
-          </ul>
-          <div class="contents mt-24">
-            <dl>
-              <dt>업로드마켓</dt>
-              <dd>
-                <div class="select-box middle w-100p">
-                  <button class="init placeholder">선택하세요</button>
-                  <ul>
-                    <li><button data-value="value1">Hover</button></li>
-                    <li><button data-value="value2">Selected</button></li>
-                    <li><button data-value="value3">Default</button></li>
-                    <li><button data-value="value4">Disabled</button></li>
-                  </ul>
-                </div>
-              </dd>
-            </dl>
-            <dl>
-              <dt>성공/실패</dt>
-              <dd>
-                <div class="flex">
-                  <div class="radio-box small">
-                    <input type="radio" class="radio" id="radio10" name="radio-4" checked="" />
-                    <label for="radio10">전체</label>
-                  </div>
-                  <div class="radio-box small">
-                    <input type="radio" class="radio" id="radio11" name="radio-4" />
-                    <label for="radio11">성공</label>
-                  </div>
-                  <div class="radio-box small">
-                    <input type="radio" class="radio" id="radio12" name="radio-4" />
-                    <label for="radio12">실패</label>
-                  </div>
-                </div>
-              </dd>
-            </dl>
-            <div class="t-center mt-24">
-              <button class="button bg-primary w-160">검색</button>
-            </div>
-            <hr class="h-line" />
-            <ul class="log-data">
-              <li>
-                <div class="log-date">2023-09-07 30:16:29</div>
-                <dl>
-                  <dt>상품코드</dt>
-                  <dd>
-                    <a href="#none" class="a-link2">230002303223</a>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt>상품명</dt>
-                  <dd>
-                    <a href="#none" class="a-link2"
-                      >[identity001] [상품코드 23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
-                    >
-                  </dd>
-                </dl>
-                <dl class="block-dl">
-                  <dt>결과</dt>
-                  <dd>
-                    수정실패 : 수정처리 불가.상품등록실패 : 기본즉시할인이 적용된 판매가와 옵션가의 합이 0보다 작거나,
-                    옵션가격이 판매가의 +300%보다 크거나 -50%보다 작습니다. STATUS : [103]FAQ 바로가기
-                  </dd>
-                </dl>
-              </li>
-              <li>
-                <div class="log-date">2023-09-07 30:16:29</div>
-                <dl>
-                  <dt>상품코드</dt>
-                  <dd>
-                    <a href="#none" class="a-link2">230002303223</a>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt>상품명</dt>
-                  <dd>
-                    <a href="#none" class="a-link2"
-                      >[identity001] [상품코드 23000230] 캉골 메신저백 크로스백 학생 남여공용 대용량 데일리 2059</a
-                    >
-                  </dd>
-                </dl>
-                <dl class="block-dl">
-                  <dt>결과</dt>
-                  <dd>
-                    수정실패 : 수정처리 불가.상품등록실패 : 기본즉시할인이 적용된 판매가와 옵션가의 합이 0보다 작거나,
-                    옵션가격이 판매가의 +300%보다 크거나 -50%보다 작습니다. STATUS : [103]FAQ 바로가기
-                  </dd>
-                </dl>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <!-- lnb -->
+      <div class="lnb mo" data-include="../layout/lnb_mo.html"></div>
     </div>
   </body>
 </html>
